@@ -23,4 +23,3 @@ for (let atag of atags) {
   }
 }
 const pageScroll = function () {};
-

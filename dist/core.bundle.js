@@ -1,1 +1,1 @@
-alert("test 111");
+const eleScroll=function(e){e.preventDefault();let t=document.querySelector("header").clientHeight;const o=e.target.getAttribute("href").substring(1);let l=document.querySelector(`#${o}`);window.scroll({top:l.offsetTop-t,behavior:"smooth"})};window.onscroll=function(){parseInt(this.scrollY)};let atags=document.querySelectorAll("a[href]");for(let e of atags){e.getAttribute("href").includes("#")&&e.addEventListener("click",(function(e){eleScroll(e)}))}const pageScroll=function(){};
