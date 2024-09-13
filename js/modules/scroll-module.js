@@ -3,13 +3,13 @@ const eleScroll = function (event) {
   event.preventDefault();
   let headerHeight = document.querySelector('header').clientHeight;
   const idName = event.target.getAttribute('href').substring(1);
+  let targetDiv;
   /^\d/.test(idName)
     ? (targetDiv = document.querySelector(
         `#\\3${idName.charAt(0)} ${idName.slice(1)}`
       ))
     : (targetDiv = document.querySelector(`#${idName}`));
-  let targetDiv = document.querySelector(`#${idName}`);
-  if (!targetDiv && !idName) return;
+  if (!targetDiv) return;
   window.scroll({
     top: targetDiv.offsetTop - headerHeight,
     behavior: 'smooth',
