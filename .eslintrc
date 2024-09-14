@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "jquery": true,
+    "browser": true,
+    "es6": true,
+    "amd": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  // add your custom rules here
+  "rules": {
+    "space-before-function-paren": "off",
+    "no-unused-vars": "off",
+    "prefer-const": "warn",
+    "no-extra-parens": "warn"
+  }
+}

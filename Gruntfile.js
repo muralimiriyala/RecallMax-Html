@@ -1,39 +1,6 @@
-const { config } = require('grunt');
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    terser: {
-      options: {
-        compress: {
-          drop_console: true,
-        },
-        mangle: true,
-        output: {
-          comments: false,
-        },
-      },
-      my_target: {
-        files: {
-          'dist/core.bundle.js': ['dist/core.concat.js'],
-        },
-      },
-    },
-
-    concat: {
-      dist: {
-        src: ['js/*.js', 'js/**/*.js'],
-        dest: 'dist/core.concat.js',
-      },
-    },
-
-    cssmin: {
-      target: {
-        files: {
-          'core.bundle.css': ['css/**/*.css', 'css/*.css'],
-        },
-      },
-    },
-
     validation: {
       options: {
         doctype: 'HTML5',
@@ -42,32 +9,50 @@ module.exports = function (grunt) {
         src: ['./*.html'],
       },
     },
-
-    watch: {
-      stylesheets: {
-        files: ['css/**/*.css', 'css/*.css'],
-        tasks: ['cssmin'],
-        livereload: true,
+    webfont: {
+      icons: {
+        src: 'assets/fonts/svgs/*.svg',
+        dest: 'assets/fonts',
+        options: {
+          fontFilename: 'icons-{hash}',
+          normalize: true,
+          htmlDemo: false,
+          fontFamilyName: 'Icons',
+          template: 'icons.tmpl.scss',
+          templateOptions: {
+            baseClass: 'i',
+            classPrefix: 'i-',
+          },
+          stylesheets: ['scss'],
+          relativeFontPath: '../../assets/fonts',
+        },
       },
-      scripts: {
-        files: ['js/*.js', 'js/**/*.js'],
-        tasks: ['concat', 'terser'],
+    },
+    imagemin: {
+      dynamic: {
+        options: {
+          optimizationLevel: 5,
+          svgoPlugins: [{ removeViewBox: false }],
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'assets/img',
+            src: ['**/*.{png,jpg,gif,svg}'],
+            dest: 'dist/img',
+          },
+        ],
       },
+    },
+    clean: {
+      icons: ['assets/fonts/*icons*'],
     },
   });
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-terser');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-w3c-html-validation');
-
-  // Default task(s).
-  grunt.registerTask('default', [
-    'validation',
-    'concat',
-    'terser',
-    'cssmin',
-    'watch',
-  ]);
+  grunt.loadNpmTasks('grunt-webfont');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 };
