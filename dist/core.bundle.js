@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_scroll_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/scroll-module */ \"./js/modules/scroll-module.js\");\n\n(0,_modules_scroll_module__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://recallmax-html/./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_scroll_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/scroll-module */ \"./js/modules/scroll-module.js\");\n\n(0,_modules_scroll_module__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nconsole.log('no js1');\n\n//# sourceURL=webpack://recallmax-html/./js/index.js?");
 
 /***/ }),
 
