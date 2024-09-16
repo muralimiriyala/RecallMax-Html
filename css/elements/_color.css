@@ -1,0 +1,11 @@
+:root{
+    --black: #000;
+    --black-5: rgb(0 0 0 / 5%);
+    --black-10: rgb(0 0 0 / 10%);
+    --White-60: rgb(255 255 255 / 60%);
+    --White-90: rgb(255 255 255 / 90%);
+    --White-75: #F5F9FF;
+    --White: #ffffff;
+    --body-text: #707372;
+    --Raisin-Black: #302135;
+}
