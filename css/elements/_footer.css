@@ -1,3 +1,5 @@
 
 
-.site-footer{background-color: var(--Raisin-Black); font-family: var(--base-font);}
+.site-footer{background-color: var(--Raisin-Black); color: var(--white); font-family: var(--base-font);}
+.footer{padding: 80px 0 0;}
+.footer-logo{max-width: 313px;}
