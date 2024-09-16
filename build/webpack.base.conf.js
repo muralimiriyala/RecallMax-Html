@@ -2,19 +2,21 @@ const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir);
 }
 
 module.exports = {
+  mode: 'production', // Set production mode for minification
   entry: {
-    core: './js/index.js', // This is your JavaScript entry
-    style: './css/index.css', // Entry for CSS which imports all CSS files
+    core: './js/index.js',
+    style: './css/index.css',
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: '[name].bundle.js', // This will output core.bundle.js for JS
+    filename: '[name].bundle.js',
   },
   resolve: {
     alias: {
@@ -22,11 +24,31 @@ module.exports = {
     },
   },
   optimization: {
-    minimizer: [new OptimizeCSSAssetsPlugin({})],
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          format: {
+            comments: false,
+          },
+        },
+        extractComments: false,
+      }),
+      new OptimizeCSSAssetsPlugin({
+        minimizerOptions: {
+          preset: [
+            'default',
+            {
+              discardComments: { removeAll: true }, // Remove comments
+            },
+          ],
+        },
+      }),
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '../[name].bundle.css', // This will output main.styles.css for CSS
+      filename: '../[name].bundle.css',
       chunkFilename: '[id].css',
     }),
     new webpack.ProvidePlugin({
@@ -65,9 +87,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
+          MiniCssExtractPlugin.loader,
           'css-loader',
           {
             loader: 'postcss-loader',
