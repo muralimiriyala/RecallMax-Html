@@ -1,0 +1,11 @@
+
+.careers-banner{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); overflow: hidden;}
+.careers-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
+.careers-banner-text h1{color: var(--White);}
+
+@media screen and (min-width: 1024px) {
+    .careers-main{padding: 80px 0;}
+    body.about-careers .careers-main{padding: 80px 0 128px;}
+    .careers-banner-text{max-width: 600px;}
+    .careers-banner-bg{right: -76px; top: 55px;}
+}

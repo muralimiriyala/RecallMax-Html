@@ -1,0 +1,12 @@
+
+.culture-main{padding: 40px 0;}
+.culture-list{font-size: 16px; line-height: 24px; color: var(--Gray-1);}
+.culture-icon{display: flex; margin-bottom: 16px;}
+.culture-list h5{color: var(--Coal); margin-bottom: 16px;}
+
+@media screen and (min-width: 1024px){
+    .culture-main{gap: 48px;}
+    .culture-list1-of-3{flex: 0 0 calc(33.333% - 32px);}
+    .culture-list1-of-2{flex: 0 0 calc(50% - 24px);}
+    .culture-list1-of-1{flex: 1;}
+}
