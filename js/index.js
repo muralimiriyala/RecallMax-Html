@@ -1,3 +1,5 @@
-import scrollModule from './modules/scroll-module';
+import stickyHeader from './modules/sticky';
+import scrollModule from './modules/scroll';
+
+stickyHeader();
 scrollModule();
-console.log('no js1');
