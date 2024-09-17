@@ -1,7 +1,5 @@
 
-<<<<<<< HEAD
 body{background-color: rgb(99, 44, 81);}
-=======
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; padding: 0; vertical-align: baseline;}
 html.js{margin-top: 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
@@ -178,7 +176,7 @@ span.optional-text.navy-50{color: rgb(25 35 76 / 50%);}
 .fs-18{font-size: 1.125rem; line-height: 1.688rem;}
 .fs-20{font-size: 20px; line-height: 30px;}
 .fs-22{font-size: 22px; line-height: 33px;}
-.fs-24{font-size: 1.5rem; line-height: 2.25rem;}
+.fs-24{font-size: 24px; line-height: 30px;}
 .fs-32{ font-size: 32px; line-height: 32px; }
 .fs-40{ font-size: 40px; line-height: 40px;}
 
@@ -358,4 +356,3 @@ ul.slick-dots li button{display: none; padding: 0;}
     caption, td, th{font-size: 13px; line-height: 16px;}
     td{padding: 13px 10px 11px;}
 }
->>>>>>> f79087da61b07bdcabf9d9d624783ec8bfdd08d7
