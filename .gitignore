@@ -1,0 +1,5 @@
+
+# ignore ALL files in node modules
+
+# dependencies
+/node_modules
