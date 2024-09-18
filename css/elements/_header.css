@@ -1,0 +1,14 @@
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+    .humburger-btn{width: 48px; height: 48px; right: 0; cursor: pointer; display: block; z-index: 1; background-color: var(--Dark-Blue-40);}
+    .humburger-btn span { width:100%; height: 2px; left: 0; right:0; max-width: 28px; margin:0 auto; opacity:1; transition: var(--b-transition); background-color:var(--Light-Blue); display:block; position:absolute }
+    .humburger-btn span:first-child { top: 16px }
+    .humburger-btn span:nth-child(2) { top: 24px }
+    .humburger-btn span:nth-child(3) { top: 32px; }
+    .humburger-btn span{max-width: 22px;}
+    .humburger-btn.open span:first-child {top: 24px; transform:rotate(45deg) }
+    .humburger-btn.open span:nth-child(2) { transform: scale(0); }
+    .humburger-btn.open span:nth-child(3) {top: 24px; transform:rotate(-45deg) }
+}
