@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 1024px){
     .culture-main{gap: 48px;}
-    .culture-list1-of-3{flex: 0 0 calc(33.333% - 32px);}
-    .culture-list1-of-2{flex: 0 0 calc(50% - 24px);}
-    .culture-list1-of-1{flex: 1;}
+    .culture-list-of-3{flex: 0 0 calc(33.333% - 32px);}
+    .culture-list-of-2{flex: 0 0 calc(50% - 24px);}
+    .culture-list-of-1{flex: 1;}
 }

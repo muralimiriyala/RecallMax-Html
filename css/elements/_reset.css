@@ -76,8 +76,8 @@ del {color: var(--Foreground);}
 hr{ margin: 0 0 32px; height: 4px; width: 96px; display: block; border: none; border-radius: 2px; background: var(--Orange);}
 hr.light-blue-line{margin: 0; flex: 1; width: 100%; height: 1px; background-color: var(--Light-Blue);}
 hr.sm-line{background-color: var(--Accent); width: 80px; height: 2px; border-radius: 1px; margin: 32px 0;}
-::selection {background-color: var(--Foreground); color: var(--White);}
-::-moz-selection {background-color: var(--Foreground); color: var(--White);}
+::selection {background-color: var(--Raisin-Black); color: var(--White);}
+::-moz-selection {background-color: var(--Raisin-Black); color: var(--White);}
 
 
 

@@ -20,13 +20,13 @@ ul.footer-lists > li{margin: 0;}
 ul.footer-lists > li::before{display: none;}
 ul.footer-lists > li > a{display: block;}
 
-span.footer-title{padding-bottom: 17px; color: var(--RecallMax-Purple); font-size: 18px; line-height: 18px; display: block;}
+span.footer-title{padding-bottom: 17px; color: var(--Accent); font-size: 18px; line-height: 18px; display: block;}
 ul.footer-links{margin: 0; gap: 12px; flex-direction: column;}
 ul.footer-links li::before{display: none;}
 ul.footer-links li{margin: 0;}
 ul.footer-links li a{font-size: 16px; line-height: 16px;}
 
-.copyrights-main{padding: 72px 0 0; border-top: 1px solid var(--RecallMax-Purple);}
+.copyrights-main{padding: 72px 0 0; border-top: 1px solid var(--Accent);}
 .copyright-text{font-size:.75rem; line-height:1.25rem; color: var(--White-60); }
 ul.copyright-links {flex: 1; margin:0; gap: 0 20px; justify-content: flex-end;} 
 ul.copyright-links > li { margin:0; font-size:.75rem; line-height:1.25rem; letter-spacing:0 } 

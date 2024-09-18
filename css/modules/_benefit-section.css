@@ -9,8 +9,8 @@
     .benefit-main{padding: 80px 0; gap: 48px;}
     .benefit-heading{gap: 48px;}
     .benefit-lists{gap: 48px;}
-    .benefit-list1-of-4{flex: 0 0 calc(25% - 36px);}
-    .benefit-list1-of-3{flex: 0 0 calc(33.333% - 32px);}
-    .benefit-list1-of-2{flex: 0 0 calc(50% - 24px);}
-    .benefit-list1-of-1{flex: 1;}
+    .benefit-list-of-4{flex: 0 0 calc(25% - 36px);}
+    .benefit-list-of-3{flex: 0 0 calc(33.333% - 32px);}
+    .benefit-list-of-2{flex: 0 0 calc(50% - 24px);}
+    .benefit-list-of-1{flex: 1;}
 }
