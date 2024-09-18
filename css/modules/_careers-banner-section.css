@@ -9,3 +9,15 @@
     .careers-banner-text{max-width: 600px;}
     .careers-banner-bg{right: -76px; top: 55px; width: 917px; height: 567px;}
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .careers-banner-text{max-width: 444px;}
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .careers-banner-main{padding: 80px 0 40px;}
+    body.about-careers .careers-banner-main{padding: 80px 0 88px;}
+    .careers-banner-text{font-size: 18px; line-height: 27px;}
+    .careers-banner-text span.optional-text{margin-bottom: 24px;}
+    .careers-banner-text hr.sm-line{margin: 24px 0;}
+}

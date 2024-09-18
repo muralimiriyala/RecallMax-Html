@@ -3,4 +3,4 @@
 body.about-careers .maxassit-herd-main{margin-top: -48px;}
 .maxassit-herd-text h4{margin-bottom: 0;}
 .maxassit-herd-text h4 > span{position: relative;}
-.maxassit-herd-text h4 > span::before{content: ""; position: absolute; border-radius: 4px; background: var(--Accent); opacity: 0.4; display: inline-block; height: 16px; width: 100%; bottom: 0;}
+.maxassit-herd-text h4 > span::before{content: ""; position: absolute; border-radius: 4px; background: var(--Accent); opacity: 0.4; display: inline-block; height: 16px; width: 100%; bottom: 0; z-index: -1;}
