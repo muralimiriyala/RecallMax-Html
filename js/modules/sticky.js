@@ -1,5 +1,6 @@
 const stickyHeader = () => {
   const header = document.querySelector('.site-header');
+  if (!header) return;
   // const sitehHeight = header.clientHeight;
   window.addEventListener('scroll', () => {
     const scroll = window.scrollY;
