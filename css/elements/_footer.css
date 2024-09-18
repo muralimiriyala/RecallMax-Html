@@ -62,6 +62,7 @@ ul.copyright-links>li.current-menu-item>a, ul.copyright-links>li>a:hover { color
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .footer { padding: 40px 0 40px; }
     .footer-top{padding-bottom: 31px;}
+    .footer-logo{margin: auto;}
     .footer-text{display: block; text-align: center;}
     .footer-desc{padding-bottom: 33px; font-size: 28px; line-height: 35px; letter-spacing: -0.28px;}
     ul.footer-address{gap: 12px;}
