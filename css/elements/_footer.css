@@ -64,12 +64,14 @@ ul.copyright-links>li.current-menu-item>a, ul.copyright-links>li>a:hover { color
     .footer-top{padding-bottom: 31px;}
     .footer-text{display: block; text-align: center;}
     .footer-desc{padding-bottom: 33px; font-size: 28px; line-height: 35px; letter-spacing: -0.28px;}
-    ul.footer-address > li > a{
-    border-radius: 36px;
-    border: 2px solid var(--RecallMax-Purple, #A4278F);
-    padding: 10px 0 10px;
-    justify-content: center;
-    }
+    ul.footer-address{gap: 12px;}
+    ul.footer-address > li > a{ padding: 12px 0 12px; justify-content: center; position: relative; z-index: 0; }
+    ul.footer-address > li > a::before, ul.footer-address > li > a::after{width:100%; height:100%; top: 0; left: 0; content:""; border-radius: 36px; background-image: linear-gradient(180deg, var(--Accent), var(--Purple)); position:absolute; transition: var(--b-transition); z-index:-1 }
+    ul.footer-address > li > a::after{top: 2px; left: 2px; width: calc(100% - 4px); height: calc(100% - 4px); background: var(--Raisin-Black);}
+    ul.footer-address > li > a:hover::after{background: transparent;}
+    ul.footer-address > li > a:hover{color: var(--White);}
+    ul.footer-address > li > a svg path{transition: var(--b-transition);}
+    ul.footer-address > li > a:hover svg path{fill: var(--White);}
 
     .footer-row{display: block; padding-bottom: 32px;}
     ul.footer-lists{flex-direction: column; gap: 20px; display: none;}
