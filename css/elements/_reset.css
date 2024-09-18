@@ -14,7 +14,7 @@ a:hover{color: var(--Orange);}
 .h3, h3{font-size: 40px; line-height: 50px; margin-bottom: 19px; letter-spacing: -0.4px;}
 .h4, h4{font-size: 32px; line-height: 40px; margin-bottom: 20px; letter-spacing: -0.32px;}
 .h5, h5{font-size: 24px; line-height: 30px; margin-bottom: 19px; letter-spacing: -0.24px;}
-.h6, h6{font-size: 20px; line-height: 25px; margin-bottom: 18px;}
+.h6, h6{font-size: 20px; line-height: 25px; margin-bottom: 18px; letter-spacing: -0.2px;}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Blue);}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--Orange);}
 address{font-size: 1.125rem; line-height: 1.5rem; margin-bottom: 24px;}

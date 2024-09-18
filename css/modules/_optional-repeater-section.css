@@ -7,9 +7,9 @@
 .optional-repeater-text hr.sm-line{margin: 24px 0;}
 
 @media screen and (min-width: 1024px) {
+    .optional-repeater-main{padding: 80px 0;}
     .reverse{flex-direction: row-reverse;}
-    .optional-repeater-list{gap: 80px; padding: 40px 0;}
-    .optional-repeater-list:first-child{padding: 80px 0 40px;}
-    .optional-repeater-list:last-child{padding: 40px 0 80px;}
+    .optional-repeater-list{gap: 80px; margin-bottom: 40px;}
+    .optional-repeater-list:last-child{margin-bottom: 0;}
     .optional-repeater-image, .optional-repeater-text{flex: 1;}
 }
