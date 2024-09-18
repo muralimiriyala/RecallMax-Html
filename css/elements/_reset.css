@@ -315,10 +315,10 @@ ul.slick-dots li button{display: none; padding: 0;}
 @media only screen and (max-width: 1199px) and (min-width: 744px){
     .container{padding: 0 40px; max-width: 100%;}
 }
-@media only screen and (max-width: 1023px) and (min-width: 744px){
+@media only screen and (max-width: 1023px) and (min-width: 768px){
     .hide-tablet{display: none;}
 }
-@media only screen and (max-width: 743px) and (min-width: 200px){
+@media only screen and (max-width: 767px) and (min-width: 200px){
     .container{padding: 0 24px;}
     .mobile-0{padding-left: 0; padding-right: 0;}
     .hide-mobile{display: none;} 
