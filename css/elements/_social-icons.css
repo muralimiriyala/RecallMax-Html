@@ -2,9 +2,10 @@ ul.social-icons { gap: 16px; margin:0; flex: 1; width: fit-content; justify-cont
 ul.social-icons li { margin:0; display:inline-block }
 ul.social-icons li::before { display:none }
 ul.social-icons li a { width: 48px; height: 48px; border-radius: 50%; font-size:20px; line-height:1.5rem; color:var(--White); position:relative; z-index:1 }
-ul.social-icons li a::before { width:100%; height:100%; top:50%; left:50%; transform: translate(-50%, -50%); content:""; opacity: 0.25; border-radius: 50%; background-image: linear-gradient(green, pink); position:absolute; transition: var(--b-transition); z-index:-1 }
-ul.social-icons li a:hover::before { opacity: 1; width: 0; height: 0; }
-ul.social-icons li a:hover{color: var(--White); background-color: var(--Orange);}
+ul.social-icons li a::before, ul.social-icons li a::after{width:100%; height:100%; top:50%; left:50%; transform: translate(-50%, -50%); content:""; border-radius: 50%; background-image: linear-gradient(to bottom, #a4278f 40%, #122750); position:absolute; transition: var(--b-transition); z-index:-1 }
+ul.social-icons li a::after{width: calc(100% - 4px); height: calc(100% - 4px); background: var(--Raisin-Black);}
+ul.social-icons li a:hover::after{background: transparent;}
+ul.social-icons li a:hover{color: var(--White);}
 
 
 /*-- media css starts here --*/
