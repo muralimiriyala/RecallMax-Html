@@ -1,0 +1,15 @@
+
+.optional-repeater-thumb{padding: 8px; background: var(--White); border-radius: 16px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
+.optional-repeater-thumb img{border-radius: 10px;}
+.optional-repeater-text{font-size: 20px; line-height: 30px;}
+.optional-repeater-text > p{color: var(--Gray-1);}
+.optional-repeater-text span.optional-text{margin-bottom: 22px;}
+.optional-repeater-text hr.sm-line{margin: 24px 0;}
+
+@media screen and (min-width: 1024px) {
+    .reverse{flex-direction: row-reverse;}
+    .optional-repeater-list{gap: 80px; padding: 40px 0;}
+    .optional-repeater-list:first-child{padding: 80px 0 40px;}
+    .optional-repeater-list:last-child{padding: 40px 0 80px;}
+    .optional-repeater-image, .optional-repeater-text{flex: 1;}
+}

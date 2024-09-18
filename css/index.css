@@ -5,3 +5,9 @@
 @import './elements/_social-icons.css';
 @import './elements/_footer.css';
 
+@import "./modules/_careers-banner-section.css";
+@import "./modules/_maxassit-herd-section.css";
+@import "./modules/_optional-repeater-section.css";
+@import "./modules/_culture-section.css";
+@import "./modules/_single-testimonial-section.css";
+@import "./modules/_benefit-section.css";
