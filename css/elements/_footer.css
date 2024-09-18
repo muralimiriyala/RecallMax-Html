@@ -1,13 +1,14 @@
 
 
 .site-footer{background-color: var(--Raisin-Black); color: var(--White); font-family: var(--base-font);}
-.footer{padding: 80px 0 80px;}
+.footer{padding: 75px 0 80px;}
+.footer-top{padding-bottom: 69px;}
 
 .footer-logo{max-width: 313px;}
 .footer-logo img{object-fit: contain;}
 
 
-.footer-desc{margin-bottom: 32px;}
+.footer-desc{margin-bottom: 32px; letter-spacing: -0.24px;}
 
 ul.footer-address{margin: 0; gap: 11px; flex-direction: column;}
 ul.footer-address > li{margin: 0;}
@@ -26,12 +27,11 @@ ul.footer-links li::before{display: none;}
 ul.footer-links li{margin: 0;}
 ul.footer-links li a{font-size: 16px; line-height: 16px;}
 
-.copyrights-main{padding: 72px 0 0; border-top: 1px solid var(--Accent);}
-.copyright-text{font-size:.75rem; line-height:1.25rem; color: var(--White-60); }
-ul.copyright-links {flex: 1; margin:0; gap: 0 20px; justify-content: flex-end;} 
-ul.copyright-links > li { margin:0; font-size:.75rem; line-height:1.25rem; letter-spacing:0 } 
-ul.copyright-links > li::before { display:none } 
-ul.copyright-links > li > a{ color: var(--White-60); }
+.copyrights-main{padding: 72px 0 0; font-size: 13px; line-height: 20px; border-top: 1px solid var(--Accent);}
+ul.copyright-links {flex: 1; margin:0; gap: 0 41px; justify-content: flex-end;} 
+ul.copyright-links > li { margin:0;} 
+ul.copyright-links > li::before {width: 1px; height: 20px; background-color: var(--Accent);} 
+ul.copyright-links > li > a{ color: var(--White); }
 ul.copyright-links>li.current-menu-item>a, ul.copyright-links>li>a:hover { color:var(--Orange) }
  
 /*-- media css starts here --*/
