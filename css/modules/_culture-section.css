@@ -10,3 +10,8 @@
     .culture-list-of-2{flex: 0 0 calc(50% - 24px);}
     .culture-list-of-1{flex: 1;}
 }
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .culture-list{width: 304px; margin-right: 25px;}
+    .culture-main .slick-list{overflow: inherit;}
+}
