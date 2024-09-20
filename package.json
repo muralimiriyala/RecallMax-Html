@@ -30,6 +30,7 @@
     "eslint-loader": "^4.0.2",
     "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-copy": "^1.0.0",
+    "jquery": "^3.7.1",
     "mini-css-extract-plugin": "^2.9.1",
     "pixrem": "^5.0.0",
     "postcss-inline-svg": "^6.0.0",
@@ -41,6 +42,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "css-minimizer-webpack-plugin": "^7.0.0"
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "file-loader": "^6.2.0",
+    "url-loader": "^4.1.1"
   }
 }
