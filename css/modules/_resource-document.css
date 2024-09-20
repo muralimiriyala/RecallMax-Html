@@ -1,7 +1,41 @@
 
+.resource-document-heading{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
+.resource-document-heading span.optional-text{margin-bottom: 17px;}
+
+.resource-document-desc h4{margin-bottom: 14px;}
+ul.resource-document-category{margin: 0 0 24px 0; gap: 8px;}
+ul.resource-document-category li{margin: 0; min-width: 112px; border-bottom: 4px solid var(--Accent); text-align: center; border-radius: 2px; opacity: 0.5;}
+ul.resource-document-category li::before{display: none;}
+ul.resource-document-category li a{font-size: 14px; line-height: 14px; letter-spacing: 1.4px; text-transform: uppercase; padding: 0 11.5px 8px; color: var(--Raisin-Black);}
+ul.resource-document-category li.active{opacity: 1; border-color: var(--Sky-Blue);}
+.resource-document-lists{gap: 24px;}
+.resource-document-item{gap: 24px; border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--White); padding: 16px;}
+.resource-document-title{flex: 1;}
+.resource-document-title h6{margin-bottom: 4px;}
+ul.resource-sub-category{margin: 0; gap: 8px;}
+ul.resource-sub-category > li{padding-right: 8px; margin: 0; font-size: 14px; line-height: 21px; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
+ul.resource-sub-category > li:before{display: none;}
+ul.resource-sub-category > li:first-child{padding-left: 0;}
+ul.resource-sub-category > li:last-child{padding-right: 0; border-right: 0;}
+.resource-document-btn{width: fit-content;}
 
 @media screen and (min-width: 1024px){
     .resource-document-main{padding: 90px 0; gap: 80px;}
-    .resource-document-title{flex: 0 0 352px}
+    .resource-document-heading{flex: 0 0 352px}
     .resource-document-desc{flex: 0 0 calc(100% - 432px);}
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+    .resource-document-main{padding: 90px 0; gap: 64px;}
+    .resource-document-heading{flex: 0 0 280px}
+    .resource-document-desc{flex: 0 0 calc(100% - 344px);}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .resource-document-main{padding: 40px 0; gap: 56px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .resource-document-main{padding: 40px 0; gap: 56px;}
+    .resource-document-item{flex-direction: column;}
+    .resource-document-btn{width: 100%;}
+    .resource-document-btn .button{width: 100%;}
 }
