@@ -2,6 +2,7 @@
 .careers-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); overflow: hidden;}
 .careers-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
 .careers-banner-text h1{color: var(--White);}
+.careers-banner-btn{gap: 12px; margin-top: 32px;}
 
 @media screen and (min-width: 1024px) {
     .careers-banner-main{padding: 80px 0;}
