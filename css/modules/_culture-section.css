@@ -1,5 +1,5 @@
 
-.culture-main{padding: 40px 0;}
+.culture-wrapper{padding: 40px 0;}
 .culture-list{font-size: 16px; line-height: 24px; color: var(--Gray-1);}
 .culture-icon{display: flex; margin-bottom: 16px;}
 .culture-list h5{color: var(--Coal); margin-bottom: 16px;}
@@ -11,10 +11,16 @@
     .culture-list-of-1{flex: 1;}
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .culture-main{flex: 100%; gap: 56px 48px;}
+    .culture-list{flex: 0 0 calc(50% - 24px);}
+}
+
 @media screen and (max-width: 767px) and (min-width: 200px){
     .culture-list-inner{width: 304px; margin-right: 25px;}
     .culture-main .slick-list{overflow: inherit;}
-    .culture-main-appends{margin: 24px 0 0; gap: 8px; align-items: center;}
+    .culture-main-appends{gap: 8px; align-items: center; margin: 48px 0 0;}
     .culture-main-appends div.slick-arrow.slick-next{order: 3;}
     .culture-main-appends ul.slick-dots{order: 2; flex: 1;}
+    
 }

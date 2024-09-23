@@ -33,4 +33,10 @@
     .benefit-desc{flex: 100%;}
     .benefit-title h3{margin-bottom: 0;}
     .benefit-lists{flex: 100%;}
+
+    .benefit-item-inner{width: 304px; margin-right: 25px;}
+    .benefit-lists .slick-list{overflow: inherit;}
+    .benefit-lists-appends{gap: 8px; align-items: center; margin: 48px 0 0;}
+    .benefit-lists-appends div.slick-arrow.slick-next{order: 3;}
+    .benefit-lists-appends ul.slick-dots{order: 2; flex: 1;}
 }
