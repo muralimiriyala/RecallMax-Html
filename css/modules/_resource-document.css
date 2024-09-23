@@ -19,6 +19,10 @@ ul.resource-sub-category > li:first-child{padding-left: 0;}
 ul.resource-sub-category > li:last-child{padding-right: 0; border-right: 0;}
 .resource-document-btn{width: fit-content;}
 
+.resource-search form > span{position: absolute; right: 15px; top: 19px; font-size: 14px;}
+.resource-document-filter{gap: 20px;}
+.resource-search, .resource-dropdown{flex:100%;}
+
 @media screen and (min-width: 1024px){
     .resource-document-main{padding: 90px 0; gap: 80px;}
     .resource-document-heading{flex: 0 0 352px}

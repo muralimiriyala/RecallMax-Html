@@ -20,7 +20,7 @@
     .culture-list-inner{width: 304px; margin-right: 25px;}
     .culture-main .slick-list{overflow: inherit;}
     .culture-main-appends{gap: 8px; align-items: center; margin: 48px 0 0;}
-    .culture-main-appends div.slick-arrow.slick-next{order: 3;}
+    .culture-main-appends button.slick-arrow.slick-next{order: 3;}
     .culture-main-appends ul.slick-dots{order: 2; flex: 1;}
     
 }
