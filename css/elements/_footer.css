@@ -87,3 +87,6 @@ ul.copyright-links>li.current-menu-item>a, ul.copyright-links>li>a:hover { color
     ul.copyright-links{ flex-direction: column;}
     ul.copyright-links > li::before { top: -16px; left: 0; right: 0; width: 20px; height: 2px; margin: auto; }
 }
+@media only screen and (max-width: 370px) and (min-width: 200px){
+    .footer-desc{font-size: 23px; line-height: 30px;}
+}
