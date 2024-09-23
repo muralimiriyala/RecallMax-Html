@@ -1,9 +1,10 @@
 import $ from 'jquery';
 import 'slick-carousel';
+// import 'slick-carousel/slick/slick.css';
 
 const customSlick = () => {
   const $ele = $('.culture-main');
-  function initializeSlider() {
+  function cultureMainSlider() {
     $ele.each(function () {
       const $cultureSlider = $(this);
       const postAppend = $(this).parent().children('.culture-main-appends');
@@ -29,8 +30,8 @@ const customSlick = () => {
       }
     });
   }
-  initializeSlider();
-  function destroySlider() {
+  cultureMainSlider();
+  function destroyCultureSlider() {
     $ele.each(function () {
       const $this = $(this);
       $(window).width() >= 768 && $this.hasClass('slick-initialized')
@@ -39,8 +40,8 @@ const customSlick = () => {
     });
   }
   window.onresize = function () {
-    destroySlider();
-    initializeSlider();
+    destroyCultureSlider();
+    cultureMainSlider();
   };
 
 
