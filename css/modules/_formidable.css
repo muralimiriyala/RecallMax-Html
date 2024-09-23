@@ -12,7 +12,7 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 body .white-popup-block .frm_forms h3.frm_form_title{display: none;}
 body .frm_forms .frm_form_fields fieldset{margin: 0; padding: 0; border: none;}
 body .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 24px; position: relative; clear: both;}
-body .frm_forms .frm_form_fields .frm_form_field.vertical_radio{margin-bottom: 28px;}
+body .frm_forms .frm_form_fields .frm_form_field.vertical_radio{margin-bottom: 24px;}
 body .become-partner-form .frm_forms .frm_form_fields .frm_form_field#frm_field_21_container{margin-bottom: 24px;}
 body .flyout-form-overlay .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 25px;}
 body .become-partner-form .frm_forms .frm_error_style{display: none;}
@@ -38,15 +38,19 @@ body .frm_forms .frm_form_fields .frm_form_field input::-webkit-input-placeholde
 body .frm_forms .frm_form_fields .frm_form_field input:-moz-placeholder, body .frm_forms .frm_form_fields .frm_form_field textarea:-moz-placeholder {color: var(--Indigo); font-family: var(--base-font);}
 body .frm_forms .frm_form_fields .frm_form_field input::-moz-placeholder, body .frm_forms .frm_form_fields .frm_form_field textarea::-moz-placeholder {color: var(--Indigo); font-family: var(--base-font); opacity: 1;}
 body .frm_forms .frm_form_fields .frm_form_field input:-ms-input-placeholder, body .frm_forms .frm_form_fields .frm_form_field textarea:-ms-input-placeholder {color: var(--Indigo); font-family: var(--base-font);}
-body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding-left: 36px; padding-bottom: 0; cursor: pointer; display: block; font-size: 1rem; line-height: 1.5rem; letter-spacing: normal; text-indent: 0; color: var(--Foreground); position: relative;}
-body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]{width: 16px; height: 16px; left: 0; padding: 0; cursor: pointer; position: absolute; margin: 0; border: none; border-radius: 50%; color: red; border: 1px solid var(--Card-Stroke); opacity: 1; background-color: var(--Raisin-Tint);}
+body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_label{display: flex; align-items: center; padding: 0;}
+body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_label .frm_required{font-size: 16px; line-height: 16px; font-weight: 700; color: var(--Indigo); font-family: var(--base-font);}
+body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding-left: 22px; padding-bottom: 0; cursor: pointer; display: block; font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: normal; text-indent: 0; color: var(--Raisin-Black); position: relative;}
+body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]{width: 16px; height: 16px; top: 4px; left: 0; padding: 0; cursor: pointer; position: absolute; margin: 0; border: none; border-radius: 50%; color: var(--Raisin-Black); border: 1px solid var(--Card-Stroke); opacity: 1; background-color: var(--Raisin-Tint);}
 
 body.page-template-marketing-lp .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding-left: 32px;}
 body.page-template-marketing-lp .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]{width: 24px; height: 24px;}
 
+body .frm_forms .frm_form_fields .frm_form_field textarea{min-height: 128px;}
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input{top: 12px; left: 8px; width: 20px; height: 20px; margin: 0; border-radius: 2px; background-color: transparent; background-image: none; border: solid 1px var(--foreground-light); background-color: var(--White); background-image: none;}
-body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]::before{display: none;}
+/* body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]::before{display: none;} */
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked{border-width: 8px;}
+body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked::before{content: ""; position: absolute; width: 8px; height: 8px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--Accent); border-radius: 50%;}
 
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field{margin: 0;}
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_checkbox::after{display: none;}
@@ -70,7 +74,7 @@ body .frm_forms form .frm_required_field div.frm_error{right: 0; bottom: -17px; 
 body .newsletter-signup .frm_forms form .frm_required_field div.frm_error{color: var(--White);}
 body .frm_success_style, body .with_frm_style .frm_message {font-size: 1.125rem; line-height: 1.625rem; letter-spacing: -.36px; font-weight: 400; font-family: Univers,sans-serif; color: var(--Foreground); background: none; padding: 0; text-align: left; border: none; border-radius: 0;}
 body .with_frm_style .frm_message p{color: var(--Foreground); letter-spacing: inherit;}
-body .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{margin-top: 8px; gap: 8px; display: flex; flex-wrap: wrap; width: 100%;}
+body .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{margin-top: 0; gap: 8px; display: flex; flex-wrap: wrap; width: 100%;}
 body .flyout-form-overlay .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{flex-direction: column;}
 body .frm_forms .frm_form_fields .vertical_radio .frm_checkbox{margin: 0; position: relative; display: inline-block;}
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .vertical_radio .frm_checkbox{margin: 0; position: relative; display: inline-block; padding: 0; background: none; border-radius: 0; border: none;}
@@ -159,7 +163,8 @@ body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertica
 @media only screen and (min-width: 1300px){
     
     /* body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: 0 0 calc(25% - 6px);} */
-    body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: none; width: fit-content;};
+    body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: none; width: fit-content; margin-left: 27px;}
+    body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio:nth-child(1){margin-left: 16px;}
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container .frm_checkbox{flex: 0 0 calc(25% - 6px);} 
 
     body .frm_forms .frm_form_fields .frm_form_field.frm_third{width: calc(33.33333% - 16px); margin-left: 9px; margin-right: 9px; float: none; clear: none; display: inline-block; vertical-align: top;}
