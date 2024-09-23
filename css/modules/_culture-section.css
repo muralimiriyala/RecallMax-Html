@@ -12,6 +12,9 @@
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .culture-list{width: 304px; margin-right: 25px;}
+    .culture-list-inner{width: 304px; margin-right: 25px;}
     .culture-main .slick-list{overflow: inherit;}
+    .culture-main-appends{margin: 24px 0 0; gap: 8px; align-items: center;}
+    .culture-main-appends div.slick-arrow.slick-next{order: 3;}
+    .culture-main-appends ul.slick-dots{order: 2; flex: 1;}
 }

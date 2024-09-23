@@ -1,0 +1,5 @@
+ul.customer-support-details{margin: 0; gap: 11px; flex-direction: column;}
+ul.customer-support-details > li{margin: 0;}
+ul.customer-support-details > li::before{display: none;}
+ul.customer-support-details > li > a{gap: 8px; font-size: 18px; line-height: 28px;}
+ul.customer-support-details > li > a:hover{color: var(--Accent);}
