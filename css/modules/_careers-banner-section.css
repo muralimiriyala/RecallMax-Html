@@ -34,4 +34,5 @@
     .careers-banner-text{font-size: 18px; line-height: 27px;}
     .careers-banner-text span.optional-text{margin-bottom: 24px;}
     .careers-banner-text hr.sm-line{margin: 24px 0;}
+    .careers-banner-btn .button{width: 100%;}
 }
