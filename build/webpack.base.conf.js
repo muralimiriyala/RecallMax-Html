@@ -70,21 +70,6 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: 'url-loader',
-      },
-      {
-        test: /\.(jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '../[path][name].[ext]',
-            },
-          },
-        ],
-      },
-      {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -93,11 +78,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  require('autoprefixer'),
-                  require('pixrem'),
-                  require('postcss-inline-svg'),
-                ],
+                plugins: [require('autoprefixer'), require('pixrem')],
               },
             },
           },
@@ -111,6 +92,14 @@ module.exports = {
         options: {
           emitWarning: true,
           formatter: require('eslint-friendly-formatter'),
+        },
+      },
+      {
+        // Add rule for handling images and SVGs
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[name][hash][ext]', // Save images to 'assets/' directory
         },
       },
     ],
