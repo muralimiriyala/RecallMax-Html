@@ -13,4 +13,4 @@ ul.selectbox-list li{padding: 0 0 15px; width: 100%; color: var(--Foreground); c
 ul.selectbox-list li:hover{color: var(--Indigo);}
 
 
-.selectbox-button{border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint); padding: 17px; display: block; line-height: 16px; font-size: 16px;  font-weight: 700; color: var(--Indigo);}
+.selectbox-button{border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint); padding: 17px; display: block; line-height: 16px; font-size: 16px;  font-weight: 700; color: var(--Indigo); cursor: pointer;}
