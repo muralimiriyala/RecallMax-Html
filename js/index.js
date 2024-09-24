@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
   selectBox.init();
 });
 
+let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
-  const scrolled = $(window).scrollTop();
+  scrolled = window.scrollY;
   Scroll.handle(scrolled);
   animations.handle(scrolled, Scroll.direction);
 });

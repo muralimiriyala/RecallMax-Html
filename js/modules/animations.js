@@ -65,7 +65,7 @@ const animations = {
       const animateType = $self.data('animate');
       const delay = Number($self.data('animation-delay') || 0);
       const offset = $(window).height() * 0.95;
-      console.log($self, 'text', direction, scrolled, 'dir11');
+      // console.log($self, 'text', direction, scrolled, 'dir11');
       if (
         direction === 'DOWN' &&
         scrolled >= selfOffset - offset &&
