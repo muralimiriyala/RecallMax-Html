@@ -28,6 +28,7 @@ body .frm_forms .frm_form_fields .frm_form_field .frm_primary_label span.label-i
 body .frm_forms .frm_form_fields .frm_form_field .frm_primary_label:empty{display: none;}
 body .frm_forms .frm_form_fields .frm_form_field .frm_primary_label span:not(.frm_required){margin-left: auto; float: right; font-weight: 500; font-family: var(--base-font); color: var(--Gray); font-size: 14px; line-height: 100%; bottom: -4px; position: relative;}
 body .frm_forms .frm_form_fields .frm_form_field input, body .frm_forms .frm_form_fields .frm_form_field textarea, input, select, textarea{outline: 0; width: 100%; font-size: 1rem; font-weight: 700; line-height: 100%; letter-spacing: 0; box-shadow: none; padding: 16px 17px 14px; vertical-align: middle; height: auto; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border: solid 1px var(--Card-Stroke);  color: var(--Indigo); border-radius: 8px; background: var(--Raisin-Tint); color: var(--Blue); font-family: var(--base-font); -webkit-appearance: none; opacity: 1;}
+.resource-search input{padding: 16px 40px 14px 17px;}
 body .bg-elevated .frm_forms .frm_form_fields .frm_form_field input, body .bg-elevated .frm_forms .frm_form_field textarea, body .bg-elevated .frm_forms .selectBox-dropdown{background-color: var(--White);}
 body .frm_forms .frm_form_fields .frm_form_field textarea{height: 154px;} 
 body .frm_forms .frm_form_fields .frm_form_field input:not([type="file"]):focus,

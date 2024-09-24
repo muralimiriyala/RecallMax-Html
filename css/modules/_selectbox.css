@@ -1,16 +1,30 @@
 
 
 .selectbox-cancel{display: none;}
+body .selectBox-dropdown{padding: 15px 39px 12px 16px; width: 100%; font-size: 16px; line-height: 16px; font-weight: 700; height: auto; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint); border-radius: 8px; color: var(--Indigo); font-family: var(--base-font); display: block; cursor: pointer; position: relative; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+body .selectBox-dropdown span.selectBox-label a{color: inherit;}
+body .selectBox-dropdown .selectBox-label{padding: 0; line-height: normal;}
+.selectBox-dropdown:focus{border-color: var(--Card-Stroke) !important;}
+body .selectBox-dropdown.selectBox-menuShowing{border-radius: 8px 8px 0 0;}
+body .selectBox-dropdown .selectBox-arrow{width: 15px; height: 10px; right: 16px; top: calc(50% + 1px); transform: translateY(-50%); position: absolute; background-image: url("../../images/down-arrow.svg"); background-repeat: no-repeat; background-size: contain;}
+body .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow{transform: translateY(-100%) rotate(180deg); top: calc(50% + 4px); }
 
-ul.selectbox-list{margin: 0; padding: 17px; top: 100%; left: 0; max-height: 213px; min-height: 1em; width: 100%; display: block; border-radius: 0 0 5px 5px; background-color: var( --White); border: 1px solid var(--White); position: absolute; z-index: 99999; white-space: nowrap; text-overflow: ellipsis; overflow: auto; box-shadow: 0 2px 2px #dadbdf; transition: all .5s ease;}
-ul.selectbox-list li.state-selected a{color: var(--Blue);}
-ul.selectbox-list li:last-child{padding-bottom: 0;}
-ul.selectbox-list li.selectBox-disabled{display: none;}
-ul.selectbox-list li{display: block; margin-bottom: 0; padding: 0; white-space: normal;}
-ul.selectbox-list li::before{display: none;}
-ul.selectbox-list li.frm-select-placeholder{display: none;}
-ul.selectbox-list li{padding: 0 0 15px; width: 100%; color: var(--Foreground); cursor: pointer; font-size: 16px; line-height: 16px; font-weight: 700; display: block; text-transform: none; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
-ul.selectbox-list li:hover{color: var(--Indigo);}
+ul.selectBox-dropdown-menu{margin: 0; padding: 0; top: 100%; left: 0; max-height: 213px; min-height: 1em; display: block; border-radius: 0 0 5px 5px; background-color: var( --White); border: 1px solid var(--White); position: absolute; z-index: 99999; white-space: nowrap; text-overflow: ellipsis; overflow: auto; box-shadow: 0 2px 2px #dadbdf;}
+ul.selectBox-dropdown-menu li.selectBox-selected a{color: var(--Blue);}
+ul.selectBox-dropdown-menu li:first-child{padding-top: 10px;}
+ul.selectBox-dropdown-menu li:last-child{padding-bottom: 10px;}
+ul.selectBox-dropdown-menu li.selectBox-disabled{display: none;}
+ul.selectBox-dropdown-menu li{display: block; margin-bottom: 0; padding: 0; white-space: normal;}
+ul.selectBox-dropdown-menu li::before{display: none;}
+ul.selectBox-dropdown-menu li.frm-select-placeholder{display: none;}
+ul.selectBox-dropdown-menu li a{padding: 8px 16px; width: 100%; color: var(--Raisin-Black); cursor: pointer; font-size: 16px; line-height: 16px; font-weight: 700; display: block; text-transform: none; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+ul.selectBox-dropdown-menu li:hover a{color: var(--Indigo); background-color: transparent;}
+ul.selectBox-dropdown-menu li:hover{background-color: transparent; }
 
 
 .selectbox-button{border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint); padding: 17px; display: block; line-height: 16px; font-size: 16px;  font-weight: 700; color: var(--Indigo); cursor: pointer;}
+
+
+@media only screen and (max-width: 743px) and (min-width: 200px){
+    ul.selectBox-dropdown-menu{max-width: 100%;}
+}
