@@ -41,6 +41,6 @@
     .benefit-lists-appends ul.slick-dots{order: 2; flex: 1;}
 }
 
-@media screen and (max-width: 374px) and (min-width: 200px){
+@media screen and (max-width: 350px) and (min-width: 200px){
     .benefit-item-inner{width: 250px; margin-right: 20px;}
 }
