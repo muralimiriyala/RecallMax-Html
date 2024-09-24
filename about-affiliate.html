@@ -307,7 +307,7 @@
                             <span class="fa-solid fa-magnifying-glass"></span>
                         </form>
                     </div>
-                    <div class="resource-dropdown selectBox-dropdown relative">
+                    <!-- <div class="resource-dropdown selectBox-dropdown relative"> -->
                         <select>
                             <option><a href="#">Optional Filter 1</a></option>
                             <option>Optional Filter 2</option>
@@ -316,8 +316,8 @@
                             <option>Optional Filter 5</option>
                             <option>Optional Filter 6</option>
                         </select>
-                        <span class="fa-solid fa-angle-down"></span>
-                    </div>
+                        <!-- <span class="fa-solid fa-angle-down"></span>
+                    </div> -->
                 </div>
             </div>
             <div class="resource-document-desc">
@@ -496,6 +496,21 @@
 </div>
 </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="dist/jquery.selectBox.js"></script>
 <script src="dist/core.bundle.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $('select').selectBox({
+      keepInViewport: false,
+      menuSpeed: 'normal',
+      mobile: true,
+      hideOnWindowScroll: true,
+      menuTransition: 'slide',
+    });
+    })
+</script>
 </body>
 </html>
