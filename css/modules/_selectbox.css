@@ -2,7 +2,6 @@
 
 .selectbox-cancel{display: none;}
 
-
 ul.selectbox-list{margin: 0; padding: 17px; top: 100%; left: 0; max-height: 213px; min-height: 1em; width: 100%; display: block; border-radius: 0 0 5px 5px; background-color: var( --White); border: 1px solid var(--White); position: absolute; z-index: 99999; white-space: nowrap; text-overflow: ellipsis; overflow: auto; box-shadow: 0 2px 2px #dadbdf; transition: all .5s ease;}
 ul.selectbox-list li.state-selected a{color: var(--Blue);}
 /* ul.selectbox-list li:first-child{padding-top: 10px;}
