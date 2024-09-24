@@ -22,7 +22,7 @@ ul.contact-form-category > li:last-child{padding-right: 0; border-right: 0;}
 .contact-form-full .contact-form-lt, .contact-form-full .contact-form-rt{flex: 1;}
 
 @media screen and (min-width: 1024px) {
-    .contact-form-main{margin: 80px 0;}
+    .contact-form-main{padding: 80px 0;}
     .contact-form-lt{flex: 0 0 480px; padding: 40px 80px 40px 40px;}
     .contact-form-rt{border-radius: 24px; flex: 0 0 calc(100% - 440px); padding: 48px; margin-left: -40px;}
 }
@@ -32,7 +32,7 @@ ul.contact-form-category > li:last-child{padding-right: 0; border-right: 0;}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    .contact-form-main{margin: 40px 0;}
+    .contact-form-main{padding: 40px 0;}
     .contact-form-lt{flex: 100%; padding: 32px 32px 80px; border-radius: 24px 24px 0px 0px;}
     .contact-form-lt .sm-line{margin: 24px 0;}
     .contact-form-call{margin-top: 24px;}
@@ -41,11 +41,12 @@ ul.contact-form-category > li:last-child{padding-right: 0; border-right: 0;}
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .contact-form-main{margin: 40px 0;}
+    .contact-form-main{padding: 40px 0;}
     .contact-form-lt{flex: 100%; padding: 24px 24px 80px; border-radius: 24px 24px 0px 0px;}
     .contact-form-lt .sm-line{margin: 24px 0;}
     .contact-form-call{margin-top: 24px;}
-    .contact-form-rt{flex: 100%; padding: 20px; margin-top: -40px;}
+    .contact-form-rt{flex: 100%; padding: 24px; margin-top: -40px;}
+    .contact-form-rt span.optional-text{margin-bottom: 24px;}
     .contact-form-item{flex-direction: column;}
     .contact-form-btn{width: 100%;}
     .contact-form-btn .button{width: 100%;}
