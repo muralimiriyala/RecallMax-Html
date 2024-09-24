@@ -1,17 +1,17 @@
 'use strict';
 
-import animations from './modules/animations';
+import Animations from './modules/animations';
 import Scroll from './modules/scroll';
-import stickyHeader from './modules/sticky';
-import scrollModule from './modules/pagescroll';
-import customSlick from './modules/custom-slick';
-import selectBox from './modules/select';
+import stickyHeader from './modules/stickyHeader';
+import scrollModule from './modules/pageScroll';
+import customSlick from './modules/customSlick';
+import selectBox from './modules/selectbox';
 
 document.addEventListener('DOMContentLoaded', function () {
-  animations.init();
+  Animations.init();
   stickyHeader.init();
-  scrollModule();
-  customSlick();
+  scrollModule.init();
+  customSlick.init();
   selectBox.init();
 });
 
@@ -19,5 +19,5 @@ let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
   scrolled = window.scrollY;
   Scroll.handle(scrolled);
-  animations.handle(scrolled, Scroll.direction);
+  Animations.handle(scrolled, Scroll.direction);
 });
