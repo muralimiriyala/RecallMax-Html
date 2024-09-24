@@ -1,15 +1,22 @@
 'use strict';
 
-import animation from './modules/animation';
+import animations from './modules/animations';
+import Scroll from './modules/scroll';
 import stickyHeader from './modules/sticky';
-import scrollModule from './modules/scroll';
+import scrollModule from './modules/pagescroll';
 import customSlick from './modules/custom-slick';
 import selectBox from './modules/select';
 
 document.addEventListener('DOMContentLoaded', function () {
-  animation.init();
+  animations.init();
   stickyHeader.init();
   scrollModule();
   customSlick();
   selectBox.init();
+});
+
+window.addEventListener('scroll', function () {
+  const scrolled = $(window).scrollTop();
+  Scroll.handle(scrolled);
+  animations.handle(scrolled, Scroll.direction);
 });
