@@ -1,6 +1,4 @@
 const animation = {
-  init() {
-    console.log(this, 'test anima');
-  },
+  init() {},
 };
 export default animation;
