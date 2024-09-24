@@ -16,3 +16,8 @@ ul.customer-support-details > li > a:hover{color: var(--Accent);}
     .customer-support-list-2{flex: 0 0 calc(50% - 20px);}
     .customer-support-list-1{flex: 1;}
 }
+
+@media screen and (max-width: 1023px) and (min-width: 200px){
+    .customer-support-main{gap: 56px; padding: 40px 0;}
+    .customer-support-list{flex: 100%;}
+}
