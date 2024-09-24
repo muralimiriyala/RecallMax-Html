@@ -3,11 +3,11 @@
 .resource-document-heading span.optional-text{margin-bottom: 17px;}
 
 .resource-document-desc h4{margin-bottom: 14px;}
-ul.resource-document-category{margin: 0 0 24px 0; gap: 8px;}
-ul.resource-document-category li{margin: 0; min-width: 112px; border-bottom: 4px solid var(--Accent); text-align: center; border-radius: 2px; opacity: 0.5;}
-ul.resource-document-category li::before{display: none;}
-ul.resource-document-category li a{font-size: 14px; line-height: 14px; letter-spacing: 1.4px; text-transform: uppercase; padding: 0 11.5px 8px; color: var(--Raisin-Black);}
-ul.resource-document-category li.active{opacity: 1; border-color: var(--Sky-Blue);}
+ul.filter-category{margin: 0 0 24px 0; gap: 8px;}
+ul.filter-category li{margin: 0; min-width: 112px; border-bottom: 4px solid var(--Accent); text-align: center; border-radius: 2px; opacity: 0.5;}
+ul.filter-category li::before{display: none;}
+ul.filter-category li a{font-size: 14px; line-height: 14px; letter-spacing: 1.4px; text-transform: uppercase; padding: 0 11.5px 8px; color: var(--Raisin-Black);}
+ul.filter-category li.active{opacity: 1; border-color: var(--Sky-Blue);}
 .resource-document-lists{gap: 24px;}
 .resource-document-item{gap: 24px; border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--White); padding: 16px;}
 .resource-document-title{flex: 1;}
