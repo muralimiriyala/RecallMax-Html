@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   stickyHeader.init();
   scrollModule.init();
   customSlick.init();
-  selectBox.init();
+  // selectBox.init();
 });
 
 let scrolled = window.scrollY;
