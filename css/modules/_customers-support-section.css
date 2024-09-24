@@ -17,7 +17,11 @@ ul.customer-support-details > li > a:hover{color: var(--Accent);}
     .customer-support-list-1{flex: 1;}
 }
 
-@media screen and (max-width: 1023px) and (min-width: 200px){
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .customer-support-main{gap: 40px; padding: 40px 0; justify-content: center;}
+    .customer-support-list{flex: 0 0 calc(50% - 20px);}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
     .customer-support-main{gap: 56px; padding: 40px 0;}
     .customer-support-list{flex: 100%;}
 }

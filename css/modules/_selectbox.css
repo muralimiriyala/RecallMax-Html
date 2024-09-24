@@ -4,15 +4,13 @@
 
 ul.selectbox-list{margin: 0; padding: 17px; top: 100%; left: 0; max-height: 213px; min-height: 1em; width: 100%; display: block; border-radius: 0 0 5px 5px; background-color: var( --White); border: 1px solid var(--White); position: absolute; z-index: 99999; white-space: nowrap; text-overflow: ellipsis; overflow: auto; box-shadow: 0 2px 2px #dadbdf; transition: all .5s ease;}
 ul.selectbox-list li.state-selected a{color: var(--Blue);}
-/* ul.selectbox-list li:first-child{padding-top: 10px;}
-ul.selectbox-list li:last-child{padding-bottom: 10px;} */
+ul.selectbox-list li:last-child{padding-bottom: 0;}
 ul.selectbox-list li.selectBox-disabled{display: none;}
 ul.selectbox-list li{display: block; margin-bottom: 0; padding: 0; white-space: normal;}
 ul.selectbox-list li::before{display: none;}
 ul.selectbox-list li.frm-select-placeholder{display: none;}
-ul.selectbox-list li{padding: 0 0 13px; width: 100%; color: var(--Foreground); cursor: pointer; font-size: 16px; line-height: 16px; font-weight: 700; display: block; text-transform: none; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
-ul.selectbox-list li:hover a{color: var(--Blue); background-color: transparent;}
-ul.selectbox-list li:hover{background-color: transparent; }
+ul.selectbox-list li{padding: 0 0 15px; width: 100%; color: var(--Foreground); cursor: pointer; font-size: 16px; line-height: 16px; font-weight: 700; display: block; text-transform: none; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+ul.selectbox-list li:hover{color: var(--Indigo);}
 
 
 .selectbox-button{border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint); padding: 17px; display: block; line-height: 16px; font-size: 16px;  font-weight: 700; color: var(--Indigo);}

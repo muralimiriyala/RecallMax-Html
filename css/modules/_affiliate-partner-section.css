@@ -2,7 +2,7 @@
 .affiliate-partner-lt{border-radius: 24px 0px 0px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White); }
 .affiliate-partner-lt .sm-line{margin: 36px 0; background-color: var(--Raisin-Black);}
 .affiliate-partner-lt h3{color: var(--White);}
-ul.affiliate-list{margin: 0;}
+ul.affiliate-list{margin: 0 0 0 28px;}
 ul.affiliate-list > li {position: relative;}
 ul.affiliate-list > li::before {background: url("../../images/checked-circle.svg"); width: 20px; height: 20px; background-size: contain; top: 3px; left: -28px; content: ""; position: absolute; }
 .affiliate-partner-call{gap: 8px; align-items: center; margin-top: 34px; width: fit-content;}
