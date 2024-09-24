@@ -4,7 +4,7 @@
 .affiliate-partner-lt h3{color: var(--White);}
 ul.affiliate-list{margin: 0;}
 ul.affiliate-list > li {position: relative;}
-ul.affiliate-list > li::before {border: 3px solid rgb(102, 183, 113); background: url("../../images/checked-circle.svg"); width: 20px; height: 20px; background-size: contain; top: 3px; left: -28px; content: ""; position: absolute; }
+ul.affiliate-list > li::before {background: url("../../images/checked-circle.svg"); width: 20px; height: 20px; background-size: contain; top: 3px; left: -28px; content: ""; position: absolute; }
 .affiliate-partner-call{gap: 8px; align-items: center; margin-top: 34px; width: fit-content;}
 .affiliate-partner-call:hover{color: var(--Raisin-Black);}
 .affiliate-partner-rt{border-radius: 24px; background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
