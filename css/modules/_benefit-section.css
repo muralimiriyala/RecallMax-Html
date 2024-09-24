@@ -40,3 +40,7 @@
     .benefit-lists-appends button.slick-arrow.slick-next{order: 3;}
     .benefit-lists-appends ul.slick-dots{order: 2; flex: 1;}
 }
+
+@media screen and (max-width: 374px) and (min-width: 200px){
+    .benefit-item-inner{width: 250px; margin-right: 20px;}
+}
