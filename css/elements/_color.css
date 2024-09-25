@@ -8,7 +8,10 @@
     --White: #ffffff;
     --body-text: #707372;
     --Raisin-Black: #302135;
+    --Dark: #2B2C2D;
     --Accent: #A4278F;
+    --Accent-2: #1EA4B5;
+    --Accent-3: #3BAFD3;
     --Purple: #5D2770;
     --Eggshell: #FEF3F2;
     --Gray-1: #343740;
@@ -18,4 +21,7 @@
     --Earthy-Blue: #1EA4B5;
     --Indigo: #19155E;
     --Sky-Blue: #00DAFF;
+    --Translucent: rgba(23, 125, 138, 0.20);
+    --Translucent-2: rgba(34, 124, 152, 0.20);
+    --Text: #227C98;
 }
