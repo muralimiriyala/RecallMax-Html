@@ -1,0 +1,21 @@
+
+.book-demo{gap: 24px;}
+.book-title h4{margin-bottom: 0;}
+.book-title h4 > span{position: relative; z-index: 1;}
+.book-title h4 > span::before{background: var(--Accent); border-radius: 4px; bottom: 0; content: ""; display: inline-block; height: 16px; opacity: .4; position: absolute; width: 100%; z-index: -1;}
+
+.addons-item{background: var(--White); border-radius: 40px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 32px 32px 0;}
+.addons-subtitle{gap: 12px; margin-bottom: 16px;}
+.addons-icon{flex: 0 0 40px;}
+.addons-text{flex: 0 0 calc(100% - 52px); font-size: 24px; line-height: 30px;}
+.addons-item h4{color: var(--Accent); margin-bottom: 16px;}
+.addons-item ul{margin-bottom: 0;}
+.addons-item ul > li{font-size: 20px; line-height: 30px; font-weight: 700; color: var(--Gray-1); margin-bottom: 4px;}
+.addons-item ul > li::before {background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; width: 20px; height: 20px; background-size: contain; top: 5px; left: -28px; content: ""; position: absolute; }
+.addons-thumb{margin-top: 32px;}
+
+@media screen and (min-width:1024px) {
+    .addons-main{gap: 40px; padding: 80px 0;}
+    .addons-lists{gap: 40px;}
+    .addons-item{flex: 1;}
+}
