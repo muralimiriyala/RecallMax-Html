@@ -3,8 +3,10 @@ const filterCategory = {
   $filterData: document.querySelectorAll('.filter-doc-row'),
   init() {
     const _ = this;
-    _.$eles[0].parentElement.classList.add('tab-open');
-    _.$filterData[0].style.display = 'block';
+    if (_.$eles.length > 0) {
+      _.$eles[0].parentElement.classList.add('tab-open');
+      _.$filterData[0].style.display = 'block';
+    }
 
     _.$eles.forEach(($ele) => {
       $ele.addEventListener('click', function (e) {
