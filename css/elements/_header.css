@@ -229,7 +229,7 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li > ul > li > a{color: var(--Blue); font-family: var(--base-font); font-size: 1rem; font-weight: 600; line-height: 1.5rem; display: block; position: relative;}
     ul.main_menu > li > ul > li.current_page_item > a{color: var(--Orange);}
     ul.main_menu > li > ul > li.current_page_item > a:hover{color: var(--Blue);}
-    ul.main_menu > li > ul > li.menu-item-has-children > a::after{top: calc(50% + 1px); transform: translateY(-50%); right: 0; width: 15px; height: 9px; background-image: url("./images/caret-down.svg"); background-repeat: no-repeat; content: ""; display: block; position: absolute;}
+    ul.main_menu > li > ul > li.menu-item-has-children > a::after{top: calc(50% + 1px); transform: translateY(-50%); right: 0; width: 15px; height: 9px; background-repeat: no-repeat; content: ""; display: block; position: absolute;}
     ul.main_menu > li > ul > li.menu-item-has-children > a.active::after{transform: translateY(-50%) scaleY(-1);}
     ul.main_menu > li > ul > li > ul{margin: 0; padding: 0 0 8px;}
     ul.main_menu > li > ul > li > ul > li{margin-bottom: 12px;}
@@ -245,7 +245,7 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li.nav-services > ul > li > ul > li{margin: 0 0 20px;}
     ul.main_menu > li.nav-services > ul > li > ul > li > a{gap: 13px; display: flex; align-items: center; flex-wrap: wrap; padding: 0; color: var(--Blue); font-family: var(--base-font); font-size: 1rem; font-weight: 600; line-height: 1.5rem; position: relative; }
     ul.main_menu > li.nav-services > ul > li > ul > li > a:hover{color: var(--Orange);}
-    ul.main_menu > li.nav-services > ul > li > ul > li.menu-item-has-children > a::after{top: calc(50% + 2px); transform: translateY(-50%); right: 0; width: 15px; height: 9px; background-image: url("./images/caret-down.svg"); background-repeat: no-repeat; content: ""; display: block; position: absolute;}
+    ul.main_menu > li.nav-services > ul > li > ul > li.menu-item-has-children > a::after{top: calc(50% + 2px); transform: translateY(-50%); right: 0; width: 15px; height: 9px;background-repeat: no-repeat; content: ""; display: block; position: absolute;}
     ul.main_menu > li.nav-services > ul > li > ul > li.menu-item-has-children > a.active::after{transform: translateY(-50%) scaleY(-1);}
     ul.main_menu > li.nav-services > ul > li > a img.menu-image{padding: 0; width: 24px; height: auto;}
     ul.main_menu > li.nav-services > ul > li > a span.menu-image-title-after{padding: 0;}
