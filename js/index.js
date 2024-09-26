@@ -6,6 +6,7 @@ import Scroll from './modules/scroll';
 import stickyHeader from './modules/stickyHeader';
 import scrollModule from './modules/pageScroll';
 import customSlick from './modules/customSlick';
+import filterCategory from './modules/filterCategory';
 
 document.addEventListener('DOMContentLoaded', function () {
   Animations.init();
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   scrollModule.init();
   customSlick.init();
   selectBox.init();
+  filterCategory.init();
 });
 
 let scrolled = window.scrollY;
