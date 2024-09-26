@@ -1,24 +1,25 @@
 
-.faqs-lt{border-radius: 24px 0px 0px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
+.faqs-lt{border-radius: 0 24px 24px 0; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
 .faqs-lt .sm-line{margin: 36px 0; background-color: var(--Raisin-Black);}
 .faqs-lt h3{color: var(--White);}
 .faqs-call{gap: 8px; align-items: center; margin-top: 34px; width: fit-content;}
 .faqs-call:hover{color: var(--Raisin-Black);}
 .faqs-rt{border-radius: 24px; background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .faqs-rt span.optional-text{margin-bottom: 40px;}
+.faqs-rt .accordion-main{padding: 0;}
 
 
 .faqs-full .faqs-lt, .faqs-full .faqs-rt{flex: 1;}
 
 @media screen and (min-width: 1024px) {
-    .faqs-main{margin: 80px 0;}
-    .faqs-lt{flex: 0 0 480px; padding: 40px 80px 40px 40px;}
-    .faqs-rt{border-radius: 24px; flex: 0 0 calc(100% - 440px); padding: 48px; margin-left: -40px;}
+    .faqs-main{margin: 80px 0; flex-direction: row-reverse;}
+    .faqs-lt{flex: 0 0 480px; padding: 40px 40px 40px 80px; margin-left: -40px;}
+    .faqs-rt{border-radius: 24px; flex: 0 0 calc(100% - 440px); padding: 48px;}
 }
 
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
-    .faqs-lt{flex: 0 0 400px;}
-    .faqs-rt{border-radius: 24px; flex: 0 0 calc(100% - 360px); padding: 32px;}
+    .faqs-lt{flex: 0 0 424px;}
+    .faqs-rt{border-radius: 24px; flex: 0 0 calc(100% - 384px);}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {

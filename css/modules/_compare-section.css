@@ -14,3 +14,9 @@
 .compare-main:hover .compare-images{max-width: 328px;}
 .compare-main:hover .compare-left{margin-right: -8px;}
 .compare-main:hover .compare-right{margin-left: -8px;}
+
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .compare-main{padding: 0 10px;}
+    .compare-main h4{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+}
