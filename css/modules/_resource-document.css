@@ -5,58 +5,13 @@
 ul.filter-category{margin: 0 0 24px 0; gap: 8px;}
 ul.filter-category li{margin: 0;}
 ul.filter-category li::before{display: none;}
-<<<<<<< HEAD
-ul.filter-category li a{min-width: 112px; display: block; text-align: center; font-size: 14px; line-height: 14px; letter-spacing: 1.4px; text-transform: uppercase; padding: 0 11.5px 8px; color: var(--Raisin-Black);
-
-position: relative;
-z-index: 0;
-opacity: 0.5;
-}
-
-ul.filter-category li a::before,
-ul.filter-category li a::after{
-    content: "";
-    display: block;
-    height: 4px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -2;
-  transform-origin: right center;
-  transition: width 1.2s cubic-bezier(.19,1,.22,1);
-  border-radius: 2px;
-}
-ul.filter-category li a::before {
-	background: var(--Sky-Blue);
-	width: 0px;
-    right: 0;
-    margin: auto;
-    z-index: -1;
-}
-ul.filter-category li a::after {
-	width: 100%;
-	background: var(--Accent);
-}
-ul.filter-category li.tab-open a,
-ul.filter-category li a:hover {
-	opacity: 1;
-}
-ul.filter-category li.tab-open a::before{
-	width: 100%;
-
-}
-ul.filter-category li a:hover::before {
-	width: 100%;
-}
-=======
 ul.filter-category li a{min-width: 112px; display: block; text-align: center; font-size: 14px; line-height: 14px; letter-spacing: 1.4px; text-transform: uppercase; padding: 0 11.5px 8px; color: var(--Raisin-Black); position: relative; z-index: 0; opacity: 0.5; }
-ul.filter-category li a::before, ul.filter-category li a::after{ content: ""; display: block; height: 4px; position: absolute; bottom: 0; left: 0; z-index: -2; transform-origin: right center; transition: width 1.2s cubic-bezier(.19,1,.22,1); }
-ul.filter-category li a::before { background: var(--Sky-Blue); width: 0px; right: 0; margin: auto; z-index: -1; }
+ul.filter-category li a::before, ul.filter-category li a::after{ content: ""; display: block; height: 4px; position: absolute; bottom: 0; left: 0; z-index: -2; transform-origin: right center; transition: width 1.2s cubic-bezier(.19,1,.22,1); border-radius: 2px;}
+ul.filter-category li a::before { background: var(--Sky-Blue); width: 0px; right: 0; margin: auto; z-index: -1; border-radius: 2px;}
 ul.filter-category li a::after { width: 100%; background: var(--Accent); }
 ul.filter-category li.tab-open a, ul.filter-category li a:hover { opacity: 1; }
 ul.filter-category li.tab-open a::before{ width: 100%; }
 ul.filter-category li a:hover::before { width: 100%; }
->>>>>>> 94edd429d8b5ad9c96d7251cf15770c90187998c
 
 .filter-doc-row{display: none;}
 .filter-doc-lists{gap: 24px; flex-direction: column;}
