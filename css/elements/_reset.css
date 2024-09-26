@@ -83,7 +83,7 @@ hr.sm-line{background-color: var(--Accent); height: 2px; border-radius: 1px; mar
 
 /* Buttons */
 .button, button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 15px 24px; font-size: 18px; font-weight: 700; line-height: 100%; font-family: var(--base-font); display: inline-block; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent); color: var(--White); border: none; border-radius: 28px; cursor: pointer; vertical-align: middle; text-decoration: none; text-transform: none; text-align: center; outline: 0; position: relative; -webkit-writing-mode: horizontal-tb; -ms-writing-mode: horizontal-tb; writing-mode: horizontal-tb; text-orientation: mixed; box-shadow: none; transition: var(--b-transition); z-index: 1; margin: 0;  transition: all .5s ease;}
-.button:hover, button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{ background: linear-gradient(0deg,rgba(18,39,80,0) 0,rgba(18,39,80,.5) 60%),var(--Accent); color: var(--White);}
+.button:hover, button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); border-radius: 16px; color: var(--White);}
 
 .button.btn-transparent{padding: 12px 13px 12px 12px; border-radius: 24px; border: 4px solid var(--Orange); background: transparent;}
 .button.btn-transparent:hover{background: var(--Orange); border-color: var(--Orange);}
