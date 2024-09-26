@@ -7,8 +7,11 @@
 .optional-repeater-text hr.sm-line{margin: 24px 0;}
 
 @media screen and (min-width: 1024px) {
-    .optional-repeater-main{padding: 80px 0;}
-    body.page-template-about-careers .optional-repeater-main{padding: 40px 0;}
+    .optional-repeater-main{padding: 40px 0;}
+    body.page-template-about-careers .optional-repeater-section:nth-child(3) .optional-repeater-main{padding: 80px 0 40px;}
+    body.page-template-about-careers .optional-repeater-section:nth-child(7) .optional-repeater-main{padding: 40px 0 80px;}
+    body.page-template-about-affiliate .optional-repeater-section:nth-child(2) .optional-repeater-main{padding: 80px 0 40px;}
+    body.page-template-about-affiliate .optional-repeater-section:nth-child(4) .optional-repeater-main{padding: 40px 0 80px;}
     .reverse{flex-direction: row-reverse;}
     .optional-repeater-list{gap: 80px; margin-bottom: 40px;}
     .optional-repeater-list:last-child{margin-bottom: 0;}

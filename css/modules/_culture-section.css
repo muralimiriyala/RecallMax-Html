@@ -1,8 +1,10 @@
 
 .culture-wrapper{padding: 40px 0;}
 .culture-list{font-size: 16px; line-height: 24px; color: var(--Gray-1);}
-.culture-icon{display: flex; margin-bottom: 16px;}
+.culture-icon{display: flex; margin-bottom: 16px; width: 40px;}
 .culture-list h5{color: var(--Coal); margin-bottom: 16px;}
+.culture-list h5 a{color: var(--Coal);}
+.culture-list h5 a:hover{color: var(--Accent);}
 
 @media screen and (min-width: 1024px){
     .culture-main{gap: 48px;}
