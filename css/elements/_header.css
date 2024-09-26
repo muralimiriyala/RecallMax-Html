@@ -56,7 +56,7 @@ li.hide-li-text > a{display: none !important;}
 @media screen and (max-width: 1199px) and (min-width: 1024px){
 
 }
-@media screen and (max-width: 1023px) and (min-width: 740px){
+@media screen and (max-width: 1023px) and (min-width: 768px){
 }
 @media screen and (max-width: 1023px) and (min-width: 200px){
     .header{padding: 14px 0 14px; gap: 16px; position: relative; z-index: 2;}
@@ -73,7 +73,7 @@ li.hide-li-text > a{display: none !important;}
     .humburger-btn.open span:nth-child(2) { transform: scale(0); }
     .humburger-btn.open span:nth-child(3) {top: 24px; transform:rotate(-45deg) }
 
-    .header_right{padding: 0; top: 100%; transform: translateX(100%); left: -40px; width: 100vw; height: auto; position: fixed; transition: transform 0.5s ease;}
+    .header_right{padding: 0; top: 100%; transform: translateX(100%); left: -40px; width: 100vw; height: auto; position: absolute; transition: transform 0.5s ease;}
     .header_right.open{transform: translateX(0);}
     
     ul.main_menu{margin: 0; display: block;background-color: var(--White); border-radius: 0 0 24px 24px; }
@@ -101,8 +101,8 @@ li.hide-li-text > a{display: none !important;}
 
   
 }
-@media screen and (max-width: 743px) and (min-width: 200px){
-
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .header_right{left: -20px;}
 }
 @media screen and (max-width: 370px) and (min-width: 200px){
 
