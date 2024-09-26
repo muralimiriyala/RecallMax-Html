@@ -2,7 +2,6 @@
 .resource-document-heading{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
 .resource-document-heading span.optional-text{margin-bottom: 17px;}
 
-.resource-document-desc h4{margin-bottom: 14px;}
 ul.filter-category{margin: 0 0 24px 0; gap: 8px;}
 ul.filter-category li{margin: 0;}
 ul.filter-category li::before{display: none;}
@@ -24,6 +23,7 @@ ul.filter-category li a::after{
     z-index: -2;
   transform-origin: right center;
   transition: width 1.2s cubic-bezier(.19,1,.22,1);
+  border-radius: 2px;
 }
 ul.filter-category li a::before {
 	background: var(--Sky-Blue);

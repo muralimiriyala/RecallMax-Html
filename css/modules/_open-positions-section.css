@@ -10,6 +10,8 @@
 .open-positions-item{gap: 24px; border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint); padding: 16px;}
 .open-positions-title{flex: 1;}
 .open-positions-title h6{margin-bottom: 4px;}
+.open-positions-title h6 a{color: var(--Raisin-Black);}
+.open-positions-title h6 a:hover{color: var(--Accent);}
 ul.open-positions-category{margin: 0; gap: 8px;}
 ul.open-positions-category > li{padding-right: 8px; margin: 0; font-size: 14px; line-height: 21px; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
 ul.open-positions-category > li:before{display: none;}
