@@ -7,7 +7,8 @@ import Menu from './modules/menu';
 // import scrollModule from './modules/pageScroll';
 import customSlick from './modules/customSlick';
 import filterCategory from './modules/filterCategory';
-import accordion from './modules/accordion';
+import uiAccordion from './modules/accordion';
+import teamPage from './modules/team';
 
 document.addEventListener('DOMContentLoaded', function () {
   Animations.init();
@@ -16,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
   customSlick.init();
   selectBox.init();
   filterCategory.init();
-  accordion.init();
+  uiAccordion.init();
+  teamPage.init();
 });
 
 let scrolled = window.scrollY;
