@@ -1,0 +1,22 @@
+
+
+.maxassit-intro{text-align: center; width: 100%;}
+.maxassit-intro h2{font-size: 48px; line-height: 60px; letter-spacing: -0.48px; color: var(--Accent); margin-bottom: 8px;}
+
+.maxassit-card-item{background: var(--White); border: 1px solid var(--Card-Stroke); border-radius: 16px; color: var(--Gray-2); font-size: 16px; line-height: 24px; padding: 20px 16px; transition: all .5s ease; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
+.maxassit-card-icon{margin-bottom: 8px; width: 22px;}
+.maxassit-card-icon svg{width: 22px;}
+.maxassit-card-item h5{margin-bottom: 8px;}
+.maxassit-card-item p{margin-bottom: 0;}
+
+.maxassit-image{padding: 8px; background: var(--White); border-radius: 16px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
+.maxassit-thumb img{border-radius: 10px;}
+
+@media screen and (min-width: 1024px) {
+    .maxassit-main{gap: 48px; padding: 80px 0;}
+    .maxassit-main .book-demo-btn{margin: 0 auto;}
+    .maxassit-grid{gap: 32px;}
+    .maxassit-card{flex: 0 0 308px;}
+    .maxassit-card-item{flex: 100%;}
+    .maxassit-image{flex: 1;}
+}
