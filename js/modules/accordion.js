@@ -25,7 +25,6 @@ const uiAccordion = {
                 }
               }
             });
-
             // Open the clicked one
             el.dataset.open = 'true';
             header.classList.add('open');

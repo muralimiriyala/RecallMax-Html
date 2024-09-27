@@ -7,7 +7,7 @@ const teamPage = {
     const updateHeights = () => {
       tabTexts.forEach(function (tabText) {
         const initialHeight =
-          tabText.querySelector('.tab-head').offsetHeight + 56;
+          tabText.querySelector('.tab-head').offsetHeight + 41;
         tabText.style.height = `${initialHeight}px`;
         tabText.dataset.initialHeight = initialHeight;
 
@@ -44,7 +44,7 @@ const teamPage = {
             });
             tabText.dataset.tab = 'true';
             tabText.classList.add('tab-open');
-            tabText.style.height = `100%`;
+            tabText.style.height = `calc(100% - 8px)`;
             const desc = tabText.querySelector('.tab-desc');
             if (desc) {
               desc.style.maxHeight = `${desc.scrollHeight}px`;

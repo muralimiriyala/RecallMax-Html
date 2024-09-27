@@ -19,10 +19,10 @@ ul.tab-links > li > a.active span.close-icon{display: block;}
 
 .tab-arrow{flex: 0 0 24px;  transform: translate(0,0); transition: all 0.5s ease;  color: var(--Orange); cursor: pointer;} 
 .tab-image{height: 100%;}
-.tab-text{min-height: 102px; cursor: pointer; transition: all 0.5s ease; background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(4px); color: var(--White); bottom: 4px; width: calc(100% - 8px); left: 4px; padding:  24px 24px 20px; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;}
+.tab-text{min-height: 98px; cursor: pointer; transition: all 0.5s ease; background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(4px); color: var(--White); bottom: 4px; width: calc(100% - 8px); left: 4px; padding: 24px; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;}
 .tab-text::-webkit-scrollbar { display: none; }
   
-.tab-text.tab-open{height: calc(100% - 8px); bottom: 0; cursor: inherit; background: var(--Raisin-Tint-2); backdrop-filter: blur(4px);}
+.tab-text.tab-open{height: calc(100% - 8px); bottom: 4px; cursor: inherit; background: var(--Raisin-Tint-2); backdrop-filter: blur(4px);}
 .tab-text.tab-open .tab-title h2, .tab-text.tab-open .tab-title h2 a{color: var(--White);}
 .tab-text.tab-open .tab-title span{color: var(--Sky-Blue);}
 
@@ -37,7 +37,7 @@ ul.tab-links > li > a.active span.close-icon{display: block;}
 .tab-text span{font-size: 16px; color: var(--Accent); line-height: 24px;}
 .tab-image img{border-radius: 24px;}
 
-.tab-desc{max-height: 0; overflow: hidden; margin-top: 12px;}
+.tab-desc{max-height: 0; overflow: hidden;}
 
 ul.tab-address{margin: 26px 0 23px; gap: 19px; flex-direction: column;}
 ul.tab-address > li{margin: 0;}
