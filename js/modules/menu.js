@@ -5,7 +5,11 @@ const Menu = {
   $links: document.querySelectorAll(
     'ul.main_menu > li.menu-item-has-children > a'
   ),
+  $hoverlink: document.querySelectorAll(
+    'ul.main_menu > li.menu-item-has-children'
+  ),
   $overlay: document.querySelector('.header-overlay'),
+  $moverlay: document.querySelector('.h-mob-overlay'),
   init() {
     const _ = this;
     // const $siteHeight = header.clientHeight;
@@ -23,7 +27,7 @@ const Menu = {
       const _$ = this;
       _$.classList.toggle('open');
       _.$nav.classList.toggle('open');
-      _.$overlay.classList.toggle('active');
+      _.$moverlay.classList.toggle('open');
     };
     if (!_.$btn) return false;
     _.$btn.addEventListener('click', humburger);
@@ -32,17 +36,21 @@ const Menu = {
       e.preventDefault();
       const _$ = this;
       _$.classList.toggle('active');
+      _$.parentElement.classList.remove('sib');
+      const $li = _$.parentElement;
       _.$links.forEach(($item) => {
-        if ($item !== _$) {
+        if ($item !== _$ && $item !== $li) {
           $item.parentElement.querySelector('ul.sub-menu').style.maxHeight =
             '0';
           $item.classList.remove('active');
+          const $lis = _$.parentElement.parentElement.children;
+          for (let lis of $lis) {
+            lis.classList.toggle('sib');
+          }
         }
       });
+      $li.classList.remove('sib');
       let $submenu = _$.parentElement.querySelector('ul.sub-menu');
-      console.log(
-        $submenu.style.maxHeight && $submenu.style.maxHeight !== '0px'
-      );
       $submenu.style.maxHeight && $submenu.style.maxHeight !== '0px'
         ? ($submenu.style.maxHeight = '0')
         : ($submenu.style.maxHeight = `${$submenu.scrollHeight}px`);
@@ -58,6 +66,10 @@ const Menu = {
       $link.addEventListener('click', menu);
       $link.addEventListener('mouseover', onMouse);
       $link.addEventListener('mouseleave', offMouse);
+    });
+    _.$hoverlink.forEach(($hoverli) => {
+      $hoverli.addEventListener('mouseover', onMouse);
+      $hoverli.addEventListener('mouseleave', offMouse);
     });
   },
 };
