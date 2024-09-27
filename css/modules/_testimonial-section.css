@@ -1,6 +1,6 @@
 
 .testimonial-main{border-radius: 40px; background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 48px;}
-.testimonial-title{margin-bottom: 40px; order: 1;}
+.testimonial-title{margin-bottom: 40px;}
 .testimonial-title span.optional-text{margin-bottom: 8px;}
 .testimonial-title h3{margin-bottom: 0;}
 
@@ -24,6 +24,7 @@
 
 @media screen and (min-width: 1024px) {
     .testimonial-main{padding: 48px; justify-content: space-between; align-items: center; margin: 80px 0;}
+    .testimonial-title{order: 1;}
     .testimonial-lists{flex: 100%; order: 3; gap: 20px;}
     .testimonial-item{gap: 34px; flex: 0 0 168px;}
     .testimonial-thumb{flex: 0 0 160px;}
@@ -41,5 +42,23 @@
 }
 @media screen and (max-width: 1279px)  and (min-width: 1024px){
 
+}
+
+@media screen and (max-width: 767px)  and (min-width: 200px){
+    .testimonial-main{margin: 40px 0; padding: 20px; border-radius: 24px;}
+    .testimonial-title{margin-bottom: 20px; text-align: center; width: 100%;}
+    .testimonial-title span.optional-text{letter-spacing: 1.12px;}
+    .testimonial-title h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+
+    .testimonial-thumb{width: 62px;}
+    .testimonial-thumb img{width: 62px; height: 64px;}
+    .testimonial-quote-icon{width: 30px; left: 50%; transform: translateX(-50%); right: auto; top: auto; bottom: -25px;}
+    .testimonial-quote-icon svg{width: 30px;}
+    .testimonial-content{font-size: 16px; line-height: 24px; padding: 16px 13px 20px;}
+
+    .testimonial-review{min-width: 246px; margin: 20px auto 0; padding: 6px 8px 6px 20px;}
+    .rating{flex: 0 0 62px;}
+    .reviews{flex: 0 0 64px; margin-left: 24px;}
+    .reviews::before{left: -12px;}
 }
 

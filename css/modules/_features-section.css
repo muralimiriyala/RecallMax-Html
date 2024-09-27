@@ -21,3 +21,22 @@
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
     .features-item{flex: 0 0 calc(33.333% - 24px);}
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .features-main{padding: 40px 0;}
+    .features-heading{margin-bottom: 44px;}
+    .features-lists{gap: 28px 24px; margin-bottom: 32px;}
+    .features-item{flex: 0 0 calc(50% - 24px);}
+}
+@media screen and (min-width: 768px) {
+    .features-lists-appends{display: none;}
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .features-main{padding: 40px 0; gap: 32px;}
+    .features-item{max-width: 304px; margin: 0 10px;}
+    .features-lists .slick-list{overflow: inherit;}
+    .features-lists-appends{gap: 8px; align-items: center;}
+    .features-lists-appends button.slick-arrow.slick-next{order: 3;}
+    .features-lists-appends ul.slick-dots{order: 2; flex: 1;}
+}

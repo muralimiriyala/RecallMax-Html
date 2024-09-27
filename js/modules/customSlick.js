@@ -82,12 +82,56 @@ const customSlick = {
       });
     }
 
+    const $features = $('.features-lists');
+    function featuresinitSlider() {
+      $features.each(function () {
+        const $featuresSlider = $(this);
+        const featuresAppend = $(this)
+          .parent()
+          .children('.features-lists-appends');
+        if (window.matchMedia('(max-width: 767px)').matches) {
+          if (!$featuresSlider.hasClass('slick-initialized')) {
+            $featuresSlider.slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              prevArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
+              nextArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
+              dots: true,
+              speed: 1000,
+              infinite: false,
+              autoplay: false,
+              variableWidth: true,
+              centerMode: true,
+              // centerPadding:'80px',
+              appendArrows: featuresAppend,
+              appendDots: featuresAppend,
+            });
+          }
+        }
+      });
+    }
+    featuresinitSlider();
+    function featuresdestroySlider() {
+      $benefit.each(function () {
+        const $this = $(this);
+        $(window).width() >= 768 && $this.hasClass('slick-initialized')
+          ? $this.slick('unslick')
+          : '';
+      });
+    }
+
     window.onresize = function () {
       culturedestroySlider();
       cultureinitSlider();
 
       benefitdestroySlider();
       benefitinitSlider();
+
+      featuresdestroySlider();
+      featuresinitSlider();
     };
   },
 };
