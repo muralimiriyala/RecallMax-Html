@@ -91,6 +91,8 @@ hr.sm-line{background-color: var(--Accent); height: 2px; border-radius: 1px; mar
 .button.btn-white{background: var(--White); color: var(--Accent);}
 .button.btn-white:hover{background: var(--Accent); color: var(--White);}
 
+.button.btn-sm{padding: 12px 17px 12px; font-size: 1rem;}
+
 span.text-link{gap: 8px; font-size: 16px; line-height: 24px; font-family: var(--base-font);}
 span.text-link i{top: 3px; left: 0; position: relative; color: var(--Light-Blue); font-size: 20px; line-height: 20px; overflow: hidden;}
 span.text-link.white{color: var(--White);}
