@@ -7,6 +7,7 @@ import Menu from './modules/menu';
 // import scrollModule from './modules/pageScroll';
 import customSlick from './modules/customSlick';
 import filterCategory from './modules/filterCategory';
+import accordion from './modules/accordion';
 
 document.addEventListener('DOMContentLoaded', function () {
   Animations.init();
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   customSlick.init();
   selectBox.init();
   filterCategory.init();
+  accordion.init();
 });
 
 let scrolled = window.scrollY;

@@ -13,9 +13,31 @@
 .addons-item ul > li{font-size: 20px; line-height: 30px; font-weight: 700; color: var(--Gray-1); margin-bottom: 4px;}
 .addons-item ul > li::before {background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; width: 20px; height: 20px; background-size: contain; top: 5px; left: -28px; content: ""; position: absolute; }
 .addons-thumb{margin-top: 32px;}
+.addons-thumb img{border-radius: 10px 10px 0px 0px;}
 
 @media screen and (min-width:1024px) {
     .addons-main{gap: 40px; padding: 80px 0;}
     .addons-lists{gap: 40px;}
     .addons-item{flex: 1;}
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .book-demo{flex-direction: column;}
+
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .addons-main{gap: 40px; padding: 40px 0;}
+    .book-demo{flex-direction: column; text-align: center;}
+    .addons-lists{gap: 32px;}
+    .addons-item{flex: 100%; padding: 32px 32px 0; border-radius: 32px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .addons-main{gap: 40px; padding: 40px 0;}
+    .book-demo{flex-direction: column; text-align: center;}
+    .addons-lists{gap: 32px;}
+    .addons-item{flex: 100%; padding: 24px 24px 0; border-radius: 24px;}
+    .addons-item h4{margin-bottom: 16px; font-size: 24px; line-height: 30px;}
+    .addons-item ul > li{font-size: 16px; line-height: 24px;}
+    .addons-item ul > li::before{top: 1px;}
+    .addons-thumb img{border-radius: 8px 8px 0px 0px;}
 }

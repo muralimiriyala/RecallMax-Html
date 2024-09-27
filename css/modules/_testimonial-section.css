@@ -14,14 +14,22 @@
 .open .testimonial-quote-icon{display: block;}
 .open .testimonial-content{display: block;}
 
-
+.testimonial-review{border-radius: 40px; border: 2px solid var(--Orange); background: var(--White, #FFF); padding: 8px 8px 8px 20px; min-width: 410px; width: fit-content; align-items: center;}
+.rating{flex: 0 0 127px; gap: 8px;}
+.reviews{flex: 0 0 147px; gap: 8px; margin-left: 40px; position: relative;}
+.reviews::before{content: ""; position: absolute; width: 2px; height: 100%; background: rgba(255, 73, 44, 0.25); border-radius: 1px; top: 0; left: -20px;}
+.star-icon,.review-icon{width: 24px; height: 24px;}
+.rating-value, .review-value{font-size: 20px; line-height: 30px;}
+.g2-logo{width: 48px; margin-left: 16px;}
 
 @media screen and (min-width: 1024px) {
-    .testimonial-main{padding: 48px;}
+    .testimonial-main{padding: 48px; justify-content: space-between; align-items: center; margin: 80px 0;}
+    .testimonial-title{order: 1;}
     .testimonial-lists{flex: 100%; order: 3; gap: 20px;}
     .testimonial-item{gap: 34px; flex: 0 0 168px;}
     .testimonial-thumb{flex: 0 0 160px;}
     .testimonial-content{flex: 0 0 calc(100% - 194px); padding: 32px 32px 32px 0;}
+    .testimonial-review{order: 2; margin-bottom: 40px;}
 }
 
 @media screen and (min-width: 1440px){
@@ -34,5 +42,23 @@
 }
 @media screen and (max-width: 1279px)  and (min-width: 1024px){
 
+}
+
+@media screen and (max-width: 767px)  and (min-width: 200px){
+    .testimonial-main{margin: 40px 0; padding: 20px; border-radius: 24px;}
+    .testimonial-title{margin-bottom: 20px; text-align: center; width: 100%;}
+    .testimonial-title span.optional-text{letter-spacing: 1.12px;}
+    .testimonial-title h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+
+    .testimonial-thumb{width: 62px;}
+    .testimonial-thumb img{width: 62px; height: 64px;}
+    .testimonial-quote-icon{width: 30px; left: 50%; transform: translateX(-50%); right: auto; top: auto; bottom: -25px;}
+    .testimonial-quote-icon svg{width: 30px;}
+    .testimonial-content{font-size: 16px; line-height: 24px; padding: 16px 13px 20px;}
+
+    .testimonial-review{min-width: 246px; margin: 20px auto 0; padding: 6px 8px 6px 20px;}
+    .rating{flex: 0 0 62px;}
+    .reviews{flex: 0 0 64px; margin-left: 24px;}
+    .reviews::before{left: -12px;}
 }
 
