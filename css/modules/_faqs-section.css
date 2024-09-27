@@ -3,7 +3,7 @@
 .faqs-lt .sm-line{margin: 36px 0; background-color: var(--Raisin-Black);}
 .faqs-lt h3{color: var(--White);}
 .faqs-call{gap: 8px; align-items: center; margin-top: 34px; width: fit-content;}
-.faqs-call:hover{color: var(--Raisin-Black);}
+.faqs-call:hover{color: var(--Sky-Blue);}
 .faqs-rt{border-radius: 24px; background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .faqs-rt span.optional-text{margin-bottom: 40px;}
 .faqs-rt .accordion-main{padding: 0;}
