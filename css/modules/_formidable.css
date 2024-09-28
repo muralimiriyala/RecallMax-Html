@@ -145,9 +145,9 @@ body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field  div.fr
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_radio .frm_checkbox label.open{background-color: transparent;}
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_checkbox .frm_opt_container .frm_checkbox{flex: 1;} 
 
-body.page-template-about-contact .frm_forms .form_field_wrapper{gap: 16px;}
-body.page-template-about-contact .frm_forms .form_field_wrapper .frm_form_field{margin: 0;}
-body.page-template-about-contact .frm_forms .form_field_wrapper .plane-text{flex: 1; font-size: 16px; line-height: 24px; opacity: 0.75;}
+body.page-template-contact .frm_forms .form_field_wrapper{gap: 16px;}
+body.page-template-contact .frm_forms .form_field_wrapper .frm_form_field{margin: 0;}
+body.page-template-contact .frm_forms .form_field_wrapper .plane-text{flex: 1; font-size: 16px; line-height: 24px; opacity: 0.75;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -245,8 +245,8 @@ body.page-template-about-contact .frm_forms .form_field_wrapper .plane-text{flex
     body .contact-form .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{gap: 22px 8px;}
     body .contact-form .frm_forms .frm_form_fields #frm_field_7_container.frm_form_field.vertical_radio{margin-bottom: 45px;}
 
-    body.page-template-about-contact .frm_forms .form_field_wrapper{gap: 20px; flex-direction: column-reverse;}
-    body.page-template-about-contact .frm_forms .form_field_wrapper .frm_form_field{width: 100%; text-align: center;}
+    body.page-template-contact .frm_forms .form_field_wrapper{gap: 20px; flex-direction: column-reverse;}
+    body.page-template-contact .frm_forms .form_field_wrapper .frm_form_field{width: 100%; text-align: center;}
 
     body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio{display: none;}
     body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{width: 100%; margin-bottom: 0;}

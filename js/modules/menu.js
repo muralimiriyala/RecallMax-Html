@@ -10,6 +10,7 @@ const Menu = {
   ),
   $overlay: document.querySelector('.header-overlay'),
   $moverlay: document.querySelector('.h-mob-overlay'),
+  $blackheader: document.querySelector('body.page-template-contact'),
   init() {
     const _ = this;
     // const $siteHeight = header.clientHeight;
@@ -71,6 +72,9 @@ const Menu = {
       $hoverli.addEventListener('mouseover', onMouse);
       $hoverli.addEventListener('mouseleave', offMouse);
     });
+    if (_.$blackheader) {
+      _.$header.classList.add('black-header');
+    }
   },
 };
 export default Menu;
