@@ -15,7 +15,6 @@ li.hide-li-text > a{display: none !important;}
 
 /* media css starts here */
 @media screen and (min-width: 1024px) {
-    header.white-header:not(.sticky-header){background-color: var(--White);}
    
     .header{ gap: 16px; position: relative;}
     .logo{flex: 0 0 264px;}
@@ -48,6 +47,18 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li.nav-features > ul > li > a > img{width: 23px; top: 12px; left: 10px; position: absolute;}
     ul.main_menu > li.nav-features > ul > li > a span{padding-bottom: 5px; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block;}
     li.nav-gradient-bar{ padding: 20px; font-weight: 800; text-align: center; border-radius: 0px 0px 24px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
+   
+   
+   
+    header.white-header:not(.sticky-header){background-color: var(--White);}
+    header.white-header:not(.sticky-header) span.white-logo{display: none;}
+    header.white-header:not(.sticky-header) span.black-logo{display: block;}
+    header.sticky-header span.black-logo{display: none;}
+    header.white-header:not(.sticky-header) ul.main_menu > li > a{
+        color: var(--Raisin-Black);
+    }
+
+   
     .header-overlay { top: 0; left: 0; visibility: hidden; opacity: 0; background: rgba(48, 33, 53, 0.85); backdrop-filter: blur(10px); width: 100vw; height: 100vh; position: fixed; z-index: -2; transition: all 0.4s ease; }
     .header-overlay.open { visibility:visible; opacity:1 }
     .h-mob-overlay{display: none;}
@@ -106,7 +117,6 @@ li.hide-li-text > a{display: none !important;}
 
     ul.main_menu > li > ul > li > ul > li > a:hover{color: var(--Orange);}
     
-    
     ul.main_menu > li.nav-products > ul > li.nav-gradient-bar{margin-bottom: 20px;}
     ul.main_menu > li.nav-products > ul > li > a{display: none;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul{ padding: 0; }
@@ -127,6 +137,8 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li.nav-features > ul > li > a p{display: none;}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar{margin-bottom: 20px;}
     li.nav-gradient-bar{ margin-bottom: 20px; padding: 8px 16px; color: var(--White); font-size: 16px; font-weight: 800; line-height: 24px; border-radius: 32px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--RecallMax-Purple, #A4278F); text-align: center; }
+
+
 
     .nav-btn{ margin-top: -25px; z-index: -1; position: relative; }
     .nav-btn span{display: block;}
