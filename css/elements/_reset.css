@@ -328,7 +328,7 @@ ul.slick-dots li button{display: none; padding: 0;}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .hide-tablet{display: none;}
 
-    .book-demo-btn{padding: 4px; width: 350px; margin: 0 auto;}
+    .book-demo-btn{padding: 4px 20px 4px 4px; width: fit-content; margin: 0 auto;}
     .book-demo-call{flex: 1; justify-content: center;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
