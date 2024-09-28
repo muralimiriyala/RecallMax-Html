@@ -9,6 +9,7 @@ import customSlick from './modules/customSlick';
 import filterCategory from './modules/filterCategory';
 import uiAccordion from './modules/accordion';
 import teamPage from './modules/team';
+import searchFeild from './modules/search';
 
 document.addEventListener('DOMContentLoaded', function () {
   Animations.init();
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
   filterCategory.init();
   uiAccordion.init();
   teamPage.init();
+  searchFeild.init();
 });
 
 let scrolled = window.scrollY;

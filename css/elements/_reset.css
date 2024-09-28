@@ -327,6 +327,9 @@ ul.slick-dots li button{display: none; padding: 0;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .hide-tablet{display: none;}
+
+    .book-demo-btn{padding: 4px; width: 350px; margin: 0 auto;}
+    .book-demo-call{flex: 1; justify-content: center;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .container{padding: 0 20px;}
@@ -363,6 +366,9 @@ ul.slick-dots li button{display: none; padding: 0;}
 
     img.alignnone, img.alignleft, img.alignright, img.aligncenter{margin: 25px auto; clear: both; float: none; display: block;}
     #load-more-insights.btn-center{margin-top: 56px;}
+
+    .book-demo-btn{padding: 4px; width: 350px; margin: 0 auto;}
+    .book-demo-call{flex: 1; justify-content: center;}
 
 }
 @media screen and (max-width: 389px) and (min-width: 200px){

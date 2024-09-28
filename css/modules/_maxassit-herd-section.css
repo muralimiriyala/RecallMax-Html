@@ -5,10 +5,21 @@ body.page-template-about-careers .maxassit-herd-main{margin-top: -48px; backgrou
 .maxassit-herd-text h4 > span{position: relative;}
 .maxassit-herd-text h4 > span::before{content: ""; position: absolute; border-radius: 4px; background: var(--Accent); opacity: 0.4; display: inline-block; height: 16px; width: 100%; bottom: 0; z-index: -1;}
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    body.page-template-about-team .maxassit-herd-main{margin-top: 43px;}
+}
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .maxassit-herd-main{padding: 16px 16px 16px 24px; gap: 16px;}
+    .maxassit-herd-main{gap: 24px;}
+    body.page-template-about-team .maxassit-herd-main{margin-top: 43px;}
     .maxassit-herd-text{text-align: center;}
     .maxassit-herd-text h4{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
-    .maxassit-herd-text h4 > span::before{display: none;}
+    .maxassit-herd-btn{width: 100%;}
+    .maxassit-herd-btn .button{width: 100%;}
+
+    body.page-template-about-careers .maxassit-herd-main{padding: 16px 16px 16px 24px; gap: 16px;}
+    body.page-template-about-careers .maxassit-herd-text h4 > span::before{display: none;}
+    body.page-template-about-careers .maxassit-herd-btn {width: fit-content;}
+    body.page-template-about-careers .maxassit-herd-btn .button{width: fit-content;}
+    
 }
