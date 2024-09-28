@@ -28,6 +28,22 @@ const customSlick = {
               variableWidth: true,
               appendArrows: cultureAppend,
               appendDots: cultureAppend,
+              dotsClass: 'slick-dots culture-slick-dots',
+              customPaging: function (slider, i) {
+                var slideNumber = i + 1,
+                  totalSlides = slider.slideCount;
+                return (
+                  '<a class="culture-dot" role="button" title="' +
+                  slideNumber +
+                  ' of ' +
+                  totalSlides +
+                  '"><span class="string">' +
+                  slideNumber +
+                  '<span class="culture-slash">/</span>' +
+                  totalSlides +
+                  '</span></a>'
+                );
+              },
             });
           }
         }
@@ -67,6 +83,22 @@ const customSlick = {
               variableWidth: true,
               appendArrows: benefitsAppend,
               appendDots: benefitsAppend,
+              dotsClass: 'slick-dots benefit-slick-dots',
+              customPaging: function (slider, i) {
+                var slideNumber = i + 1,
+                  totalSlides = slider.slideCount;
+                return (
+                  '<a class="benefit-dot" role="button" title="' +
+                  slideNumber +
+                  ' of ' +
+                  totalSlides +
+                  '"><span class="string">' +
+                  slideNumber +
+                  '<span class="benefit-slash">/</span>' +
+                  totalSlides +
+                  '</span></a>'
+                );
+              },
             });
           }
         }
