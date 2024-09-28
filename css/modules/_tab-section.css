@@ -35,7 +35,7 @@ ul.tab-links > li > a.active span.close-icon{display: block;}
 .tab-text h2 a{color: var(--Raisin-Black);}
 .tab-text h2 a:hover{color: var(--White);}
 .tab-text span{font-size: 16px; color: var(--Accent); line-height: 24px;}
-.tab-image img{border-radius: 24px;}
+.tab-image img{border-radius: 16px;}
 
 .tab-desc{max-height: 0; overflow: hidden;}
 

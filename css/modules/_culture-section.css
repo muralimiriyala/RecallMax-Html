@@ -21,9 +21,7 @@
     .culture-main .slick-list{overflow: inherit;}
     .culture-main-appends{gap: 8px; align-items: center; margin: 48px 0 0;}
     .culture-main-appends button.slick-arrow.slick-next{order: 3;}
-    .culture-main-appends ul.slick-dots{order: 2; flex: 1;}   
-    .culture-main-appends ul.slick-dots button{display: block;}
-    ul.culture-slick-dots{margin: 0;}
+    ul.culture-slick-dots{margin: 0;order: 2; flex: 1;}
     ul.culture-slick-dots li::before{display: none;}
     ul.culture-slick-dots li{display: none; margin: 0;}
     ul.culture-slick-dots li.slick-active{display: block;}
