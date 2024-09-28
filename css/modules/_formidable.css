@@ -247,6 +247,7 @@ body.page-template-contact .frm_forms .form_field_wrapper .plane-text{flex: 1; f
 
     body.page-template-contact .frm_forms .form_field_wrapper{gap: 20px; flex-direction: column-reverse;}
     body.page-template-contact .frm_forms .form_field_wrapper .frm_form_field{width: 100%; text-align: center;}
+    body.page-template-contact .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: 100%;}
 
     body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio{display: none;}
     body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{width: 100%; margin-bottom: 0;}
