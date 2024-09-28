@@ -5,15 +5,15 @@
 .pricing-banner-heading h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: 100%; z-index: -1;}
 
 @media screen and (min-width: 1024px) {
-  .pricing-banner-main{padding: 80px 0 222px;}
+  .pricing-banner-main{padding: 152px 0 222px;}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px){
-  .pricing-banner-main{padding: 80px 0 222px;}
+  .pricing-banner-main{padding: 144px 0 222px;}
   .pricing-banner-heading h1 > span::before{display: none;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-  .pricing-banner-main{padding: 80px 0 222px;}
+  .pricing-banner-main{padding: 144px 0 222px;}
   .pricing-banner-heading h1 > span{font-style: normal;}
   .pricing-banner-heading h1 > span::before{display: none;}
 }
