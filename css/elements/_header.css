@@ -1,7 +1,7 @@
 
 
 header.site-header{top: 0; left: 0; width: 100%; height: auto; position: fixed; z-index: 800; }
-header.sticky-header{z-index: 850; background-color: var(--Raisin-Black);}
+header.sticky-header, header.black-header{z-index: 850; background-color: var(--Raisin-Black);}
 
 .logo a{width: 100%; height: 100%; display: block;} 
 .logo a img{width: 100%; object-fit: cover;}
