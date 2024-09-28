@@ -12,17 +12,19 @@
     .culture-list-of-2{flex: 0 0 calc(50% - 24px);}
     .culture-list-of-1{flex: 1;}
 }
-
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .culture-main{flex: 100%; gap: 56px 48px;}
     .culture-list{flex: 0 0 calc(50% - 24px);}
 }
-
 @media screen and (max-width: 767px) and (min-width: 200px){
     .culture-list-inner{width: 304px; margin-right: 25px;}
     .culture-main .slick-list{overflow: inherit;}
     .culture-main-appends{gap: 8px; align-items: center; margin: 48px 0 0;}
     .culture-main-appends button.slick-arrow.slick-next{order: 3;}
-    .culture-main-appends ul.slick-dots{order: 2; flex: 1;}
-    
+    .culture-main-appends ul.slick-dots{order: 2; flex: 1;}   
+    .culture-main-appends ul.slick-dots button{display: block;}
+    ul.culture-slick-dots{margin: 0;}
+    ul.culture-slick-dots li::before{display: none;}
+    ul.culture-slick-dots li{display: none; margin: 0;}
+    ul.culture-slick-dots li.slick-active{display: block;}
 }
