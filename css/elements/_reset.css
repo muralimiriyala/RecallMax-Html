@@ -370,6 +370,9 @@ ul.slick-dots li button{display: none; padding: 0;}
     .book-demo-btn{padding: 4px; width: 350px; margin: 0 auto;}
     .book-demo-call{flex: 1; justify-content: center;}
 
+    .slick-dots li > a{font-size: 20px; line-height: normal; font-weight: 800; color: var(--Raisin-Black);}
+    .culture-slash, .benefit-slash{margin: 0 4px; color: var(--Accent-2); font-weight: 300;}
+
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     caption, td, th{font-size: 13px; line-height: 16px;}
