@@ -43,7 +43,6 @@ const uiAccordion = {
             }
           }
         };
-
         window.addEventListener('resize', onResize);
       });
     };
