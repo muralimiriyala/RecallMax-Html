@@ -14,8 +14,9 @@ const Animations = {
     $('[data-animation]:not(img), [data-animate]').each(function () {
       const $self = $(this);
       const timelineId = $self.attr('data-timeline-id'); // Get the timeline ID
+      // console.log(timelineId, 'timelineId');
       const timeline = timelineStore[timelineId]; // Access the ti
-      console.log('timeline', timeline);
+      // console.log('timeline1', timeline);
 
       const animation = $self.data('animation');
       const animateType = $self.data('animate');
