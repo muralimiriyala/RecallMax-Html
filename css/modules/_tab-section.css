@@ -1,12 +1,13 @@
 .tabs-main{padding: 0 0 80px;}
 
+.tab-links-main{display: none;}
 ul.tab-links {margin: 0; padding: 32px 0;}
 ul.tab-links li::before{display: none;}
 ul.tab-links{gap: 12px;}
 ul.tab-links > li{margin: 0;}
 ul.tab-links > li > a{padding: 8px 16px; gap: 8px; background-color: var(--Card-Stroke); color: var(--Raisin-Black); font-size: 16px; line-height: 24px; text-transform: capitalize;}
 ul.tab-links > li > a.active{background-color: var(--Translucent-2); color: var(--Raisin-Black); }
-ul.tab-links > li > a:not(.active){border-radius: 12px; background: var(--Accent);}
+ul.tab-links > li > a:not(.active):hover{ border-radius: 12px; background: var(--Accent-3); }
 ul.tab-links > li > a i{font-size: 0; top: 1px; position: relative; color: var(--Orange);}
 ul.tab-links > li > a.active i{font-size: 14px;}
 ul.tab-links > li > a span.close-icon{display: none; position: relative; width: 12px;}
