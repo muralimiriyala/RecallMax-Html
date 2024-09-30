@@ -19,12 +19,10 @@ const teamPage = {
         }
       });
     };
-
     updateHeights();
 
     tabTexts.forEach(function (tabText) {
       const tabHead = tabText.querySelector('.tab-head');
-
       tabText.addEventListener('click', function (e) {
         if (!e.target.closest('a')) {
           e.preventDefault();

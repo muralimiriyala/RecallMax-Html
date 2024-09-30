@@ -10,6 +10,7 @@ import filterCategory from './modules/filterCategory';
 import uiAccordion from './modules/accordion';
 import teamPage from './modules/team';
 import searchFeild from './modules/search';
+import tabFilter from './modules/tabs-filter';
 
 document.addEventListener('DOMContentLoaded', function () {
   Animations.init();
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   uiAccordion.init();
   teamPage.init();
   searchFeild.init();
+  tabFilter.init();
 });
 
 let scrolled = window.scrollY;
