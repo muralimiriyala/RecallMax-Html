@@ -56,7 +56,8 @@ li.hide-li-text > a{display: none !important;}
     header.white-header:not(.sticky-header) span.black-logo{display: block;}
     header.sticky-header span.black-logo{display: none;}
     header.white-header:not(.sticky-header) ul.main_menu > li > a{ color: var(--Raisin-Black); }
-
+    header.white-header ul.main_menu > li > a{padding: 20px 0;}
+    .site-main-cover.site-top{padding-top: 56px;}
    
     .header-overlay { top: 0; left: 0; visibility: hidden; opacity: 0; background: rgba(48, 33, 53, 0.85); backdrop-filter: blur(10px); width: 100vw; height: 100vh; position: fixed; z-index: -2; transition: all 0.4s ease; }
     .header-overlay.open { visibility:visible; opacity:1 }

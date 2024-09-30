@@ -8,9 +8,8 @@
 .our-team-full .our-team-title::after{display: none;}
 
 @media screen and (min-width: 1024px) {
-    .our-team-main{padding: 80px 0 40px;}
+    .our-team-main{padding: 72px 0 40px;}
 }
-
 @media screen and (max-width: 1023px) and (min-width: 200px) {
     .our-team-main{padding: 64px 0 40px;}
     .our-team-title{flex: 100%; padding: 0 0 24px;}
