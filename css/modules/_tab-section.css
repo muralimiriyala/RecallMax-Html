@@ -21,6 +21,12 @@ ul.tab-links > li > a i{font-size: 0; top: 1px; position: relative; color: var(-
 ul.tab-links > li > a.active i{font-size: 14px;}
 ul.tab-links > li > a span.close-icon{display: none; position: relative; width: 12px;}
 ul.tab-links > li > a.active span.close-icon{display: block;}
+ul.tab-links > li > a.clear{
+    padding: 0;
+    background: none;
+    color: var(--Accent);
+    font-weight: 800;
+}
 
 .tab-title{flex: 1; padding-right: 20px;}
 .tab-head::after { font-size: 32px; line-height: 32px; font-weight: 300; content: "\f176"; display: block; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); color: var(--Orange); transition: all .5s ease; opacity: 0; font-family: "Font Awesome 6 Sharp"; }
@@ -48,11 +54,7 @@ ul.tab-links > li > a.active span.close-icon{display: block;}
 
 .tab-desc{max-height: 0; overflow: hidden;}
 
-.tab-divider{width: 2px;
-    height: 100%;
-    min-height: 56px;
-    opacity: 0.25;
-    background: var(--Accent);}
+.tab-divider{width: 2px; height: 100%; min-height: 56px; opacity: 0.25; background: var(--Accent);}
 
 ul.tab-address{margin: 26px 0 23px; gap: 19px; flex-direction: column;}
 ul.tab-address > li{margin: 0;}
@@ -91,4 +93,5 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .tabs-main{padding: 40px 0;}
     .tab-section.no-about-intro .tabs-main{padding: 40px 0 15px;}
     ul.tab-links{padding-bottom: 46px;}
+    .tab-desc-pad{margin-top: 10px;}
 }
