@@ -2,7 +2,7 @@
 .open-positions-lt{border-radius: 24px 0px 0px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
 .open-positions-lt .sm-line{margin: 36px 0; background-color: var(--Raisin-Black);}
 .open-positions-lt h3{color: var(--White);}
-.open-positions-call{gap: 8px; align-items: center; margin-top: 34px; width: fit-content;}
+.open-positions-call{gap: 8px; align-items: center; margin-top: 21px; width: fit-content;}
 .open-positions-call:hover{color: var(--Sky-Blue);}
 .open-positions-rt{border-radius: 24px; background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .open-positions-rt span.optional-text{margin-bottom: 40px;}

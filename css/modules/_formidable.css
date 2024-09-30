@@ -30,7 +30,7 @@ body .frm_forms .frm_form_fields .frm_form_field .frm_primary_label span:not(.fr
 body .frm_forms .frm_form_fields .frm_form_field input, body .frm_forms .frm_form_fields .frm_form_field textarea, input, select, textarea{outline: 0; width: 100%; font-size: 1rem; font-weight: 700; line-height: 100%; letter-spacing: 0; box-shadow: none; padding: 16px 17px 14px; vertical-align: middle; height: auto; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border: solid 1px var(--Card-Stroke);  color: var(--Indigo); border-radius: 8px; background: var(--Raisin-Tint); color: var(--Blue); font-family: var(--base-font); -webkit-appearance: none; opacity: 1;}
 .resource-search input{padding: 16px 40px 14px 17px;}
 body .bg-elevated .frm_forms .frm_form_fields .frm_form_field input, body .bg-elevated .frm_forms .frm_form_field textarea, body .bg-elevated .frm_forms .selectBox-dropdown{background-color: var(--White);}
-body .frm_forms .frm_form_fields .frm_form_field textarea{height: 154px;} 
+body .frm_forms .frm_form_fields .frm_form_field textarea{height: 128px;} 
 body .frm_forms .frm_form_fields .frm_form_field input:not([type="file"]):focus,
 body .frm_forms .frm_form_fields .frm_form_field input:not([type="checkbox"]):focus, textarea:focus{background-color: rgba(30, 164, 181, .1) !important; border: 1px solid var(--Earthy-Blue); box-shadow: none !important; color: var(--Earthy-Blue) !important; border-color: var(--Earthy-Blue ) !important; opacity: 1;}
 body .frm_forms .frm_form_fields .frm_form_field input{color: var(--Indigo); border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint);}
@@ -157,6 +157,8 @@ body.page-template-about-contact .contact-form-form .frm_forms .frm_filed_wrappe
 body.page-template-about-contact .contact-form-form .frm_forms .frm_filed_wrapper .vertical_radio .frm_radio label{padding: 0;}
 body.page-template-about-contact .contact-form-form .frm_forms .frm_filed_wrapper .vertical_radio .frm_radio input{display: none !important;}
 body.page-template-about-contact .contact-form-form .frm_error_style{display: none;}
+body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields .frm_form_field .frm_primary_label{display: none;}
+body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_label{display: flex;}
 
 .with_frm_style input::placeholder, .with_frm_style textarea::placeholder { font-size: var(--base-font); }
 
@@ -194,13 +196,14 @@ body.page-template-about-contact .contact-form-form .frm_error_style{display: no
 @media screen and (max-width: 1299px) and (min-width: 1024px){
     body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: 0 0 calc(50% - 4px);}
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container .frm_checkbox{flex: 0 0 calc(50% - 4px);} 
-    body .contact-form-form .frm_forms .frm_form_fields .vertical_radio .frm_radio{flex: auto;}
+    body .contact-form-form .frm_forms .frm_form_fields .vertical_radio .frm_radio{flex: initial;}
+    body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields .vertical_radio{flex-direction: column;}
 
     body .frm_forms .frm_form_fields .frm_form_field.frm_third{width: calc(50% - 12px); margin-left: 9px; margin-right: 9px; float: none; clear: none; display: inline-block; vertical-align: top;}
     body .frm_forms .frm_form_fields .frm_form_field.frm_third.frm_left{margin-left: 0;}
     body .frm_forms .frm_form_fields .frm_form_field.frm_third.frm_right{margin-right: 0;}
 }
-@media only screen and (max-width: 1023px) and (min-width: 744px){
+@media only screen and (max-width: 1023px) and (min-width: 768px){
     /* body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: 0 0 calc(25% - 6px);} */
     body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{width: fit-content;}
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container .frm_checkbox{flex: 0 0 calc(25% - 6px);} 
@@ -223,8 +226,10 @@ body.page-template-about-contact .contact-form-form .frm_error_style{display: no
   
     body .frm_forms .frm_form_fields .frm_new_flex .frm_form_field.frm_third{width: calc(33% - 4px); float: left; clear: none; margin-left: 9px;}
     body .frm_forms .frm_form_fields .frm_new_flex .frm_form_field.frm_third:nth-child(2){margin-left: 0;}
+
+    body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields .vertical_radio{flex-direction: column;}
 }
-@media only screen and (max-width: 743px) and (min-width: 200px){
+@media only screen and (max-width: 767px) and (min-width: 200px){
     .frm_form_field_wrapper{display: block;}
     body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_radio{margin-bottom: 26px; flex: 1;}
     body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_radio .frm_checkbox input{top: 2px;}
