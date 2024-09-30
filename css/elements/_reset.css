@@ -292,7 +292,7 @@ ul.slick-dots li button{display: none; padding: 0;}
 
 .book-demo-btn{border-radius: 28px; background: rgba(165, 24, 144, 0.10); display: inline-flex; width: fit-content; padding: 4px 20px 4px 4px; gap: 16px;}
 .book-demo-call{gap: 8px; width: fit-content; line-height: normal; align-items: center;}
-
+.book-demo-call:hover{color: var(--Accent);}
 
 .fluid-container{width: 100vw; left: -50vw; margin-left: 50%;}
 .w-100{width: 100%;}
