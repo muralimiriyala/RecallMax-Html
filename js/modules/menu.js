@@ -76,10 +76,11 @@ const Menu = {
     });
     if (_.$blackheader) {
       _.$header.classList.add('black-header');
+      _.$site.classList.add('site-black-top');
     }
     if (_.$whiteheader) {
       _.$header.classList.add('white-header');
-      _.$site.classList.add('site-top');
+      _.$site.classList.add('site-white-top');
     }
   },
 };
