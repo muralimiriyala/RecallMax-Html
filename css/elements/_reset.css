@@ -7,7 +7,7 @@ html{overflow-y: scroll; overflow-x: hidden; -webkit-text-size-adjust: 100%; -ms
 a{color: var(--Blue);text-decoration: none; transition: var(--b-transition);}
 a:focus {outline: none;}
 a:hover, a:active {outline: 0;}
-a:hover{color: var(--Orange);}
+a:hover{color: var(--Accent);}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{clear: both; margin: 0; color: var(--Raisin-Black); font-weight: 800; font-family: var(--heading-font); text-transform: none;}
 .h1, h1{font-size: 48px; line-height: 60px; margin-bottom: 25px; letter-spacing: -0.48px;}
 .h2, h2{font-size: 48px; line-height: 48px; margin-bottom: 20px;}
