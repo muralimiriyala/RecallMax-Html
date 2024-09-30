@@ -1,6 +1,6 @@
 
 .contact-form-lt{border-radius: 24px 0px 0px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
-.contact-form-lt .sm-line{margin: 36px 0; background-color: var(--Raisin-Black);}
+.contact-form-lt .sm-line{margin: 24px 0; background-color: var(--Raisin-Black);}
 .contact-form-lt h3{color: var(--White);}
 .contact-form-lt ul > li {position: relative;}
 /* .contact-form-lt ul > li::before { background: url("../../images/checked-circle.svg"); width: 20px; height: 20px; background-size: contain; top: 3px; left: -28px; content: ""; position: absolute; } */

@@ -4,6 +4,7 @@
 
 .about-banner-text{color: var(--White);}
 .about-banner-text h1{color: var(--White);}
+.about-banner-btn{gap: 12px;}
 
 @media screen and (min-width: 1024px) {
     .about-banner-text{padding: 80px 0; margin-top: 72px; max-width: 600px;}
