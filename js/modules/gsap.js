@@ -2,27 +2,19 @@ import { gsap } from 'gsap';
 import timelineStore from './timelineStore'; // Import the shared store
 
 var DrawSVGPlugin = DrawSVGPlugin || window.DrawSVGPlugin;
-var CountUp = CountUp || window.CountUp;
-
 gsap.registerPlugin(DrawSVGPlugin);
-
-function getRandomInt(min, max) {
-  return Math.random() * (max - min) + min;
-}
 
 const customGsap = {
   init() {
-    const timelines = {};
-    /// Bar Chart
     var $drawing = jQuery('.ui-drawing');
 
     $drawing.each(function (index) {
       var $self = jQuery(this);
       var $path = $self.find('path');
-      if ($path) {
-        var tl = gsap.timeline({
-          paused: true,
-        });
+
+      // Ensure the path exists before creating a timeline
+      if ($path.length) {
+        var tl = gsap.timeline({ paused: true });
 
         tl.fromTo(
           $path[0],
@@ -30,12 +22,14 @@ const customGsap = {
           { drawSVG: '100%', duration: 1.5, ease: 'power1.out' }
         );
 
-        $self[0].tl = tl;
-        const timelineId = 'timeline-'.concat(index); // Use index here
+        const timelineId = 'timeline-' + index; // Create a unique timeline ID
         timelineStore[timelineId] = tl; // Store the timeline in the shared store
-        $self.attr('data-timeline-id', timelineId); // Store the ID in the element
+        $self.attr('data-timeline-id', timelineId); // Attach the timeline ID to the element
+      } else {
+        console.warn('No path found for drawing:', $self);
       }
     });
   },
 };
+
 export default customGsap;
