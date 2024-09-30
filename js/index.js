@@ -1,7 +1,9 @@
 'use strict';
 
-import selectBox from './lib/jquery.selectBox';
+import customGsap from './modules/gsap';
 import Animations from './modules/animations';
+import selectBox from './lib/jquery.selectBox';
+import timelineStore from './modules/gsap';
 import Scroll from './modules/scroll';
 import Menu from './modules/menu';
 // import scrollModule from './modules/pageScroll';
@@ -13,6 +15,9 @@ import searchFeild from './modules/search';
 import tabFilter from './modules/tabs-filter';
 
 document.addEventListener('DOMContentLoaded', function () {
+  timelineStore.init();
+  customGsap.init();
+
   Animations.init();
   Menu.init();
   // scrollModule.init();
