@@ -78,7 +78,7 @@ li.hide-li-text > a{display: none !important;}
 @media screen and (max-width: 1023px) and (min-width: 768px){
 }
 @media screen and (max-width: 1023px) and (min-width: 200px){
-    .header{padding: 14px 0 14px; gap: 16px; position: relative; z-index: 2;}
+    .header{padding: 16px 0; gap: 16px; position: relative; z-index: 2;}
     .logo{flex: 0 0 264px; position: relative; z-index: 1;}
 
     .humburger-btn{width: 40px; height: 40px; right: 0; cursor: pointer; display: block; z-index: 1; background-image: linear-gradient(180deg,var(--Accent),var(--Purple)); }
@@ -138,7 +138,11 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar{margin-bottom: 20px;}
     li.nav-gradient-bar{ margin-bottom: 20px; padding: 8px 16px; color: var(--White); font-size: 16px; font-weight: 800; line-height: 24px; border-radius: 32px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--RecallMax-Purple, #A4278F); text-align: center; }
 
-
+   
+    span.black-logo img{max-width: 218px;}
+    header.white-header:not(.sticky-header) span.white-logo{display: none;}
+    header.white-header:not(.sticky-header) span.black-logo{display: block;}
+    header.sticky-header span.black-logo{display: none;}
 
     .nav-btn{ margin-top: -25px; z-index: -1; position: relative; }
     .nav-btn span{display: block;}
@@ -147,6 +151,8 @@ li.hide-li-text > a{display: none !important;}
 
     .h-mob-overlay{ top: 0; left: 0; visibility: hidden; opacity: 0; background: rgba(48, 33, 53, 0.85); backdrop-filter: blur(10px); width: 100vw; height: 100vh; position: fixed; z-index: -2; transition: all 0.4s ease; }
     .h-mob-overlay.open { visibility:visible; opacity:1 }
+
+    .site-main-cover.site-top{padding-top: 64px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .header_right{left: -20px;}

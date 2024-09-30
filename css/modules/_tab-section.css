@@ -2,10 +2,11 @@
 
 .tabs-filter{gap: 0 32px;}
 .tab-links-d{width: fit-content; padding-right: 30px; color: var(--Raisin-Black); cursor: pointer; font-size: 24px; font-weight: 800; line-height: 30px; letter-spacing: -0.24px;}
+.tab-links-d.open span.tab-link-text{color: var(--Text)}
 .tab-link-svgs{right: 0; top: calc(50% - 0px);  width: 20px; height: 20px; transform: translateY(-50%); }
 .tab-link-svgs svg{position: absolute;}
 .tab-link-svgs svg:nth-child(2){opacity: 0;}
-.tab-links-d.open .tab-link-svgs{top: calc(50% + 3px);}
+.tab-links-d.open .tab-link-svgs{top: calc(50% + 4px);}
 .tab-links-d.open .tab-link-svgs svg:nth-child(1){opacity: 0;}
 .tab-links-d.open .tab-link-svgs svg:nth-child(2){opacity: 1;}
 .tab-links-main{max-height: 0; overflow: hidden; transition: var(--b-transition);}
