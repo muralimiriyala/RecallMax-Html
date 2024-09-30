@@ -28,6 +28,7 @@
     "eslint-loader": "^4.0.2",
     "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-copy": "^1.0.0",
+    "gsap": "^3.12.5",
     "imagesloaded": "^5.0.0",
     "is-in-viewport": "^3.0.4",
     "jquery": "^3.7.1",

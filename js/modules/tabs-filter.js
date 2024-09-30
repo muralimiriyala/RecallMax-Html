@@ -15,6 +15,7 @@ const tabFilter = {
         $tabele.dataset.id = 'false';
       }
     };
+    if (!_.$ele) return;
     _.$ele.addEventListener('click', tabFun);
   },
 };
