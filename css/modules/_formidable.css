@@ -44,6 +44,7 @@ body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_lab
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding-left: 22px; padding-bottom: 0; cursor: pointer; display: block; font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: normal; text-indent: 0; color: var(--Raisin-Black); position: relative;}
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]{width: 16px; height: 16px; top: 4px; left: 0; padding: 0; cursor: pointer; position: absolute; margin: 0; border: none; border-radius: 50%; color: var(--Raisin-Black); border: 1px solid var(--Card-Stroke); opacity: 1; background-color: var(--Raisin-Tint);}
 
+
 body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{margin-left: 24px;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio:nth-child(2){margin-left: 16px;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding-left: 29px;}
@@ -83,7 +84,10 @@ body .frm_forms form .frm_required_field div.frm_error{right: 0; bottom: -17px; 
 body .newsletter-signup .frm_forms form .frm_required_field div.frm_error{color: var(--White);}
 body .frm_success_style, body .with_frm_style .frm_message {font-size: 1.125rem; line-height: 1.625rem; letter-spacing: -.36px; font-weight: 400; font-family: Univers,sans-serif; color: var(--Foreground); background: none; padding: 0; text-align: left; border: none; border-radius: 0;}
 body .with_frm_style .frm_message p{color: var(--Foreground); letter-spacing: inherit;}
-body .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{margin-top: 0; gap: 8px; display: flex; flex-wrap: wrap; width: 100%;}
+
+
+body .contact-form-form .frm_forms .frm_form_fields .vertical_radio{gap: 27px; display: flex; flex-wrap: wrap;}
+body .contact-form-form .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{margin-top: 0; gap: 8px; display: flex; flex-wrap: wrap; width: 100%; flex: 1;}
 body .flyout-form-overlay .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{flex-direction: column;}
 body .frm_forms .frm_form_fields .vertical_radio .frm_checkbox{margin: 0; position: relative; display: inline-block;}
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .vertical_radio .frm_checkbox{margin: 0; position: relative; display: inline-block; padding: 0; background: none; border-radius: 0; border: none;}
@@ -173,9 +177,7 @@ body.page-template-contact .frm_forms .form_field_wrapper .plane-text{flex: 1; f
 
 }
 @media only screen and (min-width: 1300px){
-    
-    /* body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: 0 0 calc(25% - 6px);} */
-    body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: none; width: fit-content; margin-left: 27px;}
+        body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: none; width: fit-content;}
     body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio:nth-child(2){margin-left: 16px;}
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container .frm_checkbox{flex: 0 0 calc(25% - 6px);} 
 
