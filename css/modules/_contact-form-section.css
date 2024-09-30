@@ -20,6 +20,7 @@ ul.contact-form-category > li:last-child{padding-right: 0; border-right: 0;}
 .contact-form-btn{width: fit-content;}
 
 .contact-form-full .contact-form-lt, .contact-form-full .contact-form-rt{flex: 1;}
+.contact-form-full .contact-form-lt{border-radius: 24px;}
 
 @media screen and (min-width: 1024px) {
     .contact-form-main{padding: 152px 0 80px;}
