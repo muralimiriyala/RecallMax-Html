@@ -12,6 +12,7 @@ const Menu = {
   $moverlay: document.querySelector('.h-mob-overlay'),
   $blackheader: document.querySelector('body.page-template-contact'),
   $whiteheader: document.querySelector('body.page-template-about-team'),
+  $site: document.querySelector('.site-main-cover'),
   init() {
     const _ = this;
     // const $siteHeight = header.clientHeight;
@@ -78,6 +79,7 @@ const Menu = {
     }
     if (_.$whiteheader) {
       _.$header.classList.add('white-header');
+      _.$site.classList.add('site-top');
     }
   },
 };
