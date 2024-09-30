@@ -2,7 +2,7 @@
 
 
 .resources-section{background: var(--Background, #F0F2FA);}
-.res-srch-form{transition: all .5s ease;}
+.res-srch-form{min-width: 84px; transition: all .5s ease;}
 
 .res-srch-field input{width: 100%; padding: 13px 65px 13px 17px; font-size: 18px; line-height: 22px; font-weight: 400; background-color: var(--White); border-color: transparent; border-radius: 8px;}
 .res-srch-field input::-webkit-input-placeholder {color: var(--Raisin-Black); opacity: 1;}
@@ -10,7 +10,7 @@
 .res-srch-field input::-moz-placeholder {color: var(--Raisin-Black); opacity: 1;}
 
 .res-srch-field.open input{width: 100%; min-width: 436px; border-image: var(--Gradient-Gold, linear-gradient(315deg,#f9662d .31%,#fec74d 82.24%,#ffdc54 100.31%)); background-color: var(--White);}
-button.res-srch-icon, button.res-expand-icon{right: -40px; top: calc(50% + 1px); transform: translateY(-50%); color: var(--Blue, #1335AF); background-color: transparent; padding: 0; border: none;}
+button.res-srch-icon, button.res-expand-icon{left: 0; top: calc(50% + 1px); transform: translateY(-50%); color: transparent; background: transparent; padding: 0; border: none; width: 40px; height: 40px;}
 .res-srch-form.open button.res-srch-icon, .res-srch-form.open button.res-expand-icon{right: 20px; top: 50%;}
 
 
