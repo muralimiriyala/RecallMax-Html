@@ -52,7 +52,7 @@ body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_
 body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked{background: var(--Accent);}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked::before{display: none;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 16px;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_opt_container{align-items: center; display: flex; flex-wrap: wrap;}
+body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_opt_container{align-items: center; display: flex; flex-wrap: wrap; gap: 0 24px; margin-left: 16px;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio{ flex: 1; display: flex; flex-wrap: wrap;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio label{padding: 0;}

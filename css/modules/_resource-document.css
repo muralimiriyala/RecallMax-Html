@@ -30,7 +30,7 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
 .resource-document-btn{width: fit-content;}
 
 .resource-search form > span{position: absolute; right: 17px; top: 18px; font-size: 14px; color: var(--Accent); cursor: pointer;}
-.resource-document-filter{gap: 20px;}
+.resource-document-filter{gap: 20px; margin-top: 32px;}
 .resource-search, .resource-dropdown{flex:100%;}
 
 .resource-dropdown > span{position: absolute; right: 17px; top: 17px; font-size: 16px; color: var(--Accent); cursor: pointer;}
@@ -74,7 +74,18 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
   top: calc(50% + 1px);
   transform: translateY(-50%);
     }
-    .filter-category-links{margin: 0; max-height: 0; overflow: hidden; transition: all 0.8s ease;}
+    .filter-category-links{margin: 0; max-height: 0; overflow: hidden; transition: all 0.8s ease; box-shadow: 0 2px 2px #dadbdf;}
     ul.filter-category{display: block;}
     .filter-doc-rows{margin-top: 16px;}
+    .resource-document-filter{margin-top: 24px;}
+
+    ul.filter-category{margin: 0; background: var(--White); background-color: var( --White); border: 1px solid var(--White); border-radius: 0 0 5px 5px; box-shadow: 0 2px 2px #dadbdf;}
+    ul.filter-category li{margin: 0;}
+    ul.filter-category li::before{display: none;}
+    ul.filter-category li:first-child{padding-top: 10px;}
+    ul.filter-category li:last-child{padding-bottom: 10px;}
+    ul.filter-category li a{color: var(--Raisin-Black); cursor: pointer; display: block; font-size: 16px; font-weight: 700; line-height: 16px; overflow: hidden; padding: 8px 16px; text-overflow: ellipsis; text-transform: none; white-space: nowrap; width: 100%; text-align: left; letter-spacing: normal; opacity: 1;}
+    ul.filter-category li a::before, ul.filter-category li a::after{display: none;}
+    ul.filter-category li:hover a{background-color: transparent; color: var(--Indigo);}
+
 }
