@@ -40,6 +40,23 @@ const filterCategory = {
         ele.dataset.id = 'false';
       }
     };
+    let media = window.matchMedia('(max-width: 767px)');
+    let ftrResize = (e) => {
+      e.preventDefault();
+      let ulfilter = e.target.parentElement.parentElement.parentElement;
+      if (e.target && media.matches) {
+        let text = e.target.textContent;
+        _.$ftrbtn.querySelector('span').textContent = text;
+        ulfilter.style.maxHeight = `0px`;
+        ulfilter.dataset.id = 'false';
+      } else {
+        ulfilter.removeAttribute('style');
+      }
+    };
+    _.$eles.forEach(($ele) => {
+      $ele.addEventListener('click', ftrResize);
+      $ele.addEventListener('change', ftrResize);
+    });
     _.$ftrbtn.addEventListener('click', ftrMobile);
   },
 };
