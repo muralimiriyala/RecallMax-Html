@@ -1,26 +1,22 @@
 import imagesLoaded from 'imagesloaded';
 import 'is-in-viewport';
 import 'jquery.appear';
-import timelineStore from './timelineStore';
 
 imagesLoaded.makeJQueryPlugin($);
 const $body = $('body');
 
 const Animations = {
-  init(timelines) {
+  init() {
     const _ = this;
     const dy = -$(window).height() / 4;
 
     $('[data-animation]:not(img), [data-animate]').each(function () {
       const $self = $(this);
-      const timelineId = $self.attr('data-timeline-id'); // Get the timeline ID
-      // console.log(timelineId, 'timelineId');
-      const timeline = timelineStore[timelineId]; // Access the ti
-      // console.log('timeline1', timeline);
-
       const animation = $self.data('animation');
       const animateType = $self.data('animate');
       const delay = Number($self.data('animation-delay') || 0);
+      const timeline = $self[0].tl;
+      console.log('hhah', timeline);
 
       if ($self.is(':in-viewport')) {
         setTimeout(() => {
