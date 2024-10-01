@@ -7,7 +7,7 @@
 .open-positions-rt{border-radius: 24px; background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .open-positions-rt span.optional-text{margin-bottom: 40px; letter-spacing: 1.12px;}
 .open-positions-lists{gap: 24px;}
-.open-positions-item{gap: 24px; border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint); padding: 16px;}
+.open-positions-item{gap: 24px; border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint); padding: 15px 16px;}
 .open-positions-title{flex: 1;}
 .open-positions-title h6{margin-bottom: 4px;}
 .open-positions-title h6 a{color: var(--Raisin-Black);}
