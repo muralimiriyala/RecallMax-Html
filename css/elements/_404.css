@@ -23,6 +23,5 @@
 @media screen and (max-width: 767px) and (min-width:200px) {
     .page-not-main {
         max-width:100%;
-        padding: 80px 0 17px
     }
 }
