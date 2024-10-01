@@ -4,7 +4,7 @@
 .resources-section{background: var(--Background, #F0F2FA);}
 .res-srch-form{min-width: 84px; transition: all .5s ease;}
 
-.res-srch-field input{width: 100%; padding: 13px 65px 13px 17px; font-size: 18px; line-height: 22px; font-weight: 400; background-color: var(--White); border-color: transparent; border-radius: 8px;}
+.res-srch-field input{width: 100%; padding: 12px 65px 12px 17px; font-size: 18px; line-height: 22px; font-weight: 400; background-color: var(--White); border-color: transparent; border-radius: 8px;}
 .res-srch-field input::-webkit-input-placeholder {color: var(--Raisin-Black); opacity: 1;}
 .res-srch-field input:-moz-placeholder {color: var(--Raisin-Black); opacity: 1;}
 .res-srch-field input::-moz-placeholder {color: var(--Raisin-Black); opacity: 1;}
@@ -84,11 +84,11 @@ ul.blog_list{margin: 0; width: 100%;}
 @media only screen and (max-width: 743px) and (min-width: 200px){
     .resources-wrap{padding: 38px 0 80px;}
     .res-srch-main{display: block; padding: 0 0 66px;}
-    .res-srch-form{margin-bottom: 16px;}
+    .res-srch-form{margin-bottom: 28px;}
     body.page-template-integrations .res-srch-main{padding-bottom: 64px;}
     body.page-template-integrations .res-srch-form{margin-bottom: 17px;}
     button.res-srch-icon{display: none;}
-    button.res-expand-icon{left: auto; right: 24px; top: calc(50% + 1px);}
+    button.res-expand-icon{left: auto; right: 17px; top: calc(50% + 1px);}
     button.res-expand-icon:hover{color: var(--Orange);}
     .resources-row{display: block;}
     .resources-list{margin-bottom: 24px;}
@@ -97,15 +97,10 @@ ul.blog_list{margin: 0; width: 100%;}
     .res-rule{height: 34px;}
     .res-dropdown-main{gap: 32px;}
     .res-dropdown-pos{flex: 0 0 calc(50% - 16px);max-width: calc(50% - 16px);}
-    .res-srch-field input{border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--White);
-    
-        color: var(--Gray-2);
-
-
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 30px;
-    }
+    .res-srch-field input{border-radius: 8px; border: 1px solid var(--violet); background: var(--White); color: var(--Gray-2); font-size: 20px; font-weight: 400; line-height: 30px; }
+    .res-srch-field input::-webkit-input-placeholder {color: rgba(24, 42, 84, 0.5);}
+    .res-srch-field input:-moz-placeholder {color: rgba(24, 42, 84, 0.5);}
+    .res-srch-field input::-moz-placeholder {color: rgba(24, 42, 84, 0.5);}
 }
 
 
