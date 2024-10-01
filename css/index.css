@@ -9,6 +9,7 @@
 @import './elements/_transitions.css';
 @import './elements/_social-icons.css';
 @import './elements/_modal.css';
+@import './elements/_404.css';
 
 @import "./modules/_careers-banner-section.css";
 @import "./modules/_maxassit-herd-section.css";
