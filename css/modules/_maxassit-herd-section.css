@@ -4,6 +4,7 @@ body.page-template-about-careers .maxassit-herd-main{margin-top: -48px; backgrou
 .maxassit-herd-text > h4{margin-bottom: 0; letter-spacing: normal;}
 .maxassit-herd-text > h4 > span{position: relative;}
 .maxassit-herd-text > h4 > span::before{width: 0; content: ""; position: absolute; border-radius: 4px; background: var(--Accent); opacity: 0.4; display: inline-block; height: 16px; bottom: 0; z-index: -1; transition: var(--b-transition);}
+body.page-template-about-careers .maxassit-herd-text > h4 > span::before{ bottom: -2px; margin-left:-3px;}
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     body.page-template-about-team .maxassit-herd-main{margin-top: 43px;}
