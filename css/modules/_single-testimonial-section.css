@@ -1,5 +1,5 @@
 
-.single-testimonial-main{border-radius: 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.19) 0%, rgba(18, 39, 80, 0.75) 100%), var(--Accent); padding: 8px;}
+.single-testimonial-main{border-radius: 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.19) 0%, rgba(18, 39, 80, 0.75) 100%), var(--Accent); padding: 12px;}
 .single-testimonial-thumb img{border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(18,39,80,.2) 0px 0px 0px 4px;}
 .single-testimonial-quote{top: 45px; right: -6px; width: 40px; height: 33px;}
 .single-testimonial-quote svg{width: 40px; height: 33px;}
@@ -14,7 +14,7 @@
 @media screen and (min-width: 1024px) {
     .single-testimonial-main{gap: 42px; margin: 40px 0;}
     .single-testimonial-image{flex: 0 0 400px;}
-    .single-testimonial-text{flex: 0 0 calc(100% - 442px); padding: 32px 38px 32px 0;}
+    .single-testimonial-text{flex: 0 0 calc(100% - 442px); padding: 32px 32px 32px 0;}
 }
 
 
