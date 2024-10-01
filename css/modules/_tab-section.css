@@ -76,7 +76,7 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .tab-list{flex: 0 0 calc(33.333333% - 22px); }
 }
 @media screen and (max-width: 1023px) and (min-width: 200px){
-    ul.tab-links {padding: 0 0 6px; width: 100%; overflow: auto; -ms-overflow-style: none; scrollbar-width: none; position: relative;}
+    ul.tab-links {width: 100%; overflow: auto; -ms-overflow-style: none; scrollbar-width: none; position: relative;}
     ul.tab-links > li > a { gap: 8px; width: fit-content; flex-wrap: nowrap; white-space: nowrap; }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
@@ -92,6 +92,6 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .tab-list:hover .tab-text::after {font-size: 30px; line-height: 300;}
     .tabs-main{padding: 40px 0;}
     .tab-section.no-about-intro .tabs-main{padding: 40px 0 15px;}
-    ul.tab-links{padding-bottom: 46px;}
+    ul.tab-links{padding: 0 0 46px;}
     .tab-desc-pad{margin-top: 10px;}
 }
