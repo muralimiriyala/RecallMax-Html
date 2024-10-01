@@ -43,7 +43,7 @@ ul.contact-form-category > li:last-child{padding-right: 0; border-right: 0;}
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .contact-form-main{padding: 33px 0 40px;}
-    .contact-form-lt{flex: 100%; padding: 24px 24px 80px; border-radius: 24px 24px 0px 0px;}
+    .contact-form-lt{flex: 100%; padding: 24px 24px 70px; border-radius: 24px 24px 0px 0px;}
     .contact-form-lt .sm-line{margin: 24px 0;}
     .contact-form-call{margin-top: 24px;}
     .contact-form-rt{flex: 100%; padding: 24px; margin-top: -40px;}

@@ -259,7 +259,7 @@ body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields 
     body .contact-form .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{gap: 22px 8px;}
     body .contact-form .frm_forms .frm_form_fields #frm_field_7_container.frm_form_field.vertical_radio{margin-bottom: 45px;}
 
-    body.page-template-about-contact .frm_forms .frm_filed_wrapper{gap: 20px; flex-direction: column-reverse;}
+    body.page-template-about-contact .frm_forms .frm_filed_wrapper{gap: 11px; flex-direction: column-reverse;}
     body.page-template-about-contact .frm_forms .frm_filed_wrapper .frm_form_field{width: 100%; text-align: center; margin-bottom: 0;}
     body.page-template-about-contact .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: 100%;}
     body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields .vertical_radio{gap: 9px; flex-direction: column;}
