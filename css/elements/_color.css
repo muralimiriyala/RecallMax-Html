@@ -12,6 +12,7 @@
     --Accent: #A4278F;
     --Accent-2: #1EA4B5;
     --Accent-3: #3BAFD3;
+    --Accent-4: #FFA90D;
     --Purple: #5D2770;
     --Eggshell: #FEF3F2;
     --Gray-1: #343740;
@@ -26,7 +27,13 @@
     --Sky-Blue: #00DAFF;
     --Translucent: rgba(23, 125, 138, 0.20);
     --Translucent-2: rgba(34, 124, 152, 0.20);
+    --Translucent-3: rgba(255, 169, 13, 0.20);
     --Text: #227C98;
+    --Text-2: #926A23;
+    --Text-3: #177D8A;
     --Translucent: rgba(164, 39, 143, 0.20);
     --Orange: #FF492C;
+    --Tint: #FFF8D3;
+    --Tint-2: #EAFEFF;
+    --Tint-3: #EAFFF3;
 }
