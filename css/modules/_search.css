@@ -48,7 +48,8 @@ ul.blog_list{margin: 0; width: 100%;}
     .res-srch-field{width: 0; opacity: 0; transition: all 0.5s ease-in-out; border: 1px solid var(--Card-Stroke);}
     button.res-expand-icon{opacity: 0; visibility: hidden;}
     .res-srch-form.open button.res-srch-icon{opacity: 0; visibility: hidden;}
-    .res-srch-form.open button.res-expand-icon{opacity: 1; visibility: visible; left: auto;}
+    .res-srch-form.open button.res-expand-icon{opacity: 1; visibility: visible;}
+    .res-srch-form button.res-expand-icon{left: auto; right: 20px;}
     .resources-row{justify-content: center;}
 }
 @media screen and (min-width: 1024px){
