@@ -69,6 +69,11 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
         line-height: 100%;
         cursor: pointer;
     }
+    .filter-doc-btn em{
+        right: 16px;
+  top: calc(50% + 1px);
+  transform: translateY(-50%);
+    }
     .filter-category-links{margin: 0; max-height: 0; overflow: hidden; transition: all 0.8s ease;}
     ul.filter-category{display: block;}
     .filter-doc-rows{margin-top: 16px;}
