@@ -1,17 +1,27 @@
 
 .modal-window{display: none; opacity: 0.9; width: 100%; height: 100%; top: 0; left: 0; position: fixed; background: var(--Raisin-Black); backdrop-filter: blur(4px); z-index: 1200;}
-.modal-main{display: none; width: 100%; height: 100%; top: 0; left: 0; position: fixed; z-index: 1202;}
+.modal-main{display: none; width: 100%; height: 100%; top: 0; left: 0; position: fixed; z-index: 1202; overflow-y: auto;}
 .modal-phone{width: fit-content; margin-left: auto; color: var(--White); font-size: 18px; line-height: 28px; }
 .modal-phone-text{gap: 8px;}
 .modal-center{height: 100%;}
-.modal-container{max-width: 840px; padding: 40px; background-color: var(--White);}
+.modal-container{max-width: 840px; padding: 40px 40px 16px; background-color: var(--White);}
 .modal-head{color: var(--Raisin-Black); font-size: 20px; font-weight: 400; line-height: 30px;}
 .modal-head .h2{margin-bottom: 8px; color: var(--Accent); font-size: 48px; line-height: 60px; font-weight: 800; letter-spacing: -0.48px; }
 .modal-close{ right: 8px; top: 8px; width: 40px; height: 40px; opacity: 0.5; background: var(--Gray-4); cursor: pointer; }
 .modal-close:hover{ opacity: 1; }
-
+body .modal-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 14px 24px 15px; width: 100%; font-size: 24px; line-height: 24px;}
+body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{display: block; width: 100%;}
+body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding: 0; width: 100%; display: block; text-align: center;}
+body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label input{display: none;}
 
 /*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .modal-form{padding-top: 32px;}
+    body .modal-form .frm_forms .frm_form_fields .frm_submit{padding-top: 8px;}
+    body .modal-form .frm_forms .frm_form_fields .frm_form_field .frm_primary_label{display: none;}
+    body .modal-form .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 24px;}
+    body .modal-form .frm_forms .frm_form_fields .frm_form_field.frm_submit_btn{margin-bottom: 17px;}
+}
 @media only screen and (min-width: 1024px){
     .modal-bar{padding: 16px 40px; gap: 24px;}   
 }
@@ -22,8 +32,15 @@
     .modal-phone{font-size: 15px; line-height: 24px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
+    .modal-form{padding-top: 24px;}
     .modal-bar{display: none;}
-    .modal-container{padding: 40px 20px; max-width: 100%; height: 100%; margin: 0; border-radius: 0;}
+    .modal-container{padding: 40px 20px 20px; max-width: 100%; height: 100%; margin: 0; border-radius: 0;}
     .modal-head{font-size: 18px; line-height: 27px;}
     .modal-head .h2{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .modal-center{height: auto;}
+    body .modal-form .frm_forms .frm_form_fields .frm_submit{padding-top: 10px;}
+    body .modal-form .frm_forms .frm_form_fields .frm_form_field .frm_primary_label{display: none;}
+    body .modal-form .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 16px;}
+    body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{opacity: 0.75;}
+
 }

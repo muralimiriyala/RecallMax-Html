@@ -60,7 +60,7 @@ ul.copyright-links>li.current-menu-item>a, ul.copyright-links>li>a:hover { color
     .footer-list{flex: 0 0 calc(33.3333% - 16px);}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .footer { padding: 40px 0 40px; }
+    .footer { padding: 40px 4px 40px; }
     .footer-top{padding-bottom: 31px;}
     .footer-logo{margin: auto;}
     .footer-text{display: block; text-align: center;}
