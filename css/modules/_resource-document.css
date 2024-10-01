@@ -2,7 +2,7 @@
 .resource-document-heading{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
 .resource-document-heading span.optional-text{margin-bottom: 17px;}
 
-ul.filter-category{margin: 0 0 24px 0; gap: 8px;}
+ul.filter-category{margin: 0 0 24px 0; gap: 16px 8px;}
 ul.filter-category li{margin: 0;}
 ul.filter-category li::before{display: none;}
 ul.filter-category li a{min-width: 112px; display: block; text-align: center; font-size: 14px; line-height: 14px; letter-spacing: 1.4px; text-transform: uppercase; padding: 0 11.5px 8px; color: var(--Raisin-Black); position: relative; z-index: 0; opacity: 0.5; }
