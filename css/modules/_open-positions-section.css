@@ -51,4 +51,6 @@ ul.open-positions-category > li:last-child{padding-right: 0; border-right: 0;}
     .open-positions-item{flex-direction: column;}
     .open-positions-btn{width: 100%;}
     .open-positions-btn .button{width: 100%;}
+    ul.open-positions-category{gap: 5px 8px;}
+    ul.open-positions-category > li{line-height: 18px;}
 }
