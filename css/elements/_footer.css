@@ -20,7 +20,7 @@ ul.footer-lists > li{margin: 0;}
 ul.footer-lists > li::before{display: none;}
 ul.footer-lists > li > a{display: block;}
 
-span.footer-title{padding-bottom: 17px; color: var(--Accent); font-size: 18px; line-height: 18px; display: block;}
+span.footer-title{padding-bottom: 24px; color: var(--Accent); font-size: 18px; line-height: 18px; display: block;}
 ul.footer-links{margin: 0; gap: 24px; flex-direction: column;}
 ul.footer-links li::before{display: none;}
 ul.footer-links li{margin: 0;}
