@@ -1,0 +1,28 @@
+.page-not-main {
+    max-width: 475px;
+}
+
+.page-not-text {
+    padding: 77px 0 80px
+}
+
+.page-not-text span.optional-text {
+    margin-bottom: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.page-not-text h1 {
+    margin-bottom: 31px
+}
+
+.page-not-text p {
+    margin-bottom: 24px
+}
+
+@media screen and (max-width: 767px) and (min-width:200px) {
+    .page-not-main {
+        max-width:100%;
+        padding: 80px 0 17px
+    }
+}

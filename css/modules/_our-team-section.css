@@ -12,8 +12,8 @@
     .our-team-main{padding: 78px 0 72px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 200px) {
-    .our-team-main{padding: 64px 0 40px;}
-    .our-team-title{flex: 100%; padding: 0 0 24px;}
+    .our-team-main{padding: 62px 0 40px;}
+    .our-team-title{flex: 100%; padding: 0 0 26px;}
     .our-team-title::after{top: auto; bottom: 0; left: 0; right: auto; height: 2px; width: 100%;}
     .our-team-title h1{margin-bottom: 0;}
     .our-team-desc{flex: 100%; padding: 24px 0 0;}

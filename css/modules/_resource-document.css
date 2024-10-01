@@ -48,10 +48,14 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .resource-document-main{padding: 40px 0; gap: 56px;}
+    .resource-document-heading{width: 100%;}
+    .resource-document-desc{width: 100%;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .resource-document-main{padding: 40px 0; gap: 56px;}
     .filter-doc-list{flex-direction: column;}
+    .resource-document-heading{width: 100%;}
+    .resource-document-desc{width: 100%;}
     .resource-document-btn{width: 100%;}
     .resource-document-btn .button{width: 100%;}
 }

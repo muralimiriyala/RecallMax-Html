@@ -155,6 +155,7 @@ img.aligncenter{margin: 25px auto; clear: both;}
 /*-- custom css starts here --*/
 body{margin: 0; font-size: 1.125rem; line-height: 1.688rem; font-weight: 400; font-family: var(--base-font); position: relative; color: var(--Foreground); background-color: var(--Eggshell); overflow-x: hidden;}
 .d-block{display: block;}
+span.optional-text.ls-07{letter-spacing: 0.7px;}
 span.optional-text{color: var(--Accent); display: block; font-size: 14px; font-weight: 800; line-height: 14px; letter-spacing: 1.4px; margin-bottom: 30px; text-transform: uppercase;}
 span.optional-text.blue{color: var(--Blue);-webkit-text-fill-color: var(--Blue); opacity: 0.6; background: none;}
 span.optional-text.light-blue{color: var(--Light-Blue); }
