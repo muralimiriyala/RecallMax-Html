@@ -17,6 +17,7 @@ const modal = {
     _.$ele.forEach((btn) => {
       btn.addEventListener('click', modal);
     });
+    if (!_.$close) return false;
     _.$close.addEventListener('click', modal);
   },
 };
