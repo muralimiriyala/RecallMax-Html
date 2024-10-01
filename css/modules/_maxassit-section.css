@@ -20,6 +20,7 @@
     .maxassit-card{flex: 0 0 308px; gap: 20px;}
     .maxassit-card-item{flex: 100%;}
     .maxassit-image{flex: 1;}
+    .maxassit-card-title{flex-direction: column;} 
 }
 
 @media screen and (min-width: 1280px) {

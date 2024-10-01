@@ -324,6 +324,9 @@ ul.slick-dots li button{display: none; padding: 0;}
     span.hide-desktop{display: none;}
     .text-md-right{text-align: right;}
 }
+@media only screen and (max-width: 1279px) and (min-width: 1024px){
+    .book-demo-call{font-size: 18px;}
+}
 @media only screen and (max-width: 1359px) and (min-width: 1200px){
     .container:not(.sm){padding: 0 40px; max-width: 100%;}
 }
