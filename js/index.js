@@ -12,6 +12,7 @@ import uiAccordion from './modules/accordion';
 import teamPage from './modules/team';
 import searchFeild from './modules/search';
 import tabFilter from './modules/tabs-filter';
+import modal from './modules/modal';
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   teamPage.init();
   searchFeild.init();
   tabFilter.init();
+  modal.init();
 });
 
 let scrolled = window.scrollY;

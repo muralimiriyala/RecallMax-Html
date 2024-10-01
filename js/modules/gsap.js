@@ -1,7 +1,12 @@
 import { gsap } from 'gsap';
+var DrawSVGPlugin = DrawSVGPlugin || window.DrawSVGPlugin;
+var CountUp = CountUp || window.CountUp;
 
-// Register the plugin
 gsap.registerPlugin(DrawSVGPlugin);
+
+function getRandomInt(min, max) {
+  return Math.random() * (max - min) + min;
+}
 
 const customGsap = {
   $drawing: document.querySelectorAll('.ui-drawing'),
