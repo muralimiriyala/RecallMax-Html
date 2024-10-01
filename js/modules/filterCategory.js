@@ -1,6 +1,8 @@
 const filterCategory = {
   $eles: document.querySelectorAll('ul.filter-category li a'),
   $filterData: document.querySelectorAll('.filter-doc-row'),
+  $ftrbtn: document.querySelector('.filter-doc-btn'),
+  $ftrlinks: document.querySelector('.filter-category-links'),
   init() {
     const _ = this;
     if (_.$eles.length > 0) {
@@ -26,6 +28,19 @@ const filterCategory = {
         $($target).fadeIn(600);
       });
     });
+    let ftrMobile = (e) => {
+      e.preventDefault();
+      e.target.classList.toggle('open');
+      const ele = _.$ftrlinks;
+      if (ele.dataset.id !== 'true') {
+        ele.style.maxHeight = `${ele.scrollHeight}px`;
+        ele.dataset.id = 'true';
+      } else {
+        ele.style.maxHeight = `0px`;
+        ele.dataset.id = 'false';
+      }
+    };
+    _.$ftrbtn.addEventListener('click', ftrMobile);
   },
 };
 export default filterCategory;
