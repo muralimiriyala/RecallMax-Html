@@ -1,5 +1,6 @@
 
 .our-team-title{flex: 1; padding-right: 64px;}
+.our-team-title h1{margin-bottom: 0;}
 .our-team-title::after{content: ''; position: absolute; top: 0; right: 0; height: 100%; width: 2px; background-color: var(--Accent);}
 .our-team-title span.optional-text{margin-bottom: 22px;}
 .our-team-desc{flex: 1; padding-left: 64px; font-size: 20px; line-height: 30px; color: var(--Gray-1);}
