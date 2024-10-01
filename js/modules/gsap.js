@@ -1,35 +1,28 @@
 import { gsap } from 'gsap';
-import timelineStore from './timelineStore'; // Import the shared store
-
 var DrawSVGPlugin = DrawSVGPlugin || window.DrawSVGPlugin;
+var CountUp = CountUp || window.CountUp;
+
 gsap.registerPlugin(DrawSVGPlugin);
 
+function getRandomInt(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
 const customGsap = {
+  $drawing: document.querySelectorAll('.ui-drawing'),
   init() {
-    var $drawing = jQuery('.ui-drawing');
-
-    $drawing.each(function (index) {
-      var $self = jQuery(this);
-      var $path = $self.find('path');
-
-      // Ensure the path exists before creating a timeline
-      if ($path.length) {
-        var tl = gsap.timeline({ paused: true });
-
-        tl.fromTo(
-          $path[0],
-          { drawSVG: '0%' },
-          { drawSVG: '100%', duration: 1.5, ease: 'power1.out' }
-        );
-
-        const timelineId = 'timeline-' + index; // Create a unique timeline ID
-        timelineStore[timelineId] = tl; // Store the timeline in the shared store
-        $self.attr('data-timeline-id', timelineId); // Attach the timeline ID to the element
-      } else {
-        console.warn('No path found for drawing:', $self);
-      }
+    const _ = this;
+    _.$drawing.forEach(function (ele) {
+      const $self = ele;
+      const $path = $self.querySelectorAll('path');
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo(
+        $path,
+        { drawSVG: '0%' },
+        { drawSVG: '100%', duration: 1.5, ease: 'power1.out' }
+      );
+      $self.tl = tl;
     });
   },
 };
-
 export default customGsap;

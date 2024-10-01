@@ -3,7 +3,6 @@
 import customGsap from './modules/gsap';
 import Animations from './modules/animations';
 import selectBox from './lib/jquery.selectBox';
-import timelineStore from './modules/gsap';
 import Scroll from './modules/scroll';
 import Menu from './modules/menu';
 // import scrollModule from './modules/pageScroll';
@@ -13,12 +12,12 @@ import uiAccordion from './modules/accordion';
 import teamPage from './modules/team';
 import searchFeild from './modules/search';
 import tabFilter from './modules/tabs-filter';
+import modal from './modules/modal';
 
 document.addEventListener('DOMContentLoaded', function () {
-  timelineStore.init();
   customGsap.init();
-
   Animations.init();
+
   Menu.init();
   // scrollModule.init();
   customSlick.init();
@@ -28,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   teamPage.init();
   searchFeild.init();
   tabFilter.init();
+  modal.init();
 });
 
 let scrolled = window.scrollY;

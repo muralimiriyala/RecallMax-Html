@@ -1,5 +1,6 @@
 
 
+@import './elements/_animation.css';
 @import './elements/_color.css';
 @import './elements/_fonts.css';
 @import './elements/_reset.css';
@@ -7,7 +8,7 @@
 @import './elements/_footer.css';
 @import './elements/_transitions.css';
 @import './elements/_social-icons.css';
-@import './elements/_animation.css';
+@import './elements/_modal.css';
 
 @import "./modules/_careers-banner-section.css";
 @import "./modules/_maxassit-herd-section.css";
