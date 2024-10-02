@@ -22,3 +22,10 @@
     .maxassit-number-of-2{flex: 0 0 calc(50% - 24px);}
     .maxassit-number-of-1{flex: 1;}
 }
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .maxassit-number-main{padding: 40px 0; gap: 32px;}
+    .maxassit-number-count{font-size: 48px; line-height: 48px;}
+    .maxassit-number-title h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+    .maxassit-number-list{gap: 24px;}
+}
