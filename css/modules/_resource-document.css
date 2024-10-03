@@ -38,7 +38,7 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
-    .resource-document-main{padding: 90px 0; gap: 80px;}
+    .resource-document-main{padding: 90px 0; gap: 80px; }
     .resource-document-heading{flex: 0 0 352px}
     .resource-document-desc{flex: 0 0 calc(100% - 432px);}
 }
