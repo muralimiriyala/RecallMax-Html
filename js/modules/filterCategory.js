@@ -57,7 +57,9 @@ const filterCategory = {
       $ele.addEventListener('click', ftrResize);
       $ele.addEventListener('change', ftrResize);
     });
-    _.$ftrbtn.addEventListener('click', ftrMobile);
+    if(_.$ftrbtn){
+      _.$ftrbtn.addEventListener('click', ftrMobile);
+    }
   },
 };
 export default filterCategory;

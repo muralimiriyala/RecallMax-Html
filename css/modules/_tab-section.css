@@ -1,6 +1,6 @@
 .tabs-main{padding: 0 0 80px;}
 
-.tabs-filter{gap: 0 32px;}
+
 .tab-links-d{width: fit-content; padding-right: 30px; color: var(--Raisin-Black); cursor: pointer; font-size: 24px; font-weight: 800; line-height: 30px; letter-spacing: -0.24px;}
 .tab-links-d.open span.tab-link-text{color: var(--Text)}
 .tab-link-svgs{right: 0; top: calc(50% - 0px);  width: 20px; height: 20px; transform: translateY(-50%); }
@@ -71,6 +71,9 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .tabs-row{gap: 40px;}
     .tab-list{flex: 0 0 calc(33.333333% - 27px); }
     .data-tab-rows{padding: 40px 0 64px;}
+}
+@media screen and (min-width: 1024px){
+    .tabs-filter{gap: 0 29px;}
 }
 @media screen and (max-width: 1199px) and (min-width: 1024px){
     .tabs-row{gap: 32px; padding: 40px 0 64px;}
