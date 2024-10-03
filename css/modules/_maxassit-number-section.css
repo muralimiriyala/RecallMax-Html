@@ -22,7 +22,13 @@
     .maxassit-number-of-2{flex: 0 0 calc(50% - 24px);}
     .maxassit-number-of-1{flex: 1;}
 }
-
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .maxassit-number-main{padding: 40px 0; gap: 56px;}
+    .maxassit-number-count{font-size: 96px; line-height: 96px;}
+    .maxassit-number-title h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .maxassit-number-list{gap: 32px;}
+    .maxassit-number-item{flex: 0 0 calc(50% - 17px);}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
     .maxassit-number-main{padding: 40px 0; gap: 32px;}
     .maxassit-number-count{font-size: 48px; line-height: 48px;}
