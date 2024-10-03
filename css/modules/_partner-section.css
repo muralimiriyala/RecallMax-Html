@@ -11,7 +11,7 @@
 .partner-btn{gap: 12px;}
 
 @media screen and (min-width: 1024px) {
-    .partner-main{padding: 40px 0;}
+    .partner-main{padding: 80px 0;}
     .reverse{flex-direction: row-reverse;}
     .partner-list{gap: 80px; margin-bottom: 40px;}
     .partner-list:last-child{margin-bottom: 0;}

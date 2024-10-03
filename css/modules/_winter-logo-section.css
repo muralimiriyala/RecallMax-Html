@@ -1,10 +1,17 @@
 
 
 .winter-logo{gap: 24px; padding: 0 32px; width: fit-content; margin: 0 auto;} 
-.winter-logo::before{background: linear-gradient(90deg,rgba(165,24,144,0),#a51890 50%); content: ""; height: 2px; right: 100%; position: absolute; top: 50%; transform: translateY(-50%); width: 100%; opacity: 0.4;}
-.winter-logo::after{background: linear-gradient(90deg,rgba(165,24,144,0),#a51890 50%); content: ""; height: 2px; left: 100%; position: absolute; top: 50%; transform: translateY(-50%) rotate(180deg); width: 100%; opacity: 0.4;}
+.winter-logo::before{background: linear-gradient(90deg,rgba(165,24,144,0),#a51890 50%); content: ""; height: 2px; right: 100%; position: absolute; top: 50%; transform: translateY(-50%); width: 65%; opacity: 0.4;}
+.winter-logo::after{background: linear-gradient(90deg,rgba(165,24,144,0),#a51890 50%); content: ""; height: 2px; left: 100%; position: absolute; top: 50%; transform: translateY(-50%) rotate(180deg); width: 65%; opacity: 0.4;}
 
+@media screen and (min-width: 1024px) {
+    .winter-logo-main{padding: 40px 0 80px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .winter-logo-main{padding: 40px 0 80px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
+    .winter-logo-main{padding: 20px 0 40px;}
     .winter-logo{gap: 24px; padding: 0 24px;}
     .winter-thumb{flex: 0 0 calc(25% - 18px);}
     .winter-logo::before, .winter-logo::after{display: none;}
