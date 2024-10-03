@@ -13,6 +13,7 @@ import teamPage from './modules/team';
 import searchFeild from './modules/search';
 import tabFilter from './modules/tabs-filter';
 import modal from './modules/modal';
+import magnificPopup from './modules/magnificPopup'
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   searchFeild.init();
   tabFilter.init();
   modal.init();
+  magnificPopup.init();
 });
 
 let scrolled = window.scrollY;
