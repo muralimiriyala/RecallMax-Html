@@ -1,0 +1,11 @@
+
+
+@media screen and (min-width: 1024px) {
+    .accreditation-main{padding: 40px 0 80px; gap: 48px;}
+    .accreditation-intro{gap: 48px;}
+    .accreditation-intro-title, .accreditation-intro-description{flex: 1;}
+    .accreditation-row{gap: 48px;}
+    .accreditation-list3{flex: 0 0 calc(33.333% - 32px);}
+    .accreditation-list2{flex: 0 0 calc(50% - 24px);}
+    .accreditation-list1{flex: 1;}
+}

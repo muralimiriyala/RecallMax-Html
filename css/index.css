@@ -43,6 +43,8 @@
 @import "./modules/_winter-logo-section.css";
 @import "./modules/_partner-section.css";
 @import "./modules/_partner-banner-section.css";
+@import "./modules/_partner-block-section.css";
+@import "./modules/_accreditation-section.css";
 
 @import "./modules/jquery.selectBox.css";
 @import "./modules/slick.css";
