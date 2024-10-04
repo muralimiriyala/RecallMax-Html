@@ -1,7 +1,7 @@
 
 .maxassit-section{background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), var(--Eggshell);}
 .maxassit-intro{text-align: center; width: 100%; font-size: 20px; line-height: 25px; font-weight: 800; letter-spacing: -0.2px; color: var(--Raisin-Black);}
-.maxassit-intro h2{font-size: 48px; line-height: 60px; letter-spacing: -0.48px; color: var(--Accent); margin-bottom: 8px;}
+.maxassit-intro .h2{font-size: 48px; line-height: 60px; letter-spacing: -0.48px; color: var(--Accent); margin-bottom: 8px;}
 
 .maxassit-card-item{background: var(--White); border: 1px solid var(--Card-Stroke); border-radius: 16px; color: var(--Gray-2); font-size: 16px; line-height: 24px; padding: 20px 16px; transition: all .5s ease; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .maxassit-card-icon{margin-bottom: 8px; width: 22px;}
