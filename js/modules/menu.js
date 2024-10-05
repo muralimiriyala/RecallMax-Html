@@ -41,20 +41,25 @@ const Menu = {
       e.preventDefault();
       const _$ = this;
       _$.classList.toggle('active');
-      _$.parentElement.classList.remove('sib');
+
       const $li = _$.parentElement;
+    
+      $li.classList.remove('sib');
+
+
       _.$links.forEach(($item) => {
         if ($item !== _$ && $item !== $li) {
           $item.parentElement.querySelector('ul.sub-menu').style.maxHeight =
             '0';
           $item.classList.remove('active');
-          const $lis = _$.parentElement.parentElement.children;
-          for (let lis of $lis) {
-            lis.classList.toggle('sib');
+          const $items = $item.parentElement.parentElement.children;
+          for (let item of $items) {
+            console.log("itemitemitem", item)
+            item.classList.toggle('sib');
           }
         }
+
       });
-      $li.classList.remove('sib');
       let $submenu = _$.parentElement.querySelector('ul.sub-menu');
       $submenu.style.maxHeight && $submenu.style.maxHeight !== '0px'
         ? ($submenu.style.maxHeight = '0')

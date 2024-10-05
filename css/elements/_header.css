@@ -37,7 +37,9 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li > ul{margin: 0; padding: 21px 32px 15px; min-width: 300px; left: 50%; transform: translateX(-50%); border-radius: 0 0 8px 8px; background-color: var(--White); position: absolute; visibility: hidden; opacity: 0; transition: var(--b-transition); box-shadow: 0 6px 12px 0 rgba(24,42,84,.1); z-index: 820;}
     ul.main_menu > li:hover > ul{opacity: 1; visibility: visible;}
     ul.main_menu > li > ul > li{margin: 0 0 11px;}
-    ul.main_menu > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 500; display: block;}
+    ul.main_menu > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 800; display: block;}
+    ul.main_menu > li > ul > li > ul{margin: 22px 0 25px 21px;}
+    ul.main_menu > li > ul > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 700; display: block;}
   
     ul.main_menu > li.nav-features{position: static;}
     ul.main_menu > li.nav-features > ul{padding: 24px 26px 0; width: 100%; gap: 1px 12px; display: flex; flex-wrap: wrap; border-radius: 0 0 24px 24px; }
@@ -109,20 +111,28 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li.menu-item-has-children > a.active::after{ transform: translateY(-50%) rotate(90deg); right: auto; left: 16px; }
     ul.main_menu > li > ul{max-height: 0; overflow: hidden; margin: 0; padding: 0 20px; transition: max-height 0.8s; border-radius: 0px 0px 24px 24px; background: var(--Eggshell); }
     ul.main_menu > li > ul > li:first-child{padding-top: 20px;}
+    ul.main_menu > li > ul > li:last-child{padding-bottom: 8px;}
     ul.main_menu > li > ul > li{margin: 0 0 12px;}
-    ul.main_menu > li > ul > li > a{color: var(--Blue); font-family: var(--base-font); font-size: 1rem; font-weight: 600; line-height: 1.5rem; display: block; position: relative;}
-    ul.main_menu > li > ul > li.current_page_item > a{color: var(--Orange);}
-    ul.main_menu > li > ul > li.current_page_item > a:hover{color: var(--Blue);}
+    ul.main_menu > li > ul > li > a{color: var(--Raisin-Black); font-family: var(--base-font); font-size: 1rem; font-weight: 800; line-height: 1.5rem; display: block; position: relative;}
+    ul.main_menu > li > ul > li.current_page_item > a{color: var(--Accent);}
+    ul.main_menu > li > ul > li > a:hover, ul.main_menu > li > ul > li.current_page_item > a:hover{color: var(--Accent);}
     ul.main_menu > li > ul > li.menu-item-has-children > a::after{top: calc(50% + 1px); transform: translateY(-50%); right: 0; width: 15px; height: 9px; background-repeat: no-repeat; content: ""; display: block; position: absolute;}
     ul.main_menu > li > ul > li.menu-item-has-children > a.active::after{transform: translateY(-50%) scaleY(-1);}
-    ul.main_menu > li > ul > li > ul{margin: 0; padding: 0 0 8px;}
+    ul.main_menu > li > ul > li > ul{margin: 21px 0 0 13px; padding: 0 0 8px;}
     ul.main_menu > li > ul > li > ul > li{margin-bottom: 12px;}
-
-    ul.main_menu > li > ul > li > ul > li > a:hover{color: var(--Orange);}
+    ul.main_menu > li > ul > li > ul > li:last-child{margin-bottom: 0;}
+    ul.main_menu > li > ul > li > ul > li > a{color: var(--Raisin-Black);
+        display: block;
+        font-family: var(--base-font);
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        position: relative;}
+    ul.main_menu > li > ul > li > ul > li > a:hover{color: var(--Accent);}
     
     ul.main_menu > li.nav-products > ul > li.nav-gradient-bar{margin-bottom: 20px;}
     ul.main_menu > li.nav-products > ul > li > a{display: none;}
-    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul{ padding: 0; }
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul{ padding: 0; margin: 0; }
     ul.main_menu > li.nav-products > ul > li > ul{padding: 0;}
     ul.main_menu > li.nav-products > ul > li > ul > li{margin-bottom: 18px;}
     ul.main_menu > li.nav-products > ul > li > ul > li > a{padding-left: 38px; color: var(--Raisin-Black); font-size: 20px; font-weight: 800; line-height: 25px; letter-spacing: -0.2px; }

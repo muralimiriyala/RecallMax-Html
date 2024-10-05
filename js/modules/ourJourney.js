@@ -9,6 +9,7 @@ const ourJourney = {
         let d = document.querySelector(`.our-journey-row[data-value=${n}]`);
         let f = $(d);
         let $i = document.querySelectorAll("ul.our-journey-links > li > a")
+     
         $i.forEach((d)=>{
             d.classList.remove('active');
         })
@@ -20,6 +21,7 @@ const ourJourney = {
     },
     init(){
         const _=this;
+        if(!_.$t) return;
         _.$t.classList.add("active");
         _.$e.forEach((e)=>{
             e.addEventListener("click", this.jn)

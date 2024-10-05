@@ -16,7 +16,7 @@ const Animations = {
       const animateType = $self.data('animate');
       const delay = Number($self.data('animation-delay') || 0);
       const timeline = $self[0].tl;
-      console.log('hhah', timeline);
+   
 
       if ($self.is(':in-viewport')) {
         setTimeout(() => {
