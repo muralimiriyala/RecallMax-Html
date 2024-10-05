@@ -41,25 +41,24 @@ const Menu = {
       e.preventDefault();
       const _$ = this;
       _$.classList.toggle('active');
-
       const $li = _$.parentElement;
-    
-      $li.classList.remove('sib');
 
-
+      const siblings = Array.from($li.parentElement.children);
+      siblings.forEach(($item) => {
+        if ($item !== $li) {
+          $item.classList.remove('active');
+          $item.classList.toggle('sib');
+        }
+      });
+      $li.classList.remove('sib');  
+      
       _.$links.forEach(($item) => {
         if ($item !== _$ && $item !== $li) {
           $item.parentElement.querySelector('ul.sub-menu').style.maxHeight =
-            '0';
-          $item.classList.remove('active');
-          const $items = $item.parentElement.parentElement.children;
-          for (let item of $items) {
-            console.log("itemitemitem", item)
-            item.classList.toggle('sib');
-          }
+          '0';
         }
-
       });
+
       let $submenu = _$.parentElement.querySelector('ul.sub-menu');
       $submenu.style.maxHeight && $submenu.style.maxHeight !== '0px'
         ? ($submenu.style.maxHeight = '0')

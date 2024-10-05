@@ -133,12 +133,13 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li.nav-products > ul > li.nav-gradient-bar{margin-bottom: 20px;}
     ul.main_menu > li.nav-products > ul > li > a{display: none;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul{ padding: 0; margin: 0; }
-    ul.main_menu > li.nav-products > ul > li > ul{padding: 0;}
+    ul.main_menu > li.nav-products > ul > li > ul{padding: 0; margin: 0;}
     ul.main_menu > li.nav-products > ul > li > ul > li{margin-bottom: 18px;}
     ul.main_menu > li.nav-products > ul > li > ul > li > a{padding-left: 38px; color: var(--Raisin-Black); font-size: 20px; font-weight: 800; line-height: 25px; letter-spacing: -0.2px; }
     ul.main_menu > li.nav-products > ul > li > ul > li > a:hover{color: var(--Accent);}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a{ color: var(--Accent); }
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a:hover{ color: var(--Raisin-Black); }
+    
 
     ul.main_menu > li.nav-products > ul > li > ul > li > a img{top: -1px; left: 0; width: 24px; height: auto; position: absolute;}
 

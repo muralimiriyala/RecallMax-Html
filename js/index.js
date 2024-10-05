@@ -15,6 +15,7 @@ import tabFilter from './modules/tabs-filter';
 import modal from './modules/modal';
 import magnificPopup from './modules/magnificPopup';
 import ourJourney from './modules/ourJourney';
+import testimonialSlider from './modules/testimonialSlider';
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
   modal.init();
   magnificPopup.init();
   ourJourney.init();
+  testimonialSlider.init();
 });
 
 let scrolled = window.scrollY;
