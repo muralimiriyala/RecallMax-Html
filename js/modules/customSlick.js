@@ -114,6 +114,62 @@ const customSlick = {
       });
     }
 
+    const $accreditation = $('.accreditation-row');
+    function accreditationinitSlider() {
+      $accreditation.each(function () {
+        const $accreditationSlider = $(this);
+        const accreditationAppend = $(this)
+          .parent()
+          .children('.accreditation-appends');
+        if (window.matchMedia('(max-width: 767px)').matches) {
+          if (!$accreditationSlider.hasClass('slick-initialized')) {
+            $accreditationSlider.slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              prevArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
+              nextArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
+              dots: true,
+              speed: 1000,
+              infinite: false,
+              autoplay: false,
+              variableWidth: true,
+              appendArrows: accreditationAppend,
+              appendDots: accreditationAppend,
+              adaptiveHeight: true,
+              dotsClass: 'slick-dots accreditation-slick-dots',
+              customPaging: function (slider, i) {
+                var slideNumber = i + 1,
+                  totalSlides = slider.slideCount;
+                return (
+                  '<a class="accreditation-dot" role="button" title="' +
+                  slideNumber +
+                  ' of ' +
+                  totalSlides +
+                  '"><span class="string">' +
+                  slideNumber +
+                  '<span class="accreditation-slash">/</span>' +
+                  totalSlides +
+                  '</span></a>'
+                );
+              },
+            });
+          }
+        }
+      });
+    }
+    accreditationinitSlider();
+    function accreditationdestroySlider() {
+      $accreditation.each(function () {
+        const $this = $(this);
+        $(window).width() >= 768 && $this.hasClass('slick-initialized')
+          ? $this.slick('unslick')
+          : '';
+      });
+    }
+
     const $features = $('.features-lists');
     function featuresinitSlider() {
       $features.each(function () {
@@ -164,6 +220,10 @@ const customSlick = {
 
       featuresdestroySlider();
       featuresinitSlider();
+
+      accreditationdestroySlider();
+      accreditationinitSlider();
+
     };
   },
 };

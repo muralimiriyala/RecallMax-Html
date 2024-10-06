@@ -6,10 +6,37 @@
 .partner-block-list .h5{margin-bottom: 17px;}
 
 @media screen and (min-width: 1024px) {
+    .partner-block-main{padding-bottom: 40px;}
     .partner-banner-section + .partner-block-section{margin-top: -168px;}
     .partner-block-of-4{flex: 0 0 calc(25% - 24px);}
     .partner-block-of-3{flex: 0 0 calc(33.333% - 22px);}
     .partner-block-of-2{flex: 0 0 calc(50% - 16px);}
     .partner-block-of-1{flex: 1;}
+    .partner-block-title{flex-direction: column;}
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .partner-block-main{gap: 24px;}
+    .partner-block-of-4{flex: 0 0 calc(25% - 18px);}
+    .partner-block-of-3{flex: 0 0 calc(33.333% - 16px);}
+    .partner-block-of-2{flex: 0 0 calc(50% - 12px);}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .partner-banner-section + .partner-block-section{margin-top: -168px;}
+    .partner-block-main{gap: 24px; padding-bottom: 40px;}
+    .partner-block-title{margin-bottom: 16px; flex-direction: column;}
+    .partner-block-icon{flex: 0 0 40px;}
+    .partner-block-list{flex: 0 0 calc(50% - 12px);}
+    .partner-block-list .h5{margin-bottom: 0;}
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .partner-banner-section + .partner-block-section{margin-top: -88px;}
+    .partner-block-main{gap: 20px; padding-bottom: 40px;}
+    .partner-block-title{gap: 16px; margin-bottom: 16px; align-items: center;}
+    .partner-block-icon{flex: 0 0 40px; margin-bottom: 0;}
+    .partner-block-list{width: 100%;}
+    .partner-block-list .h5{margin-bottom: 0;}
 }
 
