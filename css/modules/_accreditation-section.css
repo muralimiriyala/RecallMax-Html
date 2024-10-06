@@ -27,7 +27,7 @@
     .accreditation-intro-title{flex: 100%;}
     .accreditation-intro-description{flex: 100%;}
 
-    .accreditation-row{gap: 30px;}
+    .accreditation-row{gap: 30px; justify-content: center;}
     .accreditation-list{flex: 0 0 calc(50% - 15px);}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
