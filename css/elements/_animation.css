@@ -248,6 +248,8 @@
 [data-animation="80"]{width: 0; transition: all 0.5s ease;}
 [data-animation="80"].visible{width: 80px;}
 [data-animation].underline h4 span::before{width: 100%;}
+[data-animation].underline h1 span::before{width: 100%;}
 [data-animation].underline.left h4 span::before{left: 0;}
+[data-animation].underline.right h1 span::before{left: 0;}
 [data-animation].underline.right h4 span::before{right: 0;}
 [data-animation].underline.center h4 span::before{margin: auto; left: 0; right: 0;}
