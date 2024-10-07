@@ -1,37 +1,37 @@
 
-.maxassit-number-title span.optional-text{margin-bottom: 11px;}
-.maxassit-number-count{text-shadow: 4px 4px 0px rgba(164, 39, 143, 0.24); display: block; color: var(--Raisin-Black); margin-bottom: 12px;}
-.maxassit-number-title h3{margin-bottom: 0;}
+.conter-max-head span.optional-text{margin-bottom: 11px;}
+.conter-max-total{text-shadow: 4px 4px 0px rgba(164, 39, 143, 0.24); display: block; color: var(--Raisin-Black); margin-bottom: 12px;}
+.conter-max-head h3{margin-bottom: 0;}
 
-.maxassit-number-item{ font-size: 20px; line-height: 25px; font-weight: 600; border-radius: 24px; color: var(--Accent); border: 1px solid var(--Card-Stroke); background: var(--White); padding: 32px 16px 28px 16px; text-align: center;}
-.maxassit-number-item > span{font-size: 56px; line-height: 56px; font-weight: 800;}
+.conter-max-list{ font-size: 20px; line-height: 25px; font-weight: 600; border-radius: 24px; color: var(--Accent); border: 1px solid var(--Card-Stroke); background: var(--White); padding: 32px 16px 28px 16px; text-align: center;}
+.conter-max-list > span{font-size: 56px; line-height: 56px; font-weight: 800;}
 
-.maxassit-number-item.yellow{border: 1px solid var(--Translucent-3); background: var(--Tint); color: var(--Text-2);}
-.yellow .maxassit-number-icon svg path{fill: var(--Accent-4);}
-.maxassit-number-item.light-blue{border: 1px solid var(--Translucent,-2); background: var(--Tint-2); color: var(--Text);}
-.light-blue .maxassit-number-icon svg path{fill: var(--Accent-3);}
-.maxassit-number-item.light-green{border: 1px solid var(--Translucent); background: var(--Tint-3); color: var(--Text-3);}
-.light-green .maxassit-number-icon svg path{fill: var(--Accent-2);}
+.conter-max-list.yellow{border: 1px solid var(--Translucent-3); background: var(--Tint); color: var(--Text-2);}
+.yellow .conter-max-icon svg path{fill: var(--Accent-4);}
+.conter-max-list.light-blue{border: 1px solid var(--Translucent,-2); background: var(--Tint-2); color: var(--Text);}
+.light-blue .conter-max-icon svg path{fill: var(--Accent-3);}
+.conter-max-list.light-green{border: 1px solid var(--Translucent); background: var(--Tint-3); color: var(--Text-3);}
+.light-green .conter-max-icon svg path{fill: var(--Accent-2);}
 
 @media screen and (min-width: 1024px) {
-    .maxassit-number-main{padding: 80px 0; gap: 56px;}
-    .maxassit-number-count{font-size: 128px; line-height: 128px;}
-    .maxassit-number-list{gap: 48px;}
-    .maxassit-number-of-4{flex: 0 0 calc(25% - 36px);}
-    .maxassit-number-of-3{flex: 0 0 calc(33.333% - 32px);}
-    .maxassit-number-of-2{flex: 0 0 calc(50% - 24px);}
-    .maxassit-number-of-1{flex: 1;}
+    .conter-max-main{padding: 80px 0; gap: 56px;}
+    .conter-max-total{font-size: 128px; line-height: 128px;}
+    .conter-max-row{gap: 48px;}
+    .conter-max-of-4{flex: 0 0 calc(25% - 36px);}
+    .conter-max-of-3{flex: 0 0 calc(33.333% - 32px);}
+    .conter-max-of-2{flex: 0 0 calc(50% - 24px);}
+    .conter-max-of-1{flex: 1;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .maxassit-number-main{padding: 40px 0; gap: 56px;}
-    .maxassit-number-count{font-size: 96px; line-height: 96px;}
-    .maxassit-number-title h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
-    .maxassit-number-list{gap: 32px;}
-    .maxassit-number-item{flex: 0 0 calc(50% - 17px);}
+    .conter-max-main{padding: 40px 0; gap: 56px;}
+    .conter-max-total{font-size: 96px; line-height: 96px;}
+    .conter-max-head h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .conter-max-row{gap: 32px;}
+    .conter-max-list{flex: 0 0 calc(50% - 17px);}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .maxassit-number-main{padding: 40px 0; gap: 32px;}
-    .maxassit-number-count{font-size: 48px; line-height: 48px;}
-    .maxassit-number-title h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
-    .maxassit-number-list{gap: 24px;}
+    .conter-max-main{padding: 40px 0; gap: 32px;}
+    .conter-max-total{font-size: 48px; line-height: 48px;}
+    .conter-max-head h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+    .conter-max-row{gap: 24px;}
 }
