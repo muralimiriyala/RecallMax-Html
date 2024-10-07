@@ -3,7 +3,7 @@
 .partner-banner-title span.optional-text{margin-bottom: 6px;}
 .partner-banner-title h1{color: var(--White);}
 .partner-banner-title h1 > span{position: relative; z-index: 1;}
-.partner-banner-title h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: 0; z-index: -1; transition: var(--b-transition);}
+.partner-banner-title[data-animation].underline.left h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: 0; left: -10px; z-index: -1; transition: var(--b-transition);}
 /* .partner-banner-title h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: calc(100% + 15px); left: -10px; z-index: -1; transition: var(--b-transition);} */
 
 @media screen and (min-width: 1024px) {
