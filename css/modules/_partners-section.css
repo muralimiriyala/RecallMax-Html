@@ -17,6 +17,7 @@ ul.partners-tab-links > li{margin: 0;}
 ul.partners-tab-links > li > a{padding: 8px 16px; gap: 8px; background-color: var(--Card-Stroke); color: var(--Raisin-Black); font-size: 16px; line-height: 24px; text-transform: capitalize;}
 ul.partners-tab-links > li > a.active{background-color: var(--Translucent-2); color: var(--Raisin-Black); }
 ul.partners-tab-links > li > a:not(.active):hover{ border-radius: 12px; background: var(--Accent-3); }
+ul.partners-tab-links > li > a.clear:hover{ background: transparent;}
 ul.partners-tab-links > li > a i{font-size: 0; top: 1px; position: relative; color: var(--Orange);}
 ul.partners-tab-links > li > a.active i{font-size: 14px;}
 ul.partners-tab-links > li > a span.close-icon{display: none; position: relative; width: 12px;}
