@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
   modal.init();
   magnificPopup.init();
   ourJourney.init();
-  // testimonialSlider.init();
+  testimonialSlider.init();
 });
 
 let scrolled = window.scrollY;
