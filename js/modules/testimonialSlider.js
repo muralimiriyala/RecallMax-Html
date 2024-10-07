@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 const testimonialSlider = {
     $e: document.querySelectorAll('.testimonial-item'),
     $m: document.querySelectorAll('.testimonial-mobile'),
@@ -33,11 +35,23 @@ const testimonialSlider = {
                 return false;
             }
             e.preventDefault();
+
+            slides.forEach((slide) => {
+                slide.classList.remove('open');
+                slide.removeAttribute('style')
+            });
+            if(e.currentTarget){
+
+                e.currentTarget.classList.add('open')
+            }
             
-            mslides.forEach(slide=> $(slide).hide());
-            
+            mslides.forEach((slide)=> {
+                $(slide).hide();
+            });
+
             const attr = e.currentTarget.getAttribute('data-slide');
             const txt = document.querySelector('.testimonial-mobile[data-text="'+ attr +'"]');
+      
             const $txt = $(txt)
             $(txt).fadeIn('800');
 
