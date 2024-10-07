@@ -1,16 +1,78 @@
 const testimonialSlider = {
     $e: document.querySelectorAll('.testimonial-item'),
-    init(){
+    $m: document.querySelectorAll('.testimonial-mobile'),
+    init() {
         const $t = this;
+        const media = window.matchMedia('(min-width: 1280px)');
         const slides = Array.from($t.$e);
-        slides.at(0).classList.add('open')
-        const slider = function(e){
-           e.preventDefault();
+        slides.at(0).classList.add('open');
+
+        const mslides = Array.from($t.$m);
+        mslides.at(0).classList.add('open');
+
+        const userWidth = 168;
+        const currentWidth = 620;
+
+        const slider = function (e) {
+            e.preventDefault();
+            const target = e.currentTarget;
+
+            // Reset all slides
+            slides.forEach((slide) => {
+                slide.classList.remove('open');
+                slide.style.flex = `1`;
+            });
+
+            // Activate the clicked slide
+            target.classList.add('open');
+            target.style.flex = `0 0 ${currentWidth}px`;
+        };
+
+        const mobileSlider = function (e) {
+            if(!e){
+                return false;
+            }
+            e.preventDefault();
             
-        }
-        $t.$e.forEach((ele)=>{
-            ele.addEventListener('click', slider)
-        })
+            mslides.forEach(slide=> $(slide).hide());
+            
+            const attr = e.currentTarget.getAttribute('data-slide');
+            const txt = document.querySelector('.testimonial-mobile[data-text="'+ attr +'"]');
+            const $txt = $(txt)
+            $(txt).fadeIn('800');
+
+            
+
+        };
+
+        const setupEventListeners = (isDesktop) => {
+            slides.forEach((ele) => {
+                if (isDesktop) {
+                    ele.removeEventListener('click', mobileSlider);
+                    ele.addEventListener('click', slider);
+                } else {
+                    ele.removeEventListener('click', slider);
+                    ele.addEventListener('click', mobileSlider);
+                    mobileSlider();
+                }
+            });
+               // If switching to mobile, add resize event listener
+               if (!isDesktop) {
+                window.addEventListener('resize', mobileSlider);
+            } else {
+                // Remove resize event listener if switching to desktop
+                window.removeEventListener('resize', mobileSlider);
+            }
+        };
+
+        // Initial setup
+        setupEventListeners(media.matches);
+
+        // Listen for media query changes
+        media.addEventListener('change', (e) => {
+            setupEventListeners(e.matches);
+        });
     }
-}
+};
+
 export default testimonialSlider;
