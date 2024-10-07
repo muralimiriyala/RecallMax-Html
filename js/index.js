@@ -16,6 +16,7 @@ import modal from './modules/modal';
 import magnificPopup from './modules/magnificPopup';
 import ourJourney from './modules/ourJourney';
 import testimonialSlider from './modules/testimonialSlider';
+import counter from './modules/counter';
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
   magnificPopup.init();
   ourJourney.init();
   testimonialSlider.init();
+  counter.init();
 });
 
 let scrolled = window.scrollY;

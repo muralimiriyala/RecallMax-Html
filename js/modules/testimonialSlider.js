@@ -7,10 +7,10 @@ const testimonialSlider = {
         const $t = this;
         const media = window.matchMedia('(min-width: 1280px)');
         const slides = Array.from($t.$e);
-        slides.at(0).classList.add('open');
+        slides.length > 0 ? slides.at(0).classList.add('open') : '';
 
         const mslides = Array.from($t.$m);
-        mslides.at(0).classList.add('open');
+        mslides.length > 0 ? mslides.at(0).classList.add('open') : '';
 
         const userWidth = 168;
         const currentWidth = 620;

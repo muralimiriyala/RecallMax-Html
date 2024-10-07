@@ -48,7 +48,6 @@ const Animations = {
   },
   animateRun($el, type) {
     $el.addClass('visible');
-
     if (type === 'counter') {
       const $counter = $el[0];
       if ($counter.counter && $counter.counter.paused) $counter.counter.start();
