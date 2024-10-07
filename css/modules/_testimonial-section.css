@@ -11,10 +11,6 @@
 .testimonial-content span{font-size: 12px; line-height: 15px; opacity: 0.5; display: block;}
 
 
-.open.testimonial-item{background: linear-gradient(180deg, rgba(18, 39, 80, 0.19) 0%, rgba(18, 39, 80, 0.75) 100%), var(--Accent);}
-.open .testimonial-quote-icon{display: block;}
-.open .testimonial-content{display: block;}
-
 .testimonial-review{border-radius: 40px; border: 2px solid var(--Orange); background: var(--White, #FFF); padding: 8px 8px 8px 20px; min-width: 410px; width: fit-content; align-items: center;}
 .rating{flex: 0 0 127px; gap: 8px;}
 .reviews{flex: 0 0 147px; gap: 8px; margin-left: 40px; position: relative;}
@@ -23,6 +19,12 @@
 .rating-value, .review-value{font-size: 20px; line-height: 30px;}
 .g2-logo{width: 48px; margin-left: 16px;}
 
+/*-- media css starts here --*/
+@media screen and (min-width: 768px) {
+    .open.testimonial-item{background: linear-gradient(180deg, rgba(18, 39, 80, 0.19) 0%, rgba(18, 39, 80, 0.75) 100%), var(--Accent);}
+    .open .testimonial-quote-icon{display: block;}
+    .open .testimonial-content{display: block;}
+}
 @media screen and (min-width: 1024px) {
     .testimonial-main{padding: 48px; justify-content: space-between; align-items: center; margin: 90px 0;}
     body.page-template-about .testimonial-main{margin-bottom: 24px;}
@@ -33,7 +35,6 @@
     .testimonial-content{flex: 0 0 calc(100% - 194px); padding: 32px 32px 32px 0;}
     .testimonial-review{order: 2; margin-bottom: 40px;}
 }
-
 @media screen and (min-width: 1440px){
     .open.testimonial-item{flex: 0 0 620px;}
 }
