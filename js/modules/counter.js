@@ -11,11 +11,12 @@ const counter = {
             })
         })
         _.$circlepath.forEach($path=>{
-            const $dash = $path.getAttribute('stroke-dasharray');
-            const $pathvalue = $path.getAttribute('data-count-path');
+            let $dash = $path.getAttribute('stroke-dasharray');
+            let $pathvalue = $path.getAttribute('data-count-path');
+            $dash = parseInt($dash)
+            $pathvalue = parseInt($pathvalue)
             const $progress = $dash - ($dash * $pathvalue / 100);
             $path.style.strokeDashoffset = $progress;
-            console.log('$p', $path, $progress  )
         })
     }
 }
