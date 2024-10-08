@@ -55,7 +55,8 @@ body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 
 body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_opt_container{align-items: center; display: flex; flex-wrap: wrap; gap: 0 24px; margin-left: 16px;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio{ flex: 1; display: flex; flex-wrap: wrap;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio label{padding: 0;}
+body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio label{padding: 0; font-size: 16px; line-height: 24px; text-transform: capitalize;}
+body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']{top: -2px;}
 
 body .frm_forms .frm_form_fields .frm_form_field textarea{min-height: 128px;}
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input{top: 12px; left: 8px; width: 20px; height: 20px; margin: 0; border-radius: 2px; border: solid 1px transparent; background-color: var(--White); }
@@ -71,7 +72,6 @@ body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="chec
     font-size: 24px;
     color: var(--Accent);
     top: 0px;
-    left: -1px;
     position: absolute !important;
     background: var(--Accent);
     background-size: 11px !important;
