@@ -1,12 +1,12 @@
 
-.compare-main{border-radius: 72px; background: var(--RecallMax-Purple-Tint); padding: 0 40px; min-height: 80px; gap: 20px;}
+.compare-main{background: var(--RecallMax-Purple-Tint); padding: 0 40px; min-height: 80px; gap: 20px;}
 .compare-main h4{margin-bottom: 0;}
 
 .compare-images{max-width: 256px; transition: all .5s ease;}
 .compare-images img{filter: drop-shadow(0px 9px 16px rgba(0, 0, 0, 0.24));}
-.compare-thumb1{width: 96px; height: 96px;}
-.compare-thumb2{width: 76px; height: 76px;}
-.compare-thumb3{width: 56px; height: 56px;}
+.compare-t-center{width: 96px; height: 96px;}
+.compare-t-left-2{width: 76px; height: 76px;}
+.compare-t-left-1{width: 56px; height: 56px;}
 .compare-left{margin-right: -26px;}
 .compare-right{margin-left: -26px;}
 
