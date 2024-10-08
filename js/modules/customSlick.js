@@ -192,8 +192,6 @@ const customSlick = {
               infinite: false,
               autoplay: false,
               variableWidth: true,
-              centerMode: true,
-              // centerPadding:'80px',
               appendArrows: featuresAppend,
               appendDots: featuresAppend,
             });
