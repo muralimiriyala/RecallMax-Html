@@ -201,7 +201,7 @@ const customSlick = {
     }
     featuresinitSlider();
     function featuresdestroySlider() {
-      $benefit.each(function () {
+      $features.each(function () {
         const $this = $(this);
         $(window).width() >= 768 && $this.hasClass('slick-initialized')
           ? $this.slick('unslick')
