@@ -1,6 +1,7 @@
 'use strict';
 
 import customGsap from './modules/gsap';
+import counter from './modules/counter';
 import Animations from './modules/animations';
 import selectBox from './lib/jquery.selectBox';
 import Scroll from './modules/scroll';
@@ -16,10 +17,13 @@ import modal from './modules/modal';
 import magnificPopup from './modules/magnificPopup';
 import ourJourney from './modules/ourJourney';
 import testimonialSlider from './modules/testimonialSlider';
-import counter from './modules/counter';
+import Effects from './modules/effects'
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
+  counter.init();
+  Effects.init();
+
   Animations.init();
 
   Menu.init();
@@ -35,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
   magnificPopup.init();
   ourJourney.init();
   testimonialSlider.init();
-  counter.init();
 });
 
 let scrolled = window.scrollY;

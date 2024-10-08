@@ -34,6 +34,7 @@
     "is-in-viewport": "^3.0.4",
     "jquery": "^3.7.1",
     "jquery.appear": "^1.0.1",
+    "lerp": "^1.0.3",
     "magnific-popup": "^1.2.0",
     "mini-css-extract-plugin": "^2.9.1",
     "pixrem": "^5.0.0",

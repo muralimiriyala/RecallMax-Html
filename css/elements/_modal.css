@@ -8,11 +8,13 @@
 .modal-head{color: var(--Raisin-Black); font-size: 20px; font-weight: 400; line-height: 30px;}
 .modal-head .h2{margin-bottom: 8px; color: var(--Accent); font-size: 48px; line-height: 60px; font-weight: 800; letter-spacing: -0.48px; }
 .modal-close{ right: 8px; top: 8px; width: 40px; height: 40px; opacity: 0.5; background: var(--Gray-4); cursor: pointer; }
-.modal-close:hover{ opacity: 1; }
+.modal-close:hover{ opacity: 1; background: var(--Accent); }
+.modal-close svg path{transition: var(--b-transition);}
+.modal-close:hover svg path{fill: #fff;}
 body .modal-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 14px 24px 15px; width: 100%; font-size: 24px; line-height: 24px;}
 body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{display: block; width: 100%;}
 body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding: 0; width: 100%; display: block; text-align: center;}
-body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label input{display: none;}
+body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label input{display: none !important;}
 body .modal-form .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
 
 /*-- media css starts here --*/
