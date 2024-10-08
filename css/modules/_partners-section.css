@@ -102,7 +102,8 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .partners-tab-links-d{margin-bottom: 30px;}
     .partners-filter{display: block;}
     .partners-row{display: block; padding: 18px 0 40px;}
-    .partners-list{margin-bottom: 20px; padding: 24px;}
+    .partners-list{margin-bottom: 20px;}
+    .partners-list > a{padding: 24px;}
     .partners-list:last-child{margin-bottom: 0;}
     .partners-list:hover .partners-text::after {font-size: 30px; line-height: 300;}
     .partners-main{padding: 40px 0;}
