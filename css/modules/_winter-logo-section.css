@@ -8,7 +8,7 @@
     .winter-logo-main{padding: 40px 0 80px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    .winter-logo-main{padding: 40px 0 80px;}
+    .winter-logo-main{padding: 40px 0;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .winter-logo-main{padding: 20px 0 40px;}
