@@ -10,11 +10,20 @@
 .conter-max-round{width: 148px; height: 148px; margin-bottom: 22px;}
 svg.round-default-svg{width: 100%; height: 100%; transform: rotate(90deg);}
 svg.round-default-svg circle{
-    stroke-dashoffset: 450;
     transition: stroke-dashoffset 2s linear;
+    stroke-width: 14px;   
+}
+svg.round-default-svg circle#round-bar-glow-1{
     stroke: #A4278F;
-    stroke-width: 1em;
-    
+}
+svg.round-default-svg circle#round-bar-glow-2{
+    stroke: #FFA90D;
+}
+svg.round-default-svg circle#round-bar-glow-3{
+    stroke: #3BAFD3;
+}
+svg.round-default-svg circle#round-bar-glow-4{
+    stroke: #1EA4B5;
 }
 
 .conter-max-list.yellow{border: 1px solid var(--Translucent-3); background: var(--Tint); color: var(--Text-2);}
