@@ -2,6 +2,7 @@ import {CountUp} from 'countup.js'
 const counter = {
     $ele: document.querySelectorAll('[data-count-to]'),
     init(){
+     
         const _ = this;
         _.$ele.forEach($el=>{
            
