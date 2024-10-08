@@ -94,7 +94,7 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     ul.partners-tab-links > li > a { gap: 8px; width: fit-content; flex-wrap: nowrap; white-space: nowrap; }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .partners-row{gap: 32px; padding-top: 32px;}
+    .partners-row{gap: 32px; padding: 32px 0 50px;}
     .partners-list{flex: 0 0 calc(50% - 16px); }
     ul.partners-tab-links { gap: 24px; }
 }
