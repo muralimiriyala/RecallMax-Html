@@ -6,9 +6,7 @@ const testimonialSlider = {
     init() {
         const $t = this;
         const media = window.matchMedia('(min-width: 1280px)');
-        const slides = Array.from($t.$e);
-        slides.length > 0 ? slides.at(0).classList.add('open') : '';
-
+  
         const mslides = Array.from($t.$m);
         mslides.length > 0 ? mslides.at(0).classList.add('open') : '';
 
@@ -19,6 +17,9 @@ const testimonialSlider = {
             e.preventDefault();
             const target = e.currentTarget;
 
+            const slides = Array.from($t.$e);
+            slides.length > 0 ? slides.at(0).classList.add('open') : '';
+    
             // Reset all slides
             slides.forEach((slide) => {
                 slide.classList.remove('open');
@@ -36,10 +37,16 @@ const testimonialSlider = {
             }
             e.preventDefault();
 
+            const slides = Array.from($t.$e);
+            slides.length > 0 ? slides.at(0).classList.add('open') : '';
+
+            
             slides.forEach((slide) => {
                 slide.classList.remove('open');
                 slide.removeAttribute('style')
             });
+
+
             if(e.currentTarget){
 
                 e.currentTarget.classList.add('open')
