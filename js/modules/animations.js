@@ -1,6 +1,7 @@
 import imagesLoaded from 'imagesloaded';
 import 'is-in-viewport';
 import 'jquery.appear';
+import progress from './progress';
 
 imagesLoaded.makeJQueryPlugin($);
 const $body = $('body');
@@ -20,9 +21,13 @@ const Animations = {
       if ($self.is(':in-viewport')) {
         setTimeout(() => {
           if (animateType) {
+            console.log("hhhhaha")
             _.animateRun($self, animateType);
           } else {
             $self.addClass('visible ' + animation);
+         
+            if(progress) progress.play();
+      
             if (timeline) {
               timeline.play();
             }
@@ -47,6 +52,8 @@ const Animations = {
   },
   animateRun($el, type) {
     $el.addClass('visible');
+    if(progress) progress.play();
+
     if (type === 'counter') {
       const $counter = $el[0];
       if ($counter.counter && $counter.counter.paused) $counter.counter.start();
@@ -54,6 +61,8 @@ const Animations = {
   },
   animateReset($el, type) {
     $el.removeClass('visible');
+    if(progress) progress.reset();
+
     if (type === 'counter') {
       const $counter = $el[0];
       $counter.counter.reset();
@@ -84,8 +93,13 @@ const Animations = {
         !$self.hasClass('visible')
       ) {
         setTimeout(() => {
-          if (animateType) _.animateRun($self, animateType);
-          else $self.addClass('visible ' + animation);
+          if (animateType) {
+            _.animateRun($self, animateType);
+          }
+          else {
+            $self.addClass('visible ' + animation);
+            if(progress) progress.reset();
+          }
         }, delay);
       } else if (
         direction === 'UP' &&
@@ -93,8 +107,13 @@ const Animations = {
         $self.offset().top > scrolled &&
         $self.hasClass('visible')
       ) {
-        if (animateType) _.animateReset($self, animateType);
-        else $self.removeClass('visible ' + animation);
+        if (animateType) {
+          _.animateReset($self, animateType);
+        }
+        else {
+          $self.removeClass('visible ' + animation);
+          if(progress) progress.reset();
+        }
       }
     });
   },
