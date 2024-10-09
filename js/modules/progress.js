@@ -5,10 +5,12 @@ const progress = {
         _.$circlepath.forEach($path=>{
             let $dash = $path.getAttribute('stroke-dasharray');
             let $pathvalue = $path.getAttribute('data-count-path');
+            let $duration = Number($path.getAttribute('data-duration') / 1000);
             $dash = parseInt($dash)
             $pathvalue = parseInt($pathvalue)
             const $progress = $dash - ($dash * $pathvalue / 100);
             $path.style.strokeDashoffset = $progress;
+            $path.style.transitionDuration = $duration;
         })
     },
     reset(){
