@@ -61,12 +61,12 @@ const Animations = {
   },
   animateReset($el, type) {
     $el.removeClass('visible');
-    if(progress) progress.reset();
+    // if(progress) progress.reset();
 
-    if (type === 'counter') {
-      const $counter = $el[0];
-      $counter.counter.reset();
-    }
+    // if (type === 'counter') {
+    //   const $counter = $el[0];
+    //   $counter.counter.reset();
+    // }
   },
   handle(scrolled, direction) {
     const _ = this;
@@ -98,7 +98,6 @@ const Animations = {
           }
           else {
             $self.addClass('visible ' + animation);
-            if(progress) progress.reset();
           }
         }, delay);
       } else if (
@@ -112,7 +111,6 @@ const Animations = {
         }
         else {
           $self.removeClass('visible ' + animation);
-          if(progress) progress.reset();
         }
       }
     });

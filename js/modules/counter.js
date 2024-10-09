@@ -8,7 +8,7 @@ const counter = {
             console.log($el.getAttribute('data-duration') / 1000, "tetetet131313")
             $el.counter = new CountUp($el, $el.getAttribute('data-count-to'), {
                 startVal: Number($($el).html()),
-                duration: Number($el.getAttribute('data-duration') / 1000 * 1.5),
+                duration: Number($el.getAttribute('data-duration') / 1000 * 1),
             })
         })
     }
