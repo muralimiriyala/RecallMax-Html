@@ -1,10 +1,10 @@
 
-body.page-template-about-careers .maxassit-herd-main{margin-top: -48px; background: var(--White); width: fit-content; padding: 16px 16px 16px 32px; border-radius: 24px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
+body.page-template-careers .maxassit-herd-main{margin-top: -48px; background: var(--White); width: fit-content; padding: 16px 16px 16px 32px; border-radius: 24px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .maxassit-herd-main{gap: 24px;}
 .maxassit-herd-text > h4{margin-bottom: 0; letter-spacing: normal;}
 .maxassit-herd-text > h4 > span{position: relative;}
 .maxassit-herd-text > h4 > span::before{width: 0; content: ""; position: absolute; border-radius: 4px; background: var(--Accent); opacity: 0.4; display: inline-block; height: 16px; bottom: 0; z-index: -1; transition: var(--b-transition);}
-body.page-template-about-careers .maxassit-herd-text > h4 > span::before{ bottom: -2px; margin-left:-3px;}
+body.page-template-careers .maxassit-herd-text > h4 > span::before{ bottom: -2px; margin-left:-3px;}
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     body.page-template-about-team .maxassit-herd-main{margin-top: 43px;}
@@ -18,9 +18,9 @@ body.page-template-about-careers .maxassit-herd-text > h4 > span::before{ bottom
     .maxassit-herd-btn{width: 100%;}
     .maxassit-herd-btn .button{width: 100%;}
 
-    body.page-template-about-careers .maxassit-herd-main{padding: 16px 16px 16px 24px; gap: 16px;}
-    body.page-template-about-careers .maxassit-herd-text > h4 > span::before{display: none;}
-    body.page-template-about-careers .maxassit-herd-btn {width: fit-content;}
-    body.page-template-about-careers .maxassit-herd-btn .button{width: fit-content;}
+    body.page-template-careers .maxassit-herd-main{padding: 16px 16px 16px 24px; gap: 16px;}
+    body.page-template-careers .maxassit-herd-text > h4 > span::before{display: none;}
+    body.page-template-careers .maxassit-herd-btn {width: fit-content;}
+    body.page-template-careers .maxassit-herd-btn .button{width: fit-content;}
     
 }

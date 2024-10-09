@@ -9,7 +9,7 @@
 
 @media screen and (min-width: 1024px) {
     .careers-banner-main{padding: 150px 0 80px;}
-    body.page-template-about-careers .careers-banner-main{padding: 150px 0 128px;}
+    body.page-template-careers .careers-banner-main{padding: 150px 0 128px;}
     .careers-banner-text{max-width: 600px;}
     .careers-banner-bg{height: 567px; right: -156px; top: 127px; max-width: 917px;} 
 }
@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .careers-banner-main{padding: 145px 0 80px;}
-    body.page-template-about-careers .careers-banner-main{padding: 144px 0 80px;}
+    body.page-template-careers .careers-banner-main{padding: 144px 0 80px;}
     .careers-banner-bg{right: -296px; top: 104px;}
     .careers-banner-text span.optional-text{margin-bottom: 32px;}
     .careers-banner-text hr.sm-line{margin: 32px 0;}
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .careers-banner-main{padding: 145px 0 40px;}
-    body.page-template-about-careers .careers-banner-main{padding: 144px 0 88px;}
+    body.page-template-careers .careers-banner-main{padding: 144px 0 88px;}
     .careers-banner-text{font-size: 18px; line-height: 27px;}
     .careers-banner-text span.optional-text{margin-bottom: 24px;}
     .careers-banner-text hr.sm-line{margin: 24px 0;}
