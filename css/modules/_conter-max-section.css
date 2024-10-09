@@ -69,4 +69,7 @@ svg.round-default-svg circle#round-bar-glow-4{
 }
 @media screen and (max-width: 374px) and (min-width: 200px){
     .conter-max-round{height: 105px; width: 105px;}
+    .conter-max-total{font-size: 40px; line-height: 40px;}
+    .conter-max-list{font-size: 17px; line-height: 22px;}
+    .counter-main > span{font-size: 48px; line-height: 48px;}
 }
