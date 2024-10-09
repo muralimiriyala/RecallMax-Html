@@ -12,7 +12,7 @@
 .compare-t-left-2{background-color: #336DED;}
 .compare-t-left-2 figure{width: 48.88px;}
 .compare-t-center{background-image: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%); background-color: var(--Accent);}
-.compare-t-center figure.compare-thumb{width: 88px; opacity: 1;}
+.compare-t-center figure.compare-thumb{width: 88px; opacity: 1; top: 7px; position: relative;}
 .compare-t-right-2{background-color: #000000;}
 .compare-t-right-2 figure{width: 37px;}
 .compare-t-right-1{background-color: #1E3163;}
@@ -53,7 +53,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
     .compare-h{transform: none;}
     .compare-l-h{display: none;}
     .compare-r-h{padding: 0 40px; text-align: center;}
-    .compare-bg{height: calc(100%); top: 0; transform: none;}
+    .compare-bg{height: calc(100%); top: 0; transform: none; border-radius: 40px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .compare-main{border-radius: 40px; padding: 16px 0;}
@@ -61,7 +61,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
     .compare-h{transform: none;}
     .compare-l-h{display: none;}
     .compare-r-h{padding: 0 40px; text-align: center;}
-    .compare-bg{height: calc(100%); top: 0; transform: none;}
+    .compare-bg{height: calc(100%); top: 0; transform: none; border-radius: 40px;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px) {
     .compare-main:hover .compare-left{margin-right: -16px;}
