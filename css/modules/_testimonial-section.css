@@ -64,6 +64,8 @@
     .testimonial-thumb{flex: 1;}
     .testimonial-txt{font-size: 20px; line-height: 25px; color: var(--White);}
     .testimonial-txt > span{font-size: 12px; line-height: 15px; margin-top: 40px; display: block; color: var(--White-50);}
+    .testimonial-quote-icon{display: none; right: auto; top: auto; width: 40px; bottom: -24px; left: 50%; transform: translateX(-50%);}
+    .open .testimonial-quote-icon{display: block;}
 }
 @media screen and (max-width: 1023px)  and (min-width: 768px){
     body.page-template-about .testimonial-main{margin-bottom: 24px;}
