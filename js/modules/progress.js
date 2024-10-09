@@ -9,6 +9,8 @@ const progress = {
         // let count=[];
         const countermain = () =>{
             if(start<0) return;
+            if(!_.$dollar) return;
+            if(!_.$max) return;
             _.$dollar.innerHTML='$';
             _.$max.innerHTML=start.toLocaleString();
             // count.push(start)
