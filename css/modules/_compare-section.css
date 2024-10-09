@@ -31,6 +31,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
 .compare-main:hover .compare-left{margin-right: -8px;}
 .compare-main:hover .compare-right{margin-left: -8px;}
 
+/*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
     .compare-l-h span:nth-child(n+2){display: none;}
     .compare-r-h span:nth-child(-n+1){display: none;}
@@ -56,4 +57,12 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
     .compare-l-h{display: none;}
     .compare-r-h{padding: 0 40px; text-align: center;}
     .compare-bg{height: calc(100%); top: 0; transform: none;}
+}
+@media screen and (max-width: 389px) and (min-width: 200px) {
+    .compare-main:hover .compare-left{margin-right: -16px;}
+    .compare-main:hover .compare-right{margin-left: -16px;}
+}
+@media screen and (max-width: 374px) and (min-width: 200px) {
+    .compare-main:hover .compare-left{margin-right: -24px;}
+    .compare-main:hover .compare-right{margin-left: -24px;}
 }
