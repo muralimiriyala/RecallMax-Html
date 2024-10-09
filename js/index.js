@@ -18,11 +18,12 @@ import magnificPopup from './modules/magnificPopup';
 import ourJourney from './modules/ourJourney';
 import testimonialSlider from './modules/testimonialSlider';
 import Effects from './modules/effects';
-
+import progress from './modules/progress';
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
   counter.init();
+  progress.init();
   Effects.init();
   Animations.init();
   Menu.init();

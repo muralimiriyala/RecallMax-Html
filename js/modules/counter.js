@@ -4,8 +4,6 @@ const counter = {
     init(){
         const _ = this;
         _.$ele.forEach($el=>{
-
-            console.log($el.getAttribute('data-duration') / 1000, "tetetet131313")
             $el.counter = new CountUp($el, $el.getAttribute('data-count-to'), {
                 startVal: Number($($el).html()),
                 duration: Number($el.getAttribute('data-duration') / 1000 * 1),

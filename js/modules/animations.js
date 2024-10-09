@@ -21,7 +21,6 @@ const Animations = {
       if ($self.is(':in-viewport')) {
         setTimeout(() => {
           if (animateType) {
-            console.log("hhhhaha")
             _.animateRun($self, animateType);
           } else {
             $self.addClass('visible ' + animation);
