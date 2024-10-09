@@ -17,17 +17,18 @@ import modal from './modules/modal';
 import magnificPopup from './modules/magnificPopup';
 import ourJourney from './modules/ourJourney';
 import testimonialSlider from './modules/testimonialSlider';
-import Effects from './modules/effects'
+import Effects from './modules/effects';
+
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
   counter.init();
   Effects.init();
-
   Animations.init();
-
   Menu.init();
+  
   // scrollModule.init();
+  
   customSlick.init();
   selectBox.init();
   filterCategory.init();
