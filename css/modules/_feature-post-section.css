@@ -1,7 +1,33 @@
+
+
+.feature-post-pos{height: 100%;  align-items: flex-end; justify-content: flex-end;}
+.feature-post-text{padding: 40px;}
+.feature-post-text h1{color: var(--White);}
+.feature-post-text h1:last-child{margin-bottom: 0;}
+.feature-post-bg{min-height: 276px; top: auto; bottom: 0; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 0%, #122750 100%); border-radius: 0 0 16px 16px;}
 .post-feature-bg{border: 1px solid var(--Translucent);}
-ul.post-categories{margin: 0 0 16px; gap: 24px;}
+ul.post-categories{margin: 0; gap: 24px;}
 ul.post-categories > li{margin: 0; position: relative; line-height:15px;}
 ul.post-categories > li::before{content: ""; position: absolute; top: 0; left: -13px; height: 100%; width: 2px; border-radius: 1px; opacity: 0.25; background: var(--Raisin-Black);}
 ul.post-categories > li:first-child::before{display: none;}
 ul.post-categories > li{font-size: 12px; line-height: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); position: relative; padding: 2px 0; display: flex;}
 ul.post-categories > li > a:hover{color: var(--Raisin-Black);}
+.post-feature-row{padding: 8px;}
+.post-feature-text h2{margin: 0;}
+.post-feature-text h2 a:hover{color: var(--Accent);}
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .feature-post-main{gap: 40px; padding: 80px 0 0;}
+    .feature-post-image{flex: 0 0 840px;}
+    .post-feature-rows{flex: 1; gap: 32px; flex-direction: column;}
+    .post-feature-row{gap: 16px;}
+    .post-feature-thumb{flex: 0 0 104px;}
+    .post-feature-text{flex: 1;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+
+}
