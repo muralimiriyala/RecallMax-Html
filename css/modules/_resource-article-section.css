@@ -11,7 +11,7 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 .resource-article-main h2, .resource-article-main h3{margin-top: 56px;}
 .resource-article-main p > a{border-radius: 4px; background: rgba(164, 39, 143, 0.15); font-weight: 700; padding: 0 6px;}
 
-.short-subhead-thumb{margin: 56px 0;}
+.short-subhead-thumb{max-width: 1024px; margin: 56px auto;}
 
 @media screen and (min-width: 1024px) {
     .resource-article-main{padding: 80px 0;} 
