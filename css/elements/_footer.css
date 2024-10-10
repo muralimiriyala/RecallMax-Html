@@ -12,7 +12,7 @@
 ul.footer-address{margin: 0; gap: 11px; flex-direction: column;}
 ul.footer-address > li{margin: 0;}
 ul.footer-address > li::before{display: none;}
-ul.footer-address > li > a{gap: 8px; font-size: 18px; line-height: 28px;}
+ul.footer-address > li > a{gap: 8px; font-size: 18px; line-height: 28px; color: var(--White);}
 ul.footer-address > li > a:hover{color: var(--Accent);}
 
 ul.footer-lists{margin: 0;}
@@ -24,7 +24,7 @@ span.footer-title{padding-bottom: 24px; color: var(--Accent); font-size: 18px; l
 ul.footer-links{margin: 0; gap: 24px; flex-direction: column;}
 ul.footer-links li::before{display: none;}
 ul.footer-links li{margin: 0;}
-ul.footer-links li a{font-size: 16px; line-height: 16px; display: block;}
+ul.footer-links li a{font-size: 16px; line-height: 16px; display: block; color: var(--White);}
 ul.footer-links li a:hover{color: var(--Accent);}
 
 
