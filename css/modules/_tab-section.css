@@ -21,12 +21,10 @@ ul.tab-links > li > a i{font-size: 0; top: 1px; position: relative; color: var(-
 ul.tab-links > li > a.active i{font-size: 14px;}
 ul.tab-links > li > a span.close-icon{display: none; position: relative; width: 12px;}
 ul.tab-links > li > a.active span.close-icon{display: block;}
-ul.tab-links > li > a.clear{
-    padding: 0;
-    background: none;
-    color: var(--Accent);
-    font-weight: 800;
-}
+ul.tab-links > li > a.clear{padding: 0;background: none;color: var(--Accent);font-weight: 800;}
+ul.tab-links > li > a.clear:hover{color: var(--Accent-3); background: transparent;}
+ul.tab-links > li > a.clear svg path{transition: var(--b-transition);}
+ul.tab-links > li > a.clear:hover svg path{fill: var(--Accent-3);}
 
 .tab-title{flex: 1; padding-right: 20px;}
 /* .tab-head::after { font-size: 32px; line-height: 32px; font-weight: 300; content: "\f176"; display: block; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); color: var(--Orange); transition: all .5s ease; opacity: 0; font-family: "Font Awesome 6 Sharp"; } */
