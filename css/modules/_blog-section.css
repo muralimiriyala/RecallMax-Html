@@ -1,4 +1,19 @@
 
+.blog-list{padding: 8px;}
+.blog-bg{border: 1px solid var(--Translucent);}
+ul.blog-categories{margin: 0 0 16px; gap: 24px;}
+ul.blog-categories > li{margin: 0; position: relative; line-height:15px;}
+ul.blog-categories > li::before{content: ""; position: absolute; top: 0; left: -13px; height: 100%; width: 2px; border-radius: 1px; opacity: 0.25; background: var(--Raisin-Black);}
+ul.blog-categories > li:first-child::before{display: none;}
+ul.blog-categories > li{font-size: 12px; line-height: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); position: relative; padding: 2px 0; display: flex;}
+ul.blog-categories > li > a:hover{color: var(--Raisin-Black);}
+
+.blog-text{padding: 29px 16px 29px;}
+.blog-text h2:last-child{margin-bottom: 0;}
+.blog-text h2 a{color: var(--Raisin-Black);}
+.blog-text h2 a:hover{color: var(--Accent);}
+
+
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
