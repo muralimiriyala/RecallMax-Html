@@ -39,6 +39,15 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 
 .resource-article .accordion-main{padding: 0;}
 
+.author-section{background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); margin-top: 56px;}
+.author-main{padding:22px 24px; gap: 32px;}
+.author-image{flex: 0 0 160px; margin: 0 auto;}
+.author-text{flex: 0 0 calc(100% - 192px); font-size: 16px; line-height: 24px;}
+.author-text h5{margin-bottom: 13px; color: var(--Accent);}
+.author-text .text-link{top: -14px; position: relative;}
+
+.author-full .author-text{flex: 100%;}
+
 
 @media screen and (min-width: 1024px) {
     .resource-article-main{padding: 80px 0;} 
