@@ -1,0 +1,52 @@
+
+.newsletter-lt{border-radius: 24px 0px 0px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White); }
+.newsletter-lt .sm-line{margin: 22px 0; background-color: var(--Raisin-Black);}
+.newsletter-lt h4{color: var(--White); margin-bottom: 0;}
+.newsletter-call{gap: 8px; align-items: center; margin-top: 34px; width: fit-content;}
+.newsletter-call:hover{color: var(--Raisin-Black);}
+.newsletter-rt{border-radius: 24px; background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
+.newsletter-rt span.optional-text{margin-bottom: 20px;}
+.newsletter-lists{gap: 24px;}
+.newsletter-item{gap: 24px; border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint); padding: 16px;}
+.newsletter-title{flex: 1;}
+.newsletter-title h6{margin-bottom: 4px;}
+ul.newsletter-category{margin: 0; gap: 8px;}
+ul.newsletter-category > li{padding-right: 8px; margin: 0; font-size: 14px; line-height: 21px; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
+ul.newsletter-category > li:before{display: none;}
+ul.newsletter-category > li:first-child{padding-left: 0;}
+ul.newsletter-category > li:last-child{padding-right: 0; border-right: 0;}
+.newsletter-btn{width: fit-content;}
+
+.newsletter-full .newsletter-lt, .newsletter-full .newsletter-rt{flex: 1;}
+
+@media screen and (min-width: 1024px) {
+    body.single-post .newsletter-main{padding: 20px 0 80px;}
+    .newsletter-main{padding: 80px 0;}
+    .newsletter-lt{flex: 0 0 480px; padding: 32px 64px 32px 32px;}
+    .newsletter-rt{border-radius: 24px; flex: 0 0 calc(100% - 440px); padding: 40px; margin-left: -40px;}
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .newsletter-rt{padding: 32px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .newsletter-main{padding: 40px 0;}
+    .newsletter-lt{flex: 100%; padding: 32px 32px 80px; border-radius: 24px 24px 0px 0px;}
+    .newsletter-lt .sm-line{margin: 24px 0;}
+    .newsletter-call{margin-top: 24px;}
+    .newsletter-rt{flex: 100%; padding: 32px; margin-top: -40px;}
+    .newsletter-rt span.optional-text{margin-bottom: 24px;}
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    body.single-post .newsletter-main{padding: 12px 0 40px;}
+    .newsletter-main{padding: 40px 0;}
+    .newsletter-lt{flex: 100%; padding: 24px 24px 64px; border-radius: 24px 24px 0px 0px; text-align: center;}
+    .newsletter-lt h4{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
+    .newsletter-rt{flex: 100%; padding: 24px; margin-top: -40px; text-align: center;}
+    .newsletter-rt span.optional-text{margin-bottom: 20px;}
+    .newsletter-item{flex-direction: column;}
+    .newsletter-btn{width: 100%;}
+    .newsletter-btn .button{width: 100%;}
+}

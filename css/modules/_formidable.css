@@ -58,6 +58,10 @@ body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_
 body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio label{padding: 0; font-size: 16px; line-height: 24px; text-transform: capitalize;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']{top: -2px;}
 
+body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 24px; margin-bottom: 20px;}
+body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
+body .newsletter-rt .frm_forms .frm_form_fields .plane-text{font-size: 14px; line-height: 21px; opacity: 0.75; margin-bottom: 0 !important;}
+
 body .frm_forms .frm_form_fields .frm_form_field textarea{min-height: 128px;}
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input{top: 12px; left: 8px; width: 20px; height: 20px; margin: 0; border-radius: 2px; border: solid 1px transparent; background-color: var(--White); }
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked{border-width: 8px;}
@@ -185,8 +189,6 @@ body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields 
     body .frm_forms .frm_form_fields .frm_form_field.frm_half.frm_first{margin-left: 0;}
     body .frm_forms .frm_form_fields .frm_form_field.frm_half.frm_last{margin-right: 0;}
 
-
-
     body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field{margin-bottom: 0; flex: 1;}
     .captcha-btn-wrapper{display: flex; align-items: center; justify-content: end; gap: 30px;}
     body .frm_forms .frm_form_fields .captcha-btn-wrapper .frm_form_field{margin-bottom: 0;}
@@ -200,6 +202,9 @@ body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields 
     body .frm_forms .frm_form_fields .frm_new_flex .frm_form_field { flex: 0 0 119px; width: auto; margin: 0; float: none; }
     body .frm_forms .frm_form_fields .hide-label .frm_form_field .frm_primary_label{display: none;}
     body .frm_forms .frm_form_fields .frm_form_field.top_space{width: 100%; clear: both; margin-top: 20px;}
+
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_23_container{flex: 1;}
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_22_container{width: fit-content;}
 
 }
 @media only screen and (min-width: 1300px){
@@ -289,6 +294,9 @@ body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields 
 
     body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio{display: none;}
     body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{width: 100%; margin-bottom: 0;}
+
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper{flex-direction: column; gap: 16px;}
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{width: 100%;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container, body .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{flex-direction: column; margin-bottom: 8px;}
