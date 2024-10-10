@@ -1,0 +1,13 @@
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .blog-rows{gap: 40px;}
+    .blog-list{flex: 0 0 calc(33.33333333% - 27px);}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+
+}
