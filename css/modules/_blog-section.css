@@ -1,4 +1,9 @@
 
+.blog-list{padding: 8px;}
+.blog-text h2 a{color: var(--Raisin-Black);}
+.blog-text h2 a:hover{color: var(--Accent);}
+
+
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
