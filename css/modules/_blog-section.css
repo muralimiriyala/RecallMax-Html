@@ -21,8 +21,10 @@ ul.blog-categories > li > a:hover{color: var(--Raisin-Black);}
     .blog-list{flex: 0 0 calc(33.33333333% - 27px);}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-
+    .blog-rows{gap: 40px;}
+    .blog-list{flex: 0 0 calc(50% - 20px);}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-
+    .blog-rows{gap: 23px; flex-direction: column;}
+    .blog-list{flex: 0 0 100%;}
 }
