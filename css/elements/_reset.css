@@ -301,6 +301,9 @@ ul.slick-dots li button{display: none; padding: 0;}
 .book-demo-call{gap: 8px; width: fit-content; line-height: normal; align-items: center;}
 .book-demo-call:hover{color: var(--Accent);}
 
+.demo-white{background: rgba(48, 33, 53, 0.50);}
+.demo-white .button{background: var(--White); color: var(--Accent);}
+
 .fluid-container{width: 100vw; left: -50vw; margin-left: 50%;}
 .w-100{width: 100%;}
 .container:not(.sm).p-0{padding: 0;}
