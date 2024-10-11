@@ -19,6 +19,7 @@ import ourJourney from './modules/ourJourney';
 import testimonialSlider from './modules/testimonialSlider';
 import Effects from './modules/effects';
 import progress from './modules/progress';
+import share from './modules/share';
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
   magnificPopup.init();
   ourJourney.init();
   testimonialSlider.init();
+  share.init();
 });
 
 let scrolled = window.scrollY;
