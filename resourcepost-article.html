@@ -36,7 +36,8 @@
         <div class="header flex flex-vcenter">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.svg" alt="logo">
+                    <span class="white-logo"><img src="images/logo.svg" alt="logo"></span>
+                    <span class="black-logo"><img src="images/black-logo.svg" alt="logo"></span>
                 </a>
             </div>
             <div role="button" class="humburger-btn absolute radius-12">
@@ -191,12 +192,12 @@
             </nav>
         </div>
     </div>
-</header> 
+</header>
 <main class="site-main-cover">   
 <section class="resource-article-section">
     <div class="container ssm">
         <div class="resource-article-main">
-            <div class="resource-article">
+            <article class="resource-article">
                 <h1 class="h2">Article post title appears here </h1>
                 <ul class="resource-article-details flex">
                     <li><a href="#">CONTENT TYPE</a></li>
@@ -379,8 +380,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="resource-aside"></div>
+            </article>
+            <aside class="resource-aside hide-mobile hide-tablet">
+                <div class="share-icons">
+                    <div class="sharethis-inline-share-buttons"></div>
+                </div>
+            </aside>
         </div>
     </div>
 </section>
@@ -614,6 +619,7 @@
 </div>
 </div>
 </footer>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6697187b595beb00197df9f7&product=sop' async='async'></script>
 <script src="dist/core.bundle.js?v=87878"></script>
 </body>
 </html>
