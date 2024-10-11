@@ -303,7 +303,8 @@ ul.slick-dots li button{display: none; padding: 0;}
 .book-demo-btn{border-radius: 28px; background: rgba(165, 24, 144, 0.10); display: inline-flex; width: fit-content; padding: 4px 20px 4px 4px; gap: 16px;}
 .book-demo-btn svg path{transition: var(--b-transition);}
 .book-demo-call{gap: 8px; width: fit-content; line-height: normal; align-items: center;}
-.book-demo-call:hover{color: var(--Accent);}
+.book-demo-call:hover{color: var(--Sky-Blue);}
+.book-demo-call:hover svg path{fill: var(--Sky-Blue);}
 
 .demo-white{background: rgba(48, 33, 53, 0.50);}
 .demo-white .button{background: var(--White); color: var(--Accent);}
