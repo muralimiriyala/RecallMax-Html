@@ -255,6 +255,9 @@ body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields 
     body .frm_forms .frm_form_fields .frm_new_flex .frm_form_field.frm_third:nth-child(2){margin-left: 0;}
 
     body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields .vertical_radio{flex-direction: column;}
+
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper{flex-direction: column; gap: 16px;}
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{width: 100%;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .frm_form_field_wrapper{display: block;}
