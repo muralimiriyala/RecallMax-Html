@@ -37,10 +37,11 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li > ul{margin: 0; padding: 21px 32px 15px; min-width: 300px; left: 50%; transform: translateX(-50%); border-radius: 0 0 8px 8px; background-color: var(--White); position: absolute; visibility: hidden; opacity: 0; transition: var(--b-transition); box-shadow: 0 6px 12px 0 rgba(24,42,84,.1); z-index: 820;}
     ul.main_menu > li:hover > ul{opacity: 1; visibility: visible;}
     ul.main_menu > li > ul > li{margin: 0 0 11px;}
-    ul.main_menu > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 800; display: block;}
+    ul.main_menu > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 800; display: block; color: var(--Raisin-Black);}
+    ul.main_menu > li > ul > li > a:hover{color: var(--Accent);}
     ul.main_menu > li > ul > li > ul{margin: 22px 0 25px 21px;}
-    ul.main_menu > li > ul > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 700; display: block;}
-  
+    ul.main_menu > li > ul > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 700; display: block; color: var(--Raisin-Black);}
+    ul.main_menu > li > ul > li > ul > li > a:hover{color: var(--Accent);}
     ul.main_menu > li.nav-features{position: static;}
     ul.main_menu > li.nav-features > ul{padding: 24px 26px 0; width: 100%; gap: 1px 12px; display: flex; flex-wrap: wrap; border-radius: 0 0 24px 24px; }
     ul.main_menu > li.nav-features > ul > li{flex: 0 0 calc(25% - 12px); margin: 0;}
