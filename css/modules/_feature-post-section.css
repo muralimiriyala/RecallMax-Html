@@ -57,6 +57,7 @@ ul.post-categories.white > li{color: var(--White);}
   .feature-post-main{gap: 20px; padding: 40px 0 0;}
   .feature-post-text{padding: 24px;}
   .feature-post-text .h4{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
+  .feature-post-bg{min-height: 178px;}
   .post-feature-rows{flex: 100%; gap: 16px;}
 
 }

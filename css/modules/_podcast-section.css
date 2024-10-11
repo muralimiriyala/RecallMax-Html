@@ -1,0 +1,16 @@
+
+.podcast-title{flex: 100%;}
+.podcast-title span.optional-text{margin-bottom: 6px;}
+.podcast-title .h4{margin-top: 0;}
+.podcast-rows{flex: 100%;}
+.podcast-list{background-color: var(--White); padding: 12px; gap: 21px;}
+.podcast-image{flex: 0 0 24px;}
+.podcast-icon svg{max-width: 24px;}
+.podcast-name{flex: 1;}
+.podcast-name::before{content: ""; position: absolute; width: 1px; height: 100%; top: 0; left: -10px; background-color: rgba(48, 33, 53, 0.25);}
+.podcast-name .h6{margin: 0;}
+
+
+@media screen and (min-width: 1024px){
+    .podcast-main{padding: 56px 0; gap: 24px;}
+}
