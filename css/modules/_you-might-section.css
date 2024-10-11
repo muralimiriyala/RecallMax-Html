@@ -53,3 +53,7 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
     .you-might-title h3{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
     .you-might-btn, .you-might-btn .button{width: 100%;}
 }
+@media screen and (max-width: 389px) and (min-width: 200px){
+    ul.you-might-categories{gap: 5px 12px;}
+    ul.you-might-categories > li::before {left: -8px;}
+}
