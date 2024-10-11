@@ -1,26 +1,22 @@
 
 
 .feature-post-pos{height: 100%;  align-items: flex-end; justify-content: flex-end;}
+.feature-post-image ul.post-categories{margin-bottom: 16px;}
+.feature-post-image ul.post-categories > li::before { background: rgba(255, 255, 255, 0.25);}
 .feature-post-text{padding: 40px;}
 .feature-post-text h1{color: var(--White);}
 .feature-post-text h1:last-child{margin-bottom: 0;}
 .feature-post-text h1 a:hover{color: var(--Sky-Blue);}
 .feature-post-bg{min-height: 276px; top: auto; bottom: 0; background-image: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 0%, #122750 100%); border-radius: 0 0 16px 16px;}
-.feature-post-bg::after{
-  background-image: linear-gradient(to bottom,#fff0,var(--Accent));
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-  bottom: 0;
-  border-radius: 0 0 16px 16px;
-  position: absolute;
-}
+/* .feature-post-bg::after{ background-image: linear-gradient(to bottom,#fff0,var(--Accent)); content: ""; display: block; height: 100%; width: 100%; opacity: 0.5; bottom: 0; border-radius: 0 0 16px 16px; position: absolute; } */
+.feature-post-bg::after{background-image: linear-gradient(180deg,rgba(164,39,143,0) 0,#a4278f82 80%,#122750 100%); content: ""; display: block; height: 100%; width: 100%; opacity: 0.5; bottom: 0; border-radius: 0 0 16px 16px; position: absolute; }
 .post-feature-bg{border: 1px solid var(--Translucent);}
-ul.post-categories{margin: 0; gap: 24px;}
+.post-feature-row{gap: 16px;}
+.post-feature-thumb{flex: 0 0 104px;}
+.post-feature-text{flex: 1;}
+ul.post-categories{margin: 0 0 4px 0; gap: 17px;}
 ul.post-categories > li{margin: 0; position: relative; line-height:15px;}
-ul.post-categories > li::before{content: ""; position: absolute; top: 0; left: -13px; height: 100%; width: 2px; border-radius: 1px; opacity: 0.25; background: var(--Raisin-Black);}
+ul.post-categories > li::before{content: ""; position: absolute; top: 0; left: -10px; height: 100%; width: 2px; border-radius: 1px; opacity: 0.25; background: var(--Raisin-Black);}
 ul.post-categories > li:first-child::before{display: none;}
 ul.post-categories > li{font-size: 12px; line-height: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); position: relative; padding: 2px 0; display: flex;}
 ul.post-categories > li > a:hover{color: var(--Raisin-Black);}
@@ -29,18 +25,38 @@ ul.post-categories.white > li{color: var(--White);}
 .post-feature-text h2{margin: 0;}
 .post-feature-text h2 a:hover{color: var(--Accent);}
 
+.blog-show-button{gap: 8px;}
+.blog-btn{color: var(--Raisin-Black); font-size: 18px; font-weight: 700; line-height: 18px; padding: 15px 24px; position: relative; background-image: linear-gradient(180deg,var(--Accent),var(--Purple)); z-index: 1; border-radius: 28px; transition: var(--b-transition);}
+.blog-btn::before{background-color: var(--Eggshell); border-radius: 28px; content: ""; height: calc(100% - 4px); left: 2px; position: absolute; top: 2px; width: calc(100% - 4px); z-index: -1; transition: var(--b-transition);}
+.blog-btn:hover{color: var(--White); }
+.blog-btn:hover::before{background-color: transparent;}
+
+.blog-show-button hr{opacity: 0.4; background: linear-gradient(90deg, rgba(165, 24, 144, 0.00) 0%, #A51890 50%); margin: 0; flex: 1; height: 2px;}
+.blog-show-button hr:not(:first-child){transform: rotate(180deg);}
+
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .feature-post-main{gap: 40px; padding: 80px 0 0;}
     .feature-post-image{flex: 0 0 840px;}
-    .post-feature-rows{flex: 1; gap: 32px; flex-direction: column;}
-    .post-feature-row{gap: 16px;}
-    .post-feature-thumb{flex: 0 0 104px;}
-    .post-feature-text{flex: 1;}
+    
+    .post-feature-rows{flex: 1; gap: 24px; flex-direction: column;}
+    
+}
+@media screen and (max-width: 1439px) and (min-width: 1280px){
+  .feature-post-image{flex: 0 0 680px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+  .feature-post-image{flex: 0 0 504px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-
+  .feature-post-main{gap: 40px; padding: 80px 0 0;}
+  .post-feature-rows{flex: 100%; gap: 16px;}
+  .post-feature-row{flex: 0 0 calc(50% - 8px)}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
+  .feature-post-main{gap: 20px; padding: 40px 0 0;}
+  .feature-post-text{padding: 24px;}
+  .feature-post-text .h4{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
+  .post-feature-rows{flex: 100%; gap: 16px;}
 
 }
