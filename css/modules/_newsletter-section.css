@@ -32,8 +32,9 @@ ul.newsletter-category > li:last-child{padding-right: 0; border-right: 0;}
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .newsletter-main{padding: 20px 0 40px;}
-    .newsletter-lt{flex: 1; padding:32px 64px 32px 32px; border-radius: 32px 0px 0px 32px;}
-    .newsletter-rt{flex: 1; padding: 32px; margin-left: -40px; border-radius: 32px;}
+    .newsletter-lt{flex: 0 0 calc(50% + 20px); padding:32px 64px 32px 32px; border-radius: 32px 0px 0px 32px;}
+    .newsletter-rt{flex: 0 0 calc(50% - 20px); padding: 32px 32px 32px 0; border-radius: 0 32px 32px 0; position: relative;}
+    .newsletter-rt::before{content: ""; width: 40px; height: 100%; left: -40px; position: absolute; top: 0; background-color: var(--White); border-radius: 32px 0 0 32px;}
     .newsletter-rt span.optional-text{margin-bottom: 24px;}
 }
 

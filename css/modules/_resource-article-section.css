@@ -28,7 +28,7 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 .article-testimonial-name > span{font-size: 12px; line-height: 15px; font-weight: 800; display: block; color: rgba(48, 33, 53, 0.5);}
 .article-testimonial-name > span:first-child{font-size: 20px; line-height: 25px; letter-spacing: -0.2px; color: var(--Raisin-Black); margin-bottom: 4px;}
 
-.cta-main{gap: 40px; max-width: 1024px; margin: 56px auto; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 48px 48px 0px 48px;}
+.cta-main{gap: 40px; align-items: flex-end; max-width: 1024px; margin: 56px auto; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 48px 48px 0px 48px;}
 .cta-text, .cta-image{flex: 1;}
 .cta-text{color: var(--White);}
 .cta-text span.optional-text{color: var(--Sky-Blue); letter-spacing: 0.7px; margin-bottom: 6px;}
@@ -43,13 +43,17 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 .author-image{flex: 0 0 160px; margin: 0 auto;}
 .author-text{flex: 0 0 calc(100% - 192px); font-size: 16px; line-height: 24px;}
 .author-text h5{margin-bottom: 13px; color: var(--Accent);}
-/* .author-text .text-link{top: -14px; position: relative;} */
+.author-text p:not(:last-child){margin-bottom: 12px;}
 
 .author-full .author-text{flex: 100%;}
 
 
 @media screen and (min-width: 1024px) {
     .resource-article-main{padding: 80px 0;} 
+    .cta-text{padding-bottom: 35px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .cta-text .h3{font-size: 34px; line-height: 40px;}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 200px) {
