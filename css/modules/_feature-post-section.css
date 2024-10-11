@@ -4,10 +4,10 @@
 .feature-post-text{padding: 40px;}
 .feature-post-text h1{color: var(--White);}
 .feature-post-text h1:last-child{margin-bottom: 0;}
-.feature-post-text h1 a:hover{}
+.feature-post-text h1 a:hover{color: var(--Sky-Blue);}
 .feature-post-bg{min-height: 276px; top: auto; bottom: 0; background-image: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 0%, #122750 100%); border-radius: 0 0 16px 16px;}
 .feature-post-bg::after{
-    background-image: linear-gradient(to bottom,#fff0,var(--Accent));
+  background-image: linear-gradient(to bottom,#fff0,var(--Accent));
   content: "";
   display: block;
   height: 100%;
