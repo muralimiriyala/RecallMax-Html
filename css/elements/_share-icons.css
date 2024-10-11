@@ -36,16 +36,18 @@ body.single-post .share-inline-arrow{padding: 35px 0 0 ;}
     .share-icons{padding: 24px 5px; width: 40px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 744px){
+    .share-icons{display: block; width: 100%; border-radius: 24px;}
     .share-icons #st-1.st-animated{justify-content: flex-start;}
+    body.single-post   .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] {margin-right: auto;}
 }
-@media screen and (max-width: 743px) and (min-width: 200px){
-    .share-icons{display: block;}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .share-icons{display: block; width: 100%; border-radius: 24px;}
     .share-inline-arrow{flex: 1;}
     .share-icons #st-1.st-animated{justify-content: flex-start; margin-bottom: 40px;}
     body.single-post .share-icons #st-1.st-animated{margin-bottom: 0;}
     .share-icons #st-1.st-animated .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
     body.page-template-default .share-icons {margin-top: 55px;}
-    body.single-post   .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] {margin-right: 0;}
+    body.single-post   .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] {margin-right: auto;}
 
 }
 

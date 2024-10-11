@@ -1,16 +1,24 @@
 
 .podcast-title{flex: 100%;}
 .podcast-title span.optional-text{margin-bottom: 6px;}
-.podcast-title .h4{margin-top: 0;}
+.podcast-title .h4{margin: 0;}
 .podcast-rows{flex: 100%;}
-.podcast-list{background-color: var(--White); padding: 12px; gap: 21px;}
+.podcast-list{background-color: var(--White); padding: 12px; gap: 18px;}
 .podcast-image{flex: 0 0 24px;}
 .podcast-icon svg{max-width: 24px;}
 .podcast-name{flex: 1;}
-.podcast-name::before{content: ""; position: absolute; width: 1px; height: 100%; top: 0; left: -10px; background-color: rgba(48, 33, 53, 0.25);}
-.podcast-name .h6{margin: 0;}
+.podcast-name::before{content: ""; position: absolute; width: 1px; height: 100%; top: 0; left: -12px; background-color: rgba(48, 33, 53, 0.25);}
+.podcast-name span{font-size: 14px; line-height: 21px; display: block; color: rgba(48, 33, 53, 0.5);}
+.podcast-name .h6{font-size: 16px; line-height: 24px; letter-spacing: normal; margin: -2px 0 0;}
+
+.optional-repeater-text ul > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 5px; width: 20px; }
 
 
 @media screen and (min-width: 1024px){
     .podcast-main{padding: 56px 0; gap: 24px;}
+    .podcast-rows{gap: 16px;}
+    .podcast-list-of-4{flex: 0 0 calc(25% - 12px);}
+    .podcast-list-of-3{flex: 0 0 calc(33.333% - 11px);}
+    .podcast-list-of-2{flex: 0 0 calc(50% - 8px);}
+    .podcast-list-of-1{flex: 1;}
 }
