@@ -17,7 +17,8 @@ ul.blog-categories > li > a:hover{color: var(--Raisin-Black);}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
-    .blog-rows{gap: 40px;}
+    .blog-main{padding-top: 32px;}
+    .blog-rows{gap: 40px; padding: 40px 0;}
     .blog-list{flex: 0 0 calc(33.33333333% - 27px);}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
