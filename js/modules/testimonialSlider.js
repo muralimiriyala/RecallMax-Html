@@ -24,7 +24,7 @@ const testimonialSlider = {
             // Reset all slides
             slides.length > 0 && slides.forEach((slide) => {
                 slide.classList.remove('open');
-                slide.style.flex = `1`;
+                slide.style.flex = `0 0 168px`;
             });
 
             // Activate the clicked slide
