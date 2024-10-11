@@ -32,6 +32,9 @@ body.single-post .share-inline-arrow{padding: 35px 0 0 ;}
 @media screen and (max-width: 1299px) and (min-width: 1024px){
     .share-icons #st-1.st-animated{justify-content: flex-start;}
 }
+@media screen and (max-width: 1199px) and (min-width: 1024px){
+    .share-icons{padding: 24px 5px; width: 40px;}
+}
 @media screen and (max-width: 1023px) and (min-width: 744px){
     .share-icons #st-1.st-animated{justify-content: flex-start;}
 }
