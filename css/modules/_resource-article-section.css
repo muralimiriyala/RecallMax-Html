@@ -73,7 +73,7 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-
+    .cta-thumb img{border-radius: 16px 16px 0 0;}
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
