@@ -4,6 +4,7 @@ let share = {
     $aside: document.querySelector('aside.resource-aside'),
     init() {
         const _ = this;
+        if(!_.$aside) return;
         // Debounce function to optimize scroll event
         const debounce = (fn, delay) => {
             let timer;
