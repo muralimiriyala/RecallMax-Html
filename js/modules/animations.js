@@ -21,17 +21,20 @@ const Animations = {
       if ($self.is(':in-viewport')) {
         setTimeout(() => {
           if (animateType) {
-            _.animateRun($self, animateType);
+            _.animateRun($self, animateType, timeline);
           } else {
             $self.addClass('visible ' + animation);
          
             if(progress) progress.play();
-      
-            if (timeline) {
-              timeline.play();
-            }
+            if (timeline) timeline.play();
+    
           }
         }, delay);
+      }
+      else{
+        if (timeline && timeline.progress() > 0) {
+          timeline.progress(0);
+        }
       }
     });
     $body.imagesLoaded().progress(function (instance, image) {
@@ -49,19 +52,22 @@ const Animations = {
       }
     });
   },
-  animateRun($el, type) {
+  animateRun($el, type, timeline) {
     $el.addClass('visible');
+    console.log($el, type, timeline, "hhehehe")
+  
     if(progress) progress.play();
+    if (timeline) timeline.play();
 
     if (type === 'counter') {
       const $counter = $el[0];
       if ($counter.counter && $counter.counter.paused) $counter.counter.start();
     }
   },
-  animateReset($el, type) {
+  animateReset($el, type, timeline) {
     $el.removeClass('visible');
-    // if(progress) progress.reset();
 
+    // if(progress) progress.reset();
     // if (type === 'counter') {
     //   const $counter = $el[0];
     //   $counter.counter.reset();
@@ -77,13 +83,15 @@ const Animations = {
       const animateType = $self.data('animate');
       const delay = Number($self.data('animation-delay') || 0);
       const offset = $(window).height() * 0.95;
+      const timeline = $self[0].tl;
+console.log("123", timeline)
       if (
         direction === 'DOWN' &&
         scrolled >= selfOffset - offset &&
         !$self.hasClass('visible')
       ) {
         setTimeout(() => {
-          if (animateType) _.animateRun($self, animateType);
+          if (animateType) _.animateRun($self, animateType, timeline);
           else $self.addClass('visible ' + animation);
         }, delay);
       } else if (
