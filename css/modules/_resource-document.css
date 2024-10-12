@@ -25,7 +25,7 @@ ul.resource-sub-category > li{padding-right: 8px; margin: 0; font-size: 14px; li
 ul.resource-sub-category > li:before{display: none;}
 ul.resource-sub-category > li:first-child{padding-left: 0;}
 ul.resource-sub-category > li:last-child{padding-right: 0; border-right: 0;}
-ul.resource-sub-category > li a{cursor: pointer;}
+ul.resource-sub-category > li a{cursor: pointer; color: var(--Raisin-Black);}
 ul.resource-sub-category > li a:hover{color: var(--Accent);}
 .resource-document-btn{width: fit-content;}
 
