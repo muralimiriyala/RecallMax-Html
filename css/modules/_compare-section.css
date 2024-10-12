@@ -5,6 +5,7 @@
 .compare-main h4{margin-bottom: 0;}
 .compare-main:hover h4{color: var(--Accent); transform: translateX(0);}
 
+.compare-images > div:nth-child(n+6){display: none;}
 .compare-images img{filter: drop-shadow(0px 9px 16px rgba(0, 0, 0, 0.24));}
 .compare-t-center{width: 96px; height: 96px;}
 .compare-t-left-1{background-color: #3E60AD;}
