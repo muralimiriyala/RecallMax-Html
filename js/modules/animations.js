@@ -11,38 +11,42 @@ const Animations = {
     const _ = this;
     const dy = -$(window).height() / 4;
 
+    // Iterate through all elements with data-animation or data-animate attributes
     $('[data-animation]:not(img), [data-animate]').each(function () {
       const $self = $(this);
       const animation = $self.data('animation');
       const animateType = $self.data('animate');
       const delay = Number($self.data('animation-delay') || 0);
-      const timeline = $self[0].tl;
-  
+      const timeline = $self[0].tl; // Timeline associated with the element
+
+      // If element is already in the viewport on page load
       if ($self.is(':in-viewport')) {
         setTimeout(() => {
           if (animateType) {
             _.animateRun($self, animateType, timeline);
           } else {
-            $self.addClass('visible ' + animation);
-         
-            if(progress) progress.play();
-            if (timeline) timeline.play();
-    
+            $self.addClass('visible ' + (animation ? animation : ''));
+            if (timeline) {
+              timeline.restart().play(); // Restart timeline on load
+            }
+            if (progress) progress.play();
           }
         }, delay);
-      }
-      else{
-        if (timeline && timeline.progress() > 0) {
-          timeline.progress(0);
+      } else {
+        // Reset timeline if element is not in the viewport
+        if (timeline) {
+          timeline.progress(0).pause(); // Reset and pause timeline
         }
       }
     });
+
+    // Handle animations when images are loaded
     $body.imagesLoaded().progress(function (instance, image) {
-      var $img = $(image.img);
+      const $img = $(image.img);
       if ($img.data('animation')) {
         $img.appear(
           function () {
-            var delay = $img.data('animation-delay');
+            const delay = $img.data('animation-delay');
             setTimeout(function () {
               $img.addClass($img.data('animation')).addClass('visible');
             }, delay);
@@ -52,27 +56,39 @@ const Animations = {
       }
     });
   },
+
+  // Run animation and timeline when the element is visible
   animateRun($el, type, timeline) {
     $el.addClass('visible');
-    console.log($el, type, timeline, "hhehehe")
-  
-    if(progress) progress.play();
-    if (timeline) timeline.play();
+    if (timeline) {
+      timeline.restart().play(); // Restart and play timeline when visible
+    }
+    if (progress) progress.play();
 
     if (type === 'counter') {
       const $counter = $el[0];
-      if ($counter.counter && $counter.counter.paused) $counter.counter.start();
+      if ($counter.counter && $counter.counter.paused) {
+        $counter.counter.start();
+      }
     }
   },
+
+  // Reset animation and timeline when the element leaves the viewport
   animateReset($el, type, timeline) {
     $el.removeClass('visible');
+    if (timeline) {
+      timeline.pause(0); // Pause and reset timeline when not visible
+    }
 
-    // if(progress) progress.reset();
+    // Uncomment if needed for progress or counter elements
+    // if (progress) progress.reset();
     // if (type === 'counter') {
     //   const $counter = $el[0];
     //   $counter.counter.reset();
     // }
   },
+
+  // Handle scroll events to trigger animations
   handle(scrolled, direction) {
     const _ = this;
 
@@ -82,29 +98,39 @@ const Animations = {
       const animation = $self.data('animation');
       const animateType = $self.data('animate');
       const delay = Number($self.data('animation-delay') || 0);
-      const offset = $(window).height() * 0.95;
+      const offset = $(window).height() * 0.95; // Adjust threshold to control animation start point
       const timeline = $self[0].tl;
-console.log("123", timeline)
+
       if (
         direction === 'DOWN' &&
         scrolled >= selfOffset - offset &&
         !$self.hasClass('visible')
       ) {
+        // Animate element when scrolling down into viewport
         setTimeout(() => {
-          if (animateType) _.animateRun($self, animateType, timeline);
-          else $self.addClass('visible ' + animation);
+          if (animateType) {
+            _.animateRun($self, animateType, timeline);
+          } else {
+            $self.addClass('visible ' + (animation ? animation : ''));
+            if (timeline) {
+              timeline.restart().play(); // Restart and play timeline when visible
+            }
+          }
         }, delay);
       } else if (
         direction === 'UP' &&
         $self.is(`:in-viewport(${-offset})`) &&
         !$self.hasClass('visible')
       ) {
+        // Animate element when scrolling up into viewport
         setTimeout(() => {
           if (animateType) {
-            _.animateRun($self, animateType);
-          }
-          else {
-            $self.addClass('visible ' + animation);
+            _.animateRun($self, animateType, timeline);
+          } else {
+            $self.addClass('visible ' + (animation ? animation : ''));
+            if (timeline) {
+              timeline.restart().play(); // Restart and play timeline when visible
+            }
           }
         }, delay);
       } else if (
@@ -113,14 +139,18 @@ console.log("123", timeline)
         $self.offset().top > scrolled &&
         $self.hasClass('visible')
       ) {
+        // Reset animation when element leaves the viewport
         if (animateType) {
-          _.animateReset($self, animateType);
-        }
-        else {
-          $self.removeClass('visible ' + animation);
+          _.animateReset($self, animateType, timeline);
+        } else {
+          $self.removeClass('visible ' + (animation ? animation : ''));
+          if (timeline) {
+            timeline.pause(0); // Pause and reset timeline when out of view
+          }
         }
       }
     });
   },
 };
+
 export default Animations;
