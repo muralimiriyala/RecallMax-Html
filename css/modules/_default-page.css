@@ -13,8 +13,13 @@ article.default-article h2{font-weight: 700;}
     .general-default-main{padding: 84px 0 82px;}
     .general-default-main .accordion-main{padding: 2px 0 47px;}
 }
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .general-default-main{padding: 84px 0 82px;}
+    .general-default-main .accordion-main{padding: 2px 0 47px;}   
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
 
-
+}
 
 
 
