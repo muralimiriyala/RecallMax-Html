@@ -1,6 +1,8 @@
 
 .optional-repeater-thumb{padding: 8px; background: var(--White); border-radius: 16px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .optional-repeater-thumb img{border-radius: 10px;}
+body.page-template-comparison-lp .optional-repeater-thumb{padding: 0; background: transparent; border-radius: 0; box-shadow: none;}
+body.page-template-comparison-lp .optional-repeater-thumb img{border-radius: 16px;}
 .optional-repeater-text{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
 .optional-repeater-text > p{color: var(--Gray-1);}
 .optional-repeater-text span.optional-text{margin-bottom: 22px;}

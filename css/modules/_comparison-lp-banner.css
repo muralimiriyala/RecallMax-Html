@@ -1,0 +1,23 @@
+
+.comparison-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black, #302135);}
+.comparison-banner-title{color: var(--White);}
+.comparison-banner-title span.optional-text{font-size: 18px; letter-spacing: 1.8px; line-height: 18px;margin-bottom: 6px;}
+.comparison-banner-title h1{color: var(--White);}
+.comparison-banner-title p{max-width: 770px; font-size: 20px; line-height: 30px; margin: 56px auto 0;}
+
+
+@media screen and (min-width: 1024px) {
+    .comparison-banner-main{padding: 150px 0 192px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .comparison-banner-main{padding: 80px 0 223px;}
+    .comparison-banner-title span.optional-text{margin-bottom: 8px;}
+    .comparison-banner-title h1 > span::before{display: none;}
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .comparison-banner-main{padding: 128px 0 144px;}
+    .comparison-banner-title span.optional-text{margin-bottom: 8px;}
+    .comparison-banner-title h1 > span::before{display: none;}
+}
