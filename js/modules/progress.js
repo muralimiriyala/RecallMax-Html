@@ -1,4 +1,4 @@
-const progress = {
+const svgprogress = {
     $dollar: document.querySelector('.max-dollar'),
     $max: document.querySelector('.max-total'),
     $circlepath: document.querySelectorAll('[data-count-path]'),
@@ -41,8 +41,7 @@ const progress = {
             $path.style.strokeDashoffset = Number($dash);
             let $duration = Number($path.getAttribute('data-duration') / 1000);
             $path.style.transitionDuration = `${$duration}s`;
-
         });
     }
 }
-export default progress;
+export default svgprogress;

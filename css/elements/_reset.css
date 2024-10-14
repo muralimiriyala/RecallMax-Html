@@ -107,6 +107,7 @@ span.text-link.navy i{color: var(--Navy);}
 a.text-link{gap: 8px; font-size: 18px; line-height: 22.5px; letter-spacing: -0.18px;}
 a.text-link em{color: var(--Accent); font-size: 16px; left: 0; line-height: 24px; overflow: hidden; position: relative; top: 0; transition: all .5s ease;}
 a.text-link.white{color: var(--White);}
+a.text-link.white:hover em{color: var(--White);}
 a.text-link.blue{color: var(--Blue);}
 a.text-link:hover em{left: 8px;}
 a.text-link.navy{color: var(--Navy);}
