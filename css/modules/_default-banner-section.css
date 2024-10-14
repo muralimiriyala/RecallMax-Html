@@ -1,0 +1,36 @@
+
+.default-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); overflow: hidden;}
+.default-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
+.default-banner-text h1{color: var(--White);}
+.default-banner-btns{gap: 12px; margin-top: 32px;}
+.default-banner-btns a.text-link:hover{color: var(--Sky-Blue);}
+.default-banner-btns a.text-link:hover em{color: var(--Sky-Blue);}
+.default-banner-thumb img{opacity: 0.2;}
+
+@media screen and (min-width: 1024px) {
+    .default-banner-main{padding: 150px 0 80px;}
+    .default-banner-text{max-width: 600px;}
+    .default-banner-text.no_banner_bg{max-width: 100%;}
+    .default-banner-bg{height: 567px; right: -156px; top: 127px; max-width: 917px;} 
+}
+@media screen and (max-width: 1439px) and (min-width: 1280px) {
+    .default-banner-text{max-width: 572px;}
+    .default-banner-bg{right: -276px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .default-banner-text{max-width: 444px;}
+    .default-banner-bg{right: -420px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .default-banner-main{padding: 145px 0 80px;}
+    .default-banner-bg{right: -296px; top: 104px; max-width: 917px; max-height: 567px;}
+    .default-banner-text span.optional-text{margin-bottom: 32px;}
+    .default-banner-text hr.sm-line{margin: 32px 0;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .default-banner-main{padding: 145px 0 40px;}
+    .default-banner-text{font-size: 18px; line-height: 27px;}
+    .default-banner-text span.optional-text{margin-bottom: 24px;}
+    .default-banner-text hr.sm-line{margin: 24px 0;}
+    .default-banner-btns .button{width: 100%;}
+}

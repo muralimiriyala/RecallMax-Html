@@ -1,5 +1,7 @@
 :root{
     --b-transition: all 0.5s ease;
+    --b-transition-3: all 0.3s ease;
+    --b-transition-4: all 0.4s ease;
     --b-transition-6: all 0.6s ease;
 }
 .transition{transition: var(--b-transition);}

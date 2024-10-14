@@ -1,5 +1,5 @@
 
-.compare-main{padding: 10px 20px; gap: 20px; transition: var(--b-transition-6);}
+.compare-main{padding: 10px 20px; gap: 20px; transition: var(--b-transition-6); cursor: pointer;}
 .compare-main *{transition: var(--b-transition-6);}
 .compare-bg{height: calc(100% - 36px); top: calc(50% + 1px); transform: translateY(-50%);background-color: var(--RecallMax-Purple-Tint);}
 .compare-main h4{margin-bottom: 0;}
