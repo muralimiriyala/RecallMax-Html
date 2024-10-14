@@ -1,7 +1,7 @@
 import imagesLoaded from 'imagesloaded';
 import 'is-in-viewport';
 import 'jquery.appear';
-import progress from './progress';
+import svgprogress from './progress';
 
 imagesLoaded.makeJQueryPlugin($);
 const $body = $('body');
@@ -29,7 +29,7 @@ const Animations = {
             if (timeline) {
               timeline.restart().play(); // Restart timeline on load
             }
-            if (progress) progress.play();
+            // if (svgprogress) svgprogress.reset();
           }
         }, delay);
       } else {
@@ -37,6 +37,7 @@ const Animations = {
         if (timeline) {
           timeline.progress(0).pause(); // Reset and pause timeline
         }
+        // if (svgprogress) svgprogress.reset();
       }
     });
 
@@ -63,7 +64,7 @@ const Animations = {
     if (timeline) {
       timeline.restart().play(); // Restart and play timeline when visible
     }
-    if (progress) progress.play();
+    if (svgprogress) svgprogress.play();
 
     if (type === 'counter') {
       const $counter = $el[0];
@@ -79,6 +80,8 @@ const Animations = {
     if (timeline) {
       timeline.pause(0); // Pause and reset timeline when not visible
     }
+    // if (svgprogress) svgprogress.reset();
+
 
     // Uncomment if needed for progress or counter elements
     // if (progress) progress.reset();
@@ -131,6 +134,8 @@ const Animations = {
             if (timeline) {
               timeline.restart().play(); // Restart and play timeline when visible
             }
+    // if (svgprogress) svgprogress.play();
+
           }
         }, delay);
       } else if (
@@ -147,6 +152,8 @@ const Animations = {
           if (timeline) {
             timeline.pause(0); // Pause and reset timeline when out of view
           }
+    // if (svgprogress) svgprogress.reset();
+
         }
       }
     });

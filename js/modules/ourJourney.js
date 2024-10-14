@@ -2,18 +2,17 @@ import $ from 'jquery';
 const ourJourney = {
     $e: document.querySelectorAll("ul.our-journey-links > li > a"),
     $t: document.querySelector("ul.our-journey-links > li:first-child > a"),
-    jn(e){
+    jn(e, $e){
         e.preventDefault();
-        let n = e.target.getAttribute("data-name");
+        $e.forEach((d)=> d.classList.remove('active'));
+        let target = e.target;  
+        if(target.tagName==="SPAN") target = target.parentElement;
+        target.classList.toggle('active')
+        let n = target.getAttribute("data-name");
         let c = document.querySelectorAll(`.our-journey-row`);
         let d = document.querySelector(`.our-journey-row[data-value=${n}]`);
-        let f = $(d);
-        let $i = document.querySelectorAll("ul.our-journey-links > li > a")
-     
-        $i.forEach((d)=>{
-            d.classList.remove('active');
-        })
-        e.target.classList.toggle('active')
+        let f = $(d);    
+ 
         c.forEach((e)=>{
             $(e).hide();
         })
@@ -24,7 +23,7 @@ const ourJourney = {
         if(!_.$t) return;
         _.$t.classList.add("active");
         _.$e.forEach((e)=>{
-            e.addEventListener("click", this.jn)
+            e.addEventListener("click", (event) => _.jn(event, _.$e));
         });
     },
 }
