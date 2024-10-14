@@ -11,6 +11,8 @@ header.white-header:not(.sticky-header)::before{width: 100%; height: 100%; top: 
 .header_btns .button.gray{color: var(--Navy);}
 .header_btns .button.gray:hover{color: var(--White);}
 
+.nav-btn span{display: block;}
+
 li.no_link > a{pointer-events: none; color: var(--Blue);}
 li.no_link > a:hover{color: inherit;}
 li.hide-li-text > a{display: none !important;}
@@ -160,7 +162,6 @@ li.hide-li-text > a{display: none !important;}
     header.sticky-header span.black-logo{display: none;}
 
     .nav-btn{ margin-top: -25px; z-index: -1; position: relative; }
-    .nav-btn span{display: block;}
     .nav-btn .button{ padding: 40px 24px 16px; width: 100%; font-size: 24px; line-height: 24px; border-radius: 0px 0px 24px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent); }
     .nav-btn .button:hover{background: linear-gradient(150deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent);}
 
