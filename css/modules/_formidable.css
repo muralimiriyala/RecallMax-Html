@@ -59,19 +59,19 @@ body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_
 body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio label{padding: 0; font-size: 16px; line-height: 24px; text-transform: capitalize;}
 body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']{top: -2px;}
 
-body .book-demo-rt .frm_forms .frm_form_fields .frm_form_field:not(.vertical_radio) .frm_primary_label{display: none;}
-body .book-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{margin-left: 24px;}
-body .book-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio:nth-child(2){margin-left: 16px;}
-body .book-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding-left: 29px;}
-body .book-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]{width: 21px; height: 21px; top: 1px; border-radius: 4px;}
-body .book-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked{background: var(--Accent);}
-body .book-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked::before{display: none;}
-body .book-demo-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 24px;}
-body .book-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_opt_container{align-items: center; display: flex; flex-wrap: wrap; gap: 0 24px; margin-left: 16px;}
-body .book-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
-body .book-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio{ flex: 1; display: flex; flex-wrap: wrap;}
-body .book-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio label{padding: 0; font-size: 16px; line-height: 24px; text-transform: capitalize;}
-body .book-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']{top: -2px;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field:not(.vertical_radio) .frm_primary_label{display: none;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{margin-left: 24px;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio:nth-child(2){margin-left: 16px;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding-left: 29px;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]{width: 21px; height: 21px; top: 1px; border-radius: 4px;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked{background: var(--Accent);}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked::before{display: none;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 24px;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_opt_container{align-items: center; display: flex; flex-wrap: wrap; gap: 0 24px; margin-left: 16px;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio{ flex: 1; display: flex; flex-wrap: wrap;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio label{padding: 0; font-size: 16px; line-height: 24px; text-transform: capitalize;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']{top: -2px;}
 
 body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 24px; margin-bottom: 20px;}
 body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
@@ -221,8 +221,8 @@ body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields 
     body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_38_container{flex: 1;}
     body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_37_container{width: fit-content;}
 
-    body .book-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field:not(:last-child){flex: 1;}
-    body .book-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field{width: fit-content;}
+    body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field:not(:last-child){flex: 1;}
+    body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field{width: fit-content;}
 
     
 
