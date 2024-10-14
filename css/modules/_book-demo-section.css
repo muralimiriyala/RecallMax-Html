@@ -2,8 +2,6 @@
 .book-demo-lt{border-radius: 24px 0px 0px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White); }
 .book-demo-lt .sm-line{margin: 22px 0; background-color: var(--Raisin-Black);}
 .book-demo-lt h3{color: var(--White);}
-.book-demo-call{gap: 8px; align-items: center; margin-top: 34px; width: fit-content;}
-.book-demo-call:hover{color: var(--Raisin-Black);}
 .book-demo-rt{border-radius: 24px; background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .book-demo-rt span.optional-text{margin-bottom: 40px;}
 .book-demo-lists{gap: 24px;}
@@ -33,7 +31,6 @@ ul.book-demo-category > li:last-child{padding-right: 0; border-right: 0;}
     .book-demo-main{padding: 40px 0;}
     .book-demo-lt{flex: 100%; padding: 32px 32px 80px; border-radius: 24px 24px 0px 0px;}
     .book-demo-lt .sm-line{margin: 24px 0;}
-    .book-demo-call{margin-top: 24px;}
     .book-demo-rt{flex: 100%; padding: 32px; margin-top: -40px;}
     .book-demo-rt span.optional-text{margin-bottom: 24px;}
 }
@@ -42,10 +39,7 @@ ul.book-demo-category > li:last-child{padding-right: 0; border-right: 0;}
     .book-demo-main{padding: 40px 0;}
     .book-demo-lt{flex: 100%; padding: 24px 24px 70px; border-radius: 24px 24px 0px 0px;}
     .book-demo-lt .sm-line{margin: 24px 0;}
-    .book-demo-call{margin-top: 24px;}
     .book-demo-rt{flex: 100%; padding: 20px; margin-top: -40px;}
     .book-demo-rt span.optional-text{margin-bottom: 24px;}
     .book-demo-item{flex-direction: column;}
-    .book-demo-btn{width: 100%;}
-    .book-demo-btn .button{width: 100%;}
 }
