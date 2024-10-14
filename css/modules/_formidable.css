@@ -12,6 +12,7 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 body .white-popup-block .frm_forms h3.frm_form_title{display: none;}
 body .frm_forms .frm_form_fields fieldset{margin: 0; padding: 0; border: none;}
 body .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 24px; position: relative; clear: both;}
+body .frm_forms .frm_form_fields .frm_form_field.hide_label .frm_primary_label{display: none;}
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio{margin-bottom: 24px;}
 body .become-partner-form .frm_forms .frm_form_fields .frm_form_field#frm_field_21_container{margin-bottom: 24px;}
 body .flyout-form-overlay .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 25px;}
@@ -60,7 +61,7 @@ body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_
 
 body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 24px; margin-bottom: 20px;}
 body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
-body .newsletter-rt .frm_forms .frm_form_fields .plane-text{font-size: 14px; line-height: 21px; opacity: 0.75; margin-bottom: 0 !important;}
+body .newsletter-rt .newsletter-form .disclaimer-text{font-size: 14px; line-height: 21px; opacity: 0.75; margin-bottom: 0 !important;}
 
 body .frm_forms .frm_form_fields .frm_form_field textarea{min-height: 128px;}
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input{top: 12px; left: 8px; width: 20px; height: 20px; margin: 0; border-radius: 2px; border: solid 1px transparent; background-color: var(--White); }
@@ -203,8 +204,8 @@ body.page-template-about-contact .contact-form-form .frm_forms .frm_form_fields 
     body .frm_forms .frm_form_fields .hide-label .frm_form_field .frm_primary_label{display: none;}
     body .frm_forms .frm_form_fields .frm_form_field.top_space{width: 100%; clear: both; margin-top: 20px;}
 
-    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_23_container{flex: 1;}
-    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_22_container{width: fit-content;}
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_38_container{flex: 1;}
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_37_container{width: fit-content;}
 
 }
 @media only screen and (min-width: 1300px){
