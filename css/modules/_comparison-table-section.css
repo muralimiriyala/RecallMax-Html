@@ -1,3 +1,6 @@
 
 
 .comparison-table-main table{border: none}
+.comparison-head span{font-size: 32px; line-height: 32px; display: block; margin-bottom: 20px;}
+.comparison-head-icon svg{border-radius: 32px;}
+.vs-icon{width: 56px; height: 56px; color: var(--Raisin-Black);}
