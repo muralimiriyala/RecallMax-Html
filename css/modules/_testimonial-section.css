@@ -29,12 +29,12 @@
 @media screen and (min-width: 1024px) {
     .testimonial-main{padding: 48px; justify-content: space-between; align-items: center; margin: 90px 0;}
     body.page-template-about .testimonial-main{margin-bottom: 24px;}
-    .testimonial-title{order: 1;}
+    .testimonial-title{order: 1; flex: 1;}
     .testimonial-lists{flex: 100%; order: 3; gap: 20px;}
     .testimonial-item{gap: 34px; flex: 0 0 168px;}
     .testimonial-thumb{flex: 0 0 160px;}
     .testimonial-content{flex: 0 0 calc(100% - 194px); padding: 32px 32px 32px 0;}
-    .testimonial-review{order: 2; margin-bottom: 40px;}
+    .testimonial-review{order: 2; margin-bottom: 40px; max-width: 410px;}
 }
 @media screen and (min-width: 1440px){
     .open.testimonial-item{flex: 0 0 620px;}
