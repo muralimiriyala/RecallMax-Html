@@ -30,3 +30,12 @@
 @media screen and (min-width: 1024px) {
     .comparison-banner-section + .comparison-table-section{margin-top: -169px;}
 }
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .comparison-head-main{gap: 12px; width: 100%;}
+    .comparison-head{width: 126px; margin-bottom: 20px;}
+    .comparison-head span{font-size: 20px; line-height: 20px; margin-bottom: 15px;}
+    .comparison-head-icon{width: 96px;}
+    .comparison-head-icon svg{width: 96px; height: 96px; border-radius: 24px;}
+    .vs-icon{font-size: 17px; height: 40px; line-height: 17px; width: 40px;}
+}

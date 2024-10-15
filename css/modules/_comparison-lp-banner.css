@@ -18,6 +18,7 @@
 
 @media screen and (max-width: 767px) and (min-width: 200px){
     .comparison-banner-main{padding: 128px 0 144px;}
-    .comparison-banner-title span.optional-text{margin-bottom: 8px;}
+    .comparison-banner-title span.optional-text{margin-bottom: 8px; font-size: 14px; letter-spacing: 1.12px; line-height: 14px;}
+    .comparison-banner-title h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .comparison-banner-title h1 > span::before{display: none;}
-}
+    .comparison-banner-title p{font-size: 18px; line-height: 27px; margin: 40px auto 0; max-width: 100%;} }
