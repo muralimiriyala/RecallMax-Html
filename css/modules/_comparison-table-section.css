@@ -2,12 +2,20 @@
 
 .comparison-table-main table{border: none}
 .comparison-head-main{gap: 220px;}
-.comparison-head-main th{padding: 0;}
+.comparison-table-main th, .comparison-table-main td{padding: 0; background: transparent;}
 .comparison-head{width: 168px; margin-bottom: 48px;}
 .comparison-head span{font-size: 32px; line-height: 32px; display: block; margin-bottom: 20px;}
 .comparison-head-icon svg{border-radius: 32px;}
 .vs-icon{width: 56px; height: 56px; color: var(--Raisin-Black); font-size: 24px; line-height: 24px; font-weight: 800;}
 
-
+.comparison-content{gap: 40px;}
 .comparison-description{gap: 16px; max-width: 420px; padding: 0 16px;}
 .comparison-description-icon{max-width: 53px;}
+.comparison-subtitle{padding: 16px; gap: 16px; max-width: 168px;}
+.comparison-subtitle > span{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18px; font-weight: 800; display: block;}
+.comparison-subtitle-icon{max-width: 60px;}
+.comparison-subtitle-icon img{width: 60px;}
+.comparison-subtitle-icon svg{width: 60px; height: 60px;}
+.comparison-description-icon{max-width: 53px;}
+.comparison-description-icon img{width: 53px;}
+.comparison-description-icon svg{width: 53px; height: 53px;}
