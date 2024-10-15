@@ -2,7 +2,7 @@
 .pricing-banner-section span.optional-text{margin-bottom: 6px;}
 .pricing-banner-heading h1{color: var(--White);}
 .pricing-banner-heading h1 > span{position: relative; z-index: 1; font-style: italic;}
-.pricing-banner-heading h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: 100%; z-index: -1;}
+.pricing-banner-heading h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; z-index: -1;}
 
 @media screen and (min-width: 1024px) {
   .pricing-banner-main{padding: 152px 0 222px;}

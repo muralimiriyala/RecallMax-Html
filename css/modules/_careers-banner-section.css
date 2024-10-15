@@ -3,8 +3,6 @@
 .careers-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
 .careers-banner-text h1{color: var(--White);}
 .careers-banner-btn{gap: 12px; margin-top: 32px;}
-.careers-banner-btn a.text-link:hover{color: var(--Sky-Blue);}
-.careers-banner-btn a.text-link:hover em{color: var(--Sky-Blue);}
 .careers-banner-thumb img{opacity: 0.2;}
 
 @media screen and (min-width: 1024px) {
