@@ -8,7 +8,7 @@
 .comparison-head-icon svg{border-radius: 32px;}
 .vs-icon{width: 56px; height: 56px; color: var(--Raisin-Black); font-size: 24px; line-height: 24px; font-weight: 800;}
 
-.comparison-content{gap: 40px;}
+.comparison-content{gap: 40px; padding: 8px 0;}
 .comparison-description{gap: 16px; max-width: 420px; padding: 0 16px;}
 .comparison-description-icon{max-width: 53px;}
 .comparison-subtitle{padding: 16px; gap: 16px; max-width: 168px;}

@@ -33,4 +33,6 @@ body.single-post .resource-article .divider-line{margin: 56px 0;}
     .podcast-rows{gap: 16px;}
     .podcast-list{flex: 100%;}
     body.single-post .resource-article .divider-line{margin: 40px 0;}
+    body.single-post .resource-article ul:not(.resource-article-details){margin: 0 0 26px 32px;}
+    body.single-post .resource-article ul:not(.resource-article-details) > li::before{left: -32px;}
 }
