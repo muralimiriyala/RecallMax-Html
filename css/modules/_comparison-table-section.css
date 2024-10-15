@@ -26,3 +26,7 @@
     .comparison-head-main{gap: 180px;}
     .comparison-description{max-width: 330px;}
 }
+
+@media screen and (min-width: 1024px) {
+    .comparison-banner-section + .comparison-table-section{margin-top: -169px;}
+}
