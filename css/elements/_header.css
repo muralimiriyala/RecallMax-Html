@@ -44,6 +44,40 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li > ul > li > ul{margin: 22px 0 25px 21px;}
     ul.main_menu > li > ul > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 700; display: block; color: var(--Raisin-Black);}
     ul.main_menu > li > ul > li > ul > li > a:hover{color: var(--Accent);}
+    
+
+    ul.main_menu > li.nav-products{position: static;}
+    ul.main_menu > li.nav-products > ul{
+        border-radius: 0 0 24px 24px;
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+    ul.main_menu > li.nav-products > ul > li{max-width: 320px;}
+    ul.main_menu > li.nav-products > ul > li:last-child{max-width: 100%; margin: 0;}
+    ul.main_menu > li.nav-products > ul > li > a{color: var(--Raisin-Black-50);
+        font-weight: 800;      
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 1.12px;
+    }
+    ul.main_menu > li.nav-products > ul > li > ul{margin: 0;}
+    ul.main_menu > li.nav-products > ul > li > ul > li{margin: 0;}
+    ul.main_menu > li.nav-products > ul > li > ul > li > a{
+        font-size: 18px;
+        line-height: 1.25;
+        letter-spacing: -0.18px;
+        font-weight: 800;
+        position: relative;
+
+        
+    }
+    ul.main_menu > li.nav-products > ul > li > ul > li > a img{width: 24px; top: 0; left: 0; position: absolute;}
+    
+    
+    
+    
+    
     ul.main_menu > li.nav-features{position: static;}
     ul.main_menu > li.nav-features > ul{padding: 24px 26px 0; width: 100%; gap: 1px 12px; display: flex; flex-wrap: wrap; border-radius: 0 0 24px 24px; }
     ul.main_menu > li.nav-features > ul > li{flex: 0 0 calc(25% - 12px); margin: 0;}

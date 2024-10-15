@@ -12,6 +12,7 @@
     .culture-list-of-2{flex: 0 0 calc(50% - 24px);}
     .culture-list-of-1{flex: 1;}
     .no_who_are_section{padding-top: 54px;}
+    .no_culture_section{padding-top: 54px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .culture-main{flex: 100%; gap: 56px 48px;}
