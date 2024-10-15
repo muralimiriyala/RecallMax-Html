@@ -38,4 +38,11 @@
     .comparison-head-icon{width: 96px;}
     .comparison-head-icon svg{width: 96px; height: 96px; border-radius: 24px;}
     .vs-icon{font-size: 17px; height: 40px; line-height: 17px; width: 40px;}
+
+    .comparison-content{gap: 32px; padding: 0;}
+    .comparison-content td{display: flex; width: 49%;}
+    .comparison-content > td:first-child{order: 1;}
+    .comparison-content > td:nth-child(2){order: 3;}
+    .comparison-content > td:nth-child(3){order: 2; }
+    .comparison-description{gap: 16px; max-width: 100%; padding: 0; margin: 0;}
 }
