@@ -295,6 +295,9 @@ body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style 
 
     body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper{flex-direction: column; gap: 16px;}
     body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{width: 100%;}
+
+    body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field:not(:last-child){flex: 1;}
+    body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field{width: fit-content;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .frm_form_field_wrapper{display: block;}
@@ -339,6 +342,9 @@ body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style 
     body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{width: 100%;}
 
     body .newsletter-form .frm_forms form .frm_required_field div.frm_error{bottom: -15px;}
+
+    body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 20px;}
+    body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0; width: 100%;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container, body .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{flex-direction: column; margin-bottom: 8px;}
