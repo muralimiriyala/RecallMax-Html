@@ -9,7 +9,7 @@
 .comparison-head-icon svg{border-radius: 32px;}
 .vs-icon{width: 56px; height: 56px; color: var(--Raisin-Black); font-size: 24px; line-height: 24px; font-weight: 800;}
 
-.comparison-content{gap: 40px; padding: 8px 0;}
+.comparison-content{gap: 40px; padding: 8px 0; margin-bottom: 64px;}
 .comparison-description{gap: 16px; max-width: 420px; padding: 0 16px;}
 .comparison-description-icon{max-width: 53px;}
 .comparison-subtitle{padding: 16px; gap: 16px; max-width: 168px;}
@@ -29,9 +29,22 @@
 
 @media screen and (min-width: 1024px) {
     .comparison-banner-section + .comparison-table-section{margin-top: -169px;}
+    .comparison-subtitle{gap: 16px; max-width: 168px; padding: 16px; position: relative;}
+    .comparison-subtitle::before{width: 2px; height: 100%; top: -100%; left: 50%; position: absolute; content: ""; display: block; background: var(--Accent); transform: translateX(-50%); }
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .comparison-banner-section + .comparison-table-section{margin-top: -169px;}
+    .comparison-head-main{gap: 120px;}
+    .comparison-content{gap: 20px;}
+    .comparison-content > td:first-child{flex: 1;}
+    .comparison-content > td:nth-child(2){flex: 0 0 168px;}
+    .comparison-content > td:nth-child(3){flex: 1;}
+    .comparison-subtitle{gap: 16px; max-width: 168px; padding: 16px; position: relative;}
+    .comparison-subtitle::before{width: 2px; height: 100%; top: -100%; left: 50%; position: absolute; content: ""; display: block; background: var(--Accent); transform: translateX(-50%); }
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
+    .comparison-banner-section + .comparison-table-section{margin-top: -123px;}
     .comparison-head-main{gap: 12px; width: 100%;}
     .comparison-head{width: 126px; margin-bottom: 20px;}
     .comparison-head span{font-size: 20px; line-height: 20px; margin-bottom: 15px;}
