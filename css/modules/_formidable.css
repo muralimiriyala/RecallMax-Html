@@ -32,7 +32,7 @@ body .frm_forms .frm_form_fields .frm_form_field input, body .frm_forms .frm_for
 body .bg-elevated .frm_forms .frm_form_fields .frm_form_field input, body .bg-elevated .frm_forms .frm_form_field textarea, body .bg-elevated .frm_forms .selectBox-dropdown{background-color: var(--White);}
 body .frm_forms .frm_form_fields .frm_form_field textarea{height: 128px;} 
 body .frm_forms .frm_form_fields .frm_form_field input:not([type="file"]):focus,
-body .frm_forms .frm_form_fields .frm_form_field input:not([type="checkbox"]):focus, textarea:focus{background-color: rgba(30, 164, 181, .1) !important; border: 1px solid var(--Earthy-Blue); box-shadow: none !important; color: var(--Earthy-Blue) !important; border-color: var(--Earthy-Blue ) !important; opacity: 1;}
+body .frm_forms .frm_form_fields .frm_form_field input:not([type="checkbox"]):focus, body .frm_forms .frm_form_fields .frm_form_field input:not([type="radio"]):focus, textarea:focus{background-color: rgba(30, 164, 181, .1) !important; border: 1px solid var(--Earthy-Blue); box-shadow: none !important; color: var(--Earthy-Blue) !important; border-color: var(--Earthy-Blue ) !important; opacity: 1;}
 body .frm_forms .frm_form_fields .frm_form_field input{color: var(--Indigo); border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--Raisin-Tint);}
 body .frm_forms .frm_form_fields .frm_form_field input:hover{background-color: rgba(164, 39, 143, .1); border: 1px solid var(--Accent); box-shadow: none; color: var(--Raisin-Black); opacity: 1;}
 body .frm_forms .frm_form_fields .frm_form_field input::-webkit-input-placeholder, body .frm_forms .frm_form_fields .frm_form_field textarea::-webkit-input-placeholder {color: var(--Indigo); font-family: var(--base-font);}
