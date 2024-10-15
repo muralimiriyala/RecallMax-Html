@@ -1,59 +1,62 @@
 
 
-.share-icons{gap: 15px; justify-content: flex-start; margin: 0; position: relative; background: var(--White); padding: 24px 16px; width: 57px; border-radius: 24px 0px 0px 24px;}
-.share-icons .sharethis-inline-share-buttons {gap: 20px; display: flex; flex-wrap: wrap; z-index: 1; flex: 1;}
-.share-icons .sharethis-inline-share-buttons  .st-btn[data-network]{padding: 0; margin: 0; width: 20px; height: 20px; min-width: 20px; font-size: 20px !important; line-height: 24px; color: var(--Raisin-Black); background: transparent !important; position: relative; z-index: 1; font-family: "Font Awesome 6 Brands"; font-weight: 400; display: flex !important; align-items: center; justify-content: center; transition: var(--b-transition);}
-.share-icons .sharethis-inline-share-buttons  .st-btn[data-network]:hover{background: transparent !important; color: var(--Accent) !important; opacity: 1;}
-.share-icons .sharethis-inline-share-buttons  span.st-label{display: none;}
-.share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"]::after {content: "\f1e0"; font-family: "Font Awesome 6 Pro"; } 
-.share-icons .sharethis-inline-share-buttons  .st-btn[data-network="twitter"]::after {content: "\e61b"; } 
-.share-icons .sharethis-inline-share-buttons  .st-btn[data-network="facebook"]::after {content: "\f39e"; } 
-.share-icons .sharethis-inline-share-buttons  .st-btn[data-network="linkedin"]::after{content: "\f0e1"; }
-.share-icons .sharethis-inline-share-buttons  .st-btn[data-network="email"]::after{content: "\f0c1"; font-family: "Font Awesome 6 Pro"; font-weight: 900;}
-.share-icons .sharethis-inline-share-buttons  .st-btn img.button{display: none !important;}
-.share-icons #st-1.st-has-labels .st-btn.st-remove-label{min-width: 2rem;}
+body .share-icons{gap: 15px; justify-content: flex-start; margin: 0; position: relative; background: var(--White); padding: 24px 16px; width: 57px; border-radius: 24px 0px 0px 24px;}
+body .share-icons .sharethis-inline-share-buttons {display: block !important;  z-index: 1 !important;}
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network]{padding: 0; margin: 0; width: 20px; height: 20px; min-width: 20px; font-size: 20px !important; line-height: 24px; color: var(--Raisin-Black); background: transparent !important; position: relative; z-index: 1; font-family: "Font Awesome 6 Brands"; font-weight: 400; display: flex !important; align-items: center; justify-content: center; transition: var(--b-transition);}
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network]:hover{background: transparent !important; color: var(--Accent) !important; opacity: 1 !important;}
+body .share-icons .sharethis-inline-share-buttons  span.st-label{display: none;}
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"]::after {content: "\f1e0"; font-family: "Font Awesome 6 Pro"; } 
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="twitter"]::after {content: "\e61b"; } 
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="facebook"]::after {content: "\f39e"; } 
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="linkedin"]::after{content: "\f0e1"; }
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="email"]::after{content: "\f0c1"; font-family: "Font Awesome 6 Pro"; font-weight: 900;}
+body .share-icons .sharethis-inline-share-buttons  .st-btn img.button{display: none !important;}
+body .share-icons #st-1.st-has-labels .st-btn.st-remove-label{min-width: 2rem;}
 .share-inline-arrow{flex: 0 0 80px; opacity: 0.25;}
 
 
 body.single-post .share-inline-arrow{padding: 35px 0 0 ;}
 
-.share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"]{background: none !important; color: var(--Accent) !important; font-size: 20px; line-height: 20px; font-weight: 500;}
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"]{background: none !important; color: var(--Accent) !important; font-size: 20px; line-height: 20px; font-weight: 500;}
 
 
-
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="twitter"], 
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="facebook"], 
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="linkedin"],
+body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="email"]{min-width: 20px !important; padding: 0 !important; margin: 0 !important;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
-    .post-video-aside .share-icons{padding-top: 21px;}
-    body.page-template-default .share-icons{margin: 55px 0 0;}
-    .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"] { margin-bottom: 20px; width: 20px; height: 16px; border-radius: 0; position: relative; display: block; }
-    .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"]::before {content: ""; position: absolute; bottom: -20px; left: 0; width: 100%; height: 2px; background-color: rgba(48, 33, 53, 0.25); border-radius: 1px;}
+    .post-video-aside body .share-icons{padding-top: 21px;}
+    body.page-template-default body .share-icons{margin: 55px 0 0;}
+    body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"] { margin-bottom: 20px !important; width: 20px !important; height: 16px!important; border-radius: 0 !important; position: relative !important; display: block !important; min-width: 20px !important;}
+    body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"]::before {content: ""; position: absolute; bottom: -20px; left: 0; width: 100%; height: 2px; background-color: rgba(48, 33, 53, 0.25); border-radius: 1px;}
 }
 @media screen and (max-width: 1299px) and (min-width: 1024px){
-    .share-icons .sharethis-inline-share-buttons {justify-content: flex-start;}
+    body .share-icons .sharethis-inline-share-buttons {justify-content: flex-start;}
 }
 @media screen and (max-width: 1199px) and (min-width: 1024px){
-    .share-icons{padding: 24px 5px; width: 40px;}
+    body .share-icons{padding: 24px 5px; width: 40px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 744px){
-    .share-icons{display: block; width: 100%; border-radius: 24px;}
-    .share-icons .sharethis-inline-share-buttons {justify-content: flex-start;}
-    body.single-post   .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"] {margin-right: auto;}
+    body .share-icons{display: block; width: 100%; border-radius: 24px;}
+    body .share-icons .sharethis-inline-share-buttons {justify-content: flex-start;}
+    body.single-post   body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"] {margin-right: auto;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .share-icons{display: block; width: 100%; border-radius: 24px;}
+    body .share-icons{display: block; width: 100%; border-radius: 24px;}
     .share-inline-arrow{flex: 1;}
-    .share-icons .sharethis-inline-share-buttons {justify-content: flex-start; margin-bottom: 40px;}
-    body.single-post .share-icons .sharethis-inline-share-buttons {margin-bottom: 0;}
-    .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
-    body.page-template-default .share-icons {margin-top: 55px;}
-    body.single-post   .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"] {margin-right: auto;}
+    body .share-icons .sharethis-inline-share-buttons {justify-content: flex-start; margin-bottom: 40px;}
+    body.single-post body .share-icons .sharethis-inline-share-buttons {margin-bottom: 0;}
+    body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
+    body.page-template-default body .share-icons {margin-top: 55px;}
+    body.single-post   body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"] {margin-right: auto;}
 
 }
 
 @media screen and (max-width: 389px) and (min-width: 200px){
-    /* .share-icons .sharethis-inline-share-buttons  { justify-content: space-between; } */
-    .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"] { font-size: 42px; line-height: 3rem; }
-    .share-icons .sharethis-inline-share-buttons  .st-btn{ min-width: 44px; width: 44px; height: 44px; }
+    /* body .share-icons .sharethis-inline-share-buttons  { justify-content: space-between; } */
+    body .share-icons .sharethis-inline-share-buttons  .st-btn[data-network="sharethis"] { font-size: 42px; line-height: 3rem; }
+    body .share-icons .sharethis-inline-share-buttons  .st-btn{ min-width: 44px; width: 44px; height: 44px; }
 
 }
