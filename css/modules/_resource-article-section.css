@@ -93,7 +93,7 @@ body.single-post .cta-main{margin-bottom: 0;}
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .resource-article h1{font-size: 40px; line-height: 50px; letter-spacing: -0.4px;}
-    ul.resource-article-details > li:nth-child(2n + 1) a::before{display: none;}
+    ul.resource-article-details > li:nth-child(2n + 1)::before{display: none;}
     .cta-text .book-demo-btn{width: 302px; margin-top: -5px;}
     .cta-text .book-demo-btn .button{padding: 15px 17px;}
     .resource-video-main{margin: 0 auto 30px; width: calc(100% + 16px); left: -8px; position: relative;}
