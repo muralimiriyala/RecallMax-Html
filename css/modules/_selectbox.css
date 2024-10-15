@@ -17,12 +17,8 @@ ul.selectBox-dropdown-menu li.selectBox-disabled{display: none;}
 ul.selectBox-dropdown-menu li{display: block; margin-bottom: 0; padding: 0; white-space: normal;}
 ul.selectBox-dropdown-menu li::before{display: none;}
 ul.selectBox-dropdown-menu li.frm-select-placeholder{display: none;}
-ul.selectBox-dropdown-menu li a{padding: 8px 16px; width: 100%; color: var(--Raisin-Black); cursor: pointer; font-size: 16px; line-height: 16px; font-weight: 700; display: block; text-transform: none; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
-ul.selectBox-dropdown-menu li:hover a{color: var(--White); background-color: var(--Accent);}
-ul.selectBox-dropdown-menu li:hover{background-color: transparent; }
-
-
-
+ul.selectBox-dropdown-menu li a{padding: 8px 16px; width: 100%; color: var(--Raisin-Black); cursor: pointer; font-size: 16px; line-height: 16px; font-weight: 700; display: block; text-transform: none; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; background: transparent;}
+ul.selectBox-dropdown-menu li a:hover{color: var(--White); background: var(--Accent);}
 
 @media only screen and (max-width: 743px) and (min-width: 200px){
     ul.selectBox-dropdown-menu{max-width: 100%;}
