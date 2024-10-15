@@ -414,7 +414,7 @@ ul.slick-dots li button{display: none; padding: 0;}
 
     blockquote{margin: 32px 0 32px; padding: 24px; font-size: 1.25rem; line-height: 2rem;}
 
-    img.alignnone, img.alignleft, img.alignright, img.aligncenter{margin: 25px auto; clear: both; float: none; display: block;}
+    img.aligncenter, img.alignleft, img.alignnone, img.alignright{margin: 25px auto; clear: both; float: none; display: block; width: 100%;}
     #load-more-insights.btn-center{margin-top: 56px;}
 
     .book-demo-btn{padding: 4px; width: 350px; margin: 0 auto;}
