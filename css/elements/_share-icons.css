@@ -8,7 +8,7 @@
 .share-icons #st-1.st-animated .st-btn[data-network="sharethis"]::after,.share-icons #st-2.st-animated .st-btn[data-network="sharethis"]::after {content: "\f1e0"; font-family: "Font Awesome 6 Pro"; } 
 .share-icons #st-1.st-animated .st-btn[data-network="twitter"]::after, .share-icons #st-2.st-animated .st-btn[data-network="twitter"]::after {content: "\e61b"; } 
 .share-icons #st-1.st-animated .st-btn[data-network="facebook"]::after, .share-icons #st-2.st-animated .st-btn[data-network="facebook"]::after {content: "\f39e"; } 
-.share-icons #st-1.st-animated .st-btn[data-network="linkedin"]::after, .share-icons #st-2.st-animated .st-btn[data-network="facebook"]::after{content: "\f0e1"; }
+.share-icons #st-1.st-animated .st-btn[data-network="linkedin"]::after, .share-icons #st-2.st-animated .st-btn[data-network="linkedin"]::after{content: "\f0e1"; }
 .share-icons #st-1.st-animated .st-btn[data-network="email"]::after, .share-icons #st-2.st-animated .st-btn[data-network="email"]::after{content: "\f0c1"; font-family: "Font Awesome 6 Pro"; font-weight: 900;}
 .share-icons #st-1.st-animated img, .share-icons #st-2.st-animated img{display: none;}
 .share-icons #st-1.st-has-labels .st-btn.st-remove-label,.share-icons #st-2.st-has-labels .st-btn.st-remove-label{min-width: 2rem;}
@@ -37,23 +37,33 @@ body.single-post .share-inline-arrow{padding: 35px 0 0 ;}
 }
 @media screen and (max-width: 1023px) and (min-width: 744px){
     .share-icons{display: block; width: 100%; border-radius: 24px;}
+<<<<<<< HEAD
     .share-icons #st-1.st-animated{justify-content: flex-start;}
     body.single-post .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] {margin-right: auto;}
+=======
+    .share-icons #st-1.st-animated, .share-icons #st-2.st-animated{justify-content: flex-start;}
+    body.single-post   .share-icons #st-1.st-animated .st-btn[data-network="sharethis"], 
+    body.single-post   .share-icons #st-2.st-animated .st-btn[data-network="sharethis"] {margin-right: auto;}
+>>>>>>> c12b7354c71bc68fa8e17fdabe35cfb9f5dcc35f
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .share-icons{display: block; width: 100%; border-radius: 24px;}
     .share-inline-arrow{flex: 1;}
-    .share-icons #st-1.st-animated{justify-content: flex-start; margin-bottom: 40px;}
-    body.single-post .share-icons #st-1.st-animated{margin-bottom: 0;}
-    .share-icons #st-1.st-animated .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
+    .share-icons #st-1.st-animated, .share-icons #st-2.st-animated{justify-content: flex-start; margin-bottom: 40px;}
+    body.single-post .share-icons #st-1.st-animated, body.single-post .share-icons #st-2.st-animated{margin-bottom: 0;}
+    .share-icons #st-1.st-animated .st-btn[data-network="sharethis"], 
+    .share-icons #st-2.st-animated .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
     body.page-template-default .share-icons {margin-top: 55px;}
-    body.single-post   .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] {margin-right: auto;}
+    body.single-post   .share-icons #st-1.st-animated .st-btn[data-network="sharethis"], 
+    body.single-post   .share-icons #st-2.st-animated .st-btn[data-network="sharethis"] {margin-right: auto;}
 
 }
 
 @media screen and (max-width: 389px) and (min-width: 200px){
     /* .share-icons #st-1.st-animated { justify-content: space-between; } */
-    .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] { font-size: 42px; line-height: 3rem; }
-    .share-icons #st-1.st-animated .st-btn{ min-width: 44px; width: 44px; height: 44px; }
+    .share-icons #st-1.st-animated .st-btn[data-network="sharethis"], 
+    .share-icons #st-2.st-animated .st-btn[data-network="sharethis"] { font-size: 28px; line-height: 2rem; }
+    .share-icons #st-1.st-animated .st-btn, .share-icons #st-2.st-animated .st-btn{ min-width: 44px; width: 44px; height: 44px; }
+    .share-icons #st-1.st-animated, .share-icons #st-2.st-animated {gap: 7px}
 
 }
