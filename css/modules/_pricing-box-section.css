@@ -3,6 +3,8 @@
 .pricing-box-list{border-radius: 24px; font-size: 16px; line-height: 24px; color: var(--Dark); border: 2px solid var(--Card-Stroke); background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 25px; flex-direction: column;}
 .pricing-sub-details{gap: 12px; margin-bottom: 24px;}
 .pricing-sub-icon{display: flex; width: 24px;}
+.pricing-sub-icon svg{max-width: 24px; height: auto;}
+.pricing-sub-icon img{max-width: 24px; height: auto; width: 100%; object-fit: contain;}
 .pricing-sub-text{font-size: 14px; line-height: 14px; letter-spacing: 1.12px; text-transform: uppercase; color: var(--Accent); flex: 0 0 calc(100% - 36px);}
 .pricing-box-list h4{color: var(--Accent); margin-bottom: 16px;}
 ul.pricing-box-points{margin: 0 0 0 28px;}
@@ -26,7 +28,7 @@ ul.pricing-box-points > li.cancel::before{background: url("../../images/checked-
 .platinum .pricing-sub-text{flex: 0 0 calc(100% - 30px);}
 .platinum .pricing-sub-icon svg path{fill: var(--Text);}
 .platinum .pricing-sub-text{color: var(--Text);}
-.platinum.pricing-box-list  h4{color: var(--Text);}
+.platinum.pricing-box-list h4{color: var(--Text);}
 .platinum ul.pricing-box-points > li::before {background: url("../../images/checked-circle-platinum.svg");}
 .platinum ul.pricing-box-points > li.cancel::before{background: url("../../images/checked-circle-cancel.svg");}
 .platinum .pricing-box-btn .button{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-3);}
@@ -47,7 +49,9 @@ ul.pricing-box-points > li.cancel::before{background: url("../../images/checked-
 
 @media screen and (min-width: 1024px) {
     .pricing-box-main{gap: 48px; padding: 0 0 80px;}
-    .pricing-box-list{flex: 0 0 calc(33.333% - 32px);}
+    .pricing-box-list1{flex: 0 0 calc(100%);}
+    .pricing-box-list2{flex: 0 0 calc(50% - 24px);}
+    .pricing-box-list3{flex: 0 0 calc(33.333% - 32px);}
     .pricing-banner-section + .pricing-box-section {margin-top: -160px;} 
 }
 
