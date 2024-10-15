@@ -63,7 +63,7 @@ legend {white-space: normal;}
 table, th, td {border: 1px solid rgba(0, 0, 0, 0.1);}
 table {margin: 52px 0 49px; border-collapse: separate; border-spacing: 0; border-width: 1px; max-width: 100%; width: 100%; border-radius: 8px;}
 table tr td:first-child {text-align: left;}
-th {border-width: 0; padding: 11px 16px 12px; background-color: var(--Blue); color: var(--White); border-radius: 0; font-family: var(--base-font); font-weight: 700;}
+th {border-width: 0; padding: 11px 16px 12px; background-color: var(--Accent); color: var(--White); border-radius: 0; font-family: var(--base-font); font-weight: 700;}
 th span.icon{font-size: 0.875rem; margin-left: 4px; top: 0px; position: relative; }
 td {border-width: 0; padding: 13px 15px 11px; text-align: center; border-bottom: 1px solid rgba(0,0,0,.1); vertical-align: middle; font-size: 1rem; line-height: 1.5rem;}
 table tr:nth-child(odd) td{background-color: rgba(0,0,0, 0.02);}
