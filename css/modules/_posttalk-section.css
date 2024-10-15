@@ -11,7 +11,6 @@ body.resource-talk .resource-article .divider-line {margin: 56px 0;}
     
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .resource-video-main{margin-bottom: 30px;}
     body.resource-talk .resource-article-main{padding: 30px 0 2px;}
     body.resource-talk .resource-article .divider-line{margin: 37px 0;}
 }
