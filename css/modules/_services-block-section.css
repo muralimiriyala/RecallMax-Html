@@ -1,0 +1,49 @@
+
+.services-block-main{gap: 32px;}
+.services-block-list{background: var(--White); border: 1px solid var(--Card-Stroke); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 23px 24px; font-size: 16px; line-height: 24px; color: var(--Gray-1);}
+.services-block-icon{margin-bottom: 16px;}
+.services-block-icon svg{width: 40px; height: 40px;}
+.services-block-list .h5{margin-bottom: 17px;}
+.services-block-list .h5 a:hover{color: var(--Accent);}
+.services-block-list p{margin-bottom: 16px;}
+
+@media screen and (min-width: 1024px) {
+    .services-block-main{padding-bottom: 40px;}
+    .services-banner-section + .services-block-section{margin-top: -152px;}
+    .services-block-of-4{flex: 0 0 calc(25% - 24px);}
+    .services-block-of-3{flex: 0 0 calc(33.333% - 22px);}
+    .services-block-of-2{flex: 0 0 calc(50% - 16px);}
+    .services-block-of-1{flex: 1;}
+    .services-block-title{flex-direction: column;}
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .services-block-main{gap: 24px;}
+    .services-block-of-4{flex: 0 0 calc(25% - 18px);}
+    .services-block-of-3{flex: 0 0 calc(33.333% - 16px);}
+    .services-block-of-2{flex: 0 0 calc(50% - 12px);}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .services-banner-section + .services-block-section{margin-top: -168px;}
+    .services-block-main{gap: 24px; padding-bottom: 40px;}
+    .services-block-title{margin-bottom: 16px; flex-direction: column;}
+    .services-block-icon{flex: 0 0 40px;}
+    .services-block-list{flex: 0 0 calc(50% - 12px);}
+    .services-block-list .h5{margin-bottom: 0;}
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .services-banner-section + .services-block-section{margin-top: -88px;}
+    .services-block-main{gap: 20px; padding-bottom: 40px;}
+    .services-block-title{gap: 16px; margin-bottom: 16px; align-items: center;}
+    .services-block-icon{flex: 0 0 40px; margin-bottom: 0;}
+    .services-block-list{width: 100%;}
+    .services-block-list .h5{margin-bottom: 0; flex: 0 0 calc(100% - 56px); font-size: 20px; line-height: 25px; letter-spacing: -0.2px; padding-right: 70px;}
+    .services-block-list p{margin-bottom: 0;}
+}
+
+@media screen and (max-width: 389px) and (min-width: 200px) {
+    .services-block-list .h5{padding-right: 0;}
+}
+

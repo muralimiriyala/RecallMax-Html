@@ -21,7 +21,7 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
-    body.single-post .you-might-main, body.single-post .you-might-main{margin: 90px 0 20px;}
+    body.single-post .you-might-main, body.single-post .you-might-main, body.page-template-services-overview .you-might-main{margin: 90px 0 20px;}
     .you-might-main{gap: 40px; padding: 46px 48px 48px; margin: 90px 0 80px;}
     .you-might-heading{gap: 80px; align-items: end;}
     .you-might-title{flex: 1;}
@@ -39,10 +39,11 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
     .you-might-main{padding: 32px; gap: 32px;}
     .you-might-rows{gap: 24px;}
     .you-might-of-3{flex: 0 0 calc(33.33333% - 16px);}
+    ul.you-might-categories > li:nth-child(2n + 1)::before{display: none;}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    body.single-post .you-might-main, body.single-post .you-might-main{margin: 50px 0 20px;}
+    body.single-post .you-might-main, body.single-post .you-might-main, body.page-template-services-overview .you-might-main{margin: 50px 0 20px;}
     .you-might-main{gap: 32px; padding: 32px; margin: 50px 0 40px; border-radius: 32px;}
     .you-might-rows{gap: 24px; justify-content: center;}
     .you-might-of-3{flex: 0 0 calc(50% - 12px);}
@@ -51,7 +52,7 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
     .you-might-btn{width: 100%; text-align: center;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    body.single-post .you-might-main, body.single-post .you-might-main{margin: 50px 0 20px;}
+    body.single-post .you-might-main, body.single-post .you-might-main, body.page-template-services-overview .you-might-main{margin: 50px 0 20px;}
     .you-might-main{gap: 24px; padding: 23px 24px; margin: 50px 0 40px; border-radius: 24px;}
     .you-might-rows{display: block;}
     .you-might-list{width: 100%; margin-bottom: 24px;}

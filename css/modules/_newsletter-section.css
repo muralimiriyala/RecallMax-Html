@@ -20,7 +20,7 @@ ul.newsletter-category > li:last-child{padding-right: 0; border-right: 0;}
 .newsletter-full .newsletter-lt, .newsletter-full .newsletter-rt{flex: 1;}
 
 @media screen and (min-width: 1024px) {
-    body.single-post .newsletter-main, body.single-post .newsletter-main{padding: 20px 0 80px;}
+    body.single-post .newsletter-main, body.single-post .newsletter-main, body.page-template-services-overview .newsletter-main{padding: 20px 0 80px;}
     body.single-post .newsletter-main{padding: 20px 0 80px;}
     body.category-resources .newsletter-main{padding: 40px 0;}
     .newsletter-main{padding: 80px 0;}
@@ -42,7 +42,7 @@ ul.newsletter-category > li:last-child{padding-right: 0; border-right: 0;}
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    body.single-post .newsletter-main, body.single-post .newsletter-main{padding: 12px 0 40px;}
+    body.single-post .newsletter-main, body.single-post .newsletter-main, body.page-template-services-overview .newsletter-main{padding: 12px 0 40px;}
     .newsletter-main{padding: 40px 0;}
     .newsletter-lt{flex: 100%; padding: 24px 24px 64px; border-radius: 24px 24px 0px 0px; text-align: center;}
     .newsletter-lt h4{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}

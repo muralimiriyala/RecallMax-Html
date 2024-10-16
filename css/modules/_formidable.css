@@ -234,8 +234,11 @@ body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style 
     body .frm_forms .frm_form_fields .hide-label .frm_form_field .frm_primary_label{display: none;}
     body .frm_forms .frm_form_fields .frm_form_field.top_space{width: 100%; clear: both; margin-top: 20px;}
 
-    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_38_container{flex: 1;}
-    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_37_container{width: fit-content;}
+    /* body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_38_container{flex: 1;}
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper #frm_field_37_container{width: fit-content;} */
+
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field:not(:last-child){flex: 1; }
+    body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field{width: fit-content;}
     
 
     body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field:not(:last-child){flex: 1;}
