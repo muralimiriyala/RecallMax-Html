@@ -3,6 +3,7 @@
 .comparison-h-block{text-align: center;}
 .comparison-h-block span{font-size: 32px; line-height: 32px; display: block; margin-bottom: 20px;}
 .comparison-h-icon svg{border-radius: 32px;}
+.comparison-h-center::before{content: ""; display: block; width: 2px; height: 65px; background: var(--Accent); position: absolute; left: 50%; top: -81px; transform: translateX(-50%);}
 .vs-icon{width: 56px; height: 56px; color: var(--Raisin-Black); font-size: 24px; line-height: 24px; font-weight: 800;}
 
 .comparison-subtitle > span{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18px; font-weight: 800; display: block; width: 100%;}
@@ -17,6 +18,7 @@
 @media screen and (min-width: 1024px) {
     .comparison-section{margin-top: -117px;}
     .comparison-subtitle::before{width: 2px; height: 100%; top: -72px; left: 50%; max-height: 64px; position: absolute; content: ""; display: block; background: var(--Accent); transform: translateX(-50%); }
+    .comparison-row:first-child .comparison-subtitle::before{max-height: 93px; top: -103px;}
     .comparison-head{gap: 40px; margin-bottom: 48px;}
     .comparison-h-block{gap: 16px; flex: 1; padding: 0 16px;}
     .comparison-h-center{flex: 0 0 168px;}
@@ -48,6 +50,7 @@
     .comparison-h-block{width: 126px; margin-bottom: 20px;}
     .comparison-h-block span{font-size: 20px; line-height: 20px; margin-bottom: 15px;}
     .comparison-h-center{flex: 0 0 40px;}
+    .comparison-h-center::before{content: ""; display: block; width: 2px; height:44.5px; background: var(--Accent); top: -60px; position: absolute; left: 50%; transform: translateY(-50%);}
     .comparison-h-icon{width: 96px;}
     .comparison-h-icon svg{width: 96px; height: 96px; border-radius: 24px;}
     .vs-icon{font-size: 17px; height: 40px; line-height: 17px; width: 40px;}
