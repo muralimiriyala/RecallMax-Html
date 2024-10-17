@@ -13,13 +13,14 @@ const howitWorks = {
         });
         let target = e.target;  
         if(target.tagName==="SPAN") target = target.parentElement;
+        console.log(target)
         target.classList.toggle('active')
 
         const cscroll = target.children[2];
         cscroll.style.maxHeight = `${cscroll.scrollHeight}px`;
         let n = target.getAttribute("data-name");
         let c = document.querySelectorAll(`.how-work-row`);
-        let d = document.querySelector(`.how-work-row[data-value=${n}]`);
+        let d = document.querySelectorAll(`.how-work-row[data-value=${n}]`);
         let f = $(d);    
  
         c.forEach((e)=>{
