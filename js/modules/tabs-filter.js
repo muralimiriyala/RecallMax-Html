@@ -14,8 +14,11 @@ const tabFilter = {
         }
       })
       if($target.tagName==="SPAN") $target = e.target.parentElement;
+      if($target.tagName==="svg") $target = e.target.parentElement.parentElement;
+      
       const tabName = $target.getAttribute("data-name");
       const $tabele = document.querySelector(`.tab-links-main[data-value=${tabName}]`);
+      if ($tabele.length < 0) return;
       _.$tabs.forEach((tab)=>{
         if(tab !== $tabele){
           $target.classList.remove('open');
