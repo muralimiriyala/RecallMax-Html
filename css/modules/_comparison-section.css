@@ -5,19 +5,17 @@
 .comparison-h-icon svg{border-radius: 32px;}
 .vs-icon{width: 56px; height: 56px; color: var(--Raisin-Black); font-size: 24px; line-height: 24px; font-weight: 800;}
 
-
-.comparison-icon{max-width: 53px;}
 .comparison-subtitle > span{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18px; font-weight: 800; display: block; width: 100%;}
 .comparison-subtitle-icon{max-width: 60px;}
 .comparison-subtitle-icon img{width: 60px;}
 .comparison-subtitle-icon svg{width: 60px; height: 60px;}
-.comparison-icon{max-width: 53px;}
+.comparison-icon{max-width: 53px; margin-bottom: 9px;}
 .comparison-icon img{width: 53px;}
 .comparison-icon svg{width: 53px; height: 53px;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    .comparison-section{margin-top: -169px;}
+    .comparison-section{margin-top: -117px;}
     .comparison-subtitle::before{width: 2px; height: 100%; top: -72px; left: 50%; max-height: 64px; position: absolute; content: ""; display: block; background: var(--Accent); transform: translateX(-50%); }
     .comparison-head{gap: 40px; margin-bottom: 48px;}
     .comparison-h-block{gap: 16px; flex: 1; padding: 0 16px;}
@@ -28,7 +26,7 @@
     .comparison-d-center{max-width: 420px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .comparison-section{margin-top: -169px;}
+    .comparison-section{margin-top: -117px;}
     .comparison-subtitle::before{width: 2px; height: 100%; top: -72px; left: 50%; max-height: 64px; position: absolute; content: ""; display: block; background: var(--Accent); transform: translateX(-50%); }
     .comparison-head{gap: 40px; margin-bottom: 48px;}
     .comparison-h-block{gap: 16px; flex: 1; padding: 0 16px;}
@@ -38,8 +36,14 @@
     .comparison-description{gap: 16px; flex: 1; }
     .comparison-d-center{max-width: 420px; font-size: 16px; line-height: 24px;}
 }
+@media screen and  (min-width: 768px){
+    .comparison-row:last-child{padding: 0;}
+    .comparison-row:last-child .comparison-subtitle{padding: 0; opacity: 0.25;}
+    .comparison-row:last-child .comparison-subtitle::before{display: none;}
+    .comparison-row:nth-last-of-type(2){margin-bottom: 29px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .comparison-section{margin-top: -123px;}
+    .comparison-section{margin-top: -71px;}
     .comparison-head{gap: 12px;}
     .comparison-h-block{width: 126px; margin-bottom: 20px;}
     .comparison-h-block span{font-size: 20px; line-height: 20px; margin-bottom: 15px;}
@@ -47,23 +51,12 @@
     .comparison-h-icon{width: 96px;}
     .comparison-h-icon svg{width: 96px; height: 96px; border-radius: 24px;}
     .vs-icon{font-size: 17px; height: 40px; line-height: 17px; width: 40px;}
-
-    .comparison-rows::before {
-        background-color: red;
-        content: "";
-        display: block;
-        height: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 2px;
-        position: absolute;
-        top: -25px;
-    }
-    .comparison-row{display: flex !important;}
+    .comparison-rows::before{background-color: var(--Accent); content: ""; display: block; height: 100%; left: 50%; transform: translateX(-50%); width: 2px; position: absolute; top: -25px; }
+    .comparison-row{display: flex !important; gap: 34px;}
     .comparison-description:first-child{order: 1;}
     .comparison-subtitle:nth-child(2n+2){order: 3;}
     .comparison-description:last-child{order: 2; }
-    .comparison-description{gap: 16px; flex: 0 0 50%;}
+    .comparison-description{flex: 0 0 calc(50% - 17px); gap: 16px; font-size: 16px; line-height: 24px;}
     .comparison-subtitle{max-width: 215px;}
     .comparison-rows button.slick-arrow{bottom: 50px; position: absolute;}
     .comparison-rows button.slick-left{left: 0;}
