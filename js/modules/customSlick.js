@@ -209,6 +209,31 @@ const customSlick = {
       });
     }
 
+    const $comparison = $('.comparison-rows');
+    const comparisonSlider = () =>{
+      $comparison.each(function () {
+        const $comparisonSlider = $(this);
+        if (window.matchMedia('(max-width: 767px)').matches) {
+          if (!$comparisonSlider.hasClass('slick-initialized')) {
+            $comparisonSlider.slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              prevArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
+              nextArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
+              dots: false,
+              speed: 1000,
+              infinite: false,
+              autoplay: false,
+            });
+          }
+        }
+      });
+    }
+    comparisonSlider();
+
     window.onresize = function () {
       culturedestroySlider();
       cultureinitSlider();
@@ -221,6 +246,7 @@ const customSlick = {
 
       accreditationdestroySlider();
       accreditationinitSlider();
+      comparisonSlider();
 
     };
   },
