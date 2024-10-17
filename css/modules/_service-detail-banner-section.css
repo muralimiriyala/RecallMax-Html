@@ -1,5 +1,5 @@
 
-.service-detail-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); overflow: hidden;}
+.service-detail-banner-section{background: linear-gradient(90deg, #302135 33%, rgba(48, 33, 53, 0.00) 100%), var(--RecallMax-Purple, #A4278F); overflow: hidden;}
 .service-detail-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
 .service-detail-banner-text h1{color: var(--White);}
 .service-detail-banner-btn{gap: 12px; margin-top: 32px;}
@@ -9,7 +9,7 @@
     .service-detail-banner-main{padding: 150px 0 80px;}
     .service-detail-banner-text{max-width: 600px;}
     .service-detail-banner-text.no_banner_bg{max-width: 100%;}
-    .service-detail-banner-bg{height: 567px; right: -156px; top: 127px; max-width: 917px;} 
+    .service-detail-banner-bg{ width: 100%; height: 100%; right: 0; top: 0;} 
 }
 @media screen and (max-width: 1439px) and (min-width: 1280px) {
     .service-detail-banner-text{max-width: 572px;}
