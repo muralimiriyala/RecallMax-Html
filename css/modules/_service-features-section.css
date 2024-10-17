@@ -1,0 +1,9 @@
+
+.service-features-thumb{padding: 8px;}
+
+@media screen and (min-width: 1024px) {
+    .service-features-main{padding: 80px 0; gap: 48px;}
+    .service-features-of-3{flex: 0 0 calc(33.333% - 32px);}
+    .service-features-of-2{flex: 0 0 calc(50% - 24px);}
+    .service-features-of-1{flex: 1;}
+}
