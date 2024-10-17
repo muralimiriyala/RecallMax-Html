@@ -1,61 +1,59 @@
 
 
-.comparison-table-main table{border: none}
-.comparison-head-main{gap: 220px;}
-.comparison-table-main th, .comparison-table-main td{padding: 0; background: transparent; border: none;}
-.comparison-table-main table tr:nth-child(2n+1) td{background-color: transparent;}
-.comparison-head{width: 168px; margin-bottom: 48px;}
-.comparison-head span{font-size: 32px; line-height: 32px; display: block; margin-bottom: 20px;}
-.comparison-head-icon svg{border-radius: 32px;}
+.comparison-main table{border: none}
+.comparison-head{gap: 220px;}
+.comparison-main th, .comparison-main td{padding: 0; background: transparent; border: none;}
+.comparison-main table tr:nth-child(2n+1) td{background-color: transparent;}
+.comparison-h-block{width: 168px; margin-bottom: 48px;}
+.comparison-h-block span{font-size: 32px; line-height: 32px; display: block; margin-bottom: 20px;}
+.comparison-h-icon svg{border-radius: 32px;}
 .vs-icon{width: 56px; height: 56px; color: var(--Raisin-Black); font-size: 24px; line-height: 24px; font-weight: 800;}
 
-.comparison-content{gap: 40px; padding: 8px 0; margin-bottom: 64px;}
+.comparison-row{gap: 40px; padding: 8px 0; margin-bottom: 64px;}
 .comparison-description{gap: 16px; max-width: 420px; padding: 0 16px;}
-.comparison-description-icon{max-width: 53px;}
+.comparison-icon{max-width: 53px;}
 .comparison-subtitle{padding: 16px; gap: 16px; max-width: 168px;}
 .comparison-subtitle > span{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18px; font-weight: 800; display: block; width: 100%;}
 .comparison-subtitle-icon{max-width: 60px;}
 .comparison-subtitle-icon img{width: 60px;}
 .comparison-subtitle-icon svg{width: 60px; height: 60px;}
-.comparison-description-icon{max-width: 53px;}
-.comparison-description-icon img{width: 53px;}
-.comparison-description-icon svg{width: 53px; height: 53px;}
+.comparison-icon{max-width: 53px;}
+.comparison-icon img{width: 53px;}
+.comparison-icon svg{width: 53px; height: 53px;}
 
-
-@media screen and (max-width: 1279px) and (min-width: 1024px){
-    .comparison-head-main{gap: 180px;}
-    .comparison-description{max-width: 330px;}
-}
-
+/*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    .comparison-banner-section + .comparison-table-section{margin-top: -169px;}
+    .comparison-banner-section + .comparison-section{margin-top: -169px;}
     .comparison-subtitle{gap: 16px; max-width: 168px; padding: 16px; position: relative;}
     .comparison-subtitle::before{width: 2px; height: 100%; top: -100%; left: 50%; position: absolute; content: ""; display: block; background: var(--Accent); transform: translateX(-50%); }
 }
-
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+    .comparison-h-block{gap: 180px;}
+    .comparison-description{max-width: 330px;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .comparison-banner-section + .comparison-table-section{margin-top: -169px;}
-    .comparison-head-main{gap: 120px;}
-    .comparison-content{gap: 20px;}
-    .comparison-content > td:first-child{flex: 1;}
-    .comparison-content > td:nth-child(2){flex: 0 0 168px;}
-    .comparison-content > td:nth-child(3){flex: 1;}
+    .comparison-banner-section + .comparison-section{margin-top: -169px;}
+    .comparison-h-block{gap: 120px;}
+    .comparison-row{gap: 20px;}
+    .comparison-row > td:first-child{flex: 1;}
+    .comparison-row > td:nth-child(2){flex: 0 0 168px;}
+    .comparison-row > td:nth-child(3){flex: 1;}
     .comparison-subtitle{gap: 16px; max-width: 168px; padding: 16px; position: relative;}
     .comparison-subtitle::before{width: 2px; height: 100%; top: -100%; left: 50%; position: absolute; content: ""; display: block; background: var(--Accent); transform: translateX(-50%); }
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .comparison-banner-section + .comparison-table-section{margin-top: -123px;}
-    .comparison-head-main{gap: 12px; width: 100%;}
-    .comparison-head{width: 126px; margin-bottom: 20px;}
-    .comparison-head span{font-size: 20px; line-height: 20px; margin-bottom: 15px;}
-    .comparison-head-icon{width: 96px;}
-    .comparison-head-icon svg{width: 96px; height: 96px; border-radius: 24px;}
+    .comparison-banner-section + .comparison-section{margin-top: -123px;}
+    .comparison-h-block{gap: 12px; width: 100%;}
+    .comparison-h-block{width: 126px; margin-bottom: 20px;}
+    .comparison-h-block span{font-size: 20px; line-height: 20px; margin-bottom: 15px;}
+    .comparison-h-icon{width: 96px;}
+    .comparison-h-icon svg{width: 96px; height: 96px; border-radius: 24px;}
     .vs-icon{font-size: 17px; height: 40px; line-height: 17px; width: 40px;}
 
-    .comparison-content{gap: 32px; padding: 0;}
-    .comparison-content td{display: flex; width: 49%;}
-    .comparison-content > td:first-child{order: 1;}
-    .comparison-content > td:nth-child(2){order: 3;}
-    .comparison-content > td:nth-child(3){order: 2; }
+    .comparison-row{gap: 32px; padding: 0;}
+    .comparison-row td{display: flex; width: 49%;}
+    .comparison-row > td:first-child{order: 1;}
+    .comparison-row > td:nth-child(2){order: 3;}
+    .comparison-row > td:nth-child(3){order: 2; }
     .comparison-description{gap: 16px; max-width: 100%; padding: 0; margin: 0;}
 }
