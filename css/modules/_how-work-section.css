@@ -54,6 +54,7 @@ ul.how-work-links > li > a.active p{margin-top: 16px;}
     .tab-panel span.optional-text{letter-spacing: 1.12px; color: var(--Raisin-Black); margin-bottom: 15px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
+    .how-work-wrap{padding: 32px;}
     .how-work-row .how-work-title{font-size: 24px; line-height: 30px; padding-left: 0;}
     .how-work-rt{padding-bottom: 24px;}
     ul.how-work-links{margin-bottom: 24px;}
