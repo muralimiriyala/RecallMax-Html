@@ -1,0 +1,40 @@
+
+.service-d-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
+.service-d-banner-text h1{color: var(--White);}
+.service-d-banner-btn{gap: 12px; margin-top: 32px;}
+.service-d-banner-thumb img{opacity: 0.2;}
+
+@media screen and (min-width: 768px){
+    .service-d-banner-section{background: var(--Accent);}
+    .service-d-banner-bg picture::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(90deg, #302135 33%, rgba(48, 33, 53, 0.00) 100%), var(--Accent);}
+    .service-d-banner-bg picture img{opacity: .75;}
+}
+@media screen and (min-width: 1024px) {
+    .service-d-banner-main{padding: 150px 0 80px;}
+    .service-d-banner-text{max-width: 600px;}
+    .service-d-banner-text.no_banner_bg{max-width: 100%;}
+    .service-d-banner-bg{ width: 100%; height: 100%; right: 0; top: 0;} 
+}
+@media screen and (max-width: 1439px) and (min-width: 1280px) {
+    .service-d-banner-text{max-width: 572px;}
+    .service-d-banner-bg{right: -276px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .service-d-banner-text{max-width: 444px;}
+    .service-d-banner-bg{right: -420px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .service-d-banner-main{padding: 145px 0 80px;}
+    .service-d-banner-bg{right: -296px; top: 104px; max-width: 917px; max-height: 567px;}
+    .service-d-banner-text span.optional-text{margin-bottom: 32px;}
+    .service-d-banner-text hr.sm-line{margin: 32px 0;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .service-d-banner-main{padding: 40px 0 40px; position: relative;}
+    .service-d-banner-main::before{width: 100vw; height: 100%; top: 0; left: -20px; background-image: linear-gradient(to bottom, rgba(164, 39, 143, 0) 50%, #a4278f), linear-gradient(to bottom, #302135, #302135); content: ""; display: block; position: absolute;}
+    .service-d-banner-bg{position: static;}
+    .service-d-banner-text{font-size: 18px; line-height: 27px;}
+    .service-d-banner-text span.optional-text{margin-bottom: 24px;}
+    .service-d-banner-text hr.sm-line{margin: 24px 0;}
+    .service-d-banner-btn .button{width: 100%;}
+}
