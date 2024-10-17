@@ -167,6 +167,9 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li.nav-features > ul > li{flex: 0 0 calc(33.3333% - 8px);}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar{width: calc(100% + 24px); left: -12px;}
     ul.main_menu > li.nav-features > ul > li > a{padding: 8px 10px 6px 40px;}
+    ul.main_menu > li.nav-products > ul{max-width: 944px;}
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul{width: 908px;}
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > a{align-items: center;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
 }
@@ -240,6 +243,7 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar{margin-bottom: 20px;}
     li.nav-gradient-bar{ margin-bottom: 20px; padding: 8px 16px; color: var(--White); font-size: 16px; font-weight: 800; line-height: 24px; border-radius: 32px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--RecallMax-Purple, #A4278F); text-align: center; }
 
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > a{display: none;}
    
 
     header.white-header:not(.sticky-header) span.white-logo{display: none;}
