@@ -47,7 +47,7 @@
 @media screen and (max-width: 767px) and (min-width: 200px){
     .comparison-section{margin-top: -71px;}
     .comparison-head{gap: 12px;}
-    .comparison-h-block{width: 126px; margin-bottom: 20px;}
+    .comparison-h-block{width: 126px; margin-bottom: 20px; flex: 1;}
     .comparison-h-block span{font-size: 20px; line-height: 20px; margin-bottom: 15px;}
     .comparison-h-center{flex: 0 0 40px;}
     .comparison-h-center::before{content: ""; display: block; width: 2px; height:44.5px; background: var(--Accent); top: -60px; position: absolute; left: 50%; transform: translateY(-50%);}
@@ -60,7 +60,10 @@
     .comparison-subtitle:nth-child(2n+2){order: 3;}
     .comparison-description:last-child{order: 2; }
     .comparison-description{flex: 0 0 calc(50% - 17px); gap: 16px; font-size: 16px; line-height: 24px;}
-    .comparison-subtitle{max-width: 215px;}
+    .comparison-subtitle{max-width: 204px; padding: 12px 20px; gap: 18px;}
+    .comparison-subtitle-icon{max-width: 40px; margin: 0;}
+    .comparison-subtitle-icon svg{height: 40px; width: 40px; }
+    .comparison-subtitle > span {flex: 0 0 calc(100% - 58px);}
     .comparison-rows button.slick-arrow{bottom: 50px; position: absolute;}
     .comparison-rows button.slick-left{left: 0;}
     .comparison-rows button.slick-next{right: 0;}
