@@ -88,10 +88,10 @@ const teamPage = {
     function tabFun(e) {
       // e.preventDefault();
       let $this = this;
-      tablinks.forEach(function (item) {
-        item.classList.remove('active');
-      });
-      $this.classList.toggle('active');
+      // tablinks.forEach(function (item) {
+      //   item.classList.remove('active');
+      // });
+      // $this.classList.toggle('active');
       let tabattr = $this.getAttribute('data-name');
       const tabRow = document.querySelectorAll('.data-tab-row');
       tabRow.forEach(function (tabitem) {
