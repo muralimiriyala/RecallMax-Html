@@ -15,6 +15,7 @@
 
 @import "./modules/_products-banner-section.css";
 @import "./modules/_features-banner-section.css";
+@import "./modules/_differ-max-section.css";
 @import "./modules/_careers-banner-section.css";
 @import "./modules/_maxassit-herd-section.css";
 @import "./modules/_optional-repeater-section.css";
@@ -70,6 +71,7 @@
 @import "./modules/_service-features-section.css";
 @import "./modules/_explore-section.css";
 @import "./modules/_comparison-table-section.css";
+@import "./modules/_compare-table-section.css";
 @import "./modules/_platinum-rec-section.css";
 @import "./modules/_max-features-section.css";
 @import "./modules/_training-section.css";
