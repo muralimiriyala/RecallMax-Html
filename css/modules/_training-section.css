@@ -10,13 +10,47 @@
 .training-details{gap: 12px; padding-top: 20px; border-top: 2px solid rgba(164, 39, 143, 0.2); margin-top: 20px;}
 .training-details-main{gap: 24px;}
 .modules-details, .hours-details, .platinum-details{gap: 8px; width: fit-content;}
-.modules-details-icon, .hours-details-icon, .platinum-details-icon{max-width: 16px; display: flex; align-items: center;}
+.modules-details-icon, .hours-details-icon, .platinum-details-icon{flex: 0 0 16px; display: flex; align-items: center;}
 .modules-details-icon svg, .hours-details-icon svg, .platinum-details-icon svg{width: 16px; height: 16px;}
-.modules-details-text, .hours-details-text, .platinum-details-text{font-size: 16px; line-height: 24px; color: var(--Raisin-Black);}
+.modules-details-text, .hours-details-text, .platinum-details-text{font-size: 16px; line-height: 24px; color: var(--Raisin-Black); flex: 1;}
 .platinum-details-text{color: var(--Accent-3);}
+
+ul.kickstart-training-details{gap: 12px; padding-top: 20px; border-top: 2px solid rgba(164, 39, 143, 0.2); margin: 20px 0 0;}
+ul.kickstart-training-details > li{gap: 8px; margin-bottom: 0; width: 100%;}
+ul.kickstart-training-details > li::before{display: none;}
+ul.kickstart-training-details > li .kickstart-icon{flex: 0 0 16px; display: flex; align-items: center;}
+ul.kickstart-training-details > li .kickstart-icon svg{width: 16px; height: 16px;}
+ul.kickstart-training-details > li .kickstart-text{font-size: 16px; line-height: 24px; color: var(--Raisin-Black); flex: 1;}
+
+.training-cta{gap: 24px; padding: 16px 16px 16px 32px;}
+.training-cta h4{margin-bottom: 0;}
+.training-cta h4 > span{position: relative; z-index: 1;}
+.training-cta h4 > span::before{background: var(--Accent-3); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 16px; opacity: .4; position: absolute; z-index: -1;}
 
 @media screen and (min-width: 1024px) {
     .training-main{padding: 80px 0; gap: 48px;}
     .training-lists{gap: 40px;}
     .training-item{flex: 0 0 calc(33.333% - 27px);}
 }
+
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+    .training-cta{padding: 16px;}
+    .training-lists{gap: 30px;}
+    .training-item{flex: 0 0 calc(33.333% - 20px); padding: 25px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .training-main{padding: 40px 0; gap: 32px;}
+    .training-lists{gap: 32px; justify-content: center;}
+    .training-item{flex: 0 0 calc(50% - 16px);}
+    .training-cta{padding: 0; text-align: center; flex-direction: column;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .training-main{padding: 40px 0; gap: 32px;}
+    .training-item{padding: 24px; width: 312px;}
+
+    .training-cta{padding: 0; text-align: center;}
+    .training-cta h4{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
+    .training-cta .button{width: 100%;}
+}
+

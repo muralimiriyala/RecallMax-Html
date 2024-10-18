@@ -71,11 +71,8 @@
 @import "./modules/_explore-section.css";
 @import "./modules/_comparison-table-section.css";
 @import "./modules/_platinum-rec-section.css";
-<<<<<<< HEAD
 @import "./modules/_max-features-section.css";
-=======
 @import "./modules/_training-section.css";
->>>>>>> bdc95bb7d243e19c9f1383e384998549b6a8290b
 
 @import "./modules/jquery.selectBox.css";
 @import "./modules/slick.css";
