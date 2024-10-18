@@ -25,3 +25,14 @@
     .service-features-thumb{flex: 0 0 452px;}
     .service-features-text{flex: 0 0 calc(100% - 492px); text-align: left;}
 }
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .service-features-main{padding: 48px 0; gap: 56px;}
+    .service-features-list{gap: 32px; width: 100%;}
+    .service-features-thumb{max-width: 480px; margin: 0 auto;}
+
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .service-features-main{padding: 40px 0; gap: 56px;}
+    .service-features-list{gap: 32px; width: 100%;}
+    .service-features-text{font-size: 18px; line-height: 27px;}
+}
