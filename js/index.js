@@ -21,6 +21,7 @@ import Effects from './modules/effects';
 import progress from './modules/progress';
 import share from './modules/share';
 import howitWorks from './modules/howitWorks';
+import exploreSlick from './modules/exploreSlick';
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
   testimonialSlider.init();
   share.init();
   howitWorks.init();
+  exploreSlick.init();
 });
 
 let scrolled = window.scrollY;
