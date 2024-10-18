@@ -86,7 +86,7 @@ const teamPage = {
     window.addEventListener('orientationchange', updateHeights);
 
     function tabFun(e) {
-      e.preventDefault();
+      // e.preventDefault();
       let $this = this;
       tablinks.forEach(function (item) {
         item.classList.remove('active');
