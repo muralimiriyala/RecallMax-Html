@@ -250,6 +250,60 @@ const customSlick = {
     }
     comparisonSlider();
 
+
+    const $trainingMain = $('.training-lists');
+    function traininginitSlider() {
+      $trainingMain.each(function(){
+        const $this = $(this);
+        const trainingAppend = $(this).parent().children('.training-main-appends');
+        if (window.matchMedia('(max-width: 767px)').matches) {
+          if (!$this.hasClass('slick-initialized')) {
+            $this.slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              prevArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
+              nextArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
+              dots: true,
+              speed: 1000,
+              infinite: false,
+              autoplay: false,
+              variableWidth: true,
+              appendArrows: trainingAppend,
+              appendDots: trainingAppend,
+              dotsClass: 'slick-dots training-slick-dots',
+              customPaging: function (slider, i) {
+                var slideNumber = i + 1,
+                  totalSlides = slider.slideCount;
+                return (
+                  '<a class="training-dot" role="button" title="' +
+                  slideNumber +
+                  ' of ' +
+                  totalSlides +
+                  '"><span class="string">' +
+                  slideNumber +
+                  '<span class="training-slash">/</span>' +
+                  totalSlides +
+                  '</span></a>'
+                );
+              },
+            });
+          }
+        }
+      });
+    }
+    traininginitSlider();
+    function trainingdestroySlider() {
+      $trainingMain.each(function () {
+        const $this = $(this);
+        $(window).width() >= 768 && $this.hasClass('slick-initialized')
+          ? $this.slick('unslick')
+          : '';
+      });
+    }
+
     window.onresize = function () {
       culturedestroySlider();
       cultureinitSlider();
@@ -264,6 +318,8 @@ const customSlick = {
       accreditationinitSlider();
       comparisonSlider();
 
+      trainingdestroySlider();
+      traininginitSlider();
     };
   },
 };
