@@ -1,0 +1,40 @@
+
+.explore-main{gap: 32px;}
+.explore-list{border: 1px solid var(--Card-Stroke); padding: 23px 24px; font-size: 16px; line-height: 24px; color: var(--Gray-1);}
+.explore-icon{margin-bottom: 16px;}
+.explore-icon svg, .explore-icon figure{width: 40px; height: 40px;}
+
+
+.explore-main .slick-list{width: 100vw;}  
+.explore-main .slick-slide{width: 296px; margin-right: 32px;}
+.explore-appends button.slick-next{order: 3;}
+.explore-appends ul.slick-dots{order: 2;}
+.explore-appends ul.slick-dots li{width: 16px; height: 16px; border-radius: 50%; background-color: rgba(23, 125, 138, 0.2);}
+.explore-appends ul.slick-dots li.slick-active{background-color: var(--Accent-2);}
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px) {
+    .explore-main{padding-bottom: 40px;}
+    .explore-head{padding-right: 160px;}
+    .explore-of-4{flex: 0 0 calc(25% - 24px);}
+    .explore-of-3{flex: 0 0 calc(33.333% - 22px);}
+    .explore-of-2{flex: 0 0 calc(50% - 16px);}
+    .explore-of-1{flex: 1;}
+    .explore-appends{top: 0; right: 0; max-width: 160px; position: absolute;}
+    .explore-appends ul.slick-dots{display: none !important;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .explore-main{gap: 24px;}
+    .explore-of-4{flex: 0 0 calc(25% - 18px);}
+    .explore-of-3{flex: 0 0 calc(33.333% - 16px);}
+    .explore-of-2{flex: 0 0 calc(50% - 12px);}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .explore-main .slick-slide{margin-right: 24px;}
+}
+@media screen and (max-width: 374px) and (min-width: 200px) {
+    .explore-main .slick-slide{width: 246px;}
+}

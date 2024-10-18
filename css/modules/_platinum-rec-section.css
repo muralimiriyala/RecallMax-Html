@@ -1,0 +1,34 @@
+
+.platinum-rec-thumb{padding: 8px; background: var(--White); border-radius: 16px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
+.platinum-rec-thumb img{border-radius: 10px;}
+.platinum-rec-text{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
+.platinum-rec-text > p{color: var(--Gray-1);}
+.platinum-rec-text span.optional-text{margin-bottom: 22px;}
+.platinum-rec-text hr.sm-line{margin: 24px 0;}
+.platinum-rec-text ul > li{font-weight: 700;}
+.platinum-rec-text ul > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 5px; width: 20px; }
+.platinum-rec-btn{gap: 12px;}
+
+@media screen and (min-width: 1024px) {
+    .platinum-rec-main{padding: 40px 0;}
+    .platinum-rec-list{gap: 80px; margin-bottom: 40px;}
+    .platinum-rec-list:last-child{margin-bottom: 0;}
+    .platinum-rec-image, .platinum-rec-text{flex: 1;}
+}
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .platinum-rec-list{gap: 48px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .platinum-rec-main{padding: 40px 0;}
+    .platinum-rec-image{flex: 100%; margin-bottom: 48px;}
+    .platinum-rec-text{flex: 100%;}
+    .platinum-rec-text span.optional-text{margin-bottom: 22px;}
+    .platinum-rec-text hr.sm-line{margin: 24px 0;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .platinum-rec-main{padding: 40px 0;}
+    .platinum-rec-image{flex: 100%; margin-bottom: 40px;}
+    .platinum-rec-text{font-size: 18px; line-height: 27px; flex: 100%;}
+    .platinum-rec-text span.optional-text{margin-bottom: 18px;}
+    .platinum-rec-text hr.sm-line{margin: 20px 0;}
+}

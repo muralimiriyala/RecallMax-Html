@@ -1,0 +1,30 @@
+
+.products-gradient-bg{height: calc(100% - 100px); width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
+.products-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
+.products-banner-text h1{color: var(--White);}
+.products-banner-btn{gap: 12px; margin-top: 32px;}
+.products-banner-thumb img{opacity: 0.2;}
+.products-banner-form{padding: 40px;}
+
+@media screen and (min-width: 1024px) {
+    .products-banner-main{padding: 150px 0 80px;}
+    .products-banner-text.no_banner_bg{max-width: 100%;}
+}
+@media screen and (max-width: 1439px) and (min-width: 1280px) {
+    .products-banner-text{max-width: 572px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .products-banner-text{max-width: 444px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .products-banner-main{padding: 145px 0 80px;}
+    .products-banner-text span.optional-text{margin-bottom: 32px;}
+    .products-banner-text hr.sm-line{margin: 32px 0;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .products-banner-main{padding: 145px 0 40px;}
+    .products-banner-text{font-size: 18px; line-height: 27px;}
+    .products-banner-text span.optional-text{margin-bottom: 24px;}
+    .products-banner-text hr.sm-line{margin: 24px 0;}
+    .products-banner-btn .button{width: 100%;}
+}
