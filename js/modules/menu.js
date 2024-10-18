@@ -17,8 +17,8 @@ const Menu = {
   $site: document.querySelector('.site-main-cover'),
   init() {
     const _ = this;
-    // const $siteHeight = header.clientHeight;
     if (!_.$header) return false;
+
     let userScroll = () => {
       const scroll = window.scrollY;
       scroll > 0
@@ -27,17 +27,17 @@ const Menu = {
     };
     window.addEventListener('scroll', userScroll);
     window.addEventListener('load', userScroll);
+
     let humburger = function (e) {
       e.preventDefault();
-      const _$ = this;
-      _$.classList.toggle('open');
+      this.classList.toggle('open');
       _.$nav.classList.toggle('open');
       _.$moverlay.classList.toggle('open');
     };
     if (!_.$btn) return false;
     _.$btn.addEventListener('click', humburger);
 
-    let menu = function (e) {
+    let menufun = function (e) {
       e.preventDefault();
       const _$ = this;
       _$.classList.toggle('active');
@@ -50,12 +50,11 @@ const Menu = {
           $item.classList.toggle('sib');
         }
       });
-      $li.classList.remove('sib');  
-      
+      $li.classList.remove('sib');
+
       _.$links.forEach(($item) => {
         if ($item !== _$ && $item !== $li) {
-          $item.parentElement.querySelector('ul.sub-menu').style.maxHeight =
-          '0';
+          $item.parentElement.querySelector('ul.sub-menu').style.maxHeight = '0';
         }
       });
 
@@ -64,6 +63,7 @@ const Menu = {
         ? ($submenu.style.maxHeight = '0')
         : ($submenu.style.maxHeight = `${$submenu.scrollHeight}px`);
     };
+
     let onMouse = () => {
       _.$overlay.classList.add('open');
     };
@@ -71,15 +71,20 @@ const Menu = {
       _.$overlay.classList.remove('open');
     };
     if (!_.$links) return false;
+
     _.$links.forEach(function ($link) {
-      $link.addEventListener('click', menu);
+      if (window.matchMedia('(max-width: 1023px)').matches) {
+        $link.addEventListener('click', menufun);
+      }
       $link.addEventListener('mouseover', onMouse);
       $link.addEventListener('mouseleave', offMouse);
     });
+
     _.$hoverlink.forEach(($hoverli) => {
       $hoverli.addEventListener('mouseover', onMouse);
       $hoverli.addEventListener('mouseleave', offMouse);
     });
+
     if (_.$blackheader) {
       _.$header.classList.add('black-header');
       _.$site.classList.add('site-black-top');
