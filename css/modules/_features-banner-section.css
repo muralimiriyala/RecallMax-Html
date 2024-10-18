@@ -1,6 +1,6 @@
 
 .features-gradient-bg{height: calc(100% - 100px); width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
-.features-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
+.features-banner-text{font-size: 20px; line-height: 30px;}
 .features-banner-text h1{color: var(--White);}
 .features-banner-btn{gap: 12px; margin-top: 32px;}
 .features-banner-thumb img{opacity: 0.2;}
