@@ -12,3 +12,16 @@
     .service-features-of-2{flex: 0 0 calc(50% - 24px);}
     .service-features-of-1{flex: 1;}
 }
+
+@media screen and (max-width: 1439px) and (min-width: 1280px){
+    .service-features-main{gap: 40px;}
+    .service-features-of-3{flex: 0 0 calc(33.333% - 27px);}
+    .service-features-of-2{flex: 0 0 calc(50% - 20px);}
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+    .service-features-main{gap: 40px; flex-direction: column;}
+    .service-features-list{align-items: center;}
+    .service-features-thumb{flex: 0 0 452px;}
+    .service-features-text{flex: 0 0 calc(100% - 492px); text-align: left;}
+}
