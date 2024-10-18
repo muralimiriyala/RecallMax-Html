@@ -194,6 +194,22 @@ const customSlick = {
               variableWidth: true,
               appendArrows: featuresAppend,
               appendDots: featuresAppend,
+              dotsClass: 'slick-dots ftr-slick-dots',
+              customPaging: function (slider, i) {
+                var slideNumber = i + 1,
+                  totalSlides = slider.slideCount;
+                return (
+                  '<a class="ftr-dot" role="button" title="' +
+                  slideNumber +
+                  ' of ' +
+                  totalSlides +
+                  '"><span class="string">' +
+                  slideNumber +
+                  '<span class="ftr-slash">/</span>' +
+                  totalSlides +
+                  '</span></a>'
+                );
+              },
             });
           }
         }
