@@ -5,12 +5,12 @@
 .pdetail-banner-btn{gap: 12px; margin-top: 32px;}
 .pdetail-banner-thumb img{opacity: 0.2;}
 
-ul.pdetail-ui-links{margin: 0; gap: 8px;}
+ul.pdetail-ui-links{margin: 0 0 56px; gap: 8px;}
 ul.pdetail-ui-links li{margin: 0;}
 ul.pdetail-ui-links li::before{display: none;}
-ul.pdetail-ui-links li a{font-size: 14px; line-height: 1; letter-spacing: 1.4px; font-weight: 800; color: var(--White-50); text-transform: uppercase; position: relative;}
-.pdetail-ui-line{width: 100%; height: 2px; opacity: 0.5; background-color: var(--Accent); content: ""; display: block;}
+ul.pdetail-ui-links li a{min-width: 256px; display: block; font-size: 14px; line-height: 1; letter-spacing: 1.4px; font-weight: 800; color: var(--White-50); text-transform: uppercase; position: relative; text-align: center;}
 ul.pdetail-ui-links li a.ui-open{color: var(--White);}
+.pdetail-ui-line{width: 100%; height: 2px; opacity: 0.5; background-color: var(--Accent); content: ""; display: block;}
 .ui-active-state{background-color: var(--Sky-Blue);}
 
 @media screen and (min-width: 1024px) {
