@@ -90,8 +90,14 @@ hr.sm-line{background-color: var(--Accent); height: 2px; border-radius: 1px; mar
 .button.btn-transparent{padding: 12px 13px 12px 12px; border-radius: 24px; border: 4px solid var(--Orange); background: transparent;}
 .button.btn-transparent:hover{background: var(--Orange); border-color: var(--Orange);}
 
+.button.btn-transparent-accent3{padding: 12px 13px 12px 12px; border-radius: 28px; border: 2px solid var(--Accent-3); background: transparent; color: var(--Raisin-Black);}
+.button.btn-transparent-accent3:hover{background: var(--Accent-3); border-color: var(--Accent-3); color: var(--White);}
+
 .button.btn-white{background: var(--White); color: var(--Accent);}
 .button.btn-white:hover{background: var(--Accent); color: var(--White);}
+
+.button.btn-accent2{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-2); color: var(--White);}
+.button.btn-accent2:hover{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent-2);}
 
 .button.btn-accent3{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-3); color: var(--White);}
 .button.btn-accent3:hover{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent-3);}
@@ -347,6 +353,13 @@ ul.slick-dots li button{display: none; padding: 0;}
 .demo-white .book-demo-call:hover{color: var(--Sky-Blue);}
 .demo-white .book-demo-call:hover svg path{fill: var(--Sky-Blue);}
 
+.demo-accent3{background: var(--Translucent-2);}
+.demo-accent3 .button{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-3); color: var(--White);}
+.demo-accent3 .book-demo-call{color: var(--Raisin-Black);}
+.demo-accent3 .book-demo-call svg path{fill: var(--Accent-3);}
+.demo-accent3 .book-demo-call:hover{color: var(--Accent-3);}
+.demo-accent3 .book-demo-call:hover svg path{fill: var(--Accent-3);}
+
 .fluid-container{width: 100vw; left: -50vw; margin-left: 50%;}
 .w-100{width: 100%;}
 .container:not(.sm).p-0{padding: 0;}
@@ -426,7 +439,7 @@ ul.slick-dots li button{display: none; padding: 0;}
     .book-demo-call{flex: 1; justify-content: center;}
 
     .slick-dots li > a{font-size: 24px; line-height: normal; font-weight: 800; color: var(--Raisin-Black);}
-    .culture-slash, .benefit-slash, .ftr-slash{margin: 0 4px; color: var(--Accent-2); font-weight: 300;}
+    .culture-slash, .benefit-slash, .ftr-slash, .training-slash{margin: 0 4px; color: var(--Accent-2); font-weight: 300;}
 
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
