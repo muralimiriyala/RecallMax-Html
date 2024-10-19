@@ -32,10 +32,23 @@
     .explore-of-2{flex: 0 0 calc(50% - 12px);}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-
+    .explore-wrap{padding: 40px 0;}
+    .explore-head{margin-bottom: 44px;}
+    .explore-head h2{margin-bottom: 0;}
+    .explore-appends{gap: 8px; align-items: center; margin: 32px 0 0;}
+    .explore-appends button.slick-arrow.slick-next{order: 3;}
+    .explore-appends ul.slick-dots{margin: 0;order: 2; flex: 1;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
+    .explore-wrap{padding: 40px 0 32px;}
     .explore-main .slick-slide{margin-right: 24px;}
+    .explore-head{margin-bottom: 44px;}
+    .explore-head h2{margin-bottom: 0;}
+    
+    .explore-appends{gap: 8px; align-items: center; margin: 32px 0 0;}
+    .explore-appends button.slick-arrow.slick-next{order: 3;}
+    .explore-appends ul.slick-dots{margin: 0;order: 2; flex: 1;}
+
 }
 @media screen and (max-width: 374px) and (min-width: 200px) {
     .explore-main .slick-slide{width: 246px;}
