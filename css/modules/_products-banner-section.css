@@ -14,21 +14,13 @@
     .products-banner-main{padding: 150px 0 80px;}
     .products-banner-text.no_banner_bg{max-width: 100%;}
 }
-@media screen and (max-width: 1439px) and (min-width: 1280px) {
-    .products-banner-text{max-width: 572px;}
-}
-@media screen and (max-width: 1279px) and (min-width: 1024px) {
-    .products-banner-text{max-width: 444px;}
-}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .products-banner-main{padding: 145px 0 80px;}
     .products-banner-text span.optional-text{margin-bottom: 32px;}
-    .products-banner-text hr.sm-line{margin: 32px 0;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .products-banner-main{padding: 145px 0 40px;}
-    .products-banner-text{font-size: 18px; line-height: 27px;}
-    .products-banner-text span.optional-text{margin-bottom: 24px;}
-    .products-banner-text hr.sm-line{margin: 24px 0;}
-    .products-banner-btn .button{width: 100%;}
+    .products-banner-main{padding: 112px 0 40px;}
+    .products-banner-text span.optional-text{margin-bottom: 8px;}
+    .products-banner-text h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .products-banner-text h1 > span::before{bottom: -4px;}
 }

@@ -11,6 +11,18 @@ table.comparison-table tbody td{padding: 8px 16px; flex: 1; font-size: 20px; lin
 table.comparison-table tbody td:not(:first-child){flex: 0 0 122px; }
 table.comparison-table tbody td figure img{max-width: 32px; margin: auto; object-fit: contain; display: block; }
 
+.platinum-transparent-btn{color: var(--Raisin-Black); font-size: 18px; font-weight: 700; line-height: 18px; padding: 15px 24px; position: relative; background-image: linear-gradient(to bottom, var(--Accent-3), #1d667f 33%); z-index: 1; border-radius: 28px; transition: var(--b-transition);}
+.platinum-transparent-btn::before{background-color: var(--Eggshell); border-radius: 28px; content: ""; height: calc(100% - 4px); left: 2px; position: absolute; top: 2px; width: calc(100% - 4px); z-index: -1; transition: var(--b-transition);}
+.platinum-transparent-btn:hover{color: var(--White); background: transparent;}
+.platinum-transparent-btn:hover::before{background: var(--Accent-3);}
+
 @media screen and (min-width: 1024px) {
     .comparison-table-main{padding: 32px 0 80px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .comparison-table-main{padding: 40px 0;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .comparison-table-main{padding: 16px 0 40px;}
 }
