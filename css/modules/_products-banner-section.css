@@ -2,6 +2,9 @@
 .products-gradient-bg{height: calc(100% - 100px); width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
 .products-banner-text{font-size: 20px; line-height: 30px;}
 .products-banner-text h1{color: var(--White);}
+.products-banner-text h1 > span{position: relative; z-index: 1; font-style: italic;}
+.products-banner-text h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; z-index: -1;}
+.products-banner-text span.optional-text{margin-bottom: 6px;}
 .products-banner-btn{gap: 12px; margin-top: 32px;}
 .products-banner-thumb img{opacity: 0.2;}
 .products-banner-form{padding: 40px;}
