@@ -1,0 +1,21 @@
+
+
+
+.scrolly-main{padding: 80px; background-color: var(--Raisin-Black);} 
+.scrolly-links{font-size: 18px; line-height: 22.5px; color: var(--White-50);}
+.scrolly-spy{font-weight: 800; color: var(--White);}
+.scrolly-data{padding: 48px;}
+.scrolly-btns{background: rgba(165, 24, 144, 0.25);}
+.scrolly-btns > *{width: 100%;}
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .scrolly-main{gap: 80px;}
+    .scrolly-row{margin-bottom: 160px;}
+    .scrolly-left{flex: 0 0 200px;}
+    .scrolly-col{flex: 1;}
+    .scrolly-data{flex-direction: row-reverse;}
+    .scrolly-text{flex: 1;}
+    .scrolly-image{flex: 0 0 420px;}
+}

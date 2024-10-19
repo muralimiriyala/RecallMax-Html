@@ -77,6 +77,9 @@
 @import "./modules/_platinum-rec-section.css";
 @import "./modules/_max-features-section.css";
 @import "./modules/_training-section.css";
+@import "./modules/_stat-testimonial-section.css";
+@import "./modules/_scrolly-section.css";
+@import "./modules/_large-cta-section.css";
 
 @import "./modules/jquery.selectBox.css";
 @import "./modules/slick.css";
