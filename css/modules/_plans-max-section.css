@@ -1,0 +1,16 @@
+
+
+
+
+
+
+.plans-max-main{padding: 48px;}
+.plans-max-list{padding: 28px 28px 0; background-color: var(--Eggshell); border: solid 1px rgba(164, 39, 143, 0.2);}
+.plans-max-text{padding-bottom: 30px;}
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .plans-max-row{gap: 30px;}
+    .plans-max-list{flex: 0 0 calc(33.33333% - 30px);}
+}
