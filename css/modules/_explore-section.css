@@ -4,6 +4,8 @@
 .explore-icon{margin-bottom: 16px;}
 .explore-icon svg, .explore-icon figure{width: 40px; height: 40px;}
 
+.explore-head span.optional-text{margin-bottom: 8px;}
+
 
 .explore-main .slick-list{width: 100vw;}  
 .explore-main .slick-slide{width: 296px; margin-right: 32px;}
@@ -14,13 +16,13 @@
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    .explore-main{padding-bottom: 40px;}
-    .explore-head{padding-right: 160px;}
+    .explore-wrap{padding: 80px 0 40px;}
+    .explore-head{padding-right: 160px; margin-bottom: 52px;}
     .explore-of-4{flex: 0 0 calc(25% - 24px);}
     .explore-of-3{flex: 0 0 calc(33.333% - 22px);}
     .explore-of-2{flex: 0 0 calc(50% - 16px);}
     .explore-of-1{flex: 1;}
-    .explore-appends{top: 0; right: 0; max-width: 160px; position: absolute;}
+    .explore-appends{max-width: 128px; position: absolute; right: 0; top: 96px; gap: 16px;}
     .explore-appends ul.slick-dots{display: none !important;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {

@@ -39,7 +39,6 @@
     .features-lists-appends{gap: 8px; align-items: center;}
     .features-lists-appends button.slick-arrow.slick-next{order: 3;}
     .features-lists-appends ul.slick-dots{order: 2; flex: 1;}
-    /* ul.ftr-slick-dots{margin: 0; order: 2; flex: 1;} */
     ul.ftr-slick-dots li::before{display: none;}
     ul.ftr-slick-dots li{display: none; margin: 0;}
     ul.ftr-slick-dots li.slick-active{display: block;}
