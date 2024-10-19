@@ -262,10 +262,8 @@ const customSlick = {
               slidesToShow: 1,
               slidesToScroll: 1,
               arrows: true,
-              prevArrow:
-                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
-              nextArrow:
-                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
+              prevArrow: '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
+              nextArrow: '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
               dots: true,
               speed: 1000,
               infinite: false,
@@ -303,6 +301,21 @@ const customSlick = {
           : '';
       });
     }
+
+    const carousel = $('.carousel-main');
+    carousel.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 1000,
+      autoplaySpeed: 1000,
+      autoplay: true,
+      arrows: true,
+      prevArrow: '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
+      nextArrow: '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
+      variableWidth: true,
+    })
+
+
 
     window.onresize = function () {
       culturedestroySlider();

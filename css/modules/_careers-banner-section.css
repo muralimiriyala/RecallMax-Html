@@ -27,7 +27,7 @@
     .careers-banner-text span.optional-text{margin-bottom: 32px;}
     .careers-banner-text hr.sm-line{margin: 32px 0;}
 }
-@media screen and (max-width: 767px) and (min-width: 200px) {
+@media screen and (max-width: 767px) and (min-width: 200px){
     .careers-banner-main{padding: 145px 0 40px;}
     body.page-template-careers .careers-banner-main{padding: 144px 0 88px;}
     .careers-banner-text{font-size: 18px; line-height: 27px;}
