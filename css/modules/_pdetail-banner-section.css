@@ -1,0 +1,35 @@
+
+.pdetail-gradient-bg{height: 100%; width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
+.pdetail-banner-text{font-size: 20px; line-height: 30px;}
+.pdetail-banner-text h1{color: var(--White);}
+.pdetail-banner-btn{gap: 12px; margin-top: 32px;}
+.pdetail-banner-thumb img{opacity: 0.2;}
+
+ul.pdetail-ui-links{margin: 0; gap: 8px;}
+ul.pdetail-ui-links li{margin: 0;}
+ul.pdetail-ui-links li::before{display: none;}
+ul.pdetail-ui-links li a{font-size: 14px; line-height: 1; letter-spacing: 1.4px; font-weight: 800; color: var(--White-50); text-transform: uppercase; position: relative;}
+.pdetail-ui-line{}
+
+
+@media screen and (min-width: 1024px) {
+    .pdetail-banner-main{padding: 150px 0 80px;}
+    .pdetail-banner-text.no_banner_bg{max-width: 100%;}
+}
+@media screen and (max-width: 1439px) and (min-width: 1280px) {
+    .pdetail-banner-text{max-width: 572px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .pdetail-banner-text{max-width: 444px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .pdetail-banner-main{padding: 145px 0 80px;}
+    .pdetail-banner-text span.optional-text{margin-bottom: 32px;}
+    .pdetail-banner-text hr.sm-line{margin: 32px 0;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .pdetail-banner-main{padding: 145px 0 40px;}
+    .pdetail-banner-text{font-size: 18px; line-height: 27px;}
+    .pdetail-banner-text span.optional-text{margin-bottom: 24px;}
+    .pdetail-banner-text hr.sm-line{margin: 24px 0;}
+}

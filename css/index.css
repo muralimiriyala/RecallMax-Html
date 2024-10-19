@@ -14,6 +14,7 @@
 @import './elements/_share-icons.css';
 
 @import "./modules/_products-banner-section.css";
+@import "./modules/_pdetail-banner-section.css";
 @import "./modules/_features-banner-section.css";
 @import "./modules/_find-max-section.css";
 @import "./modules/_differ-max-section.css";
