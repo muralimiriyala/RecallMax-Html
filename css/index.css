@@ -84,6 +84,7 @@
 @import "./modules/_ftr-compare-section.css";
 @import "./modules/_home-banner-section.css";
 @import "./modules/_carousel-section.css";
+@import "./modules/_feature-detail-banner-section.css";
 
 @import "./modules/jquery.selectBox.css";
 @import "./modules/slick.css";

@@ -1,0 +1,37 @@
+
+.feature-detail-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); overflow: hidden;}
+.feature-detail-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
+.feature-detail-banner-text h1{color: var(--White);}
+.feature-detail-banner-btn{gap: 12px; margin-top: 32px;}
+.feature-detail-banner-thumb img{opacity: 0.2;}
+
+@media screen and (min-width: 1024px) {
+    .feature-detail-banner-main{padding: 150px 0 80px;}
+    body.page-template-feature-detail .feature-detail-banner-main{padding: 150px 0 128px;}
+    .feature-detail-banner-text{max-width: 600px;}
+    .feature-detail-banner-text.no_banner_bg{max-width: 100%;}
+    .feature-detail-banner-bg{height: 567px; right: -156px; top: 127px; max-width: 917px;} 
+}
+@media screen and (max-width: 1439px) and (min-width: 1280px) {
+    .feature-detail-banner-text{max-width: 572px;}
+    .feature-detail-banner-bg{right: -276px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .feature-detail-banner-text{max-width: 444px;}
+    .feature-detail-banner-bg{right: -420px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .feature-detail-banner-main{padding: 145px 0 80px;}
+    body.page-template-feature-detail .feature-detail-banner-main{padding: 144px 0 80px;}
+    .feature-detail-banner-bg{right: -296px; top: 104px; max-width: 917px; max-height: 567px;}
+    .feature-detail-banner-text span.optional-text{margin-bottom: 32px;}
+    .feature-detail-banner-text hr.sm-line{margin: 32px 0;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .feature-detail-banner-main{padding: 145px 0 40px;}
+    body.page-template-feature-detail .feature-detail-banner-main{padding: 144px 0 88px;}
+    .feature-detail-banner-text{font-size: 18px; line-height: 27px;}
+    .feature-detail-banner-text span.optional-text{margin-bottom: 24px;}
+    .feature-detail-banner-text hr.sm-line{margin: 24px 0;}
+    .feature-detail-banner-btn .button{width: 100%;}
+}
