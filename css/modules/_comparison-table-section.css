@@ -19,10 +19,14 @@ table.comparison-table tbody td figure img{max-width: 32px; margin: auto; object
 @media screen and (min-width: 1024px) {
     .comparison-table-main{padding: 32px 0 80px;}
 }
-
+@media screen and (min-width: 768px){
+    .comparison-slider-main{display: none;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .comparison-table-main{padding: 40px 0;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .comparison-table-main{padding: 16px 0 40px;}
+    table.comparison-table{display: none;}
+    .comparison-appends{}
 }

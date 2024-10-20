@@ -22,6 +22,7 @@ import progress from './modules/progress';
 import share from './modules/share';
 import howitWorks from './modules/howitWorks';
 import exploreSlick from './modules/exploreSlick';
+import ComparisonSlick from './modules/tableComparisonSlick';
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
   share.init();
   howitWorks.init();
   exploreSlick.init();
+  ComparisonSlick.init();
 });
 
 let scrolled = window.scrollY;
