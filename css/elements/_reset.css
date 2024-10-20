@@ -177,6 +177,7 @@ span.optional-text.grey{color: var(--Gray);-webkit-text-fill-color: var(--Gray);
 span.optional-text.large{font-size: 1.5rem; line-height: 1.875rem; margin-bottom: 23px;}
 span.optional-text.md{font-size: 1.25rem; line-height: 1.563rem; margin-bottom: 22px;}
 span.optional-text.navy-50{color: rgb(25 35 76 / 50%);}
+span.optional-text.lg{margin-bottom: 8px; font-size: 18px; line-height: 18px; letter-spacing: 1.8px;}
 .optional-blue{padding-left: 43px; margin-bottom: 31px; color: var(--Blue); font-size: 1rem; font-weight: 600; line-height: 1.25rem;}
 .optional-blue svg{left: 0; position: absolute;}
 .optional-blue span{opacity: 0.6; padding-top: 5px; display: block;}

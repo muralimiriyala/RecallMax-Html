@@ -2,10 +2,8 @@
 .services-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black, #302135);}
 .services-banner-title span.optional-text{font-size: 18px; line-height: 18px; letter-spacing: 1.8px; margin-bottom: 6px;}
 .services-banner-title h1{color: var(--White); letter-spacing: normal;}
-[data-animation].underline.services h1 > span{position: relative; z-index: 1; font-style: italic;}
-[data-animation].underline.services h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: 0; left: -10px; z-index: -1; transition: var(--b-transition);}
+
 /* .services-banner-title h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: calc(100% + 15px); left: -10px; z-index: -1; transition: var(--b-transition);} */
-[data-animation].underline.services.visible h1 > span::before{width: calc(100% + 15px);}
 
 @media screen and (min-width: 1024px) {
     .services-banner-main{padding: 150px 0 223px; max-width: 748px; margin: 0 auto;}

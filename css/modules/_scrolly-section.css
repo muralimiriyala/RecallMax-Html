@@ -3,6 +3,9 @@
 
 .scrolly-main{padding: 80px; background-color: var(--Raisin-Black);} 
 .scrolly-links{font-size: 18px; line-height: 22.5px; color: var(--White-50);}
+.scrolly-line{width: 2px; height: 100%; top: 0; left: 0; background-color: var(--White); z-index: -1;}
+.scrolly-line-blue{width: 8px; height: 100%; left: -4px; top: 0; z-index: 0; background-color: var(--Sky-Blue);}
+.scrolly-link{padding: 24px;}
 .scrolly-spy{font-weight: 800; color: var(--White);}
 .scrolly-data{padding: 48px;}
 .scrolly-btns{background: rgba(165, 24, 144, 0.25);}
