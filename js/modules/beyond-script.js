@@ -20,12 +20,16 @@ const beyond = {
         let n = target.getAttribute("data-name");
         let c = document.querySelectorAll(`.beyond-row`);
         let d = document.querySelectorAll(`.beyond-row[data-value=${n}]`);
-        let f = $(d);    
- 
+        let f = $(d).children('.beyond-image')
         c.forEach((e)=>{
-            $(e).hide();
+            const beyondimg = $(e).children('.beyond-image')
+            beyondimg.css({
+                'transform': 'scale(0)'
+            })
         })
-        f.fadeIn(800);
+        f.css({
+            'transform': 'scale(1)'
+        })
     },
     init(){
         const _=this;
