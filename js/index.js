@@ -24,6 +24,7 @@ import howitWorks from './modules/howitWorks';
 import exploreSlick from './modules/exploreSlick';
 import ComparisonSlick from './modules/tableComparisonSlick';
 import beyond from './modules/beyond-script';
+import CompareSlick from './modules/tableCompareSlick';
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
   howitWorks.init();
   exploreSlick.init();
   ComparisonSlick.init();
+  CompareSlick.init();
 
   beyond.init();
 });
