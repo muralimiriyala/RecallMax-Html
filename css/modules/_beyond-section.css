@@ -22,8 +22,27 @@ ul.beyond-links > li > a.active p{margin-top: 16px;}
 
 @media screen and (min-width: 768px){
     .beyond-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Raisin-Black); padding-left: 33px; display: block; margin: 0; cursor: pointer;transition: all .5s ease;}
-}
+    
 
+    .beyond-step1-left{top: 0; left: 0; max-width: 221px;}
+    .beyond-step1-right{top: 0; right: 0; max-width: 221px;}
+
+
+    .beyond-step2-left{top: 100px; left: 0; max-width: 221px;}
+    .beyond-step2-right{top: 100px; right: 0; max-width: 221px;}
+
+    
+    .beyond-step3-left{top: 150px; left: 0; max-width: 221px;}
+    .beyond-step3-right{top: 150px; right: 0; max-width: 221px;}
+
+    .beyond-step4-left{top: 200px; left: 0; max-width: 221px;}
+    .beyond-step4-right{top: 200px; right: 0; max-width: 221px;}
+
+    .beyond-step5-left{top: 250px; left: 0; max-width: 221px;}
+    .beyond-step5-right{top: 250px; right: 0; max-width: 221px;}
+
+    .beyond-guy{bottom: 0; left: calc(50% - 100px); transform: translateX(-50%); max-width: 202px;}
+}   
 @media screen and (min-width: 1024px) {
     .beyond-bg{padding: 48px;}
     .beyond-bg .h4{margin-bottom: 16px;}
