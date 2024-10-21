@@ -25,6 +25,7 @@
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .feature-detail-banner-main{padding: 145px 0 80px;}
     .feature-detail-banner-bg{right: -296px; top: 104px; max-width: 917px; max-height: 567px;}
+    .feature-detail-banner-text{max-width: 444px;}
     .feature-detail-banner-text span.optional-text{margin-bottom: 32px;}
     .feature-detail-banner-text hr.sm-line{margin: 32px 0;}
 }
