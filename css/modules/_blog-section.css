@@ -38,6 +38,6 @@ ul.blog-categories > li > a:hover{color: var(--Raisin-Black);}
 @media screen and (max-width: 767px) and (min-width: 200px){
     .blog-main{padding: 40px 0;}
     .blog-rows{gap: 20px; flex-direction: column; padding: 18px 0 40px;}
-    .blog-list{flex: 0 0 100%;}
+    .blog-list{flex: 0 0 auto;}
     ul.blog-categories > li:nth-child(2n + 1)::before{display: none;}
 }
