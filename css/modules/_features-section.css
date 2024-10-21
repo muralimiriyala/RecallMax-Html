@@ -26,7 +26,7 @@
     .features-main{padding: 40px 0;}
     .features-heading{margin-bottom: 44px;}
     .features-lists{gap: 28px 24px; margin-bottom: 32px;}
-    .features-item{flex: 0 0 calc(50% - 24px);}
+    .features-item{flex: 0 0 calc(50% - 12px);}
 }
 @media screen and (min-width: 768px) {
     .features-lists-appends{display: none;}
