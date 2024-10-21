@@ -28,14 +28,18 @@ table.comparison-table tbody td figure img{max-width: 32px; margin: auto; object
 @media screen and (max-width: 767px) and (min-width: 200px){
     .comparison-table-main{padding: 16px 0 40px;}
     table.comparison-table{display: none;}
-    .comparison-slider-btns{justify-content: space-between;}
-    span.comparison-vs{font-size: 14px; line-height: 18.2px; font-weight: 800; letter-spacing: 1.12px;}
+    .comparison-slider-btns{justify-content: space-between; padding: 8px;}
+    .comparison-slider{margin: 16px 0; border: 1px solid var(--Card-Stroke); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
+    span.comparison-vs{font-size: 14px; line-height: 18.2px; font-weight: 800; letter-spacing: 1.12px; color: rgba(48, 33, 53, 0.5);}
     .comparison-slide{padding: 8px;}
+    .comparison-slide-row{padding: 6px 8px;}
     .comparison-slide-icon{width: 32px;}
     .comparison-slide-text{flex: 1; font-size: 18px; line-height: 18px; font-weight: 700; text-align: center;}
     .comparison-slide-row:nth-child(even){background: rgba(48, 33, 53, 0.04);}
     
     
     
-    .comparison-appends{}
+    .comparison-appends{gap: 8px; align-items: center; margin: 0;}
+    .comparison-appends button.slick-arrow.slick-next{order: 3;}
+
 }
