@@ -14,7 +14,7 @@
 .post-feature-row{gap: 16px;}
 .post-feature-thumb{flex: 0 0 104px;}
 .post-feature-thumb > a{width: 100%; height: 100%; display: block;}
-.post-feature-thumb img{min-height: 104px;}
+.post-feature-thumb img{min-height: 104px; object-fit: cover; object-position: center top;}
 .post-feature-text{flex: 1;}
 ul.post-categories{margin: 0 0 4px 0; gap: 17px;}
 ul.post-categories > li{margin: 0; position: relative; line-height:15px;}
@@ -29,13 +29,14 @@ ul.post-categories.white > li{color: var(--White);}
 .post-feature-text h2 a:hover{color: var(--Accent);}
 
 .blog-show-button{gap: 8px;}
-.blog-btn{color: var(--Raisin-Black); font-size: 18px; font-weight: 700; line-height: 18px; padding: 15px 24px; position: relative; background-image: linear-gradient(180deg,var(--Accent),var(--Purple)); z-index: 1; border-radius: 28px; transition: var(--b-transition);}
+.blog-btn{color: var(--Raisin-Black); cursor: pointer; font-size: 18px; font-weight: 700; line-height: 18px; padding: 15px 24px; position: relative; background-image: linear-gradient(180deg,var(--Accent),var(--Purple)); z-index: 1; border-radius: 28px; transition: var(--b-transition);}
 .blog-btn::before{background-color: var(--Eggshell); border-radius: 28px; content: ""; height: calc(100% - 4px); left: 2px; position: absolute; top: 2px; width: calc(100% - 4px); z-index: -1; transition: var(--b-transition);}
 .blog-btn:hover{color: var(--White); }
 .blog-btn:hover::before{background-color: transparent;}
 
 .blog-show-button hr{opacity: 0.4; background: linear-gradient(90deg, rgba(165, 24, 144, 0.00) 0%, #A51890 50%); margin: 0; flex: 1; height: 2px;}
 .blog-show-button hr:not(:first-child){transform: rotate(180deg);}
+h2.page-title{margin-top: 2rem;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
