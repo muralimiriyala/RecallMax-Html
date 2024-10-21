@@ -1,7 +1,9 @@
 
 .feature-detail-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); overflow: hidden;}
 .feature-detail-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
-.feature-detail-banner-text h1{color: var(--White);}
+.feature-detail-banner-title{gap: 24px;}
+.feature-detail-banner-icon{flex: 0 0 40px;}
+.feature-detail-banner-title h1{color: var(--White); flex-wrap: 1;}
 .feature-detail-banner-btn{gap: 12px; margin-top: 32px;}
 .feature-detail-banner-thumb img{opacity: 0.2;}
 
