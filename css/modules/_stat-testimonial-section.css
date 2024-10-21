@@ -2,19 +2,39 @@
 
 
 .stat-testimonial-wrap{padding: 80px 0;}
-.stat-testimonial-main{padding: 48px;}
 .stat-testimonial-left{padding: 4px; background-image: linear-gradient(to bottom, rgba(18, 39, 80, 0.25), #122750 200%), linear-gradient(to bottom, #a4278f, #a4278f);}
 .stat-testimonial-text{padding: 34px; font-size: 24px; line-height: 36px;}
-.stat-testimonial-point{  border: solid 1px rgba(23, 125, 138, 0.2); background-color: var(--Tint-3);color: var(--Text-3);}
-.stat-point {font-size: 80px;line-height: 80px;font-weight: 800;}
+.stat-testimonial-text > span{font-size: 12px; line-height: 15px; opacity: 0.5; font-weight: 800; display: block;}
+.stat-testimonial-point{  border: solid 1px rgba(23, 125, 138, 0.2); background-color: var(--Tint-3);}
+.stat-point {font-size: 80px;line-height: 80px; font-weight: 800; color: var(--Text-3);} 
 .stat-testimonial-point{padding: 32px;}
+.stat-testimonial-point h2{margin-bottom: 16px; color: var(--Text-3);}
+.stat-testimonial-quote-icon{width: 40px; right: -10px; top: 32px;}
+
+.stat-testimonial-review{border-radius: 40px; border: 2px solid var(--Orange); background: var(--White, #FFF); padding: 8px 8px 8px 20px; min-width: 410px; width: fit-content; align-items: center;}
+.stat-rating{flex: 0 0 127px; gap: 8px;}
+.stat-reviews{flex: 0 0 147px; gap: 8px; margin-left: 40px; position: relative;}
+.stat-reviews::before{content: ""; position: absolute; width: 2px; height: 100%; background: rgba(255, 73, 44, 0.25); border-radius: 1px; top: 0; left: -20px;}
+.stat-star-icon, .stat-review-icon{width: 24px; height: 24px;}
+.stat-rating-value, .stat-review-value{font-size: 20px; line-height: 30px;}
+.stat-g2-logo{width: 48px; margin-left: 16px;}
 
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    .stat-testimonial-main{gap: 34px;}
+    .stat-testimonial-main{gap: 48px; padding: 48px;}
     .stat-testimonial-left{flex: 1;}
     .stat-testimonial-image{flex: 0 0 160px;}
     .stat-testimonial-text{flex: 1;}
-    .stat-testimonial-right{flex: 0 0 267px;}
+    .stat-testimonial-right{flex: 0 0 368px; gap: 40px; flex-direction: column-reverse;}
+}
+@media screen and (max-width: 1439px) and (min-width: 1280px){
+    .stat-testimonial-main{padding: 40px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+    .stat-testimonial-main{gap: 32px; padding: 32px;}
+    .stat-testimonial-left{flex: 100%;}
+    .stat-testimonial-right{flex: 100%; flex-direction: row; gap: 32px;}
+    .stat-testimonial-point{padding: 0 24px; flex: 1;}
+    .stat-testimonial-review{min-width: auto; width: 213px;}
 }

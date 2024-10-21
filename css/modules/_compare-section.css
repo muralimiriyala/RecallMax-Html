@@ -35,6 +35,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
     body.page-template-product-overview .compare-main{margin-bottom: 90px;}
+    body.page-template-feature-detail .compare-main{margin-bottom: 80px;}
     .compare-l-h span:nth-child(n+2){display: none;}
     .compare-r-h span:nth-child(-n+1){display: none;}
 }

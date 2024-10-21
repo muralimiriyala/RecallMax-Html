@@ -19,6 +19,8 @@
 .rating-value, .review-value{font-size: 20px; line-height: 30px;}
 .g2-logo{width: 48px; margin-left: 16px;}
 
+.stat-testimonial-right .testimonial-review{margin-bottom: 0;}
+
 /*-- media css starts here --*/
 @media screen and (min-width: 1280px) {
     .open.testimonial-item{background: linear-gradient(180deg, rgba(18, 39, 80, 0.19) 0%, rgba(18, 39, 80, 0.75) 100%), var(--Accent);}

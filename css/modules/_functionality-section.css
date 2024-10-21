@@ -1,0 +1,12 @@
+
+.functionality-thumb{background: var(--White); padding: 8px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); margin-bottom: 32px;}
+.functionality-text{font-size: 20px; line-height: 30px;}
+.functionality-text h5{margin-bottom: 12px;}
+
+@media screen and (min-width: 1024px) {
+    .functionality-main{padding: 40px 0; gap: 56px;}
+    .functionality-text{padding-left: 16px;}
+    .functionality-of-3{flex: 0 0 calc(33.333% - 38px);}
+    .functionality-of-2{flex: 0 0 calc(50% - 28px);}
+    .functionality-of-1{flex: 1;}
+}
