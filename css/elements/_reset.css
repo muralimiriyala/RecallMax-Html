@@ -311,9 +311,9 @@ button.slick-arrow:hover{background-color: var(--Accent);}
 button.slick-arrow.slick-disabled{pointer-events: none; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%);}
 span.slick-prev-arrow{ transform: scaleX(-1); }
 
-ul.slick-dots{margin: 0; gap: 12px; align-items: center; justify-content: center; display: flex; flex-wrap: wrap;}
-ul.slick-dots li{margin: 0; width: 20px; height: 30px; border-radius: 50%; background-color: var(--Navy); cursor: pointer;}
-ul.slick-dots li.slick-active{background-color: var(--Light-Blue);}
+ul.slick-dots{margin: 0; gap: 12px; align-items: center; justify-content: center; display: flex; flex-wrap: wrap; flex: 1; order: 2;}
+ul.slick-dots li{margin: 0; width: 16px; height: 16px; border-radius: 50%; background-color: rgba(23, 125, 138, 0.2); cursor: pointer;}
+ul.slick-dots li.slick-active{background-color: var(--Accent-2);}
 ul.slick-dots li::before{display: none;}
 ul.slick-dots li button{display: none; padding: 0;}
 
