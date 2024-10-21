@@ -46,7 +46,7 @@
     .comparison-row:nth-last-of-type(2){margin-bottom: 29px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .comparison-section{margin-top: -71px;}
+    .comparison-section{margin-top: -71px; overflow: hidden; position: relative;}
     .comparison-main{padding-bottom: 24px; }
     .comparison-head{gap: 12px;}
     .comparison-h-block{width: 126px; margin-bottom: 20px; flex: 1;}

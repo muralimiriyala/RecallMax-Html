@@ -44,7 +44,7 @@
     .benefit-lists .slick-list{overflow: inherit;}
     .benefit-lists-appends{gap: 8px; align-items: center; margin: 8px 0 0;}
     .benefit-lists-appends button.slick-arrow.slick-next{order: 3;}
-    ul.benefit-slick-dots{margin: 0;order: 2; flex: 1;}
+    ul.benefit-slick-dots{margin: 0;order: 2; flex: 1; text-align: center;}
     ul.benefit-slick-dots li::before{display: none;}
     ul.benefit-slick-dots li{display: none; margin: 0;}
     ul.benefit-slick-dots li.slick-active{display: block;}

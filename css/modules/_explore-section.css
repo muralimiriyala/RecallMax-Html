@@ -48,7 +48,7 @@
     
     .explore-appends{gap: 8px; align-items: center; margin: 32px 0 0;}
     .explore-appends button.slick-arrow.slick-next{order: 3;}
-    .explore-appends ul.slick-dots{margin: 0;order: 2; flex: 1;}
+    .explore-appends ul.slick-dots{margin: 0;order: 2; flex: 1; display: flex !important;}
 
 }
 @media screen and (max-width: 374px) and (min-width: 200px) {
