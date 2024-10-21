@@ -10,3 +10,14 @@
     .functionality-of-2{flex: 0 0 calc(50% - 28px);}
     .functionality-of-1{flex: 1;}
 }
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .functionality-main{gap: 30px;}
+    .functionality-of-3{flex: 0 0 calc(33.333% - 20px);}
+    .functionality-of-2{flex: 0 0 calc(50% - 15px);}
+    .functionality-of-1{flex: 1;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 200px) {
+    .functionality-main{padding: 40px 0; gap: 40px;}
+}
