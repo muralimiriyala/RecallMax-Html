@@ -39,6 +39,7 @@ svg.round-default-svg circle#round-bar-glow-4{
     .conter-max-total{font-size: 128px; line-height: 128px;}
     .conter-max-row{gap: 48px;}
     .conter-max-list{text-align: center;}
+    .conter-max-of-5{flex: 0 0 calc(20% - 39px);}
     .conter-max-of-4{flex: 0 0 calc(25% - 36px);}
     .conter-max-of-3{flex: 0 0 calc(33.333% - 32px);}
     .conter-max-of-2{flex: 0 0 calc(50% - 24px);}
