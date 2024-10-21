@@ -29,8 +29,8 @@ const svgprogress = {
             let $duration = Number($path.getAttribute('data-duration') / 1000);
             $dash = parseInt($dash)
             $pathvalue = parseInt($pathvalue)
-            const $progress = $dash - ($dash * $pathvalue / 100);
-            $path.style.strokeDashoffset = $progress;
+            const $progress = Math.floor($dash - ($dash * $pathvalue / 100));
+            $path.style.strokeDashoffset = $progress+'px';
             $path.style.transitionDuration = `${$duration}s`;
         })
     },
