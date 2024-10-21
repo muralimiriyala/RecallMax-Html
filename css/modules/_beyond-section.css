@@ -1,0 +1,22 @@
+.beyond-section{background: linear-gradient(180deg, var(--White) 0%, rgba(255, 255, 255, 0.00) 100%), var(--Eggshell);}
+
+
+
+
+
+
+
+
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1280px){
+    .beyond-head{gap: 80px;}
+    .beyond-title{flex: 0 0 calc(50% - 40px);}
+    .beyond-desc{flex: 0 0 calc(50% - 40px);}
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+    .beyond-head{gap: 60px;}
+    .beyond-title{flex: 0 0 calc(50% - 30px);}
+    .beyond-desc{flex: 0 0 calc(50% - 30px);}
+}
