@@ -88,8 +88,8 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .tabs-filter{gap: 0 40px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .tab-links-d{margin-bottom: 30px;}
-    .tabs-filter{display: block;}
+    /* .tab-links-d{margin-bottom: 30px;} */
+    .tabs-filter{display: flex; gap: 28px 40px; margin-bottom: 28px;}
     .tabs-row{display: block; padding-top: 18px;}
     .tab-list{margin-bottom: 20px;}
     .tab-list:hover .tab-text::after {font-size: 30px; line-height: 300;}
@@ -97,4 +97,5 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .tab-section.no-about-intro .tabs-main{padding: 40px 0 15px;}
     ul.tab-links{padding: 0 0 46px;}
     .tab-desc-pad{margin-top: 10px;}
+    .tab-divider{min-height: 32px;}
 }
