@@ -83,7 +83,7 @@ const customSlick = {
               variableWidth: true,
               appendArrows: benefitsAppend,
               appendDots: benefitsAppend,
-              dotsClass: 'slick-dots benefit-slick-dots',
+              dotsClass: 'slick-dots benefit-slick-dots pagination',
               customPaging: function (slider, i) {
                 var slideNumber = i + 1,
                   totalSlides = slider.slideCount;
@@ -314,7 +314,6 @@ const customSlick = {
       nextArrow: '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
       variableWidth: true,
     })
-
 
 
     window.onresize = function () {

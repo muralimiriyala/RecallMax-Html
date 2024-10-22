@@ -13,8 +13,10 @@ ul.beyond-links > li > a.active{border-color: var(--Accent); box-shadow: 0px 9px
 ul.beyond-links > li > a:hover{border-color: var(--Accent);}
 ul.beyond-links > li > a p{max-height: 0; overflow: hidden;}
 ul.beyond-links > li > a.active p{margin-top: 16px;}
-.beyond-row{display: none; }
-.beyond-row:first-child{display: block;}
+
+
+.beyond-image{transform: scale(0); transition: all 0.5s ease;}
+.beyond-row:first-child .beyond-image{transform: scale(1);}
 .beyond-image img{border-radius: 12px 12px 10px 10px;}
 
 .beyond-full  .beyond-lt{flex: 100%; padding: 0; border: none;}
@@ -23,6 +25,7 @@ ul.beyond-links > li > a.active p{margin-top: 16px;}
 @media screen and (min-width: 768px){
     .beyond-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Raisin-Black); padding-left: 33px; display: block; margin: 0; cursor: pointer;transition: all .5s ease;}
     
+
 
     .beyond-step1-left{top: 0; left: 0; max-width: 221px;}
     .beyond-step1-right{top: 0; right: 0; max-width: 221px;}
