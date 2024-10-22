@@ -25,6 +25,7 @@ import exploreSlick from './modules/exploreSlick';
 import ComparisonSlick from './modules/tableComparisonSlick';
 import beyond from './modules/beyond-script';
 import CompareSlick from './modules/tableCompareSlick';
+import pdetailtabs from './modules/pdetailtabs';
 
 document.addEventListener('DOMContentLoaded', function () {
   customGsap.init();
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
   exploreSlick.init();
   ComparisonSlick.init();
   CompareSlick.init();
+  pdetailtabs.init();
 
   beyond.init();
 });
