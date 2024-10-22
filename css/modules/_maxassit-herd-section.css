@@ -7,12 +7,12 @@ body.page-template-careers .maxassit-herd-main{margin-top: -48px; background: va
 body.page-template-careers .maxassit-herd-text > h4 > span::before{ bottom: -2px; margin-left:-3px;}
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    body.page-template-about-team .maxassit-herd-main{margin-top: 43px;}
+    body.page-template-team .maxassit-herd-main{margin-top: 43px;}
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .maxassit-herd-main{gap: 24px;}
-    body.page-template-about-team .maxassit-herd-main{margin-top: 43px;}
+    body.page-template-team .maxassit-herd-main{margin-top: 43px;}
     .maxassit-herd-text{text-align: center;}
     .maxassit-herd-text h4{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .maxassit-herd-btn{width: 100%;}

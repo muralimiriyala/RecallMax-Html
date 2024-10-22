@@ -13,7 +13,7 @@ const Menu = {
   $blackheader: document.querySelector(
     'body.category-resources, body.page-template-about, body.page-template-contact, body.error404'
   ),
-  $whiteheader: document.querySelector('body.page-template-service-detail, body.single-post, body.page-template-about-team'),
+  $whiteheader: document.querySelector('body.page-template-service-detail, body.single-post, body.page-template-team'),
   $site: document.querySelector('.site-main-cover'),
   init() {
     const _ = this;
