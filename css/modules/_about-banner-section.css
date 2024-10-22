@@ -21,7 +21,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .about-banner-section .background-bg{position: relative;}
-    .about-banner-thumb::before{display: none;}
+    .about-banner-thumb::before, .about-banner-thumb::after{display: none;}
     .about-banner-thumb img{opacity: 1;}
     .about-banner-text{padding: 40px 20px; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); width: calc(100% + 40px); margin-left: -20px;}
     .about-banner-btn{flex-direction: column; align-items: flex-start; margin-top: 30px;}
