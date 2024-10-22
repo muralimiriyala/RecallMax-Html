@@ -24,7 +24,8 @@
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .features-banner-main{padding: 145px 0 40px;}
     .features-banner-text{font-size: 18px; line-height: 27px;}
-    .features-banner-text span.optional-text{margin-bottom: 24px;}
+    .features-banner-text span.optional-text{margin-bottom: 8px;}
+    .features-banner-text h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .features-banner-text hr.sm-line{margin: 24px 0;}
     .features-banner-btn .button{width: 100%;}
 }
