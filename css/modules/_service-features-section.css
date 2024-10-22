@@ -1,38 +1,38 @@
 
-.service-features-thumb{width: 100%; padding: 8px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
+.service-features-image{width: 100%; padding: 8px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .service-features-text{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
 .service-features-text h4{margin-bottom: 15px;}
 .service-features-text span.optional-text{margin-bottom: 15px;}
 .service-features-text p{margin-bottom: 16px;}
 
+@media screen and (min-width: 768px){
+    .service-features-text ul li::before{top: -5px; left: -8px; display: inline-block; position: relative;}
+}
 @media screen and (min-width: 1024px) {
     .service-features-main{padding: 80px 0; gap: 48px;}
-    .service-features-list{gap: 40px;}
+    .service-features-image{margin-bottom: 40px;}
     .service-features-of-3{flex: 0 0 calc(33.333% - 32px);}
     .service-features-of-2{flex: 0 0 calc(50% - 24px);}
     .service-features-of-1{flex: 1;}
 }
-
 @media screen and (max-width: 1439px) and (min-width: 1280px){
     .service-features-main{gap: 40px;}
     .service-features-of-3{flex: 0 0 calc(33.333% - 27px);}
     .service-features-of-2{flex: 0 0 calc(50% - 20px);}
 }
-
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .service-features-main{gap: 40px; flex-direction: column;}
-    .service-features-list{align-items: center;}
-    .service-features-thumb{flex: 0 0 452px;}
+    .service-features-list{gap: 40px; align-items: center; display: flex; flex-wrap: wrap;}
+    .service-features-image{flex: 0 0 452px;}
     .service-features-text{flex: 0 0 calc(100% - 492px); text-align: left;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .service-features-main{padding: 48px 0; gap: 56px;}
-    .service-features-list{gap: 32px; width: 100%;}
-    .service-features-thumb{max-width: 480px; margin: 0 auto;}
-
+    .service-features-main{padding: 48px 0; gap: 56px; flex-direction: column;}
+    .service-features-list{gap: 32px; width: 100%; justify-content: center; display: flex; flex-wrap: wrap; max-width: 688px; margin: 0 auto;}
+    .service-features-image{max-width: 480px; margin: 0 auto;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .service-features-main{padding: 40px 0; gap: 56px;}
-    .service-features-list{gap: 32px; width: 100%;}
+    .service-features-main{padding: 40px 0; gap: 56px; flex-direction: column;}
+    .service-features-list{gap: 32px; width: 100%; display: flex; flex-wrap: wrap;}
     .service-features-text{font-size: 18px; line-height: 27px;}
 }
