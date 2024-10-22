@@ -70,6 +70,7 @@
     .maxassit-card-title{gap: 8px; margin-bottom: 8px;} 
     .maxassit-card-title h5{margin-bottom: 0;}
     .maxassit-card-icon{margin-bottom: 0;}
+    .maxassit-image{flex: 100%;}
 }
 
 @media screen and (max-width: 389px) and (min-width: 200px) {

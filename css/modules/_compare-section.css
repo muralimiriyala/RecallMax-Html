@@ -54,7 +54,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .compare-main{border-radius: 40px; padding: 16px 0;}
     body.page-template-product-overview .compare-main{margin-bottom: 50px;}
-    body.page-template-feature-detail .compare-main{margin-bottom: 50px;}
+    body.page-template-feature-detail .compare-main, body.page-template-features-overview .compare-main{margin-bottom: 50px;}
     .compare-main h4{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
     .compare-h{transform: none;}
     .compare-l-h{display: none;}
