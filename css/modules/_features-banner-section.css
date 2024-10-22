@@ -10,12 +10,6 @@
     .features-banner-main{padding: 150px 0 80px;}
     .features-banner-text.no_banner_bg{max-width: 100%;}
 }
-@media screen and (max-width: 1439px) and (min-width: 1280px) {
-    .features-banner-text{max-width: 572px;}
-}
-@media screen and (max-width: 1279px) and (min-width: 1024px) {
-    .features-banner-text{max-width: 444px;}
-}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .features-banner-main{padding: 145px 0 80px;}
     .features-banner-text span.optional-text{margin-bottom: 32px;}

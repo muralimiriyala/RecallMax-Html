@@ -13,11 +13,17 @@
     .differ-max-list:last-child{margin-bottom: 0;}
     .differ-max-image, .differ-max-text{flex: 1;}
 }
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .differ-max-main{padding: 80px 0 64px;}
+    .differ-max-list{gap: 40px;}
+    .differ-max-image{flex: 100%;}
+    .differ-max-text{flex: 100%;}
+}
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .differ-max-list{gap: 48px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    .differ-max-main{padding: 40px 0;}
+    .differ-max-main{padding: 80px 0 40px;}
     .differ-max-image{flex: 100%; margin-bottom: 48px;}
     .differ-max-text{flex: 100%;}
     .differ-max-text span.optional-text{margin-bottom: 22px;}

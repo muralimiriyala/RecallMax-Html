@@ -30,15 +30,27 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     table.compare-table tbody td:not(:first-child){flex: 0 0 101px;}
     table.compare-table tbody{padding: 8px 0px 8px 16px;}
 }
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    table.compare-table thead tr{width: 100%; gap: 16px; align-items: flex-start;}
+    table.compare-table thead th:not(:first-child){flex: 0 0 56px; width: 56px; align-items: center;}
+    table.compare-table th:first-child{margin-top: auto;}
+    table.compare-table th img{margin: 0 0 9px 0; max-width: 56px;}
+    table.compare-table th span{word-break: break-all;}
+    table.compare-table tbody td:not(:first-child){flex: 0 0 50px;}
+    table.compare-table tbody{padding: 8px 0px 8px 16px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .compare-slider-btns{justify-content: space-between; padding: 8px;}
+    .compare-table-main{padding: 20px 0 16px;}
+    .compare-slider-btns{justify-content: space-between; padding: 8px; gap: 8px;}
     .compare-slider{margin: 16px 0; border: 1px solid var(--Card-Stroke); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
-    span.compare-vs{font-size: 14px; line-height: 18.2px; font-weight: 800; letter-spacing: 1.12px; color: rgba(48, 33, 53, 0.5);}
+    span.compare-vs{font-size: 14px; line-height: 18.2px; font-weight: 800; letter-spacing: 1.12px; color: rgba(48, 33, 53, 0.5); order: 2; flex: 1; text-align: center;}
     .compare-slide{padding: 8px;}
     .compare-slide-row{padding: 6px 8px;}
     .compare-slide-icon{width: 32px;}
     .compare-slide-text{flex: 1; font-size: 18px; line-height: 18px; font-weight: 700; text-align: center;}
     .compare-slide-row:nth-child(even){background: rgba(48, 33, 53, 0.04);}
+    .compare-logo{order: 1;}
+    .compare-logo:last-of-type{order: 3;}
     
     
     
