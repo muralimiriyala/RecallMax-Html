@@ -40,7 +40,7 @@ sup {bottom: 1ex;}
 sub {top: 0;}
 dl{margin-bottom: 24px; font-size: 1rem; line-height: 1.75rem; font-weight: 600;}
 dl:last-child{margin-bottom: 0;}
-dl dt::before{width: 29px; height: 1px; margin-right: 11px; background-color: var(--Foreground); content: ""; display: inline-block; vertical-align: middle;}
+dl dt::before{width: 29px; height: 1px; margin-right: 11px; background-color: var(--Raisin-Black); content: ""; display: inline-block; vertical-align: middle;}
 blockquote dl dt::before{background-color: var(--White);}
 dd {margin-bottom: 24px;}
 ul {list-style: none; margin: 0 0 26px 26px;}
@@ -49,7 +49,7 @@ ul > li:before{top: 10px; left: -16px; width: 5px; height: 5px; border-radius: 5
 li > ul {margin: 25px 0 26px 25px;}
 ol {counter-reset: section; list-style: none; margin: 0 0 28px 28px;}
 ol > li {counter-increment: li; position: relative; margin-bottom: 8px;}
-ol > li:before{color: var(--Foreground); counter-increment: section; content: counter(section, decimal) "."; top: 0px; left: -20px; position: absolute; font-size: 1.125rem; line-height: 1.688rem;}
+ol > li:before{color: var(--Raisin-Black); counter-increment: section; content: counter(section, decimal) "."; top: 0px; left: -20px; position: absolute; font-size: 1.125rem; line-height: 1.688rem;}
 li > ol {margin: 25px 0 26px 25px;}
 ol[style='list-style-type: upper-roman;']{margin-left: 22px;}
 ol[style='list-style-type: upper-roman;'] > li::before{display: none;}
@@ -74,7 +74,7 @@ td:first-child{border-radius: 0 0 0 8px}
 td:last-child{border-radius: 0 0 8px 0;}
 
 caption, td, th{text-align: left;}
-del {color: var(--Foreground);}
+del {color: var(--Raisin-Black);}
 hr{ margin: 0 0 32px; height: 4px; width: 96px; display: block; border: none; border-radius: 2px; background: var(--Orange);}
 hr.light-blue-line{margin: 0; flex: 1; width: 100%; height: 1px; background-color: var(--Light-Blue);}
 hr.sm-line{background-color: var(--Accent); height: 2px; border-radius: 1px; margin: 32px 0;}
@@ -284,7 +284,7 @@ picture.object-fit{width: 100%; height: 100%; display: block;}
 .inverted ul > li > a{color: var(--White);}
 .inverted ul > li > a:hover{color: var(--Accent);}
 
-.dark-text{color: var(--Foreground);}
+.dark-text{color: var(--Raisin-Black);}
 .dark-text h1, .dark-text h2, .dark-text h3, .dark-text h4, .dark-text h5, .dark-text h6{color: var(--Navy);}
 .dark-text .h1, .dark-text .h2, .dark-text .h3, .dark-text .h4, .dark-text .h5, .dark-text .h6{color: var(--Navy);}
 .dark-text h1 a, .dark-text h2 a, .dark-text h3 a, .dark-text h4 a{color: var(--Navy);}

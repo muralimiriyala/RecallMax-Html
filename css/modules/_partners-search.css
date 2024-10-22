@@ -30,7 +30,7 @@ button.partners-res-srch-icon, button.partners-res-expand-icon{left: 5px; top: c
 
 
 .load-more-resources{gap: 16px;}
-.load-more-resources::before, .load-more-resources::after{height: 1px; content: ""; display: block; opacity: 0.2; background: var(--Foreground, #313031); }
+.load-more-resources::before, .load-more-resources::after{height: 1px; content: ""; display: block; opacity: 0.2; background: var(--Raisin-Black, #313031); }
 .load-more-resources::before{flex: 1;}
 .load-more-resources::after{flex: 1;}
 span.loader{position: absolute;}

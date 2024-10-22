@@ -10,6 +10,7 @@ const pdetailtabs = {
 
     init() {
         const _ = this;
+        if(!_.$slide) return;
         const $fortab = $(_.$slide);
         const $duration = Number(_.$slide.getAttribute('data-duration')) || 2000;
 
