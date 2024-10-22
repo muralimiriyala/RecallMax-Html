@@ -58,21 +58,25 @@ const pdetailtabs = {
     },
 
     resetAndAnimateProgressBar($link, duration, index) {
-        const _ = this;
-        const $progress = $link.querySelector('.ui-active-state');
-
-        if (_.progressIntervals[index]) {
-            clearInterval(_.progressIntervals[index]);
-        }
-        _.updateProgressBar($progress, 0);
-        $progress.style.transition = 'none';
-        $progress.style.width = '0%';
-        
-        setTimeout(() => {
-            $progress.style.transition = `width ${duration}ms linear`;
-            $progress.style.width = '100%';
-        }, 50);
-    },
+      const _ = this;
+      const $progress = $link.querySelector('.ui-active-state');
+  
+      // Clear any existing interval for this tab
+      if (_.progressIntervals[index]) {
+          clearInterval(_.progressIntervals[index]);
+          _.progressIntervals[index] = null;
+      }
+  
+      // Reset the progress bar width and transition immediately
+      $progress.style.transition = 'none';
+      $progress.style.width = '0%';
+  
+      // Force a repaint before starting the transition
+      setTimeout(() => {
+          $progress.style.transition = `width ${duration}ms linear`;
+          $progress.style.width = '100%';
+      }, 50);
+  },  
     updateProgressBar($progress, percentage) {
         if ($progress) {
             $progress.style.width = `${percentage}%`;
