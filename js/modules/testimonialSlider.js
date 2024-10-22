@@ -8,6 +8,8 @@ const testimonialSlider = {
         const media = window.matchMedia('(min-width: 1280px)');
   
         const slides = Array.from($t.$e);
+        slides.length > 0 ? slides.at(0).classList.add('open') : '';
+  
 
         const mslides = Array.from($t.$m);
         mslides.length > 0 ? mslides.at(0).classList.add('open') : '';
