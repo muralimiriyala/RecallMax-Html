@@ -15,7 +15,7 @@
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .scrolly-main{gap: 80px;}
-    .scrolly-row{margin-bottom: 160px;}
+    .scrolly-row:not(:last-child){margin-bottom: 160px;}
     .scrolly-left{flex: 0 0 200px;}
     .scrolly-col{flex: 1;}
     .scrolly-data{flex-direction: row-reverse;}
