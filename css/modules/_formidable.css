@@ -131,9 +131,9 @@ body .frm_forms .frm_form_fields .frm_form_field input.frm_custom_date, body .fr
 body .frm_forms form .frm_required_field div.frm_error{right: 0; bottom: -17px; font-size: 0.75rem; line-height: 0.875rem; color: var(--red); position: absolute;}
 body .newsletter-signup .frm_forms form .frm_required_field div.frm_error{color: var(--White);}
 body .frm_success_style, body .with_frm_style .frm_message{font-weight: 700; font-size: 1.125rem; line-height: 1.625rem; letter-spacing: normal; font-weight: 400; font-family: var(--base-font); color: var(--Raisin-Black); background: none; padding: 0; text-align: left; border: none; border-radius: 0;}
-body .with_frm_style .frm_message p{color: var(--Raisin-Black); letter-spacing: inherit;}
+body .with_frm_style .frm_message p{font-weight: 700; color: var(--Raisin-Black); letter-spacing: inherit;}
 body .maxassist-demo-form .frm_success_style, body .maxassist-demo-form .with_frm_style .frm_message{text-align: left; font-weight: 700; margin: 0; padding: 0;}
-
+body .modal-form .with_frm_style .frm_message p{text-align: center;}
 
 body .contact-form-form .frm_forms .frm_form_fields .vertical_radio{gap: 16px; display: flex; flex-wrap: wrap;}
 body .contact-form-form .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{margin-top: 0; gap:0 27px; display: flex; flex-wrap: wrap; width: 100%; flex: 1;}

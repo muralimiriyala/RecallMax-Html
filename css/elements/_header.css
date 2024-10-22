@@ -142,6 +142,7 @@ li.hide-li-text > a{display: none !important;}
     ul.main_menu > li.nav-features > ul > li > a span{padding-bottom: 5px; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block;}
     li.nav-gradient-bar{ padding: 20px; font-weight: 800; text-align: center; border-radius: 0px 0px 24px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
    
+    span.black-logo{display: none;}
     span.black-logo img{max-width: 218px;}
     header.white-header:not(.sticky-header) span.white-logo{display: none;}
     header.white-header:not(.sticky-header) span.black-logo{display: block;}
