@@ -6,7 +6,7 @@ const filterCategory = {
   init() {
     const _ = this;
     if (_.$eles.length > 0) {
-      _.$eles[0].parentElement.classList.add('tab-open');
+      document.querySelector('ul.filter-category li:first-child').classList.add('tab-open');
       _.$filterData[0].style.display = 'block';
     }
 
