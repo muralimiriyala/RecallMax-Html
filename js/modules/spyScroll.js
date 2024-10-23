@@ -44,7 +44,6 @@ const spyScroll = {
             const scrollTop = Math.ceil(window.scrollY);
             const stickyRadius = Number(_.$section.getAttribute('data-radius'));
             const stickyTransition = Number(_.$section.getAttribute('data-speed'));
-            console.log(stickyRadius)
             if(scrollTop>=stickyTop){
                 _.$section.style.borderRadius = `0 0 ${stickyRadius}px ${stickyRadius}px`;
                 _.$section.style.transition = '';

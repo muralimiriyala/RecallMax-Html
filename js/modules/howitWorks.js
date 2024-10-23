@@ -13,7 +13,6 @@ const howitWorks = {
         });
         let target = e.target;  
         if(target.tagName==="SPAN") target = target.parentElement;
-        console.log(target)
         target.classList.toggle('active')
 
         const cscroll = target.children[2];
