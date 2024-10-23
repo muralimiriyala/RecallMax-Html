@@ -11,7 +11,6 @@ const filterCategory = {
     }
 
     _.$eles.forEach(($ele, $index) => {
-      console.log($ele, $index)
       $ele.addEventListener('click', function (e) {
         e.preventDefault();
         _.$eles.forEach(($ele) => {

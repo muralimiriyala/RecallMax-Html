@@ -7,7 +7,6 @@ const ComparisonSlick = {
         _.$ele.forEach(($ele)=>{
            const $slider = $($ele);
            const comparisonAppend = $slider.closest('.comparison-slider-main').children('.comparison-appends');
-           console.log(comparisonAppend)
            if(window.matchMedia('(max-width: 767px)').matches){
             $slider.slick({
                 slidesToShow: 1,
