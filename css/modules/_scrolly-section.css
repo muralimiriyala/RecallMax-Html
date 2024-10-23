@@ -1,20 +1,24 @@
 
 
 .scrolly-section{ background-color: var(--Raisin-Black);}
-.scrolly-main{padding: 80px;} 
-.scrolly-links{font-size: 18px; line-height: 22.5px; color: var(--White-50);}
+.scrolly-main{padding: 80px 0;} 
+.scrolly-links{font-size: 18px; line-height: 22.5px; color: var(--White-50); margin-bottom: 40px;}
 .scrolly-line{width: 2px; height: 100%; top: 0; left: 0; background-color: var(--White); z-index: -1;}
 .scrolly-line-blue{width: 8px; height: 100%; left: -4px; top: 0; z-index: 0; background-color: var(--Sky-Blue);}
 .scrolly-link{padding: 24px;}
 .scrolly-spy{font-weight: 800; color: var(--White);}
 .scrolly-data{padding: 48px;}
-.scrolly-btns{background: rgba(165, 24, 144, 0.25);}
+.scrolly-btns{background: rgba(165, 24, 144, 0.25); padding: 4px 4px 8px;}
 .scrolly-btns > *{width: 100%;}
+.scrolly-btns a:first-child{margin-bottom: 8px;}
+.scrolly-btns a:not(.button){gap: 8px; color: var(--White);}
 .scrolly-text .h4{margin-bottom: 12px;}
 .scrolly-text hr.sm-line{margin: 12px 0;}
 ul.scrolly-keys > li{font-weight: 700;}
 ul.scrolly-keys > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 5px; width: 20px; }
-
+ul.scrolly-keys > li > a{color: var(--Raisin-Black);}
+ul.scrolly-keys > li > a:hover{color: var(--Accent);}
+.scrolly-text ul.scrolly-keys:last-child{margin-bottom: 0;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
