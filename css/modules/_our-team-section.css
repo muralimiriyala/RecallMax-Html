@@ -8,6 +8,7 @@
 .our-team-full .our-team-title, .our-team-full .our-team-desc{padding: 0;}
 .our-team-full .our-team-title::after{display: none;}
 
+
 @media screen and (min-width: 1024px) {
     .our-team-main{padding: 78px 0 72px;}
 }
