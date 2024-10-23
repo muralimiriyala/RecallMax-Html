@@ -1,6 +1,6 @@
 
 
-.scrolly-section{ background-color: var(--Raisin-Black);}
+.scrolly-section{width: 100%; top: 0; left: 0; background-color: var(--Raisin-Black);}
 .scrolly-main{padding: 80px 0;} 
 .scrolly-links{font-size: 18px; line-height: 22.5px; color: var(--White-50); margin-bottom: 40px;}
 .scrolly-line{width: 2px; height: 100%; top: 0; left: 0; background-color: var(--White); z-index: -1;}

@@ -1,5 +1,5 @@
 const filterCategory = {
-  $eles: document.querySelectorAll('ul.filter-category li a'),
+  $eles: document.querySelectorAll('ul.filter-category li:not(:first-child) a'),
   $filterData: document.querySelectorAll('.filter-doc-row'),
   $ftrbtn: document.querySelector('.filter-doc-btn'),
   $ftrlinks: document.querySelector('.filter-category-links'),
@@ -10,7 +10,8 @@ const filterCategory = {
       _.$filterData[0].style.display = 'block';
     }
 
-    _.$eles.forEach(($ele) => {
+    _.$eles.forEach(($ele, $index) => {
+      console.log($ele, $index)
       $ele.addEventListener('click', function (e) {
         e.preventDefault();
         _.$eles.forEach(($ele) => {
