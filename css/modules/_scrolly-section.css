@@ -30,3 +30,6 @@ ul.scrolly-keys > li > a:hover{color: var(--Accent);}
     .scrolly-text{flex: 1;}
     .scrolly-image{flex: 0 0 420px;}
 }
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+    .scrolly-data{justify-content: center;}
+}
