@@ -5,7 +5,7 @@
 .pdetail-banner-btn{gap: 12px; margin-top: 32px;}
 .pdetail-banner-thumb img{opacity: 0.2;}
 
-ul.pdetail-ui-links{margin: 0 0 56px; gap: 8px;}
+
 ul.pdetail-ui-links li{margin: 0;}
 ul.pdetail-ui-links li::before{display: none;}
 ul.pdetail-ui-links li a{min-width: 256px; display: block; font-size: 14px; line-height: 1; letter-spacing: 1.4px; font-weight: 800; color: var(--White-50); text-transform: uppercase; position: relative; text-align: center;}
@@ -22,6 +22,7 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     .pdetail-banner-main{padding: 150px 0 0;}
     .pdetail-banner-text{max-width: 900px;}
     .pdetail-banner-text.no_banner_bg{max-width: 100%;}
+    ul.pdetail-ui-links{margin: 0 0 56px; gap: 8px;}
 }
 @media screen and (max-width: 1439px) and (min-width: 1280px) {
     .pdetail-banner-text{max-width: 572px;}
@@ -39,4 +40,7 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     .pdetail-banner-text{font-size: 18px; line-height: 27px;}
     .pdetail-banner-text span.optional-text{margin-bottom: 24px;}
     .pdetail-banner-text hr.sm-line{margin: 24px 0;}
+    ul.pdetail-ui-links{display: block; max-width: 300px; margin: 0 auto 30px;}
+    ul.pdetail-ui-links li a{display: none;}
+    ul.pdetail-ui-links li a.ui-open{display: block;}
 }
