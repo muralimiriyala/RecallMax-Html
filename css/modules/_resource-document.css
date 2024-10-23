@@ -14,7 +14,7 @@ ul.filter-category li.tab-open a, ul.filter-category li a:hover { opacity: 1; }
 ul.filter-category li.tab-open a::before{ width: 100%; }
 ul.filter-category li a:hover::before { width: 100%; }
 
-.filter-doc-row{display: none;}
+/* .filter-doc-row{display: none;} */
 .filter-doc-lists{gap: 24px; flex-direction: column;}
 .filter-doc-list{gap: 24px; border-radius: 8px; border: 1px solid var(--Card-Stroke); background: var(--White); padding: 16px;}
 .resource-document-title{flex: 1;}
