@@ -45,6 +45,7 @@ ul.scrolly-keys > li > a:hover{color: var(--Accent);}
     .scrolly-image, .scrolly-text{flex: 100%;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
+    .scrolly-section{border-radius: 32px;}
     .scrolly-main{padding: 32px 0; }
     .scrolly-row{margin-bottom: 32px;}
     .scrolly-row:last-child{margin-bottom: 0;}
