@@ -30,10 +30,10 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     ul.pdetail-ui-links li a{min-width: 225px; }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    .pdetail-banner-main{padding: 145px 0 80px;}
+    .pdetail-banner-main{padding: 145px 0 0;}
     .pdetail-banner-text span.optional-text{margin-bottom: 32px;}
     .pdetail-banner-text hr.sm-line{margin: 32px 0;}
-    ul.pdetail-ui-links{margin: 0 0 56px; gap: 8px;}
+    ul.pdetail-ui-links{margin: 56px 0; gap: 8px;}
     ul.pdetail-ui-links li a{min-width: 166px;}   
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {

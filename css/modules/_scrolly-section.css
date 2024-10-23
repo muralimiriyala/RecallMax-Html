@@ -12,6 +12,7 @@
 .scrolly-btns > *{width: 100%;}
 .scrolly-btns a:first-child{margin-bottom: 8px;}
 .scrolly-btns a:not(.button){gap: 8px; color: var(--White);}
+.scrolly-btns a:not(.button):hover{color: var(--Sky-Blue);}
 .scrolly-text .h4{margin-bottom: 12px;}
 .scrolly-text hr.sm-line{margin: 12px 0;}
 ul.scrolly-keys > li{font-weight: 700;}
@@ -34,10 +35,24 @@ ul.scrolly-keys > li > a:hover{color: var(--Accent);}
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .scrolly-data{justify-content: center;}
 }
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .scrolly-main{gap: 40px;}
+    .scrolly-left{flex: 0 0 200px;}
+    .scrolly-col{flex: 1;}
+    .scrolly-row{margin-bottom: 32px;}
+    .scrolly-row:last-child{margin-bottom: 0;}
+    .scrolly-data{padding: 24px; gap: 24px;}
+    .scrolly-image, .scrolly-text{flex: 100%;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
+    .scrolly-section{border-radius: 32px;}
+    .scrolly-main{padding: 32px 0; }
     .scrolly-row{margin-bottom: 32px;}
     .scrolly-row:last-child{margin-bottom: 0;}
     .scrolly-data{padding: 24px; gap: 24px;}
     .scrolly-image, .scrolly-text{flex: 100%;}
     .scrolly-text .h4{margin-bottom: 12px; font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+    .scrolly-btns{padding: 4px; width: 350px; margin: 32px auto 0; border-radius: 28px; }
+    .scrolly-btns a:first-child{margin-bottom: 0; width: fit-content;}
+    .scrolly-btns a:not(.button){gap: 8px; flex: 1;}
 }
