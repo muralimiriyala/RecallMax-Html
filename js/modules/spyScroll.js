@@ -1,4 +1,6 @@
 const spyScroll = {
+    $header: document.querySelector('.site-header'),
+    $section: document.querySelector('.scrolly-section'),
     $links: document.querySelectorAll('.scrolly-link'),
     $rows: document.querySelectorAll('.scrolly-row'),
     init(){
@@ -6,11 +8,9 @@ const spyScroll = {
         let linksReveal = () => {
             const fromTop = Math.ceil(window.scrollY);   
             _.$links.forEach(($link)=>{
-                const section = $link;
-                console.log(section.offsetTop, "offsetTop")
                 if (
-                    section.offsetTop <= fromTop &&
-                    section.offsetTop + section.offsetHeight > fromTop
+                    $link.offsetTop <= fromTop &&
+                    $link.offsetTop + $link.offsetHeight > fromTop
                   ) {
                     $link.classList.add("scrolly-spy");
                   } else {
@@ -20,15 +20,9 @@ const spyScroll = {
         }
         window.addEventListener('scroll', linksReveal);
 
-
-
-
-
-
-        const  secReveals = () =>{
+        const secReveals = () => {
             var reveals = _.$rows;
-          
-            for (var i = 0; i < reveals.length; i++) {
+            reveals.forEach((ele, i)=>{
               var windowHeight = window.innerHeight;
               var elementTop = reveals[i].getBoundingClientRect().top;
               var elementVisible = 150;
@@ -38,10 +32,25 @@ const spyScroll = {
               } else {
                 reveals[i].classList.remove("scroll-sticky");
               }
-            }
+            });
           }
-          
           window.addEventListener("scroll", secReveals);
+
+
+
+        const stickyReveals = () => {
+            const stickyTop = _.$section.offsetTop;
+            const scrollTop = Math.ceil(window.scrollY);
+            if(scrollTop>=stickyTop){
+                console.log(stickyTop, scrollTop)
+                _.$section.style.borderRadius = '0';
+            }
+            else{
+                _.$section.style.borderRadius = '0';
+            }
+        };
+        window.addEventListener("scroll", stickyReveals);
+
     }
 }
 export default spyScroll;
