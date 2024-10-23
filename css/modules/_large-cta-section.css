@@ -25,6 +25,7 @@
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .large-cta-row:nth-child(2n) .large-cta-logo:nth-child(3){min-width: 440px;}
+    .large-cta-row:nth-child(2n) .large-cta-logo:nth-child(3) h2{font-size: 32px; line-height: 40px; letter-spacing: -0.4px;}
 }
 @media screen and (min-width: 768px){
     .large-cta-row{flex-wrap: nowrap;}
