@@ -26,11 +26,8 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     ul.pdetail-ui-links{margin: 56px 0 60px; gap: 8px;}
     ul.pdetail-ui-links li a{min-width: 256px;}
 }
-@media screen and (max-width: 1439px) and (min-width: 1280px) {
-    .pdetail-banner-text{max-width: 572px;}
-}
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
-    .pdetail-banner-text{max-width: 444px;}
+    ul.pdetail-ui-links li a{min-width: 225px; }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .pdetail-banner-main{padding: 145px 0 80px;}
@@ -42,7 +39,8 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .pdetail-banner-main{padding: 145px 0 40px;}
     .pdetail-banner-text{font-size: 18px; line-height: 27px;}
-    .pdetail-banner-text span.optional-text{margin-bottom: 24px;}
+    .pdetail-banner-text span.optional-text.lg{font-size: 14px; letter-spacing: 1.2px; line-height: 14px; margin-bottom: 5px;}
+    .pdetail-banner-text h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .pdetail-banner-text hr.sm-line{margin: 24px 0;}
     ul.pdetail-ui-links{display: block; max-width: 300px; margin: 0 auto 30px;}
     ul.pdetail-ui-links li a{display: none;}
