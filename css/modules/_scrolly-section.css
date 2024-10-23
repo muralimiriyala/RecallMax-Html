@@ -1,7 +1,7 @@
 
 
-
-.scrolly-main{padding: 80px; background-color: var(--Raisin-Black);} 
+.scrolly-section{ background-color: var(--Raisin-Black);}
+.scrolly-main{padding: 80px;} 
 .scrolly-links{font-size: 18px; line-height: 22.5px; color: var(--White-50);}
 .scrolly-line{width: 2px; height: 100%; top: 0; left: 0; background-color: var(--White); z-index: -1;}
 .scrolly-line-blue{width: 8px; height: 100%; left: -4px; top: 0; z-index: 0; background-color: var(--Sky-Blue);}
