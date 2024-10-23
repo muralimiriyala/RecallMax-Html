@@ -10,6 +10,10 @@
 .scrolly-data{padding: 48px;}
 .scrolly-btns{background: rgba(165, 24, 144, 0.25);}
 .scrolly-btns > *{width: 100%;}
+.scrolly-text .h4{margin-bottom: 12px;}
+.scrolly-text hr.sm-line{margin: 12px 0;}
+ul.scrolly-keys > li{font-weight: 700;}
+ul.scrolly-keys > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 5px; width: 20px; }
 
 
 /*-- media css starts here --*/
@@ -18,7 +22,7 @@
     .scrolly-row:not(:last-child){margin-bottom: 160px;}
     .scrolly-left{flex: 0 0 200px;}
     .scrolly-col{flex: 1;}
-    .scrolly-data{flex-direction: row-reverse;}
+    .scrolly-data{flex-direction: row-reverse; gap: 64px;}
     .scrolly-text{flex: 1;}
     .scrolly-image{flex: 0 0 420px;}
 }
