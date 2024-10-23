@@ -85,29 +85,29 @@ const teamPage = {
     window.addEventListener('resize', updateHeights);
     window.addEventListener('orientationchange', updateHeights);
 
-    function tabFun(e) {
-      // e.preventDefault();
-      let $this = this;
-      // tablinks.forEach(function (item) {
-      //   item.classList.remove('active');
-      // });
-      // $this.classList.toggle('active');
-      let tabattr = $this.getAttribute('data-name');
-      const tabRow = document.querySelectorAll('.data-tab-row');
-      tabRow.forEach(function (tabitem) {
-        $(tabitem).fadeOut(100);
-        tabitem.classList.remove('open');
-      });
-      $(`.data-tab-row[data-tab='${tabattr}']`).fadeIn(500);
-      document
-        .querySelector(`.data-tab-row[data-tab='${tabattr}']`)
-        .classList.add('open');
-    }
+    // function tabFun(e) {
+    //   // e.preventDefault();
+    //   let $this = this;
+    //   // tablinks.forEach(function (item) {
+    //   //   item.classList.remove('active');
+    //   // });
+    //   // $this.classList.toggle('active');
+    //   let tabattr = $this.getAttribute('data-name');
+    //   const tabRow = document.querySelectorAll('.data-tab-row');
+    //   tabRow.forEach(function (tabitem) {
+    //     $(tabitem).fadeOut(100);
+    //     tabitem.classList.remove('open');
+    //   });
+    //   $(`.data-tab-row[data-tab='${tabattr}']`).fadeIn(500);
+    //   document
+    //     .querySelector(`.data-tab-row[data-tab='${tabattr}']`)
+    //     .classList.add('open');
+    // }
 
-    let tablinks = document.querySelectorAll('ul.tab-links > li > a');
-    tablinks.forEach(function (tablink) {
-      tablink.addEventListener('click', tabFun);
-    });
+    // let tablinks = document.querySelectorAll('ul.tab-links > li > a');
+    // tablinks.forEach(function (tablink) {
+    //   tablink.addEventListener('click', tabFun);
+    // });
   },
 };
 export default teamPage;
