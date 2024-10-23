@@ -27,7 +27,7 @@ import beyond from './modules/beyond-script';
 import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
 
-document.addEventListener('DOMContentLoaded', function () {
+(function() {
   customGsap.init();
   counter.init();
   progress.init();
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
   pdetailtabs.init();
 
   beyond.init();
-});
+})();
 
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {

@@ -15,9 +15,11 @@
     .large-cta-row{gap: 25px;}
     .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3){min-width: 726px; height: auto;}
 }
-
-
-
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .large-cta-logo:nth-child(n+6){display: none;}
+    .large-cta-row:nth-child(even) .large-cta-logo{display: none;}
+    .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3){display: block;}
+}
 
 
 
