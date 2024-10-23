@@ -256,6 +256,5 @@
 [data-animation].underline.center h4 span::before{margin: auto; left: 0; right: 0;}
 [data-animation].underline h1 > span{position: relative; z-index: 1; font-style: italic;}
 [data-animation].underline h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: 0; left: -10px; z-index: -1; transition: var(--b-transition);}
-[data-animation].underline.visible h1 > span::before{width: calc(100% + 15px);}
 [data-animation].underline.visible h1 > span::before{width: 100%;}
 [data-animation].underline.visible.services h1 > span::before{width: calc(100% + 15px);}
