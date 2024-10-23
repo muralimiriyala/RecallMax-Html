@@ -67,3 +67,4 @@ const filterCategory = {
   },
 };
 export default filterCategory;
+filterCategory.init();

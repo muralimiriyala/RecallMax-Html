@@ -8,7 +8,7 @@ import Scroll from './modules/scroll';
 import Menu from './modules/menu';
 // import scrollModule from './modules/pageScroll';
 import customSlick from './modules/customSlick';
-import filterCategory from './modules/filterCategory';
+// import filterCategory from './modules/filterCategory';
 import uiAccordion from './modules/accordion';
 import teamPage from './modules/team';
 import searchFeild from './modules/search';
@@ -40,7 +40,7 @@ import spyScroll from './modules/spyScroll';
   
   customSlick.init();
   selectBox.init();
-  filterCategory.init();
+  // filterCategory.init();
   uiAccordion.init();
   teamPage.init();
   searchFeild.init();

@@ -21,7 +21,7 @@ const pdetailtabs = {
             dots: false,
             arrows: false,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: $duration,
             focusOnSelect: true,
         });
