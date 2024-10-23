@@ -1,18 +1,22 @@
 const filterCategory = {
+  $links: document.querySelectorAll('ul.filter-category li a'),
   $eles: document.querySelectorAll('ul.filter-category li:not(:first-child) a'),
   $filterData: document.querySelectorAll('.filter-doc-row'),
   $ftrbtn: document.querySelector('.filter-doc-btn'),
   $ftrlinks: document.querySelector('.filter-category-links'),
   init() {
     const _ = this;
-    if (_.$eles.length > 0) {
-      document.querySelector('ul.filter-category li:first-child').classList.add('tab-open');
+    if (_.$links.length > 0) {
+      _.$links[0].parentElement.classList.add('tab-open');
       _.$filterData[0].style.display = 'block';
     }
 
     _.$eles.forEach(($ele, $index) => {
       $ele.addEventListener('click', function (e) {
         e.preventDefault();
+        _.$links.forEach(($link) => {
+          $link.parentElement.classList.remove('tab-open');
+        });
         _.$eles.forEach(($ele) => {
           $ele.parentElement.classList.remove('tab-open');
         });
