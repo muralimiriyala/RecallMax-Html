@@ -34,8 +34,8 @@ ul.partners-tab-links > li > a.clear{
 
 .partners-list-bg{width: 100%; height: 100%; top: 0; left: 0; z-index: -1;}
 .partners-list{width: 100%; height: 100%; flex-direction: column; padding: 32px;}
-.partners-list:hover .h5{color: var(--Accent);}
-.partners-list:hover .partners-link-btn{color: var(--Raisin-Black);}
+/* .partners-list:hover .h5{color: var(--Accent);}
+.partners-list:hover .partners-link-btn{color: var(--Raisin-Black);} */
 .partners-image{width: 100%; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 2px solid rgba(164, 39, 143, 0.2);}  
 .partners-image img{max-width: 204px;}  
 .partners-text{font-size: 16px; line-height: 24px; color: var(--Coal); margin-bottom: 20px;}
