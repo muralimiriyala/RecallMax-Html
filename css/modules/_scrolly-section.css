@@ -19,6 +19,7 @@ ul.scrolly-keys > li::before{background: url("../../images/checked-circle-pro.sv
 ul.scrolly-keys > li > a{color: var(--Raisin-Black);}
 ul.scrolly-keys > li > a:hover{color: var(--Accent);}
 .scrolly-text ul.scrolly-keys:last-child{margin-bottom: 0;}
+.scrolly-text ul.scrolly-keys > li:last-child{margin-bottom: 0;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
@@ -32,4 +33,11 @@ ul.scrolly-keys > li > a:hover{color: var(--Accent);}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .scrolly-data{justify-content: center;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .scrolly-row{margin-bottom: 32px;}
+    .scrolly-row:last-child{margin-bottom: 0;}
+    .scrolly-data{padding: 24px; gap: 24px;}
+    .scrolly-image, .scrolly-text{flex: 100%;}
+    .scrolly-text .h4{margin-bottom: 12px; font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
 }
