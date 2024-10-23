@@ -26,6 +26,7 @@ import ComparisonSlick from './modules/tableComparisonSlick';
 import beyond from './modules/beyond-script';
 import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
+import spyScroll from './modules/spyScroll';
 
 (function() {
   customGsap.init();
@@ -56,6 +57,7 @@ import pdetailtabs from './modules/pdetailtabs';
   pdetailtabs.init();
 
   beyond.init();
+  spyScroll.init();
 })();
 
 let scrolled = window.scrollY;
