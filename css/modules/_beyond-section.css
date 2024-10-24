@@ -25,7 +25,7 @@ ul.beyond-links > li > a.active p{margin-top: 16px;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 768px){
-    .beyond-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Raisin-Black); padding-left: 33px; display: block; margin: 0; cursor: pointer;transition: all .5s ease;}
+    .beyond-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Raisin-Black); display: block; margin: 0; cursor: pointer;transition: all .5s ease;}
     
     .beyond-step1-left{top: 0; left: 0; max-width: 221px;}
     .beyond-step1-right{top: 0; right: 0; max-width: 221px;}
@@ -45,6 +45,7 @@ ul.beyond-links > li > a.active p{margin-top: 16px;}
     .beyond-guy{bottom: 0; left: calc(50% - 100px); transform: translateX(-50%); max-width: 202px;}
 }   
 @media screen and (min-width: 1024px) {
+    .beyond-head{margin-bottom: 64px;}
     .beyond-bg{padding: 48px;}
     .beyond-bg .h4{margin-bottom: 16px;}
     .beyond-main{gap: 64px; flex-direction: row-reverse;}
