@@ -595,7 +595,7 @@ const selectBox = {
         $(document).bind('mousedown.selectBox', function (event) {
           if (1 === event.which) {
             if (
-              $(event.target).parents().andSelf().hasClass('selectBox-options')
+              $(event.target).parents().addBack().hasClass('selectBox-options')
             ) {
               return;
             }
@@ -603,6 +603,7 @@ const selectBox = {
           }
         });
       };
+
 
       /**
        * Hides the menu of all instances.
