@@ -32,11 +32,10 @@ svg.round-default-svg circle#round-bar-glow-4{
 .light-blue .conter-max-icon svg path{fill: var(--Accent-3);}
 .conter-max-list.light-green{border: 1px solid var(--Translucent); background: var(--Tint-3); color: var(--Text-3);}
 .light-green .conter-max-icon svg path{fill: var(--Accent-2);}
-.gradient-pink{
-    color: var(--White);
-    border: 1px solid var(--Raisin-Tint, rgba(48, 33, 53, 0.05));
-    background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent);
-}
+.gradient-pink{color: var(--White); border: 1px solid var(--Raisin-Tint, rgba(48, 33, 53, 0.05)); background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); }
+.gradient-pink .round-default-state{display: none;}
+.gradient-pink .conter-max-round{height: 107px; align-items: flex-end;}
+.gradient-pink .counter-main{margin-bottom: 8px;}
 
 
 @media screen and (min-width: 1024px) {

@@ -1,6 +1,8 @@
 
 
-
+.ftr-compare-head{margin-bottom: 20px;}
+.ftr-compare-head span.optional-text{margin-bottom: 20px;}
+.ftr-compare-head .h3{margin-bottom: 0;}
 .ftr-compare-bg{padding: 8px; gap: 8px; font-size: 14px; line-height: 14px; font-weight: 800;}
 .ftr-compare-bg.out{background: rgba(52, 55, 64, 0.10);}
 .ftr-compare-center span{font-size: 18px;font-weight: 800;line-height: 22.5px;letter-spacing: -0.18px; display: block;}
