@@ -7,14 +7,14 @@ const spyScroll = {
   init() {
       const _ = this;
       if (!_.$links.length) return; 
-      _.$links[0].classList.add('current');
+      // _.$links[0].classList.add('current');
       const linksReveal = () => {
         const fromTop = Math.ceil(window.scrollY);
         const windowHeight = window.innerHeight;
 
-        // _.$links.forEach(($link) => {
-        //     $link.classList.remove('current');
-        // });
+        _.$links.forEach(($link) => {
+            $link.classList.remove('current');
+        });
 
         _.$links.forEach(($link, index) => {
             let section = document.querySelector($link.hash);
@@ -27,9 +27,9 @@ const spyScroll = {
                 const isPartiallyInView = sectTop < (fromTop + windowHeight) && sectBottom >= fromTop;
 
                 // Add 'current' class only when section is fully or partially in view
-                // if (isFullyInView || isPartiallyInView) {
-                //     $link.classList.add('current');
-                // }
+                if (isFullyInView || isPartiallyInView) {
+                    $link.classList.add('current');
+                }
             }
         });
       };
