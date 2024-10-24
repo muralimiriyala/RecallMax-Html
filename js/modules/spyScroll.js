@@ -6,17 +6,15 @@ const spyScroll = {
   $rows: document.querySelectorAll('.scrolly-row'),
   init() {
       const _ = this;
-
+      _.$links[0].classList.add('current');
       const linksReveal = () => {
         const fromTop = Math.ceil(window.scrollY);
         const windowHeight = window.innerHeight;
-    
-        // Remove 'current' class from all links first
-        _.$links.forEach(($link) => {
-            $link.classList.remove('current');
-        });
-    
-        // Check each link's section to determine when to add 'current'
+
+        // _.$links.forEach(($link) => {
+        //     $link.classList.remove('current');
+        // });
+
         _.$links.forEach(($link, index) => {
             let section = document.querySelector($link.hash);
             if (section) {
@@ -28,9 +26,9 @@ const spyScroll = {
                 const isPartiallyInView = sectTop < (fromTop + windowHeight) && sectBottom >= fromTop;
 
                 // Add 'current' class only when section is fully or partially in view
-                if (isFullyInView || isPartiallyInView) {
-                    $link.classList.add('current');
-                }
+                // if (isFullyInView || isPartiallyInView) {
+                //     $link.classList.add('current');
+                // }
             }
         });
       };
@@ -38,7 +36,6 @@ const spyScroll = {
       window.addEventListener('load', linksReveal);
       window.addEventListener('scroll', linksReveal);
 
-      // Stickiness logic for the sections
       const secReveals = () => {
           var reveals = _.$rows;
           reveals.forEach((ele, i) => {
@@ -46,17 +43,16 @@ const spyScroll = {
               var elementTop = reveals[i].getBoundingClientRect().top;
               var elementVisible = 0;
 
-              // Add or remove 'scroll-sticky' class based on section visibility
+              // Add or remove 'scrolly-sticky' class based on section visibility
               if (elementTop < windowHeight - elementVisible) {
-                  reveals[i].classList.add('scroll-sticky');
+                  reveals[i].classList.add('scrolly-sticky');
               } else {
-                  reveals[i].classList.remove('scroll-sticky');
+                  reveals[i].classList.remove('scrolly-sticky');
               }
           });
       };
       window.addEventListener('scroll', secReveals);
 
-      // Sticky reveal for the main scrolly-section
       const stickyReveals = () => {
           if (!_.$section) return;
           const stickyTop = _.$section.offsetTop - _.$header.offsetHeight;
@@ -65,17 +61,15 @@ const spyScroll = {
           const stickyTransition = Number(_.$section.getAttribute('data-speed'));
 
           if (scrollTop >= stickyTop) {
-              _.$section.style.borderRadius = `0 0 ${stickyRadius}px ${stickyRadius}px`;
-              _.$section.style.transition = '';
-              _.$body.classList.add('scrolly-body');
-              _.$header.style.opacity = '0';
-              _.$header.style.transition = '';
+            _.$section.classList.add('scrolly-intro');
+            _.$body.classList.add('scrolly-body');
+            _.$header.style.opacity = '0';
+            _.$header.style.transition = '';
           } else {
-              _.$section.style.borderRadius = `${stickyRadius}px`;
-              _.$section.style.transition = `all ${stickyTransition}ms ease`;
-              _.$body.classList.remove('scrolly-body');
-              _.$header.style.opacity = '1';
-              _.$header.style.transition = `all ${stickyTransition}ms ease`;
+            _.$section.classList.remove('scrolly-intro');
+            _.$body.classList.remove('scrolly-body');
+            _.$header.style.opacity = '1';
+            _.$header.style.transition = `all 0.5s ease`;
           }
       };
       window.addEventListener('scroll', stickyReveals);

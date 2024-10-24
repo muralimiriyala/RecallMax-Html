@@ -2,10 +2,10 @@
 
 body.scrolly-body{overflow: clip;}
 .scrolly-sidebar{position: -webkit-sticky; position: sticky; top: 80px;}
-.scroll-sticky{position: -webkit-sticky; position: sticky; top: 80px;}
+.scrolly-sticky{position: -webkit-sticky; position: sticky; top: 80px;}
+.scrolly-row{box-shadow: 0px -86px 96px 0px rgba(48, 33, 53, 0.75);}
 
-
-.scrolly-section{width: 100%; top: 0; left: 0; background-color: var(--Raisin-Black);}
+.scrolly-section{width: 100%; border-radius: 80px; background-color: var(--Raisin-Black);}
 .scrolly-main{padding: 80px 0 80px;} 
 ul.scrolly-links{margin: 0; font-size: 18px; line-height: 22.5px; color: var(--White-50); margin-bottom: 40px;}
 ul.scrolly-links li::before{display: none;}
@@ -58,7 +58,8 @@ ul.scrolly-keys > li > a:hover{color: var(--Accent);}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .scrolly-section{border-radius: 32px;}
-    .scrolly-main{padding: 32px 0; }
+    .scrolly-main{padding: 32px 0; display: block;}
+    .scrolly-left{display: none;}
     .scrolly-row{margin-bottom: 32px;}
     .scrolly-row:last-child{margin-bottom: 0;}
     .scrolly-data{padding: 24px; gap: 24px;}
