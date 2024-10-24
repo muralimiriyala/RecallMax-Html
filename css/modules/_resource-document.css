@@ -36,6 +36,7 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
 
 .resource-dropdown > span{position: absolute; right: 17px; top: 17px; font-size: 16px; color: var(--Accent); cursor: pointer;}
 .resource-document-full .resource-document-desc, .resource-document-full .resource-document-heading{flex: 1;}
+.resource-document-search{width: 100%;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
