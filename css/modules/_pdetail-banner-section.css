@@ -25,18 +25,21 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     .pdetail-banner-text.no_banner_bg{max-width: 100%;}
     ul.pdetail-ui-links{margin: 56px 0 60px; gap: 8px;}
     ul.pdetail-ui-links li a{min-width: 256px;}
-    .pdetail-ui-center{max-width: 832px; margin-bottom: -7px;}
-    .pdetail-ui-left{top: 80px; left: 100px; max-width: 256px;} 
+    .pdetail-ui-center{max-width: 1048px; margin-bottom: -8px;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
     ul.pdetail-ui-links li a{min-width: 225px; }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .pdetail-banner-main{padding: 145px 0 0;}
+    .pdetail-ui-center{margin-bottom: -8px;}
     .pdetail-banner-text span.optional-text{margin-bottom: 32px;}
     .pdetail-banner-text hr.sm-line{margin: 32px 0;}
     ul.pdetail-ui-links{margin: 56px 0; gap: 8px;}
     ul.pdetail-ui-links li a{min-width: 166px;}   
+    .pdetail-ui-left{left: 0; max-width: 256px; top: 55px; }
+    .pdetail-ui-right{top: 35px; right: 0; max-width: 256px;}
+    .pdetail-ui-right img, .pdetail-ui-right img:last-child{margin-bottom: 6px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .pdetail-banner-main{padding: 128px 0 0;}

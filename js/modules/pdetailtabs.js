@@ -17,11 +17,10 @@ const pdetailtabs = {
         $fortab.slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            fade: true,
             dots: false,
             arrows: false,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: $duration,
             focusOnSelect: true,
         });
