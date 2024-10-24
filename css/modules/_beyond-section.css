@@ -16,7 +16,7 @@ ul.beyond-links > li::before{display: none;}
 
 .beyond-image{transform: scale(0); transition: all 0.5s ease;}
 .beyond-row:first-child .beyond-image{transform: scale(1);}
-.beyond-image img{border-radius: 12px 12px 10px 10px;}
+.beyond-image img{border-radius: 10px; filter: drop-shadow(0px 9px 16px rgba(98, 7, 84, 0.08));}
 
 .beyond-full  .beyond-lt{flex: 100%; padding: 0; border: none;}
 .beyond-full  .beyond-rt{flex: 100%; padding: 0;}
@@ -25,8 +25,8 @@ ul.beyond-links > li::before{display: none;}
 @media screen and (min-width: 768px){
     .beyond-title{padding-left: 40px; font-size: 20px; line-height: 25px; color: var(--Raisin-Black); display: block; margin: 0; cursor: pointer; transition: all .5s ease;}
     
-    .beyond-step1-left{top: 0; left: 0; max-width: 221px;}
-    .beyond-step1-right{top: 0; right: 0; max-width: 221px;}
+    .beyond-step1-left{top: 53px; left: -40px; max-width: 221px;}
+    .beyond-step1-right{top: 59px; right: 41px; max-width: 221px;}
 
     .beyond-step2-left{top: 100px; left: 0; max-width: 221px;}
     .beyond-step2-right{top: 100px; right: 0; max-width: 221px;}
@@ -48,8 +48,9 @@ ul.beyond-links > li::before{display: none;}
     .beyond-bg{padding: 48px;}
     .beyond-bg .h4{margin-bottom: 16px;}
     .beyond-main{gap: 64px; flex-direction: row-reverse;}
-    .beyond-lt{flex: 0 0 350px;}
+    .beyond-lt{flex: 0 0 334px;}
     .beyond-rt{flex: 1; margin-top: -3px;}
+    .beyond-rt > figure:first-child{padding:0 57px 30px;}
 }
 @media screen and (min-width: 1280px){
     .beyond-head{gap: 80px;}
