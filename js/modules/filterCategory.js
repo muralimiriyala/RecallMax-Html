@@ -8,7 +8,7 @@ const filterCategory = {
     const _ = this;
     if (_.$links.length > 0) {
       _.$links[0].parentElement.classList.add('tab-open');
-      _.$filterData[0].style.display = 'block';
+      // _.$filterData[0].style.display = 'block';
     }
 
     _.$eles.forEach(($ele, $index) => {
@@ -22,14 +22,14 @@ const filterCategory = {
         });
         const $this = this;
         $this.parentElement.classList.add('tab-open');
-        const $attrName = $this.getAttribute('data-name');
-        _.$filterData.forEach(($data) => {
-          $($data).hide();
-        });
-        const $target = document.querySelector(
-          `.filter-doc-row[data-value="${$attrName}"]`
-        );
-        $($target).fadeIn(600);
+        // const $attrName = $this.getAttribute('data-name');
+        // _.$filterData.forEach(($data) => {
+        //   $($data).hide();
+        // });
+        // const $target = document.querySelector(
+        //   `.filter-doc-row[data-value="${$attrName}"]`
+        // );
+        // $($target).fadeIn(600);
       });
     });
     let ftrMobile = (e) => {
