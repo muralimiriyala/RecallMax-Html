@@ -1,8 +1,8 @@
 import $ from 'jquery';
 const beyond = {
     $e: document.querySelectorAll(".beyond-link"),
-    $t: document.querySelector("ul.beyond-links > li:first-child > a"),
-    $firstp: document.querySelector("ul.beyond-links > li:first-child > a > p"),
+    $t: document.querySelector("ul.beyond-links > li:first-child > .beyond-link"),
+    $firstp: document.querySelector("ul.beyond-links > li:first-child .beyond-link-desc"),
     $p: document.querySelectorAll(".beyond-link-desc"),
     beyondfun(e, $e, $p){
         e.preventDefault();
