@@ -6,7 +6,7 @@ const spyScroll = {
   $rows: document.querySelectorAll('.scrolly-row'),
   init() {
       const _ = this;
-      if(!_.$links) return;
+      if (!_.$links.length) return; 
       _.$links[0].classList.add('current');
       const linksReveal = () => {
         const fromTop = Math.ceil(window.scrollY);
