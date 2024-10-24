@@ -11,6 +11,7 @@
 .ftr-compare-text{padding: 20px;}
 .ftr-compare-text span{margin-bottom: 16px; font-size: 14px; line-height: 14px; font-weight: 800; color: var(--Gray-3); display: block;}
 .ftr-compare-text span.withmax{color: var(--Green);}
+.ftr-compare-icon svg{width: 48px; height: 48px;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 768px){
@@ -23,6 +24,7 @@
     .ftr-compare-center{order: 2; flex: 0 0 128px; text-align: center; display: block;}
     .ftr-compare-icon{margin-bottom: 16px;}
     .ftr-compare-icon svg, .ftr-compare-icon figure{max-width: 44px; margin: auto; display: block;}
+    .ftr-compare-icon svg{max-width: 44px; margin: auto; display: block;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .ftr-compare-rows{gap: 20px; flex-direction: column;}
