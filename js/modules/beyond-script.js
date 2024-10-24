@@ -1,9 +1,9 @@
 import $ from 'jquery';
 const beyond = {
-    $e: document.querySelectorAll("ul.beyond-links > li > a"),
+    $e: document.querySelectorAll(".beyond-link"),
     $t: document.querySelector("ul.beyond-links > li:first-child > a"),
     $firstp: document.querySelector("ul.beyond-links > li:first-child > a > p"),
-    $p: document.querySelectorAll("ul.beyond-links > li > a > p"),
+    $p: document.querySelectorAll(".beyond-link-desc"),
     beyondfun(e, $e, $p){
         e.preventDefault();
         $e.forEach((d)=> d.classList.remove('active'));

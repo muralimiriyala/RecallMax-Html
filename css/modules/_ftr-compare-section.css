@@ -5,7 +5,9 @@
 .ftr-compare-head .h3{margin-bottom: 0;}
 .ftr-compare-bg{padding: 8px; gap: 8px; font-size: 14px; line-height: 14px; font-weight: 800;}
 .ftr-compare-bg.out{background: rgba(52, 55, 64, 0.10);}
-.ftr-compare-center span{font-size: 18px;font-weight: 800;line-height: 22.5px;letter-spacing: -0.18px; display: block;}
+.ftr-compare-bg.in{background: rgba(121, 199, 88, 0.20);}
+.ftr-compare-bg.in span{color: var(--Green);}
+.ftr-compare-center span{font-size: 18px;font-weight: 800; line-height: 22.5px; letter-spacing: -0.18px; display: block; color: var(--Accent);}
 .ftr-compare-text{padding: 20px;}
 .ftr-compare-text span{margin-bottom: 16px; font-size: 14px; line-height: 14px; font-weight: 800; color: var(--Gray-3); display: block;}
 .ftr-compare-text span.withmax{color: var(--Green);}
