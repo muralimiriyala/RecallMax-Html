@@ -1,11 +1,23 @@
 
 
+body.scrolly-body{overflow: clip;}
+.scrolly-sidebar{position: -webkit-sticky; position: sticky; top: 80px;}
+.scroll-sticky{position: -webkit-sticky; position: sticky; top: 80px;}
+
+
 .scrolly-section{width: 100%; top: 0; left: 0; background-color: var(--Raisin-Black);}
-.scrolly-main{padding: 80px 0;} 
-.scrolly-links{font-size: 18px; line-height: 22.5px; color: var(--White-50); margin-bottom: 40px;}
+.scrolly-main{padding: 80px 0 80px;} 
+ul.scrolly-links{margin: 0; font-size: 18px; line-height: 22.5px; color: var(--White-50); margin-bottom: 40px;}
+ul.scrolly-links li::before{display: none;}
+ul.scrolly-links li{margin: 0;}
+ul.scrolly-links li a{font-weight: 400; padding: 24px; display: block; color: var(--White-50); }
+ul.scrolly-links li a.current{color: var(--White); font-weight: 700;}
+ul.scrolly-links li:first-child .scrolly-line-blue{border-radius: 4px 4px 0 0;}
+ul.scrolly-links li:last-child .scrolly-line-blue{border-radius: 0 0 4px 4px;}
+
 .scrolly-line{width: 2px; height: 100%; top: 0; left: 0; background-color: var(--White); z-index: -1;}
-.scrolly-line-blue{width: 8px; height: 100%; left: -4px; top: 0; z-index: 0; background-color: var(--Sky-Blue);}
-.scrolly-link{padding: 24px;}
+.scrolly-line-blue{width: 8px; height: 0%; left: -4px; top: 0; transition: all 0.5s ease; z-index: 0; background-color: var(--Sky-Blue);}
+.current .scrolly-line-blue{height: 100%;}
 .scrolly-spy{font-weight: 800; color: var(--White);}
 .scrolly-data{padding: 48px;}
 .scrolly-btns{background: rgba(165, 24, 144, 0.25); padding: 4px 4px 8px;}
