@@ -2,8 +2,7 @@
 
 body.scrolly-body{overflow: clip;}
 .scrolly-sidebar{position: -webkit-sticky; position: sticky; top: 80px;}
-.scrolly-sticky{position: -webkit-sticky; position: sticky; top: 80px;}
-.scrolly-row{box-shadow: 0px -86px 96px 0px rgba(48, 33, 53, 0.75);}
+.scrolly-sticky{position: -webkit-sticky; position: sticky; top: 80px; box-shadow: 0px -86px 96px 0px rgba(48, 33, 53, 0.75);}
 
 .scrolly-section{width: 100%; border-radius: 80px; background-color: var(--Raisin-Black);}
 .scrolly-main{padding: 80px 0 80px;} 
