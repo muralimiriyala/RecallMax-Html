@@ -1,12 +1,13 @@
 .beyond-section{background: linear-gradient(180deg, var(--White) 0%, rgba(255, 255, 255, 0.00) 100%), var(--Eggshell);}
 .beyond-bg{box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
-.beyond-lt .h5{font-size: 24px; line-height: 30px; letter-spacing: -.24px; margin-bottom: 19px;}
+.beyond-lt .h5{letter-spacing: normal; margin-bottom: 15px;}
 
-ul.beyond-links{margin: 0; gap: 20px;}
+ul.beyond-links{margin: 0; gap: 13px;}
 ul.beyond-links > li{margin: 0; width: 100%;}
 ul.beyond-links > li::before{display: none;}
 ul.beyond-links > li > a{font-size: 16px; line-height: 24px; border-radius: 12px; color: var(--Gray-2); border: 1px solid var(--Card-Stroke); background: var(--White); padding: 15px; display: block; margin: 0; cursor: pointer;transition: all .5s ease;}
-ul.beyond-links > li > a .beyond-icon{font-size: 16px; line-height: 20px; color: var(--Accent); border-radius: 12px; background: var(--RecallMax-Purple-Tint); width: 24px; height: 24px; position: absolute; top: 17px; left: 16px;}
+ul.beyond-links > li > a .beyond-icon{font-size: 16px; line-height: 20px; color: var(--Accent); border-radius: 12px; width: 24px; height: 24px; position: absolute; top: 17px; left: 16px;}
+ul.beyond-links > li > a .beyond-icon > img{ width: 24px; height: 24px;}
 ul.beyond-links > li > a.active .beyond-title{color: var(--Accent);}
 ul.beyond-links > li > a.active{border-color: var(--Accent); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 ul.beyond-links > li > a:hover{border-color: var(--Accent);}
@@ -42,6 +43,7 @@ ul.beyond-links > li > a.active p{margin-top: 16px;}
     .beyond-guy{bottom: 0; left: calc(50% - 100px); transform: translateX(-50%); max-width: 202px;}
 }   
 @media screen and (min-width: 1024px) {
+    .beyond-wrap{padding: 64px 0 80px;}
     .beyond-head{margin-bottom: 64px;}
     .beyond-bg{padding: 48px;}
     .beyond-bg .h4{margin-bottom: 16px;}
