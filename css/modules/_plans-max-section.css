@@ -37,6 +37,12 @@
     .plans-max-partice-main h4 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 16px; opacity: .4; position: absolute; z-index: -1;}
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .plans-max-main{margin: 50px 0;}
+    .plans-max-row{flex-direction: column; gap: 40px;}
+    .plans-max-list{flex: 100%;}
+    .plans-max-partice-main{padding: 0; text-align: center;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
     .plans-max-main{padding: 32px 20px; border-radius: 24px; margin: 40px 0 50px;}
     .plans-max-head{margin-bottom: 24px;}

@@ -44,7 +44,7 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
 
 @media screen and (max-width: 1023px) and (min-width: 768px){
     body.single-post .you-might-main, body.single-post .you-might-main, body.page-template-services-overview .you-might-main{margin: 50px 0 20px;}
-    .you-might-main{gap: 32px; padding: 32px; margin: 50px 0 40px; border-radius: 32px;}
+    .you-might-main{gap: 32px; padding: 32px; margin: 50px 0; border-radius: 32px;}
     .you-might-rows{gap: 24px; justify-content: center;}
     .you-might-of-3{flex: 0 0 calc(50% - 12px);}
     .you-might-title{width: 100%; text-align: center;}
