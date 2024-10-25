@@ -35,7 +35,10 @@ body form.features-banner-form .features-form-field input[type="checkbox"]:check
     .features-banner-text span.optional-text{margin-bottom: 32px;}
     .features-banner-text hr.sm-line{margin: 32px 0;}
 
-    .features-form-fields{gap: 16px; flex-direction: column;}
+    .features-banner-us{padding: 40px 20px 64px;}
+    .features-form-bg{padding: 20px;}
+    .features-form-fields{gap: 16px;}
+    .features-form-field label{font-size: 16px; line-height: 16px;}
     .features-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
