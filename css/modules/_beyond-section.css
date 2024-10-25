@@ -68,6 +68,11 @@ ul.beyond-links > li::before{display: none;}
     .beyond-lt{border-right: none; width: 100%;}
     .beyond-icon{font-size: 20px; height: auto; left: 0; line-height: 25px; position: relative; top: 0; width: 100%;}
     .beyond-row{font-size: 16px; line-height: 24px; color: var(--Gray-2);}
+    
+    .beyond-text-row{max-height: 0; overflow: hidden;}
+
+
+
     .beyond-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Accent); margin-bottom: 8px;}
     .beyond-link-desc{display: none;}
     ul.beyond-links{gap: 8px; margin-bottom: 16px;}
