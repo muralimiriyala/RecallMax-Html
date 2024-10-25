@@ -29,6 +29,7 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
     .you-might-of-3{flex: 0 0 calc(33.33333333% - 27px);}
     .you-might-of-2{flex: 0 0 calc(50% - 20px);}
     .you-might-of-1{flex: 1;}
+    .you-might-card figure img{max-height: 198px; overflow: hidden;}
 }
 @media screen and (max-width: 1439px) and (min-width: 1280px){
     .you-might-main{padding: 40px;}
