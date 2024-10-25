@@ -17,8 +17,7 @@ ul.beyond-links > li::before{display: none;}
 
 .beyond-image{transform: scale(0); transition: all 0.5s ease;}
 .beyond-row:first-child .beyond-image{transform: scale(1);}
-.beyond-image img{border-radius: 10px; filter: drop-shadow(0px 9px 16px rgba(98, 7, 84, 0.08));}
-
+.beyond-image img{border-radius: 16px; filter: drop-shadow(0px 9px 16px rgba(98, 7, 84, 0.08)); border: 0.8px solid var(--Card-Stroke);}
 .beyond-full  .beyond-lt{flex: 100%; padding: 0; border: none;}
 .beyond-full  .beyond-rt{flex: 100%; padding: 0;}
 
@@ -29,8 +28,8 @@ ul.beyond-links > li::before{display: none;}
     .beyond-step1-left{top: 53px; left: 16px; max-width: 221px;}
     .beyond-step1-right{top: 59px; right: 15px; max-width: 221px;}
 
-    .beyond-step2-left{top: 100px; left: 0; max-width: 221px;}
-    .beyond-step2-right{top: 100px; right: 0; max-width: 221px;}
+    .beyond-step2-left{left: 16px; max-width: 294px; top: 298px;}
+    .beyond-step2-right{top: 195px; right: 16px; max-width: 294px;}
 
     .beyond-step3-left{top: 150px; left: 0; max-width: 221px;}
     .beyond-step3-right{top: 150px; right: 0; max-width: 221px;}
@@ -41,7 +40,7 @@ ul.beyond-links > li::before{display: none;}
     .beyond-step5-left{top: 250px; left: 0; max-width: 221px;}
     .beyond-step5-right{top: 250px; right: 0; max-width: 221px;}
 
-    .beyond-guy{bottom: 0; left: calc(50% - 100px); transform: translateX(-50%); max-width: 202px;}
+    .beyond-guy{bottom: -98px; left: calc(50% - 40px); transform: translateX(-50%); max-width: 202px;}
 }   
 @media screen and (min-width: 1024px) {
     .beyond-wrap{padding: 64px 0 80px;}
@@ -88,6 +87,8 @@ ul.beyond-links > li::before{display: none;}
     ul.beyond-links{margin-bottom: 24px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
+    .beyond-wrap{padding: 40px 0;}
+    .beyond-title span.optional-text{margin-bottom: 22px;}
     .beyond-bg .h4{font-size: 24px; line-height: 30px; letter-spacing: -0.24px; margin-bottom: 16px;}
 }
 @media screen and (max-width: 374px) and (min-width: 200px){

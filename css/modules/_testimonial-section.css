@@ -31,6 +31,7 @@
 @media screen and (min-width: 1024px) {
     .testimonial-main{padding: 48px; justify-content: space-between; align-items: center; margin: 90px 0;}
     body.page-template-about .testimonial-main{margin-bottom: 24px;}
+    body.home .testimonial-main{margin-bottom: 24px;}
     .testimonial-title{order: 1; flex: 1;}
     .testimonial-lists{flex: 100%; order: 3; gap: 20px;}
     .testimonial-item{gap: 34px; flex: 0 0 168px;}

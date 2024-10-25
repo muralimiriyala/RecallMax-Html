@@ -71,10 +71,14 @@ svg.round-default-svg circle#round-bar-glow-4{
     .counter-main{justify-content: flex-start;}
     .conter-max-round{margin: 0;}
     .counter-right{flex: 1;}
+    .gradient-pink{align-items: flex-start;}
+    .gradient-pink .conter-max-round{align-items: flex-start; height: 72px; width: 72px;}
+    .gradient-pink .counter-main{margin-bottom: 0;}
 }
 @media screen and (max-width: 374px) and (min-width: 200px){
     .conter-max-round{height: 105px; width: 105px;}
     .conter-max-total{word-wrap: anywhere;}
     .conter-max-list{font-size: 17px; line-height: 22px;}
     .counter-main > span{font-size: 48px; line-height: 48px;}
+    
 }
