@@ -4,8 +4,26 @@
 .features-banner-text h1{color: var(--White);}
 .features-banner-btn{gap: 12px; margin-top: 32px;}
 .features-banner-thumb img{opacity: 0.2;}
-.features-banner-us{padding: 40px;}
-.features-form-bg{background: var(--Raisin-Tint);}
+.features-banner-us{padding: 40px 40px 64px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
+.features-form-bg{background: var(--Raisin-Tint); padding: 20px 24px;}
+.features-form-bg span.optional-text{font-size: 18px; letter-spacing: 1.8px; line-height: 18px;}
+.features-form-text{text-align: left; font-size: 20px; line-height: 20px; color: var(--Indigo); margin-bottom: 16px;}
+.features-form-fields{gap: 16px 24px; text-align: left;}
+.features-form-field{flex: 0 0 calc(50% - 12px);}
+.features-form-field label{padding: 0; font-size: 20px; line-height: 20px; color: var(--Indigo);}
+.features-form-field input{width: 32px; height: 32px; background: var(--White); border-radius: 50%; margin: 0 8px 0 0; padding: 0;}
+body form.features-banner-form .features-form-field input[type="checkbox"]:checked:before{
+    box-shadow: none;
+    content: "";
+    background-image: url("../../images/check-solid.svg") !important;
+    font-size: 24px;
+    color: var(--Accent);
+    top: 0px;
+    position: absolute !important;
+    background: var(--Accent);
+    background-size: 11px !important;
+  border-radius: 2px;
+}
 
 @media screen and (min-width: 1024px) {
     .features-banner-main{padding: 150px 0 80px;}
@@ -16,6 +34,9 @@
     .features-banner-main{padding: 145px 0 80px;}
     .features-banner-text span.optional-text{margin-bottom: 32px;}
     .features-banner-text hr.sm-line{margin: 32px 0;}
+
+    .features-form-fields{gap: 16px; flex-direction: column;}
+    .features-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .features-banner-main{padding: 128px 0 40px;}
@@ -24,4 +45,12 @@
     .features-banner-text h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .features-banner-text hr.sm-line{margin: 24px 0;}
     .features-banner-btn .button{width: 100%;}
+
+    .features-banner-us{padding: 24px 16px 48px; }
+    .features-banner-us span.optional-text{letter-spacing: 1.12px; line-height: 17.5px; margin-bottom: 24px;}
+    .features-form-bg{padding: 16px;}
+    .features-form-fields{gap: 16px; flex-direction: column;}
+    .features-form-field label{font-size: 16px; line-height: 16px;}
+    .features-form-field input{width: 24px; height: 24px;}
+    .features-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
 }
