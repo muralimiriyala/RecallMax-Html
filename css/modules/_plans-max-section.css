@@ -13,6 +13,8 @@
 .plans-max-text .h4{letter-spacing: normal; line-height: 36px; margin-bottom: 8px;}
 .plans-max-text p{margin-bottom: 10px;}
 
+.plans-max-image img{border-radius: 4px 4px 0px 0px; border: 1px solid var(--Card-Stroke);}
+
 .plans-max-list.plans-eggshell{background-color: var(--Eggshell); border: solid 1px rgba(164, 39, 143, 0.2);}
 .plans-max-list.plans-eggshell .h4{color: var(--Accent);}
 .plans-max-list.plans-tint3{background-color: var(--Tint-3); border: solid 1px var(--Translucent);}
@@ -32,11 +34,15 @@
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .plans-max-main{margin: 40px 0 90px;}
-    .plans-max-row{gap: 30px;}
+    .plans-max-row{gap: 40px;}
     .plans-max-list{flex: 0 0 calc(33.33333% - 30px);}
     .plans-max-partice-main h4 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 16px; opacity: .4; position: absolute; z-index: -1;}
 }
 
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+    .plans-max-row{gap: 30px;}
+    .plans-max-list{flex: 0 0 calc(33.33333% - 20px);}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .plans-max-main{margin: 50px 0;}
     .plans-max-row{flex-direction: column; gap: 40px;}

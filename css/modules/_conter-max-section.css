@@ -50,7 +50,8 @@ svg.round-default-svg circle#round-bar-glow-4{
     .conter-max-of-1{flex: 1;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
-    .conter-max-row{gap: 32px;}
+    .conter-max-row{gap: 32px; justify-content: center;}
+    .conter-max-of-5{flex: 0 0 calc(33.333% - 22px);}
     .conter-max-of-4{flex: 0 0 calc(25% - 24px);}
     .conter-max-of-3{flex: 0 0 calc(33.333% - 22px);}
     .conter-max-of-2{flex: 0 0 calc(50% - 16px);}

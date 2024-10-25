@@ -62,15 +62,23 @@ ul.beyond-links > li::before{display: none;}
     .beyond-head{gap: 60px;}
     .beyond-title{flex: 0 0 calc(50% - 30px);}
     .beyond-desc{flex: 0 0 calc(50% - 30px);}
+    .beyond-main{gap: 40px;}
+    .beyond-rt > figure:first-child{padding:0;}
+    .beyond-lt{flex: 0 0 280px;}
+    .beyond-guy{bottom: -52px;}
+    .beyond-step2-right{right: -15px; top: 40px;}
+    .beyond-step2-left{left: -12px; top: 208px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .beyond-bg{padding: 20px; margin: 50px 0; border-radius: 24px;}
+    .beyond-wrap{padding: 50px 0;}
+    .beyond-bg{padding: 20px; margin: 50px 0 0; border-radius: 24px;}
     .beyond-lt{border-right: none; width: 100%;}
     .beyond-icon{font-size: 20px; height: auto; left: 0; line-height: 25px; position: relative; top: 0; width: 100%;}
     .beyond-row{font-size: 16px; line-height: 24px; color: var(--Gray-2);}
     
     .beyond-text-row{max-height: 0; overflow: hidden;}
-    .beyond-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Accent); margin-bottom: 8px;}
+    .beyond-text-row p{margin-bottom: 16px;}
+    .beyond-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Accent); margin-bottom: 8px; padding-left: 0;}
     .beyond-link-desc{display: none;}
     ul.beyond-links{gap: 8px; margin-bottom: 16px;}
     ul.beyond-links > li{flex: 1;}
@@ -89,16 +97,20 @@ ul.beyond-links > li::before{display: none;}
 
     .beyond-link{padding:9.5px 10.5px;}
     .beyond-link .beyond-icon{height: auto; left: 0; position: relative; top: 0; width: auto;}
+    .beyond-guy{bottom: 15px;}
+    .beyond-mobile-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Accent); margin-bottom: 8px; display: block;}
 
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .beyond-bg{padding: 20px; margin: 50px 0; border-radius: 24px;}
+    
+    .beyond-bg{padding: 20px; margin: 40px 0 0; border-radius: 24px;}
     .beyond-lt{border-right: none; width: 100%;}
     .beyond-icon{font-size: 20px; height: auto; left: 0; line-height: 25px; position: relative; top: 0; width: 100%;}
     .beyond-row{font-size: 16px; line-height: 24px; color: var(--Gray-2);}
     
-    .beyond-text-row{max-height: 0; overflow: hidden;}
-    .beyond-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Accent); margin-bottom: 8px;}
+    .beyond-text-row{max-height: 0; overflow: hidden; font-size: 16px; line-height: 24px; color: var(--Gray-2);}
+    .beyond-text-row p{margin-bottom: 16px;}
+    .beyond-mobile-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Accent); margin-bottom: 8px; display: block;}
     .beyond-link-desc{display: none;}
     ul.beyond-links{gap: 8px; margin-bottom: 16px;}
     ul.beyond-links > li{flex: 1;}
@@ -115,6 +127,7 @@ ul.beyond-links > li::before{display: none;}
     .beyond-title span.optional-text{margin-bottom: 22px;}
     .beyond-bg .h4{font-size: 24px; line-height: 30px; letter-spacing: -0.24px; margin-bottom: 16px;}
     .beyond-guy{display: none;}
+    .beyond-helps .h5{margin-bottom: 16px;}
 
     .beyond-step1-left{top: 35px; left: -10px; max-width: 121px;}
     .beyond-step1-right{top: 25px; right: -12px; max-width: 121px;}
