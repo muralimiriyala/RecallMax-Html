@@ -84,10 +84,17 @@ li.hide-li-text > a{display: none !important;}
         z-index: 1;
     }
     .nav-products-thumb img{object-fit: contain; box-shadow: 0 9px 16px 0 rgba(98, 7, 84, 0.08);}
-    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:hover > a, ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a:hover{color: var(--Accent); background-color: var(--Eggshell); border: solid 1px rgba(164, 39, 143, 0.2);  }
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.open > a, 
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:hover > a, 
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a:hover{color: var(--Accent); background-color: var(--Eggshell); border: solid 1px rgba(164, 39, 143, 0.2);  }
+    
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a::after{opacity: 0; right: 20px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; content: ""; display: block; background-image: url('../../images/chevron.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; transition: var(--b-transition);} 
-    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:hover > a::after, ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a:hover::after{opacity: 1;}
-    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:hover > ul{opacity: 1; visibility: visible;}
+    
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.open > a::after,
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:hover > a::after, 
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a:hover::after{opacity: 1;}
+   
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.open > ul, ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:hover > ul{opacity: 1; visibility: visible;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul{opacity: 0; visibility: hidden; margin: 0; padding-left: 216px; top: 0; width: 1080px; transition: var(--b-transition); position: absolute;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li{margin: 0;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > a{width: 100%; gap: 48px; padding: 48px; display: flex; flex-wrap: wrap;}

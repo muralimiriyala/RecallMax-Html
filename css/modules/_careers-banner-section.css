@@ -4,9 +4,11 @@
 .careers-banner-text h1{color: var(--White);}
 .careers-banner-btn{gap: 12px; margin-top: 32px;}
 .careers-banner-thumb img{opacity: 0.2;}
+.no_careers_banner_image .careers-banner-text{max-width: 100%;}
 
 @media screen and (min-width: 1024px) {
     .careers-banner-main{padding: 150px 0 80px;}
+
     body.page-template-careers .careers-banner-main{padding: 150px 0 128px;}
     .careers-banner-text{max-width: 600px;}
     .careers-banner-text.no_banner_bg{max-width: 100%;}
