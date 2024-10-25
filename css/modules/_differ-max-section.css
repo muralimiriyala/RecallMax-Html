@@ -9,6 +9,7 @@
 
 @media screen and (min-width: 1024px) {
     .differ-max-main{padding: 40px 0;}
+    body.home .differ-max-main{padding: 80px 0 64px;}
     .differ-max-list{gap: 80px; margin-bottom: 40px;}
     .differ-max-list:last-child{margin-bottom: 0;}
     .differ-max-image, .differ-max-text{flex: 1;}

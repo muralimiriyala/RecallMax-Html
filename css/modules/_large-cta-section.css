@@ -16,6 +16,7 @@
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .large-cta-main{padding: 80px 0;}
+    body.home .large-cta-main{padding: 65px 0;}
     .large-cta-row{gap: 25px; margin-bottom: 24px;}
     .large-cta-row:last-child{margin-bottom: 0;}
     .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3){min-width: 728px; height: auto; padding: 0 24px;}
