@@ -21,7 +21,6 @@ const spyScroll = {
             if (section) {
                 const sectTop = section.offsetTop;
                 const sectBottom = sectTop + section.offsetHeight;
-                const sectionHeight = section.offsetHeight;
 
                 const isFullyInView = fromTop >= sectTop && fromTop < sectBottom;
                 const isPartiallyInView = sectTop < (fromTop + windowHeight) && sectBottom >= fromTop;
@@ -32,6 +31,10 @@ const spyScroll = {
                 }
             }
         });
+
+
+
+
       };
     
       window.addEventListener('load', linksReveal);
@@ -58,20 +61,22 @@ const spyScroll = {
           if (!_.$section) return;
           const stickyTop = _.$section.offsetTop - _.$header.offsetHeight;
           const scrollTop = Math.ceil(window.scrollY);
-          const stickyRadius = Number(_.$section.getAttribute('data-radius'));
-          const stickyTransition = Number(_.$section.getAttribute('data-speed'));
 
           if (scrollTop >= stickyTop) {
             _.$section.classList.add('scrolly-intro');
             _.$body.classList.add('scrolly-body');
-            _.$header.style.opacity = '0';
-            _.$header.style.transition = '';
+            _.$header.classList.add('scrolly-header');
           } else {
             _.$section.classList.remove('scrolly-intro');
             _.$body.classList.remove('scrolly-body');
-            _.$header.style.opacity = '1';
-            _.$header.style.transition = `all 0.5s ease`;
+            _.$header.classList.remove('scrolly-header');
           }
+
+                  // open header 
+        const totele = _.$section.offsetTop + _.$section.offsetHeight;
+        if(scrollTop > totele){
+            _.$header.classList.remove('scrolly-header')
+        }
       };
       window.addEventListener('scroll', stickyReveals);
   }
