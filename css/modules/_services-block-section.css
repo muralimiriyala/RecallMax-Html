@@ -2,7 +2,8 @@
 .services-block-main{gap: 32px;}
 .services-block-list{background: var(--White); border: 1px solid var(--Card-Stroke); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 23px 24px; font-size: 16px; line-height: 24px; color: var(--Gray-1);}
 .services-block-icon{margin-bottom: 16px;}
-.services-block-icon svg{width: 40px; height: 40px;}
+.services-block-icon figure, .services-block-icon svg{width: 40px; height: 40px;}
+.services-block-icon figure img{object-fit: contain;}
 .services-block-list .h5{margin-bottom: 17px;}
 .services-block-list .h5 a:hover{color: var(--Accent);}
 .services-block-list p{margin-bottom: 16px;}
