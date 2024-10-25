@@ -4,11 +4,13 @@
 .features-banner-text h1{color: var(--White);}
 .features-banner-btn{gap: 12px; margin-top: 32px;}
 .features-banner-thumb img{opacity: 0.2;}
-.features-banner-form{padding: 40px;}
+.features-banner-us{padding: 40px;}
+.features-form-bg{background: var(--Raisin-Tint);}
 
 @media screen and (min-width: 1024px) {
     .features-banner-main{padding: 150px 0 80px;}
     .features-banner-text.no_banner_bg{max-width: 100%;}
+    .features-form-submit{bottom: -30px; left: 0; right: 0; position: absolute;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .features-banner-main{padding: 145px 0 80px;}
