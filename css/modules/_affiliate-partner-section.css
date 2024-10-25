@@ -22,6 +22,8 @@ ul.affiliate-partner-category > li:last-child{padding-right: 0; border-right: 0;
 .affiliate-partner-btn{width: fit-content;}
 
 .affiliate-partner-full .affiliate-partner-lt, .affiliate-partner-full .affiliate-partner-rt{flex: 1;}
+.affiliate-partner-full .affiliate-partner-lt{border-radius: 24px;}
+
 
 @media screen and (min-width: 1024px) {
     .affiliate-partner-main{padding: 80px 0;}

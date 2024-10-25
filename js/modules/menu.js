@@ -15,20 +15,26 @@ const Menu = {
   ),
   $whiteheader: document.querySelector('body.page-template-service-detail, body.single-post, body.page-template-team'),
   $site: document.querySelector('.site-main-cover'),
+  $mainproducts: document.querySelector('ul.main_menu > li.nav-products > a'),
   $products: document.querySelectorAll('ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a'),
   init() {
     const _ = this;
     if (!_.$header) return false;
 
-
-    _.$products[0].parentElement.classList.add('open');
+    _.$mainproducts.addEventListener('mouseover', function(e){
+      _.$products[0].parentElement.classList.add('open');
+    })
+    
     _.$products.forEach((ele)=>{
       ele.addEventListener("mouseover", function(e){
         _.$products.forEach((ele)=>{
           ele.parentElement.classList.remove("open");
         })
-        e.target.parentElement.classList.toggle("open");
+        e.target.parentElement.classList.add("open");
       })
+      ele.addEventListener("mouseleave", function(e){
+        e.target.parentElement.classList.remove("open");
+      });
     })
 
     let userScroll = () => {
