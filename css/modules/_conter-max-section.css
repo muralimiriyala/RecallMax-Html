@@ -59,7 +59,7 @@ svg.round-default-svg circle#round-bar-glow-4{
     .conter-max-main{padding: 40px 0; gap: 56px;}
     .conter-max-total{font-size: 96px; line-height: 96px;}
     .conter-max-head h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
-    .conter-max-row{gap: 32px;}
+    .conter-max-row{gap: 32px; justify-content: center;}
     .conter-max-list{flex: 0 0 calc(50% - 17px); text-align: center;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){

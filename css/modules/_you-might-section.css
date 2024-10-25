@@ -53,7 +53,7 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     body.single-post .you-might-main, body.single-post .you-might-main, body.page-template-services-overview .you-might-main{margin: 50px 0 20px;}
-    .you-might-main{gap: 24px; padding: 23px 24px; margin: 50px 0 40px; border-radius: 24px;}
+    .you-might-main{gap: 24px; padding: 23px 24px; margin: 50px 0; border-radius: 24px;}
     .you-might-rows{display: block;}
     .you-might-list{width: 100%; margin-bottom: 24px;}
     .you-might-list:last-child{margin-bottom: 0;}

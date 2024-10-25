@@ -7,6 +7,9 @@
     .our-patients-main{padding: 80px 0;}
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .our-patients-main{padding: 40px 0;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
     .our-patients-main{padding: 40px 0;}
     .our-patients-head{margin-bottom: 40px;}

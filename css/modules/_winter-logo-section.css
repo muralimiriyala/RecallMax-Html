@@ -12,7 +12,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .winter-logo-main{padding: 20px 0 40px;}
-    .winter-logo{gap: 24px; padding: 0 24px;}
-    .winter-thumb{flex: 0 0 calc(25% - 18px);}
+    .winter-logo{gap: 24px; padding: 0;}
+    .winter-thumb{flex: 0 0 calc(25% - 23.5px);}
     .winter-logo::before, .winter-logo::after{display: none;}
 }

@@ -12,6 +12,7 @@
 .ftr-compare-text span{margin-bottom: 16px; font-size: 14px; line-height: 14px; font-weight: 800; color: var(--Gray-3); display: block;}
 .ftr-compare-text span.withmax{color: var(--Green);}
 .ftr-compare-icon svg{width: 48px; height: 48px;}
+.ftr-compare-subtitle{gap: 8px;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 768px){
@@ -26,9 +27,23 @@
     .ftr-compare-icon svg, .ftr-compare-icon figure{max-width: 44px; margin: auto; display: block;}
     .ftr-compare-icon svg{max-width: 44px; margin: auto; display: block;}
 }
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .ftr-compare-main{padding: 40px 0;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
+    .ftr-compare-main{padding: 40px 0;}
+    .ftr-compare-head{margin-bottom: 40px;}
+    .ftr-compare-head span.optional-text{margin-bottom: 22px; letter-spacing: 0.7px;}
+    .ftr-compare-head .h3{padding: 0 13px;}
     .ftr-compare-rows{gap: 20px; flex-direction: column;}
     .ftr-compare-row{gap: 12px;}
     .ftr-compare-top{display: none;}
     .ftr-compare-center{gap: 16px;}
+    .ftr-compare-icon{flex: 0 0 48px;}
+    .ftr-compare-center span{font-size: 24px; letter-spacing: -.24px; line-height: 30px; flex: 1;}
+    .ftr-compare-text{padding: 14px;}
+    .ftr-compare-subtitle{margin-bottom: 6px;}
+    .ftr-compare-text span{margin-bottom: 0;}
+    .ftr-compare-subtitle-icon svg{max-width: 24px; display: block;}
+    .ftr-compare-subtitle-icon img{max-width: 24px; object-fit: contain;}
 }

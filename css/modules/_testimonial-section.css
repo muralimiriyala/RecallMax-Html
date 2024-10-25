@@ -30,8 +30,7 @@
 }
 @media screen and (min-width: 1024px) {
     .testimonial-main{padding: 48px; justify-content: space-between; align-items: center; margin: 90px 0;}
-    body.page-template-about .testimonial-main{margin-bottom: 24px;}
-    body.home .testimonial-main{margin-bottom: 24px;}
+    body.page-template-about .testimonial-main, body.home .testimonial-main{margin-bottom: 24px;}
     .testimonial-title{order: 1; flex: 1;}
     .testimonial-lists{flex: 100%; order: 3; gap: 20px;}
     .testimonial-item{gap: 34px; flex: 0 0 168px;}
@@ -71,7 +70,7 @@
     .open .testimonial-quote-icon{display: block;}
 }
 @media screen and (max-width: 1023px)  and (min-width: 768px){
-    body.page-template-about .testimonial-main{margin-bottom: 24px;}
+    body.page-template-about .testimonial-main, body.home .testimonial-main{margin-bottom: 24px;}
     .testimonial-main{margin: 50px 0; padding: 24px; border-radius: 32px;}
     .testimonial-title{margin-bottom: 22px; text-align: center; width: 100%;}
     .testimonial-title span.optional-text{margin-bottom: 4px;}
@@ -80,7 +79,7 @@
 }
 @media screen and (max-width: 767px)  and (min-width: 200px){
     .testimonial-main{margin: 50px 0; padding: 21px 19px; border-radius: 24px;}
-    body.page-template-about .testimonial-main{margin-bottom: 12px;}
+    body.page-template-about .testimonial-main, body.home .testimonial-main{margin-bottom: 12px;}
     .testimonial-title{margin-bottom: 20px; text-align: center; width: 100%;}
     .testimonial-title span.optional-text{letter-spacing: 1.12px;}
     .testimonial-title h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
