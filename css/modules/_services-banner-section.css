@@ -10,13 +10,13 @@
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .services-banner-main{padding: 80px 0 223px;}
+    .services-banner-main{padding: 100px 0 223px;}
     .services-banner-title span.optional-text{margin-bottom: 8px;}
     .services-banner-title h1 > span::before{display: none;}
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .services-banner-main{padding: 128px 0 144px;}
+    .services-banner-main{padding: 128px 0 119px;}
     .services-banner-title span.optional-text{margin-bottom: 8px; font-size: 14px; letter-spacing: 1.12px; line-height: 14px;}
     .services-banner-title h1{letter-spacing: -0.4px;}
     .services-banner-title h1 > span, [data-animation].underline.services h1 > span{font-style: normal;}

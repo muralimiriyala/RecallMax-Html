@@ -40,7 +40,7 @@
     .services-block-title{gap: 16px; margin-bottom: 16px; align-items: center;}
     .services-block-icon{flex: 0 0 40px; margin-bottom: 0;}
     .services-block-list{width: 100%;}
-    .services-block-list .h5{margin-bottom: 0; flex: 0 0 calc(100% - 56px); font-size: 20px; line-height: 25px; letter-spacing: -0.2px; padding-right: 70px;}
+    .services-block-list .h5{margin-bottom: 0; flex: 0 0 calc(100% - 56px); font-size: 20px; line-height: 25px; letter-spacing: -0.2px;}
     .services-block-list p{margin-bottom: 0;}
 }
 
