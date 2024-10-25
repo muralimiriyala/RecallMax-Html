@@ -49,6 +49,7 @@ const beyond = {
     },
     init(){
         const _=this;
+        if(!_.$t) return;
         _.$t.classList.add("active");
         _.$firstp.style.maxHeight = `${_.$firstp.scrollHeight}px`;
 
