@@ -24,7 +24,10 @@ const Menu = {
     _.$mainproducts.addEventListener('mouseover', function(e){
       _.$products[0].parentElement.classList.add('open');
     })
-    
+    _.$mainproducts.addEventListener('mouseleave', function(e){
+      _.$products[0].parentElement.classList.remove('open');
+    })
+  
     _.$products.forEach((ele)=>{
       ele.addEventListener("mouseover", function(e){
         _.$products.forEach((ele)=>{
