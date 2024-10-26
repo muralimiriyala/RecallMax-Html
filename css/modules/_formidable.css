@@ -201,6 +201,7 @@ body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertica
 
 body.page-template-contact .frm_forms .frm_filed_wrapper{gap: 16px; justify-content: space-between;}
 body.page-template-contact .frm_forms .frm_filed_wrapper .frm_form_field{margin: 0;}
+body.page-template-contact .frm_forms .frm_filed_wrapper .frm_form_field label{cursor: auto !important;}
 body.page-template-contact .frm_forms .frm_filed_wrapper .plane-text{flex: 1; font-size: 16px; line-height: 24px; opacity: 0.75;}
 body.page-template-contact .contact-form-form .frm_forms .frm_filed_wrapper .vertical_radio{gap: 0;}
 body.page-template-contact .contact-form-form .frm_forms .frm_filed_wrapper .vertical_radio .frm_radio label{padding: 0; color: rgba(48, 33, 53, 0.75);}
@@ -213,7 +214,7 @@ body.page-template-contact .contact-form-form .frm_forms .frm_form_fields .frm_f
 
 body .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
 
-body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style .frm_message{text-align: left; font-weight: 700;}/*-- left align resource page ---*/
+body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style .frm_message{text-align: left; font-weight: 700; margin: 0;}/*-- left align resource page ---*/
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

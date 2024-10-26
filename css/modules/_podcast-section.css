@@ -1,6 +1,6 @@
 
 .podcast-title{flex: 100%;}
-.podcast-title span.optional-text{margin-bottom: 6px;}
+.podcast-title span.optional-text{font-size: 12px; letter-spacing: 1.2px; line-height: 12px; margin-bottom: 6px;}
 .podcast-title .h4{margin: 0;}
 .podcast-rows{flex: 100%;}
 .podcast-list{background-color: var(--White); padding: 12px; gap: 18px;}
@@ -11,7 +11,8 @@
 .podcast-name span{font-size: 14px; line-height: 21px; display: block; color: rgba(48, 33, 53, 0.5);}
 .podcast-name .h6{font-size: 16px; line-height: 24px; letter-spacing: normal; margin: -2px 0 0;}
 
-body.single-post .resource-article ul:not(.resource-article-details) > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 3px; width: 20px; }
+body.single-post .resource-article ul:not(.resource-article-details){margin: 0 0 26px 32px;}
+body.single-post .resource-article ul:not(.resource-article-details) > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -32px; position: absolute; top: 3px; width: 20px; }
 body.single-post .resource-article .divider-line{margin: 56px 0;}
 
 @media screen and (min-width: 1024px){

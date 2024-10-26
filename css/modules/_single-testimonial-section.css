@@ -3,7 +3,10 @@
 .single-testimonial-thumb img{border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(18,39,80,.2) 0px 0px 0px 4px;}
 .single-testimonial-quote{top: 45px; right: -6px; width: 40px; height: 33px;}
 .single-testimonial-quote svg{width: 40px; height: 33px;}
+.no-author-img{position: relative;}
+.no-author-img::before{content: ""; position: absolute; width: 40px; height: 33px; top: 45px; left: 0; background-image: url("../../images/double-quote.svg");}
 .single-testimonial-text{font-size: 28px; line-height: 42px; color: var(--White);}
+
 .single-testimonial-text p{margin-bottom: 0;}
 .single-author-details{margin-top: 20px;}
 .single-author-details span:last-child{font-size: 12px; font-weight: 800; line-height: 15px; color: var(--White); opacity: 0.5; margin-top: 4px; display: block;}

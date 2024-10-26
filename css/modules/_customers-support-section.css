@@ -3,6 +3,8 @@
 .customer-support-list h5{margin-bottom: 17px; color: var(--Coal);}
 .customer-support-list p:not(:last-child){margin-bottom: 16px;}
 .customer-support-icon{margin-bottom: 16px;}
+.customer-support-icon figure img{max-width: 38px;}
+.customer-support-icon svg{width: 38px; height: 38px;}
 
 ul.customer-support-details{margin: 0; gap: 16px; flex-direction: column;}
 ul.customer-support-details > li{margin: 0;}

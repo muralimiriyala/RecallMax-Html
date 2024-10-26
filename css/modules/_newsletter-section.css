@@ -17,7 +17,8 @@ ul.newsletter-category > li:first-child{padding-left: 0;}
 ul.newsletter-category > li:last-child{padding-right: 0; border-right: 0;}
 .newsletter-btn{width: fit-content;}
 
-.newsletter-full .newsletter-lt, .newsletter-full .newsletter-rt{flex: 1;}
+.newsletter-full .newsletter-lt, .newsletter-full .newsletter-rt{flex: 1;} 
+.newsletter-form-submitted{display: flex; align-items: center; justify-content: center;}
 
 @media screen and (min-width: 1024px) {
     body.single-post .newsletter-main, body.single-post .newsletter-main, body.page-template-services-overview .newsletter-main{padding: 20px 0 80px;}
