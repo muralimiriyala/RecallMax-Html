@@ -37,9 +37,7 @@ const testimonialSlider = {
         };
         _.$ele.forEach((ele)=>{
             ele.addEventListener('click', slider)
-        })
-
+        });
     }
 };
-
 export default testimonialSlider;
