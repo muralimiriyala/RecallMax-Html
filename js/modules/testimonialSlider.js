@@ -9,6 +9,7 @@ const testimonialSlider = {
         const slides = Array.from(_.$ele);
         const mslides = Array.from(_.$mele);
         slides.length > 0 ? slides.at(0).classList.add('slide-open') : '';
+        mslides.length > 0 ? mslides.at(0).classList.add('slide-open') : '';
 
         const slider = function (e) {
             e.preventDefault();
@@ -22,14 +23,15 @@ const testimonialSlider = {
             });
 
             // Activate the clicked slide
-            console.log(target)
             target.classList.add('slide-open');
             
             mslides.length > 0 && mslides.forEach((slide) => {
+                slide.classList.remove('slide-open');
                 $(slide).hide();
             });
             const attr = target.getAttribute('data-slide');
             const txt = document.querySelector('.testimonial-mobile[data-text="'+ attr +'"]');
+            txt.classList.add('slide-open')
             $(txt).fadeIn('800');
        
         };
