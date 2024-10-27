@@ -8,25 +8,23 @@ const testimonialSlider = {
 
         const slides = Array.from(_.$ele);
         const mslides = Array.from(_.$mele);
-        slides.length > 0 ? slides.at(0).classList.add('open') : '';
+        slides.length > 0 ? slides.at(0).classList.add('slide-open') : '';
 
         const slider = function (e) {
             e.preventDefault();
             const target = e.currentTarget;
 
-            slides.length > 0 ? slides.at(0).classList.add('open') : '';
+            slides.length > 0 ? slides.at(0).classList.add('slide-open') : '';
     
             // Reset all slides
             slides.length > 0 && slides.forEach((slide) => {
-                slide.classList.remove('open');
+                slide.classList.remove('slide-open');
             });
 
             // Activate the clicked slide
             console.log(target)
-            target.classList.add('open');
-
-   
-
+            target.classList.add('slide-open');
+            
             mslides.length > 0 && mslides.forEach((slide) => {
                 $(slide).hide();
             });
