@@ -1,5 +1,5 @@
 .partners-main{padding: 32px 0 40px;}
-.partners-row{justify-content: center;}
+/* .partners-row{justify-content: center;} */
 
 .partners-tab-links-d{width: fit-content; padding-right: 30px; color: var(--Raisin-Black); cursor: pointer; font-size: 24px; font-weight: 800; line-height: 30px; letter-spacing: -0.24px;}
 .partners-tab-links-d.open span.partners-tab-link-text{color: var(--Text)}
