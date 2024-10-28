@@ -32,8 +32,9 @@ ul.tab-links > li > a.clear:hover svg path{fill: var(--Accent-3);}
 
 .tab-arrow{flex: 0 0 20px; transform: translate(0,0); transition: all 0.5s ease;  color: var(--Orange); cursor: pointer; z-index: -9999} 
 .tab-image{height: 100%;}
-.tab-text{min-height: 98px; cursor: pointer; transition: all 0.5s ease; background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(4px); color: var(--White); bottom: 4px; width: calc(100% - 8px); left: 4px; padding: 24px; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;}
+.tab-text{min-height: 98px; transition: all 0.5s ease; background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(4px); color: var(--White); bottom: 4px; width: calc(100% - 8px); left: 4px; padding: 24px; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;}
 .tab-text::-webkit-scrollbar { display: none; }
+.tab-slide-up{cursor: pointer;}
   
 .tab-text.tab-open{height: calc(100% - 8px); bottom: 4px; cursor: inherit; background: var(--Raisin-Tint-2); backdrop-filter: blur(4px);}
 .tab-text.tab-open .tab-title h2, .tab-text.tab-open .tab-title h2 a{color: var(--White);}
