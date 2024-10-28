@@ -13,7 +13,7 @@
 .modal-close:hover svg path{fill: #fff;}
 body .modal-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 14px 24px 15px; width: 100%; font-size: 24px; line-height: 24px;}
 body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{display: block; width: 100%;}
-body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding: 0; width: 100%; display: block; text-align: center;}
+body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding: 0; width: 100%; display: block; text-align: center; cursor: auto;}
 body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label input{display: none !important;}
 body .modal-form .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
 
@@ -42,7 +42,7 @@ body .modal-form .frm_style_formidable-style.with_frm_style .frm_error_style{dis
 @media screen and (max-width: 767px) and (min-width: 200px){
     .modal-form{padding-top: 32px;}
     .modal-bar{display: none;}
-    .modal-container{padding: 40px 20px 20px; max-width: 100%; height: 100%; margin: 0; border-radius: 0;}
+    .modal-container{padding: 40px 20px 20px; max-width: 100%; height: 100%; margin: 0; border-radius: 0; min-width: 100%;}
     .modal-head{font-size: 18px; line-height: 27px;}
     .modal-head .h2{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .modal-center{height: auto;}
