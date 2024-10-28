@@ -23,7 +23,7 @@
 .products-form-field > span{font-size: 20px; line-height: 20px; color: var(--Indigo); font-weight: 800;}
 .products-radio-main{gap: 24px; width: fit-content;}
 .products-radio-btn label{position: relative; cursor: pointer; padding-left: 40px;}
-.products-radio-btn input{width: 32px; height: 32px; background: var(--White); border-radius: 50%; margin: 0; padding: 0; margin: 0; position: absolute; top: 0; left: 0; }
+.products-radio-btn input{width: 32px; height: 32px; background: var(--White); border-radius: 50%; margin: 0; padding: 0; margin: 0; position: absolute; top: 0; left: 0; cursor: pointer;}
 
 
 @media screen and (min-width: 1024px) {
