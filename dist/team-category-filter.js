@@ -113,8 +113,7 @@ jQuery(document).ready(function ($) {
         window.addEventListener('orientationchange', updateHeights);
 
         // Function to handle tab links
-        function tabFun(e) {
-            e.preventDefault();
+        function tabFun() {
             let tabattr = this.getAttribute('data-name');
             const tabRows = document.querySelectorAll('.data-tab-row');
 
