@@ -4,7 +4,7 @@
 .single-testimonial-quote{top: 45px; right: -6px; width: 40px; height: 33px;}
 .single-testimonial-quote svg{width: 40px; height: 33px;}
 .no-author-img{position: relative;}
-.no-author-img::before{content: ""; position: absolute; width: 40px; height: 33px; top: 45px; left: 0; background-image: url("../../images/double-quote.svg");}
+.no-author-img::before{content: ""; position: absolute; width: 27px; height: 22px; top: 45px; left: 8px; top: 40px; background-image: url("../../images/double-quote.svg"); background-size: cover; transform: rotate(180deg) scaleX(-1);}
 .single-testimonial-text{font-size: 28px; line-height: 42px; color: var(--White);}
 
 .single-testimonial-text p{margin-bottom: 0;}
