@@ -5,7 +5,6 @@ const testimonialSlider = {
     $mele: document.querySelectorAll('.testimonial-mobile'),
     init() {
         const _ = this;
-
         const slides = Array.from(_.$ele);
         const mslides = Array.from(_.$mele);
         slides.length > 0 ? slides.at(0).classList.add('slide-open') : '';
@@ -14,7 +13,6 @@ const testimonialSlider = {
         const slider = function (e) {
             e.preventDefault();
             const target = e.currentTarget;
-
             slides.length > 0 ? slides.at(0).classList.add('slide-open') : '';
     
             // Reset all slides
