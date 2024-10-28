@@ -11,7 +11,7 @@
 @media screen and (min-width: 1024px) {
     .feature-detail-banner-main{padding: 150px 0 80px;}
     .feature-detail-banner-text{max-width: 600px;}
-    .feature-detail-banner-text.no_banner_bg{max-width: 100%;}
+    .no_banner_bg .feature-detail-banner-text{max-width: 100%;}
     .feature-detail-banner-bg{height: 567px; right: -156px; top: 127px; max-width: 917px;} 
 }
 @media screen and (max-width: 1439px) and (min-width: 1280px) {

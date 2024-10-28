@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
 
     // Function to initialize tab functionality (reusable after AJAX)
     function initializeTabFunctionality() {
-        const tabTexts = document.querySelectorAll('.tab-text');
+        const tabTexts = document.querySelectorAll('.tab-slide-up');
 
         // Update heights for all tabText elements
         function updateHeights() {
@@ -52,7 +52,7 @@ jQuery(document).ready(function ($) {
                     e.stopPropagation();
 
                     if (tabText.dataset.tab !== 'true') {
-                        document.querySelectorAll('.tab-text').forEach(function (tabel) {
+                        document.querySelectorAll('.tab-slide-up').forEach(function (tabel) {
                             if (tabText !== tabel) {
                                 tabel.dataset.tab = 'false';
                                 tabel.classList.remove('tab-open');
@@ -95,8 +95,8 @@ jQuery(document).ready(function ($) {
 
         // Close all tabs if clicked outside of tabText elements
         document.addEventListener('click', function (e) {
-            if (!e.target.closest('.tab-text')) {
-                document.querySelectorAll('.tab-text').forEach(function (tabel) {
+            if (!e.target.closest('.tab-slide-up')) {
+                document.querySelectorAll('.tab-slide-up').forEach(function (tabel) {
                     tabel.dataset.tab = 'false';
                     tabel.classList.remove('tab-open');
                     const desc = tabel.querySelector('.tab-desc');
