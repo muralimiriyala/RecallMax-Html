@@ -28,7 +28,8 @@ import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
 import spyScroll from './modules/spyScroll';
 
-(function() {
+// (function() {  
+document.addEventListener('DOMContentLoaded', function(){
   customGsap.init();
   counter.init();
   progress.init();
@@ -58,8 +59,8 @@ import spyScroll from './modules/spyScroll';
 
   beyond.init();
   spyScroll.init();
-})();
-
+// })();
+});
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
   scrolled = window.scrollY;
