@@ -10,7 +10,6 @@ const svgprogress = {
         // let end= 337234349;
         // let count=[];
         const countermain = () =>{
-            console.log()
             start++;
             const localvalue = localStorage.setItem('name', start);
             _.$max.innerHTML = start.toLocaleString();
