@@ -214,7 +214,7 @@ body.page-template-contact .contact-form-form .frm_forms .frm_form_fields .frm_f
 
 body .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
 
-body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style .frm_message{text-align: left; font-weight: 700; margin: 0;}/*-- left align resource page ---*/
+body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style .frm_message{text-align: center; font-weight: 700; margin: 0;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -350,6 +350,8 @@ body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style 
 
     body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 20px;}
     body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0; width: 100%;}
+
+    body .frm_forms form .frm_required_field div.frm_error{bottom: -15px;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container, body .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{flex-direction: column; margin-bottom: 8px;}

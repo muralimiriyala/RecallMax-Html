@@ -274,7 +274,7 @@ header.scrolly-header{transform: translateY(-100%);}
     .h-mob-overlay.open { visibility:visible; opacity:1 }
 
    .site-white-top{padding-top: 64px;}
-   .site-black-top{padding-top: 72px;}
+   .site-black-top{padding-top: 65px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .header_right{left: -20px;}

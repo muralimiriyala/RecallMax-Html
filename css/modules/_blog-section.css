@@ -8,7 +8,7 @@ ul.blog-categories > li:first-child::before{display: none;}
 ul.blog-categories > li{font-size: 12px; line-height: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); position: relative; padding: 2px 0; display: flex;}
 ul.blog-categories > li > a:hover{color: var(--Raisin-Black);}
 
-.blog-text{padding: 29px 16px 29px;}
+.blog-text{padding: 24px 16px;}
 .blog-text h2:last-child{margin-bottom: 0;}
 .blog-text h2 a{color: var(--Raisin-Black);}
 .blog-text h2 a:hover{color: var(--Accent);}
@@ -17,7 +17,8 @@ h2.no_result_found{margin: 2rem 0 0; width: 100%; text-align: center;}
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .blog-main{padding: 32px 0 40px;}
-    .blog-rows{gap: 40px; padding: 40px 0 64px;}
+    .blog-rows{gap: 40px; padding: 40px 0 0;}
+    .blog-rows:last-child{padding-bottom: 64px;}
     .blog-list{flex: 0 0 calc(33.33333333% - 27px);}
 }
 @media screen and (max-width: 1439px) and (min-width: 1280px){
