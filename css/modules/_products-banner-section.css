@@ -7,7 +7,18 @@
 .products-banner-text span.optional-text{margin-bottom: 6px;}
 .products-banner-btn{gap: 12px; margin-top: 32px;}
 .products-banner-thumb img{opacity: 0.2;}
-.products-banner-form{padding: 40px;}
+
+.products-banner-us{padding: 40px 40px 64px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); margin: 63px 0 30px;}
+.products-form-bg span.optional-text{font-size: 18px; letter-spacing: 1.8px; line-height: 18px;}
+.products-form-text{text-align: left; font-size: 20px; line-height: 20px; color: var(--Indigo); margin-bottom: 16px;}
+.products-form-fields{gap: 24px; text-align: left;}
+.products-form-field{flex: 100%; background: var(--Raisin-Tint); padding: 6px 24px; border-radius: 16px; min-height: 64px;}
+.products-form-field label{padding: 0; position: relative; font-size: 20px; line-height: 32px; color: var(--Indigo); cursor: pointer; gap: 12px;}
+.products-form-field input{width: 32px; height: 32px; background: var(--White); border-radius: 50%; margin: 0; padding: 0; margin: 0; position: relative; top: 0; left: 0; }
+.products-form-field:first-child input{border-radius: 8px;}
+.products-form-field input[type="radio"]:checked{background-color: var(--Accent); content: ""; background-image: url("../../images/check-solid.svg"); color: var(--Accent); background-size: 14px; background-position: center; background-repeat: no-repeat; transition: none; }
+.products-form-dropdown .selectBox-dropdown{background: var(--White);}
+.products-radio-main{gap: 24px;}
 
 
 @media screen and (min-width: 1024px) {
