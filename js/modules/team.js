@@ -2,7 +2,7 @@
 
 const teamPage = {
   init() {
-    const tabTexts = document.querySelectorAll('.tab-text');
+    const tabTexts = document.querySelectorAll('.tab-slide-up');
 
     const updateHeights = () => {
       tabTexts.forEach(function (tabText) {
@@ -29,7 +29,7 @@ const teamPage = {
           e.stopPropagation();
 
           if (tabText.dataset.tab !== 'true') {
-            document.querySelectorAll('.tab-text').forEach((tabel) => {
+            document.querySelectorAll('.tab-slide-up').forEach((tabel) => {
               if (tabText !== tabel) {
                 tabel.dataset.tab = 'false';
                 tabel.classList.remove('tab-open');
@@ -69,8 +69,8 @@ const teamPage = {
     });
 
     document.addEventListener('click', function (e) {
-      if (!e.target.closest('.tab-text')) {
-        document.querySelectorAll('.tab-text').forEach((tabel) => {
+      if (!e.target.closest('.tab-slide-up')) {
+        document.querySelectorAll('.tab-slide-up').forEach((tabel) => {
           tabel.dataset.tab = 'false';
           tabel.classList.remove('tab-open');
           const desc = tabel.querySelector('.tab-desc');
