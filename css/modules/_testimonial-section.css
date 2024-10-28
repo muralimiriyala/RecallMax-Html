@@ -4,12 +4,11 @@
 .testimonial-title span.optional-text{margin-bottom: 8px;}
 .testimonial-title h3{margin-bottom: 0;}
 
-.testimonial-item{cursor: pointer; border-radius: 24px; background: rgba(18, 39, 80, 0.20); padding: 4px;}
+.testimonial-item{cursor: pointer;}
 .testimonial-thumb img{border-radius: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.16),0 0 0 4px rgba(18, 39, 80, 0.20);}
 .testimonial-quote-icon{width: 40px; right: -10px; top: 32px; display: none;}
 .testimonial-content{font-size: 20px; line-height: 25px; color: var(--White); display: none;}
 .testimonial-content span{font-size: 12px; line-height: 15px; opacity: 0.5; display: block;}
-
 
 .testimonial-review{border-radius: 40px; border: 2px solid var(--Orange); background: var(--White, #FFF); padding: 8px 8px 8px 20px; min-width: 410px; width: fit-content; align-items: center;}
 .rating{flex: 0 0 127px; gap: 8px;}
@@ -22,44 +21,50 @@
 .stat-testimonial-right .testimonial-review{margin-bottom: 0;}
 
 /*-- media css starts here --*/
-@media screen and (min-width: 1280px) {
-    .open.testimonial-item{background: linear-gradient(180deg, rgba(18, 39, 80, 0.19) 0%, rgba(18, 39, 80, 0.75) 100%), var(--Accent);}
-    .open .testimonial-quote-icon{display: block;}
-    .open .testimonial-content{display: block;}
+@media screen and (min-width: 1440px){
+    .testimonial-list{flex: 1;}
+    .slide-open.testimonial-list{flex: 0 0 620px; pointer-events: none;}
+    .testimonial-content {min-width: 456px; max-width: 456px;}
+    .testimonial-thumb{width: 160px;}
+}
+@media screen and (min-width: 1360px) {
+    .testimonial-list{transition: all 0.5s ease;}
+    .slide-open .testimonial-item{background: linear-gradient(180deg, rgba(18, 39, 80, 0.19) 0%, rgba(18, 39, 80, 0.75) 100%), var(--Accent);}
+    .slide-open .testimonial-quote-icon{display: block;}
+    .slide-open .testimonial-content{display: block;}
     .testimonial-mobiles{display: none;}
+    .testimonial-content {padding: 32px 32px 32px 34px; top: 0; left: 164px; position: absolute;}
+    .testimonial-item{padding: 4px;}
 }
 @media screen and (min-width: 1024px) {
     .testimonial-main{padding: 48px; justify-content: space-between; align-items: center; margin: 90px 0;}
     body.page-template-about .testimonial-main, body.home .testimonial-main{margin-bottom: 24px;}
     .testimonial-title{order: 1; flex: 1;}
-    .testimonial-lists{flex: 100%; order: 3; gap: 20px;}
-    .testimonial-item{gap: 34px; flex: 0 0 168px;}
-    .testimonial-thumb{flex: 0 0 160px;}
-    .testimonial-content{flex: 0 0 calc(100% - 194px); padding: 32px 32px 32px 0;}
+    .testimonial-middle{flex: 100%; order: 3;}
+    .testimonial-lists{gap: 20px;}
     .testimonial-review{order: 2; margin-bottom: 40px; max-width: 410px;}
 }
-@media screen and (min-width: 1440px){
-    .open.testimonial-item{flex: 0 0 620px;}
-}
-@media screen and (max-width: 1439px)  and (min-width: 1280px){
+@media screen and (max-width: 1439px) and (min-width: 1360px){
     .testimonial-main{padding: 40px;}
-    .open.testimonial-item{flex: 0 0 556px;}
+    .slide-open.testimonial-list{flex: 0 0 620px;}
+    .testimonial-list{flex: 1;}
+    .testimonial-thumb{width: 160px;}
     .testimonial-thumb img{height: 424px;}
+    .testimonial-content {min-width: 456px; max-width: 456px;}
 }
-@media screen and (max-width: 1279px)  and (min-width: 1024px){
+@media screen and (max-width: 1359px) and (min-width: 200px){
     .testimonial-main {padding: 30px 32px;}
     .testimonial-title{margin-bottom: 30px;}
     .testimonial-title h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .testimonial-review{margin-bottom: 30px;}
     .testimonial-quote-icon{display: none; right: auto; top: auto; width: 40px; bottom: -24px; left: 50%; transform: translateX(-50%);}
-    .open .testimonial-quote-icon{display: block;}
-}
-@media screen and (max-width: 1279px) and (min-width: 200px){
-    .testimonial-item{transition: all 0.6s ease; flex: 0 0 25%; padding: 8px 8px 9px; background: transparent;}
-    .testimonial-item.open{pointer-events: none; border-radius: 28px 28px 0px 0px; background: #882883;}
+    .slide-open .testimonial-quote-icon{display: block;}
+
+    .testimonial-list{transition: all 0.6s ease; flex: 0 0 25%; padding: 8px 8px 9px; background: transparent;}
+    .testimonial-list.slide-open{pointer-events: none; border-radius: 28px 28px 0px 0px; background: #882883;}
     .testimonial-mobiles{top: -1px; position: relative;}
+    .testimonial-mobile.slide-open{display: block;}
     .testimonial-mobile{padding: 24px; display: none; background: linear-gradient(180deg, rgba(18, 39, 80, 0.19) 0%, rgba(18, 39, 80, 0.75) 100%), var(--Accent);}
-    .testimonial-mobile.open{display: block;}
     .testimonial-mobile:first-child{border-top-left-radius: 0;}
     .testimonial-mobile:last-child{border-top-right-radius: 0;}
     .testimonial-lists{gap: 0;}
@@ -67,9 +72,9 @@
     .testimonial-txt{font-size: 20px; line-height: 25px; color: var(--White);}
     .testimonial-txt > span{font-size: 12px; line-height: 15px; margin-top: 40px; display: block; color: var(--White-50);}
     .testimonial-quote-icon{display: none; right: auto; top: auto; width: 40px; bottom: -24px; left: 50%; transform: translateX(-50%);}
-    .open .testimonial-quote-icon{display: block;}
+    .slide-open .testimonial-quote-icon{display: block;}
 }
-@media screen and (max-width: 1023px)  and (min-width: 768px){
+@media screen and (max-width: 1023px) and (min-width: 768px){
     body.page-template-about .testimonial-main, body.home .testimonial-main{margin-bottom: 24px;}
     .testimonial-main{margin: 50px 0; padding: 24px; border-radius: 32px;}
     .testimonial-title{margin-bottom: 22px; text-align: center; width: 100%;}
@@ -77,7 +82,7 @@
     .testimonial-title h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .testimonial-review {margin: 24px auto 0;}
 }
-@media screen and (max-width: 767px)  and (min-width: 200px){
+@media screen and (max-width: 767px) and (min-width: 200px){
     .testimonial-main{margin: 50px 0; padding: 21px 19px; border-radius: 24px;}
     body.page-template-about .testimonial-main, body.home .testimonial-main{margin-bottom: 12px;}
     .testimonial-title{margin-bottom: 20px; text-align: center; width: 100%;}

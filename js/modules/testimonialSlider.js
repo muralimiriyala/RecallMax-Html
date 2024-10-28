@@ -1,101 +1,43 @@
 import $ from 'jquery';
 
 const testimonialSlider = {
-    $e: document.querySelectorAll('.testimonial-item'),
-    $m: document.querySelectorAll('.testimonial-mobile'),
+    $ele: document.querySelectorAll('.testimonial-list'),
+    $mele: document.querySelectorAll('.testimonial-mobile'),
     init() {
-        const $t = this;
-        const media = window.matchMedia('(min-width: 1280px)');
-  
-        const slides = Array.from($t.$e);
-        slides.length > 0 ? slides.at(0).classList.add('open') : '';
-  
+        const _ = this;
 
-        const mslides = Array.from($t.$m);
-        mslides.length > 0 ? mslides.at(0).classList.add('open') : '';
-
-        const userWidth = 168;
-        const currentWidth = 620;
+        const slides = Array.from(_.$ele);
+        const mslides = Array.from(_.$mele);
+        slides.length > 0 ? slides.at(0).classList.add('slide-open') : '';
+        mslides.length > 0 ? mslides.at(0).classList.add('slide-open') : '';
 
         const slider = function (e) {
             e.preventDefault();
             const target = e.currentTarget;
 
-            slides.length > 0 ? slides.at(0).classList.add('open') : '';
+            slides.length > 0 ? slides.at(0).classList.add('slide-open') : '';
     
             // Reset all slides
             slides.length > 0 && slides.forEach((slide) => {
-                slide.classList.remove('open');
-                slide.style.flex = `0 0 168px`;
+                slide.classList.remove('slide-open');
             });
 
             // Activate the clicked slide
-            target.classList.add('open');
-            target.style.flex = `0 0 ${currentWidth}px`;
-        };
-
-        const mobileSlider = function (e) {
-            if(!e){
-                return false;
-            }
-            e.preventDefault();
-
-            const slides = Array.from($t.$e);
-            slides.length > 0 ? slides.at(0).classList.add('open') : '';
-
+            target.classList.add('slide-open');
             
-            slides.forEach((slide) => {
-                slide.classList.remove('open');
-                slide.removeAttribute('style')
-            });
-
-
-            if(e.currentTarget){
-                e.currentTarget.classList.add('open')
-            }
-            
-            mslides.forEach((slide)=> {
+            mslides.length > 0 && mslides.forEach((slide) => {
+                slide.classList.remove('slide-open');
                 $(slide).hide();
             });
-
-            const attr = e.currentTarget.getAttribute('data-slide');
+            const attr = target.getAttribute('data-slide');
             const txt = document.querySelector('.testimonial-mobile[data-text="'+ attr +'"]');
-      
-            const $txt = $(txt)
+            txt.classList.add('slide-open')
             $(txt).fadeIn('800');
-
-            
-
+       
         };
-
-        const setupEventListeners = (isDesktop) => {
-            slides.forEach((ele) => {
-                if (isDesktop) {
-                    ele.removeEventListener('click', mobileSlider);
-                    ele.addEventListener('click', slider);
-                } else {
-                    ele.removeEventListener('click', slider);
-                    ele.addEventListener('click', mobileSlider);
-                    mobileSlider();
-                }
-            });
-               // If switching to mobile, add resize event listener
-               if (!isDesktop) {
-                window.addEventListener('resize', mobileSlider);
-            } else {
-                // Remove resize event listener if switching to desktop
-                window.removeEventListener('resize', mobileSlider);
-            }
-        };
-
-        // Initial setup
-        setupEventListeners(media.matches);
-
-        // Listen for media query changes
-        media.addEventListener('change', (e) => {
-            setupEventListeners(e.matches);
+        _.$ele.forEach((ele)=>{
+            ele.addEventListener('click', slider)
         });
     }
 };
-
 export default testimonialSlider;
