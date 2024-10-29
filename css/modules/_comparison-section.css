@@ -19,6 +19,7 @@
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
     .comparison-section{margin-top: -117px;}
+    .comparison-main{padding: 0 0 110px;}
     .comparison-subtitle::before{width: 2px; height: 100%; top: -72px; left: 50%; max-height: 64px; position: absolute; content: ""; display: block; background: var(--Accent); transform: translateX(-50%); }
     .comparison-row:first-child .comparison-subtitle::before{max-height: 71px; top: -79px;}
     .comparison-head{gap: 0; margin-bottom: 48px;}
@@ -43,7 +44,8 @@
     .comparison-d-center{max-width: 420px; font-size: 16px; line-height: 24px;}
 }
 @media screen and  (min-width: 768px){
-    .comparison-row:last-child{padding: 0;}
+    .comparison-main{padding: 0 0 110px;}
+    .comparison-row:last-child{padding: 0; margin: 0;}
     .comparison-row:last-child .comparison-subtitle{padding: 0; opacity: 0.25;}
     .comparison-row:last-child .comparison-subtitle::before{display: none;}
     .comparison-row:nth-last-of-type(2){margin-bottom: 29px;}
@@ -51,9 +53,10 @@
 @media screen and (max-width: 767px) and (min-width: 200px){
     .comparison-section{margin-top: -71px; overflow: hidden; position: relative;}
     .comparison-main{padding-bottom: 24px; }
-    .comparison-head{gap: 12px;}
+    .comparison-head{gap: 12px; padding: 0 20px;}
     .comparison-h-block{width: 126px; margin-bottom: 20px; flex: 1;}
-    .comparison-h-block span{font-size: 20px; line-height: 20px; margin-bottom: 15px;}
+    .comparison-h-block span{font-size: 20px; line-height: 20px; margin-bottom: 12px;}
+    .comparison-icon svg{height: 37px; width: 37px;}
     .comparison-h-center{flex: 0 0 40px;}
     .comparison-h-center::before{content: ""; display: block; width: 2px; height:44.5px; background: var(--Accent); top: -54px; position: absolute; left: 50%; transform: translateX(-50%);}
     .comparison-h-icon{width: 96px;}
@@ -70,7 +73,7 @@
     .comparison-subtitle-icon{max-width: 40px; margin: 0;}
     .comparison-subtitle-icon svg{height: 40px; width: 40px; }
     .comparison-subtitle > span {width: calc(100% - 58px);}
-    .comparison-rows button.slick-arrow{bottom: 24px; position: absolute;}
+    .comparison-rows button.slick-arrow{bottom: 7px; position: absolute;}
     .comparison-rows button.slick-left{left: 0;}
     .comparison-rows button.slick-next{right: 0;}
 }
