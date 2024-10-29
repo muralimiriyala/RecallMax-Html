@@ -21,6 +21,10 @@ const CompareSlick = {
                 appendArrows: compareAppend,
                 appendDots: compareAppend,
               });
+                $slider.on('afterChange', function(event, slick, currentSlide){
+                    $(".product-icon").hide();
+                    $("#icon-"+currentSlide).show();
+                });
             }
         })
 

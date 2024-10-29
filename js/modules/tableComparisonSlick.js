@@ -21,6 +21,10 @@ const ComparisonSlick = {
                 appendArrows: comparisonAppend,
                 appendDots: comparisonAppend,
               });
+              $slider.on('afterChange', function(event, slick, currentSlide){
+                $(".comparison-slider-btns button.next").hide();
+                $("#button-"+currentSlide).show();
+            });
             }
         })
     }
