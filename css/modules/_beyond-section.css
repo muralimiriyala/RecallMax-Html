@@ -51,6 +51,8 @@ ul.beyond-links > li::before{display: none;}
     .beyond-lt{flex: 0 0 334px;}
     .beyond-rt{flex: 1; margin-top: -3px;}
     .beyond-rt > figure:first-child{padding:0 57px 30px;}
+    .no_beyod_desc.beyond-head{display: block;}
+    .no_beyod_desc{flex: 0 0 100%;}
 }
 @media screen and (min-width: 1280px){
     .beyond-head{gap: 80px;}
