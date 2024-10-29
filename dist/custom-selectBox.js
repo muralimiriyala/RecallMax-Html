@@ -3,7 +3,7 @@ jQuery(function(){
         keepInViewport: false,
         menuSpeed: "normal",
         mobile: true,
-        hideOnWindowScroll: true,
+        hideOnWindowScroll: false,
         menuTransition: "slide",
     });
     jQuery(".selectBox, .selectBox-dropdown .selectBox-label").removeAttr('style');

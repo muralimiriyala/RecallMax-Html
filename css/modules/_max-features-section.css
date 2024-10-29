@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 1024px) {
     .max-features-main{padding: 80px 0 45px; gap: 52px;}
-    .max-features-row{ gap: 36px 32px;}
+    .max-features-row{gap: 36px 32px; justify-content: center;}
     .max-features-4{flex: 0 0 calc(25% - 24px);}
     .max-features-3{flex: 0 0 calc(33.3333333333% - 22px);}
     .max-features-2{flex: 0 0 calc(50% - 16px);}
