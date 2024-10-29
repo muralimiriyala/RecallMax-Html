@@ -20,14 +20,16 @@ const Menu = {
   init() {
     const _ = this;
     if (!_.$header) return false;
-    if (!_.$mainproducts) return false;
+    // if (!_.$mainproducts) return false;
 
-    _.$mainproducts.addEventListener('mouseover', function(e){
-      _.$products[0].parentElement.classList.add('open');
-    })
-    _.$mainproducts.addEventListener('mouseleave', function(e){
-      _.$products[0].parentElement.classList.remove('open');
-    })
+    if(_.$mainproducts){
+      _.$mainproducts.addEventListener('mouseover', function(e){
+        _.$products[0].parentElement.classList.add('open');
+      })
+      _.$mainproducts.addEventListener('mouseleave', function(e){
+        _.$products[0].parentElement.classList.remove('open');
+      })
+    }
   
     _.$products.forEach((ele)=>{
       ele.addEventListener("mouseover", function(e){

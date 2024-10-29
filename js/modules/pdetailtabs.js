@@ -25,7 +25,9 @@ const pdetailtabs = {
             focusOnSelect: true,
         });
 
+        _.$links[0].classList.add('ui-open');
         _.$links.forEach(($link, index) => {
+
             $link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const slideno = parseInt(this.getAttribute('data-name').slice(-1));
