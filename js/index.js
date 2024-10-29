@@ -3,7 +3,6 @@
 import customGsap from './modules/gsap';
 import counter from './modules/counter';
 import Animations from './modules/animations';
-import selectBox from './lib/jquery.selectBox';
 import Scroll from './modules/scroll';
 import Menu from './modules/menu';
 // import scrollModule from './modules/pageScroll';
@@ -40,7 +39,6 @@ import spyScroll from './modules/spyScroll';
   // scrollModule.init();
   
   customSlick.init();
-  selectBox.init();
   filterCategory.init();
   uiAccordion.init();
   teamPage.init();
