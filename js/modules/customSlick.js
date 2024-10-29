@@ -28,7 +28,7 @@ const customSlick = {
               variableWidth: true,
               appendArrows: cultureAppend,
               appendDots: cultureAppend,
-              dotsClass: 'slick-dots culture-slick-dots',
+              dotsClass: 'slick-dots culture-slick-dots pagination',
               customPaging: function (slider, i) {
                 var slideNumber = i + 1,
                   totalSlides = slider.slideCount;
