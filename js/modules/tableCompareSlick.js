@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'slick-carousel';
 const CompareSlick = {
     $ele: document.querySelectorAll(".compare-slider"),
-    init(){
+    init(){       
         const _ = this;
         _.$ele.forEach(($ele)=>{
            const $slider = $($ele);
@@ -23,6 +23,8 @@ const CompareSlick = {
               });
             }
         })
+
+
     }
 }
 export default CompareSlick;
