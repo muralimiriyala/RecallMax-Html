@@ -43,7 +43,8 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     .compare-table-main{padding: 20px 0 16px;}
     .compare-slider-btns{justify-content: space-between; padding: 8px; gap: 8px;}
     .compare-slider{margin: 16px 0; border: 1px solid var(--Card-Stroke); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
-    span.compare-vs{font-size: 14px; line-height: 18.2px; font-weight: 800; letter-spacing: 1.12px; color: rgba(48, 33, 53, 0.5); order: 2; flex: 1; text-align: center;}
+    .compare-vs-main{ flex: 1;  order: 2;}
+    span.compare-vs{font-size: 14px; line-height: 18.2px; font-weight: 800; letter-spacing: 1.12px; color: rgba(48, 33, 53, 0.5); text-align: center;}
     .compare-slide{padding: 8px;}
     .compare-slide-row{padding: 6px 8px;}
     .compare-slide-icon{width: 32px;}
