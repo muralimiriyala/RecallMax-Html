@@ -26,6 +26,7 @@ import beyond from './modules/beyond-script';
 import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
 import spyScroll from './modules/spyScroll';
+import customSelectBox from './modules/_customSelectBox';
 
 (function() {  
 // document.addEventListener('DOMContentLoaded', function(){
@@ -57,6 +58,7 @@ import spyScroll from './modules/spyScroll';
 
   beyond.init();
   spyScroll.init();
+  customSelectBox.init();
 })();
 // });
 let scrolled = window.scrollY;
