@@ -20,6 +20,7 @@ const Menu = {
   init() {
     const _ = this;
     if (!_.$header) return false;
+    if (!_.$mainproducts) return false;
 
     _.$mainproducts.addEventListener('mouseover', function(e){
       _.$products[0].parentElement.classList.add('open');
