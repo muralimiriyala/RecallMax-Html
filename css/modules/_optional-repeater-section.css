@@ -10,6 +10,8 @@ body.page-template-comparison-lp .optional-repeater-thumb img{border-radius: 16p
 .optional-repeater-text ul > li{font-weight: 700;}
 .optional-repeater-text ul > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 5px; width: 20px; }
 .optional-repeater-btn{gap: 12px;}
+.optional-repeater-text .book-demo-call{color: var(--Raisin-Black);}
+.optional-repeater-text .book-demo-call:hover{color: var(--Sky-Blue);}
 
 @media screen and (min-width: 1024px) {
     .optional-repeater-main{padding: 80px 0;}
