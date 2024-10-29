@@ -52,7 +52,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .comparison-section{margin-top: -71px; overflow: hidden; position: relative;}
-    .comparison-main{padding-bottom: 24px; }
+    .comparison-main{padding-bottom: 40px; }
     .comparison-head{gap: 12px; padding: 0 20px;}
     .comparison-h-block{width: 126px; margin-bottom: 20px; flex: 1;}
     .comparison-h-block span{font-size: 20px; line-height: 20px; margin-bottom: 12px;}
