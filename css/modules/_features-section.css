@@ -37,6 +37,7 @@
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .features-main{padding: 40px 0; gap: 32px;}
     body.page-template-pricing .features-heading {margin-bottom: 12px;}
+    body.page-template-pricing .features-main{padding: 40px 0 32px;}
     .features-item{max-width: 304px; margin: 0 10px;}
     .features-lists .slick-list{overflow: inherit;}
     .features-lists-appends{gap: 8px; align-items: center;}
