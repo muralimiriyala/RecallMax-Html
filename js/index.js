@@ -59,6 +59,7 @@ import spyScroll from './modules/spyScroll';
   beyond.init();
   spyScroll.init();
   // customSelectBox.init();
+
 })();
 // });
 let scrolled = window.scrollY;
