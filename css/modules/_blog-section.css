@@ -13,6 +13,7 @@ ul.blog-categories > li > a:hover{color: var(--Raisin-Black);}
 .blog-text h2 a{color: var(--Raisin-Black);}
 .blog-text h2 a:hover{color: var(--Accent);}
 h2.no_result_found{margin: 2rem 0 6rem; width: 100%;}
+.blog-section #load-more span.loader{display: none;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
