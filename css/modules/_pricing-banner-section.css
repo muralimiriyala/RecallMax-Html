@@ -1,5 +1,5 @@
 .pricing-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black);}
-.pricing-banner-section span.optional-text{margin-bottom: 6px;}
+.pricing-banner-section span.optional-text{margin-bottom: 6px; font-size: 18px; line-height: 18px; letter-spacing: 1.8px;}
 .pricing-banner-heading h1{color: var(--White);}
 .pricing-banner-heading h1 > span{position: relative; z-index: 1; font-style: italic;}
 .pricing-banner-heading h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; z-index: -1;}
