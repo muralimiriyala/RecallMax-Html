@@ -134,6 +134,7 @@ body .frm_success_style, body .with_frm_style .frm_message{font-weight: 700; fon
 body .with_frm_style .frm_message p{font-weight: 700; color: var(--Raisin-Black); letter-spacing: inherit;}
 body .maxassist-demo-form .frm_success_style, body .maxassist-demo-form .with_frm_style .frm_message{text-align: left; font-weight: 700; margin: 0; padding: 0;}
 body .modal-form .with_frm_style .frm_message p{text-align: center;}
+body .maxassist-demo-form .hide_desc_text{display: none;}
 
 body .contact-form-form .frm_forms .frm_form_fields .vertical_radio{gap: 16px; display: flex; flex-wrap: wrap;}
 body .contact-form-form .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{margin-top: 0; gap:0 27px; display: flex; flex-wrap: wrap; width: 100%; flex: 1;}

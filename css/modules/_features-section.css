@@ -6,6 +6,7 @@
 .features-item{border-radius: 24px; border: 1px solid var(--Card-Stroke); background: var(--White); padding: 23px; font-size: 16px; line-height: 24px; color: var(--Gray-1); transition: all .5s ease;}
 .features-icon{width: 40px; margin-bottom: 16px;}
 .features-icon svg{width: 40px; height: 40px;}
+.features-icon img{width: 40px; object-fit: contain;}
 .features-item > p{margin-bottom: 16px;}
 .features-item:hover{transform: translateY(-12px); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .features-item:hover .text-link{color: var(--Accent);}
@@ -35,6 +36,7 @@
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .features-main{padding: 40px 0; gap: 32px;}
+    body.page-template-pricing .features-heading {margin-bottom: 12px;}
     .features-item{max-width: 304px; margin: 0 10px;}
     .features-lists .slick-list{overflow: inherit;}
     .features-lists-appends{gap: 8px; align-items: center;}
