@@ -33,7 +33,7 @@ ul.pricing-box-points > li.cancel::before{background: url("../../images/checked-
 .platinum ul.pricing-box-points > li.cancel::before{background: url("../../images/checked-circle-cancel.svg");}
 .platinum .pricing-box-btn .button{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-3);}
 .platinum .pricing-box-btn .button:hover{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent-3);}
-.platinum .pricing-box-btn a.text-link i{color: var(--Text);}
+.platinum .pricing-box-btn a.text-link em{color: var(--Accent-3);}
 /* .platinum .pricing-box-btn a.text-link:hover{color: var(--Accent-3);} */
 
 .enterprise.pricing-box-list{border: 2px solid var(--Translucent);}
@@ -44,7 +44,7 @@ ul.pricing-box-points > li.cancel::before{background: url("../../images/checked-
 .enterprise ul.pricing-box-points > li.cancel::before{background: url("../../images/checked-circle-cancel.svg");}
 .enterprise .pricing-box-btn .button{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-2);}
 .enterprise .pricing-box-btn .button:hover{border-radius: 16px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent-2);}
-/* .enterprise .pricing-box-btn a.text-link i{color: var(--Accent-2);} */
+.enterprise .pricing-box-btn a.text-link em{color: var(--Accent-2);}
 /* .enterprise .pricing-box-btn a.text-link:hover{color: var(--Accent-2);} */
 
 @media screen and (min-width: 1024px) {
