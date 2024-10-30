@@ -24,7 +24,7 @@
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    .stat-testimonial-main{gap: 48px; padding: 48px;}
+    .stat-testimonial-main{gap: 48px; padding: 48px; align-items: center;} /*-- align-items: center; for right side text center vertically --*/
     .stat-testimonial-left{flex: 1;}
     .stat-testimonial-image{flex: 0 0 160px;}
     .stat-testimonial-text{flex: 1;}
