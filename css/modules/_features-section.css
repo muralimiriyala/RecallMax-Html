@@ -13,7 +13,8 @@
 
 
 @media screen and (min-width: 1024px) {
-    .features-main{padding: 80px 0; gap: 40px;}
+    .features-main{padding: 80px 0; gap: 52px;}
+    body.page-template-pricing .features-main{padding: 80px 0 40px;}
     .features-lists{gap: 36px 32px; margin-bottom: 6px;}
     .features-item{flex: 0 0 calc(25% - 24px);}
 }
