@@ -21,6 +21,7 @@
     .find-max-btn{flex: 0 0 205px; text-align: right;}
     .find-max-row{gap: 40px 80px;}
     .find-max-sw{flex: 0 0 calc(50% - 40px);}
+    .find-max-sw.no_find_max_img{display: flex; flex-direction: column; justify-content: center; align-items: center;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .find-max-row{gap: 40px 60px;}
