@@ -40,8 +40,9 @@ ul.maxassist-demo-category > li:last-child{padding-right: 0; border-right: 0;}
     .maxassist-demo-lt{flex: 100%; padding: 24px 24px 70px; border-radius: 24px 24px 0px 0px;}
     .maxassist-demo-lt .sm-line{margin: 24px 0;}
     .maxassist-demo-lt p{margin-bottom: 22px;}
-    .maxassist-demo-lt .open-positions-call {margin-bottom: 22px;}
+    .maxassist-demo-lt .open-positions-call {margin-top: 22px;}
     .maxassist-demo-rt{flex: 100%; padding: 20px; margin-top: -40px;}
+    body.page-template-comparison-lp .maxassist-demo-rt{padding: 24px;}
     .maxassist-demo-rt span.optional-text{margin-bottom: 24px;}
     .maxassist-demo-item{flex-direction: column;}
 }
