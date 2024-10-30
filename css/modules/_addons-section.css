@@ -15,6 +15,9 @@
 .addons-thumb{margin-top: 32px;}
 .addons-thumb img{border-radius: 10px 10px 0px 0px;}
 
+.addons-main .book-demo-call{color: var(--Raisin-Black);}
+.addons-main .book-demo-call:hover{color: var(--Sky-Blue);}
+
 @media screen and (min-width:1024px) {
     .addons-main{gap: 40px; padding: 80px 0;}
     .addons-lists{gap: 40px;}

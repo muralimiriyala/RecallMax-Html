@@ -33,6 +33,8 @@ ul.scrolly-keys > li > a:hover{color: var(--Accent);}
 .scrolly-text ul.scrolly-keys:last-child{margin-bottom: 0;}
 .scrolly-text ul.scrolly-keys > li:last-child{margin-bottom: 0;}
 
+.no_scrolly_text{display: block;}
+
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .scrolly-main{gap: 80px;}

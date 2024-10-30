@@ -72,4 +72,5 @@ ul.pricing-box-points > li.cancel::before{background: url("../../images/checked-
     .pricing-box-list.pro{order: 2;}
     .pricing-box-list.enterprise{order: 3;}
     .pricing-box-list{padding: 28px 20px 20px;} 
+    .pricing-box-list h4{letter-spacing: -0.64px;}
 }

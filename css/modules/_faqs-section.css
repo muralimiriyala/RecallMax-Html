@@ -1,6 +1,7 @@
 
 .faqs-lt{border-radius: 0 24px 24px 0; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
 .faqs-lt .sm-line{margin: 36px 0; background-color: var(--Raisin-Black);}
+body.page-template-pricing .faqs-lt .sm-line{margin: 32px 0;}
 .faqs-lt h3{color: var(--White);}
 .faqs-call{gap: 8px; align-items: center; margin-top: 34px; width: fit-content; color: var(--White);}
 .faqs-call:hover{color: var(--Sky-Blue);}
@@ -13,6 +14,8 @@
 
 @media screen and (min-width: 1024px) {
     .faqs-main{margin: 80px 0; flex-direction: row-reverse;}
+    body.page-template-pricing .faqs-main{margin: 92px 0 80px;}
+    body.page-template-pricing .faqs-lt{padding: 59px 40px 40px 80px;}
     .faqs-lt{flex: 0 0 480px; padding: 40px 40px 40px 80px; margin-left: -40px;}
     .faqs-rt{border-radius: 24px; flex: 0 0 calc(100% - 440px); padding: 48px;}
     .faqs-main.no_faq_right{display: block;}
@@ -26,6 +29,7 @@
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .faqs-main{margin: 40px 0;}
+    body.page-template-pricing .faqs-main{margin: 52px 0 40px;}
     .faqs-lt{flex: 100%; padding: 32px 32px 80px; border-radius: 24px 24px 0px 0px;}
     .faqs-lt .sm-line{margin: 24px 0;}
     .faqs-call{margin-top: 24px;}
@@ -35,6 +39,7 @@
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .faqs-main{margin: 40px 0;}
+    body.page-template-pricing .faqs-main{margin: 52px 0 40px;}
     .faqs-lt{flex: 100%; padding: 32px 32px 80px; border-radius: 24px 24px 0px 0px;}
     .faqs-lt .sm-line{margin: 24px 0;}
     .faqs-call{margin-top: 24px;}

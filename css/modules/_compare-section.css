@@ -36,7 +36,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
 @media screen and (min-width: 1024px) {
     body.page-template-product-overview .compare-main, body.page-template-product-detail .compare-main{margin-bottom: 80px;}
     body.page-template-feature-detail .compare-main{margin-bottom: 80px;}
-    body.page-template-Features-overview .compare-main{margin-bottom: 73px;}
+    body.page-template-Features-overview .compare-main, body.page-template-pricing .compare-main{margin-bottom: 73px;}
     .compare-l-h span:nth-child(n+2){display: none;}
     .compare-r-h span:nth-child(-n+1){display: none;}
 }
