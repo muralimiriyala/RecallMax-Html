@@ -14,8 +14,14 @@
 .rating{flex: 0 0 127px; gap: 8px;}
 .reviews{flex: 0 0 147px; gap: 8px; margin-left: 40px; position: relative;}
 .reviews::before{content: ""; position: absolute; width: 2px; height: 100%; background: rgba(255, 73, 44, 0.25); border-radius: 1px; top: 0; left: -20px;}
-a.reviews{color: var(--Raisin-Black);}
-a.reviews:hover{color: var(--Accent);}
+
+.review-new-link{
+    color: var(--Raisin-Black);
+    width: fit-content;
+    flex: 1;
+    align-items: center;
+}
+.review-new-link:hover{color: var(--Accent);}
 .star-icon,.review-icon{width: 24px; height: 24px;}
 .rating-value, .review-value{font-size: 20px; line-height: 30px;}
 .g2-logo{width: 48px; margin-left: 16px;}
