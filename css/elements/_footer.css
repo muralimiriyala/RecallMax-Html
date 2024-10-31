@@ -25,8 +25,8 @@ ul.footer-links{margin: 0; gap: 24px; flex-direction: column;}
 ul.footer-links li::before{display: none;}
 ul.footer-links li{margin: 0;}
 ul.footer-links li a{font-size: 16px; line-height: 16px; display: block; color: var(--White);}
+ul.footer-links li a img{display: none;}
 ul.footer-links li a:hover{color: var(--Accent);}
-
 
 .copyrights-main{padding: 72px 0 0; font-size: 13px; line-height: 20px; border-top: 1px solid var(--Accent);}
 ul.copyright-links {flex: 1; margin:0; gap: 0 41px; justify-content: flex-end;} 
