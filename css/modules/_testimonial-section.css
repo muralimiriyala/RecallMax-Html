@@ -9,6 +9,8 @@
 .testimonial-quote-icon{width: 40px; right: -10px; top: 32px; display: none;}
 .testimonial-content{font-size: 20px; line-height: 25px; color: var(--White); display: none;}
 .testimonial-content span{font-size: 12px; line-height: 15px; opacity: 0.5; display: block;}
+.no_testimonial_thumb .testimonial-content{max-width: 100%; min-width: 100%; padding-left: 50px; position: relative; left: 0;}
+.no_testimonial_thumb .testimonial-content::before{content: ""; position: absolute; width: 27px; height: 22px;left:  16px; top: 18px; background-image: url("../../images/double-quote.svg"); background-size: cover; transform: rotate(180deg) scaleX(-1);}
 
 .testimonial-review{border-radius: 40px; border: 2px solid var(--Orange); background: var(--White, #FFF); padding: 8px 8px 8px 20px; min-width: 410px; width: fit-content; align-items: center;}
 .rating{flex: 0 0 127px; gap: 8px;}
@@ -42,7 +44,7 @@
     .slide-open .testimonial-content{display: block;}
     .testimonial-mobiles{display: none;}
     .testimonial-content {padding: 32px 32px 32px 34px; top: 0; left: 164px; position: absolute;}
-    .testimonial-item{padding: 4px;}
+    .testimonial-item{padding: 4px; height: 100%;}
 }
 @media screen and (min-width: 1024px) {
     .testimonial-main{padding: 48px; justify-content: space-between; align-items: center; margin: 90px 0;}

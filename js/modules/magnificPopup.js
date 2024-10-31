@@ -4,7 +4,7 @@ import $ from 'jquery'
 
 const magnificPopup={
     $youtube: document.querySelectorAll('.popup-youtube'),
-    $video: document.querySelectorAll('.popup-video'),
+    $video: document.querySelectorAll('.popup-vimeo'),
     $modal: document.querySelectorAll('.popup-modal'),
     init(){
         const _ = this;
@@ -36,8 +36,10 @@ const magnificPopup={
                   return baseSrc;
                 }
             }
+          });
             _.$video.forEach((video)=>{
-                video.magnificPopup({
+              const $vimeo = $(video);
+                $vimeo.magnificPopup({
                     type: "iframe",
                     mainClass: "mfp-video",
                     removalDelay: 160,
@@ -46,18 +48,16 @@ const magnificPopup={
                 });
             })
             _.$modal.forEach((modal)=>{
-            modal.magnificPopup({
-                type: "inline",
-                fixedContentPos: true,
-                fixedBgPos: true,
-                overflowY: "auto",
-                preloader: false,
-                removalDelay: 160,
-                mainClass: "my-mfp-slide-top",
-            });
-        })
-            
-        })
+              modal.magnificPopup({
+                  type: "inline",
+                  fixedContentPos: true,
+                  fixedBgPos: true,
+                  overflowY: "auto",
+                  preloader: false,
+                  removalDelay: 160,
+                  mainClass: "my-mfp-slide-top",
+              });
+           });
     },
 }
 export default magnificPopup;
