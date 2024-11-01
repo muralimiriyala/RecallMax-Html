@@ -58,6 +58,7 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
     .resource-document-main{padding: 40px 0; gap: 56px;}
     .filter-doc-list{flex-direction: column;}
     .resource-document-heading{width: 100%;}
+    .resource-document-heading h3{font-size: 40px; line-height: 50px; letter-spacing: -0.4px; margin-bottom: 12px;}
     .resource-document-desc{width: 100%;}
     .resource-document-btn{width: 100%;}
     .resource-document-btn .button{width: 100%;}
@@ -68,6 +69,7 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
     ul.filter-category{display: block;}
     .filter-doc-rows{margin-top: 16px;}
     .filter-doc-lists{margin-bottom: 16px;}
+    .filter-doc-row:last-child .filter-doc-lists{margin-bottom: 0;}
     .resource-document-filter{margin-top: 24px;}
     ul.filter-category{margin: 0; background: var(--White); background-color: var( --White); border: 1px solid var(--White); border-radius: 0 0 5px 5px; box-shadow: 0 2px 2px #dadbdf;}
     ul.filter-category li{margin: 0;}

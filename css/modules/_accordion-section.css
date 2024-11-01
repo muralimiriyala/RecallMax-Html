@@ -12,7 +12,7 @@ span.ui-plus::after, span.ui-plus::before { top: 50%; left: 50%; transform: tran
 span.ui-plus::before { width: 24px; height: 2px; } 
 span.ui-plus::after { width: 2px; height: 24px; } 
 .accordion-content { max-height: 0; transition: max-height 0.9s; overflow: hidden; } 
-.accordion-desc {padding: 1px 38px 32px 38px; font-size: 16px; line-height: 24px; }
+.accordion-desc {padding: 10px 32px 30px; font-size: 16px; line-height: 24px; color: var(--Gray-1);}
 .accordion-desc ul>li::before { top: 8px; left: -20px; width: 6px; height: 6px; } 
 .accordion-desc ol { margin: 0 0 28px 29px; }
 .accordion-desc ol>li::before { top: 0; left: -20px; font-size: 1.125rem; line-height: 1.688rem; } 

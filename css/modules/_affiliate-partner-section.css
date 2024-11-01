@@ -51,6 +51,7 @@ ul.affiliate-partner-category > li:last-child{padding-right: 0; border-right: 0;
     .affiliate-list ul > li {font-size: 16px; line-height: 24px;}
     .affiliate-partner-call{margin-top: 24px;}
     .affiliate-partner-rt{flex: 100%; padding: 20px; margin-top: -40px;}
+    body.page-template-affiliate .affiliate-partner-rt{padding: 24px;}
     .affiliate-partner-rt span.optional-text{margin-bottom: 24px;}
     .affiliate-partner-item{flex-direction: column;}
     .affiliate-partner-btn{width: 100%;}
