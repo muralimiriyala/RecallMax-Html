@@ -18,10 +18,11 @@ li.no_link > a:hover{color: inherit;}
 li.hide-li-text > a{display: none !important;}
 
 header.scrolly-header{transform: translateY(-100%);}
+li.no-link a{pointer-events: none;}
 
 /* media css starts here */
 @media screen and (min-width: 1024px) {
-   
+    
     .header{ gap: 16px; position: relative;}
     .logo{flex: 0 0 264px;}
     .humburger-btn{display: none;}
@@ -42,8 +43,8 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li:hover > ul{opacity: 1; visibility: visible;}
     ul.main_menu > li > ul > li{margin: 0 0 11px;}
 
-    ul.main_menu > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 800; display: block; color: var(--Raisin-Black);}
-    ul.main_menu > li > ul > li > a:hover{color: var(--Accent);}
+    ul.main_menu > li > ul > li:not(.nav-gradient-bar) > a{font-size: 1rem; line-height: 1.375rem; font-weight: 800; display: block; color: var(--Raisin-Black);}
+    ul.main_menu > li > ul > li:not(.nav-gradient-bar) > a:hover{color: var(--Accent);}
     ul.main_menu > li > ul > li > ul{margin: 22px 0 25px 21px;}
     ul.main_menu > li > ul > li > ul > li > a{font-size: 1rem; line-height: 1.375rem; font-weight: 700; display: block; color: var(--Raisin-Black);}
     ul.main_menu > li > ul > li > ul > li > a:hover{color: var(--Accent);}
@@ -63,7 +64,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-products > ul > li:nth-child(2){padding: 23px 40px 15px; margin: 0;}
     ul.main_menu > li.nav-products > ul > li:not(:last-child){max-width: 256px; background-color: var(--White);}
     ul.main_menu > li.nav-products > ul > li:last-child{max-width: 100%; margin: 0;}
-    ul.main_menu > li.nav-products > ul > li > a{
+    ul.main_menu > li.nav-products > ul > li:not(.nav-gradient-bar) > a{
         margin-bottom: 19px;
         color: var(--Raisin-Black-50);
         font-weight: 800;      
@@ -99,7 +100,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.open > ul, ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:hover > ul{opacity: 1; visibility: visible;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul{opacity: 0; visibility: hidden; margin: 0; padding-left: 216px; top: 0; width: 1080px; transition: var(--b-transition); position: absolute;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li{margin: 0;}
-    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > a{width: 100%; gap: 48px; padding: 48px; display: flex; flex-wrap: wrap;}
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li{width: 100%; gap: 48px; padding: 48px; display: flex; flex-wrap: wrap;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > a:hover{color: var(--Accent);}
 
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > ul{margin: 0;}
@@ -145,12 +146,14 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-features > ul{padding: 24px 26px 0; width: 100%; gap: 1px 12px; display: flex; flex-wrap: wrap; border-radius: 0 0 24px 24px; }
     ul.main_menu > li.nav-features > ul > li{flex: 0 0 calc(25% - 12px); margin: 0;}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar{flex: 0 0 auto; margin-top: 20px;  width: calc(100% + 52px); left: -26px;}
-    ul.main_menu > li.nav-features > ul > li > a{ padding: 13px 10px 13px 40px; position: relative; color: var(--Gray-2); font-size: 14px; font-weight: 400; line-height: 150%; border-radius: 20px; border: 4px solid transparent; }
-    ul.main_menu > li.nav-features > ul > li > a:hover{ background-color: transparent; border-color: var(--Translucent); }
-    ul.main_menu > li.nav-features > ul > li > a > img{width: 23px; top: 12px; left: 10px; position: absolute;}
-    ul.main_menu > li.nav-features > ul > li > a span{padding-bottom: 5px; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block;}
+    ul.main_menu > li.nav-features > ul > li.nav-gradient-bar > a{color: var(--White);}
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a{ padding: 13px 10px 13px 40px; position: relative; color: var(--Gray-2); font-size: 14px; font-weight: 400; line-height: 150%; border-radius: 20px; border: 4px solid transparent; }
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a:hover{ background-color: transparent; border-color: var(--Translucent); }
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a > img{width: 23px; top: 12px; left: 10px; position: absolute;}
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a span{padding-bottom: 5px; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block;}
     li.nav-gradient-bar{ padding: 20px; font-weight: 800; text-align: center; border-radius: 0px 0px 24px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
-   
+    li.nav-gradient-bar > a{color: var(--White);}
+
     span.black-logo{display: none;}
     span.black-logo img{max-width: 218px;}
     header.white-header:not(.sticky-header) span.white-logo{display: none;}
