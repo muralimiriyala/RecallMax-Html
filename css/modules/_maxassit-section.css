@@ -29,7 +29,7 @@
     .maxassit-card{flex: 0 0 308px; gap: 20px;}
     .maxassit-card:nth-child(2){order: 3;}
     .maxassit-card-item{flex: 100%;}
-    .maxassit-image{flex: 1; order: 2;}
+    .maxassit-image{flex: 1; order: 2; max-width: 600px;}
     .maxassit-card-title{flex-direction: column;} 
 }
 
