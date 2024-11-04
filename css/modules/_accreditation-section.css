@@ -40,9 +40,8 @@
     .accreditation-row .slick-list{overflow: inherit;}
     .accreditation-appends{gap: 8px; align-items: center; margin: 0;}
     .accreditation-appends button.slick-arrow.slick-next{order: 3;}
-    ul.accreditation-slick-dots{margin: 0;order: 2; flex: 1;}
+    ul.accreditation-slick-dots{margin: 0;order: 2; flex: 1; text-align: center;}
     ul.accreditation-slick-dots li::before{display: none;}
     ul.accreditation-slick-dots li{display: none; margin: 0;}
     ul.accreditation-slick-dots li.slick-active{display: block;}
-    ul.accreditation-slick-dots:not(.pagination) li.slick-active{background-color: transparent !important;}
 }
