@@ -444,7 +444,7 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
     .book-demo-call{flex: 1; justify-content: center; padding-right: 13px;}
 
     .slick-dots li > a{font-size: 24px; line-height: normal; font-weight: 800; color: var(--Raisin-Black);}
-    .culture-slash, .benefit-slash, .ftr-slash, .training-slash{margin: 0 4px; color: var(--Accent-2); font-weight: 300;}
+    .culture-slash, .benefit-slash, .ftr-slash, .training-slash, .accreditation-slash{margin: 0 4px; color: var(--Accent-2); font-weight: 300;}
 
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
