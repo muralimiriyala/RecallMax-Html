@@ -60,6 +60,8 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 
 body.single-post .cta-main{margin-bottom: 0;}
 
+.cta-main.no-cta-heading{align-items: flex-start;}
+
 @media screen and (min-width: 1024px) {
     .resource-article-main{padding: 72px 0 80px;} 
     .cta-text{padding-bottom: 40px;}
