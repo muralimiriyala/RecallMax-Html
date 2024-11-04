@@ -139,7 +139,7 @@ const customSlick = {
               appendArrows: accreditationAppend,
               appendDots: accreditationAppend,
               adaptiveHeight: true,
-              dotsClass: 'slick-dots accreditation-slick-dots',
+              dotsClass: 'slick-dots accreditation-slick-dots pagination',
               customPaging: function (slider, i) {
                 var slideNumber = i + 1,
                   totalSlides = slider.slideCount;
