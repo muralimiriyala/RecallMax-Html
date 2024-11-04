@@ -65,5 +65,5 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     ul.you-might-categories{gap: 5px 12px;}
-    ul.you-might-categories > li::before {left: -8px;}
+    ul.you-might-categories > li::before {left: 0; margin-right: 8px; position: relative;}
 }

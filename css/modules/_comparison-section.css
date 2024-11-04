@@ -77,3 +77,10 @@
     .comparison-rows button.slick-left{left: 0;}
     .comparison-rows button.slick-next{right: 0;}
 }
+@media screen and (max-width: 389px) and (min-width: 200px){
+    .comparison-h-block{width: 88px;}
+    .comparison-subtitle{max-width: 170px; gap: 8px;}
+    .comparison-subtitle > span{font-size: 14px; line-height: 18px;}
+    .comparison-rows button.slick-arrow{left: -10px;}
+    .comparison-rows button.slick-next{right: -10px; left: auto;}
+}   
