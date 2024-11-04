@@ -3,7 +3,7 @@ const filterCategory = {
   $eles: document.querySelectorAll('ul.filter-category li:not(:first-child) a'),
   $filterData: document.querySelectorAll('.filter-doc-row'),
   $ftrbtn: document.querySelector('.filter-doc-btn'),
-  $ftrlinks: document.querySelector('.filter-category-links'),
+  $ftrlinks: document.querySelectorAll('.filter-category-links'),
   init() {
     const _ = this;
     if (_.$links.length > 0) {
@@ -32,18 +32,9 @@ const filterCategory = {
         // $($target).fadeIn(600);
       });
     });
-    let ftrMobile = (e) => {
-      e.preventDefault();
-      e.target.classList.toggle('open');
-      const ele = _.$ftrlinks;
-      if (ele.dataset.id !== 'true') {
-        ele.style.maxHeight = `${ele.scrollHeight}px`;
-        ele.dataset.id = 'true';
-      } else {
-        ele.style.maxHeight = `0px`;
-        ele.dataset.id = 'false';
-      }
-    };
+
+     
+
     let media = window.matchMedia('(max-width: 767px)');
     let ftrResize = (e) => {
       // e.preventDefault();
@@ -61,10 +52,38 @@ const filterCategory = {
       $ele.addEventListener('click', ftrResize);
       $ele.addEventListener('change', ftrResize);
     });
+
+
+    let ftrMobile = function (e) {
+      e.preventDefault();
+      console.log('Button clicked:', e.target); // Debugging line
+    
+      e.target.classList.toggle('open');
+      const ele = document.querySelector('.filter-category-links');
+      console.log('Element toggled:', ele); // Debugging line
+    
+      if (ele.dataset.open !== 'true') {
+        _.$ftrlinks.forEach((item) => {
+          if (item !== ele) {
+            item.dataset.open = 'false';
+            const itemContent = item.querySelector('.filter-category-links');
+            if (itemContent) {
+              itemContent.style.maxHeight = '';
+            }
+          }
+        });
+        // Open the clicked one
+        ele.dataset.open = 'true';
+        ele.style.maxHeight = `${ele.scrollHeight}px`;
+      } else {
+        ele.dataset.open = 'false';
+        ele.style.maxHeight = `0px`;
+      }
+    };    
     if(_.$ftrbtn){
       _.$ftrbtn.addEventListener('click', ftrMobile);
     }
   },
 };
 export default filterCategory;
-filterCategory.init();
+
