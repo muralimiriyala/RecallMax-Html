@@ -4,6 +4,8 @@
 .podcast-title .h4{margin: 0;}
 .podcast-rows{flex: 100%;}
 .podcast-list{background-color: var(--White); padding: 12px; gap: 18px;}
+a.podcast-list{color: var(--Raisin-Black);}
+a.podcast-list:hover{color: var(--Accent);}
 .podcast-image{flex: 0 0 24px;}
 .podcast-icon svg{max-width: 24px;}
 .podcast-name{flex: 1;}
