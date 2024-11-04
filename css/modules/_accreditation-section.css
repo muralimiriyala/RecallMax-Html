@@ -44,4 +44,5 @@
     ul.accreditation-slick-dots li::before{display: none;}
     ul.accreditation-slick-dots li{display: none; margin: 0;}
     ul.accreditation-slick-dots li.slick-active{display: block;}
+    ul.accreditation-slick-dots:not(.pagination) li.slick-active{background-color: transparent;}
 }
