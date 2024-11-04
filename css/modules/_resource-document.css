@@ -63,7 +63,7 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
     .resource-document-btn{width: 100%;}
     .resource-document-btn .button{width: 100%;}
 
-    .filter-doc-btn{ padding: 15px 39px 12px 16px; background: var(--Raisin-Tint); border: 1px solid var(--Card-Stroke); color: var(--Indigo); font-size: 16px; line-height: 100%; cursor: pointer; }
+    .filter-doc-btn{ padding: 16px 39px 16px 16px; background: var(--Raisin-Tint); border: 1px solid var(--Card-Stroke); color: var(--Indigo); font-size: 16px; line-height: 100%; cursor: pointer; }
     .filter-doc-btn em{ right: 16px; top: calc(50% + 1px); transform: translateY(-50%); color: var(--Accent);}
     .filter-category-links{margin: 0; max-height: 0; overflow: hidden; transition: all 0.8s ease; box-shadow: 0 2px 2px #dadbdf;}
     ul.filter-category{display: block;}
