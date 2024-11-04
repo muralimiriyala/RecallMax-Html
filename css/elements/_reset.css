@@ -393,7 +393,7 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 @media only screen and (max-width: 1359px) and (min-width: 1200px){
     .container:not(.sm){padding: 0 40px; max-width: 100%;}
 }
-@media only screen and (max-width: 1199px) and (min-width: 744px){
+@media only screen and (max-width: 1199px) and (min-width: 768px){
     .container{padding: 0 40px; max-width: 100%;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){

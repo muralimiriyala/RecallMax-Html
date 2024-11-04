@@ -48,19 +48,18 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     span.iconnames{display: none;}
     span.iconnames:first-child{display: block;}
     .compare-slide{padding: 8px;}
-    .compare-slide-row{padding: 6px 8px;}
+    .compare-slide-row{padding: 6px 8px; gap: 8px;}
     .compare-slide-icon{width: 32px;}
     .compare-slide-text{flex: 1; font-size: 18px; line-height: 18px; font-weight: 700; text-align: center;}
     .compare-slide-row:nth-child(even){background: rgba(48, 33, 53, 0.04);}
     .compare-logo{order: 1;}
     .compare-logo:last-of-type{order: 3;}
-    
-    
-    
     .compare-appends{gap: 8px; align-items: center; margin: 0;}
     .compare-appends button.slick-arrow.slick-next{order: 3;}
 }
-
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .compare-slide-text{font-size: 16px;}
+}
 
 
 

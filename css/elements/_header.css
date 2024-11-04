@@ -290,5 +290,5 @@ li.no-link a{pointer-events: none;}
     .header_right{left: -20px;}
 }
 @media screen and (max-width: 370px) and (min-width: 200px){
-    .logo{flex: 0 0 234px;}
+    .logo{flex: 0 0 230px;}
 }

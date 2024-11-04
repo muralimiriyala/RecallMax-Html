@@ -51,5 +51,7 @@ body .modal-form .frm_style_formidable-style.with_frm_style .frm_error_style{dis
     body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_label{display: none;}
     body .modal-form .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 16px;}
     body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{opacity: 0.75;}
-
+}
+@media screen and (max-width: 389px) and (min-width: 200px){
+    body .modal-form .form_field_wrapper{display: block;}
 }
