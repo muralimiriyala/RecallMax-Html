@@ -36,7 +36,7 @@ ul.maxassist-demo-category > li:last-child{padding-right: 0; border-right: 0;}
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .maxassist-demo-main{padding: 40px 0;}
+    .maxassist-demo-main{padding: 40px 0; display: block;}
     .maxassist-demo-lt{flex: 100%; padding: 24px 24px 70px; border-radius: 24px 24px 0px 0px;}
     .maxassist-demo-lt .sm-line{margin: 24px 0;}
     .maxassist-demo-lt p{margin-bottom: 22px;}
