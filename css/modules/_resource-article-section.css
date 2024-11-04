@@ -16,6 +16,7 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 
 .article-caption-thumb{background: var(--Raisin-Tint); padding: 4px 4px 24px 4px; margin: 56px 0;}
 .article-caption-thumb figcaption{font-size: 14px; font-style: italic; font-weight: 400; line-height: 22px; padding: 24px 16px 0; color: var(--Raisin-Black);}
+.article-caption-thumb.no_figcaption{background: transparent; padding: 0;}
 
 .article-subtitle{font-size: 32px; line-height: 40px; letter-spacing: -0.64px; margin: 56px 0;}
 .article-subtitle p > a{color: var(--Accent); border-bottom: 4px solid var(--Translucent); background: transparent; padding: 0; border-radius: 0;}
