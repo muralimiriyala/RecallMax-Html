@@ -35,7 +35,7 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 .cta-text, .cta-image{flex: 1;}
 .cta-text{color: var(--White);}
 .cta-text span.optional-text{color: var(--Sky-Blue); letter-spacing: 0.7px; margin-bottom: 6px;}
-.cta-text .h3{margin-top: 0; color: var(--White);}
+.cta-text .h3{margin-top: 0; color: var(--White); padding: 0;}
 .cta-text hr.sm-line{background-color: var(--Raisin-Black); margin: 24px 0;}
 .cta-text p{margin-bottom: 24px;}
 .cta-thumb img{border-radius: 8px 8px 0px 0px;}
@@ -59,6 +59,8 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 .resource-aside.opa{opacity: 0;}
 
 body.single-post .cta-main{margin-bottom: 0;}
+
+.cta-main.no-cta-heading{align-items: flex-start;}
 
 @media screen and (min-width: 1024px) {
     .resource-article-main{padding: 72px 0 80px;} 
