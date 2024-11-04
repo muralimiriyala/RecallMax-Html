@@ -28,3 +28,6 @@
     ul.culture-slick-dots li{display: none; margin: 0;}
     ul.culture-slick-dots li.slick-active{display: block;}
 }
+@media screen and (max-width: 389px) and (min-width: 200px){
+    .culture-list-inner{width: 250px; margin-right: 20px;}
+}
