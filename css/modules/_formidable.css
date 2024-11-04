@@ -324,6 +324,7 @@ body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style 
     body .frm_forms .frm_form_fields .frm_new_flex .frm_form_field.frm_third:nth-child(2){margin-left: 0;}
     
     #frm_field_51_container {padding: 12px 0 39px; margin: 0 0 31px;}
+    body .maxassist-demo-form #frm_field_51_container{margin: 0 0 20px; padding: 0;}
 
     body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{flex: 0 0 calc(50% - 4px);}
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container .frm_checkbox{flex: 0 0 calc(50% - 4px);} 
@@ -352,7 +353,7 @@ body .newsletter-form .frm_success_style, body .newsletter-form .with_frm_style 
     body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 20px;}
     body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0; width: 100%;}
 
-    body .frm_forms form .frm_required_field div.frm_error{bottom: -15px;}
+    body .frm_forms form .frm_required_field div.frm_error{bottom: -15px; position: static;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container, body .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{flex-direction: column; margin-bottom: 8px;}

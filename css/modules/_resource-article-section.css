@@ -64,7 +64,9 @@ body.single-post .cta-main{margin-bottom: 0;}
 
 @media screen and (min-width: 1024px) {
     .resource-article-main{padding: 72px 0 80px;} 
+    .no_cta_section .resource-article-main{padding-bottom: 40px;}
     .cta-text{padding-bottom: 40px;}
+    .resource-video-bg img{min-height: 576px;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
     .cta-text .h3{font-size: 34px; line-height: 40px;}
