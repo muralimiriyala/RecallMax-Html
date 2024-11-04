@@ -129,6 +129,8 @@ li.no-link a{pointer-events: none;}
         left: 0;
         position: absolute;
     }
+    .nav-products-order span a{color: var(--Raisin-Black);}
+    .nav-products-order span a:hover{color: var(--Accent);}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a img{display: none;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a span{display: none;}
     ul.main_menu > li.nav-products > ul > li > ul > li{margin-bottom: 16px;}
