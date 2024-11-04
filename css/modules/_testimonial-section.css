@@ -110,4 +110,6 @@
     .reviews{flex: 0 0 64px; margin-left: 24px;}
     .reviews::before{left: -12px;}
 }
-
+@media screen and (max-width: 374px) and (min-width: 200px){
+    .rating-value, .review-value{font-size: 12px; line-height: 18px;}
+}

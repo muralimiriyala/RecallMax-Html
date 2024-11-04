@@ -271,7 +271,7 @@ const customSlick = {
               variableWidth: true,
               appendArrows: trainingAppend,
               appendDots: trainingAppend,
-              dotsClass: 'slick-dots training-slick-dots',
+              dotsClass: 'slick-dots training-slick-dots pagination',
               customPaging: function (slider, i) {
                 var slideNumber = i + 1,
                   totalSlides = slider.slideCount;

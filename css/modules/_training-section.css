@@ -55,7 +55,7 @@ ul.kickstart-training-details > li .kickstart-text{font-size: 16px; line-height:
     .training-lists .slick-list{overflow: inherit;}
     .training-main-appends{gap: 8px; align-items: center;}
     .training-main-appends button.slick-arrow.slick-next{order: 3;}
-    .training-main-appends ul.slick-dots{order: 2; flex: 1;}
+    .training-main-appends ul.slick-dots{order: 2; flex: 1; margin: 0; text-align: center;}
     ul.training-slick-dots li::before{display: none;}
     ul.training-slick-dots li{display: none; margin: 0;}
     ul.training-slick-dots li.slick-active{display: block;}
