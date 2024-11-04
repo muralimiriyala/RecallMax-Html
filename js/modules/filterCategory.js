@@ -13,7 +13,7 @@ const filterCategory = {
 
     _.$eles.forEach(($ele, $index) => {
       $ele.addEventListener('click', function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         _.$links.forEach(($link) => {
           $link.parentElement.classList.remove('tab-open');
         });
@@ -46,7 +46,7 @@ const filterCategory = {
     };
     let media = window.matchMedia('(max-width: 767px)');
     let ftrResize = (e) => {
-      e.preventDefault();
+      // e.preventDefault();
       let ulfilter = e.target.parentElement.parentElement.parentElement;
       if (e.target && media.matches) {
         let text = e.target.textContent;
