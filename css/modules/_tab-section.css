@@ -30,7 +30,7 @@ ul.tab-links > li > a.clear:hover svg path{fill: var(--Accent-3);}
 /* .tab-head::after { font-size: 32px; line-height: 32px; font-weight: 300; content: "\f176"; display: block; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); color: var(--Orange); transition: all .5s ease; opacity: 0; font-family: "Font Awesome 6 Sharp"; } */
 .tab-open .tab-head::after{opacity: 0 !important;}
 
-.tab-arrow{flex: 0 0 20px; transform: translate(0,0); transition: all 0.5s ease;  color: var(--Orange); cursor: pointer; z-index: -9999} 
+.tab-arrow{flex: 0 0 20px; transform: translate(0,0); transition: all 0.5s ease;  cursor: pointer; z-index: -9999} 
 .tab-image{height: 100%;}
 .tab-text{min-height: 98px; transition: all 0.5s ease; background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(4px); color: var(--White); bottom: 4px; width: calc(100% - 8px); left: 4px; padding: 24px; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;}
 .tab-text::-webkit-scrollbar { display: none; }

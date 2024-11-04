@@ -14,7 +14,9 @@
 
 .testimonial-review{border-radius: 40px; border: 2px solid var(--Orange); background: var(--White, #FFF); padding: 8px 8px 8px 20px; min-width: 410px; width: fit-content; align-items: center;}
 .rating{flex: 0 0 127px; gap: 8px;}
-.reviews{flex: 0 0 147px; gap: 8px; margin-left: 40px; position: relative;}
+.reviews{flex: 0 0 147px; gap: 8px; margin-left: 40px; position: relative; font-weight: 700;}
+.reviews a{color: var(--Raisin-Black);}
+.reviews a:hover{color: var(--Accent);}
 .reviews::before{content: ""; position: absolute; width: 2px; height: 100%; background: rgba(255, 73, 44, 0.25); border-radius: 1px; top: 0; left: -20px;}
 
 .review-new-link{
