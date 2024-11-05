@@ -48,6 +48,7 @@
   outline: none;
   padding: 0;
   width: 18px;
+  height: 18px;
   background: var(--Accent);
   line-height: 18px;
 }
@@ -89,4 +90,6 @@
     .products-form-dropdown{width: 100%; max-width: 286px;}
     .products-form-field:last-child .products-radio-main{gap: 16px;}
     .products-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
+
+    .quantity-block{padding: 9px 8px;}
 }
