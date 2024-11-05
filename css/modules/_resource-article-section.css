@@ -8,7 +8,7 @@ ul.resource-article-details > li{font-size: 12px; line-height: 12px; font-weight
 ul.resource-article-details > li > a{color: var(--Accent);}
 ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 
-.resource-article > span:first-of-type{font-size: 24px; line-height: 36px; color: var(--Raisin-Black);}
+.resource-article > p:first-of-type span{font-size: 24px; line-height: 36px; color: var(--Raisin-Black);}
 .resource-article h2, .resource-article h3, .resource-article h4{margin-top: 56px;}
 .resource-article .h5{margin-bottom: 24px;}
 
