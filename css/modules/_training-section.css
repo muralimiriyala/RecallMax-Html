@@ -45,6 +45,9 @@ ul.kickstart-training-details > li .kickstart-text{font-size: 16px; line-height:
     .training-item{flex: 0 0 calc(50% - 16px);}
     .training-cta{padding: 0; text-align: center; flex-direction: column;}
 }
+@media screen and (min-width: 768px){
+    .training-main-appends{display: none;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
     .training-main{padding: 40px 0; gap: 32px;}
     .training-lists.slick-slider .slick-list{width: 100vw;}
