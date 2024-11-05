@@ -16,6 +16,8 @@
     .services-block-of-2{flex: 0 0 calc(50% - 16px);}
     .services-block-of-1{flex: 1;}
     .services-block-title{flex-direction: column;}
+    .services-block-list{display: flex; flex-direction: column; flex-wrap: wrap;}
+    .services-block-list a.text-link{margin-top: auto;}
 }
 
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
