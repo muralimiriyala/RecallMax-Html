@@ -29,7 +29,7 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
     .you-might-of-3{flex: 0 0 calc(33.33333333% - 27px);}
     .you-might-of-2{flex: 0 0 calc(50% - 20px);}
     .you-might-of-1{flex: 1;}
-    .you-might-card figure img{max-height: 198px; overflow: hidden;}
+    .you-might-card figure img{max-height: 198px; overflow: hidden; min-height: 198px;}
 }
 @media screen and (max-width: 1439px) and (min-width: 1280px){
     .you-might-main{padding: 40px;}
@@ -51,6 +51,7 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
     .you-might-title{width: 100%; text-align: center;}
     .you-might-text{padding: 24px 16px 22px;}
     .you-might-btn{width: 100%; text-align: center;}
+    .you-might-card figure img{max-height: 160px; overflow: hidden; min-height: 160px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     body.single-post .you-might-main, body.single-post .you-might-main, body.page-template-services-overview .you-might-main{margin: 50px 0 20px;}

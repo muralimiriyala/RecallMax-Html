@@ -38,13 +38,15 @@
 }
 .quantity-arrow-minus,
 .quantity-arrow-plus {
-  cursor: pointer;
-  font-size: 20px;
-  padding: 5px 12px;
-  width: 40px;
+  border-radius: 50%;
   box-sizing: border-box;
-  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
   outline: none;
+  padding: 0;
+  width: 18px;
+  background: var(--Accent);
+  line-height: 18px;
 }
 .quantity-num {
   font-size: 20px;
