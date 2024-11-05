@@ -49,5 +49,6 @@ body.page-template-comparison-lp .optional-repeater-thumb img{border-radius: 16p
     .optional-repeater-text{font-size: 18px; line-height: 27px; flex: 100%;}
     .optional-repeater-text span.optional-text{margin-bottom: 18px;}
     .optional-repeater-text hr.sm-line{margin: 20px 0;}
-    .optional-repeater-text ul:nth-last-child(2){margin-bottom: 0;}
+    .optional-repeater-text ul:nth-last-child(2){margin-bottom: 20px;}
+    .optional-repeater-text ul:nth-last-child(1){margin-bottom: 0; }
 }
