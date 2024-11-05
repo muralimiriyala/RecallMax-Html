@@ -25,10 +25,40 @@
 .products-radio-btn label{position: relative; cursor: pointer; padding-left: 40px;}
 .products-radio-btn input{width: 32px; height: 32px; background: var(--White); border-radius: 50%; margin: 0; padding: 0; margin: 0; position: absolute; top: 0; left: 0; cursor: pointer;}
 
+/*-- number design --*/
+.quantity-block input[type="number"]::-webkit-inner-spin-button,
+.quantity-block input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.quantity-block input[type="number"] {
+  -moz-appearance: textfield;
+}
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 12px;
+  width: 40px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+.quantity-num {
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: none;
+}
+/*-- number design --*/
+
 
 @media screen and (min-width: 1024px) {
     .products-banner-main{padding: 150px 0 80px;}
     .products-banner-text.no_banner_bg{max-width: 100%;}
+    .products-form-dropdown{flex: 0 0 265px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .products-banner-main{padding: 145px 0 80px;}
