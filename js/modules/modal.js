@@ -1,8 +1,12 @@
 'use strict';
+import $ from 'jquery';
 const modal = {
   $body: document.querySelector('body'),
   $center: document.querySelector('.modal-center'),
-  $ele: document.querySelectorAll('.modal-btn'),
+  $ele: [
+    ...document.querySelectorAll('.modal-btn'),
+    ...document.querySelectorAll('a[href="#modal-btn"]')
+  ],
   $window: document.querySelector('.modal-window'),
   $main: document.querySelector('.modal-main'),
   $close: document.querySelector('.modal-close'),
