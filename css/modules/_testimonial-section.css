@@ -113,5 +113,8 @@
     .reviews::before{left: -12px;}
 }
 @media screen and (max-width: 374px) and (min-width: 200px){
+    .rating, .reviews{align-items: center;}
     .rating-value, .review-value{font-size: 12px; line-height: 18px;}
+    .review-icon, .star-icon{top: -4px; position: relative;}
+    .review-icon{top: -2px;}
 }

@@ -1,22 +1,28 @@
-export const numberInput = function(){
-    (function quantityProducts() {
-        var $quantityArrowMinus = $(".quantity-arrow-minus");
-        var $quantityArrowPlus = $(".quantity-arrow-plus");
-        var $quantityNum = $(".quantity-num");
-    
-        $quantityArrowMinus.on("click", quantityMinus);
-        $quantityArrowPlus.on("click", quantityPlus);
-    
-        function quantityMinus(e) {
+export const numberInput = function() {
+  (function quantityProducts() {
+      const quantityNum = document.querySelectorAll(".quantity-num");
+
+      const quantityMinus = (e, $ele) => {
           e.preventDefault();
-          if ($quantityNum.val() > 1) {
-            $quantityNum.val(+$quantityNum.val() - 1);
+          let currentValue = parseInt($ele.value, 10) || 0;
+          if (currentValue > 1) {
+              $ele.value = currentValue - 1;
           }
-        }
-        
-        function quantityPlus(e) {
+      };
+
+      const quantityPlus = (e, $ele) => {
           e.preventDefault();
-          $quantityNum.val(+$quantityNum.val() + 1);
+          let currentValue = parseInt($ele.value, 10) || 0;
+          $ele.value = currentValue + 1;
+      };
+
+      quantityNum.forEach(function($ele){
+        if($ele.closest('.quantity-block')){
+          const quantityArrowMinus = $ele.closest('.quantity-block').querySelector(".quantity-arrow-minus");
+          const quantityArrowPlus = $ele.closest('.quantity-block').querySelector(".quantity-arrow-plus");
+          quantityArrowMinus.addEventListener("click", (e) => quantityMinus(e, $ele));
+          quantityArrowPlus.addEventListener("click", (e) => quantityPlus(e, $ele));
         }
-    })();
-}
+      })
+  })();
+};
