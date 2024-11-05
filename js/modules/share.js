@@ -17,6 +17,7 @@ let share = {
         };
         // Scroll handler
         let scroll = () => {
+            if(!_.$hdr || !_.$aside || !_.$ele) return;
             const $barHeight = _.$hdr.clientHeight + 100;
             const $stickHeight = _.$aside.clientHeight;
             const $tipHeight = $barHeight + $stickHeight;

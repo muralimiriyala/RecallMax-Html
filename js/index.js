@@ -26,6 +26,7 @@ import beyond from './modules/beyond-script';
 import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
 import spyScroll from './modules/spyScroll';
+import {numberInput} from './modules/numberInput';
 // import customSelectBox from './modules/_customSelectBox';
 
 (function() {  
@@ -58,6 +59,7 @@ import spyScroll from './modules/spyScroll';
 
   beyond.init();
   spyScroll.init();
+  numberInput();
   // customSelectBox.init();
 
 })();
