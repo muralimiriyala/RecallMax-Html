@@ -106,9 +106,9 @@
     .testimonial-title span.optional-text{letter-spacing: 1.12px;}
     .testimonial-title h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
 
-    .testimonial-mobile{padding: 16px 16px 20px;}
+    .testimonial-mobile{padding: 16px 16px 24px;}
     .testimonial-txt{font-size: 16px; line-height: 24px;}
-    .testimonial-txt > span{ margin-top: 21px;}
+    .testimonial-txt p{margin-top: 20px;}
     .testimonial-quote-icon{width: 30px; left: 50%; transform: translateX(-50%); right: auto; top: auto; bottom: -25px;}
     .testimonial-quote-icon svg{width: 30px;}
 

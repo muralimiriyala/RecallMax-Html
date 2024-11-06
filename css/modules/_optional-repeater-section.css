@@ -8,7 +8,7 @@ body.page-template-comparison-lp .optional-repeater-thumb img{border-radius: 16p
 .optional-repeater-text span.optional-text{margin-bottom: 22px;}
 .optional-repeater-text hr.sm-line{margin: 24px 0;}
 .optional-repeater-text ul > li{font-weight: 700;}
-.optional-repeater-text ul > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 5px; width: 20px; }
+.optional-repeater-text ul > li::before{background: url("../../images/checked-circle-pro-new.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 5px; width: 20px; }
 .optional-repeater-btn{gap: 12px;}
 .optional-repeater-text .book-demo-call{color: var(--Raisin-Black);}
 .optional-repeater-text .book-demo-call:hover{color: var(--Sky-Blue);}
@@ -16,7 +16,7 @@ body.page-template-comparison-lp .optional-repeater-thumb img{border-radius: 16p
 @media screen and (min-width: 1024px) {
     .optional-repeater-main{padding: 80px 0;}
     body.page-template-services-overview .optional-repeater-text h3{margin-bottom: 24px;}
-    body.page-template-services-overview .optional-repeater-text ul{margin-bottom: 20px;}
+    .optional-repeater-text ul{margin-bottom: 20px;}
     body.page-template-careers .optional-repeater-section:nth-child(3) .optional-repeater-main{padding: 80px 0 40px;}
     body.page-template-careers .optional-repeater-section:nth-child(7) .optional-repeater-main{padding: 40px 0 80px;}
     body.page-template-feature-detail  .optional-repeater-section:nth-child(4) .optional-repeater-main{padding: 80px 0 40px;}

@@ -35,6 +35,6 @@
     .differ-max-main{padding: 40px 0 20px;}
     .differ-max-image{flex: 100%; margin-bottom: 40px;}
     .differ-max-text{font-size: 18px; line-height: 27px; flex: 100%;}
-    .differ-max-text span.optional-text{margin-bottom: 18px;}
+    .differ-max-text span.optional-text{margin-bottom: 23px;}
     .differ-max-text hr.sm-line{margin: 20px 0;}
 }
