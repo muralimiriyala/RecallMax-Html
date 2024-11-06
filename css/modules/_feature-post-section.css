@@ -3,7 +3,7 @@
 .feature-post-pos{height: 100%;  align-items: flex-end; justify-content: flex-end;}
 .feature-post-image ul.post-categories{margin-bottom: 16px;}
 .feature-post-image ul.post-categories > li::before { background: rgba(255, 255, 255, 0.25);}
-.feature-post-text{padding: 40px;}
+.feature-post-text{padding: 40px; width: 100%;}
 .feature-post-text h1{color: var(--White);}
 .feature-post-text h1:last-child{margin-bottom: 0;}
 .feature-post-text h1 a:hover{color: var(--Sky-Blue);}
