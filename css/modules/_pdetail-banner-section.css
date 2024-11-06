@@ -23,7 +23,7 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     .pdetail-banner-main{padding: 150px 0 0;}
     .pdetail-banner-text{max-width: 900px;}
     .pdetail-banner-text.no_banner_bg{max-width: 100%;}
-    ul.pdetail-ui-links{margin: 56px 0 60px; gap: 8px;}
+    ul.pdetail-ui-links{margin: 56px 0 60px; gap: 32px 8px;}
     ul.pdetail-ui-links li a{min-width: 256px;}
     .pdetail-ui-center{max-width: 1048px; margin-bottom: -8px;}
 }
@@ -35,7 +35,7 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     .pdetail-ui-center{margin-bottom: -8px;}
     .pdetail-banner-text span.optional-text{margin-bottom: 32px;}
     .pdetail-banner-text hr.sm-line{margin: 32px 0;}
-    ul.pdetail-ui-links{margin: 56px 0; gap: 8px;}
+    ul.pdetail-ui-links{margin: 56px 0; gap: 32px 8px;}
     ul.pdetail-ui-links li a{min-width: 166px;}   
     .pdetail-ui-left{left: 0; max-width: 256px; top: 55px; }
     .pdetail-ui-right{top: 35px; right: 0; max-width: 256px;}
