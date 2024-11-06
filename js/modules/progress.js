@@ -6,11 +6,11 @@ const svgprogress = {
     init(){
         const _=this;
 
+        if (!_.$circleto.length) return;
         let $svgvalues = [];
         _.$circleto.forEach(($item, $i) => {
             $svgvalues[$i] = $item.dataset.countTo;
         });
-        if (!_.$circleto.length) return;
         _.$circlesvg.forEach(($ele, $index) => {
             let pathsInSvg = $ele.querySelectorAll('circle');
             if (!pathsInSvg.length) return;

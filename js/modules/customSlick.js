@@ -302,7 +302,7 @@ const customSlick = {
       });
     }
 
-    const carousel = $('.carousel-main');
+    const carousel = $('.carousel-slider');
     carousel.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
