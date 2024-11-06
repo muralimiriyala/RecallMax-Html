@@ -2,7 +2,7 @@
 .differ-max-text{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
 .differ-max-text > p{color: var(--Gray-1);}
 .differ-max-text span.optional-text{margin-bottom: 22px;}
-.differ-max-text hr.sm-line{margin: 24px 0;}
+.differ-max-text hr.sm-line{margin: 20px 0;}
 .differ-max-text ul > li{font-weight: 700;}
 .differ-max-text ul > li::before{background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; background-size: contain; content: ""; height: 20px; left: -28px; position: absolute; top: 5px; width: 20px; }
 .differ-max-btn{gap: 12px;}
@@ -10,6 +10,7 @@
 @media screen and (min-width: 1024px) {
     .differ-max-main{padding: 40px 0;}
     body.home .differ-max-main{padding: 80px 0 64px;}
+    body.page-template-Features-overview .differ-max-main{padding-top: 80px;}
     .differ-max-list{gap: 80px; margin-bottom: 40px;}
     .differ-max-list:last-child{margin-bottom: 0;}
     .differ-max-image, .differ-max-text{flex: 1;}

@@ -59,7 +59,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
     .compare-bg{height: calc(100%); top: 0; transform: none; border-radius: 40px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .compare-main{border-radius: 40px; padding: 16px 0; margin-bottom: 50px;}
+    .compare-main{border-radius: 40px; padding: 24px 0; margin-bottom: 50px;}
     .compare-main h4{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
     .compare-h{transform: none;}
     .compare-l-h{display: none;}
