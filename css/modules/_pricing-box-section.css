@@ -55,7 +55,7 @@ ul.pricing-box-points > li.cancel::before{background: url("../../images/checked-
 .enterprise .pricing-box-btn a.text-link:hover em{color: var(--Accent);}
 
 @media screen and (min-width: 1024px) {
-    .pricing-box-main{gap: 48px; padding: 0 0 80px;}
+    .pricing-box-main{gap: 48px; padding: 0 0 80px; justify-content: center;}
     .pricing-box-list1{flex: 0 0 calc(100%);}
     .pricing-box-list2{flex: 0 0 calc(50% - 24px);}
     .pricing-box-list3{flex: 0 0 calc(33.333% - 32px);}
