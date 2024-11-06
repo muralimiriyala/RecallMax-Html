@@ -6,6 +6,7 @@
 .features-banner-btn{gap: 12px; margin-top: 32px;}
 .features-banner-thumb img{opacity: 0.2;}
 .features-banner-us{padding: 40px 40px 64px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); margin: 63px 0 30px;}
+.features-banner-us span.optional-text{margin-bottom: 29px;}
 .features-form-bg{background: var(--Raisin-Tint); padding: 20px 24px;}
 .features-form-bg span.optional-text{font-size: 18px; letter-spacing: 1.8px; line-height: 18px;}
 .features-form-text{text-align: left; font-size: 20px; line-height: 20px; color: var(--Indigo); margin-bottom: 16px;}
@@ -18,7 +19,9 @@
 @media screen and (min-width: 1024px) {
     .features-banner-main{padding: 150px 0 0;}
     .features-banner-text.no_banner_bg{max-width: 100%;}
-    .features-form-submit{bottom: -30px; left: 0; right: 0; position: absolute;}
+    .features-banner-text[data-animation].underline.visible h1 > span::before{width: 111px; left: -4px;}
+    .features-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
+    .features-banner-text h1{max-width: 940px; margin: 0 auto;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .features-banner-main{padding: 145px 0 0;}
