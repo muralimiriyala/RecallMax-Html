@@ -25,8 +25,8 @@
 .stat-review-value a{color: var(--Raisin-Black);}
 .stat-review-value a:hover{color: var(--Accent);}
 .stat-reviews.no_line::before{display: none;}
-.stat-star-icon, .stat-review-icon{width: 24px; height: 24px;}
-.stat-rating-value, .stat-review-value{font-size: 20px; line-height: 30px;}
+/* .stat-star-icon, .stat-review-icon{width: 24px; height: 24px;}
+.stat-rating-value, .stat-review-value{font-size: 20px; line-height: 30px;} */
 .stat-g2-logo{width: 48px; margin-left: 16px;}
 
 
