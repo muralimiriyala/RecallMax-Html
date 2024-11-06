@@ -3,7 +3,7 @@ table.comparison-table thead{padding: 0 16px 0 32px; margin-bottom: 22px; displa
 table.comparison-table thead tr{width: 100%; gap: 40px; align-items: end; display: flex; flex-wrap: wrap; }
 table.comparison-table th{padding: 0; flex: 1; font-size: 14px; font-weight: 800; line-height: 1; letter-spacing: 1.4px; color: rgba(48, 33, 53, 0.5); background-color: transparent; }
 table.comparison-table th:not(:first-child){flex: 0 0 122px; }
-table.comparison-table th button{min-width: 122px; }
+table.comparison-table th button{min-width: 122px; pointer-events: none;}
 table.comparison-table tbody{padding: 8px 16px 16px; background-color: var(--White); border-radius: 24px; box-shadow: 0 9px 16px 0 rgba(98, 7, 84, 0.08); border: solid 1px rgba(164, 39, 143, 0.2); display: block; }
 table.comparison-table tbody tr{width: 100%; gap: 40px; align-items: center; display: flex; flex-wrap: wrap; background-color: var(--White); border-radius: 8px; }
 table.comparison-table tbody tr:nth-child(even){background-color: var(--Gray); }
