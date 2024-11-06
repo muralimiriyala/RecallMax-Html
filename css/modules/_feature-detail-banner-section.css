@@ -31,8 +31,9 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .feature-detail-banner-main{padding: 145px 0 40px;}
-    .feature-detail-banner-text{font-size: 18px; line-height: 27px; flex-direction: column; margin-bottom: 24px;}
+    .feature-detail-banner-text{font-size: 18px; line-height: 27px;}
     .feature-detail-banner-text span.optional-text{margin-bottom: 24px;}
     .feature-detail-banner-text hr.sm-line{margin: 24px 0;}
     .feature-detail-banner-btn .button{width: 100%;}
+    .feature-detail-banner-title{flex-direction: column; gap: 23px; margin-bottom: 24px;}
 }
