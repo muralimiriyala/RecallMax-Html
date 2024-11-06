@@ -19,6 +19,7 @@
 .stat-rating{flex: 0 0 127px; gap: 8px;}
 .stat-reviews{flex: 0 0 147px; gap: 8px; margin-left: 40px; position: relative;}
 .stat-reviews::before{content: ""; position: absolute; width: 2px; height: 100%; background: rgba(255, 73, 44, 0.25); border-radius: 1px; top: 0; left: -20px;}
+.stat-reviews.no_line::before{display: none;}
 .stat-star-icon, .stat-review-icon{width: 24px; height: 24px;}
 .stat-rating-value, .stat-review-value{font-size: 20px; line-height: 30px;}
 .stat-g2-logo{width: 48px; margin-left: 16px;}
