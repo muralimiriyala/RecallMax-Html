@@ -19,6 +19,9 @@
 .carousel-main button.slick-prev{left: 40px;}
 
 
+/* @media screen and (min-width: 1024px){
+    .carousel-main .slick-track{align-items: center; justify-content: center; display: flex;}
+} */
 @media screen and (min-width: 768px) {
     .carousel-section::after, .carousel-section::before{width: 160px; height: 100%; top: 0;  content: ""; display: block; position: absolute; z-index: 1;}
     .carousel-section::before{ left: 0; background-image: linear-gradient(90deg, var(--White) 10%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.00) 100%);}
