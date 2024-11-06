@@ -10,8 +10,12 @@
 
 
 .accent2 .find-max-text h3{color: var(--Accent-2);}
+.accent2 .find-max-text .button{background: linear-gradient(180deg,rgba(18,39,80,0) 0,rgba(18,39,80,.5) 60%),var(--Accent-2); color: var(--White);}
+.accent2 .find-max-text .button:hover{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent-2);}
 
 .accent3 .find-max-text h3{color: var(--Accent-3);}
+.accent3 .find-max-text .button{background: linear-gradient(180deg,rgba(18,39,80,0) 0,rgba(18,39,80,.5) 60%),var(--Accent-3); color: var(--White);}
+.accent3 .find-max-text .button:hover{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent-3);}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){

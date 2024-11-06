@@ -60,6 +60,7 @@ ul.scrolly-keys > li > a:hover{color: var(--Accent);}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .scrolly-section{border-radius: 32px;}
+    .scrolly-wrap{padding-bottom: 32px;}
     .scrolly-main{padding: 32px 0; display: block;}
     .scrolly-left{display: none;}
     .scrolly-row{margin-bottom: 32px;}
@@ -67,7 +68,7 @@ ul.scrolly-keys > li > a:hover{color: var(--Accent);}
     .scrolly-data{padding: 24px; gap: 24px;}
     .scrolly-image, .scrolly-text{flex: 100%;}
     .scrolly-text .h4{margin-bottom: 12px; font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
-    .scrolly-btns{padding: 4px; width: 350px; margin: 32px auto 0; border-radius: 28px; }
+    .scrolly-btns{padding: 4px; width: 350px; margin: 0 auto; border-radius: 28px; }
     .scrolly-btns a:first-child{margin-bottom: 0; width: fit-content;}
     .scrolly-btns a:not(.button){gap: 8px; flex: 1;}
 }
