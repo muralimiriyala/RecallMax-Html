@@ -4,6 +4,8 @@
 .winter-logo::before{background: linear-gradient(90deg,rgba(165,24,144,0),#a51890 50%); content: ""; height: 2px; right: 100%; position: absolute; top: 50%; transform: translateY(-50%); width: 65%; opacity: 0.4;}
 .winter-logo::after{background: linear-gradient(90deg,rgba(165,24,144,0),#a51890 50%); content: ""; height: 2px; left: 100%; position: absolute; top: 50%; transform: translateY(-50%) rotate(180deg); width: 65%; opacity: 0.4;}
 
+.no_max_assist_section{margin-bottom: 60px;}
+
 @media screen and (min-width: 1024px) {
     .winter-logo-main{padding: 40px 0 80px;}
 }
