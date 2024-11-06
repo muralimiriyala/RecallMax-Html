@@ -8,17 +8,22 @@
 .stat-testimonial-left.no-author-img::before{left: 30px;}
 .stat-testimonial-text{padding: 34px; font-size: 24px; line-height: 36px;}
 .stat-testimonial-text > span{font-size: 12px; line-height: 15px; opacity: 0.5; font-weight: 800; display: block;}
-.stat-testimonial-point{  border: solid 1px rgba(23, 125, 138, 0.2); background-color: var(--Tint-3);}
+.stat-testimonial-text > p{margin-bottom: 21px;}
+.stat-testimonial-point{  border: solid 1px rgba(23, 125, 138, 0.2); background-color: var(--Tint-3); font-size: 16px; line-height: 24px;}
 .stat-point {font-size: 80px;line-height: 80px; font-weight: 800; color: var(--Text-3);} 
 .stat-point > span{display: block;}
 .stat-testimonial-point{padding: 32px;}
 .stat-testimonial-point h2{margin-bottom: 16px; color: var(--Text-3);}
 .stat-testimonial-quote-icon{width: 40px; right: -10px; top: 32px;}
 
-.stat-testimonial-review{border-radius: 40px; border: 2px solid var(--Orange); background: var(--White, #FFF); padding: 8px 8px 8px 20px; min-width: 410px; width: fit-content; align-items: center;}
-.stat-rating{flex: 0 0 127px; gap: 8px;}
-.stat-reviews{flex: 0 0 147px; gap: 8px; margin-left: 40px; position: relative;}
+.stat-testimonial-review{border-radius: 40px; border: 2px solid var(--Orange); background: var(--White, #FFF); padding: 2px 2px 2px 20px; min-width: 368px; width: fit-content; align-items: center;}
+.stat-rating{flex: 0 0 109px; gap: 8px; align-items: center;}
+.stat-reviews{flex: 0 0 125px; gap: 8px; margin-left: 40px; position: relative; align-items: center;}
 .stat-reviews::before{content: ""; position: absolute; width: 2px; height: 100%; background: rgba(255, 73, 44, 0.25); border-radius: 1px; top: 0; left: -20px;}
+.stat-star-icon, .stat-review-icon{width: 24px; height: 24px; line-height: 18px;}
+.stat-rating-value, .stat-review-value{font-size: 16px; line-height: 18px;}
+.stat-review-value a{color: var(--Raisin-Black);}
+.stat-review-value a:hover{color: var(--Accent);}
 .stat-reviews.no_line::before{display: none;}
 .stat-star-icon, .stat-review-icon{width: 24px; height: 24px;}
 .stat-rating-value, .stat-review-value{font-size: 20px; line-height: 30px;}
@@ -27,9 +32,10 @@
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    .stat-testimonial-main{gap: 48px; padding: 48px; align-items: center;} /*-- align-items: center; for right side text center vertically --*/
+    .stat-testimonial-main{gap: 40px; padding: 48px; align-items: center;} /*-- align-items: center; for right side text center vertically --*/
     .stat-testimonial-left{flex: 1;}
     .stat-testimonial-image{flex: 0 0 160px;}
+    .stat-testimonial-image img{max-height: 355px; overflow: hidden;}
     .stat-testimonial-text{flex: 1;}
     .stat-testimonial-right{flex: 0 0 368px; gap: 40px; flex-direction: column-reverse;}
     .stat-rating-main{flex: 1;}
@@ -93,7 +99,7 @@
     .stat-point{font-size: 24px; line-height: 30px;}
     .stat-testimonial-point h2{margin-bottom: 0;}
 
-    .stat-testimonial-review{margin: 0; min-width: 100%; padding: 8px 8px 8px 20px;}
+    .stat-testimonial-review{margin: 0; min-width: 100%; padding: 5px 5px 5px 20px;}
     .stat-rating-main{flex: 1; justify-content: center;}
     .stat-rating{flex: 0 0 62px;}
     .stat-reviews{flex: 0 0 64px; margin-left: 42px;}
