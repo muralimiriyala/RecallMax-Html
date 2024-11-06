@@ -26,7 +26,7 @@
 .products-radio-btn label{position: relative; cursor: pointer; padding-left: 40px;}
 .products-radio-btn input{width: 32px; height: 32px; background: var(--White); border-radius: 50%; margin: 0; padding: 0; margin: 0; position: absolute; top: 0; left: 0; cursor: pointer;}
 
-.quantity-block{ background: var(--White); padding: 16px; display: flex; border-radius: 8px; border: 1px solid var(--Translucent); gap: 12px; }
+.quantity-block{ background: var(--White); padding: 15px; display: flex; border-radius: 8px; border: 1px solid var(--Translucent); gap: 12px; }
 
 /*-- number design --*/
 .quantity-block input[type="number"]::-webkit-inner-spin-button,
@@ -86,10 +86,13 @@
     .products-form-field{padding: 16px; gap: 16px;}
     .products-form-field > span{width: 100%;}
     .products-form-field label{gap: 8px 12px; font-size: 16px; line-height: 24px;}
+    .products-form-field:first-child label{font-size: 20px; line-height: 20px;}
     .products-form-field input{width: 24px; height: 24px;}
-    .products-form-dropdown{width: 100%; max-width: 286px;}
+    .products-form-dropdown{width: 100%; max-width: 229px;}
+    .products-form-dropdown .selectBox-dropdown{padding: 10px 39px 10px 12px;}
     .products-form-field:last-child .products-radio-main{gap: 16px;}
     .products-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
 
-    .quantity-block{padding: 9px 8px;}
+    .quantity-block{padding: 9px 7px;}
+    .products-form-field .quantity-num{width: 11px;}
 }
