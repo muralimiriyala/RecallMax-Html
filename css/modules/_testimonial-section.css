@@ -97,7 +97,7 @@
     .testimonial-title{margin-bottom: 22px; text-align: center; width: 100%;}
     .testimonial-title span.optional-text{margin-bottom: 4px;}
     .testimonial-title h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
-    .testimonial-review {margin: 24px auto 0;}
+    .testimonial-review {margin: 24px auto 0; min-width: 408px; padding: 5px 5px 5px 20px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .testimonial-main{margin: 50px 0; padding: 21px 19px; border-radius: 24px;}
