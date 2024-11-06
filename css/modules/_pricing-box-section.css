@@ -2,7 +2,7 @@
 
 .pricing-box-list{border-radius: 24px; font-size: 16px; line-height: 24px; color: var(--Dark); border: 2px solid var(--Card-Stroke); background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 25px; flex-direction: column;}
 .pricing-sub-details{gap: 12px; margin-bottom: 24px;}
-.pricing-sub-icon{display: flex; width: 24px;}
+.pricing-sub-icon{display: flex; flex-direction: column; width: 24px; top: -2px; position: relative;}
 .pricing-sub-icon svg{max-width: 24px; height: auto;}
 .pricing-sub-icon img{max-width: 24px; height: auto; width: 100%; object-fit: contain;}
 .pricing-sub-text{font-size: 14px; line-height: 14px; letter-spacing: 1.12px; text-transform: uppercase; color: var(--Accent); flex: 0 0 calc(100% - 36px);}
