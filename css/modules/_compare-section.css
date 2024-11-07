@@ -34,6 +34,8 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
 .no_compare_images .compare-bg{display: none;}
 .no_compare_images .compare-h{transform: none;}
 
+.no_features{margin: 70px 0;}
+
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
     .compare-main{margin-bottom: 80px;}
@@ -58,6 +60,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
     .compare-h{transform: none;}
     .compare-l-h{display: none;}
     .compare-r-h{padding: 0 40px; text-align: center; width: 100%;}
+    .compare-r-h h4 span:first-child{margin-right: 5px;}
     .compare-bg{height: calc(100%); top: 0; transform: none; border-radius: 40px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
@@ -66,6 +69,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
     .compare-h{transform: none;}
     .compare-l-h{display: none;}
     .compare-r-h{padding: 0 40px; text-align: center;}
+    .compare-r-h h4 span:first-child{margin-right: 5px;}
     .compare-bg{height: calc(100%); top: 0; transform: none; border-radius: 40px;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px) {
