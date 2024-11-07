@@ -27,7 +27,7 @@
     .comparison-h-center{flex: 0 0 56px; top: 24px;}
     /* .comparison-h-center{flex: 0 0 168px;} */
     .comparison-row{gap: 40px; padding: 8px 0; margin-bottom: 64px;}
-    .comparison-subtitle{gap: 16px; flex: 0 0 168px; padding: 16px; position: relative; margin: 0;}
+    .comparison-subtitle{gap: 12px; flex: 0 0 168px; padding: 16px; position: relative; margin: 0;}
     .comparison-description{gap: 16px; flex: 1; padding: 0 16px; max-width: 420px; margin: 0;}
     .comparison-d-center{max-width: 420px;}
 }

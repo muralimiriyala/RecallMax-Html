@@ -26,6 +26,7 @@ body.page-template-Features-detail .optional-repeater-text > p{margin-bottom: 21
     body.page-template-affiliate .optional-repeater-section:nth-child(2) .optional-repeater-main{padding: 80px 0 40px;}
     body.page-template-affiliate .optional-repeater-section:nth-child(4) .optional-repeater-main{padding: 40px 0 80px;}
     body.page-template-about .optional-repeater-section:nth-child(2) .optional-repeater-main{padding: 80px 0 40px;}
+    body.page-template-Features-detail .optional-repeater-text > h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .reverse{flex-direction: row-reverse;}
     .optional-repeater-list{gap: 80px; margin-bottom: 40px;}
     .optional-repeater-list:last-child{margin-bottom: 0;}
