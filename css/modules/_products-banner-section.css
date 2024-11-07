@@ -21,13 +21,13 @@
 .products-form-dropdown .selectBox-dropdown{background: var(--White); font-weight: 800;}
 .products-form-field:first-child label{font-weight: 600;}
 .products-form-field:not(:first-child){ justify-content: space-between;}
-.products-form-field > span{font-size: 20px; line-height: 20px; color: var(--Indigo); font-weight: 800;}
+.products-form-field > span{flex: 1; font-size: 20px; line-height: 20px; color: var(--Indigo); font-weight: 800;}
 .products-radio-main{gap: 24px; width: fit-content;}
 .products-radio-btn label{position: relative; cursor: pointer; padding-left: 40px;}
 .products-radio-btn input{width: 32px; height: 32px; background: var(--White); border-radius: 50%; margin: 0; padding: 0; margin: 0; position: absolute; top: 0; left: 0; cursor: pointer;}
 
-.quantity-block{ background: var(--White); padding: 15px; display: flex; border-radius: 8px; border: 1px solid var(--Translucent); gap: 12px; }
-
+.quantity-block{min-width: 138px; background: var(--White); padding: 15px; display: flex; border-radius: 8px; border: 1px solid var(--Translucent); gap: 12px; }
+body .quantity-select .selectBox-dropdown{background-color: var(--White);}
 /*-- number design --*/
 .quantity-block input[type="number"]::-webkit-inner-spin-button,
 .quantity-block input[type="number"]::-webkit-outer-spin-button {
