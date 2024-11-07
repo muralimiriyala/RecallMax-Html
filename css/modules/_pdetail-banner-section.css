@@ -26,7 +26,7 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     ul.pdetail-ui-links{margin: 56px 0 60px; gap: 32px 8px;}
     body.home ul.pdetail-ui-links{margin: 56px 0 68px;}
     ul.pdetail-ui-links li a{min-width: 256px;}
-    .pdetail-ui-center{max-width: 1048px; margin-bottom: -8px;}
+    .pdetail-ui-center{max-width: 1073px; margin-bottom: -8px;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
     ul.pdetail-ui-links li a{min-width: 225px; }
