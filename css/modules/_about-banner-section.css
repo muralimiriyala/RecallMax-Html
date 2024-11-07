@@ -19,6 +19,9 @@
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .about-banner-text{padding: 144px 0 80px;}
 }
+@media screen and (min-width: 768px) {
+    .about-banner-text{font-size: 20px; line-height: 30px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .about-banner-section .background-bg{position: relative;}
     .about-banner-thumb::before, .about-banner-thumb::after{display: none;}

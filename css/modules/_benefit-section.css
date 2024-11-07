@@ -10,6 +10,7 @@
 
 @media screen and (min-width: 1024px){
     .benefit-main{padding: 80px 0; gap: 48px;}
+    body.page-template-about .benefit-main{padding: 40px 0 80px;}
     body.page-template-affiliate .benefit-main{padding: 40px 0;}
     .benefit-heading{gap: 48px;}
     .benefit-desc{padding-top: 9px;}
@@ -35,6 +36,7 @@
 
 @media screen and (max-width: 767px) and (min-width: 200px){
     .benefit-main{padding: 40px 0; gap: 40px;}
+    body.page-template-about .benefit-main{padding: 40px 0;}
     .benefit-heading{flex: 100%; gap: 32px;}
     .benefit-title{flex: 100%;}
     .benefit-desc{flex: 100%;}
