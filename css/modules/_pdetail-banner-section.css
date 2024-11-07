@@ -44,11 +44,13 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .pdetail-banner-main{padding: 128px 0 0;}
+    body.home .pdetail-banner-main{padding: 112px 0 0;}
     .pdetail-banner-text{font-size: 18px; line-height: 27px;}
     .pdetail-banner-text span.optional-text.lg{font-size: 14px; letter-spacing: 1.2px; line-height: 14px; margin-bottom: 5px;}
     .pdetail-banner-text h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
     .pdetail-banner-text hr.sm-line{margin: 24px 0;}
     ul.pdetail-ui-links{display: block; max-width: 256px; margin: 38px auto 56px;}
+    body.home ul.pdetail-ui-links{margin: 38px auto 52px;}
     ul.pdetail-ui-links li a{display: none;}
     ul.pdetail-ui-links li a.ui-open{display: block;}
 }

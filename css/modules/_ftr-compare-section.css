@@ -44,6 +44,6 @@
     .ftr-compare-text{padding: 14px;}
     .ftr-compare-subtitle{margin-bottom: 6px;}
     .ftr-compare-text span{margin-bottom: 0;}
-    .ftr-compare-subtitle-icon svg{max-width: 24px; display: block;}
+    .ftr-compare-subtitle-icon svg{max-width: 24px; display: block; height: 24px;}
     .ftr-compare-subtitle-icon img{max-width: 24px; object-fit: contain;}
 }

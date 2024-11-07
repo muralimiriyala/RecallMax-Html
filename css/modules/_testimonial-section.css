@@ -116,6 +116,9 @@
     .rating{flex: 0 0 62px;}
     .reviews{flex: 0 0 64px; margin-left: 24px;}
     .reviews::before{left: -12px;}
+
+    .testimonial-txt > p{margin-bottom: 20px;}
+    .testimonial-txt > span{margin-top: 20px;}
 }
 @media screen and (max-width: 374px) and (min-width: 200px){
     .rating, .reviews{align-items: center;}
