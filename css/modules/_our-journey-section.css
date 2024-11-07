@@ -19,7 +19,7 @@ ul.our-journey-links > li > a:hover{border-color: var(--Accent); color: var(--Ac
 .our-journey-full  .our-journey-rt{flex: 100%; padding: 0;}
 
 @media screen and (min-width: 1024px) {
-    .our-journey-main{margin: 80px 0; padding: 48px;}
+    .our-journey-main{margin: 90px 0; padding: 48px;}
     .our-journey-lt{flex: 0 0 400px; padding-right: 48px;}
     .our-journey-rt{flex: 1; padding-left: 48px;}
 }
