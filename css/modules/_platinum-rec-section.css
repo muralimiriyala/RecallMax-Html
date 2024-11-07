@@ -26,7 +26,7 @@
     .platinum-rec-text hr.sm-line{margin: 24px 0;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .platinum-rec-main{padding: 40px 0 32px;}
+    .platinum-rec-main{padding: 55px 0 32px;}
     .platinum-rec-image{flex: 100%; margin-bottom: 40px;}
     .platinum-rec-text{font-size: 18px; line-height: 27px; flex: 100%;}
     .platinum-rec-text span.optional-text{margin-bottom: 18px;}
