@@ -2,9 +2,8 @@ import $ from 'jquery';
 import 'slick-carousel';
 // import 'slick-carousel/slick/slick.css';
 
-// const customSlick = {
-//   init() {
-  Query(document).ready(function($){
+const customSlick = {
+  init() {
 const $cultureMain = $('.culture-main');
     function cultureinitSlider() {
       $cultureMain.each(function () {
@@ -348,7 +347,6 @@ const $cultureMain = $('.culture-main');
       traininginitSlider();
     };
 
-  });
-  // },
-// };
-// export default customSlick;
+  },
+};
+export default customSlick;

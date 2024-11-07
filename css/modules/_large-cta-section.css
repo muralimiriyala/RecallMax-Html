@@ -18,9 +18,12 @@
     body.home .large-cta-main{padding: 65px 0;}
     .large-cta-row{gap: 25px; margin-bottom: 24px;}
     body.home .large-cta-row{gap: 40px; margin-bottom: 40px;}
-    .large-cta-logo{width: 240px; height: 132px;}
+    body.home .large-cta-row:last-child{margin-bottom: 0;}
+    body.home .large-cta-logo{width: 240px; min-width: 240px; height: 132px; filter: blur(2px); transition: all .5s ease;}
+    body.home .large-cta-logo:hover{filter: blur(0);}
     .large-cta-row:last-child{margin-bottom: 0;}
     .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3){min-width: 728px; height: auto; padding: 0 24px;}
+    body.home .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3){filter: blur(0); min-width: 480px;}
 }
 @media screen and (max-width: 1439px) and (min-width: 1280px){
     .large-cta-row:nth-child(2n) .large-cta-logo:nth-child(3){min-width: 528px;}

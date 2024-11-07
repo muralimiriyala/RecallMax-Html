@@ -6,7 +6,7 @@ import Animations from './modules/animations';
 import Scroll from './modules/scroll';
 import Menu from './modules/menu';
 // import scrollModule from './modules/pageScroll';
-// import customSlick from './modules/customSlick';
+import customSlick from './modules/customSlick';
 import filterCategory from './modules/filterCategory';
 import uiAccordion from './modules/accordion';
 import teamPage from './modules/team';
@@ -40,7 +40,7 @@ import {numberInput} from './modules/numberInput';
   
   // scrollModule.init();
   
-  // customSlick.init();
+  customSlick.init();
   filterCategory.init();
   uiAccordion.init();
   teamPage.init();
