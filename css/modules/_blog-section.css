@@ -21,6 +21,7 @@ h2.no_result_found{margin: 2rem 0 6rem; width: 100%;}
     .blog-rows{gap: 40px; padding: 40px 0 0;}
     .blog-section #load-more{padding-top: 40px;}
     .blog-list{flex: 0 0 calc(33.33333333% - 27px);}
+    .blog-card > figure > a > img{min-height: 215px; max-height: 215px;}
 }
 @media screen and (max-width: 1439px) and (min-width: 1280px){
     .blog-rows{gap: 32px;}
