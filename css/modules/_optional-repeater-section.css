@@ -5,6 +5,7 @@ body.page-template-comparison-lp .optional-repeater-thumb{padding: 0; background
 body.page-template-comparison-lp .optional-repeater-thumb img{border-radius: 16px;}
 .optional-repeater-text{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
 .optional-repeater-text > p{color: var(--Gray-1);}
+body.page-template-Features-detail .optional-repeater-text > p{margin-bottom: 21px;}
 .optional-repeater-text span.optional-text{margin-bottom: 22px;}
 .optional-repeater-text hr.sm-line{margin: 24px 0;}
 .optional-repeater-text ul > li{font-weight: 700;}

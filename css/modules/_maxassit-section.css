@@ -6,7 +6,7 @@
 .maxassit-intro .h2 > span{display: inline-block; color: var(--Raisin-Black); text-shadow: 4px 4px 0px rgba(164, 39, 143, 0.24); margin: 0 16px; font-size: 48px; line-height: 60px; letter-spacing: -0.48px;}
 
 .maxassit-new-intro{text-align: center; width: 100%; font-size: 20px; line-height: 25px; font-weight: 800; letter-spacing: -0.2px; color: var(--Raisin-Black);}
-.maxassit-new-intro h2{font-size: 40px; line-height: 50px; letter-spacing: -0.4px; color: var(--Accent); margin-bottom: 8px;}
+.maxassit-new-intro h2, .maxassit-new-intro .h2{font-size: 40px; line-height: 50px; letter-spacing: -0.4px; color: var(--Accent); margin-bottom: 8px;}
 .maxassit-new-intro h2 > span, 
 .maxassit-new-intro .h2 > span{display: inline-block; color: var(--Raisin-Black); text-shadow: 4px 4px 0px rgba(164, 39, 143, 0.24); margin: 0 16px; font-size: 48px; line-height: 60px; letter-spacing: -0.48px;}
 
@@ -70,7 +70,7 @@
     .maxassit-mobile{gap: 32px;}
     .maxassit-heading{gap: 32px;}
     .maxassit-intro p{margin-bottom: 0;}
-    .maxassit-new-intro h2{font-size: 32px; letter-spacing: -.32px; line-height: 40px;}
+    .maxassit-new-intro h2, .maxassit-new-intro .h2{font-size: 32px; letter-spacing: -.32px; line-height: 40px;}
     .maxassit-new-intro p{margin-bottom: 0;}
     .maxassit-card{gap: 20px;}
     .maxassit-card-item{flex: 100%;}
