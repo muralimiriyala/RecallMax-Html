@@ -17,9 +17,9 @@
 .post-feature-thumb > a{width: 100%; height: 100%; display: block;}
 .post-feature-thumb img{min-height: 104px; object-fit: cover; object-position: center top;}
 .post-feature-text{flex: 1;}
-ul.post-categories{margin: 0 0 4px 0; gap: 17px;}
+ul.post-categories{margin: 0 0 4px 0; gap: 10px;}
 ul.post-categories > li{margin: 0; position: relative; line-height:15px;}
-ul.post-categories > li::before{content: ""; position: absolute; top: 0; left: -10px; height: 100%; width: 2px; border-radius: 1px; opacity: 0.25; background: var(--Raisin-Black);}
+ul.post-categories > li::before{content: ""; position: static; top: 0; left: -10px; margin-right: 10px; height: 100%; width: 2px; border-radius: 1px; opacity: 0.25; background: var(--Raisin-Black);}
 ul.post-categories > li:first-child::before{display: none;}
 ul.post-categories > li{font-size: 12px; line-height: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); position: relative; padding: 2px 0; display: flex;}
 ul.post-categories > li > a:hover{color: var(--Raisin-Black);}
