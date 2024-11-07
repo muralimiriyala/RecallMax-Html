@@ -31,6 +31,8 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
 .compare-images{max-width: 328px; }
 .compare-main:hover .compare-left{margin-right: -8px;}
 .compare-main:hover .compare-right{margin-left: -8px;}
+.no_compare_images .compare-bg{display: none;}
+.no_compare_images .compare-h{transform: none;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
