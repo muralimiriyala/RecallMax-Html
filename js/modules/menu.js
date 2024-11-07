@@ -11,7 +11,7 @@ const Menu = {
   $overlay: document.querySelector('.header-overlay'),
   $moverlay: document.querySelector('.h-mob-overlay'),
   $blackheader: document.querySelector(
-    'body.category-resources, body.page-template-about, body.page-template-contact, body.error404'
+    ' body.category, body.page-template-about, body.page-template-contact, body.error404'
   ),
   $whiteheader: document.querySelector('body.page-template-services-detail, body.single-post, body.page-template-team'),
   $site: document.querySelector('.site-main-cover'),
