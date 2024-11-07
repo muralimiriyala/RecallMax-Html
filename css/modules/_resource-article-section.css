@@ -19,8 +19,9 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 .article-caption-thumb.no_figcaption{background: transparent; padding: 0;}
 
 .article-subtitle{font-size: 32px; line-height: 40px; letter-spacing: -0.64px; margin: 56px 0;}
-.article-subtitle p > a{color: var(--Accent); border-bottom: 4px solid var(--Translucent); background: transparent; padding: 0; border-radius: 0;}
-.article-subtitle p > a:hover{border-color: var(--Accent);}
+.article-subtitle p > a{color: var(--Accent); position: relative; background: transparent; padding: 0; border-radius: 0;}
+.article-subtitle p > a::before{content: ""; position: absolute; bottom: -1px; left: 0; width: 100%; height: 4px; background: var(--Translucent); transition: var(--b-transition);}
+.article-subtitle p > a:hover::before{background: var(--Accent);}
 
 .article-testimonial{background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 32px 30px 30px; margin: 56px 0;}
 .article-testimonial-main{font-size: 24px; line-height: 36px;}

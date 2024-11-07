@@ -21,6 +21,10 @@
     .max-features-1{flex: 100%;}
 }
 
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .max-features-list .text-link{display: block;}
+    .max-features-list .text-link em{top: 2px;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .max-features-main{padding: 80px 0 40px; gap: 44px;}
     .max-features-row{gap: 28px 24px;}
