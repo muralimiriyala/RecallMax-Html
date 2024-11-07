@@ -35,7 +35,7 @@ ul.scrolly-keys > li > a:hover{color: var(--Accent);}
 .scrolly-text ul.scrolly-keys > li:last-child{margin-bottom: 0;}
 
 .no_scrolly_text{display: block;}
-.scrolly-btns.no_demo_btn{padding: 0; background: none;}
+.scrolly-btns.no_demo_btn, .scrolly-btns.no_demo_link{padding: 0; background: none;}
 .scrolly-btns.no_demo_btn a:not(.button){justify-content: flex-start;}
 
 
