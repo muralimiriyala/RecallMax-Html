@@ -34,8 +34,10 @@ svg.round-default-svg circle#round-bar-glow-4{ stroke: #1EA4B5; }
     .conter-max-main{padding: 80px 0; gap: 56px;}
     .conter-max-total{font-size: 128px; line-height: 128px;}
     .conter-max-row{gap: 48px;}
+    body.home .conter-max-row{gap: 32px;}
     .conter-max-list{text-align: center;}
     .conter-max-of-5{flex: 0 0 calc(20% - 39px);}
+    body.home .conter-max-of-5{flex: 0 0 calc(20% - 26px);}
     .conter-max-of-4{flex: 0 0 calc(25% - 36px);}
     .conter-max-of-3{flex: 0 0 calc(33.333% - 32px);}
     .conter-max-of-2{flex: 0 0 calc(50% - 24px);}
@@ -44,6 +46,7 @@ svg.round-default-svg circle#round-bar-glow-4{ stroke: #1EA4B5; }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .conter-max-row{gap: 32px; justify-content: center;}
     .conter-max-of-5{flex: 0 0 calc(33.333% - 22px);}
+    body.home .conter-max-of-5{flex: 0 0 calc(33.333% - 22px);}
     .conter-max-of-4{flex: 0 0 calc(25% - 24px);}
     .conter-max-of-3{flex: 0 0 calc(33.333% - 22px);}
     .conter-max-of-2{flex: 0 0 calc(50% - 16px);}

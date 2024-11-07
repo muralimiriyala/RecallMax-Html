@@ -16,7 +16,7 @@
 
 /*-- media css starts here --*/
 @media screen and (min-width: 768px){
-    .ftr-compare-main{padding: 80px 0;}
+    .ftr-compare-main{padding: 40px 0 80px;}
     .ftr-compare-head{margin-bottom: 64px;}
     .ftr-compare-rows{gap: 20px;}
     .ftr-compare-row{gap: 44px;}

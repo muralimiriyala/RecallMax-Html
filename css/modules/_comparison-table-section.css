@@ -27,6 +27,7 @@ table.comparison-table tbody td figure img{max-width: 32px; margin: auto; object
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .comparison-table-main{padding: 16px 0 40px;}
+    body.page-template-Products-overview .comparison-table-main{padding: 16px 0 56px;}
     table.comparison-table{display: none;}
     .comparison-slider-btns{justify-content: space-between; padding: 8px;}
     .comparison-slider{margin: 16px 0; border: 1px solid var(--Card-Stroke); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}

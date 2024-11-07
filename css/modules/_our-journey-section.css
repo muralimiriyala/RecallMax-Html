@@ -35,7 +35,8 @@ ul.our-journey-links > li > a:hover{border-color: var(--Accent); color: var(--Ac
     .our-journey-text span{font-size: 14px; line-height: 14px; letter-spacing: 1.12px; text-transform: uppercase; display: block; margin-bottom: 16px;}
     ul.our-journey-links{gap: 20px;}
     ul.our-journey-links > li{flex: 0 0 calc(25% - 15px);}
-    ul.our-journey-links > li > a{padding: 15px 15px 14px; font-size: 18px; line-height: 22.5px; letter-spacing: -0.18px;}
+    ul.our-journey-links > li > a{padding: 15px 15px 14px; font-size: 18px; line-height: 22.5px; letter-spacing: -0.18px; flex-direction: column; align-items: flex-start; min-height: 112px;}
+    ul.our-journey-links > li > a span.hide-mobile{ display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
     /* .tab-panel h3{margin-bottom: 16px;} */
     .tab-panel span.optional-text{display: none;}
     .our-journey-rt{padding-top: 32px; width: 100%;}
