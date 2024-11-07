@@ -1,8 +1,8 @@
 
 
 table.compare-table{margin: 0; border: none; display: block;}
-table.compare-table thead{padding: 0 16px 24px 34px; display: block;}
-table.compare-table thead tr{width: 100%; gap: 24px; align-items: end; display: flex; flex-wrap: wrap; }
+table.compare-table thead{padding: 0 16px 24px; display: block;}
+table.compare-table thead tr{padding: 0 16px; width: 100%; gap: 24px; align-items: end; display: flex; flex-wrap: wrap; }
 table.compare-table th{padding: 0; flex: 1; font-size: 14px; font-weight: 800; line-height: 1; letter-spacing: 1.4px; color: var(--Raisin-Black); background-color: transparent; display: flex; flex-direction: column; text-align: center;}
 table.compare-table th:not(:first-child){flex: 0 0 168px;}
 table.compare-table th:first-child{text-align: left; opacity: 0.5;}
@@ -14,11 +14,13 @@ table.compare-table tbody{padding: 8px 16px 16px; background-color: var(--White)
 table.compare-table tbody tr{width: 100%; gap: 24px; padding: 8px 16px; align-items: center; display: flex; flex-wrap: wrap; background-color: var(--White); border-radius: 8px;}
 table.compare-table tbody tr:nth-child(even){background-color: var(--Gray);}
 table.compare-table tbody td{padding: 0; flex: 1; font-size: 20px; line-height: 1; font-weight: 700; border: none; background-color: transparent;}
-table.compare-table tbody td:not(:first-child){flex: 0 0 163px;}
+table.compare-table tbody td:not(:first-child){flex: 0 0 167px;}
 table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fit: contain; display: block;}
 
 @media screen and (min-width: 1024px){
     .compare-table-main{margin: 23px 0 64px;}
+    table.compare-table th:first-child{flex: 0 0 256px;}
+    table.compare-table td:first-child{flex: 0 0 256px;}
 }
 @media screen and (max-width: 1439px) and (min-width: 1280px){
     table.compare-table thead th:not(:first-child){flex: 0 0 152px;}
