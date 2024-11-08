@@ -31,7 +31,7 @@ const pdetailtabs = {
             $link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const slideno = parseInt(this.getAttribute('data-name').slice(-1));
-                $fortab.slick('slickGoTo', slideno - 1);
+                $fortab.slick('slickGoTo', slideno);
                 _.resetAndAnimateProgressBar($link, $duration, index);
                 _.removeActiveClass();
                 this.classList.add('ui-open');
