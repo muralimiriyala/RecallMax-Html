@@ -20,9 +20,15 @@ const ComparisonSlick = {
                 autoplay: false,
                 appendArrows: comparisonAppend,
                 appendDots: comparisonAppend,
+<<<<<<< HEAD
               });
               $slider.on('afterChange', function(event, slick, currentSlide){ console.log(currentSlide)
                 $(".comparison-slider-btns .button").hide(); 
+=======
+            });
+            $slider.on('afterChange', function(event, slick, currentSlide){
+                $(".comparison-vd-btns button").hide();
+>>>>>>> 48f1ba1347d17c9a9df217fc25aac1d3785e4732
                 $("#btn-"+currentSlide).show();
             });
             }
