@@ -153,6 +153,9 @@ ul.beyond-links > li::before{display: none;}
     .beyond-step5-left{top: 65px; left: -10px; max-width: 121px;}
     .beyond-step5-right{top: 50px; right: -12px; max-width: 121px;}
 
+    .beyond-step6-left{top: 65px; left: -10px; max-width: 121px;}
+    .beyond-step6-right{top: 50px; right: -12px; max-width: 121px;}
+
     .beyond-image img{border-radius: 10px;}
     .beyond-link{padding:9.5px 10.5px;}
     .beyond-link .beyond-icon{height: auto; left: 0; position: relative; top: 0; width: auto;}
