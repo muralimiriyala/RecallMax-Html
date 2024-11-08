@@ -21,11 +21,12 @@ const CompareSlick = {
                 appendArrows: compareAppend,
                 appendDots: compareAppend,
               });
-            $slider.on('afterChange', function(event, slick, currentSlide){
-                $(".product-icon, .iconnames").hide();
-                $("#icon-"+currentSlide).show();
-                $("#iconname-"+currentSlide).show();
-            });
+              $slider.on('afterChange', function(event, slick, currentSlide){
+                  $(".product-icon, .iconnames").hide();
+                  $("#icon-"+currentSlide).show();
+                  $("#iconname-"+currentSlide).show();
+                });
+
             }
         })
 

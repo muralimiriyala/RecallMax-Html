@@ -58,6 +58,8 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     .compare-logo:last-of-type{order: 3;}
     .compare-appends{gap: 8px; align-items: center; margin: 0;}
     .compare-appends button.slick-arrow.slick-next{order: 3;}
+    .compare-logo figure.product-icon:first-child{display: block;}
+    .compare-logo figure.product-icon{display: none;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .compare-slide-text{font-size: 16px;}
