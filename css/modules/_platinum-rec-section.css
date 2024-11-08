@@ -2,6 +2,7 @@
 .platinum-rec-thumb{padding: 8px; background: var(--White); border-radius: 16px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .platinum-rec-thumb img{border-radius: 10px;}
 .platinum-rec-text{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
+.platinum-rec-text h2 a:hover{color: var(--Accent-3);}
 .platinum-rec-text > p{color: var(--Gray-1);}
 .platinum-rec-text span.optional-text{margin-bottom: 22px; color: var(--Accent-3);}
 .platinum-rec-text hr.sm-line{margin: 20px 0; background-color: var(--Accent-3);}
