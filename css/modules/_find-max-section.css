@@ -9,18 +9,20 @@
 .find-max-text p{margin-bottom: 8px;}
 
 
-.accent2 .find-max-text h3{color: var(--Accent-2);}
+.accent2 .find-max-text h3, .accent2 .find-max-text h3 a{color: var(--Accent-2);}
+.accent2 .find-max-text h3 a:hover{color: var(--Accent);}
 .accent2 .find-max-text .button{background: linear-gradient(180deg,rgba(18,39,80,0) 0,rgba(18,39,80,.5) 60%),var(--Accent-2); color: var(--White);}
 .accent2 .find-max-text .button:hover{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent-2);}
 
-.accent3 .find-max-text h3{color: var(--Accent-3);}
+.accent3 .find-max-text h3, .accent3 .find-max-text h3 a{color: var(--Accent-3);}
+.accent3 .find-max-text h3 a:hover{color: var(--Accent);}
 .accent3 .find-max-text .button{background: linear-gradient(180deg,rgba(18,39,80,0) 0,rgba(18,39,80,.5) 60%),var(--Accent-3); color: var(--White);}
 .accent3 .find-max-text .button:hover{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent-3);}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .find-max-main{padding: 80px 0;}
-    .find-max-head{align-items: center;}
+    .find-max-head{align-items: end;}
     .find-max-title h3 > span{font-style: italic;}
     .find-max-btn{flex: 0 0 205px; text-align: right;}
     .find-max-row{gap: 40px 80px;}
@@ -30,6 +32,7 @@
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .find-max-row{gap: 40px 60px;}
     .find-max-sw{flex: 0 0 calc(50% - 30px);}
+    .find-max-head{align-items: center;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .find-max-main{padding: 80px 0;}

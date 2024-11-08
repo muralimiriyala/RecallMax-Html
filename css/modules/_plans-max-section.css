@@ -16,13 +16,16 @@
 .plans-max-image img{border-radius: 4px 4px 0px 0px; border: 1px solid var(--Card-Stroke);}
 
 .plans-max-list.plans-eggshell{background-color: var(--Eggshell); border: solid 1px rgba(164, 39, 143, 0.2);}
-.plans-max-list.plans-eggshell .h4{color: var(--Accent);}
+.plans-max-list.plans-eggshell .h4,.plans-max-list.plans-eggshell .h4 a{color: var(--Accent);}
+.plans-max-list.plans-eggshell .h4 a:hover{color: var(--Raisin-Black);}
 .plans-max-list.plans-tint3{background-color: var(--Tint-3); border: solid 1px var(--Translucent);}
-.plans-max-list.plans-tint3 .h4{color: var(--Text-3);}
+.plans-max-list.plans-tint3 .h4, .plans-max-list.plans-tint3 .h4 a{color: var(--Text-3);}
+.plans-max-list.plans-tint3 .h4 a:hover{color: var(--Raisin-Black);}
 .plans-max-list.plans-tint3 .text-link em{color: var(--Text-3);}
 .plans-max-list.plans-tint3 .text-link:hover{color: var(--Text-3);}
 .plans-max-list.plans-tint2{background-color: var(--Tint-2); border: solid 1px var(--Translucent-2);}
-.plans-max-list.plans-tint2 .h4{color: var(--Text);}
+.plans-max-list.plans-tint2 .h4, .plans-max-list.plans-tint2 .h4 a{color: var(--Text);}
+.plans-max-list.plans-tint2 .h4 a:hover{color: var(--Raisin-Black);}
 .plans-max-list.plans-tint2 .text-link em{color: var(--Text);}
 .plans-max-list.plans-tint2 .text-link:hover{color: var(--Text);}
 
