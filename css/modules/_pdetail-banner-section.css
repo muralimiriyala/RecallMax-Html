@@ -17,6 +17,7 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 .ui-state{transition: all 0.3s ease;}
 .pdetail-ui-tab:first-child{display: block;}
 .pdetail-ui-tab{display: none;}
+.pdetail-ui-center{position: relative;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
