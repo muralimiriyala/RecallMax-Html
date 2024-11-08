@@ -45,15 +45,15 @@
     .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3) h2{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .large-cta-logo:nth-child(1) figure{margin-left: auto;}
-    .large-cta-logo:nth-child(2) figure{margin-right: auto;}
-    .large-cta-logo:nth-child(1), .large-cta-logo:nth-child(2){ width: calc(50% - 8px);
+    .large-cta-row:first-child .large-cta-logo:nth-child(1) figure{margin-left: auto;}
+    .large-cta-row:first-child .large-cta-logo:nth-child(2) figure{margin-right: auto;}
+    .large-cta-row:first-child .large-cta-logo:nth-child(1), .large-cta-row:first-child .large-cta-logo:nth-child(2){ width: calc(50% - 8px);
         background-color: transparent;
         border: none;
         box-shadow: none;
         padding: 0;
     }
-    .large-cta-logo:nth-child(1) figure, .large-cta-logo:nth-child(2) figure{
+    .large-cta-row:first-child .large-cta-logo:nth-child(1) figure, .large-cta-row:first-child .large-cta-logo:nth-child(2) figure{
         background-color: var(--White);
         border: 1px solid rgba(165,24,144,.1);
         box-shadow: 0 9px 16px 0 rgba(98,7,84,.08);
