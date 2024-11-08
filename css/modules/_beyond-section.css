@@ -45,6 +45,9 @@ ul.beyond-links > li::before{display: none;}
     .beyond-step5-left{top: 250px; left: 0; max-width: 221px;}
     .beyond-step5-right{top: 250px; right: 0; max-width: 221px;}
 
+    .beyond-step6-left{top: 270px; left: 0; max-width: 221px;}
+    .beyond-step6-right{top: 270px; right: 0; max-width: 221px;}
+
     .beyond-guy{bottom: -98px; left: calc(50% - 40px); transform: translateX(-50%); max-width: 202px;}
 }   
 @media screen and (min-width: 1024px) {
