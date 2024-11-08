@@ -60,6 +60,8 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     .compare-appends button.slick-arrow.slick-next{order: 3;}
     .compare-logo figure.product-icon:first-child{display: block;}
     .compare-logo figure.product-icon{display: none;}
+    .comparison-vd-btns button:first-child{display: block;}
+    .comparison-vd-btns button{display: none;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .compare-slide-text{font-size: 16px;}

@@ -20,10 +20,10 @@ const ComparisonSlick = {
                 autoplay: false,
                 appendArrows: comparisonAppend,
                 appendDots: comparisonAppend,
-              });
-              $slider.on('afterChange', function(event, slick, currentSlide){
-                $(".comparison-slider-btns button.next").hide();
-                $("#button-"+currentSlide).show();
+            });
+            $slider.on('afterChange', function(event, slick, currentSlide){
+                $(".comparison-vd-btns button").hide();
+                $("#btn-"+currentSlide).show();
             });
             }
         })
