@@ -9,6 +9,7 @@
 
 @media screen and (min-width: 1024px) {
     .accreditation-main{padding: 40px 0 80px; gap: 48px;}
+    .no-partner-block{padding-top: 80px;}
     .accreditation-intro{gap: 48px;}
     .accreditation-intro-title, .accreditation-intro-description{flex: 1;}
     .accreditation-row{gap: 48px;}
@@ -23,6 +24,7 @@
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .accreditation-main{padding: 40px 0; gap: 48px;}
+    .no-partner-block{padding-top: 60px;}
     .accreditation-intro{gap: 32px;}
     .accreditation-intro-title{flex: 100%;}
     .accreditation-intro-description{flex: 100%;}

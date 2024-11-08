@@ -23,6 +23,7 @@
     .ftr-compare-left{order: 1; flex: 1;}
     .ftr-compare-right{order: 3; flex: 1;}
     .ftr-compare-center{order: 2; flex: 0 0 128px; text-align: center; display: block;}
+    .ftr-compare-center span{display: none;}
     .ftr-compare-icon{margin-bottom: 20px;}
     .ftr-compare-icon svg, .ftr-compare-icon figure{max-width: 44px; margin: auto; display: block;}
     .ftr-compare-icon svg{max-width: 44px; margin: auto; display: block;}

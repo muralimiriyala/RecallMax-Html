@@ -16,15 +16,15 @@ body.page-template-pricing .faqs-lt .sm-line{margin: 32px 0;}
     .faqs-main{margin: 80px 0; flex-direction: row-reverse;}
     body.page-template-pricing .faqs-main{margin: 92px 0 80px;}
     body.page-template-pricing .faqs-lt{padding: 59px 40px 40px 80px;}
-    .faqs-lt{flex: 0 0 480px; padding: 40px 40px 40px 80px; margin-left: -40px;}
-    .faqs-rt{border-radius: 24px; flex: 0 0 calc(100% - 440px); padding: 48px;}
+    .faqs-lt{flex: 0 0 480px; padding: 40px 40px 40px 80px;}
+    .faqs-rt{border-radius: 24px 0 0 24px; flex: 1; padding: 48px 8px 48px 48px; position: relative; z-index: 0;}
+    .faqs-rt::after{content: ""; position: absolute; width: 40px; height: 100%; background-color: var(--White); top: 0; right: -40px; border-radius: 0 24px 24px 0; z-index: -1;}
     .faqs-main.no_faq_right{display: block;}
     .no_faq_right .faqs-lt{border-radius: 24px; margin: 0;}
 }
 
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
     .faqs-lt{flex: 0 0 424px;}
-    .faqs-rt{border-radius: 24px; flex: 0 0 calc(100% - 384px);}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {

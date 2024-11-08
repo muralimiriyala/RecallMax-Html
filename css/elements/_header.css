@@ -253,6 +253,8 @@ li.no-link a{pointer-events: none;}
     ul.main_menu > li.nav-products > ul > li > ul > li > a:hover{color: var(--Accent);}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a{ color: var(--Accent); }
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a:hover{ color: var(--Raisin-Black); }
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products:nth-child(2) > ul > li > a{color: var(--Raisin-Black);}
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products:nth-child(2) > ul > li > a:hover{color: var(--Accent);}
     
 
     ul.main_menu > li.nav-products > ul > li > ul > li > a img{top: -1px; left: 0; width: 24px; height: auto; position: absolute;}
