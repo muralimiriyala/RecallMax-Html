@@ -27,7 +27,6 @@ import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
 import spyScroll from './modules/spyScroll';
 import {numberInput} from './modules/numberInput';
-// import customSelectBox from './modules/_customSelectBox';
 
 (function() {  
 // document.addEventListener('DOMContentLoaded', function(){
@@ -60,7 +59,6 @@ import {numberInput} from './modules/numberInput';
   beyond.init();
   spyScroll.init();
   numberInput();
-  // customSelectBox.init();
 
 })();
 // });
