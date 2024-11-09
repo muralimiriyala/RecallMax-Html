@@ -3,7 +3,6 @@
 .beyond-lt .h5{letter-spacing: normal; margin-bottom: 15px;}
 
 .beyond-title span.optional-text{margin-bottom: 20px;}
-.beyond-title .h3{margin-bottom: 0;}
 
 ul.beyond-links{margin: 0; gap: 13px;}
 ul.beyond-links > li{margin: 0; width: 100%;}
@@ -55,7 +54,9 @@ ul.beyond-links > li::before{display: none;}
     .beyond-head{margin-bottom: 64px;}
     .beyond-bg{padding: 48px;}
     .beyond-bg .h4{margin-bottom: 16px;}
+    
     .beyond-main{gap: 64px; flex-direction: row-reverse;}
+    .beyond-title .h3{margin-bottom: 0;}
     .beyond-lt{flex: 0 0 334px;}
     .beyond-rt{flex: 1; margin-top: -3px;}
     .beyond-rt > figure:first-child{padding:0 57px 30px;}
@@ -112,6 +113,11 @@ ul.beyond-links > li::before{display: none;}
     .beyond-guy{bottom: 15px;}
     .beyond-mobile-title{font-size: 20px; line-height: 25px; border-radius: 12px; color: var(--Accent); margin-bottom: 8px; display: block;}
 
+    .beyond-step2-left {
+        left: 16px;
+        max-width: 194px;
+        top: 198px;
+    }
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     
@@ -137,6 +143,8 @@ ul.beyond-links > li::before{display: none;}
 
     .beyond-wrap{padding: 40px 0;}
     .beyond-title span.optional-text{margin-bottom: 22px;}
+    .beyond-title .h3{margin-bottom: 31px;}
+
     .beyond-bg .h4{font-size: 24px; line-height: 30px; letter-spacing: -0.24px; margin-bottom: 16px;}
     .beyond-guy{display: none;}
     .beyond-helps .h5{margin-bottom: 16px;}
@@ -144,8 +152,8 @@ ul.beyond-links > li::before{display: none;}
     .beyond-step1-left{top: 35px; left: -10px; max-width: 121px;}
     .beyond-step1-right{top: 25px; right: -12px; max-width: 121px;}
 
-    .beyond-step2-left{left: -10px; max-width: 194px; top: 110px;}
-    .beyond-step2-right{top: 30px; right: -12px; max-width: 194px;}
+    .beyond-step2-left{left: -10px; max-width: 97px; top: 110px;}
+    .beyond-step2-right{top: 30px; right: -12px; max-width: 97px;}
 
     .beyond-step3-left{top: 50px; left: -10px; max-width: 121px;}
     .beyond-step3-right{top: 30px; right: -12px; max-width: 121px;}
