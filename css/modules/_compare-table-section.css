@@ -39,6 +39,7 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     table.compare-table thead th:not(:first-child){flex: 1; align-items: center;}
     table.compare-table th img{margin: 0 0 9px 0; max-width: 56px;}
     table.compare-table th span{word-break: break-all;}
+    table.compare-table th span:not(:first-child){font-size: 10px;}
 
     table.compare-table tbody td:first-child{flex: 0 0 180px;}
     table.compare-table tbody td:not(:first-child){flex: 1;}

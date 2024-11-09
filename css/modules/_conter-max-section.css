@@ -61,7 +61,7 @@ svg.round-default-svg circle#round-bar-glow-4{ stroke: #1EA4B5; }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .conter-max-main{padding: 40px 0; gap: 32px;}
     .conter-max-total{font-size: 48px; line-height: 48px;}
-    .conter-max-head h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+    .conter-max-head h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px; max-width: 270px; margin: 0 auto;}
     .conter-max-row{gap: 24px; flex-direction: column;}
     .conter-max-list {display: flex; flex-wrap: wrap; width: 100%; gap: 20px; align-items: center; padding: 12px 16px 16px;}
     .counter-main{justify-content: flex-start;}

@@ -320,6 +320,7 @@ ul.slick-dots:not(.pagination) li::before{display: none;}
 ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 
 .book-demo-btn{border-radius: 28px; background: rgba(165, 24, 144, 0.10); display: inline-flex; width: fit-content; padding: 4px 20px 4px 4px; gap: 16px;}
+.book-demo-btn .button{line-height: 18px;}
 .book-demo-btn.book_no_phone{padding: 0; background: transparent;}
 .book-demo-btn.no_demo_btn{padding: 10px 20px;}
 .book-demo-btn svg path{transition: var(--b-transition);}
@@ -361,8 +362,8 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 .demo-white .book-demo-call:hover svg path{fill: var(--Sky-Blue);}
 
 .demo-accent3{background: var(--Translucent-2);}
-.demo-accent3 .button{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-3); color: var(--White);}
-.demo-accent3 .book-demo-call{color: var(--Raisin-Black);}
+.demo-accent3 .button{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-3); color: var(--White); line-height: 18px;}
+.demo-accent3 .book-demo-call{color: var(--Raisin-Black); font-size: 18px;}
 .demo-accent3 .book-demo-call svg path{fill: var(--Accent-3);}
 .demo-accent3 .book-demo-call:hover{color: var(--Accent-3);}
 .demo-accent3 .book-demo-call:hover svg path{fill: var(--Accent-3);}
