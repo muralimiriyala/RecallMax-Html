@@ -17,6 +17,7 @@ table.compare-table tbody td{padding: 0; flex: 1; font-size: 20px; line-height: 
 table.compare-table tbody td:not(:first-child){flex: 0 0 167px;}
 table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fit: contain; display: block;}
 
+/*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .compare-table-main{margin: 23px 0 64px;}
     table.compare-table th:first-child{flex: 0 0 256px;}
@@ -28,18 +29,20 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     table.compare-table tbody{padding: 8px 0px 8px 16px;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
-    table.compare-table thead th:not(:first-child){flex: 0 0 101px;}
-    table.compare-table tbody td:not(:first-child){flex: 0 0 101px;}
+    table.compare-table thead th:not(:first-child){flex: 0 0 100px;}
+    table.compare-table tbody td:not(:first-child){flex: 0 0 100px;}
     table.compare-table tbody{padding: 8px 0px 8px 16px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     table.compare-table thead tr{width: 100%; gap: 16px; align-items: flex-start;}
-    table.compare-table thead th:not(:first-child){flex: 0 0 56px; width: 56px; align-items: center;}
-    table.compare-table th:first-child{margin-top: auto;}
+    table.compare-table th:first-child{margin-top: auto; flex: 0 0 180px;}
+    table.compare-table thead th:not(:first-child){flex: 1; align-items: center;}
     table.compare-table th img{margin: 0 0 9px 0; max-width: 56px;}
     table.compare-table th span{word-break: break-all;}
-    table.compare-table tbody td:not(:first-child){flex: 0 0 50px;}
-    table.compare-table tbody{padding: 8px 0px 8px 16px;}
+
+    table.compare-table tbody td:first-child{flex: 0 0 180px;}
+    table.compare-table tbody td:not(:first-child){flex: 1;}
+    table.compare-table tbody{padding: 16px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .compare-table-main{padding: 20px 0 16px;}
@@ -47,7 +50,7 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     .compare-slider{margin: 16px 0; border: 1px solid var(--Card-Stroke); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
     .compare-vs-main{ flex: 1;  order: 2;}
     span.compare-vs{display: block; font-size: 14px; line-height: 18.2px; font-weight: 800; letter-spacing: 1.12px; color: rgba(48, 33, 53, 0.5); text-align: center;}
-    span.iconnames{display: none;}
+    span.iconnames{display: none; text-transform: uppercase;}
     span.iconnames:first-child{display: block;}
     .compare-slide{padding: 8px;}
     .compare-slide-row{padding: 6px 8px; gap: 8px;}

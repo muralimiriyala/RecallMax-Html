@@ -22,6 +22,7 @@
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .max-features-4{flex: 0 0 calc(33.3333333333% - 22px);}
     .max-features-list .text-link{display: block;}
     .max-features-list .text-link em{top: 2px;}
 }

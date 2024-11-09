@@ -52,5 +52,5 @@
     .features-form-field label{font-size: 16px; line-height: 24px; padding: 0 0 0 32px;}
     .features-form-field input{width: 24px; height: 24px;}
     .features-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
-    body.page-template-Products-overview .features-form-submit{bottom: -35px; max-width: 286px; margin: 0 auto;}
+    body.page-template-Products-overview .features-form-submit{bottom: -35px; max-width: 100%; width: calc(100% - 40px); margin: 0 auto;}
 }

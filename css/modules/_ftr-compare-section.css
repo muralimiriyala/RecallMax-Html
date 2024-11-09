@@ -30,6 +30,9 @@
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .ftr-compare-main{padding: 40px 0;}
+    .ftr-compare-row{gap: 16px;}
+    .ftr-compare-center{flex: 0 0 64px;}
+
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .ftr-compare-main{padding: 40px 0;}
