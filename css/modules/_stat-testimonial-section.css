@@ -105,4 +105,6 @@
     .stat-rating{flex: 0 0 62px;}
     .stat-reviews{flex: 0 0 64px; margin-left: 42px;}
     .stat-reviews::before{left: -21px;}
+
+    .stat-testimonial-left.no-author-img{padding: 40px 0 0;}
 }

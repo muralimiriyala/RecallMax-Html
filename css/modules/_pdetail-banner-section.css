@@ -19,6 +19,8 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 .pdetail-ui-tab{display: none;}
 .pdetail-ui-center{position: relative;}
 
+.pdetail-banner-main.no_pdetail-banner-uis{padding-bottom: 80px;}
+
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
     .pdetail-banner-main{padding: 150px 0 0;}

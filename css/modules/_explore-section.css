@@ -25,6 +25,8 @@
     .explore-of-1{flex: 1;}
     .explore-appends{max-width: 128px; position: absolute; right: 0; top: 96px; gap: 16px;}
     .explore-appends ul.slick-dots{display: none !important;}
+
+    .no-explore-heading{padding-top: 124px;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
     .explore-main{gap: 24px;}
