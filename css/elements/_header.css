@@ -60,8 +60,8 @@ li.no-link a{pointer-events: none;}
         background-color: var(--Eggshell);
     }
     ul.main_menu > li.nav-products > ul > li:first-child{padding: 41px 40px 16px; margin: 0;}
-    ul.main_menu > li.nav-products > ul > li:first-child::after{width: calc(100% - 82px); height: 1px; bottom: 0; background-color: var(--Eggshell); content: ""; display: block; position: absolute;}
-    ul.main_menu > li.nav-products > ul > li:nth-child(2){padding: 23px 40px 15px; margin: 0;}
+    ul.main_menu > li.nav-products > ul > li:first-child::after{width: 100%; height: 1px; margin-top: 30px; bottom: 0; background-color: var(--Eggshell); content: ""; display: block; position: relative;}
+    ul.main_menu > li.nav-products > ul > li:nth-child(2){padding: 13px 40px 15px; margin: 0;}
     ul.main_menu > li.nav-products > ul > li:not(:last-child){max-width: 256px; background-color: var(--White); position: static;}
     ul.main_menu > li.nav-products > ul > li:last-child{max-width: 100%; margin: 0;}
     ul.main_menu > li.nav-products > ul > li:not(.nav-gradient-bar) > a{
@@ -153,7 +153,8 @@ li.no-link a{pointer-events: none;}
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a{ padding: 13px 10px 13px 40px; position: relative; color: var(--Gray-2); font-size: 14px; font-weight: 400; line-height: 150%; border-radius: 20px; border: 4px solid transparent; }
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a:hover{ background-color: transparent; border-color: var(--Translucent); }
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a > img{width: 23px; top: 12px; left: 10px; position: absolute;}
-    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a span{padding-bottom: 5px; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block;}
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a span{transition: var(--b-transition); padding-bottom: 5px; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block;}
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a:hover span{color: var(--Accent);}
     li.nav-gradient-bar{ padding: 20px; font-weight: 800; text-align: center; border-radius: 0px 0px 24px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
     li.nav-gradient-bar > a{color: var(--White);}
 
