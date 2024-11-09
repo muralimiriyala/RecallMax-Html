@@ -5,9 +5,8 @@
 .service-features-text span.optional-text{margin-bottom: 15px;}
 .service-features-text p{margin-bottom: 16px;}
 
-@media screen and (min-width: 768px){
-    .service-features-text ul li::before{top: -5px; left: -8px; display: inline-block; position: relative;}
-}
+.service-features-text ul li::before{top: -5px; left: -8px; display: inline-block; position: relative;}
+
 @media screen and (min-width: 1024px) {
     .service-features-main{padding: 80px 0; gap: 48px;}
     .service-features-image{margin-bottom: 40px;}
