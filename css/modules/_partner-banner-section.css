@@ -12,7 +12,7 @@
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .partner-banner-main{padding: 80px 0 223px;}
+    .partner-banner-main{padding: 128px 0 223px;}
     .partner-banner-title span.optional-text{margin-bottom: 8px;}
     .partner-banner-title h1 > span::before{display: none;}
 }

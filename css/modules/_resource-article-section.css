@@ -46,8 +46,7 @@ ul.resource-article-details > li > a:hover{color: var(--Raisin-Black);}
 
 .author-section{background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); margin-top: 56px;}
 .author-main{padding:22px 24px; gap: 32px;}
-.author-image{flex: 0 0 160px; margin: 0 auto;}
-.author-text{flex: 0 0 calc(100% - 192px); font-size: 16px; line-height: 24px;}
+.author-text{font-size: 16px; line-height: 24px;}
 .author-text h5{margin-bottom: 13px; color: var(--Accent);}
 .author-text p:not(:last-child){margin-bottom: 12px;}
 
@@ -68,11 +67,16 @@ body.single-post .cta-main{margin-bottom: 0;}
     .no_cta_section .resource-article-main{padding-bottom: 40px;}
     .cta-text{padding-bottom: 40px;}
     .resource-video-bg img{min-height: 576px;}
+    .author-image{flex: 0 0 160px; margin: 0 auto;}
+    .author-text{flex: 1;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
     .cta-text .h3{font-size: 34px; line-height: 40px;}
 }
-
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .author-image{flex: 0 0 160px; margin: 0 auto;}
+    .author-text{flex: 1;}
+}
 @media screen and (max-width: 1023px) and (min-width: 200px) {
     .resource-article-main{padding: 32px 0 40px;} 
     .resource-article{width: 100%;}
@@ -89,8 +93,6 @@ body.single-post .cta-main{margin-bottom: 0;}
     .cta-text hr.sm-line{margin: 20px 0;}
     .cta-image{flex: 100%;}
     .author-section{margin-top: 40px; border-radius: 24px;}
-    .author-main{flex-direction: column; align-items: flex-start; }
-    .author-image{margin: 0; width: 160px;}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -106,13 +108,14 @@ body.single-post .cta-main{margin-bottom: 0;}
     .resource-video-main{margin: 0 auto 30px; width: calc(100% + 16px); left: -8px; position: relative;}
     .resource-video-main iframe, .resource-video-main video{min-height: 197px;}
     body.single-post ul.resource-article-details{margin: 24px 0 20px;}
+    .author-main{flex-direction: column; align-items: flex-start; }
+    .author-image{flex: 0 0 100%; width: 100%; max-width: 160px;}
+    .author-text{flex: 0 0 100%;}
 }
 
 @media screen and (max-width: 389px) and (min-width: 200px) {
     .cta-text .book-demo-btn{gap: 5px; width: 100%;}
     .cta-text .book-demo-btn .button{padding: 13px 10px;}
     .cta-text .book-demo-call{ font-size: 14px;}
-
-
 }
 

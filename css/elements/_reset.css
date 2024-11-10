@@ -143,7 +143,7 @@ p > embed, p > iframe, p > object, span > embed, span > iframe, span > object {m
 .aligncenter {display: block; margin-left: auto; margin-right: auto; text-align: center;}
 .hide {display: none;}
 
-img.alignnone{margin: 25px 0 25px; clear: both;}
+img.alignnone{margin: 25px 0 25px; clear: both; display: block;}
 img.alignleft{margin: 25px 25px 25px 0;}
 img.alignright{margin: 25px 0 25px 25px;}
 img.aligncenter{margin: 25px auto; clear: both;}
