@@ -225,7 +225,7 @@ li.no-link a{pointer-events: none;}
     ul.main_menu > li.menu-item-has-children > a.active::after{ transform: translateY(-50%) rotate(90deg); right: auto; left: 16px; }
     ul.main_menu > li > ul{max-height: 0; overflow: hidden; margin: 0; padding: 0 20px; transition: max-height 0.8s; border-radius: 0px 0px 24px 24px; background: var(--Eggshell); }
     ul.main_menu > li > ul > li:first-child{padding-top: 20px;}
-    ul.main_menu > li > ul > li:last-child{padding-bottom: 8px;}
+    ul.main_menu > li > ul > li:not(.nav-gradient-bar){padding-bottom: 8px;}
     ul.main_menu > li > ul > li{margin: 0 0 12px;}
     ul.main_menu > li > ul > li:not(.nav-gradient-bar) > a{color: var(--Raisin-Black); font-family: var(--base-font); font-size: 1rem; font-weight: 800; line-height: 1.5rem; display: block; position: relative;}
     ul.main_menu > li > ul > li.current_page_item > a{color: var(--Accent);}
