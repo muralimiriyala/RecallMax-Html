@@ -47,3 +47,8 @@ table.comparison-table tbody td figure img{max-width: 32px; margin: auto; object
     .comparison-appends button.slick-arrow.slick-next{order: 3;}
 
 }
+@media screen and (max-width: 389px) and (min-width: 200px){
+    .comparison-slider-btns .platinum-transparent-btn{font-size: 15px;}
+    .comparison-vd-btns{min-width: 114px;}
+    .comparison-slider-btns .button{min-width: 114px; font-size: 15px;}
+}
