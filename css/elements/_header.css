@@ -156,7 +156,7 @@ li.no-link a{pointer-events: none;}
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a span{transition: var(--b-transition); padding-bottom: 5px; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block;}
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a:hover span{color: var(--Accent);}
     li.nav-gradient-bar{ font-weight: 800; text-align: center; border-radius: 0px 0px 24px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
-    li.nav-gradient-bar > a{padding: 20px; color: var(--White);}
+    li.nav-gradient-bar > a{padding: 20px; display: block; color: var(--White);}
 
     span.black-logo{display: none;}
     span.black-logo img{max-width: 218px;}
@@ -268,7 +268,7 @@ li.no-link a{pointer-events: none;}
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a p{display: none;}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar{margin-bottom: 20px;}
     li.nav-gradient-bar{ margin-bottom: 20px; color: var(--White); font-size: 16px; font-weight: 800; line-height: 24px; border-radius: 32px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--RecallMax-Purple, #A4278F); text-align: center; }
-    li.nav-gradient-bar > a{padding: 8px 16px;  color: var(--White);}
+    li.nav-gradient-bar > a{padding: 8px 16px; display: block; color: var(--White);}
 
 
 
