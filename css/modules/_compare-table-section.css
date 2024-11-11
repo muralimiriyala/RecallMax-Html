@@ -29,8 +29,8 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     table.compare-table tbody{padding: 8px 0px 8px 16px;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
-    table.compare-table thead th:not(:first-child){flex: 0 0 1;}
-    table.compare-table tbody td:not(:first-child){flex: 0 0 1;}
+    table.compare-table thead th:not(:first-child){flex: 1;}
+    table.compare-table tbody td:not(:first-child){flex: 1;}
     table.compare-table tbody{padding: 8px 0px 8px 16px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
