@@ -268,10 +268,10 @@ const $cultureMain = $('.culture-main');
               speed: 1000,
               infinite: false,
               autoplay: false,
+              adaptiveHeight: true,
               variableWidth: true,
               appendArrows: trainingAppend,
               appendDots: trainingAppend,
-              adaptiveHeight: true,
               dotsClass: 'slick-dots training-slick-dots pagination',
               customPaging: function (slider, i) {
                 var slideNumber = i + 1,

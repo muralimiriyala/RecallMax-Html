@@ -246,7 +246,8 @@ li.no-link a{pointer-events: none;}
     
     ul.main_menu > li.nav-products > ul > li.nav-gradient-bar{margin-bottom: 20px;}
     ul.main_menu > li.nav-products > ul > li.nav-gradient-bar > a{color: var(--White);}
-    ul.main_menu > li.nav-products > ul > li:not(.nav-gradient-bar) > a{display: none;}
+    /* ul.main_menu > li.nav-products > ul > li:not(.nav-gradient-bar) > a{display: none;} */
+    ul.main_menu > li.nav-products > ul > li:not(.nav-gradient-bar) > a{margin-bottom: 12px;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul{ padding: 0; margin: 0; }
     ul.main_menu > li.nav-products > ul > li > ul{padding: 0; margin: 0;}
     ul.main_menu > li.nav-products > ul > li > ul > li{margin-bottom: 18px;}
