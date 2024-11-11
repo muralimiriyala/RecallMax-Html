@@ -25,6 +25,7 @@
     .service-features-list{gap: 40px; align-items: center; display: flex; flex-wrap: wrap;}
     .service-features-image{flex: 0 0 452px;}
     .service-features-text{flex: 0 0 calc(100% - 492px); text-align: left;}
+    .service-features-text ul{margin-left: 4px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .service-features-main{padding: 48px 0; gap: 56px; flex-direction: column;}
