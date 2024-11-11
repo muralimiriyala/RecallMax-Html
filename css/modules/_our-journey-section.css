@@ -31,6 +31,7 @@ ul.our-journey-links > li > a:hover{border-color: var(--Accent); color: var(--Ac
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .our-journey-main{padding: 32px; margin: 40px 0; border-radius: 32px;}
+    body.page-template-about .our-journey-main{margin: 52px 0;}
     .our-journey-lt{padding-bottom: 32px; border-bottom: 2px solid var(--Eggshell); border-right: none; width: 100%;}
     .our-journey-text span{font-size: 14px; line-height: 14px; letter-spacing: 1.12px; text-transform: uppercase; display: block; margin-bottom: 16px;}
     ul.our-journey-links{gap: 20px;}
@@ -43,12 +44,14 @@ ul.our-journey-links > li > a:hover{border-color: var(--Accent); color: var(--Ac
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .our-journey-main{padding: 24px; margin: 40px 0; border-radius: 24px;}
+    body.page-template-about .our-journey-main{margin: 52px 0;}
     .our-journey-lt{padding-bottom: 24px; border-bottom: 2px solid var(--Eggshell); border-right: none; width: 100%;}
     .our-journey-text span{font-size: 14px; line-height: 14px; letter-spacing: 1.12px; text-transform: uppercase; display: block; margin-bottom: 16px;}
     ul.our-journey-links{gap: 12px;}
     ul.our-journey-links > li{flex: 0 0 calc(25% - 9px);}
     ul.our-journey-links > li > a{padding: 8px; }
     ul.our-journey-links > li > a > span:first-child{background: none; color: var(--Raisin-Black); padding: 0; margin: 0 auto;}
+    ul.our-journey-links > li > a.active > span{color: var(--Accent);}
     .our-journey-rt{padding-top: 24px; width: 100%;}
     .tab-panel{font-size: 18px; line-height: 27px;}
     .tab-panel h3{margin-bottom: 16px;}
