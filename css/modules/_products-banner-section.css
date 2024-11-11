@@ -99,7 +99,7 @@ body .quantity-select .selectBox-dropdown{min-width: 136px; background-color: va
     .products-form-field:last-child .products-radio-main{gap: 16px;}
     .products-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
 
-    .quantity-block{padding: 9px 7px;}
+    .quantity-block{padding: 9px 7px; margin-bottom: 8px;}
     .products-form-field:not(:first-child){flex-direction: column; align-items: flex-start;}
     .quantity-select{margin-bottom: 8px; }
     body .quantity-select .selectBox-dropdown{width: 100%; min-width: 100%;}
