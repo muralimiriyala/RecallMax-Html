@@ -13,35 +13,39 @@ const Menu = {
   $blackheader: document.querySelector(
     ' body.category, body.page-template-about, body.page-template-contact, body.error404'
   ),
-  $whiteheader: document.querySelector('body.page-template-services-detail, body.single-post, body.page-template-team'),
+  $whiteheader: document.querySelector(
+    'body.page-template-services-detail, body.single-post, body.page-template-team'
+  ),
   $site: document.querySelector('.site-main-cover'),
   $mainproducts: document.querySelector('ul.main_menu > li.nav-products > a'),
-  $products: document.querySelectorAll('ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a'),
+  $products: document.querySelectorAll(
+    'ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a'
+  ),
   init() {
     const _ = this;
     if (!_.$header) return false;
     // if (!_.$mainproducts) return false;
 
-    if(_.$mainproducts){
-      _.$mainproducts.addEventListener('mouseover', function(e){
+    if (_.$mainproducts) {
+      _.$mainproducts.addEventListener('mouseover', function (e) {
         _.$products[0].parentElement.classList.add('open');
-      })
-      _.$mainproducts.addEventListener('mouseleave', function(e){
-        _.$products[0].parentElement.classList.remove('open');
-      })
-    }
-  
-    _.$products.forEach((ele)=>{
-      ele.addEventListener("mouseover", function(e){
-        _.$products.forEach((ele)=>{
-          ele.parentElement.classList.remove("open");
-        })
-        e.target.parentElement.classList.add("open");
-      })
-      ele.addEventListener("mouseleave", function(e){
-        e.target.parentElement.classList.remove("open");
       });
-    })
+      _.$mainproducts.addEventListener('mouseleave', function (e) {
+        _.$products[0].parentElement.classList.remove('open');
+      });
+    }
+
+    _.$products.forEach((ele) => {
+      ele.addEventListener('mouseover', function (e) {
+        _.$products.forEach((ele) => {
+          ele.parentElement.classList.remove('open');
+        });
+        e.target.parentElement.classList.add('open');
+      });
+      ele.addEventListener('mouseleave', function (e) {
+        e.target.parentElement.classList.remove('open');
+      });
+    });
 
     let userScroll = () => {
       const scroll = window.scrollY;
@@ -78,14 +82,20 @@ const Menu = {
 
       _.$links.forEach(($item) => {
         if ($item !== _$ && $item !== $li) {
-          $item.parentElement.querySelector('ul.sub-menu').style.maxHeight = '0';
+          $item.parentElement.querySelector('ul.sub-menu').style.maxHeight =
+            '0';
         }
       });
 
       let $submenu = _$.parentElement.querySelector('ul.sub-menu');
-      $submenu.style.maxHeight && $submenu.style.maxHeight !== '0px'
-        ? ($submenu.style.maxHeight = '0')
-        : ($submenu.style.maxHeight = `${$submenu.scrollHeight}px`);
+      if ($submenu.style.maxHeight && $submenu.style.maxHeight !== '0px') {
+        $submenu.style.maxHeight = '0';
+        $submenu.style.overflow = 'hidden';
+      } else {
+        // $submenu.style.maxHeight = `${$submenu.scrollHeight}px`
+        $submenu.style.maxHeight = `${400}px`;
+        $submenu.style.overflow = `auto`;
+      }
     };
 
     let onMouse = () => {
