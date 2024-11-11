@@ -87,7 +87,7 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .tabs-row{gap: 32px; padding-top: 32px;}
     .tab-list{flex: 0 0 calc(50% - 16px); }
-    ul.tab-links { gap: 24px; }
+    ul.tab-links { gap: 12px; }
     .tabs-filter{gap: 0 40px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
