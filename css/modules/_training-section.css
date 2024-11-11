@@ -16,9 +16,9 @@
 .platinum-details-text{color: var(--Accent-3);}
 
 ul.kickstart-training-details{gap: 12px; padding-top: 20px; border-top: 2px solid rgba(164, 39, 143, 0.2); margin: 20px 0 0;}
-ul.kickstart-training-details > li{gap: 8px; margin-bottom: 0; width: 100%;}
+ul.kickstart-training-details > li{gap: 8px; margin-bottom: 0; width: 100%; align-items: flex-start;}
 ul.kickstart-training-details > li::before{display: none;}
-ul.kickstart-training-details > li .kickstart-icon{flex: 0 0 16px; display: flex; align-items: center;}
+ul.kickstart-training-details > li .kickstart-icon{flex: 0 0 16px; top: 3px; position: relative;}
 ul.kickstart-training-details > li .kickstart-icon svg{width: 16px; height: 16px;}
 ul.kickstart-training-details > li .kickstart-text{font-size: 16px; line-height: 24px; color: var(--Raisin-Black); flex: 1;}
 

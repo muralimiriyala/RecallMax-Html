@@ -57,6 +57,7 @@
     .maxassit-mobile{gap: 32px;}
     .maxassit-heading{gap: 32px;}
     .maxassit-intro p{margin-bottom: 0;}
+    .maxassit-new-intro{max-width: 380px; margin: 0 auto;}
     .maxassit-new-intro p{margin-bottom: 0;}
     .maxassit-image{flex: 100%;}
     .maxassit-card{gap: 24px; padding: 0 32px;}
@@ -70,6 +71,7 @@
     .maxassit-mobile{gap: 32px;}
     .maxassit-heading{gap: 32px;}
     .maxassit-intro p{margin-bottom: 0;}
+    .maxassit-new-intro{max-width: 375px; margin: 0 auto;}
     .maxassit-new-intro h2, .maxassit-new-intro .h2{font-size: 32px; letter-spacing: -.32px; line-height: 40px;}
     .maxassit-new-intro p{margin-bottom: 0;}
     .maxassit-card{gap: 20px;}
