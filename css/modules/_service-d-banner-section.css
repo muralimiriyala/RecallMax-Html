@@ -33,6 +33,7 @@
     .service-d-banner-text{max-width: 444px;}
     .service-d-banner-text span.optional-text{margin-bottom: 32px;}
     .service-d-banner-text hr.sm-line{margin: 32px 0;}
+    .service-d-banner-bg picture img{object-position: 75% 50%;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .service-affiliate-banner{margin-top: 64px;}
