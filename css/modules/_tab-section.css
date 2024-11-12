@@ -65,6 +65,8 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
 .data-tab-row.open{max-height: inherit;}
 
 .tab-section.no-about-intro .tabs-main{padding: 80px 0;}
+
+.tabs-row{justify-content: flex-start;}
 /*-- media css starts here --*/
 @media only screen and (min-width: 1200px){
     .tabs-row{gap: 40px;}
@@ -72,7 +74,6 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .data-tab-rows{padding: 40px 0 64px;}
 }
 @media screen and (min-width: 1024px){
-    .tabs-row{justify-content: flex-start;}
     .tabs-filter{gap: 0 41px;}
     body.page-template-team ul.tab-links {padding: 24px 0 32px;}
 }
@@ -86,8 +87,9 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .tabs-row{gap: 32px; padding-top: 32px;}
+    .search-wrap{padding: 40px 0 10px;}
     .tab-list{flex: 0 0 calc(50% - 16px); }
-    ul.tab-links { gap: 24px; }
+    ul.tab-links { gap: 12px; }
     .tabs-filter{gap: 0 40px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
@@ -99,7 +101,8 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .tabs-main{padding: 40px 0;}
     .tab-section.no-about-intro .tabs-main{padding: 40px 0 15px;}
     ul.tab-links{padding: 0 0 46px;}
-    body.page-template-team ul.tab-links{gap: 8px; padding: 0 0 62px;}
+    body.page-template-team ul.tab-links{gap: 8px;}
     .tab-desc-pad{margin-top: 10px;}
     .tab-divider{min-height: 32px;}
+    ul.tab-links > li > a.clear{padding-left: 8px;}
 }
