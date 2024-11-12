@@ -20,7 +20,7 @@ svg.round-default-svg circle#round-bar-glow-4{ stroke: #1EA4B5; }
 
 .conter-max-list.yellow{border: 1px solid var(--Translucent-3); background: var(--Tint); color: var(--Text-2);}
 .yellow .conter-max-icon svg path{fill: var(--Accent-4);}
-.conter-max-list.light-blue{border: 1px solid var(--Translucent,-2); background: var(--Tint-2); color: var(--Text);}
+.conter-max-list.light-blue{border: 1px solid var(--Translucent); background: var(--Tint-2); color: var(--Text);}
 .light-blue .conter-max-icon svg path{fill: var(--Accent-3);}
 .conter-max-list.light-green{border: 1px solid var(--Translucent); background: var(--Tint-3); color: var(--Text-3);}
 .light-green .conter-max-icon svg path{fill: var(--Accent-2);}

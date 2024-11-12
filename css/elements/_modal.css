@@ -3,6 +3,8 @@
 .modal-main{display: none; width: 100%; height: 100%; top: 0; left: 0; position: fixed; z-index: 1202; overflow-y: auto;}
 .modal-phone{width: fit-content; margin-left: auto; color: var(--White); font-size: 18px; line-height: 28px; }
 .modal-phone-text{gap: 8px;}
+.modal-phone-text a{color: var(--White);}
+.modal-phone-text a:hover{color: var(--Accent);}
 .modal-center{height: 100%;}
 .modal-container{max-width: 840px; padding: 40px 40px 16px; background-color: var(--White);}
 .modal-head{color: var(--Raisin-Black); font-size: 20px; font-weight: 400; line-height: 30px;}
