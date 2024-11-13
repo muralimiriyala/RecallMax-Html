@@ -8,7 +8,7 @@
 .default-banner-thumb img{opacity: 0.2;}
 
 @media screen and (min-width: 1024px) {
-    .default-banner-main{padding: 150px 0 80px;}
+    .default-banner-main{padding: 150px 0 80px; min-height: 490px; align-items: center; display: flex;}
     .default-banner-text{max-width: 600px;}
     .default-banner-text.no_banner_bg{max-width: 100%;}
     .default-banner-bg{height: 567px; right: -156px; top: 127px; max-width: 917px;} 
