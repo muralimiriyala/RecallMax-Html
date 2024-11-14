@@ -50,6 +50,8 @@
     .testimonial-mobiles{display: none;}
     .testimonial-content {padding: 32px 32px 32px 34px; top: 0; left: 164px; position: absolute;}
     .testimonial-item{padding: 4px; height: 100%;}
+    .no_testimonial_thumb{min-height: 320px;}
+    .no_testimonial_thumb .testimonial-content{position: relative;}
 }
 @media screen and (min-width: 1024px) {
     .testimonial-main{padding: 48px; justify-content: space-between; align-items: center; margin: 90px 0;}
