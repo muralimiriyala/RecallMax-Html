@@ -56,11 +56,9 @@ const filterCategory = {
 
     let ftrMobile = function (e) {
       e.preventDefault();
-      console.log('Button clicked:', e.target); // Debugging line
     
       e.target.classList.toggle('open');
       const ele = document.querySelector('.filter-category-links');
-      console.log('Element toggled:', ele); // Debugging line
     
       if (ele.dataset.open !== 'true') {
         _.$ftrlinks.forEach((item) => {
