@@ -12,6 +12,7 @@ const modal = {
   $close: document.querySelector('.modal-close'),
   init() {
     const _ = this;    
+    
     let modal = (e) => {
       e.preventDefault();
       e.target.classList.toggle('open');
@@ -23,6 +24,11 @@ const modal = {
     _.$ele.forEach((btn) => {
       btn.addEventListener('click', modal);
     });
+
+    // Open the modal if URL contains '#modal'
+    if (window.location.href.includes('#modal')) {
+      _.$ele[0]?.click();
+    }
     if (!_.$close) return false;
     _.$close.addEventListener('click', modal);
     let modalClose = function(e){
