@@ -26,26 +26,26 @@ const Menu = {
     if (!_.$header) return false;
     // if (!_.$mainproducts) return false;
 
-    if (_.$mainproducts) {
-      _.$mainproducts.addEventListener('mouseover', function (e) {
-        _.$products[0].parentElement.classList.add('open');
-      });
-      _.$mainproducts.addEventListener('mouseleave', function (e) {
-        _.$products[0].parentElement.classList.remove('open');
-      });
-    }
+    // if (_.$mainproducts) {
+    //   _.$mainproducts.addEventListener('mouseover', function (e) {
+    //     _.$products[0].parentElement.classList.add('open');
+    //   });
+    //   _.$mainproducts.addEventListener('mouseleave', function (e) {
+    //     _.$products[0].parentElement.classList.remove('open');
+    //   });
+    // }
 
-    _.$products.forEach((ele) => {
-      ele.addEventListener('mouseover', function (e) {
-        _.$products.forEach((ele) => {
-          ele.parentElement.classList.remove('open');
-        });
-        e.target.parentElement.classList.add('open');
-      });
-      ele.addEventListener('mouseleave', function (e) {
-        e.target.parentElement.classList.remove('open');
-      });
-    });
+    // _.$products.forEach((ele) => {
+    //   ele.addEventListener('mouseover', function (e) {
+    //     _.$products.forEach((ele) => {
+    //       ele.parentElement.classList.remove('open');
+    //     });
+    //     e.target.parentElement.classList.add('open');
+    //   });
+    //   ele.addEventListener('mouseleave', function (e) {
+    //     e.target.parentElement.classList.remove('open');
+    //   });
+    // });
 
     let userScroll = () => {
       const scroll = window.scrollY;
