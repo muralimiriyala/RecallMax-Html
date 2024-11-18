@@ -250,6 +250,7 @@
 [data-animation="underline"] h1 span::before,
 [data-animation="underline"] h2 span::before{transition: var(--b-transition); width: 0;}
 [data-animation].underline h4 span::before{width: 100%;}
+[data-animation].underline .h4 span::before{width: 100%;}
 [data-animation].underline.left h4 span::before{left: 0;}
 [data-animation].underline.right h1 span::before{left: 0;}
 [data-animation].underline.right h4 span::before{right: 0;}
