@@ -28,7 +28,7 @@
     body.category-resources .maxassit-main{padding: 40px 0 80px;}
     .maxassit-desktop{gap: 48px;}
     .maxassit-main .book-demo-btn{margin: 0 auto;}
-    .maxassit-grid{gap: 32px; align-items: center;}
+    .maxassit-grid{gap: 32px; align-items: center; justify-content: center;}
     .maxassit-card{flex: 0 0 308px; gap: 20px;}
     .maxassit-card:nth-child(2){order: 3;}
     .maxassit-card-item{flex: 100%;}

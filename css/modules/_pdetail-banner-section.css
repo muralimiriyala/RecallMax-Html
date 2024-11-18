@@ -55,6 +55,6 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     .pdetail-banner-text hr.sm-line{margin: 24px 0;}
     ul.pdetail-ui-links{display: block; max-width: 256px; margin: 38px auto 56px;}
     body.home ul.pdetail-ui-links{margin: 38px auto 52px;}
-    ul.pdetail-ui-links li a{display: none;}
+    ul.pdetail-ui-links li a{display: none; line-height: 18px;}
     ul.pdetail-ui-links li a.ui-open{display: block;}
 }
