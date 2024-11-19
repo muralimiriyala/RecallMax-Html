@@ -130,12 +130,6 @@ const Menu = {
       _.$site.classList.add('site-white-top');
     }
 
-    if (!_.$adsense) return false;
-    if (_.$adsense) {
-      _.$site.classList.add('top-adsense');
-    } else {
-      _.$site.classList.remove('top-adsense');
-    }
     let offHeight = _.$site.offsetTop;
     let staticScroll = 100;
     let mobscroll = offHeight + staticScroll;
@@ -149,6 +143,13 @@ const Menu = {
     };
     window.addEventListener('scroll', mobScroll);
     window.addEventListener('load', mobScroll);
+
+    if (!_.$adsense) return false;
+    if (_.$adsense) {
+      _.$site.classList.add('top-adsense');
+    } else {
+      _.$site.classList.remove('top-adsense');
+    }
   },
 };
 export default Menu;
