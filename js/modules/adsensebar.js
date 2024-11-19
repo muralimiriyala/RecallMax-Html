@@ -4,7 +4,10 @@ const adsensebar = {
   $site: document.querySelector('.site-main-cover'),
   init() {
     const _ = this;
+
+    if (!_.$ele) return false;
     // _.$ele.style.maxHeight = `${_.$ele.scrollHeight}px`;
+
     _.$ele.style.transition = 'all 0.6s linear';
     _.$close.addEventListener('click', function (e) {
       e.preventDefault();

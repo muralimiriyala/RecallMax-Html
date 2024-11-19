@@ -9,7 +9,7 @@
 .ftr-compare-bg.in span{color: var(--Accent);}
 .ftr-compare-center span{font-size: 18px;font-weight: 800; line-height: 22.5px; letter-spacing: -0.18px; display: block; color: var(--Accent);}
 .ftr-compare-text{padding: 20px;}
-.ftr-compare-text span{margin-bottom: 16px; font-size: 14px; line-height: 14px; font-weight: 800; color: var(--Gray-3); display: block;}
+.ftr-compare-text span{margin-bottom: 16px; font-size: 14px; line-height: 14px; font-weight: 800; color: var(--Gray-3);}
 .ftr-compare-text span.withmax{color: var(--Accent);}
 .ftr-compare-icon svg{width: 48px; height: 48px;}
 .ftr-compare-subtitle{gap: 8px;}
@@ -50,4 +50,6 @@
     .ftr-compare-text span{margin-bottom: 0;}
     .ftr-compare-subtitle-icon svg{max-width: 24px; display: block; height: 24px;}
     .ftr-compare-subtitle-icon img{max-width: 24px; object-fit: contain;}
+    .ftr-compare-left{width: 100%;}
+    .ftr-compare-right{width: 100%;}
 }
