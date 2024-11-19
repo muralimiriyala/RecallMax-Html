@@ -1,6 +1,6 @@
 const adsensebar = {
   $ele: document.querySelector('.header_bar'),
-  $close: document.querySelector('.header_bar_close'),
+  $close: document.querySelector('.adsense_close'),
   init() {
     const _ = this;
     _.$ele.style.maxHeight = `${_.$ele.scrollHeight}px`;
