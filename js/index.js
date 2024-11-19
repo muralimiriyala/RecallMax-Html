@@ -26,19 +26,20 @@ import beyond from './modules/beyond-script';
 import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
 import spyScroll from './modules/spyScroll';
-import {numberInput} from './modules/numberInput';
+import { numberInput } from './modules/numberInput';
+import adsensebar from './modules/adsensebar';
 
-(function() {  
-// document.addEventListener('DOMContentLoaded', function(){
+(function () {
+  // document.addEventListener('DOMContentLoaded', function(){
   customGsap.init();
   counter.init();
   progress.init();
   Effects.init();
   Animations.init();
   Menu.init();
-  
+
   // scrollModule.init();
-  
+
   customSlick.init();
   filterCategory.init();
   uiAccordion.init();
@@ -59,7 +60,7 @@ import {numberInput} from './modules/numberInput';
   beyond.init();
   spyScroll.init();
   numberInput();
-
+  adsensebar.init();
 })();
 // });
 let scrolled = window.scrollY;
