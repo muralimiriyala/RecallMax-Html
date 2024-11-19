@@ -187,8 +187,8 @@ header.scrolly-header{transform: translateY(-100%);}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .logo{flex: 0 0 234px;}
-    .header_right{gap: 0 28px;}
-    ul.main_menu{gap: 0 28px;}
+    .header_right{gap: 0 26px;}
+    ul.main_menu{gap: 0 26px;}
     ul.main_menu > li.nav-features > ul{padding: 16px 12px 0;}
     ul.main_menu > li.nav-features > ul > li{flex: 0 0 calc(33.3333% - 8px);}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar{width: calc(100% + 24px); left: -12px;}
