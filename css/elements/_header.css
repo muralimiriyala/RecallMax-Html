@@ -210,6 +210,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > a{align-items: center;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
+    .header_bar_main{max-height: 98px; min-height: 98px; overflow: hidden;}
 }
 @media screen and (max-width: 1023px) and (min-width: 200px){
     .header{padding: 16px 0; gap: 16px; position: relative; z-index: 2;}
@@ -245,7 +246,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.menu-item-has-children > a::after{ width: 22px; height: 14px; background-image: url('../../images/angle-down.svg'); background-repeat: no-repeat; background-size: contain; top: 50%; transform: translateY(-50%); right: 21px; content: "";display: block; position: absolute; }
     ul.main_menu > li.menu-item-has-children > a.active::after{ transform: translateY(-50%) rotate(90deg); right: auto; left: 16px; }
     ul.main_menu > li > ul{max-height: 0; overflow: hidden; margin: 0; padding: 0 20px; transition: max-height 0.8s; border-radius: 0px 0px 24px 24px; background: var(--Eggshell); }
-    ul.main_menu > li > ul > li:first-child{padding-top: 20px;}
+    ul.main_menu > li > ul > li:first-child{padding-top: 20px; margin-bottom: 0;}
     ul.main_menu > li > ul > li:not(.nav-gradient-bar){padding-bottom: 8px;}
     ul.main_menu > li > ul > li{margin: 0 0 12px;}
     ul.main_menu > li > ul > li:not(.nav-gradient-bar) > a{color: var(--Raisin-Black); font-family: var(--base-font); font-size: 1rem; font-weight: 800; line-height: 1.5rem; display: block; position: relative;}
@@ -319,7 +320,9 @@ header.scrolly-header{transform: translateY(-100%);}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .header_right{left: -20px;}
-    .header_bar_main{min-height: 82px; max-height: 82px; overflow: hidden;}
+    .header_bar_main{min-height: 112px; max-height: 112px; overflow: hidden;}
+    .header_bar_left {justify-content: flex-start; gap: 8px;}
+    .header_bar p{display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 2;}
     .header_bar{padding: 8px 0; min-height: 82px;}
     .top-adsense{margin-top: 82px;}
 }

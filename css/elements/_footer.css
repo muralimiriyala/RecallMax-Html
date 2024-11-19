@@ -83,7 +83,7 @@ ul.copyright-links>li.current-menu-item>a, ul.copyright-links>li>a:hover { color
     ul.copyright-links > li::before{left: -16px;}
     ul.copyright-links > li > a{letter-spacing: 0;}
     .sticky_mobile_btn{display: none; width: 100%; height: auto; bottom: 0; top: auto; left: 0; right: 0; padding: 0; position: fixed; z-index: 99999988888;}
-    .modal-btn{width: 100%; border-radius: 0;}
+    .sticky_mobile_btn .modal-btn{width: 100%; border-radius: 0;}
 }
 @media only screen and (max-width: 389px) and (min-width: 200px){
     .copyright-text{padding-bottom: 19px;}
