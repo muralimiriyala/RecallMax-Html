@@ -5,14 +5,15 @@ const modal = {
   $center: document.querySelector('.modal-center'),
   $ele: [
     ...document.querySelectorAll('.modal-btn'),
-    ...document.querySelectorAll('a[href="#modal-btn"]')
+    ...document.querySelectorAll('a[href="#modal-btn"]'),
+    ...document.querySelectorAll('a[href="#chatai-modal-btn"]'),
   ],
   $window: document.querySelector('.modal-window'),
   $main: document.querySelector('.modal-main'),
   $close: document.querySelector('.modal-close'),
   init() {
-    const _ = this;    
-    
+    const _ = this;
+
     let modal = (e) => {
       e.preventDefault();
       e.target.classList.toggle('open');
@@ -29,15 +30,18 @@ const modal = {
     if (window.location.href.includes('#modal')) {
       _.$ele[0]?.click();
     }
+    // Open the modal if URL contains '#modal'
+    if (window.location.href.includes('#chatai-modal')) {
+      _.$ele[0]?.click();
+    }
     if (!_.$close) return false;
     _.$close.addEventListener('click', modal);
-    let modalClose = function(e){
-      if(e.target.contains(_.$center)){
+    let modalClose = function (e) {
+      if (e.target.contains(_.$center)) {
         $(_.$window).fadeOut(800);
         $(_.$main).fadeOut(800);
       }
-      
-    }
+    };
     _.$body.addEventListener('click', modalClose);
   },
 };

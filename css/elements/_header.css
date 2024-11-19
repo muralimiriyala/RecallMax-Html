@@ -115,8 +115,8 @@ header.scrolly-header{transform: translateY(-100%);}
    
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.current_page_item > ul,
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.open > ul, 
-    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:hover > ul{opacity: 1; visibility: visible;}
-    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul{opacity: 0; visibility: hidden; margin: 0; padding-left: 216px; top: 0; width: 1080px; transition: var(--b-transition); position: absolute;}
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:hover > ul{display: block;}
+    ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul{display: none; margin: 0; padding-left: 216px; top: 0; width: 1080px; transition: var(--b-transition); position: absolute;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li{margin: 0;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li{width: 100%; gap: 48px; padding: 48px; display: flex; flex-wrap: wrap; align-items: center;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > a:hover{color: var(--Accent);}

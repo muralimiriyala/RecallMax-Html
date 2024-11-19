@@ -1,6 +1,7 @@
 const Menu = {
   $adsense: document.querySelector('.header_bar_main'),
   $header: document.querySelector('.site-header'),
+  $sticky_mobile_btn: document.querySelector('.sticky_mobile_btn'),
   $btn: document.querySelector('.humburger-btn'),
   $nav: document.querySelector('.header_right'),
   $links: document.querySelectorAll(
@@ -26,13 +27,6 @@ const Menu = {
     const _ = this;
     if (!_.$header) return false;
     if (!_.$mainproducts) return false;
-    if (!_.$adsense) return false;
-
-    if (_.$adsense) {
-      _.$site.classList.add('top-adsense');
-    } else {
-      _.$site.classList.remove('top-adsense');
-    }
 
     if (_.$mainproducts) {
       _.$mainproducts.addEventListener('mouseover', function (e) {
@@ -135,6 +129,26 @@ const Menu = {
       _.$header.classList.add('white-header');
       _.$site.classList.add('site-white-top');
     }
+
+    if (!_.$adsense) return false;
+    if (_.$adsense) {
+      _.$site.classList.add('top-adsense');
+    } else {
+      _.$site.classList.remove('top-adsense');
+    }
+    let offHeight = _.$site.offsetTop;
+    let staticScroll = 100;
+    let mobscroll = offHeight + staticScroll;
+    let mobScroll = () => {
+      const scroll = window.scrollY;
+      if (scroll > mobscroll) {
+        $(_.$sticky_mobile_btn).fadeIn(900);
+      } else {
+        $(_.$sticky_mobile_btn).fadeOut(900);
+      }
+    };
+    window.addEventListener('scroll', mobScroll);
+    window.addEventListener('load', mobScroll);
   },
 };
 export default Menu;
