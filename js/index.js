@@ -5,7 +5,6 @@ import counter from './modules/counter';
 import Animations from './modules/animations';
 import Scroll from './modules/scroll';
 import Menu from './modules/menu';
-// import scrollModule from './modules/pageScroll';
 import customSlick from './modules/customSlick';
 import filterCategory from './modules/filterCategory';
 import uiAccordion from './modules/accordion';
@@ -31,16 +30,12 @@ import { numberInput } from './modules/numberInput';
 import adsensebar from './modules/adsensebar';
 
 (function () {
-  // document.addEventListener('DOMContentLoaded', function(){
   customGsap.init();
   counter.init();
   progress.init();
   Effects.init();
   Animations.init();
   Menu.init();
-
-  // scrollModule.init();
-
   customSlick.init();
   filterCategory.init();
   uiAccordion.init();
@@ -62,9 +57,8 @@ import adsensebar from './modules/adsensebar';
   spyScroll.init();
   numberInput();
   adsensebar.init();
-  // modalChart.init();
+  modalChart.init();
 })();
-// });
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
   scrolled = window.scrollY;

@@ -2,14 +2,14 @@
 import $ from 'jquery';
 const modal = {
   $body: document.querySelector('body'),
-  $center: document.querySelector('.modal-center'),
+  $center: document.querySelector('.modal-main .modal-center'),
   $ele: [
     ...document.querySelectorAll('.modal-btn'),
     ...document.querySelectorAll('a[href="#modal-btn"]'),
   ],
   $window: document.querySelector('.modal-window'),
   $main: document.querySelector('.modal-main'),
-  $close: document.querySelector('.modal-close'),
+  $close: document.querySelector('.modal-main .modal-close'),
   init() {
     const _ = this;
 
@@ -28,7 +28,10 @@ const modal = {
     });
 
     // Open the modal if URL contains '#modal'
-    if (window.location.href.includes('#modal')) {
+    if (
+      window.location.href.includes('#modal') &&
+      !window.location.href.includes('#chatai-modal-btn')
+    ) {
       const ele = _.$ele[0];
       if (ele) ele.click();
     }
