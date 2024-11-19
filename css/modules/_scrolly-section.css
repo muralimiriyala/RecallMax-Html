@@ -67,7 +67,7 @@ ul.scrolly-links li:last-child .scrolly-line-blue{border-radius: 0 0 4px 4px;}
     .scrolly-wrap{padding-bottom: 32px;}
     .scrolly-main{padding: 32px 0; display: block;}
     .scrolly-left{display: none;}
-    .scrolly-row{margin-bottom: 32px;}
+    .scrolly-row{margin-bottom: 32px; position: initial; box-shadow: none;}
     .scrolly-row:last-child{margin-bottom: 0;}
     .scrolly-data{padding: 24px; gap: 24px; flex-direction: column;}
     .scrolly-image, .scrolly-text{flex: 100%;}

@@ -1,6 +1,7 @@
 const adsensebar = {
   $ele: document.querySelector('.header_bar_main'),
   $close: document.querySelector('.adsense_close'),
+  $site: document.querySelector('.site-main-cover'),
   init() {
     const _ = this;
     // _.$ele.style.maxHeight = `${_.$ele.scrollHeight}px`;
@@ -11,6 +12,7 @@ const adsensebar = {
         _.$ele.style.maxHeight = '0px';
         _.$ele.style.minHeight = '0px';
         _.$ele.style.overflow = 'hidden';
+        _.$site.classList.remove('top-adsense');
         _.$ele.dataset.id = 'true';
       } else {
         _.$ele.dataset.id = 'false';
