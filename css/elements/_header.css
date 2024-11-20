@@ -53,6 +53,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li:hover > ul{opacity: 1; visibility: visible;}
     ul.main_menu > li > ul > li{margin: 0 0 11px;}
 
+    ul.main_menu > li > ul > li:not(.nav-gradient-bar).hide-nav-desktop{display: none;}
     ul.main_menu > li > ul > li:not(.nav-gradient-bar).current_page_item > a{color: var(--Accent);}
     ul.main_menu > li > ul > li:not(.nav-gradient-bar) > a{font-size: 1rem; line-height: 1.375rem; font-weight: 800; display: block; color: var(--Raisin-Black);}
     ul.main_menu > li > ul > li:not(.nav-gradient-bar) > a:hover{color: var(--Accent);}
