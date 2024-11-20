@@ -32,7 +32,7 @@ ul.partners-tab-links > li > a.clear{ padding: 0; background: none; color: var(-
 .partners-image img{max-width: 204px;}  
 .partners-text{font-size: 1rem; line-height: 1.5rem; color: var(--Coal); margin-bottom: 20px;}
 .partners-text .h5{margin-bottom: 12px;}
-.partners-link-btn{font-size: 0.75rem; line-height: 12px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); justify-content: space-between; padding-top: 12px; margin-top: auto;}
+.partners-link-btn{font-size: 0.75rem; line-height: 0.75rem; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); justify-content: space-between; padding-top: 12px; margin-top: auto;}
 .partners-link-btn span{line-height: normal; display: flex;}
 .partners-link-btn:hover{color: var(--Raisin-Black);}
 

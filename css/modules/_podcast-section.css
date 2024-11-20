@@ -1,6 +1,6 @@
 
 .podcast-title{flex: 100%;}
-.podcast-title span.optional-text{font-size: 0.75rem; letter-spacing: 1.2px; line-height: 12px; margin-bottom: 6px;}
+.podcast-title span.optional-text{font-size: 0.75rem; letter-spacing: 1.2px; line-height: 0.75rem; margin-bottom: 6px;}
 .podcast-title .h4{margin: 0;}
 .podcast-rows{flex: 100%;}
 .podcast-list{background-color: var(--White); padding: 12px; gap: 18px;}

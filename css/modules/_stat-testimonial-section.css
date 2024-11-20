@@ -7,7 +7,7 @@
 .stat-testimonial-left.no-author-img{padding-left: 34px;}
 .stat-testimonial-left.no-author-img::before{left: 30px;}
 .stat-testimonial-text{padding: 34px; font-size: 1.5rem; line-height: 2.25rem;}
-.stat-testimonial-text > span{font-size: 0.75rem; line-height: 15px; opacity: 0.5; font-weight: 800; display: block;}
+.stat-testimonial-text > span{font-size: 0.75rem; line-height: 0.938rem; opacity: 0.5; font-weight: 800; display: block;}
 .stat-testimonial-text > p{margin-bottom: 21px;}
 .stat-testimonial-point{  border: solid 1px rgba(23, 125, 138, 0.2); background-color: var(--Tint-3); font-size: 1rem; line-height: 1.5rem;}
 .stat-point {font-size: 5rem;line-height: 80px; font-weight: 800; color: var(--Text-3);} 
