@@ -33,6 +33,10 @@ body .modal-form .frm_style_formidable-style.with_frm_style .frm_error_style{dis
 @media only screen and (min-width: 1024px){
     .modal-bar{padding: 16px 40px; gap: 24px;}   
 }
+@media screen and (max-width: 1023px) and (min-width: 200px){
+    .modal-window, .modal-window-chart{z-index: 9991200;}
+    .modal-main, .modal-main-chart{z-index: 9991202;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .modal-container{max-width: 100%; }
     .modal-main{padding: 40px;}

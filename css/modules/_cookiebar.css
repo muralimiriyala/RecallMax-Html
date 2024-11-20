@@ -1,4 +1,4 @@
-.cky-btn-revisit-wrapper.cky-revisit-bottom-left{right: 15px; left: auto; background: linear-gradient(180deg,rgba(18,39,80,0) 0,rgba(18,39,80,.5) 100%),var(--Accent) !important;}
+.cky-btn-revisit-wrapper.cky-revisit-bottom-left{background: linear-gradient(180deg,rgba(18,39,80,0) 0,rgba(18,39,80,.5) 100%),var(--Accent) !important;}
 body .cky-consent-container{left: auto; right: 40px;}
 .cky-notice .cky-title{font-family: var(--base-font);}
 body .cky-consent-bar .cky-notice-des p, body .cky-gpc-wrapper .cky-gpc-desc p, body .cky-preference-body-wrapper .cky-preference-content-wrapper p, body .cky-accordion-header-wrapper .cky-accordion-header-des p, body .cky-cookie-des-table li div:last-child p{font-family: var(--base-font); color: var(--black); font-size: 1rem; line-height: 1.5; font-weight: normal; }
