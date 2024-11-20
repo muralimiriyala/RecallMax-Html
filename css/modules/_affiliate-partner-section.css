@@ -3,7 +3,7 @@
 .affiliate-partner-lt .sm-line{margin: 22px 0; background-color: var(--Raisin-Black);}
 .affiliate-partner-lt h3{color: var(--White);}
 .affiliate-list ul{margin: 0 0 0 28px;}
-.affiliate-list ul > li {position: relative; font-size: 20px; line-height: 30px;}
+.affiliate-list ul > li {position: relative; font-size: 1.25rem; line-height: 1.875rem;}
 .affiliate-list ul > li::before {background: url("../../images/checked-circle.svg"); width: 20px; height: 20px; background-size: contain; top: 5px; left: -28px; content: ""; position: absolute; }
 .affiliate-list ul > li:last-child{margin-bottom: 0;}
 .affiliate-partner-call{gap: 8px; align-items: center; margin-top: 34px; width: fit-content;}
@@ -15,7 +15,7 @@
 .affiliate-partner-title{flex: 1;}
 .affiliate-partner-title h6{margin-bottom: 4px;}
 ul.affiliate-partner-category{margin: 0; gap: 8px;}
-ul.affiliate-partner-category > li{padding-right: 8px; margin: 0; font-size: 14px; line-height: 21px; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
+ul.affiliate-partner-category > li{padding-right: 8px; margin: 0; font-size: 0.875rem; line-height: 1.313rem; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
 ul.affiliate-partner-category > li:before{display: none;}
 ul.affiliate-partner-category > li:first-child{padding-left: 0;}
 ul.affiliate-partner-category > li:last-child{padding-right: 0; border-right: 0;}
@@ -48,7 +48,7 @@ ul.affiliate-partner-category > li:last-child{padding-right: 0; border-right: 0;
     .affiliate-partner-main{padding: 40px 0;}
     .affiliate-partner-lt{flex: 100%; padding: 24px 24px 70px; border-radius: 24px 24px 0px 0px;}
     .affiliate-partner-lt .sm-line{margin: 24px 0;}
-    .affiliate-list ul > li {font-size: 16px; line-height: 24px;}
+    .affiliate-list ul > li {font-size: 1rem; line-height: 1.5rem;}
     .affiliate-partner-call{margin-top: 24px;}
     .affiliate-partner-rt{flex: 100%; padding: 20px; margin-top: -40px;}
     body.page-template-affiliate .affiliate-partner-rt{padding: 24px;}

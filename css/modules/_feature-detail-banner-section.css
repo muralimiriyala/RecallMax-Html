@@ -1,6 +1,6 @@
 
 .feature-detail-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); overflow: hidden;}
-.feature-detail-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
+.feature-detail-banner-text{font-size: 1.25rem; line-height: 1.875rem; color: var(--White);}
 .feature-detail-banner-title{gap: 27px; margin-bottom: 30px;}
 .feature-detail-banner-icon{flex: 0 0 52px;}
 .feature-detail-banner-icon svg, .feature-detail-banner-icon img{height: 52px; width: 52px;}
@@ -31,7 +31,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .feature-detail-banner-main{padding: 145px 0 40px;}
-    .feature-detail-banner-text{font-size: 18px; line-height: 27px;}
+    .feature-detail-banner-text{font-size: 1.125rem; line-height: 1.688rem;}
     .feature-detail-banner-text span.optional-text{margin-bottom: 24px;}
     .feature-detail-banner-text hr.sm-line{margin: 24px 0;}
     .feature-detail-banner-btn .button{width: 100%;}

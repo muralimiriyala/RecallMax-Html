@@ -21,7 +21,7 @@ ul.post-categories{margin: 0 0 4px 0; gap: 8px 10px;}
 ul.post-categories > li{margin: 0; position: relative; line-height:15px;}
 ul.post-categories > li::before{content: ""; position: static; top: 0; left: -10px; margin-right: 10px; height: 100%; width: 2px; border-radius: 1px; opacity: 0.25; background: var(--Raisin-Black);}
 ul.post-categories > li:first-child::before{display: none;}
-ul.post-categories > li{font-size: 12px; line-height: 16px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); position: relative; padding: 2px 0; display: flex;}
+ul.post-categories > li{font-size: 0.75rem; line-height: 1rem; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); position: relative; padding: 2px 0; display: flex;}
 ul.post-categories > li > a:hover{color: var(--Raisin-Black);}
 ul.post-categories.white > li > a:hover{color: var(--Sky-Blue);}
 ul.post-categories.white > li{color: var(--White);}
@@ -30,7 +30,7 @@ ul.post-categories.white > li{color: var(--White);}
 .post-feature-text h2 a:hover{color: var(--Accent);}
 
 .blog-show-button{gap: 8px;}
-.blog-btn{color: var(--Raisin-Black); cursor: pointer; font-size: 18px; font-weight: 700; line-height: 18px; padding: 15px 24px; position: relative; background-image: linear-gradient(180deg,var(--Accent),var(--Purple)); z-index: 1; border-radius: 28px; transition: var(--b-transition);}
+.blog-btn{color: var(--Raisin-Black); cursor: pointer; font-size: 1.125rem; font-weight: 700; line-height: 1.125rem; padding: 15px 24px; position: relative; background-image: linear-gradient(180deg,var(--Accent),var(--Purple)); z-index: 1; border-radius: 28px; transition: var(--b-transition);}
 .blog-btn::before{background-color: var(--Eggshell); border-radius: 28px; content: ""; height: calc(100% - 4px); left: 2px; position: absolute; top: 2px; width: calc(100% - 4px); z-index: -1; transition: var(--b-transition);}
 .blog-btn:hover{color: var(--White); }
 .blog-btn:hover::before{background-color: transparent;}
@@ -64,7 +64,7 @@ h2.page-title{margin-top: 2rem;}
 @media screen and (max-width: 767px) and (min-width: 200px){
   .feature-post-main{gap: 20px; padding: 40px 0 0;}
   .feature-post-text{padding: 24px;}
-  .feature-post-text .h4{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
+  .feature-post-text .h4{font-size: 1.5rem; letter-spacing: -.24px; line-height: 1.875rem;}
   .feature-post-bg{min-height: 178px;}
   .post-feature-rows{flex: 100%; gap: 16px;}
 }

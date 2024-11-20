@@ -1,14 +1,14 @@
 
 
-.pricing-box-list{border-radius: 24px; font-size: 16px; line-height: 24px; color: var(--Dark); border: 2px solid var(--Card-Stroke); background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 25px; flex-direction: column;}
+.pricing-box-list{border-radius: 24px; font-size: 1rem; line-height: 1.5rem; color: var(--Dark); border: 2px solid var(--Card-Stroke); background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 25px; flex-direction: column;}
 .pricing-sub-details{gap: 12px; margin-bottom: 24px;}
 .pricing-sub-icon{display: flex; flex-direction: column; width: 24px; top: -2px; position: relative;}
 .pricing-sub-icon svg{max-width: 24px; height: auto;}
 .pricing-sub-icon img{max-width: 24px; height: auto; width: 100%; object-fit: contain;}
-.pricing-sub-text{font-size: 14px; line-height: 14px; letter-spacing: 1.12px; text-transform: uppercase; color: var(--Accent); flex: 0 0 calc(100% - 36px);}
+.pricing-sub-text{font-size: 0.875rem; line-height: 0.875rem; letter-spacing: 1.12px; text-transform: uppercase; color: var(--Accent); flex: 0 0 calc(100% - 36px);}
 .pricing-box-list h4{color: var(--Accent); margin-bottom: 16px;}
 ul.pricing-box-points{margin: 0 0 0 28px;}
-ul.pricing-box-points > li {position: relative; font-size: 14px; line-height: 21px; font-weight: 700;}
+ul.pricing-box-points > li {position: relative; font-size: 0.875rem; line-height: 1.313rem; font-weight: 700;}
 ul.pricing-box-points > li::before {background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; width: 18px; height: 18px; background-size: contain; top: 0; left: -28px; content: ""; position: absolute; }
 ul.pricing-box-points > li.cancel{text-decoration: line-through; opacity: 0.5;}
 .pricing-box-btn{gap: 16px; padding-top: 14px; margin-top: auto;}

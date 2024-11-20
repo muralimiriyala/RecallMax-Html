@@ -1,8 +1,8 @@
 
 .max-features-head span.optional-text{margin-bottom: 8px;}
-.max-features-head h2{font-size: 40px; line-height: 46px; margin-bottom: 0;}
+.max-features-head h2{font-size: 2.5rem; line-height: 2.875rem; margin-bottom: 0;}
 
-.max-features-list{border: 1px solid var(--Card-Stroke); padding: 23px; font-size: 16px; line-height: 24px; color: var(--Gray-1); transition: all .5s ease;}
+.max-features-list{border: 1px solid var(--Card-Stroke); padding: 23px; font-size: 1rem; line-height: 1.5rem; color: var(--Gray-1); transition: all .5s ease;}
 .max-features-icon{width: 40px; margin-bottom: 16px;}
 .max-features-icon svg{width: 40px; height: 40px;}
 .max-features-text{color: var(--Gray-1);}
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .max-features-main{padding: 40px 0 20px; gap: 20px;}
-    .max-features-head h2{font-size: 32px; line-height: 40px;}
+    .max-features-head h2{font-size: 2rem; line-height: 2.5rem;}
     .max-features-row{ gap: 20px;}
     .max-features-list{flex: 100%;}
 }

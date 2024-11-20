@@ -21,7 +21,7 @@
     .about-banner-thumb img{object-position: 90% 50%;}
 }
 @media screen and (min-width: 768px) {
-    .about-banner-text{font-size: 20px; line-height: 30px;}
+    .about-banner-text{font-size: 1.25rem; line-height: 1.875rem;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .about-banner-section .background-bg{position: relative;}

@@ -14,7 +14,7 @@ body.page-template-careers .maxassit-herd-text > h4 > span::before{ bottom: -2px
     .maxassit-herd-main{gap: 24px;}
     body.page-template-team .maxassit-herd-main{margin-top: 43px;}
     .maxassit-herd-text{text-align: center;}
-    .maxassit-herd-text h4{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .maxassit-herd-text h4{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .maxassit-herd-btn{width: 100%;}
     .maxassit-herd-btn .button{width: 100%;}
 

@@ -144,7 +144,7 @@ button::-moz-focus-inner {
 .mfp-close {
   width: 44px;
   height: 44px;
-  line-height: 44px;
+  line-height: 2.75rem;
   position: absolute;
   right: 0;
   top: 0;
@@ -154,7 +154,7 @@ button::-moz-focus-inner {
   padding: 0 0 18px 10px;
   color: #FFF;
   font-style: normal;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: Arial, Baskerville, monospace;
 }
 .mfp-close:hover, .mfp-close:focus {
@@ -182,8 +182,8 @@ button::-moz-focus-inner {
   top: 0;
   right: 0;
   color: #CCC;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   white-space: nowrap;
 }
 
@@ -327,8 +327,8 @@ img.mfp-img {
 .mfp-figure small {
   color: #BDBDBD;
   display: block;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
 }
 .mfp-figure figure {
   margin: 0;
@@ -345,7 +345,7 @@ img.mfp-img {
 
 .mfp-title {
   text-align: left;
-  line-height: 18px;
+  line-height: 1.125rem;
   color: #F3F3F3;
   word-wrap: break-word;
   padding-right: 36px;
@@ -400,7 +400,7 @@ img.mfp-img {
     right: 0;
     width: 35px;
     height: 35px;
-    line-height: 35px;
+    line-height: 2.188rem;
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
     text-align: center;

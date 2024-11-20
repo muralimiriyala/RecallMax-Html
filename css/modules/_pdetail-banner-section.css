@@ -1,6 +1,6 @@
 
 .pdetail-gradient-bg{height: 100%; width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
-.pdetail-banner-text{font-size: 20px; line-height: 30px;}
+.pdetail-banner-text{font-size: 1.25rem; line-height: 1.875rem;}
 .pdetail-banner-text span.optional-text.lg{margin-bottom: 5px;}
 .pdetail-banner-text h1{color: var(--White); letter-spacing: normal;}
 .pdetail-banner-btn{gap: 12px; margin-top: 32px;}
@@ -9,7 +9,7 @@
 
 ul.pdetail-ui-links li{margin: 0;}
 ul.pdetail-ui-links li::before{display: none;}
-ul.pdetail-ui-links li a{display: block; font-size: 14px; line-height: 1; letter-spacing: 1.4px; font-weight: 800; color: var(--White-50); text-transform: uppercase; position: relative; text-align: center;}
+ul.pdetail-ui-links li a{display: block; font-size: 0.875rem; line-height: 1; letter-spacing: 1.4px; font-weight: 800; color: var(--White-50); text-transform: uppercase; position: relative; text-align: center;}
 ul.pdetail-ui-links li a.ui-open{color: var(--White);}
 ul.pdetail-ui-links li a.ui-open span{opacity: 1;}
 .pdetail-ui-line{width: 100%; height: 4px;  opacity: 0.5; background-color: var(--Accent); content: ""; display: block; top: calc(100% + 8px);}
@@ -49,12 +49,12 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .pdetail-banner-main{padding: 128px 0 0;}
     body.home .pdetail-banner-main{padding: 112px 0 0;}
-    .pdetail-banner-text{font-size: 18px; line-height: 27px;}
-    .pdetail-banner-text span.optional-text.lg{font-size: 14px; letter-spacing: 1.2px; line-height: 14px; margin-bottom: 5px;}
-    .pdetail-banner-text h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .pdetail-banner-text{font-size: 1.125rem; line-height: 1.688rem;}
+    .pdetail-banner-text span.optional-text.lg{font-size: 0.875rem; letter-spacing: 1.2px; line-height: 0.875rem; margin-bottom: 5px;}
+    .pdetail-banner-text h1{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .pdetail-banner-text hr.sm-line{margin: 24px 0;}
     ul.pdetail-ui-links{display: block; max-width: 256px; margin: 38px auto 56px;}
     body.home ul.pdetail-ui-links{margin: 38px auto 52px;}
-    ul.pdetail-ui-links li a{display: none; line-height: 18px;}
+    ul.pdetail-ui-links li a{display: none; line-height: 1.125rem;}
     ul.pdetail-ui-links li a.ui-open{display: block;}
 }

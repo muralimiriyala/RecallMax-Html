@@ -1,8 +1,8 @@
 .benefit-title, .benefit-desc{flex: 1;}
 .benefit-title span.optional-text{margin-bottom: 24px;}
 .benefit-title h3{margin-bottom: 0;}
-.benefit-desc{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
-.benefit-item{font-size: 16px; line-height: 24px; color: var(--Gray-1);}
+.benefit-desc{font-size: 1.25rem; line-height: 1.875rem; color: var(--Gray-1);}
+.benefit-item{font-size: 1rem; line-height: 1.5rem; color: var(--Gray-1);}
 .benefit-icon{display: flex; margin-bottom: 16px; width: 40px;}
 .benefit-item h5{color: var(--Coal); margin-bottom: 16px;}
 .benefit-item h5 a{color: var(--Coal);}

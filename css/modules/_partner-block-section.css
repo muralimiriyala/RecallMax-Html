@@ -1,6 +1,6 @@
 
 .partner-block-main{gap: 32px;}
-.partner-block-list{background: var(--White); border: 1px solid var(--Card-Stroke); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 23px 24px; font-size: 16px; line-height: 24px; color: var(--Gray-1);}
+.partner-block-list{background: var(--White); border: 1px solid var(--Card-Stroke); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 23px 24px; font-size: 1rem; line-height: 1.5rem; color: var(--Gray-1);}
 .partner-block-icon{margin-bottom: 16px;}
 .partner-block-icon svg{width: 40px; height: 40px;}
 .partner-block-list .h5{margin-bottom: 17px;}

@@ -1,6 +1,6 @@
 
 .partner-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black, #302135);}
-.partner-banner-title span.optional-text{margin-bottom: 6px; font-size: 18px; line-height: 18px; letter-spacing: 1.8px;}
+.partner-banner-title span.optional-text{margin-bottom: 6px; font-size: 1.125rem; line-height: 1.125rem; letter-spacing: 1.8px;}
 .partner-banner-title h1{color: var(--White);}
 [data-animation].underline.partners h1 > span{position: relative; z-index: 1; font-style: normal;}
 [data-animation].underline.partners h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: 0; left: -10px; z-index: -1; transition: var(--b-transition);}

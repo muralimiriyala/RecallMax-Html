@@ -7,8 +7,8 @@
 .testimonial-item{cursor: pointer;}
 .testimonial-thumb img{border-radius: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.16),0 0 0 4px rgba(18, 39, 80, 0.20);}
 .testimonial-quote-icon{width: 40px; right: -10px; top: 32px; display: none;}
-.testimonial-content{font-size: 20px; line-height: 25px; color: var(--White); display: none;}
-.testimonial-content span{font-size: 12px; line-height: 15px; opacity: 0.5; display: block;}
+.testimonial-content{font-size: 1.25rem; line-height: 1.563rem; color: var(--White); display: none;}
+.testimonial-content span{font-size: 0.75rem; line-height: 15px; opacity: 0.5; display: block;}
 
 .slide-open .no_testimonial_thumb{box-shadow: none;}
 .no_testimonial_thumb{height: 100%; box-shadow: 0 1px 4px rgba(0,0,0,.16),0 0 0 4px rgba(18, 39, 80, 0.20);}
@@ -29,7 +29,7 @@
 }
 .review-new-link:hover{color: var(--Accent);}
 .star-icon,.review-icon{width: 24px; height: 24px;}
-.rating-value, .review-value{font-size: 20px; line-height: 30px;}
+.rating-value, .review-value{font-size: 1.25rem; line-height: 1.875rem;}
 .g2-logo{width: 48px; margin-left: 16px;}
 
 .stat-testimonial-right .testimonial-review{margin-bottom: 0;}
@@ -74,7 +74,7 @@
 @media screen and (max-width: 1360px) and (min-width: 200px){
     .testimonial-main {padding: 30px 32px;}
     .testimonial-title{margin-bottom: 30px;}
-    .testimonial-title h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .testimonial-title h3{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .testimonial-review{margin-bottom: 30px;}
     .testimonial-quote-icon{display: none; right: auto; top: auto; width: 40px; bottom: -24px; left: 50%; transform: translateX(-50%);}
     .slide-open .testimonial-quote-icon{display: block;}
@@ -88,8 +88,8 @@
     .testimonial-mobile:last-child{border-top-right-radius: 0;}
     .testimonial-lists{gap: 0;}
     .testimonial-thumb{flex: 1;}
-    .testimonial-txt{font-size: 20px; line-height: 25px; color: var(--White);}
-    .testimonial-txt > span{font-size: 12px; line-height: 15px; margin-top: 40px; display: block; color: var(--White-50);}
+    .testimonial-txt{font-size: 1.25rem; line-height: 1.563rem; color: var(--White);}
+    .testimonial-txt > span{font-size: 0.75rem; line-height: 15px; margin-top: 40px; display: block; color: var(--White-50);}
     .testimonial-quote-icon{display: none; right: auto; top: auto; width: 40px; bottom: -24px; left: 50%; transform: translateX(-50%);}
     .slide-open .testimonial-quote-icon{display: block;}
 }
@@ -98,7 +98,7 @@
     .testimonial-main{margin: 50px 0; padding: 24px; border-radius: 32px;}
     .testimonial-title{margin-bottom: 22px; text-align: center; width: 100%;}
     .testimonial-title span.optional-text{margin-bottom: 4px;}
-    .testimonial-title h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .testimonial-title h3{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .testimonial-review {margin: 24px auto 0; min-width: 408px; padding: 5px 5px 5px 20px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
@@ -106,10 +106,10 @@
     body.page-template-about .testimonial-main, body.home .testimonial-main{margin-bottom: 12px;}
     .testimonial-title{margin-bottom: 20px; text-align: center; width: 100%;}
     .testimonial-title span.optional-text{letter-spacing: 1.12px;}
-    .testimonial-title h3{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+    .testimonial-title h3{font-size: 1.5rem; line-height: 1.875rem; letter-spacing: -0.24px;}
 
     .testimonial-mobile{padding: 16px 16px 24px;}
-    .testimonial-txt{font-size: 16px; line-height: 24px;}
+    .testimonial-txt{font-size: 1rem; line-height: 1.5rem;}
     /* .testimonial-txt p{margin-top: 20px;} */
     .testimonial-quote-icon{width: 30px; left: 50%; transform: translateX(-50%); right: auto; top: auto; bottom: -25px;}
     .testimonial-quote-icon svg{width: 30px;}
@@ -124,7 +124,7 @@
 }
 @media screen and (max-width: 374px) and (min-width: 200px){
     .rating, .reviews{align-items: center;}
-    .rating-value, .review-value{font-size: 12px; line-height: 18px;}
+    .rating-value, .review-value{font-size: 0.75rem; line-height: 1.125rem;}
     .review-icon, .star-icon{top: -4px; position: relative;}
     .review-icon{top: -2px;}
 }

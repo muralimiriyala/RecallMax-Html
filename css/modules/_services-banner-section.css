@@ -1,6 +1,6 @@
 
 .services-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black, #302135);}
-.services-banner-title span.optional-text{font-size: 18px; line-height: 18px; letter-spacing: 1.8px; margin-bottom: 6px;}
+.services-banner-title span.optional-text{font-size: 1.125rem; line-height: 1.125rem; letter-spacing: 1.8px; margin-bottom: 6px;}
 .services-banner-title h1{color: var(--White); letter-spacing: normal;}
 
 /* .services-banner-title h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; width: calc(100% + 15px); left: -10px; z-index: -1; transition: var(--b-transition);} */
@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 767px) and (min-width: 200px){
     .services-banner-main{padding: 128px 0 119px;}
-    .services-banner-title span.optional-text{margin-bottom: 8px; font-size: 14px; letter-spacing: 1.12px; line-height: 14px;}
+    .services-banner-title span.optional-text{margin-bottom: 8px; font-size: 0.875rem; letter-spacing: 1.12px; line-height: 0.875rem;}
     .services-banner-title h1{letter-spacing: -0.4px;}
     .services-banner-title h1 > span, [data-animation].underline.services h1 > span{font-style: normal;}
     .services-banner-title h1 > span::before, [data-animation].underline.services h1 > span::before{display: none;}

@@ -1,5 +1,5 @@
 
-.service-d-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
+.service-d-banner-text{font-size: 1.25rem; line-height: 1.875rem; color: var(--White);}
 .service-d-banner-text h1{color: var(--White);}
 .service-d-banner-btn{gap: 12px; margin-top: 32px;}
 .service-d-banner-thumb img{opacity: 0.2;}
@@ -40,7 +40,7 @@
     .service-d-banner-main{padding: 40px 0 40px; position: relative;}
     .service-d-banner-main::before{width: 100vw; height: 100%; top: 0; left: -20px; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); content: ""; display: block; position: absolute;}
     .service-d-banner-bg{position: static;}
-    .service-d-banner-text{font-size: 18px; line-height: 27px;}
+    .service-d-banner-text{font-size: 1.125rem; line-height: 1.688rem;}
     .service-d-banner-text span.optional-text{margin-bottom: 28px;}
     .service-d-banner-text hr.sm-line{margin: 32px 0;}
     .service-d-banner-btn .button{width: 100%;}

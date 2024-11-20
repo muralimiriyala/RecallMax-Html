@@ -2,7 +2,7 @@
 .training-head span.optional-text{margin-bottom: 8px;}
 .training-head h3{margin-bottom: 0;}
 
-.training-item{background-color: var(--White); padding: 32px; font-size: 16px; line-height: 24px; color: var(--Gray-1);}
+.training-item{background-color: var(--White); padding: 32px; font-size: 1rem; line-height: 1.5rem; color: var(--Gray-1);}
 .training-icon{margin-bottom: 11px; max-height: 40px; max-width: 40px;}
 .training-icon svg, .training-icon figure{height: auto; width: 100%; object-fit: contain;}
 .training-icon figure img{object-fit: contain;}
@@ -13,7 +13,7 @@
 .modules-details, .hours-details, .platinum-details{gap: 8px; width: fit-content;}
 .modules-details-icon, .hours-details-icon, .platinum-details-icon{flex: 0 0 16px; display: flex; align-items: center;}
 .modules-details-icon svg, .hours-details-icon svg, .platinum-details-icon svg{width: 16px; height: 16px;}
-.modules-details-text, .hours-details-text, .platinum-details-text{font-size: 16px; line-height: 24px; color: var(--Raisin-Black); flex: 1;}
+.modules-details-text, .hours-details-text, .platinum-details-text{font-size: 1rem; line-height: 1.5rem; color: var(--Raisin-Black); flex: 1;}
 .platinum-details-text{color: var(--Accent-3);}
 
 ul.kickstart-training-details{gap: 12px; padding-top: 20px; border-top: 2px solid rgba(164, 39, 143, 0.2); margin: 20px 0 0;}
@@ -21,7 +21,7 @@ ul.kickstart-training-details > li{gap: 8px; margin-bottom: 0; width: 100%; alig
 ul.kickstart-training-details > li::before{display: none;}
 ul.kickstart-training-details > li .kickstart-icon{flex: 0 0 16px; top: 3px; position: relative;}
 ul.kickstart-training-details > li .kickstart-icon svg{width: 16px; height: 16px;}
-ul.kickstart-training-details > li .kickstart-text{font-size: 16px; line-height: 24px; color: var(--Raisin-Black); flex: 1;}
+ul.kickstart-training-details > li .kickstart-text{font-size: 1rem; line-height: 1.5rem; color: var(--Raisin-Black); flex: 1;}
 
 .training-cta{gap: 24px; padding: 16px 16px 16px 32px;}
 .training-cta h4{margin-bottom: 0;}
@@ -65,7 +65,7 @@ ul.kickstart-training-details > li .kickstart-text{font-size: 16px; line-height:
     ul.training-slick-dots li.slick-active{display: block;}
 
     .training-cta{padding: 0; text-align: center;}
-    .training-cta h4{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
+    .training-cta h4{font-size: 1.5rem; letter-spacing: -.24px; line-height: 1.875rem;}
     .training-cta .button{width: 100%;}
 }
 

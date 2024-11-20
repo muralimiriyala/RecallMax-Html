@@ -1,5 +1,5 @@
 
-.customer-support-list{font-size: 16px; line-height: 24px; color: var(--Gray-1);}
+.customer-support-list{font-size: 1rem; line-height: 1.5rem; color: var(--Gray-1);}
 .customer-support-list h5{margin-bottom: 17px; color: var(--Coal);}
 .customer-support-list p:not(:last-child){margin-bottom: 16px;}
 .customer-support-icon{margin-bottom: 16px;}
@@ -9,7 +9,7 @@
 ul.customer-support-details{margin: 0; gap: 16px; flex-direction: column;}
 ul.customer-support-details > li{margin: 0;}
 ul.customer-support-details > li::before{display: none;}
-ul.customer-support-details > li > a{gap: 8px; font-size: 18px; line-height: 27px; width: fit-content; color: var(--Raisin-Black);}
+ul.customer-support-details > li > a{gap: 8px; font-size: 1.125rem; line-height: 1.688rem; width: fit-content; color: var(--Raisin-Black);}
 ul.customer-support-details > li > a:hover{color: var(--Accent);}
 
 

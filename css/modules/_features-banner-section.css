@@ -1,18 +1,18 @@
 
 .features-gradient-bg{height: calc(100% - 100px); width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
-.features-banner-text{font-size: 20px; line-height: 30px;}
+.features-banner-text{font-size: 1.25rem; line-height: 1.875rem;}
 .features-banner-text h1{color: var(--White);}
-.features-banner-text span.optional-text{font-size: 18px; letter-spacing: 1.8px; line-height: 18px; margin-bottom: 8px;}
+.features-banner-text span.optional-text{font-size: 1.125rem; letter-spacing: 1.8px; line-height: 1.125rem; margin-bottom: 8px;}
 .features-banner-btn{gap: 12px; margin-top: 32px;}
 .features-banner-thumb img{opacity: 0.2;}
 .features-banner-us{padding: 40px 40px 64px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); margin: 63px 0 30px;}
 .features-banner-us span.optional-text{margin-bottom: 29px;}
 .features-form-bg{background: var(--Raisin-Tint); padding: 20px 24px;}
-.features-form-bg span.optional-text{font-size: 18px; letter-spacing: 1.8px; line-height: 18px;}
-.features-form-text{text-align: left; font-size: 20px; line-height: 20px; color: var(--Indigo); margin-bottom: 16px;}
+.features-form-bg span.optional-text{font-size: 1.125rem; letter-spacing: 1.8px; line-height: 1.125rem;}
+.features-form-text{text-align: left; font-size: 1.25rem; line-height: 1.25rem; color: var(--Indigo); margin-bottom: 16px;}
 .features-form-fields{gap: 16px 24px; text-align: left;}
 .features-form-field{flex: 0 0 calc(50% - 12px);}
-.features-form-field label{padding: 0 0 0 40px; position: relative; font-size: 20px; line-height: 32px; color: var(--Indigo); cursor: pointer;}
+.features-form-field label{padding: 0 0 0 40px; position: relative; font-size: 1.25rem; line-height: 2rem; color: var(--Indigo); cursor: pointer;}
 .features-form-field input{width: 32px; height: 32px; cursor: pointer; background: var(--White); border-radius: 50%; margin: 0; padding: 0; margin: 0; position: absolute; top: 0; left: 0; }
 .features-form-field input[type="checkbox"]:checked{background-color: var(--Accent); content: ""; background-image: url("../../images/check-solid.svg"); color: var(--Accent); background-size: 14px; background-position: center; background-repeat: no-repeat; transition: none; }
 
@@ -31,25 +31,25 @@
     .features-banner-us{padding: 40px 20px 64px; margin-bottom: 30px;}
     .features-form-bg{padding: 20px;}
     .features-form-fields{gap: 16px;}
-    .features-form-field label{font-size: 16px;}
+    .features-form-field label{font-size: 1rem;}
     .features-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .features-banner-main{padding: 128px 0 0;}
     .features-gradient-bg{height: calc(100% - 359px);}
-    .features-banner-text{font-size: 18px; line-height: 27px;}
-    .features-banner-text span.optional-text{margin-bottom: 8px; font-size: 14px; line-height: 14px; letter-spacing: 1.12px;}
-    .features-banner-text h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .features-banner-text{font-size: 1.125rem; line-height: 1.688rem;}
+    .features-banner-text span.optional-text{margin-bottom: 8px; font-size: 0.875rem; line-height: 0.875rem; letter-spacing: 1.12px;}
+    .features-banner-text h1{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .features-banner-text[data-animation].underline.visible h1 > span::before{display: none;}
     .features-banner-text[data-animation].underline h1 > span{font-style: normal;}
     .features-banner-text hr.sm-line{margin: 24px 0;}
     .features-banner-btn .button{width: 100%;}
 
     .features-banner-us{padding: 24px 16px 48px; margin: 48px 0 20px;}
-    .features-banner-us span.optional-text{letter-spacing: 1.12px; line-height: 17.5px; margin-bottom: 24px;}
+    .features-banner-us span.optional-text{letter-spacing: 1.12px; line-height: 1.094rem; margin-bottom: 24px;}
     .features-form-bg{padding: 16px;}
     .features-form-fields{gap: 16px; flex-direction: column;}
-    .features-form-field label{font-size: 16px; line-height: 24px; padding: 0 0 0 32px;}
+    .features-form-field label{font-size: 1rem; line-height: 1.5rem; padding: 0 0 0 32px;}
     .features-form-field input{width: 24px; height: 24px;}
     .features-form-submit{bottom: -20px; left: 0; right: 0; position: absolute;}
     body.page-template-Products-overview .features-form-submit{bottom: -35px; max-width: 100%; width: calc(100% - 40px); margin: 0 auto;}

@@ -1,12 +1,12 @@
 
-.resource-document-heading{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
+.resource-document-heading{font-size: 1.25rem; line-height: 1.875rem; color: var(--Gray-1);}
 .resource-document-heading span.optional-text{margin-bottom: 17px;}
 
 .filter-category-links{margin-bottom: 24px;}
 ul.filter-category{margin: 0; gap: 16px 8px;}
 ul.filter-category li{margin: 0;}
 ul.filter-category li::before{display: none;}
-ul.filter-category li a{min-width: 112px; display: block; text-align: center; font-size: 14px; line-height: 14px; letter-spacing: 1.4px; text-transform: uppercase; padding: 0 11.5px 8px; color: var(--Raisin-Black); position: relative; z-index: 0; opacity: 0.5; }
+ul.filter-category li a{min-width: 112px; display: block; text-align: center; font-size: 0.875rem; line-height: 0.875rem; letter-spacing: 1.4px; text-transform: uppercase; padding: 0 11.5px 8px; color: var(--Raisin-Black); position: relative; z-index: 0; opacity: 0.5; }
 ul.filter-category li a::before, ul.filter-category li a::after{ content: ""; display: block; height: 4px; position: absolute; bottom: 0; left: 0; z-index: -2; transform-origin: right center; transition: width 1.2s cubic-bezier(.19,1,.22,1); border-radius: 2px;}
 ul.filter-category li a::before { background: var(--Sky-Blue); width: 0px; right: 0; margin: auto; z-index: -1; border-radius: 2px;}
 ul.filter-category li a::after { width: 100%; background: var(--Accent); }
@@ -22,7 +22,7 @@ ul.filter-category li a:hover::before { width: 100%; }
 .resource-document-title h6{margin-bottom: 4px;}
 .resource-document-title h6 a:hover{color: var(--Accent);}
 ul.resource-sub-category{margin: 0; gap: 8px;}
-ul.resource-sub-category > li{padding-right: 8px; margin: 0; font-size: 14px; line-height: 21px; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
+ul.resource-sub-category > li{padding-right: 8px; margin: 0; font-size: 0.875rem; line-height: 1.313rem; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
 ul.resource-sub-category > li:before{display: none;}
 ul.resource-sub-category > li:first-child{padding-left: 0;}
 ul.resource-sub-category > li:last-child{padding-right: 0; border-right: 0;}
@@ -30,11 +30,11 @@ ul.resource-sub-category > li a{cursor: pointer; color: var(--Raisin-Black);}
 ul.resource-sub-category > li a:hover{color: var(--Accent);}
 .resource-document-btn{width: fit-content;}
 
-.resource-search form > span{position: absolute; right: 17px; top: 18px; font-size: 14px; color: var(--Accent); cursor: pointer;}
+.resource-search form > span{position: absolute; right: 17px; top: 18px; font-size: 0.875rem; color: var(--Accent); cursor: pointer;}
 .resource-document-filter{gap: 20px; margin-top: 32px;}
 .resource-search, .resource-dropdown{flex:100%;}
 
-.resource-dropdown > span{position: absolute; right: 17px; top: 17px; font-size: 16px; color: var(--Accent); cursor: pointer;}
+.resource-dropdown > span{position: absolute; right: 17px; top: 17px; font-size: 1rem; color: var(--Accent); cursor: pointer;}
 .resource-document-full .resource-document-desc, .resource-document-full .resource-document-heading{flex: 1;}
 .resource-document-search{width: 100%;}
 
@@ -58,12 +58,12 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
     .resource-document-main{padding: 40px 0; gap: 56px;}
     .filter-doc-list{flex-direction: column;}
     .resource-document-heading{width: 100%;}
-    .resource-document-heading h3{font-size: 40px; line-height: 50px; letter-spacing: -0.4px; margin-bottom: 12px;}
+    .resource-document-heading h3{font-size: 2.5rem; line-height: 3.125rem; letter-spacing: -0.4px; margin-bottom: 12px;}
     .resource-document-desc{width: 100%;}
     .resource-document-btn{width: 100%;}
     .resource-document-btn .button{width: 100%;}
 
-    .filter-doc-btn{ padding: 16px 39px 16px 16px; background: var(--Raisin-Tint); border: 1px solid var(--Card-Stroke); color: var(--Indigo); font-size: 16px; line-height: 100%; cursor: pointer; }
+    .filter-doc-btn{ padding: 16px 39px 16px 16px; background: var(--Raisin-Tint); border: 1px solid var(--Card-Stroke); color: var(--Indigo); font-size: 1rem; line-height: 100%; cursor: pointer; }
     .filter-doc-btn em{ right: 16px; top: calc(50% + 1px); transform: translateY(-50%); color: var(--Accent);}
     .filter-category-links{margin: 0; max-height: 0; overflow: hidden; transition: all 0.8s ease; box-shadow: 0 2px 2px #dadbdf;}
     ul.filter-category{display: block;}
@@ -76,7 +76,7 @@ ul.resource-sub-category > li a:hover{color: var(--Accent);}
     ul.filter-category li::before{display: none;}
     ul.filter-category li:first-child{padding-top: 10px;}
     ul.filter-category li:last-child{padding-bottom: 10px;}
-    ul.filter-category li a{color: var(--Raisin-Black); cursor: pointer; display: block; font-size: 16px; font-weight: 700; line-height: 16px; overflow: hidden; padding: 8px 16px; text-overflow: ellipsis; text-transform: none; white-space: nowrap; width: 100%; text-align: left; letter-spacing: normal; opacity: 1;}
+    ul.filter-category li a{color: var(--Raisin-Black); cursor: pointer; display: block; font-size: 1rem; font-weight: 700; line-height: 1rem; overflow: hidden; padding: 8px 16px; text-overflow: ellipsis; text-transform: none; white-space: nowrap; width: 100%; text-align: left; letter-spacing: normal; opacity: 1;}
     ul.filter-category li a::before, ul.filter-category li a::after{display: none;}
     ul.filter-category li:hover a{background-color: transparent; color: var(--Indigo);}
 

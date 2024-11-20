@@ -9,7 +9,7 @@ ul.you-might-categories{margin: 0 0 16px; gap: 10px 24px;}
 ul.you-might-categories > li{margin: 0; position: relative; line-height:15px;}
 ul.you-might-categories > li::before{content: ""; position: static; top: 0; left: -13px; height: 100%; width: 2px; border-radius: 1px; opacity: 0.25; background: var(--Raisin-Black); margin-right: 13px;}
 ul.you-might-categories > li:first-child::before{display: none;}
-ul.you-might-categories > li{font-size: 12px; line-height: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); position: relative; padding: 2px 0; display: flex;}
+ul.you-might-categories > li{font-size: 0.75rem; line-height: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--Accent); position: relative; padding: 2px 0; display: flex;}
 ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
 
 .you-might-text{padding: 24px 16px;}
@@ -61,7 +61,7 @@ ul.you-might-categories > li > a:hover{color: var(--Raisin-Black);}
     .you-might-list:last-child{margin-bottom: 0;}
     .you-might-title{width: 100%; text-align: center;}
     .you-might-text{padding: 24px 16px 22px;}
-    .you-might-title h3{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
+    .you-might-title h3{font-size: 1.5rem; letter-spacing: -.24px; line-height: 1.875rem;}
     .you-might-btn, .you-might-btn .button{width: 100%;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){

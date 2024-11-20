@@ -1,19 +1,19 @@
 
 .modal-window, .modal-window-chart{display: none; opacity: 0.9; width: 100%; height: 100%; top: 0; left: 0; position: fixed; background: var(--Raisin-Black); backdrop-filter: blur(4px); z-index: 1200;}
 .modal-main, .modal-main-chart{display: none; width: 100%; height: 100%; top: 0; left: 0; position: fixed; z-index: 1202; overflow-y: auto;}
-.modal-phone{width: fit-content; margin-left: auto; color: var(--White); font-size: 18px; line-height: 28px; }
+.modal-phone{width: fit-content; margin-left: auto; color: var(--White); font-size: 1.125rem; line-height: 1.75rem; }
 .modal-phone-text{gap: 8px;}
 .modal-phone-text a{color: var(--White);}
 .modal-phone-text a:hover{color: var(--Accent);}
 .modal-center{height: 100%;}
 .modal-container{max-width: 840px; padding: 40px 40px 16px; background-color: var(--White);}
-.modal-head{color: var(--Raisin-Black); font-size: 20px; font-weight: 400; line-height: 30px;}
-.modal-head .h2{margin-bottom: 8px; color: var(--Accent); font-size: 48px; line-height: 60px; font-weight: 800; letter-spacing: -0.48px; }
+.modal-head{color: var(--Raisin-Black); font-size: 1.25rem; font-weight: 400; line-height: 1.875rem;}
+.modal-head .h2{margin-bottom: 8px; color: var(--Accent); font-size: 3rem; line-height: 3.75rem; font-weight: 800; letter-spacing: -0.48px; }
 .modal-close{ right: 8px; top: 8px; width: 40px; height: 40px; opacity: 0.5; background: var(--Gray-4); cursor: pointer; }
 .modal-close:hover{ opacity: 1; background: var(--Accent); }
 .modal-close svg path{transition: var(--b-transition);}
 .modal-close:hover svg path{fill: #fff;}
-body .modal-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 14px 24px 15px; width: 100%; font-size: 24px; line-height: 24px;}
+body .modal-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 14px 24px 15px; width: 100%; font-size: 1.5rem; line-height: 1.5rem;}
 body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{display: block; width: 100%;}
 body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding: 0; width: 100%; display: block; text-align: center; cursor: auto;}
 body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label input{display: none !important;}
@@ -37,7 +37,7 @@ body .modal-form .frm_style_formidable-style.with_frm_style .frm_error_style{dis
     .modal-container{max-width: 100%; }
     .modal-main{padding: 40px;}
     .modal-bar{gap: 1rem; margin-bottom: 2rem;}
-    .modal-phone{font-size: 15px; line-height: 24px;}
+    .modal-phone{font-size: 0.938rem; line-height: 1.5rem;}
 
     .modal-form-submitted{min-width: 688px;}
 }
@@ -46,8 +46,8 @@ body .modal-form .frm_style_formidable-style.with_frm_style .frm_error_style{dis
     .modal-bar{display: none;}
     .modal-main{background-color: var(--White);}
     .modal-container{padding: 40px 20px 20px; max-width: 100%; height: 100%; margin: 0; border-radius: 0; min-width: 100%;}
-    .modal-head{font-size: 18px; line-height: 27px;}
-    .modal-head .h2{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .modal-head{font-size: 1.125rem; line-height: 1.688rem;}
+    .modal-head .h2{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     body .modal-form .frm_forms .frm_form_fields .frm_submit{padding-top: 16px;}
     body .modal-form .frm_forms .frm_form_fields .frm_form_field .frm_primary_label{display: none;}
     body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_label{display: none;}

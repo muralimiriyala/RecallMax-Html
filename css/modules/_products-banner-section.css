@@ -1,19 +1,19 @@
 
 .products-gradient-bg{height: calc(100% - 190px); width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
-.products-banner-text{font-size: 20px; line-height: 30px;}
+.products-banner-text{font-size: 1.25rem; line-height: 1.875rem;}
 .products-banner-text h1{color: var(--White);}
 .products-banner-text h1 > span{position: relative; z-index: 1; font-style: italic;}
 .products-banner-text h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; z-index: -1;}
-.products-banner-text span.optional-text{font-size: 18px; letter-spacing: 1.8px; line-height: 18px; margin-bottom: 6px;}
+.products-banner-text span.optional-text{font-size: 1.125rem; letter-spacing: 1.8px; line-height: 1.125rem; margin-bottom: 6px;}
 .products-banner-btn{gap: 12px; margin-top: 32px;}
 .products-banner-thumb img{opacity: 0.2;}
 
 .products-banner-us{padding: 40px 40px 64px; box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); margin: 63px 0 30px;}
-.products-banner-us span.optional-text{font-size: 18px; letter-spacing: 1.8px; line-height: 18px; margin-bottom: 32px;}
-.products-form-text{text-align: left; font-size: 20px; line-height: 20px; color: var(--Indigo); margin-bottom: 16px;}
+.products-banner-us span.optional-text{font-size: 1.125rem; letter-spacing: 1.8px; line-height: 1.125rem; margin-bottom: 32px;}
+.products-form-text{text-align: left; font-size: 1.25rem; line-height: 1.25rem; color: var(--Indigo); margin-bottom: 16px;}
 .products-form-fields{gap: 24px; text-align: left;}
 .products-form-field{flex: 100%; background: var(--Raisin-Tint); padding: 6px 24px; border-radius: 16px; min-height: 64px; gap: 24px;}
-.products-form-field label{padding: 0; position: relative; font-size: 20px; line-height: 32px; color: var(--Indigo); cursor: pointer; gap: 12px;}
+.products-form-field label{padding: 0; position: relative; font-size: 1.25rem; line-height: 2rem; color: var(--Indigo); cursor: pointer; gap: 12px;}
 .products-form-field input{width: 32px; height: 32px; background: var(--White); border-radius: 50%; margin: 0; padding: 0; margin: 0; position: relative; top: 0; left: 0; }
 .products-form-field .quantity-num{width: 28px; text-align: center; height: 20px; border: none;}
 .products-form-field:first-child input{border-radius: 8px;}
@@ -21,7 +21,7 @@
 .products-form-dropdown .selectBox-dropdown{background: var(--White); font-weight: 800;}
 .products-form-field:first-child label{font-weight: 600;}
 .products-form-field:not(:first-child){ justify-content: space-between;}
-.products-form-field > span{flex: 1; font-size: 20px; line-height: 20px; color: var(--Indigo); font-weight: 800;}
+.products-form-field > span{flex: 1; font-size: 1.25rem; line-height: 1.25rem; color: var(--Indigo); font-weight: 800;}
 .products-radio-main{gap: 24px; width: fit-content;}
 .products-radio-btn label{position: relative; cursor: pointer; padding-left: 40px;}
 .products-radio-btn input{width: 32px; height: 32px; background: var(--White); border-radius: 50%; margin: 0; padding: 0; margin: 0; position: absolute; top: 0; left: 0; cursor: pointer;}
@@ -44,16 +44,16 @@ body .quantity-select .selectBox-dropdown{min-width: 136px; background-color: va
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   outline: none;
   padding: 0;
   width: 18px;
   height: 18px;
   background: var(--Accent);
-  line-height: 18px;
+  line-height: 1.125rem;
 }
 .quantity-num {
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 5px 10px;
   border-radius: 4px;
   outline: none;
@@ -80,18 +80,18 @@ body .quantity-select .selectBox-dropdown{min-width: 136px; background-color: va
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .products-banner-main{padding: 112px 0 0;}
     .products-banner-text span.optional-text{margin-bottom: 8px;}
-    .products-banner-text h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .products-banner-text h1{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .products-banner-text h1 > span::before{bottom: -4px;}
     .products-banner-text[data-animation].underline.visible h1 > span::before{left: -2px; width: 100%; bottom: -4px;}
     .products-gradient-bg{height: calc(100% - 554px);}
 
     .products-banner-us{padding: 24px 16px 60px; margin: 48px 0 20px;}
-    .products-banner-us span.optional-text{font-size: 14px; letter-spacing: 1.12px; line-height: 17.5px; margin-bottom: 16px;}
+    .products-banner-us span.optional-text{font-size: 0.875rem; letter-spacing: 1.12px; line-height: 1.094rem; margin-bottom: 16px;}
     .products-form-fields{gap: 16px; flex-direction: column;}
     .products-form-field{padding: 16px; gap: 16px;}
     .products-form-field > span{width: 100%;}
-    .products-form-field label{gap: 8px 12px; font-size: 16px; line-height: 24px;}
-    .products-form-field:first-child label{font-size: 20px; line-height: 20px; display: block;}
+    .products-form-field label{gap: 8px 12px; font-size: 1rem; line-height: 1.5rem;}
+    .products-form-field:first-child label{font-size: 1.25rem; line-height: 1.25rem; display: block;}
     .products-form-field:first-child label > span{display: block; margin-bottom: 8px;}
     .products-form-field input{width: 24px; height: 24px;}
     .products-form-dropdown{max-width: 100%; width: 100%; margin-bottom: 8px;}

@@ -4,7 +4,7 @@
 .resources-section{background: var(--Background, #F0F2FA);}
 .res-srch-form{min-width: 52px; transition: all .5s ease;}
 
-.res-srch-field input{width: 100%; padding: 12px 65px 12px 17px; font-size: 18px; line-height: 22px; font-weight: 400; background-color: var(--White); border-color: transparent; border-radius: 8px;}
+.res-srch-field input{width: 100%; padding: 12px 65px 12px 17px; font-size: 1.125rem; line-height: 1.375rem; font-weight: 400; background-color: var(--White); border-color: transparent; border-radius: 8px;}
 .res-srch-field input::-webkit-input-placeholder {color: var(--Raisin-Black); opacity: 1;}
 .res-srch-field input:-moz-placeholder {color: var(--Raisin-Black); opacity: 1;}
 .res-srch-field input::-moz-placeholder {color: var(--Raisin-Black); opacity: 1;}
@@ -24,9 +24,9 @@ button.res-srch-icon, button.res-expand-icon{left: 5px; top: calc(50% + 1px); tr
 .res-scroll-top .res-srch-form{transform: translateY(-30px);}
 
 
-.res-category{color: var(--Navy); font-family: "arboria", sans-serif; font-size: 28px; font-weight: 700; line-height: 38px;}
+.res-category{color: var(--Navy); font-family: "arboria", sans-serif; font-size: 1.75rem;font-weight: 700; line-height: 38px;}
 .res-category span{font-weight: 400;}
-.res-category-arrow{ top: 3px; color: var(--Blue); font-size: 20px; line-height: 20px; position: relative; }
+.res-category-arrow{ top: 3px; color: var(--Blue); font-size: 1.25rem; line-height: 1.25rem; position: relative; }
 
 
 .load-more-resources{gap: 16px;}
@@ -97,7 +97,7 @@ ul.blog_list{margin: 0; width: 100%;}
     .res-rule{height: 34px;}
     .res-dropdown-main{gap: 32px;}
     .res-dropdown-pos{flex: 0 0 calc(50% - 16px);max-width: calc(50% - 16px);}
-    .res-srch-field input{border-radius: 8px; border: 1px solid var(--violet); background: var(--White); color: var(--Gray-2); font-size: 20px; font-weight: 400; line-height: 30px; }
+    .res-srch-field input{border-radius: 8px; border: 1px solid var(--violet); background: var(--White); color: var(--Gray-2); font-size: 1.25rem; font-weight: 400; line-height: 1.875rem; }
     .res-srch-field input::-webkit-input-placeholder {color: rgba(24, 42, 84, 0.5);}
     .res-srch-field input:-moz-placeholder {color: rgba(24, 42, 84, 0.5);}
     .res-srch-field input::-moz-placeholder {color: rgba(24, 42, 84, 0.5);}

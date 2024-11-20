@@ -30,7 +30,7 @@
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .large-cta-row:nth-child(2n) .large-cta-logo:nth-child(3){min-width: 440px;}
-    .large-cta-row:nth-child(2n) .large-cta-logo:nth-child(3) h2{font-size: 32px; line-height: 40px; letter-spacing: -0.4px;}
+    .large-cta-row:nth-child(2n) .large-cta-logo:nth-child(3) h2{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.4px;}
 }
 @media screen and (min-width: 768px){
     .large-cta-row{flex-wrap: nowrap;}
@@ -42,7 +42,7 @@
     .no_large_cta_text .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3), .large-cta-logo{height: 87px; width: 156px; border-radius: 13px;}
     .large-cta-thumb img{max-width: 132px;}
     .large-cta-row:nth-child(2n) .large-cta-logo:nth-child(3){min-width: 326px; height: 100%;}
-    .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3) h2{font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+    .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3) h2{font-size: 1.5rem; line-height: 1.875rem; letter-spacing: -0.24px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .large-cta-row:first-child .large-cta-logo:nth-child(1) figure{margin-left: auto;}
@@ -68,7 +68,7 @@
     .large-cta-logo:nth-child(n+6){display: none;}
     .large-cta-row:nth-child(even) .large-cta-logo{display: none;}
     .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3){display: block; width: 100%; height: 100%; padding: 24px 0;}
-    .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3) h2{font-size: 24px; line-height: 30px; letter-spacing: -0.24px; margin-bottom: 0;}
+    .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3) h2{font-size: 1.5rem; line-height: 1.875rem; letter-spacing: -0.24px; margin-bottom: 0;}
     .large-cta-main{width: calc(100% + 17px); left: -9px; position: relative; padding: 40px 0;}
     .large-cta-row{gap: 8px;}
     .no_large_cta_text .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3):nth-child(3), .large-cta-logo{height: 65px; width: 117px;}

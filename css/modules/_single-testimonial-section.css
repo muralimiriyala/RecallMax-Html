@@ -5,12 +5,12 @@
 .single-testimonial-quote svg{width: 40px; height: 33px;}
 .no-author-img{position: relative;}
 .no-author-img::before{content: ""; position: absolute; width: 27px; height: 22px; top: 45px; left: 8px; top: 40px; background-image: url("../../images/double-quote.svg"); background-size: cover; transform: rotate(180deg) scaleX(-1);}
-.single-testimonial-text{font-size: 28px; line-height: 42px; color: var(--White);}
+.single-testimonial-text{font-size: 1.75rem;line-height: 2.625rem; color: var(--White);}
 
 .single-testimonial-text p{margin-bottom: 0;}
 .single-author-details{margin-top: 20px;}
-.single-author-details span:last-child{font-size: 12px; font-weight: 800; line-height: 15px; color: var(--White); opacity: 0.5; margin-top: 4px; display: block;}
-.single-author-name{font-size: 20px; font-weight: 800; line-height: 25px; letter-spacing: -0.2px; display: block;}
+.single-author-details span:last-child{font-size: 0.75rem; font-weight: 800; line-height: 15px; color: var(--White); opacity: 0.5; margin-top: 4px; display: block;}
+.single-author-name{font-size: 1.25rem; font-weight: 800; line-height: 1.563rem; letter-spacing: -0.2px; display: block;}
 
 .single-testimonial-full .single-testimonial-text{flex: 1; padding: 32px;}
 
@@ -26,5 +26,5 @@
     .single-testimonial-image{width: 100%;}
     .single-testimonial-thumb img{border-radius: 20px;}
     .single-testimonial-quote{left: 16px; bottom: -17px; top: auto; right: auto;}
-    .single-testimonial-text{font-size: 16px; line-height: 24px; padding: 0 20px 24px;}
+    .single-testimonial-text{font-size: 1rem; line-height: 1.5rem; padding: 0 20px 24px;}
 }

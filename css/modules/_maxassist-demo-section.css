@@ -9,7 +9,7 @@
 .maxassist-demo-title{flex: 1;}
 .maxassist-demo-title h6{margin-bottom: 4px;}
 ul.maxassist-demo-category{margin: 0; gap: 8px;}
-ul.maxassist-demo-category > li{padding-right: 8px; margin: 0; font-size: 14px; line-height: 21px; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
+ul.maxassist-demo-category > li{padding-right: 8px; margin: 0; font-size: 0.875rem; line-height: 1.313rem; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
 ul.maxassist-demo-category > li:before{display: none;}
 ul.maxassist-demo-category > li:first-child{padding-left: 0;}
 ul.maxassist-demo-category > li:last-child{padding-right: 0; border-right: 0;}

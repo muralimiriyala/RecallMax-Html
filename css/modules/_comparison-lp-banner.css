@@ -1,9 +1,9 @@
 
 .comparison-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black, #302135);}
 .comparison-banner-title{color: var(--White);}
-.comparison-banner-title span.optional-text{font-size: 18px; letter-spacing: 1.8px; line-height: 18px;margin-bottom: 6px;}
+.comparison-banner-title span.optional-text{font-size: 1.125rem; letter-spacing: 1.8px; line-height: 1.125rem;margin-bottom: 6px;}
 .comparison-banner-title h1{color: var(--White);}
-.comparison-banner-title p{max-width: 770px; font-size: 20px; line-height: 30px; margin: 56px auto 0;}
+.comparison-banner-title p{max-width: 770px; font-size: 1.25rem; line-height: 1.875rem; margin: 56px auto 0;}
 
 
 @media screen and (min-width: 1024px) {
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 767px) and (min-width: 200px){
     .comparison-banner-main{padding: 128px 0 120px;}
-    .comparison-banner-title span.optional-text{margin-bottom: 8px; font-size: 14px; letter-spacing: 1.12px; line-height: 14px;}
-    .comparison-banner-title h1{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .comparison-banner-title span.optional-text{margin-bottom: 8px; font-size: 0.875rem; letter-spacing: 1.12px; line-height: 0.875rem;}
+    .comparison-banner-title h1{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .comparison-banner-title h1 > span::before{display: none;}
-    .comparison-banner-title p{font-size: 18px; line-height: 27px; margin: 40px auto 0; max-width: 100%;} }
+    .comparison-banner-title p{font-size: 1.125rem; line-height: 1.688rem; margin: 40px auto 0; max-width: 100%;} }

@@ -1,5 +1,5 @@
 
-.differ-max-text{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
+.differ-max-text{font-size: 1.25rem; line-height: 1.875rem; color: var(--Gray-1);}
 .differ-max-text > p{color: var(--Gray-1);}
 .differ-max-text span.optional-text{margin-bottom: 22px;}
 .differ-max-text hr.sm-line{margin: 20px 0;}
@@ -34,7 +34,7 @@
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .differ-max-main{padding: 40px 0 20px;}
     .differ-max-image{flex: 100%; margin-bottom: 40px;}
-    .differ-max-text{font-size: 18px; line-height: 27px; flex: 100%;}
+    .differ-max-text{font-size: 1.125rem; line-height: 1.688rem; flex: 100%;}
     .differ-max-text span.optional-text{margin-bottom: 23px;}
     .differ-max-text hr.sm-line{margin: 20px 0;}
 }

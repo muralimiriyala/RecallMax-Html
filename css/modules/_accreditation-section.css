@@ -1,8 +1,8 @@
 
 .accreditation-intro-title span.optional-text{margin-bottom: 24px;}
 .accreditation-intro-title h3{margin-bottom: 0;}
-.accreditation-intro-description{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
-.accreditation-list{font-size: 16px; line-height: 24px; color: var(--Gray-1);}
+.accreditation-intro-description{font-size: 1.25rem; line-height: 1.875rem; color: var(--Gray-1);}
+.accreditation-list{font-size: 1rem; line-height: 1.5rem; color: var(--Gray-1);}
 .accreditation-list h5{margin-bottom: 17px;}
 .accreditation-icon{margin-bottom: 16px;}
 .accreditation-icon svg{width: 40px; height: 40px;}

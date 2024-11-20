@@ -11,12 +11,12 @@ a:hover{color: var(--Sky-Blue);}
 p a{background-color: rgba(164,39,143,.15); color: var(--Raisin-Black); border-radius: 4px; font-weight: 700; padding: 0 6px;}
 p a:hover{color: var(--Accent);}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{clear: both; margin: 0; color: var(--Raisin-Black); font-weight: 800; font-family: var(--heading-font); text-transform: none;}
-.h1, h1{font-size: 48px; line-height: 60px; margin-bottom: 25px; letter-spacing: -0.48px;}
-.h2, h2{font-size: 48px; line-height: 48px; margin-bottom: 20px;}
-.h3, h3{font-size: 40px; line-height: 50px; margin-bottom: 19px; letter-spacing: -0.4px;}
-.h4, h4{font-size: 32px; line-height: 40px; margin-bottom: 20px; letter-spacing: -0.32px;}
-.h5, h5{font-size: 24px; line-height: 30px; margin-bottom: 19px; letter-spacing: -0.24px;}
-.h6, h6{font-size: 20px; line-height: 25px; margin-bottom: 18px; letter-spacing: -0.2px;}
+.h1, h1{font-size: 3rem; line-height: 3.75rem; margin-bottom: 25px; letter-spacing: -0.48px;}
+.h2, h2{font-size: 3rem; line-height: 3rem; margin-bottom: 20px;}
+.h3, h3{font-size: 2.5rem; line-height: 3.125rem; margin-bottom: 19px; letter-spacing: -0.4px;}
+.h4, h4{font-size: 2rem; line-height: 2.5rem; margin-bottom: 20px; letter-spacing: -0.32px;}
+.h5, h5{font-size: 1.5rem; line-height: 1.875rem; margin-bottom: 19px; letter-spacing: -0.24px;}
+.h6, h6{font-size: 1.25rem; line-height: 1.563rem; margin-bottom: 18px; letter-spacing: -0.2px;}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Raisin-Black);}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--Accent);}
 address{font-size: 1.125rem; line-height: 1.5rem; margin-bottom: 24px;}
@@ -28,12 +28,12 @@ p:last-child{margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 0.938rem; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
 blockquote, q{-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }
-blockquote{padding: 32px; margin: 56px 0 56px; background: linear-gradient(180deg,rgba(18,39,80,.19) 0,rgba(18,39,80,.75) 100%),var(--Accent); color: var(--White); font-size: 28px; line-height: 42px; font-weight: 400; font-family: var(--heading-font); font-style: normal; position: relative; border-radius: 24px;}
+blockquote{padding: 32px; margin: 56px 0 56px; background: linear-gradient(180deg,rgba(18,39,80,.19) 0,rgba(18,39,80,.75) 100%),var(--Accent); color: var(--White); font-size: 1.75rem;line-height: 2.625rem; font-weight: 400; font-family: var(--heading-font); font-style: normal; position: relative; border-radius: 24px;}
 blockquote p::before{content: "“";}
 blockquote p::after{content: "”";}
 blockquote cite, blockquote small {font-size: 1rem;}
 blockquote em, blockquote i, blockquote cite {font-style: normal;}
-small{font-size: 14px; line-height: 21px; display: block;}/*-- dont change fs --*/
+small{font-size: 0.875rem; line-height: 1.313rem; display: block;}/*-- dont change fs --*/
 big {font-size: 125%;}
 sup, sub {font-size: 0.625rem; height: 0; line-height: 0; position: relative; vertical-align: baseline;}
 sup {bottom: 1ex;}
@@ -84,7 +84,7 @@ hr.sm-line{background-color: var(--Accent); height: 2px; border-radius: 1px; mar
 
 
 /* Buttons */
-.button, button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 15px 24px; font-size: 18px; font-weight: 700; line-height: 125%; font-family: var(--base-font); display: inline-block; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent); color: var(--White); border: none; border-radius: 28px; cursor: pointer; vertical-align: middle; text-decoration: none; text-transform: none; text-align: center; outline: 0; position: relative; -webkit-writing-mode: horizontal-tb; -ms-writing-mode: horizontal-tb; writing-mode: horizontal-tb; text-orientation: mixed; box-shadow: none; transition: var(--b-transition); z-index: 1; margin: 0;  transition: all .5s ease;}
+.button, button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 15px 24px; font-size: 1.125rem; font-weight: 700; line-height: 125%; font-family: var(--base-font); display: inline-block; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent); color: var(--White); border: none; border-radius: 28px; cursor: pointer; vertical-align: middle; text-decoration: none; text-transform: none; text-align: center; outline: 0; position: relative; -webkit-writing-mode: horizontal-tb; -ms-writing-mode: horizontal-tb; writing-mode: horizontal-tb; text-orientation: mixed; box-shadow: none; transition: var(--b-transition); z-index: 1; margin: 0;  transition: all .5s ease;}
 .button:hover, button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); border-radius: 16px; color: var(--White);}
 
 .button.btn-transparent{padding: 12px 13px 12px 12px; border-radius: 24px; border: 4px solid var(--Orange); background: transparent;}
@@ -104,8 +104,8 @@ hr.sm-line{background-color: var(--Accent); height: 2px; border-radius: 1px; mar
 
 .button.btn-sm{padding: 12px 17px 12px; font-size: 1rem;}
 
-span.text-link{gap: 8px; font-size: 16px; line-height: 24px; font-family: var(--base-font);}
-span.text-link i{top: 3px; left: 0; position: relative; color: var(--Light-Blue); font-size: 20px; line-height: 20px; overflow: hidden;}
+span.text-link{gap: 8px; font-size: 1rem; line-height: 1.5rem; font-family: var(--base-font);}
+span.text-link i{top: 3px; left: 0; position: relative; color: var(--Light-Blue); font-size: 1.25rem; line-height: 1.25rem; overflow: hidden;}
 span.text-link.white{color: var(--White);}
 span.text-link.blue{color: var(--Blue);}
 span.text-link:hover i{left: 8px;}
@@ -113,8 +113,8 @@ span.text-link.navy{color: var(--Navy);}
 span.text-link.navy i{color: var(--Navy);}
 
 
-a.text-link{gap: 8px; align-items: center; font-size: 18px; line-height: 22.5px; letter-spacing: -0.18px;}
-a.text-link em{color: var(--Accent); font-size: 16px; left: 0; line-height: 24px; position: relative; top: 0; transition: all .5s ease;}
+a.text-link{gap: 8px; align-items: center; font-size: 1.125rem; line-height: 1.406rem; letter-spacing: -0.18px;}
+a.text-link em{color: var(--Accent); font-size: 1rem; left: 0; line-height: 1.5rem; position: relative; top: 0; transition: all .5s ease;}
 a.text-link.white{color: var(--White);}
 a.text-link.white:hover em{color: var(--White);}
 a.text-link.black{color: var(--Raisin-Black);}
@@ -124,12 +124,12 @@ a.text-link:hover em{left: 8px;}
 a.text-link.navy{color: var(--Navy);}
 a.text-link.navy i{color: var(--Navy);}
 
-.text-btn-link{display: inline-flex; align-items: center; color: var(--White); font-size: 20px; line-height: 100%;}
+.text-btn-link{display: inline-flex; align-items: center; color: var(--White); font-size: 1.25rem; line-height: 100%;}
 .text-btn-link:hover{color: var(--White);}
 .text-btn-link > span{padding: 10px 16px 10px; flex: 1; border-radius: 28px; border: 8px solid var(--Orange); display: inline-block;}
 .text-btn-link svg{ transform: translate(0, 0); transition: var(--b-transition); }
 .text-btn-link:hover svg{ transform: translate(12px, -0.15px); }
-.text-btn-link.sm{font-size: 16px; line-height: 16px; }
+.text-btn-link.sm{font-size: 1rem; line-height: 1rem; }
 .text-btn-link.sm span{border-width: 6px;}
 .text-btn-link.sm svg{width: 23px;}
 
@@ -170,14 +170,14 @@ img.aligncenter{margin: 25px auto; clear: both;}
 body{margin: 0; font-size: 1.125rem; line-height: 1.688rem; font-weight: 400; font-family: var(--base-font); position: relative; color: var(--Raisin-Black); background-color: var(--Eggshell); overflow-x: hidden;}
 .d-block{display: block;}
 span.optional-text.ls-07{letter-spacing: 0.7px;}
-span.optional-text{color: var(--Accent); display: block; font-size: 14px; font-weight: 800; line-height: 14px; letter-spacing: 1.4px; margin-bottom: 30px; text-transform: uppercase;}
+span.optional-text{color: var(--Accent); display: block; font-size: 0.875rem; font-weight: 800; line-height: 0.875rem; letter-spacing: 1.4px; margin-bottom: 30px; text-transform: uppercase;}
 span.optional-text.blue{color: var(--Blue);-webkit-text-fill-color: var(--Blue); opacity: 0.6; background: none;}
 span.optional-text.light-blue{color: var(--Light-Blue); }
 span.optional-text.grey{color: var(--Gray);-webkit-text-fill-color: var(--Gray); opacity: 0.5; background: none; margin-bottom: 4px;}
 span.optional-text.large{font-size: 1.5rem; line-height: 1.875rem; margin-bottom: 23px;}
 span.optional-text.md{font-size: 1.25rem; line-height: 1.563rem; margin-bottom: 22px;}
 span.optional-text.navy-50{color: rgb(25 35 76 / 50%);}
-span.optional-text.lg{margin-bottom: 8px; font-size: 18px; line-height: 18px; letter-spacing: 1.8px;}
+span.optional-text.lg{margin-bottom: 8px; font-size: 1.125rem; line-height: 1.125rem; letter-spacing: 1.8px;}
 .optional-blue{padding-left: 43px; margin-bottom: 31px; color: var(--Blue); font-size: 1rem; font-weight: 600; line-height: 1.25rem;}
 .optional-blue svg{left: 0; position: absolute;}
 .optional-blue span{opacity: 0.6; padding-top: 5px; display: block;}
@@ -192,14 +192,14 @@ span.optional-text.lg{margin-bottom: 8px; font-size: 18px; line-height: 18px; le
 .fs-0{font-size: 0; line-height: 0;}
 .fs-12{font-size: 0.75rem; line-height: 1.25rem;}
 .fs-14{font-size: 0.875rem; line-height: 1.313rem;}
-.fs-15{font-size: 0.938rem; line-height: 19px;}
+.fs-15{font-size: 0.938rem; line-height: 1.188rem;}
 .fs-16{font-size: 1rem; line-height: 1.5rem;}
 .fs-18{font-size: 1.125rem; line-height: 1.688rem;}
-.fs-20{font-size: 20px; line-height: 30px;}
-.fs-22{font-size: 22px; line-height: 33px;}
-.fs-24{font-size: 24px; line-height: 30px;}
-.fs-32{ font-size: 32px; line-height: 32px; }
-.fs-40{ font-size: 40px; line-height: 40px;}
+.fs-20{font-size: 1.25rem; line-height: 1.875rem;}
+.fs-22{font-size: 1.375rem; line-height: 2.063rem;}
+.fs-24{font-size: 1.5rem; line-height: 1.875rem;}
+.fs-32{ font-size: 2rem; line-height: 2rem; }
+.fs-40{ font-size: 2.5rem; line-height: 2.5rem;}
 
 .radius-2, .radius-img-2 img{border-radius: 2px;}
 .radius-4, .radius-img-4 img{border-radius: 4px;}
@@ -308,7 +308,7 @@ picture.object-fit{width: 100%; height: 100%; display: block;}
 .light-blue-bg{background: #E3F4FF;}
 
 
-button.slick-arrow{width: 56px; height: 56px; padding: 0; font-size: 24px; line-height: 24px; position: relative; z-index: 1; cursor: pointer; transition: var(--b-transition); color: var(--White); background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Earthy-Blue);}
+button.slick-arrow{width: 56px; height: 56px; padding: 0; font-size: 1.5rem; line-height: 1.5rem; position: relative; z-index: 1; cursor: pointer; transition: var(--b-transition); color: var(--White); background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Earthy-Blue);}
 button.slick-arrow:hover{background-color: var(--Accent);}
 button.slick-arrow.slick-disabled{pointer-events: none; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%);}
 span.slick-prev-arrow{ transform: scaleX(-1); }
@@ -320,7 +320,7 @@ ul.slick-dots:not(.pagination) li::before{display: none;}
 ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 
 .book-demo-btn{border-radius: 28px; background: rgba(165, 24, 144, 0.10); display: inline-flex; width: fit-content; padding: 4px 20px 4px 4px; gap: 16px;}
-.book-demo-btn .button{line-height: 18px;}
+.book-demo-btn .button{line-height: 1.125rem;}
 .book-demo-btn.book_no_phone{padding: 0; background: transparent;}
 .book-demo-btn.no_demo_btn{padding: 10px 20px;}
 .book-demo-btn svg path{transition: var(--b-transition);}
@@ -362,8 +362,8 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 .demo-white .book-demo-call:hover svg path{fill: var(--Sky-Blue);}
 
 .demo-accent3{background: var(--Translucent-2);}
-.demo-accent3 .button{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-3); color: var(--White); line-height: 18px;}
-.demo-accent3 .book-demo-call{color: var(--Raisin-Black); font-size: 18px;}
+.demo-accent3 .button{background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent-3); color: var(--White); line-height: 1.125rem;}
+.demo-accent3 .book-demo-call{color: var(--Raisin-Black); font-size: 1.125rem;}
 .demo-accent3 .book-demo-call svg path{fill: var(--Accent-3);}
 .demo-accent3 .book-demo-call:hover{color: var(--Accent-3);}
 .demo-accent3 .book-demo-call:hover svg path{fill: var(--Accent-3);}
@@ -390,7 +390,7 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
     .text-md-right{text-align: right;}
 }
 @media only screen and (max-width: 1279px) and (min-width: 1024px){
-    .book-demo-call{font-size: 18px;}
+    .book-demo-call{font-size: 1.125rem;}
 }
 @media only screen and (max-width: 1359px) and (min-width: 1200px){
     .container:not(.sm){padding: 0 40px; max-width: 100%;}
@@ -412,9 +412,9 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
     .mobile-0{padding-left: 0; padding-right: 0;}
     .hide-mobile{display: none;} 
 
-    .h1, h1{font-size: 40px; line-height: 50px; letter-spacing: -0.4px;}
+    .h1, h1{font-size: 2.5rem; line-height: 3.125rem; letter-spacing: -0.4px;}
     .h2, h2{}
-    .h3, h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    .h3, h3{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .h4, h4{}
 
     span.optional-text.md{margin-bottom: 6px;}
@@ -445,17 +445,17 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
     .book-demo-btn{padding: 4px; width: 100%; margin: 0 auto;}
     .book-demo-call{flex: 1; justify-content: center; padding-right: 13px;}
 
-    .slick-dots li > a{font-size: 24px; line-height: normal; font-weight: 800; color: var(--Raisin-Black);}
+    .slick-dots li > a{font-size: 1.5rem; line-height: normal; font-weight: 800; color: var(--Raisin-Black);}
     .culture-slash, .benefit-slash, .ftr-slash, .training-slash, .accreditation-slash{margin: 0 4px; color: var(--Accent-2); font-weight: 300;}
 
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
-    caption, td, th{font-size: 13px; line-height: 16px;}
+    caption, td, th{font-size: 0.813rem; line-height: 1rem;}
     td{padding: 13px 10px 11px;}
 }
 
 @media screen and (max-width: 374px) and (min-width: 200px){
-    .book-demo-btn .button{font-size: 15px;}
+    .book-demo-btn .button{font-size: 0.938rem;}
     .book-demo-call{padding-right: 0; }
 }
 

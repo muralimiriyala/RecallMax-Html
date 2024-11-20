@@ -20,7 +20,7 @@ li.hide-li-text > a{display: none !important;}
 header.scrolly-header{transform: translateY(-100%);}
 
 .header_bar_main{background: var(--Accent); min-height: 62px; max-height: 62px; overflow: hidden;}
-.header_bar{padding: 8px 40px; min-height: 62px; color: var(--White); font-size: 16px; line-height: 22px; position: relative; gap: 15px;}
+.header_bar{padding: 8px 40px; min-height: 62px; color: var(--White); font-size: 1rem; line-height: 1.375rem; position: relative; gap: 15px;}
 .header_bar p{margin: 0; }
 .header_bar_left{flex: 1; gap: 16px;}
 .adsense_close{width: 46px; height: 46px; padding: 0; border-radius: 50%; }
@@ -81,7 +81,7 @@ header.scrolly-header{transform: translateY(-100%);}
         margin-bottom: 19px;
         color: var(--Raisin-Black-50);
         font-weight: 800;      
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1;
         letter-spacing: 1.12px;
     }
@@ -89,7 +89,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-products > ul > li > ul > li{margin: 0;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li{margin-bottom: 10px; position: static;}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a { 
-        font-size: 17px;
+        font-size: 1.063rem;
         line-height: 1.25;
         letter-spacing: -0.2px;        
         color: var(--Text);
@@ -128,7 +128,7 @@ header.scrolly-header{transform: translateY(-100%);}
     .nav-products-text{
     padding-top: 10px;
     flex: 0 0 256px;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     color: var(--Raisin-Black);
     }
@@ -136,7 +136,7 @@ header.scrolly-header{transform: translateY(-100%);}
     .nav-products-order span{
         margin-bottom: 17px;
         padding-left: 36px;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 800;
         line-height: 1.25;
         letter-spacing: -0.18px;
@@ -155,7 +155,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a span{display: none;}
     ul.main_menu > li.nav-products > ul > li > ul > li{margin-bottom: 16px;}
     ul.main_menu > li.nav-products > ul > li > ul > li > a{
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 1.25;
         letter-spacing: -0.18px;
         font-weight: 800;
@@ -169,10 +169,10 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-features > ul > li{flex: 0 0 calc(25% - 12px); margin: 0;}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar{flex: 0 0 auto; margin-top: 20px;  width: calc(100% + 52px); left: -26px;}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar > a{color: var(--White);}
-    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a{ padding: 13px 10px 13px 40px; position: relative; color: var(--Gray-2); font-size: 14px; font-weight: 400; line-height: 150%; border-radius: 20px; border: 4px solid transparent; }
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a{ padding: 13px 10px 13px 40px; position: relative; color: var(--Gray-2); font-size: 0.875rem; font-weight: 400; line-height: 150%; border-radius: 20px; border: 4px solid transparent; }
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ).current_page_item > a, ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a:hover{ background-color: transparent; border-color: var(--Translucent); }
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar ) > a > img{width: 23px; top: 12px; left: 10px; position: absolute;}
-    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a span{transition: var(--b-transition); padding-bottom: 5px; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block;}
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a span{transition: var(--b-transition); padding-bottom: 5px; color: var(--Raisin-Black); font-size: 1rem; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block;}
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a:hover span{color: var(--Accent);}
     li.nav-gradient-bar{ font-weight: 800; text-align: center; border-radius: 0px 0px 24px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
     li.nav-gradient-bar > a{padding: 20px; display: block; color: var(--White);}
@@ -242,7 +242,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li:last-child > a{padding-bottom: 25px;}
     ul.main_menu > li > a{padding: 14px 48px 14px 20px; border-bottom: 1px solid transparent; display: block; color: var(--Raisin-Black); font-family: var(--base-font); font-size: 1.25rem; font-weight: 700; line-height: 1.25rem; position: relative;}
     ul.main_menu > li.current_page_ancestor > a, ul.main_menu > li > a:hover, ul.main_menu > li.current-menu-item > a{color: var(--Accent);}
-    ul.main_menu > li > a.active{ padding: 29px 48px 24px; border-bottom-color: var(--Translucent); background-color: var(--Eggshell); color: var(--Raisin-Black); font-size: 14px; font-weight: 800; line-height: 100%; letter-spacing: 1.12px; text-transform: uppercase; text-align: center;}
+    ul.main_menu > li > a.active{ padding: 29px 48px 24px; border-bottom-color: var(--Translucent); background-color: var(--Eggshell); color: var(--Raisin-Black); font-size: 0.875rem; font-weight: 800; line-height: 100%; letter-spacing: 1.12px; text-transform: uppercase; text-align: center;}
     ul.main_menu > li.menu-item-has-children > a::after{ width: 22px; height: 14px; background-image: url('../../images/angle-down.svg'); background-repeat: no-repeat; background-size: contain; top: 50%; transform: translateY(-50%); right: 21px; content: "";display: block; position: absolute; }
     ul.main_menu > li.menu-item-has-children > a.active::after{ transform: translateY(-50%) rotate(90deg); right: auto; left: 16px; }
     ul.main_menu > li > ul{max-height: 0; overflow: hidden; margin: 0; padding: 0 20px; transition: max-height 0.8s; border-radius: 0px 0px 24px 24px; background: var(--Eggshell); }
@@ -275,7 +275,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul{ padding: 0; margin: 0; }
     ul.main_menu > li.nav-products > ul > li > ul{padding: 0; margin: 0;}
     ul.main_menu > li.nav-products > ul > li > ul > li{margin-bottom: 18px;}
-    ul.main_menu > li.nav-products > ul > li > ul > li > a{padding-left: 38px; color: var(--Raisin-Black); font-size: 20px; font-weight: 800; line-height: 25px; letter-spacing: -0.2px; }
+    ul.main_menu > li.nav-products > ul > li > ul > li > a{padding-left: 38px; color: var(--Raisin-Black); font-size: 1.25rem; font-weight: 800; line-height: 1.563rem; letter-spacing: -0.2px; }
     ul.main_menu > li.nav-products > ul > li > ul > li > a:hover{color: var(--Accent);}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a{ color: var(--Accent); }
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.current_page_item > a, 
@@ -287,13 +287,13 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-products > ul > li > ul > li > a img{top: -1px; left: 0; width: 24px; height: auto; position: absolute;}
 
 
-    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a{padding-left: 32px; position: relative; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 150%;}
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a{padding-left: 32px; position: relative; color: var(--Raisin-Black); font-size: 1rem; font-weight: 800; line-height: 150%;}
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a > img{width: 23px; top: -1px; left: 0; position: absolute;}
-    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a span{padding-bottom: 5px; color: var(--Raisin-Black); font-size: 16px; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block; transition: var(--b-transition);}
+    ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a span{padding-bottom: 5px; color: var(--Raisin-Black); font-size: 1rem; font-weight: 800; line-height: 125%; letter-spacing: -0.16px;  display: block; transition: var(--b-transition);}
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a:hover span{color: var(--Accent);}
     ul.main_menu > li.nav-features > ul > li:not(.nav-gradient-bar) > a p{display: none;}
     ul.main_menu > li.nav-features > ul > li.nav-gradient-bar{margin-bottom: 20px;}
-    li.nav-gradient-bar{ margin-bottom: 20px; color: var(--White); font-size: 16px; font-weight: 800; line-height: 24px; border-radius: 32px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--RecallMax-Purple, #A4278F); text-align: center; }
+    li.nav-gradient-bar{ margin-bottom: 20px; color: var(--White); font-size: 1rem; font-weight: 800; line-height: 1.5rem; border-radius: 32px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--RecallMax-Purple, #A4278F); text-align: center; }
     li.nav-gradient-bar > a{padding: 8px 16px; display: block; color: var(--White);}
 
 
@@ -307,7 +307,7 @@ header.scrolly-header{transform: translateY(-100%);}
     header.sticky-header span.black-logo{display: none;}
 
     .nav-btn{ margin-top: -25px; z-index: -1; position: relative; }
-    .nav-btn .button{ padding: 40px 24px 16px; width: 100%; font-size: 24px; line-height: 24px; border-radius: 0px 0px 24px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent); }
+    .nav-btn .button{ padding: 40px 24px 16px; width: 100%; font-size: 1.5rem; line-height: 1.5rem; border-radius: 0px 0px 24px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent); }
     .nav-btn .button:hover{background: linear-gradient(150deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 60%), var(--Accent);}
 
     .h-mob-overlay{ top: 0; left: 0; visibility: hidden; opacity: 0; background: rgba(48, 33, 53, 0.85); backdrop-filter: blur(10px); width: 100vw; height: 100vh; position: fixed; z-index: -2; transition: all 0.4s ease; }

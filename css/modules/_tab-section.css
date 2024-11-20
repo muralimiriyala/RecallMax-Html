@@ -1,7 +1,7 @@
 .tabs-main{padding: 0 0 80px;}
 
 
-.tab-links-d{width: fit-content; padding-right: 30px; color: var(--Raisin-Black); cursor: pointer; font-size: 24px; font-weight: 800; line-height: 30px; letter-spacing: -0.24px;}
+.tab-links-d{width: fit-content; padding-right: 30px; color: var(--Raisin-Black); cursor: pointer; font-size: 1.5rem; font-weight: 800; line-height: 1.875rem; letter-spacing: -0.24px;}
 .tab-links-d.open span.tab-link-text{color: var(--Text)}
 .tab-link-svgs{right: 0; top: calc(50% - 0px);  width: 20px; height: 20px; transform: translateY(-50%); }
 .tab-link-svgs svg{position: absolute;}
@@ -14,11 +14,11 @@ ul.tab-links {margin: 0; padding: 28px 0 32px;}
 ul.tab-links li::before{display: none;}
 ul.tab-links{gap: 12px;}
 ul.tab-links > li{margin: 0;}
-ul.tab-links > li > a{padding: 8px 16px; gap: 8px; background-color: var(--Card-Stroke); color: var(--Raisin-Black); font-size: 16px; line-height: 24px; text-transform: capitalize;}
+ul.tab-links > li > a{padding: 8px 16px; gap: 8px; background-color: var(--Card-Stroke); color: var(--Raisin-Black); font-size: 1rem; line-height: 1.5rem; text-transform: capitalize;}
 ul.tab-links > li > a.active{background-color: var(--Translucent-2); color: var(--Raisin-Black); }
 ul.tab-links > li > a:not(.active):hover{ border-radius: 12px; background: var(--Accent-3); }
 ul.tab-links > li > a i{font-size: 0; top: 1px; position: relative; color: var(--Orange);}
-ul.tab-links > li > a.active i{font-size: 14px;}
+ul.tab-links > li > a.active i{font-size: 0.875rem;}
 ul.tab-links > li > a span.close-icon{display: none; position: relative; width: 12px;}
 ul.tab-links > li > a.active span.close-icon{display: block;}
 ul.tab-links > li > a.clear{padding: 0;background: none;color: var(--Accent);font-weight: 800;}
@@ -27,7 +27,7 @@ ul.tab-links > li > a.clear svg path{transition: var(--b-transition);}
 ul.tab-links > li > a.clear:hover svg path{fill: var(--Accent-3);}
 
 .tab-title{flex: 1; padding-right: 20px;}
-/* .tab-head::after { font-size: 32px; line-height: 32px; font-weight: 300; content: "\f176"; display: block; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); color: var(--Orange); transition: all .5s ease; opacity: 0; font-family: "Font Awesome 6 Sharp"; } */
+/* .tab-head::after { font-size: 2rem; line-height: 2rem; font-weight: 300; content: "\f176"; display: block; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); color: var(--Orange); transition: all .5s ease; opacity: 0; font-family: "Font Awesome 6 Sharp"; } */
 .tab-open .tab-head::after{opacity: 0 !important;}
 
 .tab-arrow{flex: 0 0 20px; transform: translate(0,0); transition: all 0.5s ease;  cursor: pointer; z-index: -9999} 
@@ -45,10 +45,10 @@ ul.tab-links > li > a.clear:hover svg path{fill: var(--Accent-3);}
 .tab-open .tab-arrow svg{transform: rotate(180deg);}
 .tab-open .tab-arrow svg path{fill: var(--Sky-Blue);}
 
-.tab-text h2{font-size: 24px; line-height: 30px; color: var(--Raisin-Black); margin-bottom: 0;}
+.tab-text h2{font-size: 1.5rem; line-height: 1.875rem; color: var(--Raisin-Black); margin-bottom: 0;}
 .tab-text h2 a{color: var(--Raisin-Black);}
 .tab-text h2 a:hover{color: var(--White);}
-.tab-text span{font-size: 16px; color: var(--Accent); line-height: 24px;}
+.tab-text span{font-size: 1rem; color: var(--Accent); line-height: 1.5rem;}
 .tab-image img{border-radius: 16px;}
 
 .tab-desc{max-height: 0; overflow: hidden;}
@@ -59,7 +59,7 @@ ul.tab-links > li > a.clear:hover svg path{fill: var(--Accent-3);}
 ul.tab-address{margin: 26px 0 23px; gap: 19px; flex-direction: column;}
 ul.tab-address > li{margin: 0;}
 ul.tab-address > li::before{display: none;}
-ul.tab-address > li > a{gap: 8px; font-size: 16px; line-height: 16px; letter-spacing: -0.32px;}
+ul.tab-address > li > a{gap: 8px; font-size: 1rem; line-height: 1rem; letter-spacing: -0.32px;}
 ul.tab-address > li > a i{color: var(--Light-Blue);}
 .data-tab-row{max-height: 0; overflow: hidden;}
 .data-tab-row.open{max-height: inherit;}
@@ -97,7 +97,7 @@ ul.tab-address > li > a i{color: var(--Light-Blue);}
     .tabs-filter{display: flex; gap: 28px 40px; margin-bottom: 30px; padding: 0 4px;}
     .tabs-row{display: block; padding-top: 18px;}
     .tab-list{margin-bottom: 20px;}
-    .tab-list:hover .tab-text::after {font-size: 30px; line-height: 300;}
+    .tab-list:hover .tab-text::after {font-size: 1.875rem; line-height: 300;}
     .tabs-main{padding: 40px 0;}
     .tab-section.no-about-intro .tabs-main{padding: 40px 0 15px;}
     ul.tab-links{padding: 0 0 46px;}

@@ -9,8 +9,8 @@
 .plans-max-head span.optional-text{margin-bottom: 8px;}
 .plans-max-head .h3{margin-bottom: 0;}
 .plans-max-list{padding: 28px 28px 0; overflow: hidden; position: relative; background-color: var(--Eggshell); border: solid 1px rgba(164, 39, 143, 0.2);}
-.plans-max-text{padding-bottom: 28px; font-size: 16px; line-height: 24px; color: var(--Gray-1);}
-.plans-max-text .h4{letter-spacing: normal; line-height: 36px; margin-bottom: 8px;}
+.plans-max-text{padding-bottom: 28px; font-size: 1rem; line-height: 1.5rem; color: var(--Gray-1);}
+.plans-max-text .h4{letter-spacing: normal; line-height: 2.25rem; margin-bottom: 8px;}
 .plans-max-text p{margin-bottom: 10px;}
 
 .plans-max-image img{border-radius: 4px 4px 0px 0px; border: 1px solid var(--Card-Stroke);}
@@ -58,6 +58,6 @@
     .plans-max-row{flex-direction: column; gap: 20px;}
     .plans-max-list{flex: 100%;}
     .plans-max-partice-main{padding: 0; text-align: center; margin: 24px 0 0; gap: 24px;}
-    .plans-max-partice-main h4{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
+    .plans-max-partice-main h4{font-size: 1.5rem; letter-spacing: -.24px; line-height: 1.875rem;}
     .plans-max-partice-main .button{width: 100%;}
 }

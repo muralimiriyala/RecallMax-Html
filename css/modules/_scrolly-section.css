@@ -7,7 +7,7 @@ body.scrolly-body{overflow: clip;}
 
 .scrolly-section{width: 100%; border-radius: 80px; background-color: var(--Raisin-Black);}
 .scrolly-main{padding: 80px 0 80px;} 
-ul.scrolly-links{margin: 0; font-size: 18px; line-height: 22.5px; color: var(--White-50); margin-bottom: 40px;}
+ul.scrolly-links{margin: 0; font-size: 1.125rem; line-height: 1.406rem; color: var(--White-50); margin-bottom: 40px;}
 ul.scrolly-links li::before{display: none;}
 ul.scrolly-links li{margin: 0;}
 ul.scrolly-links li a{font-weight: 400; padding: 24px; display: block; color: var(--White-50); }
@@ -71,9 +71,9 @@ ul.scrolly-links li:last-child .scrolly-line-blue{border-radius: 0 0 4px 4px;}
     .scrolly-row:last-child{margin-bottom: 0;}
     .scrolly-data{padding: 24px; gap: 24px; flex-direction: column;}
     .scrolly-image, .scrolly-text{flex: 100%;}
-    .scrolly-text .h4{margin-bottom: 12px; font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+    .scrolly-text .h4{margin-bottom: 12px; font-size: 1.5rem; line-height: 1.875rem; letter-spacing: -0.24px;}
     .scrolly-btns{padding: 0 4px; margin: 0 auto; border-radius: 28px; }
-    .scrolly-btns a:first-child{margin-bottom: 0; width: fit-content; line-height: 18px;}
+    .scrolly-btns a:first-child{margin-bottom: 0; width: fit-content; line-height: 1.125rem;}
     .scrolly-btns a:not(.button){gap: 8px; flex: 1;}
 }
 @media screen and (max-width: 390px) and (min-width: 200px){

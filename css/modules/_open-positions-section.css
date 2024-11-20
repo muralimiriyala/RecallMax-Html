@@ -14,7 +14,7 @@
 .open-positions-title h6 a{color: var(--Raisin-Black);}
 .open-positions-title h6 a:hover{color: var(--Accent);}
 ul.open-positions-category{margin: 0; gap: 8px;}
-ul.open-positions-category > li{padding-right: 8px; margin: 0; font-size: 14px; line-height: 21px; color: rgba(48, 33, 53, 0.8); border-right: 1px solid rgba(164, 39, 143, 0.5);}
+ul.open-positions-category > li{padding-right: 8px; margin: 0; font-size: 0.875rem; line-height: 1.313rem; color: rgba(48, 33, 53, 0.8); border-right: 1px solid rgba(164, 39, 143, 0.5);}
 ul.open-positions-category > li:before{display: none;}
 ul.open-positions-category > li:first-child{padding-left: 0;}
 ul.open-positions-category > li:last-child{padding-right: 0; border-right: 0;}
@@ -53,5 +53,5 @@ ul.open-positions-category > li:last-child{padding-right: 0; border-right: 0;}
     .open-positions-btn{width: 100%;}
     .open-positions-btn .button{width: 100%;}
     ul.open-positions-category{gap: 5px 8px;}
-    ul.open-positions-category > li{line-height: 18px;}
+    ul.open-positions-category > li{line-height: 1.125rem;}
 }

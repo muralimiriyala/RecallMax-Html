@@ -1,14 +1,14 @@
 
 .comparison-main table{border: none}
 .comparison-h-block{text-align: center;}
-.comparison-h-block span{font-size: 32px; line-height: 32px; display: block; margin-bottom: 15px;}
+.comparison-h-block span{font-size: 2rem; line-height: 2rem; display: block; margin-bottom: 15px;}
 .comparison-h-icon svg{border-radius: 32px;}
 .comparison-h-center::before{content: ""; display: block; width: 2px; height: 65px; background: var(--Accent); position: absolute; left: 50%; top: -81px; transform: translateX(-50%);}
-.vs-icon{width: 56px; height: 56px; color: var(--Raisin-Black); font-size: 24px; line-height: 24px; font-weight: 800;}
+.vs-icon{width: 56px; height: 56px; color: var(--Raisin-Black); font-size: 1.5rem; line-height: 1.5rem; font-weight: 800;}
 
-.comparison-description{font-size: 16px; line-height: 24px;}
+.comparison-description{font-size: 1rem; line-height: 1.5rem;}
 
-.comparison-subtitle > span{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18px; font-weight: 800; display: block; width: 100%;}
+.comparison-subtitle > span{font-size: 1.125rem; line-height: 1.406rem; letter-spacing: -0.18px; font-weight: 800; display: block; width: 100%;}
 .comparison-subtitle-icon{max-width: 60px;}
 .comparison-subtitle-icon img{width: 60px;}
 .comparison-subtitle-icon svg{width: 60px; height: 60px;}
@@ -41,7 +41,7 @@
     .comparison-row{gap: 24px; padding: 8px 0; margin-bottom: 64px;}
     .comparison-subtitle{gap: 16px; flex: 0 0 168px; padding: 16px; position: relative;}
     .comparison-description{gap: 16px; flex: 1; }
-    .comparison-d-center{max-width: 420px; font-size: 16px; line-height: 24px;}
+    .comparison-d-center{max-width: 420px; font-size: 1rem; line-height: 1.5rem;}
 }
 @media screen and  (min-width: 768px){
     .comparison-main{padding: 0 0 110px;}
@@ -55,19 +55,19 @@
     .comparison-main{padding-bottom: 40px; }
     .comparison-head{gap: 12px; padding: 0 20px;}
     .comparison-h-block{width: 126px; margin-bottom: 20px; flex: 1;}
-    .comparison-h-block span{font-size: 20px; line-height: 20px; margin-bottom: 12px;}
+    .comparison-h-block span{font-size: 1.25rem; line-height: 1.25rem; margin-bottom: 12px;}
     .comparison-icon svg{height: 37px; width: 37px;}
     .comparison-h-center{flex: 0 0 40px;}
     .comparison-h-center::before{content: ""; display: block; width: 2px; height:44.5px; background: var(--Accent); top: -54px; position: absolute; left: 50%; transform: translateX(-50%);}
     .comparison-h-icon{width: 96px;}
     .comparison-h-icon svg{width: 96px; height: 96px; border-radius: 24px;}
-    .vs-icon{font-size: 17px; height: 40px; line-height: 17px; width: 40px;}
+    .vs-icon{font-size: 1.063rem; height: 40px; line-height: 1.063rem; width: 40px;}
     .comparison-rows::before{background-color: var(--Accent); content: ""; display: block; height: calc(100% - 74px); left: 50%; transform: translateX(-50%); width: 2px; position: absolute; top: -45px; }
     .comparison-row{display: flex !important; gap: 34px;}
     .comparison-description:first-child{order: 1;}
     .comparison-subtitle:nth-child(2n+2){order: 3;}
     .comparison-description:last-child{order: 2; }
-    .comparison-description{flex: 0 0 calc(50% - 17px); gap: 16px; font-size: 16px; line-height: 24px;}
+    .comparison-description{flex: 0 0 calc(50% - 17px); gap: 16px; font-size: 1rem; line-height: 1.5rem;}
     .comparison-description p{display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 5;}
     .comparison-subtitle{max-width: 204px; padding: 12px 20px; gap: 18px; text-align: left;}
     .comparison-subtitle-icon{max-width: 40px; margin: 0;}
@@ -80,7 +80,7 @@
 @media screen and (max-width: 389px) and (min-width: 200px){
     .comparison-h-block{width: 88px;}
     .comparison-subtitle{max-width: 170px; gap: 8px;}
-    .comparison-subtitle > span{font-size: 14px; line-height: 18px;}
+    .comparison-subtitle > span{font-size: 0.875rem; line-height: 1.125rem;}
     .comparison-rows button.slick-arrow{left: -10px;}
     .comparison-rows button.slick-next{right: -10px; left: auto;}
 }   

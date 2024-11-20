@@ -3,7 +3,7 @@
 .optional-repeater-thumb img{border-radius: 10px;}
 body.page-template-comparison-lp .optional-repeater-thumb{padding: 0; background: transparent; border-radius: 0; box-shadow: none;}
 body.page-template-comparison-lp .optional-repeater-thumb img{border-radius: 16px;}
-.optional-repeater-text{font-size: 20px; line-height: 30px; color: var(--Gray-1);}
+.optional-repeater-text{font-size: 1.25rem; line-height: 1.875rem; color: var(--Gray-1);}
 .optional-repeater-text > p{color: var(--Gray-1);}
 body.page-template-Features-detail .optional-repeater-text > p{margin-bottom: 21px;}
 .optional-repeater-text span.optional-text{margin-bottom: 22px;}
@@ -26,7 +26,7 @@ body.page-template-Features-detail .optional-repeater-text > p{margin-bottom: 21
     body.page-template-affiliate .optional-repeater-section:nth-child(2) .optional-repeater-main{padding: 80px 0 40px;}
     body.page-template-affiliate .optional-repeater-section:nth-child(4) .optional-repeater-main{padding: 40px 0 80px;}
     body.page-template-about .optional-repeater-section:nth-child(2) .optional-repeater-main{padding: 80px 0 40px;}
-    body.page-template-Features-detail .optional-repeater-text > h3{font-size: 32px; line-height: 40px; letter-spacing: -0.32px;}
+    body.page-template-Features-detail .optional-repeater-text > h3{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .reverse{flex-direction: row-reverse;}
     .optional-repeater-list{gap: 80px; margin-bottom: 40px;}
     .optional-repeater-list:last-child{margin-bottom: 0;}
@@ -49,7 +49,7 @@ body.page-template-Features-detail .optional-repeater-text > p{margin-bottom: 21
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .optional-repeater-main{padding: 40px 0;}
     .optional-repeater-image{flex: 100%; margin-bottom: 40px;}
-    .optional-repeater-text{font-size: 18px; line-height: 27px; flex: 100%;}
+    .optional-repeater-text{font-size: 1.125rem; line-height: 1.688rem; flex: 100%;}
     .optional-repeater-text span.optional-text{margin-bottom: 18px;}
     .optional-repeater-text hr.sm-line{margin: 20px 0;}
     body.page-template-Features-detail .optional-repeater-text > p{margin-bottom: 18px;}

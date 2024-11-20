@@ -11,7 +11,7 @@
 .newsletter-title{flex: 1;}
 .newsletter-title h6{margin-bottom: 4px;}
 ul.newsletter-category{margin: 0; gap: 8px;}
-ul.newsletter-category > li{padding-right: 8px; margin: 0; font-size: 14px; line-height: 21px; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
+ul.newsletter-category > li{padding-right: 8px; margin: 0; font-size: 0.875rem; line-height: 1.313rem; color: var(--Raisin-Black); border-right: 1px solid rgba(164, 39, 143, 0.5);}
 ul.newsletter-category > li:before{display: none;}
 ul.newsletter-category > li:first-child{padding-left: 0;}
 ul.newsletter-category > li:last-child{padding-right: 0; border-right: 0;}
@@ -46,7 +46,7 @@ ul.newsletter-category > li:last-child{padding-right: 0; border-right: 0;}
     body.single-post .newsletter-main, body.single-post .newsletter-main, body.page-template-services-overview .newsletter-main{padding: 12px 0 40px;}
     .newsletter-main{padding: 40px 0;}
     .newsletter-lt{flex: 100%; padding: 24px 24px 64px; border-radius: 24px 24px 0px 0px; text-align: center;}
-    .newsletter-lt h4{font-size: 24px; letter-spacing: -.24px; line-height: 30px;}
+    .newsletter-lt h4{font-size: 1.5rem; letter-spacing: -.24px; line-height: 1.875rem;}
     .newsletter-rt{flex: 100%; padding: 24px; margin-top: -40px; text-align: center; border-radius: 24px;}
     .newsletter-rt span.optional-text{margin-bottom: 20px;}
     .newsletter-item{flex-direction: column;}

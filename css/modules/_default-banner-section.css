@@ -1,6 +1,6 @@
 
 .default-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); overflow: hidden;}
-.default-banner-text{font-size: 20px; line-height: 30px; color: var(--White);}
+.default-banner-text{font-size: 1.25rem; line-height: 1.875rem; color: var(--White);}
 .default-banner-text h1{color: var(--White);}
 .default-banner-btns{gap: 12px; margin-top: 32px;}
 .default-banner-btns a.text-link:hover{color: var(--Sky-Blue);}
@@ -29,7 +29,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .default-banner-main{padding: 145px 0 40px;}
-    .default-banner-text{font-size: 18px; line-height: 27px;}
+    .default-banner-text{font-size: 1.125rem; line-height: 1.688rem;}
     .default-banner-text span.optional-text{margin-bottom: 24px;}
     .default-banner-text hr.sm-line{margin: 24px 0;}
     .default-banner-btns .button{width: 100%;}
