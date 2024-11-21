@@ -31,8 +31,8 @@ const Menu = {
   init() {
     const _ = this;
     if (!_.$header) return false;
-    if (!_.$mainproducts || !_.$mainproductsHover) return false;
 
+    if (!_.$mainproducts) return false;
     if (_.$mainproducts) {
       _.$mainproducts.addEventListener('mouseover', function (e) {
         _.$products[0].parentElement.classList.add('open');
@@ -42,6 +42,7 @@ const Menu = {
       });
     }
 
+    if (!_.$mainproductsHover) return false;
     if (_.$mainproductsHover) {
       _.$mainproductsHover.addEventListener('mouseover', function (e) {
         _.$products[0].parentElement.classList.add('open');
@@ -50,6 +51,7 @@ const Menu = {
         _.$products[0].parentElement.classList.remove('open');
       });
     }
+
     _.$products.forEach((ele) => {
       ele.addEventListener('mouseover', function (e) {
         _.$products.forEach((ele) => {
