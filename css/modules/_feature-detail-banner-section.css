@@ -3,7 +3,7 @@
 .feature-detail-banner-text{font-size: 1.25rem; line-height: 1.875rem; color: var(--White);}
 .feature-detail-banner-title{gap: 27px; margin-bottom: 30px;}
 .feature-detail-banner-icon{flex: 0 0 52px;}
-.feature-detail-banner-icon svg, .feature-detail-banner-icon img{height: 52px; width: 52px;}
+.feature-detail-banner-icon svg, .feature-detail-banner-icon img{height: 52px; width: 52px; object-fit: contain;}
 .feature-detail-banner-title h1{color: var(--White); margin-bottom: 0;}
 .feature-detail-banner-btn{gap: 12px; margin-top: 32px;}
 .feature-detail-banner-thumb img{opacity: 0.2;}

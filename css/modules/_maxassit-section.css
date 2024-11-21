@@ -70,6 +70,7 @@
     .maxassit-main{padding: 40px 0;}
     .maxassit-mobile{gap: 32px;}
     .maxassit-heading{gap: 32px;}
+    .maxassit-intro .h2{font-size: 2rem; line-height: 2.5rem;}
     .maxassit-intro p{margin-bottom: 0;}
     .maxassit-new-intro{max-width: 375px; margin: 0 auto;}
     .maxassit-new-intro h2, .maxassit-new-intro .h2{font-size: 2rem; letter-spacing: -.32px; line-height: 2.5rem;}
