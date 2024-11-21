@@ -77,7 +77,8 @@
     .no_large_cta_text .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3):nth-child(3), .large-cta-logo{height: 65px; width: 117px;}
     .large-cta-thumb img{max-width: 107px;}
 }
-
-
-
+@media screen and (max-width: 389px) and (min-width: 200px){
+    .large-cta-row:first-child .large-cta-logo:nth-child(1) figure, .large-cta-row:first-child .large-cta-logo:nth-child(2) figure{max-width: 110px;}
+    .no_large_cta_text .large-cta-row:nth-child(even) .large-cta-logo:nth-child(3):nth-child(3), .large-cta-logo{height: 65px; width: 110px;}
+}
 
