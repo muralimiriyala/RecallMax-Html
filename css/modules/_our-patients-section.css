@@ -13,5 +13,5 @@
 @media screen and (max-width: 767px) and (min-width: 200px){
     .our-patients-main{padding: 40px 0;}
     .our-patients-head{margin-bottom: 40px;}
-    .our-patients-head .h3{font-size: 2.5rem; line-height: 2.875rem; letter-spacing: -0.4px;}
+    .our-patients-head .h3{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.4px;}
 }
