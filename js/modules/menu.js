@@ -19,14 +19,19 @@ const Menu = {
     'body.page-template-services-detail, body.single-post, body.page-template-team'
   ),
   $site: document.querySelector('.site-main-cover'),
-  $mainproducts: document.querySelector('ul.main_menu > li.nav-products > a'),
+  $mainproducts: document.querySelector(
+    'ul.main_menu > li.nav-products:not(.current_page_ancestor) > a'
+  ),
+  $mainproductsHover: document.querySelector(
+    'ul.main_menu > li.nav-products:hover:not(.current_page_ancestor) > a'
+  ),
   $products: document.querySelectorAll(
-    'ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a'
+    'ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li:not(.current_page_item) > a'
   ),
   init() {
     const _ = this;
     if (!_.$header) return false;
-    if (!_.$mainproducts) return false;
+    if (!_.$mainproducts || !_.$mainproductsHover) return false;
 
     if (_.$mainproducts) {
       _.$mainproducts.addEventListener('mouseover', function (e) {
@@ -37,6 +42,14 @@ const Menu = {
       });
     }
 
+    if (_.$mainproductsHover) {
+      _.$mainproductsHover.addEventListener('mouseover', function (e) {
+        _.$products[0].parentElement.classList.add('open');
+      });
+      _.$mainproductsHover.addEventListener('mouseleave', function (e) {
+        _.$products[0].parentElement.classList.remove('open');
+      });
+    }
     _.$products.forEach((ele) => {
       ele.addEventListener('mouseover', function (e) {
         _.$products.forEach((ele) => {
