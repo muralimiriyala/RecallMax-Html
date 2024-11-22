@@ -20,13 +20,13 @@ const Menu = {
   ),
   $site: document.querySelector('.site-main-cover'),
   $mainproducts: document.querySelector(
-    'ul.main_menu > li.nav-products:not(.current_page_ancestor) > a'
+    'ul.main_menu > li.nav-products:not(.current-page-ancestor) > a'
   ),
   $mainproductsHover: document.querySelector(
-    'ul.main_menu > li.nav-products:hover:not(.current_page_ancestor) > a'
+    'ul.main_menu > li.nav-products:hover:not(.current-page-ancestor) > a'
   ),
   $products: document.querySelectorAll(
-    'ul.main_menu > li.nav-products:not(.current_page_ancestor) > ul > li.nav-sub-products > ul > li:not(.current_page_item) > a'
+    'ul.main_menu > li.nav-products:not(.current-page-ancestor) > ul > li.nav-sub-products > ul > li:not(.current_page_item) > a'
   ),
   init() {
     const _ = this;
