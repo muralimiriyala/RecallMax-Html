@@ -159,9 +159,9 @@ const Menu = {
 
     if (!_.$adsense) return false;
     if (_.$adsense) {
-      _.$site.classList.add('top-adsense');
+      _.$site.classList.add('top-stickybar');
     } else {
-      _.$site.classList.remove('top-adsense');
+      _.$site.classList.remove('top-stickybar');
     }
   },
 };
