@@ -29,36 +29,46 @@ const Menu = {
     'ul.main_menu > li.nav-products:hover:not(.current-page-ancestor) > a'
   ),
   $products: document.querySelectorAll(
-    'ul.main_menu > li.nav-products:not(.current-page-ancestor) > ul > li.nav-sub-products > ul > li:not(.current_page_item) > a'
+    'ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a'
   ),
+  $productsLi: document.querySelectorAll(
+    'ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.current_page_item'
+  ),
+
   init() {
     const _ = this;
     if (!_.$header) return false;
 
-    if (_.$mainproducts) {
+    if (_.$mainproducts && !_.$productsLi.length > 0) {
       _.$products[0].parentElement.classList.add('open');
     }
-    if (_.$mainproductsSub) {
+    if (_.$mainproductsSub && !_.$productsLi.length > 0) {
       _.$mainproductsSub.addEventListener('mouseover', function (e) {
         e.preventDefault();
         _.$products[0].parentElement.classList.add('open');
       });
     }
 
+    const originalActiveLi = Array.from(_.$productsLi);
+
     _.$products.forEach((ele) => {
+      // On mouseover
       ele.addEventListener('mouseover', function (e) {
-        _.$products.forEach((ele) => {
-          ele.parentElement.classList.remove('open');
-        });
+        _.$productsLi.forEach((li) => li.classList.remove('current_page_item'));
+        _.$products.forEach((ele) =>
+          ele.parentElement.classList.remove('open')
+        );
         e.target.parentElement.classList.add('open');
       });
+
+      // On mouseleave
       ele.addEventListener('mouseleave', function (e) {
         e.target.parentElement.classList.remove('open');
+        originalActiveLi.forEach((li) => li.classList.add('current_page_item'));
       });
     });
 
     const exceptFirst = Array.from(_.$products).slice(1);
-    console.log(exceptFirst);
     exceptFirst.forEach((ele) => {
       ele.addEventListener('mouseover', function (e) {
         _.$products[0].parentElement.classList.add('open-hide');
