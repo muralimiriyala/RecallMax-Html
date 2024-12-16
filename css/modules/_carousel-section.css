@@ -17,8 +17,9 @@
 .carousel-main button.slick-arrow{top: calc(50% - 20px); transform: translateY(-50%); position: absolute; z-index: 2;}
 .carousel-main button.slick-next{right: 20px;}
 .carousel-main button.slick-prev{left: 20px;}
-
-
+.carousel-item > a{color: var(--Raisin-Black);}
+.carousel-item > a:hover{color: var(--Accent);}
+ 
 /* @media screen and (min-width: 1024px){
     .carousel-main .slick-track{align-items: center; justify-content: center; display: flex;}
 } */
