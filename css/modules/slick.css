@@ -84,6 +84,8 @@
 }
 .slick-slide img
 {
+    max-width: 40px;
+    object-fit: contain;
     display: block;
 }
 .slick-slide.slick-loading img

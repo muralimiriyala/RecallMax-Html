@@ -28,7 +28,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
 .compare-l-h{transform: translateX(35px);}
 .compare-r-h{transform: translateX(-37px);}
 .compare-main:hover .compare-h{transform: translateX(0);}
-.compare-images{max-width: 328px; }
+.compare-images{max-width: 332px; }
 .compare-main:hover .compare-left{margin-right: -8px;}
 .compare-main:hover .compare-right{margin-left: -8px;}
 .no_compare_images .compare-bg{display: none;}
@@ -38,7 +38,8 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    .compare-main{margin-bottom: 80px;}
+    .compare-main{margin-bottom: 80px; flex-wrap: nowrap;}
+    .compare-images{flex-wrap: nowrap;}
     body.page-template-Features-overview .compare-main, 
     body.page-template-pricing .compare-main, 
     body.page-template-Products-overview .compare-main, 
@@ -52,7 +53,7 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
     .compare-r-h {transform: translateX(-24px);}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
-    .compare-main{padding: 0; gap: 0;}
+    .compare-main{padding: 0; gap: 12px;}
     .compare-main h4{font-size: 1.313rem; line-height: 1.688rem; letter-spacing: -0.24px;}
     .compare-l-h {transform: translateX(24px); }
     .compare-r-h {transform: translateX(-24px);}
