@@ -3,5 +3,6 @@
     --b-transition-3: all 0.3s ease;
     --b-transition-4: all 0.4s ease;
     --b-transition-6: all 0.6s ease;
+    --b-transition-8: all 0.8s ease;
 }
 .transition{transition: var(--b-transition);}

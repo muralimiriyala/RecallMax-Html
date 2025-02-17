@@ -34,7 +34,6 @@ const Menu = {
   $productsLi: document.querySelectorAll(
     'ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.current_page_item'
   ),
-
   init() {
     const _ = this;
     if (!_.$header) return false;
@@ -42,39 +41,15 @@ const Menu = {
     if (_.$mainproducts && !_.$productsLi.length > 0) {
       _.$products[0].parentElement.classList.add('open');
     }
-    if (_.$mainproductsSub && !_.$productsLi.length > 0) {
-      _.$mainproductsSub.addEventListener('mouseover', function (e) {
-        e.preventDefault();
-        _.$products[0].parentElement.classList.add('open');
-      });
-    }
-
-    const originalActiveLi = Array.from(_.$productsLi);
 
     _.$products.forEach((ele) => {
-      // On mouseover
-      ele.addEventListener('mouseover', function (e) {
+      // On mouseenter
+      ele.addEventListener('mouseenter', function (e) {
         _.$productsLi.forEach((li) => li.classList.remove('current_page_item'));
         _.$products.forEach((ele) =>
           ele.parentElement.classList.remove('open')
         );
         e.target.parentElement.classList.add('open');
-      });
-
-      // On mouseleave
-      ele.addEventListener('mouseleave', function (e) {
-        e.target.parentElement.classList.remove('open');
-        originalActiveLi.forEach((li) => li.classList.add('current_page_item'));
-      });
-    });
-
-    const exceptFirst = Array.from(_.$products).slice(1);
-    exceptFirst.forEach((ele) => {
-      ele.addEventListener('mouseover', function (e) {
-        _.$products[0].parentElement.classList.add('open-hide');
-      });
-      ele.addEventListener('mouseleave', function (e) {
-        _.$products[0].parentElement.classList.remove('open-hide');
       });
     });
 
