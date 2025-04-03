@@ -28,6 +28,7 @@ import pdetailtabs from './modules/pdetailtabs';
 import spyScroll from './modules/spyScroll';
 import { numberInput } from './modules/numberInput';
 import adsensebar from './modules/adsensebar';
+import modalBookai from './modules/modalBookai';
 
 (function () {
   customGsap.init();
@@ -58,6 +59,7 @@ import adsensebar from './modules/adsensebar';
   numberInput();
   adsensebar.init();
   modalChart.init();
+  modalBookai.init();
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
