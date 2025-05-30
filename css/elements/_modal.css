@@ -15,13 +15,18 @@
 .modal-close svg path{transition: var(--b-transition);}
 .modal-close:hover svg path{fill: #fff;}
 body .modal-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 14px 24px 15px; width: 100%; font-size: 1.5rem; line-height: 1.5rem;}
-body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{display: block; width: 100%;}
-body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding: 0; width: 100%; display: block; text-align: center; cursor: auto;}
-body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label input{display: none !important;}
+body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_opt_container{ display: flex; flex-wrap: wrap; gap: 24px; padding-top: 20px; width: 100%; }
+body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{display: block; width: fit-content; margin: 0; flex: 0 0 auto;}
+body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding: 0 0 0 24px; width: 100%; display: block; text-align: center; cursor: auto;}
+/* body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label input{display: none !important;} */
 body .modal-form .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
 
 .modal-form-submitted{padding: 40px; min-width: 840px;}
 .modal-form-submitted .modal-form{padding-top: 27px;}
+
+body .modal-form .frm_forms .frm_form_fields .frm_form_field{width: 100%;}
+body .modal-form .frm_forms .frm_form_fields .frm_filed_wrapper  .frm_opt_container{padding: 0 !important; display: block !important;}
+body .modal-form .frm_forms .frm_form_fields .frm_filed_wrapper  .frm_opt_container label{padding:  0 !important;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 768px){
@@ -55,9 +60,10 @@ body .modal-form .frm_style_formidable-style.with_frm_style .frm_error_style{dis
     .modal-head .h2{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     body .modal-form .frm_forms .frm_form_fields .frm_submit{padding-top: 16px;}
     body .modal-form .frm_forms .frm_form_fields .frm_form_field .frm_primary_label{display: none;}
-    body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_label{display: none;}
+    /* body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_label{display: none;} */
     body .modal-form .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 16px;}
     body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{opacity: 0.75;}
+    body .modal-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_opt_container{gap: 16px; flex-direction: column;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     body .modal-form .form_field_wrapper{display: block;}

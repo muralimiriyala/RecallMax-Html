@@ -7,7 +7,7 @@ const filterCategory = {
   init() {
     const _ = this;
     if (_.$links.length > 0) {
-      _.$links[0].parentElement.classList.add('tab-open');
+      _.$links[0]?.parentElement.classList.add('tab-open');
       // _.$filterData[0].style.display = 'block';
     }
 
@@ -33,8 +33,6 @@ const filterCategory = {
       });
     });
 
-     
-
     let media = window.matchMedia('(max-width: 767px)');
     let ftrResize = (e) => {
       // e.preventDefault();
@@ -53,13 +51,12 @@ const filterCategory = {
       $ele.addEventListener('change', ftrResize);
     });
 
-
     let ftrMobile = function (e) {
       e.preventDefault();
-    
+
       e.target.classList.toggle('open');
       const ele = document.querySelector('.filter-category-links');
-    
+
       if (ele.dataset.open !== 'true') {
         _.$ftrlinks.forEach((item) => {
           if (item !== ele) {
@@ -77,11 +74,10 @@ const filterCategory = {
         ele.dataset.open = 'false';
         ele.style.maxHeight = `0px`;
       }
-    };    
-    if(_.$ftrbtn){
+    };
+    if (_.$ftrbtn) {
       _.$ftrbtn.addEventListener('click', ftrMobile);
     }
   },
 };
 export default filterCategory;
-

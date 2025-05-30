@@ -5,7 +5,7 @@ const modalBookai = {
   $centerChart: document.querySelector('.modal-main-bookai .modal-center'),
   $eleChart: [
     ...document.querySelectorAll('.modal-chart-btn'),
-    ...document.querySelectorAll('a[href="#book-a-chartai"]'),
+    ...document.querySelectorAll('a[href="#modal-form"]'),
   ],
   $windowChart: document.querySelector('.modal-window-bookai'),
   $mainChart: document.querySelector('.modal-main-bookai'),
@@ -29,7 +29,7 @@ const modalBookai = {
 
     // Open the modal if URL contains '#modal'
     if (
-      window.location.href.includes('#book-a-chartai') &&
+      window.location.href.includes('#modal-form') &&
       !window.location.href.includes('#modal') &&
       !window.location.href.includes('#chatai-modal-btn')
     ) {

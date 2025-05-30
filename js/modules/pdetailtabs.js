@@ -10,7 +10,7 @@ const pdetailtabs = {
 
   init() {
     const _ = this;
-    if (!_.$slide) return;
+    if (!_.$slide || _.$ele) return;
     const $fortab = $(_.$slide);
     const $duration = Number(_.$slide.getAttribute('data-duration')) || 2000;
 
@@ -26,7 +26,7 @@ const pdetailtabs = {
       focusOnSelect: true,
     });
 
-    _.$links[0].classList.add('ui-open');
+    _.$links[0]?.classList.add('ui-open');
     _.$links.forEach(($link, index) => {
       $link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -53,8 +53,8 @@ const pdetailtabs = {
 
   removeActiveClass() {
     this.$links.forEach(($link) => {
-      const $progress = $link.querySelector('.ui-active-state');
-      $link.classList.remove('ui-open');
+      const $progress = $link?.querySelector('.ui-active-state');
+      $link?.classList.remove('ui-open');
       $progress.style.transition = 'none';
       $progress.style.width = '0%';
       setTimeout(() => {
@@ -65,7 +65,7 @@ const pdetailtabs = {
 
   resetAndAnimateProgressBar($link, duration, index) {
     const _ = this;
-    const $progress = $link.querySelector('.ui-active-state');
+    const $progress = $link?.querySelector('.ui-active-state');
     if (_.progressIntervals[index]) {
       clearInterval(_.progressIntervals[index]);
       _.progressIntervals[index] = null;
