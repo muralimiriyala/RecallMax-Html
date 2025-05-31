@@ -30,7 +30,7 @@ import { numberInput } from './modules/numberInput';
 import adsensebar from './modules/adsensebar';
 import modalBookai from './modules/modalBookai';
 import { scrollnav } from './modules/scrollnav';
-import { innovation } from './modules/scrollnavline';
+import { scrollnavline } from './modules/scrollnavline';
 
 (function () {
   customGsap.init();
@@ -62,7 +62,7 @@ import { innovation } from './modules/scrollnavline';
   adsensebar.init();
   modalChart.init();
   modalBookai.init();
-  innovation.init();
+  scrollnavline.init();
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {

@@ -27,22 +27,33 @@
     opacity: 0.25;
   }
   .scroll-nav-line{
-    background-color: var(--Accent);
-    border-radius: 4px;
-    height: 0;
-    left: -3px;
-    top: 0;
-    width: 8px;
-    opacity: 1;
+
   }
 ul.scroll-nav-links{margin: 0; gap: 33px 0;}
 ul.scroll-nav-links li{margin: 0;}
 ul.scroll-nav-links li::before{display: none;}
-ul.scroll-nav-links li a{padding-right: 10px; display: block; color: var(--Raisin-Black); opacity: 0.5; font-size: 18px; font-weight: 400; line-height: 125%; }
+ul.scroll-nav-links li a{padding-right: 10px; display: block; color: var(--Raisin-Black); opacity: 0.5; font-size: 18px; font-weight: 400; line-height: 125%; position: relative;}
 ul.scroll-nav-links li:first-child a{padding-top: 13px;}
 ul.scroll-nav-links li:last-child a{padding-bottom: 32px;}
 ul.scroll-nav-links li a:hover, ul.scroll-nav-links li a.active{font-weight: 700; opacity: 1; color: var(--Accent);}
+ul.scroll-nav-links li a::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%) scaleY(0); 
+  transform-origin: top; 
+  width: 8px;
+  height: 72px;
+  background-color: var(--Accent);
+  border-radius: 4px;
+  opacity: 1;
+  transition: transform 0.5s ease;
+}
 
+ul.scroll-nav-links li a.active::before {
+  transform: translateY(-50%) scaleY(1);
+}
 
 .scroll-nav-btns{margin-top: 40px; padding: 4px 4px 9px; gap: 10px; background: rgba(165, 24, 144, 0.15); }
 .scroll-link-btn{gap: 6px;}

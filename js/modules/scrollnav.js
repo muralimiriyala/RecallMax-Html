@@ -3,21 +3,9 @@ import 'sticksy';
 export const scrollnav = {
   eles: document.querySelectorAll('.scroll-nav-text a.text-link'),
   stickele: document.querySelector('.sticky-widget'),
-  nav: document.querySelector('ul.scroll-nav-links'),
   init() {
     const __ = this;
-    if (!__.eles.length && !__.nav) return;
-
-    this.nav.children[0].querySelector('a').classList.add('active');
-    this.nav.addEventListener('click', function (e) {
-      e.preventDefault();
-      e.currentTarget.querySelectorAll('a').forEach((ele) => {
-        ele.classList.remove('active');
-      });
-      if (e.target.tagName === 'A') {
-        e.target.classList.toggle('active');
-      }
-    });
+    if (!__.eles.length) return;
 
     const height = +document.querySelector('header').getBoundingClientRect()
       .height;

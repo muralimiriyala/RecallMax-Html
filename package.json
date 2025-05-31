@@ -44,6 +44,7 @@
     "postcss-inline-svg": "^6.0.0",
     "postcss-loader": "^8.1.1",
     "precss": "^4.0.0",
+    "simple-scrollspy": "^2.5.3",
     "slick-carousel": "^1.8.1",
     "sticksy": "^0.2.0",
     "webpack": "^5.95.0",
