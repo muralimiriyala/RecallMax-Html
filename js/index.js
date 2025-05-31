@@ -29,6 +29,8 @@ import spyScroll from './modules/spyScroll';
 import { numberInput } from './modules/numberInput';
 import adsensebar from './modules/adsensebar';
 import modalBookai from './modules/modalBookai';
+import { scrollnav } from './modules/scrollnav';
+import { innovation } from './modules/scrollnavline';
 
 (function () {
   customGsap.init();
@@ -60,10 +62,14 @@ import modalBookai from './modules/modalBookai';
   adsensebar.init();
   modalChart.init();
   modalBookai.init();
+  innovation.init();
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
   scrolled = window.scrollY;
   Scroll.handle(scrolled);
   Animations.handle(scrolled, Scroll.direction);
+});
+window.addEventListener('load', function () {
+  scrollnav.init();
 });

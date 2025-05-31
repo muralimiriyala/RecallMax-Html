@@ -355,6 +355,9 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
     }
 }
 
+.ai-demo-watch {gap: 8px; letter-spacing: 0; width: fit-content; color: var(--White);}
+.ai-demo-watch  img{width: 24px;}
+
 .demo-white{background: rgba(48, 33, 53, 0.50);}
 .demo-white .button{background: var(--White); color: var(--Accent);}
 .demo-white .book-demo-call{color: var(--White);}

@@ -1,0 +1,27 @@
+
+
+.intro-product-section{background:linear-gradient(180deg, var(--White) 0%, rgba(255, 255, 255, 0.00) 100%), var(--Eggshell);}
+.intro-product-text span.optional-text{margin-bottom: 20px;}
+.intro-product-text h2{margin-bottom: 39px;}
+
+
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px) {
+    .intro-product-main{padding: 99px 0 40px; max-width: 960px;}
+    
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .intro-product-main{padding: 99px 0 20px;}
+    .intro-product-text{font-size: 18px; line-height: 27px;}
+.intro-product-text h2{margin-bottom: 37px;}
+
+}
+
+
+
+
+

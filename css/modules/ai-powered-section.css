@@ -1,0 +1,30 @@
+
+
+
+
+
+
+.ai-powered-wrap{padding: 104px 0 102px;}
+.ai-powered-text span.optional-text{margin-bottom: 28px;}
+.ai-powered-text h2{margin-bottom: 29px;}
+
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px) {
+    .ai-powered-text{flex: 0 0 618px; padding: 56px 72px 56px 56px;}
+    .ai-powered-image{flex: 1;}
+
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .ai-powered-main{flex-direction: column;}
+    .ai-powered-text{padding: 56px 72px 56px 56px;}
+
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .ai-powered-wrap{padding: 41px 0 39px;}
+    .ai-powered-main{display: block; border-radius: 24px; padding: 30px 20px 32px;}
+    .ai-powered-text h2{font-size: 24px; line-height: 27px; letter-spacing: -0.24px;}
+    .ai-powered-text span.optional-text{margin-bottom: 22px;}
+    .ai-powered-image{flex: 0 0 100%;}
+}
