@@ -1,7 +1,9 @@
 
-.pdetail-gradient-bg{height: 100%; width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
-.pdetail-banner-text{font-size: 1.25rem; line-height: 1.875rem;}
-.pdetail-banner-text span.optional-text.lg{margin-bottom: 5px;}
+
+.pdetail-banner-section{background-color: var(--White);}
+.pdetail-gradient-bg{height: calc(100% - 60px); width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
+.pdetail-banner-text{font-size: 1.25rem; line-height: 1.875rem; padding-bottom: 42px;}
+.pdetail-banner-text span.optional-text.lg{margin-bottom: 5px; color: var(--Accent-Purple);}
 .pdetail-banner-text h1{color: var(--White); letter-spacing: normal;}
 .pdetail-banner-btn{gap: 12px; margin-top: 32px;}
 .pdetail-banner-thumb img{opacity: 0.2;}
@@ -22,6 +24,9 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 
 
 /*-- media css starts here --*/
+@media screen and (min-width: 1440px){
+    .pdetail-ui-center picture img{min-width: 1440px; left: 50%; transform: translateX(-50%); position: relative;}
+}
 @media screen and (min-width: 1024px) {
     .pdetail-banner-main{padding: 150px 0 0;}
     .pdetail-banner-text{max-width: 950px;}
@@ -49,8 +54,8 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .pdetail-banner-main{padding: 128px 0 0;}
     body.home .pdetail-banner-main{padding: 112px 0 0;}
-    .pdetail-banner-text{font-size: 1.125rem; line-height: 1.688rem;}
-    .pdetail-banner-text span.optional-text.lg{font-size: 0.875rem; letter-spacing: 1.2px; line-height: 0.875rem; margin-bottom: 5px;}
+    .pdetail-banner-text{padding-bottom: 17px;}
+    .pdetail-banner-text span.optional-text.lg{margin-bottom: 21px;}
     .pdetail-banner-text h1{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .pdetail-banner-text hr.sm-line{margin: 24px 0;}
     ul.pdetail-ui-links{display: block; max-width: 256px; margin: 38px auto 56px;}

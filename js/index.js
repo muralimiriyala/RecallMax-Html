@@ -31,6 +31,7 @@ import adsensebar from './modules/adsensebar';
 import modalBookai from './modules/modalBookai';
 import { scrollnav } from './modules/scrollnav';
 import { scrollnavline } from './modules/scrollnavline';
+import { dashboard } from './modules/dashborad';
 
 (function () {
   customGsap.init();
@@ -63,6 +64,7 @@ import { scrollnavline } from './modules/scrollnavline';
   modalChart.init();
   modalBookai.init();
   scrollnavline.init();
+  dashboard.init();
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {

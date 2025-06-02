@@ -1,4 +1,8 @@
 :root{
     --base-font: "Albert Sans", sans-serif;
     --heading-font: "Albert Sans", sans-serif;
+    --nunito-font: "Nunito", sans-serif;
+}
+.nunito-font{
+    font-family: "Nunito", sans-serif;;
 }

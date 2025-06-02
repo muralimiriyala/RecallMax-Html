@@ -1,6 +1,6 @@
 
 .carousel-section{background-color: var(--White);}
-.carousel-main{padding: 103px 0 40px; gap: 18px; align-items: flex-start; flex-wrap: nowrap;}
+.carousel-main{padding: 23px 0 40px; gap: 18px; align-items: flex-start; flex-wrap: nowrap;}
 .carousel-item{flex: 0 0 104px; padding-top: 15px; transition: all 0.5s ease; text-align: center; flex-direction: column;color: var(--Raisin-Black);font-size: 0.938rem;font-weight: 500;line-height: 1.172rem;letter-spacing: -0.3px; cursor: pointer;}
 .carousel-icon{transition: transform 0.5s ease; transform-origin: center;}
 .carousel-item:hover .carousel-icon img, .carousel-item:hover .carousel-icon svg{transform: scale(1.2); transform-origin: 50% 50%;}
