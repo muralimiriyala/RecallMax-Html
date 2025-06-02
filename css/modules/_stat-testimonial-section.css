@@ -1,6 +1,6 @@
 
 
-
+.stat-testimonial-section.white-bg{ background: linear-gradient(180deg, var(--White) 0%, rgba(255, 255, 255, 0.00) 100%), var(--Eggshell); }
 .stat-testimonial-wrap{padding: 80px 0;}
 .stat-testimonial-main {box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08);}
 .stat-testimonial-left{padding: 4px; background-image: linear-gradient(to bottom, rgba(18, 39, 80, 0.25), #122750 200%), linear-gradient(to bottom, #a4278f, #a4278f);}

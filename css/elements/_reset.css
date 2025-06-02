@@ -375,7 +375,8 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 .w-100{width: 100%;}
 .container:not(.sm).p-0{padding: 0;}
 
-
+.divider.no-margin{padding-top: 90px;}
+.divider.no-margin .divider-line{margin: 0;}
 .divider-line{width: 100%; height: 2px; opacity: 0.4; background: linear-gradient(90deg, rgba(165, 24, 144, 0.00) 0%, #A51890 50%, rgba(165, 24, 144, 0.00) 100%); margin: 10px 0;}
 
   /*-- media css starts here --*/
@@ -450,7 +451,7 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 
     .slick-dots li > a{font-size: 1.5rem; line-height: normal; font-weight: 800; color: var(--Raisin-Black);}
     .culture-slash, .benefit-slash, .ftr-slash, .training-slash, .accreditation-slash{margin: 0 4px; color: var(--Accent-2); font-weight: 300;}
-
+    .divider.no-margin{padding-top: 22px;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     caption, td, th{font-size: 0.813rem; line-height: 1rem;}

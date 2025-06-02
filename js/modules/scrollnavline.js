@@ -2,6 +2,7 @@ import scrollSpy from 'simple-scrollspy';
 export const scrollnavline = {
   nav: document.querySelector('ul.scroll-nav-links'),
   init() {
+    if (!this.nav) return;
     this.nav.children[0].querySelector('a').classList.add('active');
     const height = +document.querySelector('header').getBoundingClientRect()
       .height;
