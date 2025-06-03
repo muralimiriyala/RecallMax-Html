@@ -248,7 +248,7 @@ picture.object-fit{width: 100%; height: 100%; display: block;}
 .play-btn-bg > span.circle:hover:after{ transform: translate(-50%,-50%) scale(1.1); }
 .play-btn-bg > span { transition: all 0.5s ease; transition-delay: 0s; border-radius: 50%; bottom: 0; content: " "; left: 0; position: absolute; right: 0; top: 0; }
 .play-btn-bg > span:not(:first-child){transform: scale(1); background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); }
-.play-btn-bg > span:not(:first-child):nth-child(2) {width: 112px; height: 112px;background: rgba(18, 39, 80, 0.40); left: 50%; transform: translate(-50%, -50%); top: 50%; z-index: 2;}
+.play-btn-bg > span:not(:first-child):nth-child(2) {width: 112px; height: 112px;background: rgba(18, 39, 80, 0.10); backdrop-filter: blur(6px); left: 50%; transform: translate(-50%, -50%); top: 50%; z-index: 2;}
 .play-btn-bg > span:not(:first-child):nth-child(3) {width: 143px; height: 143px; background: rgba(18, 39, 80, 0.2); left: 50%; transform: translate(-50%, -50%); top: 50%; z-index: 1; opacity: 0; transition: opacity 1s ease; animation: playCircle 3s linear forwards infinite;}
 .play-btn-bg:hover > span:not(:first-child):nth-child(3){opacity: 1;}
 @keyframes playCircle{
@@ -452,6 +452,11 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
     .slick-dots li > a{font-size: 1.5rem; line-height: normal; font-weight: 800; color: var(--Raisin-Black);}
     .culture-slash, .benefit-slash, .ftr-slash, .training-slash, .accreditation-slash{margin: 0 4px; color: var(--Accent-2); font-weight: 300;}
     .divider.no-margin{padding-top: 22px;}
+
+    .play-btn-main .play-btn{width: 64px; height: 64px;}
+    .play-btn-bg > span.circle::after{width: 24px;height: 24px;}
+    .play-btn-bg > span:not(:first-child):nth-child(2){width: 80px; height: 80px;}
+    .play-btn-bg > span:not(:first-child):nth-child(3){width: 96px; height: 96px;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     caption, td, th{font-size: 0.813rem; line-height: 1rem;}
