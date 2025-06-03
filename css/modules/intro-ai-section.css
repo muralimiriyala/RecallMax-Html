@@ -9,7 +9,7 @@
 .intro-ai-section{background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), var(--Eggshell);}
 
 
-.intro-ai-main{max-width: 960px; padding: 78px 0 120px;}
+.intro-ai-main{max-width: 960px; padding: 78px 0 40px;}
 .intro-ai-text span.optional-text{margin-bottom: 18px;}
 .intro-ai-text h2{margin-bottom: 37px;}
 

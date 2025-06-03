@@ -10,7 +10,7 @@ jQuery(window).on('load', function () {
       $selfStick.stickOnScroll({
         topOffset: 0,
         bottomOffset: 0,
-        footerElement: jQuery('.stat-testimonial-section'),
+        footerElement: jQuery('.stick-off-element'),
         setParentOnStick: true,
         viewport: window,
         onStick: function ($ele) {

@@ -4,6 +4,7 @@
 
 .ai-plan-section{background: linear-gradient(180deg,hsla(0,0%,100%,0),#fff 15%,#fff 85%,hsla(0,0%,100%,0))}
 .ai-plan-main.light-green-bg{ background: var(--Very-Light-Green); }
+.ai-plan-main.light-blue-bg{ background: var(--Very-Light-Blue); }
 .ai-plan-main{background: var(--Eggshell); }
 
 .ai-plan-text hr{margin: 19px 0;}

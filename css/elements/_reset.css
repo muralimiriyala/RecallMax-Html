@@ -104,6 +104,12 @@ hr.sm-line{background-color: var(--Accent); height: 2px; border-radius: 1px; mar
 
 .button.btn-sm{padding: 12px 17px 12px; font-size: 1rem;}
 
+.button.gradient{padding: 15px 24px 17px; font-size: 24px; line-height: 30px; letter-spacing: -0.24px;
+
+    border-radius: 24px;
+    background: linear-gradient(90deg, var(--Purple) 0%, var(--Accent-Light--Blue) 100%);
+}
+
 span.text-link{gap: 8px; font-size: 1rem; line-height: 1.5rem; font-family: var(--base-font);}
 span.text-link i{top: 3px; left: 0; position: relative; color: var(--Light-Blue); font-size: 1.25rem; line-height: 1.25rem; overflow: hidden;}
 span.text-link.white{color: var(--White);}
@@ -200,6 +206,8 @@ span.optional-text.lg{margin-bottom: 8px; font-size: 1.125rem; line-height: 1.12
 .fs-24{font-size: 1.5rem; line-height: 1.875rem;}
 .fs-32{ font-size: 2rem; line-height: 2rem; }
 .fs-40{ font-size: 2.5rem; line-height: 2.5rem;}
+
+.lh-25{line-height: 25px;}
 
 .radius-2, .radius-img-2 img{border-radius: 2px;}
 .radius-4, .radius-img-4 img{border-radius: 4px;}
@@ -375,7 +383,7 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 .w-100{width: 100%;}
 .container:not(.sm).p-0{padding: 0;}
 
-.divider.no-margin{padding-top: 90px;}
+.divider.no-margin{padding-top: 10px;}
 .divider.no-margin .divider-line{margin: 0;}
 .divider-line{width: 100%; height: 2px; opacity: 0.4; background: linear-gradient(90deg, rgba(165, 24, 144, 0.00) 0%, #A51890 50%, rgba(165, 24, 144, 0.00) 100%); margin: 10px 0;}
 
@@ -457,6 +465,8 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
     .play-btn-bg > span.circle::after{width: 24px;height: 24px;}
     .play-btn-bg > span:not(:first-child):nth-child(2){width: 80px; height: 80px;}
     .play-btn-bg > span:not(:first-child):nth-child(3){width: 96px; height: 96px;}
+
+    .button.gradient span{display: block;}
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     caption, td, th{font-size: 0.813rem; line-height: 1rem;}

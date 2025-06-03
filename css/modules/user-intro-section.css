@@ -4,7 +4,6 @@
 
 .user-intro-section{background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, var(--White) 100%), var(--Eggshell);}
 
-.user-intro-main{padding: 80px 0 252px; max-width: 952px;}
 
 
 .user-intro-logos{gap: 36px; padding-bottom: 34px;}
@@ -12,8 +11,25 @@
 .user-intro-logo:nth-child(3) img{max-width: 221px;}
 
 .user-intro-text p{margin-bottom: 39px;}
-.user-intro-text .button{padding: 15px 24px 17px; font-size: 24px; line-height: 30px; letter-spacing: -0.24px;}
+.user-intro-xmark svg{object-fit: contain;}
 
+/*-- media css starts here --*/
+@media screen and (min-width: 768px){
+    .user-intro-main{padding: 80px 0 46px; max-width: 952px;}
+    .user-intro-xmark svg{width: 58px;height: 59px;}
+    .user-intro-xmark svg:last-child{display: none;}
+}
+@media screen and (min-width: 1024px){
+
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .user-intro-main{padding: 40px 0 0;}
+    .user-intro-logos{flex-direction: column; gap: 24px; padding-bottom: 40px;}
+    .user-intro-xmark svg{width: 33px; height: 34px;}
+    .user-intro-xmark svg:first-child{display: none;}
+}
 
 
 

@@ -1,11 +1,11 @@
 
 
 
-body.page-template-product-maxai{background-color: var(--White);}
 .eggshell-bg{background-color: var(--Eggshell);}
 .ai-repeater-section{ background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 15%, #FFF 85%, rgba(255, 255, 255, 0.00) 100%); }
 
 
+.ai-tot-wrapper{padding: 80px 0; background-color: var(--White);}
 section.onStick{background: var(--White);}
 section.prev-onStick{opacity: 0;}
 section.onStick .ai-stickme-arrow{opacity: 0;}
