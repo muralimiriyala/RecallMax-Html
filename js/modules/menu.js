@@ -140,6 +140,10 @@ const Menu = {
     let mobScroll = () => {
       const scroll = window.scrollY;
       if (scroll > mobscroll) {
+        $(_.$sticky_mobile_btn.closest('.site-footer')).css({
+          position: 'relative',
+          zIndex: '18000',
+        });
         $(_.$sticky_mobile_btn).fadeIn(900);
       } else {
         $(_.$sticky_mobile_btn).fadeOut(900);
