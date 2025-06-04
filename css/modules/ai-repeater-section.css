@@ -42,6 +42,7 @@ section.onStick .ai-stickme-arrow{opacity: 0;}
     .very-light-blue .ai-repeater-wrap{padding: 164px 0;}
     .very-light-blue .ai-repeater-main{ border-radius: 40px; background: var(--Very-Light-Blue); }
 
+    .ai-tot-wrapper section:first-child .ai-stickme-arrow.up{display: none;}
     .ai-stickme-arrow.up{top: 60px;}
     .ai-stickme-arrow.down{bottom: 60px;}
     .ai-stickme-arrow{ width: 56px; height: 56px; left: 50%; transform: translateX(-50%); font-size: 28px; line-height: 28px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Earthy-Blue); color: var(--White); }
