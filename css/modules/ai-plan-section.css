@@ -8,6 +8,7 @@
 .ai-plan-main{background: var(--Eggshell); }
 
 .ai-plan-text hr{margin: 19px 0;}
+.ai-plan-text:nth-child(1):last-child{flex: 0 0 100%;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){

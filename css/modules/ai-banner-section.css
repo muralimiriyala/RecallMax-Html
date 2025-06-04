@@ -11,6 +11,7 @@
 .ai-banner-image{flex: 1; padding: 12px; backdrop-filter: blur(40px); }
 
 .ai-demo-btn{padding: 4px 20px 4px 4px; gap: 16px; width: fit-content; background: rgba(165, 24, 144, 0.25); }
+.ai-demo-btn .button{padding: 13px 24px;}
 .ai-banner-overlay{background: linear-gradient(rgba(165, 24, 144, 0.5), rgba(254, 243, 242, 0.5));}
 
 

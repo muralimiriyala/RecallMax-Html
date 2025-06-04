@@ -118,7 +118,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > a:hover{color: var(--Accent);}
 
     ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > ul > li > ul{margin: 0;}
-    .nav-products-image{flex: 1;}
+    .nav-products-image{flex: 1; max-width: 464px;}
     .nav-products-text{ padding-top: 10px; flex: 0 0 256px; font-size: 1rem; line-height: 1.5; color: var(--Raisin-Black); }
     .nav-products-text > p{margin-bottom: 20px;}
     .nav-products-order span{ margin-bottom: 17px; padding-left: 36px; font-size: 1.125rem; font-weight: 800; line-height: 1.25; letter-spacing: -0.18px; display: block; position: relative; }
