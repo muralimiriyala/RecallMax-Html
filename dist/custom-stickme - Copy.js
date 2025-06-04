@@ -58,54 +58,8 @@ jQuery(window).on('load', function () {
       }
     }
   });
-  // Arrow Scroll Up
   jQuery('.ai-stickme-arrow.up').on('click', function (e) {
     e.preventDefault();
-
-    let $currentSticky = jQuery('.ai-stick-section.onStick');
-
-    // Fallback: Detect from viewport if onStick is not available
-    if (!$currentSticky.length) {
-      $sections.each(function () {
-        const rect = this.getBoundingClientRect();
-        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
-          $currentSticky = jQuery(this);
-          return false;
-        }
-      });
-    }
-
-    if ($currentSticky.length) {
-      const currentIndex = +$currentSticky.attr('data-section');
-      const prevIndex = currentIndex - 1;
-      const $prevSection = jQuery(`[data-section="${prevIndex}"]`);
-
-      if ($prevSection.length) {
-        jQuery('html, body').animate(
-          {
-            scrollTop: $prevSection.offset().top,
-          },
-          600,
-          function () {
-            // ✅ Force update onStick class manually after scroll
-            setTimeout(function () {
-              $sections.each(function () {
-                const $sec = jQuery(this);
-                const rect = this.getBoundingClientRect();
-                if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
-                  jQuery('.ai-stick-section').removeClass(
-                    'onStick prev-onStick'
-                  );
-                  $sec.addClass('onStick');
-                  $sec.prevAll('.ai-stick-section').addClass('prev-onStick');
-                  return false;
-                }
-              });
-            }, 10);
-          }
-        );
-      }
-    }
   });
 
   // enable downarrow starts here
@@ -114,12 +68,6 @@ jQuery(window).on('load', function () {
     const firstele = +ev.target.dataset.stickme;
     if (firstele === 1) {
       jQuery('.ai-stickme-arrow.down').css({
-        opacity: 1,
-        visibility: 'visible',
-      });
-    }
-    if (firstele === 2) {
-      jQuery('.ai-stickme-arrow.up').css({
         opacity: 1,
         visibility: 'visible',
       });
