@@ -27,7 +27,7 @@ figure.arrays-feature-icon img{object-fit: contain;}
 
     .arrays-feature-row{gap: 60px 0; justify-content: center;}
     .arrays-feature-list{padding: 0 32px; margin: 0; border-left: 2px solid rgb(232, 201, 227);}
-    .arrays-feature-list span.fs-20{padding-top: 15px;}
+    .arrays-feature-list span.fs-20{padding-top: 15px; text-align: center;}
 }
 @media screen and (min-width: 1024px){
     .arrays-feature-srvcs{gap: 56px;}

@@ -70,6 +70,7 @@ ul.scroll-nav-list{padding: 56px 32px 32px; border-radius: 0px 0px 24px 24px; ba
 
 ul.scroll-nav-list li{color: var(--Raisin-Black); font-size: 18px; font-weight: 700; line-height: 125%; }
 ul.scroll-nav-list li svg{width: 30px;}
+.scroll-nav-image:nth-child(1):last-child{flex: 1; height: 100%;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
@@ -78,7 +79,7 @@ ul.scroll-nav-list li svg{width: 30px;}
   
   .scroll-nav-left{flex: 0 0 200px;}
   .scroll-nav-right{flex: 1; gap: 48px 0;}
-  .scroll-nav-row{gap: 32px; padding: 32px; }
+  .scroll-nav-row{gap: 32px; padding: 32px; height: 100%;}
   .scroll-nav-image{flex: 0 0 224px;}
   .scroll-nav-text{flex: 1;}
 
@@ -111,7 +112,7 @@ ul.scroll-nav-list li svg{width: 30px;}
   .scroll-nav-text h2{margin-bottom: 5px;}
   .scroll-nav-text span.optional-text{margin-bottom: 0;}
   .scroll-nav-text.hide-tablet{flex: 0 0 100%; padding-top: 4px; color: var(--Gray-1); font-size: 16px; font-weight: 400; line-height: 150%; }
-  ul.scroll-nav-list{flex-direction: column;}
+  ul.scroll-nav-list{flex-direction: column; gap: 10px; padding: 52px 20px 14px;}
   ul.scroll-nav-list li{gap: 8px; flex-direction: row; align-items: center;}
   ul.scroll-nav-list li span{flex: 1;}
 }

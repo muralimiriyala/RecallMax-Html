@@ -138,6 +138,7 @@ const Menu = {
     let staticScroll = 100;
     let mobscroll = offHeight + staticScroll;
     let mobScroll = () => {
+      if (!_.$sticky_mobile_btn) return;
       const scroll = window.scrollY;
       if (scroll > mobscroll) {
         $(_.$sticky_mobile_btn.closest('.site-footer')).css({
