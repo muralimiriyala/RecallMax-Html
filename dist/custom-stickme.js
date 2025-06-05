@@ -1,143 +1,70 @@
 jQuery(window).on('load', function () {
-  const $altStickme = jQuery('.ai-stickme');
   const $sections = jQuery('.ai-stick-section');
   const totalSections = $sections.length;
-  console.log(totalSections, 'totalSections');
 
-  // Arrow Scroll Down — OUTSIDE any stickOnScroll events
-  jQuery('.ai-stickme-arrow.down').on('click', function (e) {
-    e.preventDefault();
+  let currentStickyIndex = null;
 
-    let $currentSticky = jQuery('.ai-stick-section.onStick');
+  const $upArrow = jQuery('.ai-stickme-arrow.up');
+  const $downArrow = jQuery('.ai-stickme-arrow.down');
 
-    // Fallback: If no onStick found, detect based on viewport
-    if (!$currentSticky.length) {
-      $sections.each(function () {
-        const rect = this.getBoundingClientRect();
-        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
-          $currentSticky = jQuery(this);
-          return false;
-        }
-      });
-    }
+  function showArrows(index) {
+    $upArrow.css({
+      opacity: index > 1 ? 1 : 0,
+      visibility: index > 1 ? 'visible' : 'hidden',
+    });
 
-    if ($currentSticky.length) {
-      const currentIndex = +$currentSticky.attr('data-section');
-      const nextIndex = currentIndex + 1;
-      if (nextIndex === totalSections) {
-        jQuery('.ai-stickme-arrow.down').css({
-          opacity: 0,
-          visibility: 'hidden',
-        });
+    $downArrow.css({
+      opacity: index < totalSections ? 1 : 0,
+      visibility: index < totalSections ? 'visible' : 'hidden',
+    });
+  }
+
+  function hideAllArrows() {
+    $upArrow.css({ opacity: 0, visibility: 'hidden' });
+    $downArrow.css({ opacity: 0, visibility: 'hidden' });
+  }
+
+  function findVisibleSection() {
+    let visibleIndex = null;
+    let minDist = Infinity;
+
+    $sections.each(function () {
+      const rect = this.getBoundingClientRect();
+      const dist = Math.abs(rect.top);
+      if (dist < minDist) {
+        minDist = dist;
+        visibleIndex = +jQuery(this).attr('data-section');
       }
-      const $nextSection = jQuery(`[data-section="${nextIndex}"]`);
-      if ($nextSection.length) {
-        jQuery('html, body').animate(
-          {
-            scrollTop: $nextSection.offset().top,
-          },
-          600,
-          function () {
-            // ✅ Force trigger onStick logic after scroll ends
-            setTimeout(function () {
-              $sections.each(function () {
-                const $sec = jQuery(this);
-                const rect = this.getBoundingClientRect();
-                if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
-                  jQuery('.ai-stick-section').removeClass(
-                    'onStick prev-onStick'
-                  );
-                  $sec.addClass('onStick');
-                  $sec.prevAll('.ai-stick-section').addClass('prev-onStick');
-                  return false;
-                }
-              });
-            }, 10);
-          }
-        );
-      }
-    }
-  });
-  // Arrow Scroll Up
-  jQuery('.ai-stickme-arrow.up').on('click', function (e) {
-    e.preventDefault();
+    });
 
-    let $currentSticky = jQuery('.ai-stick-section.onStick');
+    return visibleIndex;
+  }
 
-    // Fallback: Detect from viewport if onStick is not available
-    if (!$currentSticky.length) {
-      $sections.each(function () {
-        const rect = this.getBoundingClientRect();
-        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
-          $currentSticky = jQuery(this);
-          return false;
-        }
-      });
-    }
+  function forceStickyStateUpdate() {
+    const visibleIndex = findVisibleSection();
+    currentStickyIndex = visibleIndex;
 
-    if ($currentSticky.length) {
-      const currentIndex = +$currentSticky.attr('data-section');
-      const prevIndex = currentIndex - 1;
-      const $prevSection = jQuery(`[data-section="${prevIndex}"]`);
+    $sections.removeClass('onStick prev-onStick');
 
-      if ($prevSection.length) {
-        jQuery('html, body').animate(
-          {
-            scrollTop: $prevSection.offset().top,
-          },
-          600,
-          function () {
-            // ✅ Force update onStick class manually after scroll
-            setTimeout(function () {
-              $sections.each(function () {
-                const $sec = jQuery(this);
-                const rect = this.getBoundingClientRect();
-                if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
-                  jQuery('.ai-stick-section').removeClass(
-                    'onStick prev-onStick'
-                  );
-                  $sec.addClass('onStick');
-                  $sec.prevAll('.ai-stick-section').addClass('prev-onStick');
-                  return false;
-                }
-              });
-            }, 10);
-          }
-        );
-      }
-    }
-  });
+    const $current = jQuery('[data-section="' + visibleIndex + '"]');
+    $current.addClass('onStick');
+    $current.prevAll('.ai-stick-section').addClass('prev-onStick');
 
-  // enable downarrow starts here
-  $('body').on('stickOnScroll:onStick', function (ev, $stickyEle) {
-    // ev.target = element that was made sticky - same as $stickyEle
-    const firstele = +ev.target.dataset.stickme;
-    if (firstele === 1) {
-      jQuery('.ai-stickme-arrow.down').css({
-        opacity: 1,
-        visibility: 'visible',
-      });
-    }
-    if (firstele === 2) {
-      jQuery('.ai-stickme-arrow.up').css({
-        opacity: 1,
-        visibility: 'visible',
-      });
-    }
-    if (firstele === totalSections) {
-      jQuery('.ai-stickme-arrow.down').css({
-        opacity: 0,
-        visibility: 'hidden',
-      });
-    }
-  });
-  $('body').on('stickOnScroll:onUnStick', function (ev, $stickyEle) {
-    // ev.target = element that had Sticky removed - same as $stickyEle
-  });
-  // enable downarrow ends here
+    const $lastSection = jQuery('[data-section="' + totalSections + '"]');
+    const lastBottom = $lastSection[0].getBoundingClientRect().bottom;
 
-  // Init stickOnScroll
-  $altStickme.each(function (_i) {
+    const allUnstuck = jQuery('.ai-stick-section.onStick').length === 0;
+
+    if (allUnstuck && lastBottom < 0) {
+      hideAllArrows();
+    } else if (!visibleIndex || visibleIndex === 1) {
+      hideAllArrows();
+    } else {
+      showArrows(visibleIndex);
+    }
+  }
+
+  jQuery('.ai-stickme').each(function (i) {
     const $selfStick = jQuery(this);
     const $section = $selfStick.parent();
     $section.css('height', $section.outerHeight());
@@ -147,27 +74,84 @@ jQuery(window).on('load', function () {
       bottomOffset: 0,
       footerElement: jQuery('.stick-off-element'),
       setParentOnStick: true,
-      viewport: window,
 
       onStick: function ($ele) {
         const $current = $ele.parent();
-        jQuery('.ai-stick-section').removeClass('onStick prev-onStick');
+        currentStickyIndex = +$current.attr('data-section');
+
+        $sections.removeClass('onStick prev-onStick');
         $current.addClass('onStick');
         $current.prevAll('.ai-stick-section').addClass('prev-onStick');
+
+        showArrows(currentStickyIndex);
+        // hide up arrow more then tot length
+        if (currentStickyIndex >= totalSections) {
+          jQuery('.ai-stickme-arrow.up').css({
+            opacity: 0,
+            visibility: 'hidden',
+          });
+        }
       },
 
       onUnStick: function ($ele) {
         const $current = $ele.parent();
         $current.removeClass('onStick');
         $current.prev('.ai-stick-section').removeClass('prev-onStick');
+
+        const visibleIndex = findVisibleSection();
+        currentStickyIndex = visibleIndex;
+
+        const $lastSection = jQuery('[data-section="' + totalSections + '"]');
+        const lastBottom = $lastSection[0].getBoundingClientRect().bottom;
+        const allUnstuck = jQuery('.ai-stick-section.onStick').length === 0;
+        if (allUnstuck && lastBottom < 0) {
+          hideAllArrows();
+        } else if (!visibleIndex || visibleIndex === 1) {
+          hideAllArrows();
+        } else {
+          showArrows(visibleIndex);
+        }
       },
     });
 
-    // Fix stacking
-    $selfStick
-      .parent()
-      .css({ 'z-index': _i, position: 'relative' })
-      .nextAll()
-      .css({ position: 'relative', 'z-index': 50 });
+    $section.css({ position: 'relative', 'z-index': i });
+    $section.nextAll().css({ position: 'relative', 'z-index': 50 });
+  });
+
+  // ↓↓↓ Arrow Click Handlers ↓↓↓
+  $downArrow.on('click', function (e) {
+    e.preventDefault();
+    if (!currentStickyIndex) return;
+
+    const nextIndex = currentStickyIndex + 1;
+    const $nextSection = jQuery('[data-section="' + nextIndex + '"]');
+
+    if ($nextSection.length) {
+      jQuery('html, body').animate(
+        { scrollTop: $nextSection.offset().top },
+        600,
+        function () {
+          forceStickyStateUpdate();
+        }
+      );
+    }
+  });
+
+  $upArrow.on('click', function (e) {
+    e.preventDefault();
+    if (!currentStickyIndex) return;
+
+    const prevIndex = currentStickyIndex - 1;
+    const $prevSection = jQuery('[data-section="' + prevIndex + '"]');
+
+    if ($prevSection.length) {
+      jQuery('html, body').animate(
+        { scrollTop: $prevSection.offset().top },
+        600,
+        function () {
+          forceStickyStateUpdate();
+        }
+      );
+    }
   });
 });

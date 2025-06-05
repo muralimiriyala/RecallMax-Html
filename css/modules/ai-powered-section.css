@@ -28,25 +28,28 @@ ul.ai-powered-menus li a.active svg path{fill: var(--Accent-Blue);}
 .ai-powered-btn{
     width: fit-content;
     color: var(--Accent-Blue);
-font-size: 18px;
-font-weight: 700;
-letter-spacing: 0.54px;
-padding: 8px 12px;
-border: 1px solid var(--Accent-Blue);
-background: linear-gradient(180deg, var(--White) 0%, var(--Accent--Light-Blue) 100%);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.54px;
+    padding: 8px 12px;
+    border: 1px solid var(--Accent-Blue);
+    background: linear-gradient(180deg, var(--White) 0%, var(--Accent--Light-Blue) 100%);
+    transition: var(--b-transition);
 }
 .ai-powered-number{
     top: 2px;
     left: 19px;
     width: 13.6px;
-height: 13.6px;
-background-color: var(--red-100);
-color: var(--White);
-font-size: 8px;
-font-weight: 700;
-letter-spacing: 0.4px;
-line-height: 0;
+    height: 13.6px;
+    background-color: var(--red-100);
+    color: var(--White);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 0;
 }
+
+.open .ai-powered-btn{box-shadow: 0 2px 6px var(--Accent-Blue);}
 
 
 /*-- media css starts here --*/

@@ -120,7 +120,7 @@ span.text-link.navy i{color: var(--Navy);}
 
 
 a.text-link{gap: 8px; align-items: center; font-size: 1.125rem; line-height: 1.406rem; letter-spacing: -0.18px;}
-a.text-link em{color: var(--Accent); font-size: 1rem; left: 0; line-height: 1.5rem; position: relative; top: 0; transition: all .5s ease;}
+a.text-link em{color: var(--Accent); font-size: 1rem; left: 0; line-height: 1.5rem; position: relative; top: 1px; transition: all .5s ease;}
 a.text-link.white{color: var(--White);}
 a.text-link.white:hover em{color: var(--White);}
 a.text-link.black{color: var(--Raisin-Black);}

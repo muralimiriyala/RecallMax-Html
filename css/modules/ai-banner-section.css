@@ -13,7 +13,7 @@
 .ai-demo-btn{padding: 4px 20px 4px 4px; gap: 16px; width: fit-content; background: rgba(165, 24, 144, 0.25); }
 .ai-demo-btn .button{padding: 13px 24px;}
 .ai-banner-overlay{background: linear-gradient(rgba(165, 24, 144, 0.5), rgba(254, 243, 242, 0.5));}
-
+.ai-banner-text:nth-child(1):last-child{flex: 0 0 100%;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){

@@ -22,6 +22,7 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 .pdetail-ui-center{position: relative;}
 .pdetail-banner-main.no_pdetail-banner-uis{padding-bottom: 80px;}
 
+.pdetail-banner-text h1 > span{padding: 0 8px;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1440px){
@@ -29,7 +30,7 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 }
 @media screen and (min-width: 1024px) {
     .pdetail-banner-main{padding: 150px 0 0;}
-    .pdetail-banner-text{max-width: 950px;}
+    .pdetail-banner-text{max-width: 970px;}
     .pdetail-banner-text.no_banner_bg{max-width: 100%;}
     ul.pdetail-ui-links{margin: 56px 0 60px; gap: 32px 8px;}
     body.home ul.pdetail-ui-links{margin: 56px 0 68px;}
