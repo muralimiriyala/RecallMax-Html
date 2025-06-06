@@ -72,7 +72,10 @@ jQuery(window).on('load', function () {
     $selfStick.stickOnScroll({
       topOffset: 0,
       bottomOffset: 0,
-      footerElement: jQuery('.stick-off-element'),
+      footerElement: jQuery(this)
+        .closest('section')
+        .parent('.ai-tot-wrapper')
+        .next(),
       setParentOnStick: true,
 
       onStick: function ($ele) {

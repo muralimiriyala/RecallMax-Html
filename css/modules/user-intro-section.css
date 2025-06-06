@@ -12,6 +12,7 @@
 
 .user-intro-text p{margin-bottom: 39px;}
 .user-intro-xmark svg{object-fit: contain;}
+.user-intro-xmark:nth-child(1){display: none;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 768px){
