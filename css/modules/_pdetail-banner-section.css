@@ -23,10 +23,23 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 .pdetail-banner-main.no_pdetail-banner-uis{padding-bottom: 80px;}
 
 .pdetail-banner-text h1 > span{padding: 0 8px;}
+.pdetail-banner-center{padding: 12px; max-width: 936px;}
+.pdetail-banner-overlay{background: linear-gradient(rgba(165, 24, 144, 0.5), rgba(254, 243, 242, 0.5));}
+.pdetail-banner-left.one{width: 357px; height: 126px; left: 1px; top: 76px; opacity: 0.3;}
+.pdetail-banner-left.two{width: 235px; height: 175px; left: -72px; top: 240px;}
+
+
+.pdetail-banner-right.one{width: 268px; height: 205px; right: -21px; top: 75px;}
+.pdetail-banner-right.two{width: 258px; height: 128px; right: -88px; top: 291px;}
+.pdetail-banner-left, .pdetail-banner-right{display: none;}
+.pdetail-banner-video *{border-radius: 16px;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1440px){
     .pdetail-ui-center picture img{min-width: 1440px; left: 50%; transform: translateX(-50%); position: relative;}
+}
+@media screen and (min-width: 1280px) {
+    .pdetail-banner-left, .pdetail-banner-right{display: block;}
 }
 @media screen and (min-width: 1024px) {
     .pdetail-banner-main{padding: 150px 0 0;}
@@ -37,9 +50,11 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     ul.pdetail-ui-links li a{min-width: 256px;}
     .pdetail-ui-center{position: relative;}
     .pdetail-ui-center picture img{ object-fit: contain; overflow: hidden;}
+    .pdetail-banner-video-main{max-width: 1440px;}
+    .pdetail-banner-center img{min-height: 480px; max-height: 480px;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
-    ul.pdetail-ui-links li a{min-width: 225px; }
+    ul.pdetail-ui-links li a{min-width: 225px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .pdetail-banner-main{padding: 145px 0 0;}
@@ -63,4 +78,5 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     body.home ul.pdetail-ui-links{margin: 38px auto 52px;}
     ul.pdetail-ui-links li a{display: none; line-height: 1.125rem;}
     ul.pdetail-ui-links li a.ui-open{display: block;}
+    .pdetail-banner-center{padding: 6px;}
 }

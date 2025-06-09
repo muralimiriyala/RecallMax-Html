@@ -5,7 +5,8 @@
 .ai-repeater-section{ background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 15%, #FFF 85%, rgba(255, 255, 255, 0.00) 100%); }
 
 
-.ai-tot-wrapper{padding: 80px 0; background-color: var(--White);}
+/* .ai-tot-wrapper{padding: 80px 0;} */
+.ai-tot-wrapper{padding: 0 0 60px; background-color: var(--White);}
 section.onStick{background: var(--White);}
 section.prev-onStick{opacity: 0;}
 
@@ -21,7 +22,7 @@ section.prev-onStick{opacity: 0;}
 @media screen and (min-width: 1024px){
 
     .ai-repeater-section{min-height: 800px;}
-    .ai-repeater-wrap{ padding: 132.94px 0;}
+    .ai-repeater-wrap{ padding: 102.94px 0;}
     .ai-repeater-main{gap: 80px; padding: 64px;}
     .ai-repeater-text{flex: 0 0 350px;}
     .ai-repeater-image{flex: 1;}
