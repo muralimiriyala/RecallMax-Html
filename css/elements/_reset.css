@@ -383,6 +383,8 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 .divider.no-margin{padding-top: 10px;}
 .divider.no-margin .divider-line{margin: 0;}
 .divider-line{width: 100%; height: 2px; opacity: 0.4; background: linear-gradient(90deg, rgba(165, 24, 144, 0.00) 0%, #A51890 50%, rgba(165, 24, 144, 0.00) 100%); margin: 10px 0;}
+.video-background-controls{display: flex; flex-wrap: wrap; gap: 8px;}
+.pdetail-banner-video button{ border-radius: 9px; padding: 8px 11px 7px; }
 
   /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

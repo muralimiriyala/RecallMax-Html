@@ -5,22 +5,19 @@
 .ai-repeater-section{ background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 15%, #FFF 85%, rgba(255, 255, 255, 0.00) 100%); }
 
 
-/* .ai-tot-wrapper{padding: 80px 0;} */
-.ai-tot-wrapper{padding: 0 0 60px; background-color: var(--White);}
+.ai-tot-wrapper{padding: 110px 0 60px; background-color: var(--White);}
 section.onStick{background: var(--White);}
 section.prev-onStick{opacity: 0;}
 
 .ai-repeater-text hr{margin: 0 0 20px;}
 .ai-repeater-text:nth-child(1):last-child{flex: 0 0 100%;}
-
-
+section:nth-child(3) .ai-repeater-wrap::before, section:nth-child(3) .ai-plan-wrap::before{ top: 0; left: 0; position: absolute; content: ""; display: block; background: linear-gradient(90deg,rgba(165,24,144,0),#a51890 50%,rgba(165,24,144,0)); height: 2px; opacity: .4; width: 100%; }
 
 /*-- media css starts here --*/
 @media screen and (min-width: 768px){   
     .ai-stickme-arrow{display: none;}
 }
 @media screen and (min-width: 1024px){
-
     .ai-repeater-section{min-height: 800px;}
     .ai-repeater-wrap{ padding: 102.94px 0;}
     .ai-repeater-main{gap: 80px; padding: 64px;}
