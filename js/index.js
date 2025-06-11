@@ -25,7 +25,7 @@ import ComparisonSlick from './modules/tableComparisonSlick';
 import beyond from './modules/beyond-script';
 import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
-import spyScroll from './modules/spyScroll';
+import { spyScroll } from './modules/spyScroll';
 import { numberInput } from './modules/numberInput';
 import adsensebar from './modules/adsensebar';
 import modalBookai from './modules/modalBookai';

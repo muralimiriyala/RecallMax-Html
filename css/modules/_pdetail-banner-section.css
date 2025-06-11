@@ -1,6 +1,7 @@
 
 
 .pdetail-banner-section{background-color: var(--White);}
+body:not(.home) .pdetail-gradient-bg{height: 100%;}
 .pdetail-gradient-bg{height: calc(100% - 60px); width: 100%; top: 0; left: 0; z-index: -1; background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
 .pdetail-banner-text{font-size: 1.25rem; line-height: 1.875rem; padding-bottom: 42px;}
 .pdetail-banner-text span.optional-text.lg{margin-bottom: 5px; color: var(--Accent-Purple);}
@@ -34,10 +35,10 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
 .pdetail-banner-left, .pdetail-banner-right{display: none;}
 .pdetail-banner-video *{border-radius: 16px;}
 
+
+.pdetail-ui-tabs.slick-slider{top: 8px; position: relative;}
+
 /*-- media css starts here --*/
-@media screen and (min-width: 1440px){
-    .pdetail-ui-center picture img{min-width: 1440px; left: 50%; transform: translateX(-50%); position: relative;}
-}
 @media screen and (min-width: 1280px) {
     .pdetail-banner-left, .pdetail-banner-right{display: block;}
 }
@@ -79,4 +80,5 @@ ul.pdetail-ui-links li a.ui-open .ui-active-state{width: 0; background-color: va
     ul.pdetail-ui-links li a{display: none; line-height: 1.125rem;}
     ul.pdetail-ui-links li a.ui-open{display: block;}
     .pdetail-banner-center{padding: 6px;}
+    .pdetail-ui-thumb img{min-height: 200px;}
 }

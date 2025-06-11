@@ -1,9 +1,9 @@
 
 
 
-.scrolly-sidebar{position: -webkit-sticky; position: sticky; top: 80px;}
+/* .scrolly-sidebar{position: -webkit-sticky; position: sticky; top: 80px;}
 .scrolly-sticky{position: -webkit-sticky; position: sticky; top: 80px; box-shadow: 0px -86px 96px 0px rgba(48, 33, 53, 0.75);}
-#scrolly-row-1{box-shadow: none;}
+#scrolly-row-1{box-shadow: none;} */
 
 .scrolly-section{width: 100%; border-radius: 80px; background-color: var(--Raisin-Black);}
 .scrolly-main{padding: 80px 0 80px;} 
@@ -16,8 +16,8 @@ ul.scrolly-links li:first-child .scrolly-line-blue{border-radius: 4px 4px 0 0;}
 ul.scrolly-links li:last-child .scrolly-line-blue{border-radius: 0 0 4px 4px;}
 
 .scrolly-line{width: 2px; height: 100%; top: 0; left: 0; background-color: var(--White); z-index: -1;}
-.scrolly-line-blue{width: 8px; height: 0%; left: -4px; top: 0; transition: all 0.5s ease; z-index: 0; background-color: var(--Sky-Blue);}
-.current .scrolly-line-blue{height: 100%;}
+.scrolly-line-blue{ width: 8px; height: 0%; left: -4px; top: 0; z-index: 0; background-color: var(--Sky-Blue);}
+a.active .scrolly-line-blue{height: 100%; transition: all 0.5s ease;}
 .scrolly-spy{font-weight: 800; color: var(--White);}
 .scrolly-data{padding: 48px;}
 .scrolly-btns{background: rgba(165, 24, 144, 0.25); padding: 4px 4px 8px;}
