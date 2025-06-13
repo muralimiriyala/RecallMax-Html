@@ -3,17 +3,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 html.js{margin-top: 0 !important;}
 
 html.lenis {
-    height: auto;
-  }
-  .lenis.lenis-smooth {
-    scroll-behavior: auto;
-  }
-  .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-  }
-  .lenis.lenis-stopped {
-    overflow: hidden;
-  }
+height: auto;
+}
+.lenis.lenis-smooth {
+scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+overflow: hidden;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
 audio, canvas, video {display: inline-block; max-width: 100%;}
 html{overflow-y: scroll; overflow-x: hidden; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; height: 100%; box-sizing: border-box; scroll-behavior: smooth;}
@@ -437,9 +437,9 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
     .hide-mobile{display: none;} 
 
     .h1, h1{font-size: 2.5rem; line-height: 3.125rem; letter-spacing: -0.4px;}
-    .h2, h2{}
+
     .h3, h3{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
-    .h4, h4{}
+
 
     span.optional-text.md{margin-bottom: 6px;}
 

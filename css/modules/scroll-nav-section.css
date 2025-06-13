@@ -5,9 +5,6 @@
 
 
 .scroll-nav-left .sticky-widget{ position: -webkit-sticky; position: sticky; top: 134px; }
-
-
-
 .scroll-nav-text h2{margin-bottom: 13px;}
 .scroll-nav-text  span.optional-text{margin-bottom: 13px; font-size: 12px; letter-spacing: 1.2px;}
 .scroll-nav-text p{margin-bottom: 16px;}
@@ -18,8 +15,6 @@
 .scroll-nav-head{padding-bottom: 19px;}
 .scroll-nav-stripe{padding-left: 19px;}
 .scroll-nav-lines{ background-color: var(--Accent); border-radius: 4px; height: 100%; left: 0; top: 0; width: 2px; opacity: 0.25; }
-
-
 
 ul.scroll-nav-links{margin: 0; gap: 0;}
 ul.scroll-nav-links li{margin: 0;}

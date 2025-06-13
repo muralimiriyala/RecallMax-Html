@@ -26,27 +26,6 @@ export const mylenis = {
         lenis.raf(time * 1000);
       });
       gsap.ticker.lagSmoothing(0);
-
-      // document
-      //   .querySelector('[data-lenis-start]')
-      //   .addEventListener('click', () => {
-      //     lenis.start();
-      //   });
-      // document
-      //   .querySelector('[data-lenis-stop]')
-      //   .addEventListener('click', () => {
-      //     lenis.stop();
-      //   });
-      // document
-      //   .querySelector('[data-lenis-toggle]')
-      //   .addEventListener('click', function () {
-      //     this.classList.toggle('stop-scroll');
-      //     if (this.classList.contains('stop-scroll')) {
-      //       lenis.stop();
-      //     } else {
-      //       lenis.start();
-      //     }
-      //   });
     }
   },
 };
