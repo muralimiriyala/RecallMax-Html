@@ -12,10 +12,11 @@
 
 .user-intro-text p{margin-bottom: 39px;}
 .user-intro-xmark svg{object-fit: contain;}
+.user-intro-xmark:nth-child(1){display: none;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 768px){
-    .user-intro-main{padding: 80px 0 46px; max-width: 952px;}
+    .user-intro-main{padding: 80px 0 24px; max-width: 952px;}
     .user-intro-xmark svg{width: 58px;height: 59px;}
     .user-intro-xmark svg:last-child{display: none;}
 }

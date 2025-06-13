@@ -9,7 +9,7 @@
 .scheduling-text p{margin-bottom: 22px;}
 
 
-.scheduling-row:nth-child(2n+2){flex-direction: row-reverse;}
+.scheduling-row:nth-child(2n+1){flex-direction: row-reverse;}
 .scheduling-text:nth-child(1):last-child{flex: 1;}
 
 

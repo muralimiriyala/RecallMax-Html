@@ -72,7 +72,10 @@ jQuery(window).on('load', function () {
     $selfStick.stickOnScroll({
       topOffset: 0,
       bottomOffset: 0,
-      footerElement: jQuery('.stick-off-element'),
+      footerElement: jQuery(this)
+        .closest('section')
+        .parent('.ai-tot-wrapper')
+        .next(),
       setParentOnStick: true,
 
       onStick: function ($ele) {
@@ -84,6 +87,16 @@ jQuery(window).on('load', function () {
         $current.prevAll('.ai-stick-section').addClass('prev-onStick');
 
         showArrows(currentStickyIndex);
+<<<<<<< HEAD
+=======
+        // hide up arrow more then tot length
+        if (currentStickyIndex >= totalSections) {
+          jQuery('.ai-stickme-arrow.up').css({
+            opacity: 0,
+            visibility: 'hidden',
+          });
+        }
+>>>>>>> ed1e1bd8c02b07df9bff5bc350a4e50559a8b61b
       },
 
       onUnStick: function ($ele) {
@@ -97,7 +110,10 @@ jQuery(window).on('load', function () {
         const $lastSection = jQuery('[data-section="' + totalSections + '"]');
         const lastBottom = $lastSection[0].getBoundingClientRect().bottom;
         const allUnstuck = jQuery('.ai-stick-section.onStick').length === 0;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ed1e1bd8c02b07df9bff5bc350a4e50559a8b61b
         if (allUnstuck && lastBottom < 0) {
           hideAllArrows();
         } else if (!visibleIndex || visibleIndex === 1) {

@@ -107,4 +107,5 @@
     .stat-reviews::before{left: -21px;}
 
     .stat-testimonial-left.no-author-img{padding: 40px 0 0;}
+    body.page-template-product-maxai .stat-testimonial-wrap{padding-top: 52px;}
 }

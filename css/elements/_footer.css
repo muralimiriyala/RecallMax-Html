@@ -25,6 +25,7 @@ ul.footer-links li{margin: 0;}
 ul.footer-links li a{font-size: 1rem; line-height: 1rem; display: block; color: var(--White);}
 ul.footer-links li a img{display: none;}
 ul.footer-links li a:hover{color: var(--Accent);}
+ul.footer-links li a p{display: none;}
 
 .copyrights-main{padding: 72px 0 0; font-size: 0.813rem; line-height: 1.25rem; border-top: 1px solid var(--Accent);}
 ul.copyright-links {flex: 1; margin:0; gap: 0 41px; justify-content: flex-end;} 

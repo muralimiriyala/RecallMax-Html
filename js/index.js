@@ -25,7 +25,7 @@ import ComparisonSlick from './modules/tableComparisonSlick';
 import beyond from './modules/beyond-script';
 import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
-import spyScroll from './modules/spyScroll';
+import { spyScroll } from './modules/spyScroll';
 import { numberInput } from './modules/numberInput';
 import adsensebar from './modules/adsensebar';
 import modalBookai from './modules/modalBookai';
@@ -63,15 +63,13 @@ import { dashboard } from './modules/dashborad';
   adsensebar.init();
   modalChart.init();
   modalBookai.init();
-  scrollnavline.init();
   dashboard.init();
+  scrollnavline.init(); //home page
+  scrollnav.init(); //home page
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
   scrolled = window.scrollY;
   Scroll.handle(scrolled);
   Animations.handle(scrolled, Scroll.direction);
-});
-window.addEventListener('load', function () {
-  scrollnav.init();
 });

@@ -12,18 +12,20 @@
 
 .ai-demo-btn{padding: 4px 20px 4px 4px; gap: 16px; width: fit-content; background: rgba(165, 24, 144, 0.25); }
 .ai-demo-btn .button{padding: 13px 24px;}
-.ai-banner-overlay{background: linear-gradient(rgba(165, 24, 144, 0.5), rgba(254, 243, 242, 0.5));}
+.ai-banner-overlay{border-radius: 30px; background: linear-gradient(rgba(165, 24, 144, 0.5), rgba(254, 243, 242, 0.5));}
+.ai-banner-text:nth-child(1):last-child{flex: 0 0 100%;}
 
+.ai-demo-btn.no_watch{padding: 4px;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .ai-banner-main{padding: 140px 0 68px; gap: 60px; flex-direction: row-reverse;}
     .ai-banner-text{flex: 0 0 436px;}
-
+    body.page-template-product-voip .ai-banner-text h1{font-size: 40px; line-height: 125%; letter-spacing: 0;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .ai-banner-main{padding: 98px 0 80px; flex-direction: column;}
-    .ai-banner-image{ border-radius: 16px; border: 6px solid rgba(165, 24, 144, 0.50); backdrop-filter: blur(40px); } 
+    .ai-banner-image{ border-radius: 16px; backdrop-filter: blur(40px); } 
     .ai-banner-text span.optional-text{letter-spacing: 1.8px;}
     .ai-banner-text{padding-top: 40px; text-align: center;}
     .ai-banner-text h1{font-size: 32px; line-height: 40px;}
@@ -37,11 +39,5 @@
     .ai-banner-text h1{font-size: 32px; line-height: 40px;}
     .ai-demo-btn{gap: 14px 0; padding: 4px 4px 14px; width: 100%; flex-direction: column; background: rgba(48, 33, 53, 0.50);}
     .ai-demo-btn .button{width: 100%;}
+    .ai-banner-overlay{border-radius: 16px;}
 }
-
-
-
-
-
-
-

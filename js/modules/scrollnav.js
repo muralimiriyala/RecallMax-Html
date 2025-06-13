@@ -1,51 +1,58 @@
-import 'sticksy';
-
 export const scrollnav = {
-  eles: document.querySelectorAll('.scroll-nav-text a.text-link'),
-  stickele: document.querySelector('.sticky-widget'),
+  $body: document.querySelector('body'),
+  $header: document.querySelector('.site-header'),
+  $section: document.querySelector('.scroll-nav-section'),
+  $links: document.querySelectorAll('ul.scroll-nav-links li a'),
+  $rows: document.querySelectorAll('.scroll-nav-lists'),
   init() {
-    const __ = this;
-    if (!__.eles.length) return;
+    const _ = this;
+    if (!_.$links.length) return;
 
-    const height = +document.querySelector('header').getBoundingClientRect()
-      .height;
+    window.addEventListener('scroll', () => {
+      secReveals();
+    });
+    window.addEventListener('load', () => {
+      secReveals();
+    });
 
-    const eventHandler = (e) => {
-      e.preventDefault();
+    const secReveals = () => {
+      var reveals = _.$rows;
+      reveals.forEach((ele, i) => {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 0;
 
-      const myele = e.currentTarget;
-      const parentList = myele.closest('.scroll-nav-lists');
-      const target = parentList.querySelector('.scroll-nav-pos');
-
-      const isCurrentlyOpen = myele.dataset.open === 'true';
-      // Close all
-      __.eles.forEach((ele) => {
-        const list = ele.closest('.scroll-nav-lists');
-        const content = list.querySelector('.scroll-nav-pos');
-
-        ele.classList.remove('open');
-        ele.dataset.open = 'false';
-        content.classList.remove('open');
-        content.style.maxHeight = '0px';
+        // Add or remove 'scrolly-nav-sticky' class based on section visibility
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('scrolly-nav-sticky');
+        } else {
+          reveals[i].classList.remove('scrolly-nav-sticky');
+        }
       });
+    };
+    window.addEventListener('scroll', secReveals);
 
-      if (!isCurrentlyOpen) {
-        // Open the clicked one
-        myele.classList.add('open');
-        myele.dataset.open = 'true';
-        target.classList.add('open');
-        target.style.maxHeight = `${target.scrollHeight}px`;
+    const stickyNavReveals = () => {
+      if (!_.$section) return;
+      const stickyTop = _.$section.offsetTop - _.$header.offsetHeight;
+      const scrollTop = Math.ceil(window.scrollY);
+
+      if (scrollTop >= stickyTop) {
+        _.$section.classList.add('scrolly-intro');
+        _.$body.classList.add('scrolly-body');
+        // _.$header.classList.add('scrolly-header');
+      } else {
+        _.$section.classList.remove('scrolly-intro');
+        _.$body.classList.remove('scrolly-body');
+        // _.$header.classList.remove('scrolly-header');
+      }
+
+      // open header
+      const totele = _.$section.offsetTop + _.$section.offsetHeight;
+      if (scrollTop > totele) {
+        // _.$header.classList.remove('scrolly-header');
       }
     };
-
-    __.eles.forEach((ele) => {
-      ele.dataset.open = 'false'; // Ensure consistent starting state
-      ele.addEventListener('click', eventHandler);
-    });
-
-    new Sticksy(this.stickele, {
-      topSpacing: height,
-      listen: true,
-    });
+    window.addEventListener('scroll', stickyNavReveals);
   },
 };
