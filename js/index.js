@@ -1,5 +1,5 @@
 'use strict';
-
+import { mylenis } from './modules/lenis';
 import customGsap from './modules/gsap';
 import counter from './modules/counter';
 import Animations from './modules/animations';
@@ -34,6 +34,7 @@ import { scrollnavline } from './modules/scrollnavline';
 import { dashboard } from './modules/dashborad';
 
 (function () {
+  mylenis.init();
   customGsap.init();
   counter.init();
   progress.init();
