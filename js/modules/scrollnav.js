@@ -1,54 +1,58 @@
-import 'sticksy';
-
 export const scrollnav = {
+  $body: document.querySelector('body'),
+  $header: document.querySelector('.site-header'),
+  $section: document.querySelector('.scroll-nav-section'),
+  $links: document.querySelectorAll('ul.scroll-nav-links li a'),
+  $rows: document.querySelectorAll('.scroll-nav-lists'),
   init() {
-    const $links = $('.scroll-nav-text a.text-link');
-    const $sticky = $('.sticky-widget');
-    const headerHeight = $('header').outerHeight();
+    const _ = this;
+    if (!_.$links.length) return;
 
-    if (!$links.length) return;
-
-    // Sticksy init
-    const stickyInstance = new Sticksy($sticky[0], {
-      topSpacing: headerHeight,
-      listen: false, // set to false to avoid Safari jerk
+    window.addEventListener('scroll', () => {
+      secReveals();
+    });
+    window.addEventListener('load', () => {
+      secReveals();
     });
 
-    // Optional: update on resize
-    $(window).on('resize', () => {
-      stickyInstance.update();
-    });
+    const secReveals = () => {
+      var reveals = _.$rows;
+      reveals.forEach((ele, i) => {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 0;
 
-    $links.each(function () {
-      const $link = $(this);
-      $link.data('open', 'false');
-
-      $link.on('click', function (e) {
-        e.preventDefault();
-
-        const $this = $(this);
-        const $parentList = $this.closest('.scroll-nav-lists');
-        const $target = $parentList.find('.scroll-nav-pos');
-
-        const isOpen = $this.data('open') === 'true';
-
-        // Close all
-        $links.each(function () {
-          const $el = $(this);
-          const $list = $el.closest('.scroll-nav-lists');
-          const $content = $list.find('.scroll-nav-pos');
-
-          $el.removeClass('open').data('open', 'false');
-          $content.removeClass('open').css('max-height', '0px');
-        });
-
-        if (!isOpen) {
-          $this.addClass('open').data('open', 'true');
-          $target
-            .addClass('open')
-            .css('max-height', $target[0].scrollHeight + 'px');
+        // Add or remove 'scrolly-nav-sticky' class based on section visibility
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('scrolly-nav-sticky');
+        } else {
+          reveals[i].classList.remove('scrolly-nav-sticky');
         }
       });
-    });
+    };
+    window.addEventListener('scroll', secReveals);
+
+    const stickyNavReveals = () => {
+      if (!_.$section) return;
+      const stickyTop = _.$section.offsetTop - _.$header.offsetHeight;
+      const scrollTop = Math.ceil(window.scrollY);
+
+      if (scrollTop >= stickyTop) {
+        _.$section.classList.add('scrolly-intro');
+        _.$body.classList.add('scrolly-body');
+        // _.$header.classList.add('scrolly-header');
+      } else {
+        _.$section.classList.remove('scrolly-intro');
+        _.$body.classList.remove('scrolly-body');
+        // _.$header.classList.remove('scrolly-header');
+      }
+
+      // open header
+      const totele = _.$section.offsetTop + _.$section.offsetHeight;
+      if (scrollTop > totele) {
+        // _.$header.classList.remove('scrolly-header');
+      }
+    };
+    window.addEventListener('scroll', stickyNavReveals);
   },
 };

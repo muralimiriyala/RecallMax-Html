@@ -63,15 +63,13 @@ import { dashboard } from './modules/dashborad';
   adsensebar.init();
   modalChart.init();
   modalBookai.init();
-  scrollnavline.init();
   dashboard.init();
+  scrollnavline.init(); //home page
+  scrollnav.init(); //home page
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
   scrolled = window.scrollY;
   Scroll.handle(scrolled);
   Animations.handle(scrolled, Scroll.direction);
-});
-window.addEventListener('load', function () {
-  scrollnav.init();
 });
