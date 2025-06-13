@@ -17,18 +17,14 @@
 
 .scroll-nav-head{padding-bottom: 19px;}
 .scroll-nav-stripe{padding-left: 19px;}
-.scroll-nav-lines{
-    background-color: var(--Accent);
-    border-radius: 4px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 2px;
-    opacity: 0.25;
-  }
-  .scroll-nav-line{
+.scroll-nav-lines{ background-color: var(--Accent); border-radius: 4px; height: 100%; left: 0; top: 0; width: 2px; opacity: 0.25; }
+.sticky-widget {
+  will-change: transform;
+  transform: translateZ(0); /* Triggers GPU rendering */
+  backface-visibility: hidden;
+}
 
-  }
+
 ul.scroll-nav-links{margin: 0; gap: 0;}
 ul.scroll-nav-links li{margin: 0;}
 ul.scroll-nav-links li::before{display: none;}

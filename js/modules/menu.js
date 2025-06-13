@@ -143,7 +143,7 @@ const Menu = {
       if (scroll > mobscroll) {
         $(_.$sticky_mobile_btn.closest('.site-footer')).css({
           position: 'relative',
-          zIndex: '18000',
+          zIndex: '700',
         });
         $(_.$sticky_mobile_btn).fadeIn(900);
       } else {

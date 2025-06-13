@@ -1,51 +1,54 @@
 import 'sticksy';
 
 export const scrollnav = {
-  eles: document.querySelectorAll('.scroll-nav-text a.text-link'),
-  stickele: document.querySelector('.sticky-widget'),
   init() {
-    const __ = this;
-    if (!__.eles.length) return;
+    const $links = $('.scroll-nav-text a.text-link');
+    const $sticky = $('.sticky-widget');
+    const headerHeight = $('header').outerHeight();
 
-    const height = +document.querySelector('header').getBoundingClientRect()
-      .height;
+    if (!$links.length) return;
 
-    const eventHandler = (e) => {
-      e.preventDefault();
-
-      const myele = e.currentTarget;
-      const parentList = myele.closest('.scroll-nav-lists');
-      const target = parentList.querySelector('.scroll-nav-pos');
-
-      const isCurrentlyOpen = myele.dataset.open === 'true';
-      // Close all
-      __.eles.forEach((ele) => {
-        const list = ele.closest('.scroll-nav-lists');
-        const content = list.querySelector('.scroll-nav-pos');
-
-        ele.classList.remove('open');
-        ele.dataset.open = 'false';
-        content.classList.remove('open');
-        content.style.maxHeight = '0px';
-      });
-
-      if (!isCurrentlyOpen) {
-        // Open the clicked one
-        myele.classList.add('open');
-        myele.dataset.open = 'true';
-        target.classList.add('open');
-        target.style.maxHeight = `${target.scrollHeight}px`;
-      }
-    };
-
-    __.eles.forEach((ele) => {
-      ele.dataset.open = 'false'; // Ensure consistent starting state
-      ele.addEventListener('click', eventHandler);
+    // Sticksy init
+    const stickyInstance = new Sticksy($sticky[0], {
+      topSpacing: headerHeight,
+      listen: false, // set to false to avoid Safari jerk
     });
 
-    new Sticksy(this.stickele, {
-      topSpacing: height,
-      listen: true,
+    // Optional: update on resize
+    $(window).on('resize', () => {
+      stickyInstance.update();
+    });
+
+    $links.each(function () {
+      const $link = $(this);
+      $link.data('open', 'false');
+
+      $link.on('click', function (e) {
+        e.preventDefault();
+
+        const $this = $(this);
+        const $parentList = $this.closest('.scroll-nav-lists');
+        const $target = $parentList.find('.scroll-nav-pos');
+
+        const isOpen = $this.data('open') === 'true';
+
+        // Close all
+        $links.each(function () {
+          const $el = $(this);
+          const $list = $el.closest('.scroll-nav-lists');
+          const $content = $list.find('.scroll-nav-pos');
+
+          $el.removeClass('open').data('open', 'false');
+          $content.removeClass('open').css('max-height', '0px');
+        });
+
+        if (!isOpen) {
+          $this.addClass('open').data('open', 'true');
+          $target
+            .addClass('open')
+            .css('max-height', $target[0].scrollHeight + 'px');
+        }
+      });
     });
   },
 };
