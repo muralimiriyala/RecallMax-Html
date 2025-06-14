@@ -1,5 +1,4 @@
-'use strict';
-import { mylenis } from './modules/lenis';
+// import { mylenis } from './modules/lenis';
 import customGsap from './modules/gsap';
 import counter from './modules/counter';
 import Animations from './modules/animations';
@@ -33,8 +32,8 @@ import { scrollnav } from './modules/scrollnav';
 import { scrollnavline } from './modules/scrollnavline';
 import { dashboard } from './modules/dashborad';
 
-(function () {
-  mylenis.init();
+document.addEventListener('DOMContentLoaded', function () {
+  // mylenis.init();
   customGsap.init();
   counter.init();
   progress.init();
@@ -67,7 +66,7 @@ import { dashboard } from './modules/dashborad';
   dashboard.init();
   scrollnavline.init(); //home page
   scrollnav.init(); //home page
-})();
+});
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
   scrolled = window.scrollY;
