@@ -12,6 +12,7 @@ import searchFeild from './modules/search';
 import tabFilter from './modules/tabs-filter';
 import modal from './modules/modal';
 import modalChart from './modules/modalChart';
+import modalCustomForm from './modules/modalCustomForm';
 import magnificPopup from './modules/magnificPopup';
 import ourJourney from './modules/ourJourney';
 import testimonialSlider from './modules/testimonialSlider';
@@ -66,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
   dashboard.init();
   scrollnavline.init(); //home page
   scrollnav.init(); //home page
+  modalCustomForm.init();
 });
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {

@@ -12,7 +12,6 @@ const modalChart = {
   $closeChart: document.querySelector('.modal-main-chart .modal-close'),
   init() {
     const _ = this;
-
     let modalChart = (e) => {
       e.preventDefault();
       e.target.classList.toggle('open');
