@@ -6,6 +6,7 @@ const modal = {
   $ele: [
     ...document.querySelectorAll('.modal-btn'),
     ...document.querySelectorAll('a[href="#modal-btn"]'),
+    ...document.querySelectorAll('a[href="#custom-form"]'),
   ],
   $window: document.querySelector('.modal-window'),
   $main: document.querySelector('.modal-main'),

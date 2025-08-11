@@ -214,7 +214,7 @@ header.scrolly-header{transform: translateY(-100%);}
     ul.main_menu > li.menu-item-has-children > a::after{ width: 22px; height: 14px; background-image: url('../../images/angle-down.svg'); background-repeat: no-repeat; background-size: contain; top: 50%; transform: translateY(-50%); right: 21px; content: "";display: block; position: absolute; }
     ul.main_menu > li.menu-item-has-children > a.active::after{ transform: translateY(-50%) rotate(90deg); right: auto; left: 16px; }
     ul.main_menu > li > ul{max-height: 0; overflow: hidden; margin: 0; padding: 0 20px; transition: max-height 0.8s; border-radius: 0px 0px 24px 24px; background: var(--Eggshell); }
-    ul.main_menu > li > ul > li:first-child{padding-top: 20px; margin-bottom: 0;}
+    ul.main_menu > li > ul > li:first-child{padding-top: 20px;}
     ul.main_menu > li > ul > li:not(.nav-gradient-bar){padding-bottom: 8px;}
     ul.main_menu > li > ul > li{margin: 0 0 12px;}
     ul.main_menu > li > ul > li:not(.nav-gradient-bar) > a{color: var(--Raisin-Black); font-family: var(--base-font); font-size: 1rem; font-weight: 800; line-height: 1.5rem; display: block; position: relative;}
