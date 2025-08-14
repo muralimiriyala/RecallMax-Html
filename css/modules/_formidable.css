@@ -81,9 +81,13 @@ body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_rad
 body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 24px;}
 body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_opt_container{align-items: center; display: flex; flex-wrap: wrap; gap: 0 24px; margin-left: 16px;}
 body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
-body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio{ flex: 1; display: flex; flex-wrap: wrap;}
+body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .form-field.vertical_radio{ flex: 1; display: flex; flex-wrap: wrap;}
+
 body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio label{padding: 0; font-size: 1rem; line-height: 1.5rem; text-transform: capitalize;}
 body .maxassist-demo-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']{top: -2px;}
+
+body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio .frm_opt_container{margin: 0; }
+body .maxassist-demo-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio .frm_radio{margin: 0; }
 
 body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 24px; margin-bottom: 20px;}
 body .newsletter-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
