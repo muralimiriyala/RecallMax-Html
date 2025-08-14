@@ -3,6 +3,7 @@
 .explore-list{border: 1px solid var(--Card-Stroke); padding: 23px 24px; font-size: 1rem; line-height: 1.5rem; color: var(--Gray-1);}
 .explore-icon{margin-bottom: 16px;}
 .explore-icon svg, .explore-icon figure{width: 40px; height: 40px;}
+.explore-icon figure img{max-width: 40px; object-fit: contain;}
 .explore-text p{margin-bottom: 16px;}
 
 .explore-head span.optional-text{margin-bottom: 8px;}
@@ -14,6 +15,13 @@
 .explore-appends ul.slick-dots{order: 2;}
 .explore-appends ul.slick-dots li{width: 16px; height: 16px; border-radius: 50%; background-color: rgba(23, 125, 138, 0.2);}
 .explore-appends ul.slick-dots li.slick-active{background-color: var(--Accent-2);}
+
+
+/*-- edual height --*/
+.explore-main .slick-track{display: flex;}
+.explore-main .slick-slide{height: auto;}
+.explore-main .slick-slide > div{height: 100%;}
+.explore-list{height: 100%;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
@@ -27,6 +35,8 @@
     .explore-appends ul.slick-dots{display: none !important;}
 
     .no-explore-heading{padding-top: 124px;}
+
+
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
     .explore-main{gap: 24px;}

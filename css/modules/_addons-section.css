@@ -15,6 +15,8 @@
 .addons-thumb{margin-top: 32px;}
 .addons-thumb img{border-radius: 10px 10px 0px 0px;}
 
+.addons-item-btns{gap: 16px; padding-top: 16px;}
+
 .addons-main .book-demo-call{color: var(--Raisin-Black);}
 .addons-main .book-demo-call:hover{color: var(--Sky-Blue);}
 

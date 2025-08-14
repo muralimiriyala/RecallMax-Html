@@ -78,7 +78,7 @@ body .quantity-select .selectBox-dropdown{min-width: 136px; background-color: va
     .products-form-field:not(:first-child){flex-direction: column; align-items: flex-start;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .products-banner-main{padding: 112px 0 0;}
+    .products-banner-main{padding: 112px 0 20px;}
     .products-banner-text span.optional-text{margin-bottom: 8px;}
     .products-banner-text h1{font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.32px;}
     .products-banner-text h1 > span::before{bottom: -4px;}

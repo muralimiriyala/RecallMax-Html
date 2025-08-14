@@ -1,7 +1,7 @@
 :root{
-    --black: #000;
-    --black-5: rgb(0 0 0 / 5%);
-    --black-10: rgb(0 0 0 / 10%);
+    --Black: #000;
+    --Black-5: rgb(0 0 0 / 5%);
+    --Black-10: rgb(0 0 0 / 10%);
     --White-50: rgb(255 255 255 / 50%);
     --White-60: rgb(255 255 255 / 60%);
     --White-90: rgb(255 255 255 / 90%);
@@ -45,4 +45,12 @@
     --rgb-5: rgba(48, 33, 53, 0.05);
     --Gray: #f7f7f7;
     --Green: #407729;
+    --Accent-Blue: #1BB1B1;
+    --Accent-Purple: #DE59C7;
+    --Very-Light-Green:#EAFFF3;
+    --Accent--Light-Blue: #E9F8F8;
+    --red-100: #FD0304;
+    --Very-Light-Blue: #EAFEFF;
+    --Purple: #712C85;
+    --Accent-Light--Blue: #61C1D3;
 }

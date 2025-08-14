@@ -22,43 +22,34 @@ const Menu = {
   $mainproducts: document.querySelector(
     'ul.main_menu > li.nav-products:not(.current-page-ancestor) > a'
   ),
+  $mainproductsSub: document.querySelector(
+    'ul.main_menu > li.nav-products:not(.current-page-ancestor)'
+  ),
   $mainproductsHover: document.querySelector(
     'ul.main_menu > li.nav-products:hover:not(.current-page-ancestor) > a'
   ),
   $products: document.querySelectorAll(
-    'ul.main_menu > li.nav-products:not(.current-page-ancestor) > ul > li.nav-sub-products > ul > li:not(.current_page_item) > a'
+    'ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li > a'
+  ),
+  $productsLi: document.querySelectorAll(
+    'ul.main_menu > li.nav-products > ul > li.nav-sub-products > ul > li.current_page_item'
   ),
   init() {
     const _ = this;
     if (!_.$header) return false;
 
-    if (_.$mainproducts) {
-      _.$mainproducts.addEventListener('mouseover', function (e) {
-        _.$products[0].parentElement.classList.add('open');
-      });
-      _.$mainproducts.addEventListener('mouseleave', function (e) {
-        _.$products[0].parentElement.classList.remove('open');
-      });
-    }
-
-    if (_.$mainproductsHover) {
-      _.$mainproductsHover.addEventListener('mouseover', function (e) {
-        _.$products[0].parentElement.classList.add('open');
-      });
-      _.$mainproductsHover.addEventListener('mouseleave', function (e) {
-        _.$products[0].parentElement.classList.remove('open');
-      });
+    if (_.$mainproducts && !_.$productsLi.length > 0) {
+      _.$products[0].parentElement.classList.add('open');
     }
 
     _.$products.forEach((ele) => {
-      ele.addEventListener('mouseover', function (e) {
-        _.$products.forEach((ele) => {
-          ele.parentElement.classList.remove('open');
-        });
+      // On mouseenter
+      ele.addEventListener('mouseenter', function (e) {
+        _.$productsLi.forEach((li) => li.classList.remove('current_page_item'));
+        _.$products.forEach((ele) =>
+          ele.parentElement.classList.remove('open')
+        );
         e.target.parentElement.classList.add('open');
-      });
-      ele.addEventListener('mouseleave', function (e) {
-        e.target.parentElement.classList.remove('open');
       });
     });
 
@@ -147,8 +138,13 @@ const Menu = {
     let staticScroll = 100;
     let mobscroll = offHeight + staticScroll;
     let mobScroll = () => {
+      if (!_.$sticky_mobile_btn) return;
       const scroll = window.scrollY;
       if (scroll > mobscroll) {
+        $(_.$sticky_mobile_btn.closest('.site-footer')).css({
+          position: 'relative',
+          zIndex: '700',
+        });
         $(_.$sticky_mobile_btn).fadeIn(900);
       } else {
         $(_.$sticky_mobile_btn).fadeOut(900);
@@ -159,9 +155,9 @@ const Menu = {
 
     if (!_.$adsense) return false;
     if (_.$adsense) {
-      _.$site.classList.add('top-adsense');
+      _.$site.classList.add('top-stickybar');
     } else {
-      _.$site.classList.remove('top-adsense');
+      _.$site.classList.remove('top-stickybar');
     }
   },
 };

@@ -1,0 +1,36 @@
+
+
+
+
+
+
+.scheduling-text hr.sm-line{margin: 23px 0 24px;}
+.scheduling-text h2 img{margin-top: 10px; max-width: 170px;}
+.scheduling-text p{margin-bottom: 22px;}
+
+
+.scheduling-row:nth-child(2n+1){flex-direction: row-reverse;}
+.scheduling-text:nth-child(1):last-child{flex: 1;}
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px) {
+    .scheduling-main{gap: 77px; padding: 81px 0 82px;}
+    .scheduling-row{gap: 80px;}
+    .scheduling-text{flex: 0 0 398px;}
+    .scheduling-image{flex: 1;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .scheduling-main{gap: 60px; padding: 81px 0 82px;}
+    .scheduling-row{gap: 40px;}
+    .scheduling-text{flex: 0 0 300px;}
+    .scheduling-image{flex: 1;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .scheduling-main{padding: 41px 0 37px; gap: 78px 0; flex-direction: column;}
+    .scheduling-row{gap: 25px; flex-direction: column;}
+}
+
+
+
+

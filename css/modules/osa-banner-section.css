@@ -1,0 +1,45 @@
+
+
+
+
+
+.osa-banner-section{ background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
+
+
+.osa-banner-text span.optional-text{margin-bottom: 28px; color: var(--Accent-Purple);}
+.osa-banner-text h1{margin-bottom: 31px; color: var(--White);}
+.osa-banner-image{flex: 1; padding: 12px; backdrop-filter: blur(40px); }
+
+.osa-banner-overlay{background: linear-gradient(rgba(165, 24, 144, 0.5), rgba(254, 243, 242, 0.5));}
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 768px){
+    .osa-banner-text h1{font-size: 40px; line-height: 50px;}
+}
+@media screen and (min-width: 1024px){
+    .osa-banner-main{padding: 140px 0 68px; gap: 60px; flex-direction: row-reverse;}
+    .osa-banner-text{flex: 0 0 436px;}
+
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .osa-banner-main{padding: 98px 0 80px; flex-direction: column;}
+    .osa-banner-image{ border-radius: 16px; border: 6px solid rgba(165, 24, 144, 0.50); backdrop-filter: blur(40px); } 
+    .osa-banner-text span.optional-text{letter-spacing: 1.8px;}
+    .osa-banner-text{padding-top: 40px; text-align: center;}
+    .osa-banner-text h1{font-size: 32px; line-height: 40px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .osa-banner-main{padding: 98px 0 40px; flex-direction: column;}
+    .osa-banner-image{padding: 6px; backdrop-filter: blur(40px); } 
+    .osa-banner-text span.optional-text{letter-spacing: 1.8px;}
+    .osa-banner-text{padding-top: 40px; text-align: center;}
+    .osa-banner-text h1{font-size: 32px; line-height: 40px;}
+}
+
+
+
+
+
+
+

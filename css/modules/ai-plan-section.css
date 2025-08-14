@@ -1,0 +1,46 @@
+
+
+
+
+.ai-plan-section{background: linear-gradient(180deg,hsla(0,0%,100%,0),#fff 15%,#fff 85%,hsla(0,0%,100%,0))}
+.ai-plan-main.light-green-bg{ background: var(--Very-Light-Green); }
+.ai-plan-main.light-blue-bg{ background: var(--Very-Light-Blue); }
+.ai-plan-main{background: var(--Eggshell); }
+
+.ai-plan-text hr{margin: 19px 0;}
+.ai-plan-text:nth-child(1):last-child{flex: 0 0 100%;}
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .ai-plan-wrap{ padding: 132.94px 0;}
+    .ai-plan-main{gap: 80px; padding: 64px; }
+    .ai-plan-text{flex: 0 0 350px;}
+    .ai-plan-image{flex: 1;}
+
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .ai-plan-section{min-height: 800px;}
+    .ai-plan-main{padding: 32px; gap: 32px; flex-direction: column;}
+    .ai-plan-image{}
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .ai-plan-section .container{padding: 0 12px;}
+    .ai-plan-wrap{ padding: 177.56px 0;}
+    .ai-plan-main{padding: 24px; gap: 32px; flex-direction: column;}
+    .ai-plan-image{}
+}
+@media screen and (max-width: 374px) and (min-width: 200px){
+    .ai-plan-text{font-size: 16px; line-height: 24px;}
+}
+
+
+
+
+
+
+
+
+
+
+

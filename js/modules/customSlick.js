@@ -4,7 +4,7 @@ import 'slick-carousel';
 
 const customSlick = {
   init() {
-const $cultureMain = $('.culture-main');
+    const $cultureMain = $('.culture-main');
     function cultureinitSlider() {
       $cultureMain.each(function () {
         const $cultureSlider = $(this);
@@ -226,7 +226,7 @@ const $cultureMain = $('.culture-main');
     }
 
     const $comparison = $('.comparison-rows');
-    const comparisonSlider = () =>{
+    const comparisonSlider = () => {
       $comparison.each(function () {
         const $comparisonSlider = $(this);
         if (window.matchMedia('(max-width: 767px)').matches) {
@@ -247,23 +247,26 @@ const $cultureMain = $('.culture-main');
           }
         }
       });
-    }
+    };
     comparisonSlider();
-
 
     const $trainingMain = $('.training-lists');
     function traininginitSlider() {
-      $trainingMain.each(function(){
+      $trainingMain.each(function () {
         const $this = $(this);
-        const trainingAppend = $(this).parent().children('.training-main-appends');
+        const trainingAppend = $(this)
+          .parent()
+          .children('.training-main-appends');
         if (window.matchMedia('(max-width: 767px)').matches) {
           if (!$this.hasClass('slick-initialized')) {
             $this.slick({
               slidesToShow: 1,
               slidesToScroll: 1,
               arrows: true,
-              prevArrow: '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
-              nextArrow: '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
+              prevArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
+              nextArrow:
+                '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
               dots: true,
               speed: 1000,
               infinite: false,
@@ -313,22 +316,21 @@ const $cultureMain = $('.culture-main');
       autoplaySpeed: 1000,
       autoplay: true,
       arrows: true,
-      prevArrow: '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
-      nextArrow: '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
+      prevArrow:
+        '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
+      nextArrow:
+        '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
       variableWidth: true,
       infinite: true,
-      focusOnSelect: true,
       responsive: [
         {
           breakpoint: 768,
           settings: {
             arrows: false,
-          }
-        }
-      ]
-    })
-
-
+          },
+        },
+      ],
+    });
 
     window.onresize = function () {
       culturedestroySlider();
@@ -347,7 +349,6 @@ const $cultureMain = $('.culture-main');
       trainingdestroySlider();
       traininginitSlider();
     };
-
   },
 };
 export default customSlick;

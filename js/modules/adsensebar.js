@@ -15,7 +15,7 @@ const adsensebar = {
         _.$ele.style.maxHeight = '0px';
         _.$ele.style.minHeight = '0px';
         _.$ele.style.overflow = 'hidden';
-        _.$site.classList.remove('top-adsense');
+        _.$site.classList.remove('top-stickybar');
         _.$ele.dataset.id = 'true';
       } else {
         _.$ele.dataset.id = 'false';

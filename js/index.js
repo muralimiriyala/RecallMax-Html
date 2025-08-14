@@ -1,5 +1,4 @@
-'use strict';
-
+// import { mylenis } from './modules/lenis';
 import customGsap from './modules/gsap';
 import counter from './modules/counter';
 import Animations from './modules/animations';
@@ -13,6 +12,7 @@ import searchFeild from './modules/search';
 import tabFilter from './modules/tabs-filter';
 import modal from './modules/modal';
 import modalChart from './modules/modalChart';
+import modalCustomForm from './modules/modalCustomForm';
 import magnificPopup from './modules/magnificPopup';
 import ourJourney from './modules/ourJourney';
 import testimonialSlider from './modules/testimonialSlider';
@@ -25,11 +25,16 @@ import ComparisonSlick from './modules/tableComparisonSlick';
 import beyond from './modules/beyond-script';
 import CompareSlick from './modules/tableCompareSlick';
 import pdetailtabs from './modules/pdetailtabs';
-import spyScroll from './modules/spyScroll';
+import { spyScroll } from './modules/spyScroll';
 import { numberInput } from './modules/numberInput';
 import adsensebar from './modules/adsensebar';
+import modalBookai from './modules/modalBookai';
+import { scrollnav } from './modules/scrollnav';
+import { scrollnavline } from './modules/scrollnavline';
+import { dashboard } from './modules/dashborad';
 
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
+  // mylenis.init();
   customGsap.init();
   counter.init();
   progress.init();
@@ -58,7 +63,12 @@ import adsensebar from './modules/adsensebar';
   numberInput();
   adsensebar.init();
   modalChart.init();
-})();
+  modalBookai.init();
+  dashboard.init();
+  scrollnavline.init(); //home page
+  scrollnav.init(); //home page
+  modalCustomForm.init();
+});
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
   scrolled = window.scrollY;

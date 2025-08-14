@@ -65,6 +65,9 @@ table.compare-table tbody td figure img{max-width: 32px; margin: auto; object-fi
     .compare-logo figure.product-icon{display: none;}
     .comparison-vd-btns button:first-child{display: block;}
     .comparison-vd-btns button{display: none;}
+
+    .comparison-vd-btns a.button:first-child{display: block;}
+    .comparison-vd-btns a.button{display: none;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .compare-slide-text{font-size: 1rem;}
