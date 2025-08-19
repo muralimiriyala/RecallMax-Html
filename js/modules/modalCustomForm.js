@@ -12,11 +12,8 @@ const modalCustomForm = {
     const _ = this;
     let toggleModal = (e) => {
       e.preventDefault();
-      alert('tete');
       const formId = e.currentTarget.dataset.formId;
-      console.log(formId, 'formIn');
       if (!formId) return;
-
       const $window = $(`.modal-window-form[data-id="${formId}"]`);
       const $main = $(`.modal-main-form[id="${formId}"]`);
 
@@ -42,18 +39,17 @@ const modalCustomForm = {
       if (closeBtn) {
         const formId = closeBtn.closest('.modal-main-form')?.id;
         if (formId) {
-          $(`.modal-window-form[id="${formId}"]`).fadeOut(800);
+          $(`.modal-window-form[data-id="${formId}"]`).fadeOut(800);
           $(`.modal-main-form[id="${formId}"]`).fadeOut(800);
         }
       }
       // click outside center closes too
       if (e.target.classList.contains('modal-window-form')) {
         const formId = e.target.id;
-        $(`.modal-window-form[id="${formId}"]`).fadeOut(800);
+        $(`.modal-window-form[data-id="${formId}"]`).fadeOut(800);
         $(`.modal-main-form[id="${formId}"]`).fadeOut(800);
       }
     });
   },
 };
-
 export default modalCustomForm;
