@@ -1,49 +1,59 @@
 'use strict';
 import $ from 'jquery';
+
 const modalCustomForm = {
   $bodyForm: document.querySelector('body'),
-  $centerCustomForm: document.querySelector('.modal-main-form .modal-center'),
   $eleCustomForm: [
     ...document.querySelectorAll('.modal-custom-btn'),
     ...document.querySelectorAll('a[href="#custom-form"]'),
   ],
-  $windowCustomForm: document.querySelector('.modal-window-form'),
-  $mainCustomForm: document.querySelector('.modal-main-form'),
-  $closeForm: document.querySelector('.modal-main-form .modal-close'),
+
   init() {
     const _ = this;
-    let modalCustomForm = (e) => {
+    let toggleModal = (e) => {
       e.preventDefault();
-      e.target.classList.toggle('open');
-      if (_.$windowCustomForm) {
-        let $overlayChart = $(_.$windowCustomForm);
-        $overlayChart.fadeToggle(900);
-        let $mainCustomForm = $(_.$mainCustomForm);
-        $mainCustomForm.fadeToggle(800);
+      alert('tete');
+      const formId = e.currentTarget.dataset.formId;
+      console.log(formId, 'formIn');
+      if (!formId) return;
+
+      const $window = $(`.modal-window-form[data-id="${formId}"]`);
+      const $main = $(`.modal-main-form[id="${formId}"]`);
+
+      if ($window.length && $main.length) {
+        $window.fadeToggle(900);
+        $main.fadeToggle(800);
       }
     };
-    _.$eleCustomForm.forEach((btnChart) => {
-      btnChart.addEventListener('click', modalCustomForm);
+
+    _.$eleCustomForm.forEach((btn) => {
+      btn.addEventListener('click', toggleModal);
     });
 
-    // Open the modal if URL contains '#modal'
-    if (
-      window.location.href.includes('#custom-form') &&
-      !window.location.href.includes('#modal')
-    ) {
+    // auto open if URL contains #custom-form
+    if (window.location.href.includes('#custom-form')) {
       const eleCustomForm = _.$eleCustomForm[0];
       if (eleCustomForm) eleCustomForm.click();
     }
 
-    if (!_.$closeForm) return false;
-    _.$closeForm.addEventListener('click', modalCustomForm);
-    let modalCustomFormClose = function (e) {
-      if (e.target.contains(_.$centerCustomForm)) {
-        $(_.$windowCustomForm).fadeOut(800);
-        $(_.$mainCustomForm).fadeOut(800);
+    // delegate close
+    _.$bodyForm.addEventListener('click', (e) => {
+      const closeBtn = e.target.closest('.modal-close');
+      if (closeBtn) {
+        const formId = closeBtn.closest('.modal-main-form')?.id;
+        if (formId) {
+          $(`.modal-window-form[id="${formId}"]`).fadeOut(800);
+          $(`.modal-main-form[id="${formId}"]`).fadeOut(800);
+        }
       }
-    };
-    _.$bodyForm.addEventListener('click', modalCustomFormClose);
+      // click outside center closes too
+      if (e.target.classList.contains('modal-window-form')) {
+        const formId = e.target.id;
+        $(`.modal-window-form[id="${formId}"]`).fadeOut(800);
+        $(`.modal-main-form[id="${formId}"]`).fadeOut(800);
+      }
+    });
   },
 };
+
 export default modalCustomForm;
