@@ -40,7 +40,6 @@ span.addons-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18
 
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
     .book-demo{flex-direction: column;}
-
 }
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .addons-item{gap: 40px; justify-content: center;}
