@@ -1,6 +1,7 @@
 
 .pricing-already span{font-size: 24px; line-height: 30px; font-weight: 800; letter-spacing: -0.24px; color: var(--Accent); }
-span.pricing-already-underline{color: var(--Raisin-Black); text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Accent); text-decoration-thickness: 8%; text-underline-offset: 8%;}
+a.pricing-already-underline{color: var(--Raisin-Black); text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Accent); text-decoration-thickness: 8%; text-underline-offset: 8%;}
+a.pricing-already-underline:hover{color: var(--Sky-Blue);}
 
 .pricing-box-list{border-radius: 24px; font-size: 1rem; line-height: 1.5rem; color: var(--Dark); border: 2px solid var(--Card-Stroke); background: var(--White); box-shadow: 0px 9px 16px 0px rgba(98, 7, 84, 0.08); padding: 25px; flex-direction: column;}
 .pricing-sub-details{gap: 12px; margin-bottom: 24px;}
@@ -95,9 +96,9 @@ span.pricing-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.1
     .pricing-box-wrap{gap: 56px; }
     .pricing-already{text-align: center; width: 100%;}
     .pricing-already span{font-size: 20px; letter-spacing: -.2px; line-height: 25px; }
-    span.pricing-already-underline{display: block;}
+    a.pricing-already-underline{display: block;}
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    span.pricing-already-underline{display: inline-block;}
+    a.pricing-already-underline{display: inline-block;}
 }
