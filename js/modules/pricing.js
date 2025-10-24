@@ -26,7 +26,10 @@ class Pricing {
         document.querySelectorAll('.pricing-boxes-row').forEach((pricele) => {
           pricele.style.display = 'none';
         });
-        $(document.querySelector('.pricing-boxes-row')).fadeIn(900);
+        const text = currentLabel.getAttribute('for');
+        $(
+          document.querySelector(`.pricing-boxes-row[data-price="${text}"]`)
+        ).fadeIn(900);
       });
     });
   }
