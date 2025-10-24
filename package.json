@@ -55,8 +55,9 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "css-minimizer-webpack-plugin": "^7.0.0",
+    "css-minimizer-webpack-plugin": "^7.0.2",
     "enhanced-resolve": "^5.18.3",
-    "mini-css-extract-plugin": "^2.9.4"
+    "mini-css-extract-plugin": "^2.9.4",
+    "terser-webpack-plugin": "^5.3.14"
   }
 }

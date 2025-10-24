@@ -32,6 +32,7 @@ import modalBookai from './modules/modalBookai';
 import { scrollnav } from './modules/scrollnav';
 import { scrollnavline } from './modules/scrollnavline';
 import { dashboard } from './modules/dashborad';
+import { priceme } from './modules/pricing';
 
 document.addEventListener('DOMContentLoaded', function () {
   // mylenis.init();
@@ -68,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
   scrollnavline.init(); //home page
   scrollnav.init(); //home page
   modalCustomForm.init();
+  priceme.init();
 });
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
