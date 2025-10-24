@@ -1,6 +1,7 @@
 
 .differ-max-text{font-size: 1.25rem; line-height: 1.875rem; color: var(--Gray-1);}
 .differ-max-text > p{color: var(--Gray-1);}
+.differ-max-text > p span{font-weight: 700;}
 .differ-max-text span.optional-text{margin-bottom: 22px;}
 .differ-max-text hr.sm-line{margin: 20px 0;}
 .differ-max-text ul > li{font-weight: 700;}
@@ -10,6 +11,7 @@
 @media screen and (min-width: 1024px) {
     .differ-max-main{padding: 40px 0;}
     body.home .differ-max-main{padding: 80px 0 41px;}
+    body.page-template-compare .differ-max-main{padding: 80px 0 64px;}
     body.page-template-Features-overview .differ-max-main{padding-top: 80px;}
     .differ-max-list{gap: 80px; margin-bottom: 40px;}
     .differ-max-list:last-child{margin-bottom: 0;}

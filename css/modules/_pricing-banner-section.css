@@ -1,13 +1,33 @@
 .pricing-banner-section{background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black);}
-.pricing-banner-section span.optional-text{margin-bottom: 6px; font-size: 1.125rem; line-height: 1.125rem; letter-spacing: 1.8px;}
-.pricing-banner-heading h1{color: var(--White);}
+.pricing-banner-section span.optional-text{margin-bottom: 8px; font-size: 18px; line-height: 18px; letter-spacing: 1.8px;}
+.pricing-banner-heading{color: var(--White); font-size: 20px; line-height: 30px;}
+.pricing-banner-heading h1{color: var(--White); margin-bottom: 56px; letter-spacing: normal;}
 .pricing-banner-heading h1 > span{position: relative; z-index: 1; font-style: italic;}
 .pricing-banner-heading h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; z-index: -1;}
 
+.pricing-us{padding: 24px 32px; border-radius: 48px; box-shadow: 0 8px 20px 0 rgba(48, 33, 53, 0.15); }
+.pricing-radio-main{gap: 82px; width: fit-content; }
+.pricing-radio-btn{position: relative; width: fit-content; align-items: center; gap: 12px;}
+.pricing-radio-btn::before{content: ""; position: absolute; top: 0; left: -40px; height: 100%; width: 2px; background: var(--Accent); }
+.pricing-radio-btn:first-child::before{display: none;}
+.pricing-radio-btn input{background: var(--Translucent); border-radius: 50%; border: 2px solid rgba(164, 39, 143, 0.50); cursor: pointer; height: 24px; left: 0; margin: 0; padding: 0; position: absolute; top: 50%; transform: translateY(-50%); width: 24px; }
+.pricing-form-field input[type="radio"]:checked{background-color: var(--Accent); background-position: 50%; background-repeat: no-repeat; background-size: 14px; color: var(--Accent); content: ""; transition: none; }
+.pricing-form-field input[type="radio"]:checked::before{content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; border-radius: 50%; background: var(--White); }
+.pricing-form-field label{color: var(--Raisin-Black); cursor: pointer; font-size: 20px; gap: 12px; line-height: 30px; font-weight: 700; padding: 5px 0 5px 40px; position: relative; }
+.pricing-radio-btn span{background: var(--Accent); padding: 6px; border-radius: 16px; color: var(--White); font-size: 16px; line-height: 16px; display: inline-block; font-weight: 800;}
+
 @media screen and (min-width: 1024px) {
-  .pricing-banner-main{padding: 152px 0 222px;}
+  .pricing-banner-main{padding: 152px 0 96px;}
+  .pricing-banner-section + .pricing-form-section {margin-top: -40px;} 
+  .pricing-form-main{padding: 0 0 40px;}
 }
 
+@media screen and (max-width: 1199px) and (min-width: 1024px){
+	.pricing-radio-main{gap: 42px; justify-content: center; width: 100%;}
+	.pricing-radio-btn::before{left: -20px;}
+	.pricing-form-field label{font-size: 17px; line-height: 27px;}
+	.pricing-radio-btn span{font-size: 14px;  line-height: 14px;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px){
   .pricing-banner-main{padding: 144px 0 222px;}
   .pricing-banner-heading h1 > span::before{display: none;}

@@ -107,6 +107,12 @@
 @import "./modules/arrays-feature-section.css";
 @import "./modules/osa-banner-section.css";
 
+@import "./modules/secondary-banner-section.css";
+@import "./modules/_new-features-section.css";
+@import "./modules/_features-carousel-section.css";
+@import "./modules/_question-section.css";
+@import "./modules/_new-compare-section.css";
+
 
 
 

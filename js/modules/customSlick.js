@@ -332,6 +332,44 @@ const customSlick = {
       ],
     });
 
+    const featuresCarousel = $('.features-carousel-slider');
+    const featuresSlides = featuresCarousel.children('.features-carousel-item').clone();
+    featuresCarousel.append(featuresSlides);
+    const featuresAppend = featuresCarousel
+          .parent()
+          .children('.features-carousel-appends');
+
+    featuresCarousel.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 1000,
+      infinite: false,
+      arrows: true,
+      prevArrow:
+        '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-solid fa-chevron-right"></span></button>',
+      nextArrow:
+        '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-solid fa-chevron-right"></span></button>',
+      variableWidth: true,
+      appendArrows: featuresAppend,
+      appendDots: featuresAppend,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            arrows: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            dots: true,
+          },
+        },
+      ],
+    });
+
     window.onresize = function () {
       culturedestroySlider();
       cultureinitSlider();

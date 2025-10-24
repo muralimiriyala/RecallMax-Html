@@ -41,9 +41,9 @@ figure.compare-thumb{opacity: 0.5; height: auto;}
     .compare-main{margin-bottom: 80px; flex-wrap: nowrap;}
     .compare-images{flex-wrap: nowrap;}
     body.page-template-Features-overview .compare-main, 
-    body.page-template-pricing .compare-main, 
     body.page-template-Products-overview .compare-main, 
     body.page-template-products-detail .compare-main{margin-bottom: 73px;}
+    body.page-template-pricing .compare-main{margin-bottom: 0px;}
     .compare-l-h span:nth-child(n+2){display: none;}
     .compare-r-h span:nth-child(-n+1){display: none;}
 }

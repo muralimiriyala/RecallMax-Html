@@ -1,0 +1,43 @@
+
+
+
+
+
+.secondary-banner-section{ background: linear-gradient(180deg, rgba(164, 39, 143, 0.00) 50%, rgba(164, 39, 143, 0.40) 100%), var(--Raisin-Black); }
+
+.secondary-banner-text{font-size: 1rem; color: var(--White); letter-spacing: -0.16px; line-height: 24px; }
+.secondary-banner-text span.optional-text{margin-bottom: 28px; color: var(--Accent-Purple);}
+.secondary-banner-text h1{margin-bottom: 31px; color: var(--White); font-size: 40px; line-height: 50px; letter-spacing: -0.4px;}
+.secondary-banner-image{flex: 1; padding: 12px; backdrop-filter: blur(40px); }
+
+.secondary-demo-btn{padding: 4px 20px 4px 4px; gap: 16px; width: fit-content; background: rgba(165, 24, 144, 0.25); }
+.secondary-demo-btn .button{padding: 13px 24px;}
+.secondary-banner-overlay{border-radius: 30px; background: linear-gradient(rgba(165, 24, 144, 0.5), rgba(254, 243, 242, 0.5));}
+.secondary-banner-text:nth-child(1):last-child{flex: 0 0 100%;}
+
+.secondary-demo-btn.no_watch{padding: 4px;}
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .secondary-banner-main{padding: 140px 0 68px; gap: 60px; flex-direction: row-reverse;}
+    .secondary-banner-text{flex: 0 0 436px;}
+    body.page-template-product-voip .secondary-banner-text h1{font-size: 40px; line-height: 125%; letter-spacing: 0;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .secondary-banner-main{padding: 98px 0 80px; flex-direction: column;}
+    .secondary-banner-image{ border-radius: 16px; backdrop-filter: blur(40px); } 
+    .secondary-banner-text span.optional-text{letter-spacing: 1.8px;}
+    .secondary-banner-text{padding-top: 40px; text-align: center;}
+    .secondary-banner-text h1{font-size: 32px; line-height: 40px;}
+    .secondary-demo-btn{margin: auto;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .secondary-banner-main{padding: 98px 0 40px; flex-direction: column;}
+    .secondary-banner-image{padding: 6px; backdrop-filter: blur(40px); } 
+    .secondary-banner-text span.optional-text{letter-spacing: 1.8px;}
+    .secondary-banner-text{padding-top: 40px; text-align: center;}
+    .secondary-banner-text h1{font-size: 32px; line-height: 40px;}
+    .secondary-demo-btn{gap: 14px 0; padding: 4px 4px 14px; width: 100%; flex-direction: column; background: rgba(48, 33, 53, 0.50);}
+    .secondary-demo-btn .button{width: 100%;}
+    .secondary-banner-overlay{border-radius: 16px;}
+}

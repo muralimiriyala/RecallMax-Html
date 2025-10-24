@@ -7,9 +7,12 @@
 
 
 .intro-ai-section{background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), var(--Eggshell);}
+body.page-template-pre-demo .intro-ai-section, 
+body.page-template-compare .intro-ai-section{background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), var(--Eggshell);}
 
 
 .intro-ai-main{max-width: 960px; padding: 78px 0 40px;}
+body.page-template-compare .intro-ai-main{padding: 80px 0 0;}
 .intro-ai-text span.optional-text{margin-bottom: 18px;}
 .intro-ai-text h2{margin-bottom: 37px;}
 
@@ -22,6 +25,10 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .intro-ai-main{padding: 36px 0 16px;}
+    body.page-template-pre-demo .intro-ai-main,
+    body.page-template-compare .intro-ai-main{padding: 40px 0 0;}
+    body.page-template-pre-demo .intro-ai-text,
+    body.page-template-compare .intro-ai-text{font-size: 18px; line-height: 27px;}
 }
 
 
