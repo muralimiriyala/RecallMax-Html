@@ -5,8 +5,9 @@
 .pricing-banner-heading h1 > span{position: relative; z-index: 1; font-style: italic;}
 .pricing-banner-heading h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; z-index: -1;}
 
+.pricing-form-main{padding: 0 0 40px;}
 .pricing-us{padding: 24px 32px; border-radius: 48px; box-shadow: 0 8px 20px 0 rgba(48, 33, 53, 0.15); }
-.pricing-radio-main{gap: 82px; width: fit-content; }
+.pricing-radio-main{gap: 82px; justify-content: center; width: 100%;}
 .pricing-radio-btn{position: relative; width: fit-content; align-items: center; gap: 12px;}
 .pricing-radio-btn::before{content: ""; position: absolute; top: 0; left: -40px; height: 100%; width: 2px; background: var(--Accent); }
 .pricing-radio-btn:first-child::before{display: none;}
@@ -18,27 +19,41 @@
 .pricing-form-field label.open input[type="checkbox"]::before,
 .pricing-form-field input[type="checkbox"]:checked::before{content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; border-radius: 50%; background: var(--White); }
 .pricing-form-field label{color: var(--Raisin-Black); cursor: pointer; font-size: 20px; gap: 12px; line-height: 30px; font-weight: 700; padding: 5px 0 5px 40px; position: relative; }
-.pricing-radio-btn span{background: var(--Accent); padding: 6px; border-radius: 16px; color: var(--White); font-size: 16px; line-height: 16px; display: inline-block; font-weight: 800;}
+.pricing-radio-btn span{background: var(--Accent); padding: 6px 10px; border-radius: 16px; color: var(--White); font-size: 16px; line-height: 16px; display: inline-block; font-weight: 800;}
 .pricing-boxes-row:not(:first-child){display: none;}
+
+  .pricing-banner-section + .pricing-form-section {margin-top: -40px;} 
 
 @media screen and (min-width: 1024px) {
   .pricing-banner-main{padding: 152px 0 96px;}
-  .pricing-banner-section + .pricing-form-section {margin-top: -40px;} 
-  .pricing-form-main{padding: 0 0 40px;}
+  
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px){
-	.pricing-radio-main{gap: 42px; justify-content: center; width: 100%;}
+	.pricing-radio-main{gap: 42px;}
 	.pricing-radio-btn::before{left: -20px;}
 	.pricing-form-field label{font-size: 17px; line-height: 27px;}
 	.pricing-radio-btn span{font-size: 14px;  line-height: 14px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-  .pricing-banner-main{padding: 144px 0 222px;}
+  .pricing-banner-main{padding: 144px 0 96px;}
   .pricing-banner-heading h1 > span::before{display: none;}
+    .pricing-us{border-radius: 24px; padding: 16px;}
+  .pricing-radio-main{gap: 12px;}
+  .pricing-radio-btn{width: 100%; }
+  .pricing-radio-btn::before{display: none;}
+  .pricing-form-field label{padding: 0 0 0 36px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-  .pricing-banner-main{padding: 144px 0 222px;}
+  .pricing-banner-main{padding: 144px 0 96px;}
   .pricing-banner-heading[data-animation].underline h1 > span{font-style: normal;}
   .pricing-banner-heading[data-animation].underline h1 > span::before{display: none;}
+  .pricing-banner-heading h1{margin-bottom: 24px; font-size: 48px; line-height: 60px; }
+
+  .pricing-us{border-radius: 24px; padding: 16px;}
+  .pricing-radio-main{gap: 12px;}
+  .pricing-radio-btn{width: 100%; }
+  .pricing-radio-btn::before{display: none;}
+  .pricing-form-field label{font-size: 16px; line-height: 24px; padding: 0 0 0 36px;}
+  .pricing-radio-btn span{font-size: 14px; line-height: 14px;}
 }

@@ -333,12 +333,11 @@ const customSlick = {
     });
 
     const featuresCarousel = $('.features-carousel-slider');
-    const featuresSlides = featuresCarousel.children('.features-carousel-item').clone();
-    featuresCarousel.append(featuresSlides);
+    // const featuresSlides = featuresCarousel.children('.features-carousel-item').clone();
+    // featuresCarousel.append(featuresSlides);
     const featuresAppend = featuresCarousel
           .parent()
           .children('.features-carousel-appends');
-
     featuresCarousel.slick({
       slidesToShow: 1,
       slidesToScroll: 1,

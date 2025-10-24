@@ -12,7 +12,8 @@ body.page-template-compare .intro-ai-section{background: linear-gradient(0deg, r
 
 
 .intro-ai-main{max-width: 960px; padding: 78px 0 40px;}
-body.page-template-compare .intro-ai-main{padding: 80px 0 0;}
+body.page-template-compare .intro-ai-main,
+body.page-template-pre-demo .intro-ai-main{padding: 80px 0 0;}
 .intro-ai-text span.optional-text{margin-bottom: 18px;}
 .intro-ai-text h2{margin-bottom: 37px;}
 

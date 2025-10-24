@@ -82,12 +82,22 @@ span.pricing-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.1
     .pricing-box-list{flex: 0 0 calc(33.333% - 13.5px);}
 }
 
+
 @media screen and (max-width: 1023px) and (min-width: 200px) {
     .pricing-banner-section + .pricing-box-section {margin-top: -160px;}
-    .pricing-box-main{gap: 20px; padding: 20px 0 40px;}
-    .pricing-box-list.platinum{order: 1; padding: 56px 20px 20px;}
+    .pricing-box-main{gap: 24px; padding: 20px 0 40px;}
+    .pricing-box-list.platinum{order: 1; padding: 56px 28px 28px;}
     .pricing-box-list.pro{order: 2;}
     .pricing-box-list.enterprise{order: 3;}
-    .pricing-box-list{padding: 28px 20px 20px;} 
-    .pricing-box-list h4{letter-spacing: -0.64px;}
+    .pricing-box-list{padding: 28px;} 
+    .pricing-box-list h4{letter-spacing: -0.32px;}
+
+    .pricing-box-wrap{gap: 56px; }
+    .pricing-already{text-align: center; width: 100%;}
+    .pricing-already span{font-size: 20px; letter-spacing: -.2px; line-height: 25px; }
+    span.pricing-already-underline{display: block;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    span.pricing-already-underline{display: inline-block;}
 }

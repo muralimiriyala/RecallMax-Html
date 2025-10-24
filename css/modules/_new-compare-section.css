@@ -1,6 +1,7 @@
 
 .new-compare-list{border-radius: 28px; border: 2px solid var(--Translucent); background: var(--White); box-shadow: 0 9px 16px 0 rgba(98, 7, 84, 0.08); width: fit-content; flex: 0 0 calc(33.333% - 22px);}
 .new-compare-list a{gap: 16px; align-items: center;  padding: 15px 16px;}
+.new-compare-list a:hover span.new-compare-name{color: var(--Sky-Blue);}
 .new-compare-text{gap: 16px; flex: 1; align-items: center;}
 .new-compare-thumb{flex: 0 0 64px;}
 .new-compare-thumb img{max-width: 64px; max-height: 64px;}
@@ -9,6 +10,9 @@
 span.new-compare-name{font-size: 24px; line-height: 30px; letter-spacing: -0.24px; color: var(--Raisin-Black); text-transform: capitalize;}
 .new-compare-arrow{flex: 0 0 20px;}
 .new-compare-arrow span{font-size: 32px; font-weight: 300; line-height: 32px;}
+
+.new-compare-list.no-compare-link{align-items: center; gap: 16px; padding: 15px 16px; display: flex; flex-wrap: wrap; }
+.new-compare-list.no-compare-link .new-compare-arrow span{color: var(--Accent); }
 
 @media screen and (min-width: 1024px){
     .new-compare-main{padding: 80px 0; gap: 32px;}

@@ -6,8 +6,8 @@
 
 
 
-.features-rating{flex: 0 0 62px; gap: 8px;}
-.features-reviews{flex: 0 0 64px; gap: 8px; margin-left: 40px; position: relative; font-weight: 700;}
+.features-rating{width: fit-content; gap: 8px;}
+.features-reviews{width: fit-content; gap: 8px; margin-left: 40px; position: relative; font-weight: 700;}
 .features-reviews a{color: var(--Raisin-Black);}
 .features-reviews a:hover{color: var(--Accent);}
 .features-reviews::before{content: ""; position: absolute; width: 2px; height: 100%; background: rgba(255, 73, 44, 0.25); border-radius: 1px; top: 0; left: -20px;}
@@ -28,11 +28,11 @@
 .features-carousel-details{padding: 0 16px; gap: 16px; margin-top: auto; align-items: center;}
 .features-carousel-author-thumb{flex: 0 0 56px; border-radius: 50%; overflow: hidden;}
 .features-carousel-author-text{flex: 1; flex-direction: column; justify-content: center; align-items: flex-start;}
-.features-carousel-author-text span{font-size: 16px; font-weight: 400; line-height: 16px; letter-spacing: -0.16px; display: block;}
-span.features-carousel-author-name{font-size: 18px; line-height: 18px; font-weight: 700; display: block; letter-spacing: -0.18px; }
+.features-carousel-author-text span{font-size: 16px; font-weight: 400; line-height: 16px; letter-spacing: -0.16px; display: -webkit-box; -webkit-line-clamp: 2; overflow: hidden; -webkit-box-orient: vertical;}
+span.features-carousel-author-name{font-size: 18px; line-height: 18px; font-weight: 700; letter-spacing: -0.18px; display: -webkit-box; -webkit-line-clamp: 2; overflow: hidden; -webkit-box-orient: vertical; }
 
 .features-carousel-quote{width: 29px; margin-bottom: 20px; }
-.features-carousel-text{min-height: 480px; padding: 24px; background: var(--White); border-radius: 16px; border: 1px solid var(--Card-Stroke); font-size: 22px; line-height: 33px; font-weight: 700; letter-spacing: -0.22px; color: var(--Accent); }
+.features-carousel-text{height: calc(100% - 76px); padding: 24px; background: var(--White); border-radius: 16px; border: 1px solid var(--Card-Stroke); font-size: 22px; line-height: 33px; font-weight: 700; letter-spacing: -0.22px; color: var(--Accent); }
 
 
 @media screen and (min-width: 1024px) {
