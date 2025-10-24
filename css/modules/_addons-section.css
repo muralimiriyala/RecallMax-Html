@@ -54,12 +54,13 @@ span.addons-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18
     .addons-item{flex: 100%; padding: 32px 32px 0; border-radius: 32px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .addons-main{gap: 40px; padding: 40px 0;}
+    .addons-main{gap: 32px; padding: 24px 0;}
     .book-demo{flex-direction: column; text-align: center;}
-    .addons-lists{gap: 32px;}
-    .addons-item{flex: 100%; padding: 24px 24px 0; border-radius: 24px;}
-    .addons-item h4{margin-bottom: 16px; font-size: 1.5rem; line-height: 1.875rem;}
-    .addons-item ul > li{font-size: 1rem; line-height: 1.5rem;}
-    .addons-item ul > li::before{top: 1px;}
-    .addons-thumb img{border-radius: 8px 8px 0px 0px;}
+    .addons-lists{gap: 24px;}
+    .addons-item{flex: 100%; padding: 28px; gap: 66px; border-radius: 24px;}
+    .addons-item h4{font-size: 32px; line-height: 40px; margin-bottom: 0;}
+    .book-title > h4{font-size: 32px; letter-spacing: -0.32px; line-height: 40px;}
+    .addons-lt{width: 100%;}
+    .addons-rt { width: 100%; }
+    .addons-thumb{margin-top: 0; max-width: 294px; margin: 0 auto; }
 }
