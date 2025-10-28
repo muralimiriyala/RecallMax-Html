@@ -6,7 +6,7 @@
 .book-title > h4 > span::before{width: 0; background: var(--Accent); border-radius: 4px; bottom: 0; content: ""; display: inline-block; height: 16px; opacity: .4; position: absolute; z-index: -1; transition: var(--b-transition);}
 .book-title span.optional-text{margin-bottom: 8px;}
 
-.addons-item{background: var(--White); border-radius: 24px; box-shadow: 0 9px 16px 0 rgba(98,7,84,.08); padding: 28px; border: 2px solid var(--Translucent);}
+.addons-item{background: var(--White); border-radius: 24px; box-shadow: 0 9px 16px 0 rgba(98,7,84,.08); padding: 28px; border: 2px solid var(--Translucent); align-items: center;}
 .addons-subtitle{gap: 12px; margin-bottom: 12px;}
 .addons-icon{flex: 0 0 24px;}
 .addons-icon svg{width: 24px; height: 24px;}
@@ -15,7 +15,7 @@
 .addons-item ul{margin-bottom: 12px;}
 .addons-item ul > li{font-size: 14px; line-height: 21px; font-weight: 700; color: var(--Gray-1); margin-bottom: 4px;}
 .addons-item ul > li::before {background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; width: 16.5px; height: 16.5px; background-size: contain; top: 2px; left: -26px; content: ""; position: absolute; }
-.addons-thumb{margin-top: 32px;}
+/* .addons-thumb{margin-top: 32px;} */
 .addons-thumb img{border-radius: 10px 10px 0px 0px;}
 .addons-lt a.text-link{color: var(--Raisin-Black);}
 
@@ -34,8 +34,8 @@ span.addons-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18
     .addons-lists{gap: 40px;}
     .addons-item{flex: 1; gap: 16px;}
     .addons-lt{flex: 1;}
-    .addons-rt{flex: 0 0 252px; display: flex; flex-direction: column;}
-    body.page-template-pricing .addons-thumb{margin-top: auto;}
+    .addons-rt{flex: 0 0 252px;}
+    /* body.page-template-pricing .addons-thumb{margin-top: auto;} */
 }
 
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
