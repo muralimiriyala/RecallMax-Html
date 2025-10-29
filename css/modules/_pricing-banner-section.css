@@ -2,6 +2,7 @@
 .pricing-banner-section span.optional-text{margin-bottom: 8px; font-size: 18px; line-height: 18px; letter-spacing: 1.8px;}
 .pricing-banner-heading{color: var(--White); font-size: 20px; line-height: 30px;}
 .pricing-banner-heading h1{color: var(--White); margin-bottom: 56px; letter-spacing: normal;}
+body.page-template-pricing-old .pricing-banner-heading h1{margin-bottom: 0;}
 .pricing-banner-heading h1 > span{position: relative; z-index: 1; font-style: italic;}
 .pricing-banner-heading h1 > span::before{background: var(--Accent); border-radius: 8px; bottom: 0; content: ""; display: inline-block; height: 24px; opacity: .4; position: absolute; z-index: -1;}
 
@@ -26,6 +27,7 @@
 
 @media screen and (min-width: 1024px) {
   .pricing-banner-main{padding: 152px 0 96px;}
+  body.page-template-pricing-old .pricing-banner-main{padding: 152px 0 248px;}
   .pricing-form-main{width: fit-content; margin: 0 auto;}
   
 }
@@ -44,6 +46,7 @@
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
   .pricing-banner-main{padding: 144px 0 96px;}
+  body.page-template-pricing-old .pricing-banner-main{padding: 144px 0 248px;}
   .pricing-banner-heading h1 > span::before{display: none;}
     .pricing-us{border-radius: 24px; padding: 16px;}
   .pricing-radio-main{gap: 12px;}
@@ -53,6 +56,7 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
   .pricing-banner-main{padding: 144px 0 96px;}
+  body.page-template-pricing-old .pricing-banner-main{padding: 144px 0 248px;}
   .pricing-banner-heading[data-animation].underline h1 > span{font-style: normal;}
   .pricing-banner-heading[data-animation].underline h1 > span::before{display: none;}
   .pricing-banner-heading h1{margin-bottom: 24px; font-size: 48px; line-height: 60px; }

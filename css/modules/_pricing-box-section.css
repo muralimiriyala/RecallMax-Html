@@ -67,10 +67,11 @@ span.pricing-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.1
 @media screen and (min-width: 1024px) {
     .pricing-box-wrap{padding: 0 0 40px; gap: 56px; justify-content: center;}
     .pricing-box-main{gap: 48px; justify-content: center;}
+    body.page-template-pricing-old .pricing-box-main{padding-bottom: 80px;}
     .pricing-box-list1{flex: 0 0 calc(100%);}
     .pricing-box-list2{flex: 0 0 calc(50% - 24px);}
     .pricing-box-list3{flex: 0 0 calc(33.333% - 32px);}
-    /* .pricing-banner-section + .pricing-box-section {margin-top: -160px;}  */
+    .pricing-banner-section + .pricing-box-section {margin-top: -160px;} 
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1280px) {
@@ -82,7 +83,6 @@ span.pricing-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.1
     .pricing-box-main{gap: 20px;}
     .pricing-box-list{flex: 0 0 calc(33.333% - 13.5px);}
 }
-
 
 @media screen and (max-width: 1023px) and (min-width: 200px) {
     .pricing-banner-section + .pricing-box-section {margin-top: -160px;}
