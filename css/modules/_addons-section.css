@@ -15,11 +15,10 @@
 .addons-item ul{margin-bottom: 12px;}
 .addons-item ul > li{font-size: 14px; line-height: 21px; font-weight: 700; color: var(--Gray-1); margin-bottom: 4px;}
 .addons-item ul > li::before {background: url("../../images/checked-circle-pro.svg"); background-repeat: no-repeat; width: 16.5px; height: 16.5px; background-size: contain; top: 2px; left: -26px; content: ""; position: absolute; }
-.addons-thumb{margin-top: 32px; max-width: 450px;}
+.addons-thumb{margin-top: 32px; max-width: 300px;}
 .addons-rt > .addons-thumb{margin-top: 0;}
 .addons-thumb img{border-radius: 10px 10px 0px 0px;}
 .addons-lt a.text-link{color: var(--Raisin-Black);}
-
 .addons-item-btns{gap: 16px; padding-top: 0;}
 
 .addons-main .book-demo-call{color: var(--Raisin-Black);}
