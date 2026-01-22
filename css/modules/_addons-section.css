@@ -35,7 +35,6 @@ span.addons-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18
     .addons-item{flex: 1; gap: 16px;}
     .addons-lt{flex: 1;}
     .addons-rt{flex: 0 0 252px;}
-    /* body.page-template-pricing .addons-thumb{margin-top: auto;} */
 }
 
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
@@ -53,7 +52,7 @@ span.addons-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18
     .addons-item{flex: 100%; padding: 32px; gap: 40px; border-radius: 24px;}
     .addons-lt{width: 100%;}
     .addons-rt { width: 100%; }
-    body.page-template-pricing .addons-thumb{margin-top: 0; max-width: 350px; margin: 0 auto; }
+    .addons-thumb{margin-top: 0; max-width: 350px; margin: 0 auto; }
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .addons-main{gap: 32px; padding: 24px 0 40px;}
@@ -64,5 +63,5 @@ span.addons-duration{font-size: 18px; line-height: 22.5px; letter-spacing: -0.18
     .book-title > h4{font-size: 32px; letter-spacing: -0.32px; line-height: 40px;}
     .addons-lt{width: 100%;}
     .addons-rt { width: 100%; }
-    body.page-template-pricing .addons-thumb{margin-top: 0; max-width: 294px; margin: 0 auto; }
+    .addons-thumb{margin-top: 0; max-width: 294px; margin: 0 auto; }
 }
