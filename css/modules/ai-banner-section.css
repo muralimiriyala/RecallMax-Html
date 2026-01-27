@@ -16,6 +16,11 @@
 .ai-banner-text:nth-child(1):last-child{flex: 0 0 100%;}
 
 .ai-demo-btn.no_watch{padding: 4px;}
+.ai-demo-btn-wrap{gap: 10px;}
+.ai-demo-btn-wrap .button{padding: 13px 20px; font-size: 16px; line-height: 20px;}
+.button.ios-btn i{font-size: 20px;}
+.button.android-btn i{font-size: 18px;}
+
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
@@ -30,6 +35,8 @@
     .ai-banner-text{padding-top: 40px; text-align: center;}
     .ai-banner-text h1{font-size: 32px; line-height: 40px;}
     .ai-demo-btn{margin: auto;}
+    .ai-demo-btn-wrap{justify-content: center;}
+    .ai-demo-btn-wrap .ai-demo-btn{margin: 0;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .ai-banner-main{padding: 98px 0 40px; flex-direction: column;}
